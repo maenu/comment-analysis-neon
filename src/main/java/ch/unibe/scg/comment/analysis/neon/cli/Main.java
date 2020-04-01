@@ -1,25 +1,54 @@
 package ch.unibe.scg.comment.analysis.neon.cli;
 
-import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-
-import org.neon.engine.Parser;
-import org.neon.engine.XMLWriter;
-import org.neon.model.Result;
+import ch.unibe.scg.comment.analysis.neon.cli.task.Partition;
+import ch.unibe.scg.comment.analysis.neon.cli.task.SplitSentences;
+import ch.unibe.scg.comment.analysis.neon.cli.task.Preprocess;
+import ch.unibe.scg.comment.analysis.neon.cli.task.MapSentences;
+import org.apache.commons.cli.*;
 
 public class Main {
+
     public static void main(String args[]) throws Exception {
-        // Initialize the text that needs to be classified
-        String text = Files.readString(Paths.get(args[0]));
-        // The xml file containing the heuristics to use
-        File heuristics = new File(args[1]);
-        // The xml file that will contain the output of the classification
-        File output = new File(args[2]);
-        // The parser returns a collection of results
-        ArrayList<Result>  results = Parser.getInstance().extract(text, heuristics);
-        // Export the results in the destination file
-        XMLWriter.addXMLSentences(output, results);
+        CommandLineParser parser = new DefaultParser();
+        Options options = new Options();
+        options.addOption(Option.builder("D")
+                .longOpt("database")
+                .required()
+                .hasArg()
+                .desc("database path")
+                .build());
+        options.addOption(Option.builder("d")
+                .longOpt("data")
+                .required()
+                .hasArg()
+                .desc("data source [pharo]")
+                .build());
+        options.addOption(Option.builder("t")
+                .longOpt("task")
+                .required()
+                .hasArg()
+                .desc("task to perform [preprocess|split-sentences|map-sentences|partition]")
+                .build());
+        try {
+            CommandLine line = parser.parse(options, args);
+            String database = line.getOptionValue("database");
+            String data = line.getOptionValue("data");
+            String task = line.getOptionValue("task");
+            if ("preprocess".equals(task)) {
+                (new Preprocess(database, data)).run();
+            } else if ("split-sentences".equals(task)) {
+                (new SplitSentences(database, data)).run();
+            } else if ("map-sentences".equals(task)) {
+                (new MapSentences(database, data)).run();
+            } else if ("partition".equals(task)) {
+                (new Partition(database, data, 4)).run();
+            } else {
+                throw new IllegalArgumentException("task option is unknown");
+            }
+        } catch (ParseException e) {
+            HelpFormatter formatter = new HelpFormatter();
+            formatter.printHelp("cli", options);
+        }
     }
+
 }
