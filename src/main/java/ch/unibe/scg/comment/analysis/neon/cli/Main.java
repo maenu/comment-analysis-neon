@@ -1,9 +1,6 @@
 package ch.unibe.scg.comment.analysis.neon.cli;
 
-import ch.unibe.scg.comment.analysis.neon.cli.task.Partition;
-import ch.unibe.scg.comment.analysis.neon.cli.task.SplitSentences;
-import ch.unibe.scg.comment.analysis.neon.cli.task.Preprocess;
-import ch.unibe.scg.comment.analysis.neon.cli.task.MapSentences;
+import ch.unibe.scg.comment.analysis.neon.cli.task.*;
 import org.apache.commons.cli.*;
 
 public class Main {
@@ -27,7 +24,7 @@ public class Main {
                 .longOpt("task")
                 .required()
                 .hasArg()
-                .desc("task to perform [preprocess|split-sentences|map-sentences|partition]")
+                .desc("task to perform [preprocess|split-sentences|map-sentences|partition|extract-heuristics]")
                 .build());
         try {
             CommandLine line = parser.parse(options, args);
@@ -42,6 +39,8 @@ public class Main {
                 (new MapSentences(database, data)).run();
             } else if ("partition".equals(task)) {
                 (new Partition(database, data, 4)).run();
+            } else if ("extract-heuristics".equals(task)) {
+                (new ExtractHeuristics(database, data)).run();
             } else {
                 throw new IllegalArgumentException("task option is unknown");
             }
