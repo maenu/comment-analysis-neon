@@ -2,8 +2,12 @@ package ch.unibe.scg.comment.analysis.neon.cli;
 
 import ch.unibe.scg.comment.analysis.neon.cli.task.*;
 import org.apache.commons.cli.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Main {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
     public static void main(String args[]) throws Exception {
         CommandLineParser parser = new DefaultParser();
@@ -23,30 +27,33 @@ public class Main {
         options.addOption(Option.builder("t")
                 .longOpt("task")
                 .required()
-                .hasArg()
-                .desc("task to perform [preprocess|split-sentences|map-sentences|partition|extract-heuristics]")
+                .hasArgs()
+                .valueSeparator(',')
+                .desc("task to perform, split by ',', [preprocess|split-sentences|map-sentences|partition|extract-heuristics]")
                 .build());
         try {
             CommandLine line = parser.parse(options, args);
             String database = line.getOptionValue("database");
             String data = line.getOptionValue("data");
-            String task = line.getOptionValue("task");
-            if ("preprocess".equals(task)) {
-                (new Preprocess(database, data)).run();
-            } else if ("split-sentences".equals(task)) {
-                (new SplitSentences(database, data)).run();
-            } else if ("map-sentences".equals(task)) {
-                (new MapSentences(database, data)).run();
-            } else if ("partition".equals(task)) {
-                (new Partition(database, data, 4)).run();
-            } else if ("extract-heuristics".equals(task)) {
-                (new ExtractHeuristics(database, data)).run();
-            } else {
-                throw new IllegalArgumentException("task option is unknown");
+            for (String task : line.getOptionValues("task")) {
+                LOGGER.info("Running {}...", task);
+                if ("preprocess".equals(task)) {
+                    (new Preprocess(database, data)).run();
+                } else if ("split-sentences".equals(task)) {
+                    (new SplitSentences(database, data)).run();
+                } else if ("map-sentences".equals(task)) {
+                    (new MapSentences(database, data)).run();
+                } else if ("partition".equals(task)) {
+                    (new Partition(database, data, 3)).run();
+                } else if ("extract-heuristics".equals(task)) {
+                    (new ExtractHeuristics(database, data)).run();
+                } else {
+                    throw new IllegalArgumentException("task option is unknown");
+                }
             }
         } catch (ParseException e) {
             HelpFormatter formatter = new HelpFormatter();
-            formatter.printHelp("cli", options);
+            formatter.printHelp("java -jar THIS.jar", options);
         }
     }
 

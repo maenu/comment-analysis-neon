@@ -39,6 +39,10 @@ public class MapSentences {
                                     this.mapping(insert, commentSentenceId, categorySentenceId, "equals", 1.0);
                                 } else if (commentSentence.contains(categorySentence)) {
                                     this.mapping(insert, commentSentenceId, categorySentenceId, "contains", 1.0 * categorySentence.length() / commentSentence.length());
+                                } else if (commentSentence.replaceAll("[.!?]$", "").contains(categorySentence.replaceAll("[.!?]$", ""))) {
+                                    this.mapping(insert, commentSentenceId, categorySentenceId, "contains-stripped", 1.0 * categorySentence.length() / commentSentence.length());
+                                } else if (commentSentence.replaceAll("[^a-z0-9]", "").contains(categorySentence.replaceAll("[^a-z0-9]", ""))) {
+                                    this.mapping(insert, commentSentenceId, categorySentenceId, "contains-a-z-0-9", 1.0 * categorySentence.length() / commentSentence.length());
                                 }
                             }
                         }
