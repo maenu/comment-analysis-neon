@@ -10,8 +10,16 @@ import org.neon.pathsFinder.model.Sentence;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.sql.*;
-import java.util.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class ExtractHeuristics {
@@ -28,7 +36,9 @@ public class ExtractHeuristics {
         try (
                 Connection connection = DriverManager.getConnection("jdbc:sqlite:" + this.database);
                 Statement statement = connection.createStatement();
-                PreparedStatement insert = connection.prepareStatement("INSERT INTO " + this.data + "_heuristics (partition, category, heuristics) VALUES (?, ?, ?)");
+                PreparedStatement insert = connection.prepareStatement("INSERT INTO "
+                                                                               + this.data
+                                                                               + "_heuristics (partition, category, heuristics) VALUES (?, ?, ?)")
         ) {
             statement.executeUpdate("PRAGMA foreign_keys = on");
             this.checkPrecondition(statement);

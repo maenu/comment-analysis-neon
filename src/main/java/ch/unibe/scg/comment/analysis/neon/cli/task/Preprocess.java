@@ -1,6 +1,11 @@
 package ch.unibe.scg.comment.analysis.neon.cli.task;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,14 +23,14 @@ public class Preprocess {
     public void run() throws SQLException {
         try (
                 Connection connection = DriverManager.getConnection("jdbc:sqlite:" + this.database);
-                Statement statement = connection.createStatement();
+                Statement statement = connection.createStatement()
         ) {
             statement.executeUpdate("PRAGMA foreign_keys = on");
             this.checkPrecondition(statement);
             List<String> categories = this.categories(statement);
             try (
                     ResultSet result = statement.executeQuery("SELECT * FROM " + this.data + "_raw");
-                    PreparedStatement insert = this.insert(connection, categories);
+                    PreparedStatement insert = this.insert(connection, categories)
             ) {
                 while (result.next()) {
                     String clazz = result.getString("class");

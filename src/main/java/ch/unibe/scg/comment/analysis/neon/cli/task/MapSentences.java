@@ -1,7 +1,13 @@
 package ch.unibe.scg.comment.analysis.neon.cli.task;
 
-import java.sql.*;
-import java.util.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MapSentences {
 
@@ -17,7 +23,9 @@ public class MapSentences {
         try (
                 Connection connection = DriverManager.getConnection("jdbc:sqlite:" + this.database);
                 Statement statement = connection.createStatement();
-                PreparedStatement insert = connection.prepareStatement("INSERT INTO " + this.data + "_mapping (comment_sentence_id, category_sentence_id, strategy, similarity) VALUES (?, ?, ?, ?)");
+                PreparedStatement insert = connection.prepareStatement("INSERT INTO "
+                                                                               + this.data
+                                                                               + "_mapping (comment_sentence_id, category_sentence_id, strategy, similarity) VALUES (?, ?, ?, ?)")
         ) {
             statement.executeUpdate("PRAGMA foreign_keys = on");
             this.checkPrecondition(statement);
@@ -64,7 +72,11 @@ public class MapSentences {
         Map<String, Map<Integer, String>> sentences = new HashMap<>();
         try (
                 Statement statement = connection.createStatement();
-                ResultSet result = statement.executeQuery("SELECT id, category, sentence FROM " + this.data + "_sentence WHERE class = '" + clazz + "'");
+                ResultSet result = statement.executeQuery("SELECT id, category, sentence FROM "
+                                                                  + this.data
+                                                                  + "_sentence WHERE class = '"
+                                                                  + clazz
+                                                                  + "'")
         ) {
             while (result.next()) {
                 int id = result.getInt("id");

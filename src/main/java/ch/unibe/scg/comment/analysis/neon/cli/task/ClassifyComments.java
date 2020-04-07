@@ -7,8 +7,17 @@ import org.neon.model.Result;
 import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.sql.*;
-import java.util.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class ClassifyComments {
@@ -38,7 +47,7 @@ public class ClassifyComments {
         }
     }
 
-    public static void classify(String args[]) throws Exception {
+    public static void classify(String[] args) throws Exception {
         // Initialize the text that needs to be classified
         String text = Files.readString(Paths.get(args[0]));
         // The xml file containing the heuristics to use

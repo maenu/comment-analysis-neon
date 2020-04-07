@@ -1,7 +1,17 @@
 package ch.unibe.scg.comment.analysis.neon.cli;
 
-import ch.unibe.scg.comment.analysis.neon.cli.task.*;
-import org.apache.commons.cli.*;
+import ch.unibe.scg.comment.analysis.neon.cli.task.ExtractHeuristics;
+import ch.unibe.scg.comment.analysis.neon.cli.task.MapSentences;
+import ch.unibe.scg.comment.analysis.neon.cli.task.Partition;
+import ch.unibe.scg.comment.analysis.neon.cli.task.Preprocess;
+import ch.unibe.scg.comment.analysis.neon.cli.task.SplitSentences;
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.DefaultParser;
+import org.apache.commons.cli.HelpFormatter;
+import org.apache.commons.cli.Option;
+import org.apache.commons.cli.Options;
+import org.apache.commons.cli.ParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,17 +19,11 @@ public class Main {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
-    public static void main(String args[]) throws Exception {
+    public static void main(String[] args) throws Exception {
         CommandLineParser parser = new DefaultParser();
         Options options = new Options();
-        options.addOption(Option.builder("D")
-                .longOpt("database")
-                .required()
-                .hasArg()
-                .desc("database path")
-                .build());
-        options.addOption(Option.builder("d")
-                .longOpt("data")
+        options.addOption(Option.builder("D").longOpt("database").required().hasArg().desc("database path").build());
+        options.addOption(Option.builder("d").longOpt("data")
                 .required()
                 .hasArg()
                 .desc("data source [pharo]")

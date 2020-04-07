@@ -3,8 +3,14 @@ package ch.unibe.scg.comment.analysis.neon.cli.task;
 import org.neon.pathsFinder.engine.Parser;
 import org.neon.pathsFinder.model.Sentence;
 
-import java.sql.*;
-import java.util.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class SplitSentences {
@@ -21,7 +27,9 @@ public class SplitSentences {
         try (
                 Connection connection = DriverManager.getConnection("jdbc:sqlite:" + this.database);
                 Statement statement = connection.createStatement();
-                PreparedStatement insert = connection.prepareStatement("INSERT INTO " + this.data + "_sentence (class, category, sentence) VALUES (?, ?, ?)");
+                PreparedStatement insert = connection.prepareStatement("INSERT INTO "
+                                                                               + this.data
+                                                                               + "_sentence (class, category, sentence) VALUES (?, ?, ?)")
         ) {
             statement.executeUpdate("PRAGMA foreign_keys = on");
             this.checkPrecondition(statement);
