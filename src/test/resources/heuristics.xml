@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <heuristics>
 
-<!--Warning-->
+    <!--Warning-->
     <NLP_heuristic>
         <sentence type="declarative"/>
         <type>nsubjpass/aux/neg/auxpass</type>
@@ -103,7 +103,7 @@
     <NLP_heuristic>
         <sentence type="declarative"/>
         <type>prep_of</type>
-        <text>should not </text>
+        <text>should not</text>
         <conditions>
             <condition>prep_of.governor="part portion"</condition>
         </conditions>
@@ -119,7 +119,7 @@
         <sentence_class>Warning</sentence_class>
     </NLP_heuristic>
 
-<!--Collaborators-->
+    <!--Collaborators-->
 
     <NLP_heuristic>
         <sentence type="declarative"/>
@@ -239,8 +239,8 @@
         <sentence_class>Collaborators</sentence_class>
     </NLP_heuristic>
 
-<!--Examples-->
-    
+    <!--Examples-->
+
     <NLP_heuristic>
         <sentence type="declarative"/>
         <type>nsubj</type>
@@ -295,7 +295,7 @@
         </conditions>
         <sentence_class>Example</sentence_class>
     </NLP_heuristic>
-<!-- Intent -->
+    <!-- Intent -->
     <NLP_heuristic>
         <sentence type="declarative"/>
         <type>nsubj/dobj</type>
@@ -500,11 +500,11 @@
         <conditions>
             <condition>dobj.governor="traverse implement"</condition>
         </conditions>
-        <sentence_class>Responsibilities</sentence_class> 
+        <sentence_class>Responsibilities</sentence_class>
     </NLP_heuristic>
 
-<!-- Key implementation points -->
-    
+    <!-- Key implementation points -->
+
     <NLP_heuristic>
         <sentence type="declarative"/>
         <type>nsubj/aux/dobj</type>
@@ -591,8 +591,8 @@
         <sentence_class>Key implementation points</sentence_class>
     </NLP_heuristic>
 
-<!--Key Messages -->
-    
+    <!--Key Messages -->
+
     <NLP_heuristic>
         <sentence type="declarative"/>
         <type>dobj</type>
@@ -612,8 +612,8 @@
         <sentence_class>Key messages</sentence_class>
     </NLP_heuristic>
 
-<!-- Preconditions/Contracts -->
-   
+    <!-- Preconditions/Contracts -->
+
     <NLP_heuristic>
         <sentence type="declarative"/>
         <type>nsubjpass/auxpass</type>
@@ -635,7 +635,7 @@
         <sentence_class>Preconditions</sentence_class>
     </NLP_heuristic>
 
-<!-- Recommendations -->
+    <!-- Recommendations -->
 
     <NLP_heuristic>
         <sentence type="declarative"/>
@@ -650,8 +650,8 @@
         <sentence_class>Recommendations</sentence_class>
     </NLP_heuristic>
 
-<!-- Reference to other ressources -->
-   
+    <!-- Reference to other ressources -->
+
     <NLP_heuristic>
         <sentence type="declarative"/>
         <type>dobj</type>
@@ -663,7 +663,7 @@
         <sentence_class>Reference to other ressources</sentence_class>
     </NLP_heuristic>
 
-<!-- Responsibilities -->
+    <!-- Responsibilities -->
 
     <NLP_heuristic>
         <sentence type="declarative"/>
