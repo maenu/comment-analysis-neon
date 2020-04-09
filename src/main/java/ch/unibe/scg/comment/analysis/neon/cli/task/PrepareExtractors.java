@@ -1,6 +1,6 @@
 package ch.unibe.scg.comment.analysis.neon.cli.task;
 
-import ch.unibe.scg.comment.analysis.neon.cli.Classifier;
+import ch.unibe.scg.comment.analysis.neon.cli.InstancesBuilder;
 import org.neon.model.Condition;
 import org.neon.model.Heuristic;
 import org.neon.pathsFinder.engine.Parser;
@@ -123,15 +123,15 @@ public class PrepareExtractors {
 			instance.setValue(instances.attribute("text"), sentence);
 			instances.add(instance);
 		}
-		Path path = Files.createTempFile("dictionary", ".txt");
+		Path path = Files.createTempFile("dictionary", ".csv");
 		try {
 			StringToWordVector filter = new StringToWordVector();
-			filter.setOptions(Classifier.FILTER_OPTIONS);
+			filter.setOptions(InstancesBuilder.TFIDF_FILTER_OPTIONS);
 			filter.setWordsToKeep(this.wordsToKeep);
 			filter.setAttributeIndicesArray(new int[]{0}); // first attribute is sentence
 			filter.setDoNotOperateOnPerClassBasis(true); // keep words irrespective of class
-			filter.setInputFormat(instances);
 			filter.setDictionaryFileToSaveTo(path.toFile());
+			filter.setInputFormat(instances);
 			Filter.useFilter(instances, filter);
 			return Files.readAllBytes(path);
 		} finally {

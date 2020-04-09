@@ -2,6 +2,7 @@ package ch.unibe.scg.comment.analysis.neon.cli;
 
 import ch.unibe.scg.comment.analysis.neon.cli.task.MapSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.Partition;
+import ch.unibe.scg.comment.analysis.neon.cli.task.PrepareDatasets;
 import ch.unibe.scg.comment.analysis.neon.cli.task.PrepareExtractors;
 import ch.unibe.scg.comment.analysis.neon.cli.task.Preprocess;
 import ch.unibe.scg.comment.analysis.neon.cli.task.SplitSentences;
@@ -29,7 +30,7 @@ public class Main {
 				.required()
 				.hasArgs()
 				.valueSeparator(',')
-				.desc("task to perform, split by ',', [preprocess|split-sentences|map-sentences|partition|prepare-extractors]")
+				.desc("task to perform, split by ',', [preprocess|split-sentences|map-sentences|partition|prepare-extractors|prepare-datasets]")
 				.build());
 		try {
 			CommandLine line = parser.parse(options, args);
@@ -47,11 +48,14 @@ public class Main {
 					(new Partition(database, data, 3)).run();
 				} else if ("prepare-extractors".equals(task)) {
 					(new PrepareExtractors(database, data, 1000)).run();
+				} else if ("prepare-datasets".equals(task)) {
+					(new PrepareDatasets(database, data, 0)).run();
 				} else {
 					throw new IllegalArgumentException("task option is unknown");
 				}
 			}
-		} catch (ParseException e) {
+		} catch (ParseException | IllegalArgumentException e) {
+			System.err.println(e.getMessage());
 			HelpFormatter formatter = new HelpFormatter();
 			formatter.printHelp("java -jar THIS.jar", options);
 		}

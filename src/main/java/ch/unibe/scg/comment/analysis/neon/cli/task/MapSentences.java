@@ -114,7 +114,7 @@ public class MapSentences {
 		try (ResultSet result = statement.executeQuery("SELECT COUNT(*) FROM " + this.data + "_mapping")) {
 			result.next();
 			if (result.getInt(1) > 0) {
-				throw new IllegalStateException(String.format("%s_label is not empty", this.data));
+				throw new IllegalStateException(String.format("%s_mapping is not empty", this.data));
 			}
 		}
 	}
