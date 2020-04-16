@@ -1,0 +1,1952 @@
+@relation 'data-0: -C 18'
+
+@attribute category-CodingGuidelines {0,1}
+@attribute category-Dependecies {0,1}
+@attribute category-DevelopmentNotes {0,1}
+@attribute category-Exception {0,1}
+@attribute category-Expand {0,1}
+@attribute category-Extension {0,1}
+@attribute category-Links {0,1}
+@attribute category-Noise {0,1}
+@attribute category-Observation {0,1}
+@attribute category-Parameters {0,1}
+@attribute category-Precondition {0,1}
+@attribute category-Recommendation {0,1}
+@attribute category-Subclassexplnation {0,1}
+@attribute category-Summary {0,1}
+@attribute category-Todo {0,1}
+@attribute category-Usage {0,1}
+@attribute category-Version {0,1}
+@attribute category-Warnings {0,1}
+@attribute heuristic-DevelopmentNotes- {0,1}
+@attribute 'heuristic-DevelopmentNotes-Folds size.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Operator may be constructed.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Unfolds [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Uses [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] folds.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] has [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] is inverse.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] is.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] returns [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] torches.' {0,1}
+@attribute 'heuristic-Exception-[something] is.' {0,1}
+@attribute heuristic-Expand- {0,1}
+@attribute 'heuristic-Expand-Attributes [something].' {0,1}
+@attribute 'heuristic-Expand-Considers [something].' {0,1}
+@attribute 'heuristic-Expand-D is.' {0,1}
+@attribute 'heuristic-Expand-Is created.' {0,1}
+@attribute 'heuristic-Expand-Is delimited.' {0,1}
+@attribute 'heuristic-Expand-Is reflected.' {0,1}
+@attribute 'heuristic-Expand-Is returned.' {0,1}
+@attribute 'heuristic-Expand-Makes [something].' {0,1}
+@attribute 'heuristic-Expand-Operator may be constructed.' {0,1}
+@attribute 'heuristic-Expand-Replaces [something].' {0,1}
+@attribute 'heuristic-Expand-Sees [something].' {0,1}
+@attribute 'heuristic-Expand-To make.' {0,1}
+@attribute 'heuristic-Expand-Uses [something].' {0,1}
+@attribute heuristic-Expand-Uses. {0,1}
+@attribute 'heuristic-Expand-[auxiliary] have [something].' {0,1}
+@attribute 'heuristic-Expand-[something] calls [something].' {0,1}
+@attribute 'heuristic-Expand-[something] does [something].' {0,1}
+@attribute 'heuristic-Expand-[something] has.' {0,1}
+@attribute 'heuristic-Expand-[something] includes.' {0,1}
+@attribute 'heuristic-Expand-[something] is number.' {0,1}
+@attribute 'heuristic-Expand-[something] likes.' {0,1}
+@attribute 'heuristic-Expand-[something] retains parity.' {0,1}
+@attribute 'heuristic-Expand-[something] sizes [something].' {0,1}
+@attribute 'heuristic-Expand-[something] sizes.' {0,1}
+@attribute 'heuristic-Expand-[something] starts.' {0,1}
+@attribute 'heuristic-Expand-[something] uses.' {0,1}
+@attribute 'heuristic-Links-Can be found.' {0,1}
+@attribute 'heuristic-Links-Sees [something].' {0,1}
+@attribute 'heuristic-Links-[something] crosses [something].' {0,1}
+@attribute 'heuristic-Observation-[something] has [something].' {0,1}
+@attribute heuristic-Parameters- {0,1}
+@attribute 'heuristic-Parameters-Attr reduces.' {0,1}
+@attribute 'heuristic-Parameters-Contains [something].' {0,1}
+@attribute 'heuristic-Parameters-Defaults [something].' {0,1}
+@attribute 'heuristic-Parameters-Defaults string.' {0,1}
+@attribute heuristic-Parameters-Defaults. {0,1}
+@attribute 'heuristic-Parameters-Dilation controls.' {0,1}
+@attribute 'heuristic-Parameters-Dilation ints.' {0,1}
+@attribute 'heuristic-Parameters-Is applied.' {0,1}
+@attribute 'heuristic-Parameters-Is called.' {0,1}
+@attribute 'heuristic-Parameters-Is enabled.' {0,1}
+@attribute 'heuristic-Parameters-Is normalized.' {0,1}
+@attribute 'heuristic-Parameters-Is not shown.' {0,1}
+@attribute 'heuristic-Parameters-Is set and this.' {0,1}
+@attribute 'heuristic-Parameters-Is set.' {0,1}
+@attribute 'heuristic-Parameters-Is used.' {0,1}
+@attribute 'heuristic-Parameters-Loss [verb]s.' {0,1}
+@attribute 'heuristic-Parameters-Loss is summed.' {0,1}
+@attribute heuristic-Parameters-Notes. {0,1}
+@attribute 'heuristic-Parameters-Optionals [something].' {0,1}
+@attribute 'heuristic-Parameters-Param allows.' {0,1}
+@attribute 'heuristic-Parameters-Param hides [something].' {0,1}
+@attribute 'heuristic-Parameters-Represents [something].' {0,1}
+@attribute 'heuristic-Parameters-Sees [something].' {0,1}
+@attribute 'heuristic-Parameters-Set needs.' {0,1}
+@attribute 'heuristic-Parameters-Sets [something].' {0,1}
+@attribute heuristic-Parameters-Sets. {0,1}
+@attribute 'heuristic-Parameters-Should be used.' {0,1}
+@attribute 'heuristic-Parameters-Size ints.' {0,1}
+@attribute 'heuristic-Parameters-Stride controls stride.' {0,1}
+@attribute 'heuristic-Parameters-Sums [something].' {0,1}
+@attribute 'heuristic-Parameters-This is set.' {0,1}
+@attribute heuristic-Parameters-Uses. {0,1}
+@attribute 'heuristic-Parameters-Value is used.' {0,1}
+@attribute 'heuristic-Parameters-Variable is shown.' {0,1}
+@attribute 'heuristic-Parameters-[auxiliary] be normalized.' {0,1}
+@attribute 'heuristic-Parameters-[auxiliary] be used.' {0,1}
+@attribute 'heuristic-Parameters-[auxiliary] use.' {0,1}
+@attribute 'heuristic-Parameters-[something] [auxiliary] exist.' {0,1}
+@attribute 'heuristic-Parameters-[something] [auxiliary] is name.' {0,1}
+@attribute 'heuristic-Parameters-[something] adds.' {0,1}
+@attribute 'heuristic-Parameters-[something] builds.' {0,1}
+@attribute 'heuristic-Parameters-[something] defaults.' {0,1}
+@attribute 'heuristic-Parameters-[something] does [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] has [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] helps.' {0,1}
+@attribute 'heuristic-Parameters-[something] integers.' {0,1}
+@attribute 'heuristic-Parameters-[something] ints number.' {0,1}
+@attribute 'heuristic-Parameters-[something] is none.' {0,1}
+@attribute 'heuristic-Parameters-[something] is.' {0,1}
+@attribute 'heuristic-Parameters-[something] makes.' {0,1}
+@attribute 'heuristic-Parameters-[something] means.' {0,1}
+@attribute 'heuristic-Parameters-[something] names.' {0,1}
+@attribute 'heuristic-Parameters-[something] numpies.' {0,1}
+@attribute 'heuristic-Parameters-[something] prompts.' {0,1}
+@attribute 'heuristic-Parameters-[something] specifies.' {0,1}
+@attribute 'heuristic-Parameters-[something] values.' {0,1}
+@attribute 'heuristic-Parameters-[something] works.' {0,1}
+@attribute heuristic-Parameters-[verb]s. {0,1}
+@attribute 'heuristic-Precondition-Operator may be constructed.' {0,1}
+@attribute 'heuristic-Subclassexplnation-[something] builds [something].' {0,1}
+@attribute 'heuristic-Subclassexplnation-[something] ns.' {0,1}
+@attribute heuristic-Summary- {0,1}
+@attribute 'heuristic-Summary-Adds message.' {0,1}
+@attribute heuristic-Summary-Applies. {0,1}
+@attribute 'heuristic-Summary-Bases [something].' {0,1}
+@attribute 'heuristic-Summary-Builds [something].' {0,1}
+@attribute 'heuristic-Summary-Compiles [something].' {0,1}
+@attribute 'heuristic-Summary-Creates [something].' {0,1}
+@attribute 'heuristic-Summary-Dictionary is dictionary.' {0,1}
+@attribute 'heuristic-Summary-Dons [something].' {0,1}
+@attribute 'heuristic-Summary-Files [something].' {0,1}
+@attribute 'heuristic-Summary-Has [something].' {0,1}
+@attribute 'heuristic-Summary-Holds [something].' {0,1}
+@attribute 'heuristic-Summary-Implements [something].' {0,1}
+@attribute 'heuristic-Summary-Provides [something].' {0,1}
+@attribute 'heuristic-Summary-Represents [something].' {0,1}
+@attribute 'heuristic-Summary-That applies.' {0,1}
+@attribute 'heuristic-Summary-Updates [something].' {0,1}
+@attribute 'heuristic-Summary-Uses [something].' {0,1}
+@attribute 'heuristic-Summary-[something] allows.' {0,1}
+@attribute 'heuristic-Summary-[something] bases.' {0,1}
+@attribute 'heuristic-Summary-[something] defines [something].' {0,1}
+@attribute 'heuristic-Summary-[something] encounters [something].' {0,1}
+@attribute 'heuristic-Summary-[something] files.' {0,1}
+@attribute 'heuristic-Summary-[something] has [something].' {0,1}
+@attribute 'heuristic-Summary-[something] implements [something].' {0,1}
+@attribute 'heuristic-Summary-[something] matches.' {0,1}
+@attribute 'heuristic-Summary-[something] ns.' {0,1}
+@attribute 'heuristic-Summary-[something] objects.' {0,1}
+@attribute 'heuristic-Summary-[something] occurs.' {0,1}
+@attribute 'heuristic-Summary-[something] provides.' {0,1}
+@attribute 'heuristic-Summary-[something] represents.' {0,1}
+@attribute 'heuristic-Summary-[something] responses.' {0,1}
+@attribute 'heuristic-Summary-[something] uses [something].' {0,1}
+@attribute 'heuristic-Summary-[something] uses.' {0,1}
+@attribute heuristic-Summary-[verb]s. {0,1}
+@attribute heuristic-Usage- {0,1}
+@attribute 'heuristic-Usage-Builds [something].' {0,1}
+@attribute 'heuristic-Usage-Com vces.' {0,1}
+@attribute 'heuristic-Usage-Considers [something].' {0,1}
+@attribute 'heuristic-Usage-Creates [something].' {0,1}
+@attribute 'heuristic-Usage-Gets [something].' {0,1}
+@attribute 'heuristic-Usage-Gives [something].' {0,1}
+@attribute 'heuristic-Usage-Htmls [something].' {0,1}
+@attribute 'heuristic-Usage-Is added.' {0,1}
+@attribute 'heuristic-Usage-Is delimited.' {0,1}
+@attribute 'heuristic-Usage-Is passed.' {0,1}
+@attribute 'heuristic-Usage-Is used.' {0,1}
+@attribute 'heuristic-Usage-It [auxiliary] have [something].' {0,1}
+@attribute 'heuristic-Usage-Leaves [something].' {0,1}
+@attribute 'heuristic-Usage-Lengthes [something].' {0,1}
+@attribute 'heuristic-Usage-Loads index.' {0,1}
+@attribute 'heuristic-Usage-Parameter have be added.' {0,1}
+@attribute 'heuristic-Usage-Permission limits.' {0,1}
+@attribute 'heuristic-Usage-Replaces [something].' {0,1}
+@attribute 'heuristic-Usage-Sizes [something].' {0,1}
+@attribute 'heuristic-Usage-The builds.' {0,1}
+@attribute 'heuristic-Usage-To sound.' {0,1}
+@attribute 'heuristic-Usage-Unfolds [something].' {0,1}
+@attribute heuristic-Usage-Uses. {0,1}
+@attribute 'heuristic-Usage-Views [something].' {0,1}
+@attribute 'heuristic-Usage-Will be returned.' {0,1}
+@attribute 'heuristic-Usage-Will use.' {0,1}
+@attribute 'heuristic-Usage-[auxiliary] be used.' {0,1}
+@attribute 'heuristic-Usage-[auxiliary] do.' {0,1}
+@attribute 'heuristic-Usage-[auxiliary] length.' {0,1}
+@attribute 'heuristic-Usage-[auxiliary] use.' {0,1}
+@attribute 'heuristic-Usage-[something] [auxiliary] exist and item.' {0,1}
+@attribute 'heuristic-Usage-[something] builds and cmake.' {0,1}
+@attribute 'heuristic-Usage-[something] contains [something].' {0,1}
+@attribute 'heuristic-Usage-[something] do not exist.' {0,1}
+@attribute 'heuristic-Usage-[something] filenames.' {0,1}
+@attribute 'heuristic-Usage-[something] gets [something].' {0,1}
+@attribute 'heuristic-Usage-[something] has [something].' {0,1}
+@attribute 'heuristic-Usage-[something] has.' {0,1}
+@attribute 'heuristic-Usage-[something] is none.' {0,1}
+@attribute 'heuristic-Usage-[something] is number.' {0,1}
+@attribute 'heuristic-Usage-[something] is.' {0,1}
+@attribute 'heuristic-Usage-[something] leaves.' {0,1}
+@attribute 'heuristic-Usage-[something] torches.' {0,1}
+@attribute 'heuristic-Usage-[something] ts.' {0,1}
+@attribute 'heuristic-Usage-[something] uses [something].' {0,1}
+@attribute 'heuristic-Usage-[something] views.' {0,1}
+@attribute 'heuristic-Usage-[something] xes torch.' {0,1}
+@attribute 'heuristic-Usage-[verb]s use.' {0,1}
+@attribute heuristic-Usage-[verb]s. {0,1}
+@attribute 'heuristic-Version-[something] adds [something].' {0,1}
+@attribute 'heuristic-Warnings-Python memcaches [something].' {0,1}
+@attribute 0 numeric
+@attribute 01 numeric
+@attribute 02 numeric
+@attribute 025 numeric
+@attribute 04 numeric
+@attribute 06 numeric
+@attribute 08 numeric
+@attribute 08500 numeric
+@attribute 1 numeric
+@attribute 10 numeric
+@attribute 100 numeric
+@attribute 12 numeric
+@attribute 12286 numeric
+@attribute 1234 numeric
+@attribute 13552 numeric
+@attribute 14126980 numeric
+@attribute 16 numeric
+@attribute 17957 numeric
+@attribute 19073 numeric
+@attribute 1d numeric
+@attribute 1e numeric
+@attribute 2 numeric
+@attribute 20 numeric
+@attribute 200 numeric
+@attribute 20522 numeric
+@attribute 220 numeric
+@attribute 224 numeric
+@attribute 24706 numeric
+@attribute 27 numeric
+@attribute 2d numeric
+@attribute 2e numeric
+@attribute 2x3 numeric
+@attribute 3 numeric
+@attribute 30 numeric
+@attribute 33 numeric
+@attribute 3d numeric
+@attribute 3x4 numeric
+@attribute 4 numeric
+@attribute 40 numeric
+@attribute 440 numeric
+@attribute 44100 numeric
+@attribute 46 numeric
+@attribute 5 numeric
+@attribute 50 numeric
+@attribute 6 numeric
+@attribute 60 numeric
+@attribute 7 numeric
+@attribute 8 numeric
+@attribute 85 numeric
+@attribute 8k16bitpcm numeric
+@attribute a numeric
+@attribute ab numeric
+@attribute abc numeric
+@attribute abil numeric
+@attribute about numeric
+@attribute abov numeric
+@attribute absent numeric
+@attribute absolut numeric
+@attribute abstract numeric
+@attribute acc numeric
+@attribute accept numeric
+@attribute account numeric
+@attribute acm numeric
+@attribute acr numeric
+@attribute act numeric
+@attribute actu numeric
+@attribute ad numeric
+@attribute adam numeric
+@attribute adamac numeric
+@attribute adapt numeric
+@attribute adapter numeric
+@attribute addit numeric
+@attribute addl numeric
+@attribute addr numeric
+@attribute admin numeric
+@attribute adopt numeric
+@attribute adv numeric
+@attribute after numeric
+@attribute ag numeric
+@attribute aid numeric
+@attribute al numeric
+@attribute algorithm numeric
+@attribute allitem numeric
+@attribute allk numeric
+@attribute allow numeric
+@attribute allvalu numeric
+@attribute alph numeric
+@attribute alread numeric
+@attribute alw numeric
+@attribute ambigu numeric
+@attribute amount numeric
+@attribute an numeric
+@attribute and numeric
+@attribute another numeric
+@attribute any numeric
+@attribute anyth numeric
+@attribute anytim numeric
+@attribute ap numeric
+@attribute app1 numeric
+@attribute app2 numeric
+@attribute appl numeric
+@attribute ar numeric
+@attribute arbitr numeric
+@attribute arg numeric
+@attribute argum numeric
+@attribute arithm numeric
+@attribute arxiv numeric
+@attribute as numeric
+@attribute ask numeric
+@attribute aspx numeric
+@attribute asser numeric
+@attribute assign numeric
+@attribute assoc numeric
+@attribute assum numeric
+@attribute at numeric
+@attribute atom numeric
+@attribute attr numeric
+@attribute attribut numeric
+@attribute au numeric
+@attribute aud numeric
+@attribute aut numeric
+@attribute auth numeric
+@attribute autocrypt numeric
+@attribute autodetect numeric
+@attribute autoenv numeric
+@attribute automat numeric
+@attribute autopl numeric
+@attribute av numeric
+@attribute avail numeric
+@attribute aver numeric
+@attribute averag numeric
+@attribute aw numeric
+@attribute b numeric
+@attribute ba numeric
+@attribute back numeric
+@attribute backtrack numeric
+@attribute bar numeric
+@attribute batch numeric
+@attribute bckenstler numeric
+@attribute bcrypt numeric
+@attribute be numeric
+@attribute becaus numeric
+@attribute becom numeric
+@attribute been numeric
+@attribute befor numeric
+@attribute behav numeric
+@attribute being numeric
+@attribute below numeric
+@attribute bench numeric
+@attribute benchmark numeric
+@attribute better numeric
+@attribute between numeric
+@attribute bi numeric
+@attribute bin numeric
+@attribute black numeric
+@attribute blob numeric
+@attribute block numeric
+@attribute bool numeric
+@attribute boolean numeric
+@attribute booleanar numeric
+@attribute both numeric
+@attribute bottommost numeric
+@attribute bound numeric
+@attribute branch numeric
+@attribute brew numeric
+@attribute brokenpipeerror numeric
+@attribute browser numeric
+@attribute buffer numeric
+@attribute build numeric
+@attribute built numeric
+@attribute builtin numeric
+@attribute bulk numeric
+@attribute bus numeric
+@attribute but numeric
+@attribute by numeric
+@attribute bytecod numeric
+@attribute bytestr numeric
+@attribute c numeric
+@attribute ca numeric
+@attribute cach numeric
+@attribute caffe2benchmarkb numeric
+@attribute cal numeric
+@attribute calcl numeric
+@attribute caller numeric
+@attribute can numeric
+@attribute cannot numeric
+@attribute capit numeric
+@attribute card numeric
+@attribute catch numeric
+@attribute caus numeric
+@attribute cdot numeric
+@attribute cel numeric
+@attribute certain numeric
+@attribute ch numeric
+@attribute chang numeric
+@attribute channel numeric
+@attribute character numeric
+@attribute check numeric
+@attribute checkpoint numeric
+@attribute child numeric
+@attribute circl numeric
+@attribute cl numeric
+@attribute classif numeric
+@attribute clear numeric
+@attribute clearer numeric
+@attribute click numeric
+@attribute client numeric
+@attribute clr numeric
+@attribute cmak numeric
+@attribute cmakecach numeric
+@attribute cmemcach numeric
+@attribute cod numeric
+@attribute coeff numeric
+@attribute collect numeric
+@attribute color numeric
+@attribute colour numeric
+@attribute column numeric
+@attribute com numeric
+@attribute comb numeric
+@attribute combin numeric
+@attribute command numeric
+@attribute commentcl numeric
+@attribute commun numeric
+@attribute comp numeric
+@attribute compat numeric
+@attribute compil numeric
+@attribute complec numeric
+@attribute compon numeric
+@attribute comput numeric
+@attribute concat numeric
+@attribute config numeric
+@attribute configparser numeric
+@attribute configur numeric
+@attribute confirm numeric
+@attribute confus numeric
+@attribute connect numeric
+@attribute consider numeric
+@attribute const numeric
+@attribute construc numeric
+@attribute contain numeric
+@attribute container numeric
+@attribute context numeric
+@attribute contigu numeric
+@attribute contrib numeric
+@attribute control numeric
+@attribute conv numeric
+@attribute conv2d numeric
+@attribute conv3d numeric
+@attribute conver numeric
+@attribute convolut numeric
+@attribute convrelu3d numeric
+@attribute cook numeric
+@attribute cop numeric
+@attribute cor numeric
+@attribute correl numeric
+@attribute correspon numeric
+@attribute count numeric
+@attribute cr numeric
+@attribute creat numeric
+@attribute criter numeric
+@attribute cur numeric
+@attribute custom numeric
+@attribute cython numeric
+@attribute d numeric
+@attribute dash numeric
+@attribute dat numeric
+@attribute datab numeric
+@attribute datafram numeric
+@attribute dataleft numeric
+@attribute dataright numeric
+@attribute dateoff numeric
+@attribute datetim numeric
+@attribute db numeric
+@attribute deal numeric
+@attribute dec numeric
+@attribute decl numeric
+@attribute decor numeric
+@attribute def numeric
+@attribute default numeric
+@attribute defin numeric
+@attribute del numeric
+@attribute deleg numeric
+@attribute delim numeric
+@attribute delimiter numeric
+@attribute delitem numeric
+@attribute denomin numeric
+@attribute dep numeric
+@attribute deprec numeric
+@attribute depth numeric
+@attribute der numeric
+@attribute describ numeric
+@attribute descript numeric
+@attribute desir numeric
+@attribute detect numeric
+@attribute developer numeric
+@attribute dict numeric
+@attribute differ numeric
+@attribute digraph numeric
+@attribute dil numeric
+@attribute dim numeric
+@attribute dir numeric
+@attribute direct numeric
+@attribute disk numeric
+@attribute displ numeric
+@attribute displayhook numeric
+@attribute dist numeric
+@attribute distribut numeric
+@attribute distutil numeric
+@attribute div numeric
+@attribute divid numeric
+@attribute djang numeric
+@attribute dn653308 numeric
+@attribute do numeric
+@attribute docstr numeric
+@attribute doctyp numeric
+@attribute doctypecl numeric
+@attribute docum numeric
+@attribute documentcl numeric
+@attribute documenter numeric
+@attribute domain numeric
+@attribute don numeric
+@attribute doub numeric
+@attribute download numeric
+@attribute dry numeric
+@attribute dtyp numeric
+@attribute dud numeric
+@attribute dum numeric
+@attribute dynam numeric
+@attribute e numeric
+@attribute ea numeric
+@attribute each numeric
+@attribute ec numeric
+@attribute edg numeric
+@attribute eg numeric
+@attribute either numeric
+@attribute el numeric
+@attribute elementcl numeric
+@attribute email numeric
+@attribute emb numeric
+@attribute empt numeric
+@attribute en numeric
+@attribute enabl numeric
+@attribute encounter numeric
+@attribute endpoint numeric
+@attribute enforc numeric
+@attribute eng numeric
+@attribute enh numeric
+@attribute entir numeric
+@attribute enumer numeric
+@attribute env numeric
+@attribute environ numeric
+@attribute environm numeric
+@attribute envvar numeric
+@attribute ep numeric
+@attribute equ numeric
+@attribute equiv numeric
+@attribute error numeric
+@attribute errorstop numeric
+@attribute escap numeric
+@attribute etc numeric
+@attribute ev numeric
+@attribute even numeric
+@attribute everyth numeric
+@attribute evil numeric
+@attribute examin numeric
+@attribute exampl numeric
+@attribute excel numeric
+@attribute except numeric
+@attribute execut numeric
+@attribute expan numeric
+@attribute expect numeric
+@attribute experim numeric
+@attribute explan numeric
+@attribute expr numeric
+@attribute exptransform numeric
+@attribute ext numeric
+@attribute extr numeric
+@attribute extract numeric
+@attribute fact numeric
+@attribute fal numeric
+@attribute featur numeric
+@attribute few numeric
+@attribute field numeric
+@attribute fil numeric
+@attribute filenam numeric
+@attribute filter numeric
+@attribute fin numeric
+@attribute find numeric
+@attribute first numeric
+@attribute fk numeric
+@attribute fl numeric
+@attribute flag numeric
+@attribute flat numeric
+@attribute flec numeric
+@attribute float numeric
+@attribute fn numeric
+@attribute fo numeric
+@attribute fold numeric
+@attribute follow numeric
+@attribute followedb numeric
+@attribute for numeric
+@attribute forc numeric
+@attribute foreign numeric
+@attribute form numeric
+@attribute format numeric
+@attribute found numeric
+@attribute frac numeric
+@attribute framer numeric
+@attribute from numeric
+@attribute fromk numeric
+@attribute front numeric
+@attribute func numeric
+@attribute funct numeric
+@attribute further numeric
+@attribute fus numeric
+@attribute ge numeric
+@attribute gener numeric
+@attribute genericrel numeric
+@attribute getitem numeric
+@attribute getl numeric
+@attribute gijsber numeric
+@attribute github numeric
+@attribute giv numeric
+@attribute gl numeric
+@attribute glob numeric
+@attribute googl numeric
+@attribute grad numeric
+@attribute graph numeric
+@attribute group numeric
+@attribute grun numeric
+@attribute gu numeric
+@attribute guy numeric
+@attribute h numeric
+@attribute ha numeric
+@attribute half numeric
+@attribute handl numeric
+@attribute handler numeric
+@attribute hap numeric
+@attribute harder numeric
+@attribute hardwar numeric
+@attribute hash numeric
+@attribute hav numeric
+@attribute he numeric
+@attribute height numeric
+@attribute help numeric
+@attribute helper numeric
+@attribute herself numeric
+@attribute hid numeric
+@attribute high numeric
+@attribute hing numeric
+@attribute hol numeric
+@attribute hold numeric
+@attribute hood numeric
+@attribute hook numeric
+@attribute hor numeric
+@attribute hour numeric
+@attribute how numeric
+@attribute however numeric
+@attribute html numeric
+@attribute http numeric
+@attribute httpbin numeric
+@attribute i numeric
+@attribute id numeric
+@attribute ident numeric
+@attribute identif numeric
+@attribute ie numeric
+@attribute if numeric
+@attribute ignor numeric
+@attribute ij numeric
+@attribute im numeric
+@attribute im2col numeric
+@attribute imag numeric
+@attribute impl numeric
+@attribute implem numeric
+@attribute implicit numeric
+@attribute import numeric
+@attribute improper numeric
+@attribute improv numeric
+@attribute in numeric
+@attribute inclus numeric
+@attribute incr numeric
+@attribute ind numeric
+@attribute indeed numeric
+@attribute individu numeric
+@attribute inf numeric
+@attribute infer numeric
+@attribute infin numeric
+@attribute inform numeric
+@attribute inherit numeric
+@attribute init numeric
+@attribute inject numeric
+@attribute inp numeric
+@attribute input numeric
+@attribute inser numeric
+@attribute inst numeric
+@attribute instead numeric
+@attribute int numeric
+@attribute integer numeric
+@attribute interact numeric
+@attribute intercept numeric
+@attribute interfac numeric
+@attribute intern numeric
+@attribute internet numeric
+@attribute inv numeric
+@attribute inver numeric
+@attribute io numeric
+@attribute ipython numeric
+@attribute ipywidg numeric
+@attribute is numeric
+@attribute isn numeric
+@attribute issu numeric
+@attribute it numeric
+@attribute item numeric
+@attribute iter numeric
+@attribute iterallitem numeric
+@attribute iterallk numeric
+@attribute iterallvalu numeric
+@attribute iteritem numeric
+@attribute iterk numeric
+@attribute iterl numeric
+@attribute iterlistitem numeric
+@attribute itervalu numeric
+@attribute itself numeric
+@attribute j numeric
+@attribute jar numeric
+@attribute jinja2 numeric
+@attribute join numeric
+@attribute jpeg numeric
+@attribute json numeric
+@attribute just numeric
+@attribute k numeric
+@attribute kanj numeric
+@attribute keep numeric
+@attribute kernel numeric
+@attribute key numeric
+@attribute keyword numeric
+@attribute kleen numeric
+@attribute know numeric
+@attribute known numeric
+@attribute l numeric
+@attribute l2 numeric
+@attribute label numeric
+@attribute larg numeric
+@attribute largest numeric
+@attribute last numeric
+@attribute later numeric
+@attribute layer numeric
+@attribute le numeric
+@attribute leaf numeric
+@attribute learn numeric
+@attribute left numeric
+@attribute len numeric
+@attribute length numeric
+@attribute leq numeric
+@attribute level numeric
+@attribute lfloor numeric
+@attribute libr numeric
+@attribute lik numeric
+@attribute lim numeric
+@attribute lin numeric
+@attribute link numeric
+@attribute linspac numeric
+@attribute list numeric
+@attribute listitem numeric
+@attribute liter numeric
+@attribute liv numeric
+@attribute lo numeric
+@attribute load numeric
+@attribute loader numeric
+@attribute loc numeric
+@attribute localpath numeric
+@attribute log numeric
+@attribute longt numeric
+@attribute look numeric
+@attribute lookahead numeric
+@attribute lr numeric
+@attribute m numeric
+@attribute mac numeric
+@attribute macr numeric
+@attribute magnif numeric
+@attribute mail numeric
+@attribute mailpil numeric
+@attribute mailpilevcard numeric
+@attribute main numeric
+@attribute maintain numeric
+@attribute mak numeric
+@attribute man numeric
+@attribute manager numeric
+@attribute map numeric
+@attribute mar numeric
+@attribute margin numeric
+@attribute mark numeric
+@attribute mask numeric
+@attribute master numeric
+@attribute mat numeric
+@attribute match numeric
+@attribute math numeric
+@attribute mathc numeric
+@attribute matml numeric
+@attribute matr numeric
+@attribute maxim numeric
+@attribute maxretryerror numeric
+@attribute may numeric
+@attribute md numeric
+@attribute me numeric
+@attribute mean numeric
+@attribute meantim numeric
+@attribute memcach numeric
+@attribute memor numeric
+@attribute mer numeric
+@attribute merg numeric
+@attribute metad numeric
+@attribute method numeric
+@attribute mi numeric
+@attribute microsoft numeric
+@attribute middlewar numeric
+@attribute might numeric
+@attribute migr numeric
+@attribute min numeric
+@attribute minibatch numeric
+@attribute minim numeric
+@attribute minimalclientinterfac numeric
+@attribute minut numeric
+@attribute mixin numeric
+@attribute mod numeric
+@attribute model numeric
+@attribute modl numeric
+@attribute mon numeric
+@attribute mor numeric
+@attribute most numeric
+@attribute mr numeric
+@attribute msdn numeric
+@attribute mult numeric
+@attribute multiind numeric
+@attribute multilabelmarginl numeric
+@attribute multipart numeric
+@attribute multipl numeric
+@attribute multiproc numeric
+@attribute multivalu numeric
+@attribute must numeric
+@attribute mypack numeric
+@attribute n numeric
+@attribute na numeric
+@attribute nam numeric
+@attribute namedtupl numeric
+@attribute namespac numeric
+@attribute narg numeric
+@attribute nat numeric
+@attribute nbconver numeric
+@attribute nch numeric
+@attribute nchan numeric
+@attribute ndar numeric
+@attribute nec numeric
+@attribute need numeric
+@attribute neg numeric
+@attribute neighbor numeric
+@attribute neq numeric
+@attribute nestedobject numeric
+@attribute never numeric
+@attribute new numeric
+@attribute nic numeric
+@attribute nl numeric
+@attribute nn numeric
+@attribute no numeric
+@attribute nocolor numeric
+@attribute nod numeric
+@attribute non numeric
+@attribute nonconsol numeric
+@attribute noninteract numeric
+@attribute norder numeric
+@attribute norm numeric
+@attribute nosuch numeric
+@attribute not numeric
+@attribute notebook numeric
+@attribute np numeric
+@attribute nsampl numeric
+@attribute num numeric
+@attribute number numeric
+@attribute numer numeric
+@attribute nump numeric
+@attribute o numeric
+@attribute obj numeric
+@attribute object numeric
+@attribute observ numeric
+@attribute occur numeric
+@attribute odf numeric
+@attribute of numeric
+@attribute og numeric
+@attribute ok numeric
+@attribute omdict numeric
+@attribute on numeric
+@attribute oneormor numeric
+@attribute onl numeric
+@attribute op numeric
+@attribute open numeric
+@attribute opendocum numeric
+@attribute openpypl numeric
+@attribute openpyxl numeric
+@attribute oper numeric
+@attribute opt numeric
+@attribute optim numeric
+@attribute optim1 numeric
+@attribute optim2 numeric
+@attribute optimiz numeric
+@attribute or numeric
+@attribute oracleparam numeric
+@attribute order numeric
+@attribute orderedmultidict numeric
+@attribute org numeric
+@attribute origin numeric
+@attribute os numeric
+@attribute other numeric
+@attribute out numeric
+@attribute output numeric
+@attribute over numeric
+@attribute overlap numeric
+@attribute overwrit numeric
+@attribute own numeric
+@attribute pa numeric
+@attribute pack numeric
+@attribute packageloader numeric
+@attribute packrecord numeric
+@attribute pad numeric
+@attribute pag numeric
+@attribute pan numeric
+@attribute par numeric
+@attribute param numeric
+@attribute parameter numeric
+@attribute parent numeric
+@attribute parseexpr numeric
+@attribute parsefatalexcept numeric
+@attribute parser numeric
+@attribute parsestr numeric
+@attribute part numeric
+@attribute particl numeric
+@attribute password numeric
+@attribute patch numeric
+@attribute path numeric
+@attribute pathlib numeric
+@attribute pcm numeric
+@attribute pd numeric
+@attribute penalt numeric
+@attribute pep numeric
+@attribute per numeric
+@attribute perform numeric
+@attribute perm numeric
+@attribute perspect numeric
+@attribute pi numeric
+@attribute pl numeric
+@attribute plan numeric
+@attribute player numeric
+@attribute plot numeric
+@attribute plugin numeric
+@attribute plus numeric
+@attribute po numeric
+@attribute poc numeric
+@attribute point numeric
+@attribute pointer numeric
+@attribute pool numeric
+@attribute pop numeric
+@attribute popitem numeric
+@attribute popl numeric
+@attribute poplistitem numeric
+@attribute popvalu numeric
+@attribute port numeric
+@attribute posit numeric
+@attribute posn numeric
+@attribute post numeric
+@attribute pprint numeric
+@attribute pr numeric
+@attribute prec numeric
+@attribute pref numeric
+@attribute prefixloader numeric
+@attribute prev numeric
+@attribute print numeric
+@attribute printer numeric
+@attribute prob numeric
+@attribute proc numeric
+@attribute prod numeric
+@attribute produc numeric
+@attribute programmat numeric
+@attribute project numeric
+@attribute prompt numeric
+@attribute prop numeric
+@attribute prov numeric
+@attribute provid numeric
+@attribute prox numeric
+@attribute publ numeric
+@attribute py numeric
+@attribute pyd numeric
+@attribute pyp numeric
+@attribute python numeric
+@attribute pyx numeric
+@attribute qu numeric
+@attribute quant numeric
+@attribute quest numeric
+@attribute quot numeric
+@attribute ra numeric
+@attribute randn numeric
+@attribute random numeric
+@attribute rang numeric
+@attribute rat numeric
+@attribute rather numeric
+@attribute raw numeric
+@attribute re numeric
+@attribute read numeric
+@attribute readl numeric
+@attribute readm numeric
+@attribute reason numeric
+@attribute recom numeric
+@attribute record numeric
+@attribute reduc numeric
+@attribute ref numeric
+@attribute refer numeric
+@attribute reflect numeric
+@attribute register numeric
+@attribute rel numeric
+@attribute relationship numeric
+@attribute relu numeric
+@attribute remain numeric
+@attribute remov numeric
+@attribute render numeric
+@attribute rep numeric
+@attribute repl numeric
+@attribute replac numeric
+@attribute repoint numeric
+@attribute report numeric
+@attribute repr numeric
+@attribute request numeric
+@attribute requir numeric
+@attribute resc numeric
+@attribute reshap numeric
+@attribute residu numeric
+@attribute resolut numeric
+@attribute resourc numeric
+@attribute resourcefinder numeric
+@attribute respon numeric
+@attribute result numeric
+@attribute retain numeric
+@attribute retrief numeric
+@attribute return numeric
+@attribute rever numeric
+@attribute reversegenericmanytoonedescript numeric
+@attribute rfloor numeric
+@attribute right numeric
+@attribute rl numeric
+@attribute robust numeric
+@attribute root numeric
+@attribute rout numeric
+@attribute router numeric
+@attribute run numeric
+@attribute s numeric
+@attribute saf numeric
+@attribute sam numeric
+@attribute sampl numeric
+@attribute sav numeric
+@attribute say numeric
+@attribute sbl numeric
+@attribute scan numeric
+@attribute schem numeric
+@attribute se numeric
+@attribute search numeric
+@attribute secon numeric
+@attribute secur numeric
+@attribute seeing numeric
+@attribute select numeric
+@attribute self numeric
+@attribute sen numeric
+@attribute separ numeric
+@attribute sequ numeric
+@attribute ser numeric
+@attribute serv numeric
+@attribute server numeric
+@attribute setattr numeric
+@attribute setdefault numeric
+@attribute setdefaultl numeric
+@attribute setitem numeric
+@attribute setl numeric
+@attribute setparseact numeric
+@attribute sever numeric
+@attribute sh numeric
+@attribute shap numeric
+@attribute shel numeric
+@attribute should numeric
+@attribute show numeric
+@attribute shown numeric
+@attribute sid numeric
+@attribute sign numeric
+@attribute sil numeric
+@attribute simil numeric
+@attribute simpl numeric
+@attribute simplest numeric
+@attribute sin numeric
+@attribute sinc numeric
+@attribute singl numeric
+@attribute sit numeric
+@attribute siz numeric
+@attribute skip numeric
+@attribute sl numeric
+@attribute slash numeric
+@attribute smal numeric
+@attribute smallest numeric
+@attribute so numeric
+@attribute softwar numeric
+@attribute som numeric
+@attribute someth numeric
+@attribute sometim numeric
+@attribute sort numeric
+@attribute sound numeric
+@attribute sourc numeric
+@attribute spac numeric
+@attribute spat numeric
+@attribute spec numeric
+@attribute specif numeric
+@attribute sql numeric
+@attribute sqlalchem numeric
+@attribute sqrt numeric
+@attribute squar numeric
+@attribute squash numeric
+@attribute st numeric
+@attribute stack numeric
+@attribute stacktransform numeric
+@attribute standard numeric
+@attribute star numeric
+@attribute start numeric
+@attribute stat numeric
+@attribute status numeric
+@attribute stdout numeric
+@attribute ster numeric
+@attribute stochast numeric
+@attribute stop numeric
+@attribute stopon numeric
+@attribute storageback numeric
+@attribute storagebackedlong numeric
+@attribute storageweakref numeric
+@attribute str numeric
+@attribute stream numeric
+@attribute string numeric
+@attribute stringtyp numeric
+@attribute structur numeric
+@attribute styl numeric
+@attribute sub numeric
+@attribute subcl numeric
+@attribute subm numeric
+@attribute submatr numeric
+@attribute subsequ numeric
+@attribute succ numeric
+@attribute such numeric
+@attribute suff numeric
+@attribute suit numeric
+@attribute sum numeric
+@attribute sup numeric
+@attribute suppl numeric
+@attribute support numeric
+@attribute suppr numeric
+@attribute sy numeric
+@attribute symlink numeric
+@attribute syntac numeric
+@attribute system numeric
+@attribute t numeric
+@attribute tabl numeric
+@attribute tag numeric
+@attribute talk numeric
+@attribute targ numeric
+@attribute templ numeric
+@attribute ten numeric
+@attribute term numeric
+@attribute termin numeric
+@attribute test numeric
+@attribute text numeric
+@attribute th numeric
+@attribute that numeric
+@attribute their numeric
+@attribute them numeric
+@attribute then numeric
+@attribute ther numeric
+@attribute therefor numeric
+@attribute thing numeric
+@attribute third numeric
+@attribute thr numeric
+@attribute thread numeric
+@attribute through numeric
+@attribute thrown numeric
+@attribute tild numeric
+@attribute tim numeric
+@attribute timedelt numeric
+@attribute timeout numeric
+@attribute to numeric
+@attribute tod numeric
+@attribute tok numeric
+@attribute toml numeric
+@attribute tool numeric
+@attribute torch numeric
+@attribute torchscript numeric
+@attribute tot numeric
+@attribute tr numeric
+@attribute traceback numeric
+@attribute transact numeric
+@attribute transform numeric
+@attribute transp numeric
+@attribute treebuilder numeric
+@attribute tru numeric
+@attribute tseq numeric
+@attribute tum numeric
+@attribute tupl numeric
+@attribute tw numeric
+@attribute txt numeric
+@attribute typ numeric
+@attribute u numeric
+@attribute un numeric
+@attribute unaffect numeric
+@attribute unappl numeric
+@attribute unbacktrack numeric
+@attribute under numeric
+@attribute underl numeric
+@attribute unequ numeric
+@attribute unf numeric
+@attribute unfold numeric
+@attribute unfortun numeric
+@attribute unicod numeric
+@attribute unimport numeric
+@attribute unittest2 numeric
+@attribute unnam numeric
+@attribute unpacklongl numeric
+@attribute unpython numeric
+@attribute unquot numeric
+@attribute unus numeric
+@attribute up numeric
+@attribute upd numeric
+@attribute upload numeric
+@attribute upper numeric
+@attribute ur numeric
+@attribute url numeric
+@attribute us numeric
+@attribute usag numeric
+@attribute useoptim numeric
+@attribute user numeric
+@attribute using numeric
+@attribute usu numeric
+@attribute util numeric
+@attribute v numeric
+@attribute val numeric
+@attribute validationerror numeric
+@attribute valu numeric
+@attribute var numeric
+@attribute variabl numeric
+@attribute vc numeric
+@attribute vcard numeric
+@attribute vcardl numeric
+@attribute vdumoulin numeric
+@attribute vect numeric
+@attribute ver numeric
+@attribute verif numeric
+@attribute versionad numeric
+@attribute versionchang numeric
+@attribute vf numeric
+@attribute vi numeric
+@attribute vid numeric
+@attribute view numeric
+@attribute visu numeric
+@attribute vs numeric
+@attribute w numeric
+@attribute w3school numeric
+@attribute wa numeric
+@attribute wait numeric
+@attribute want numeric
+@attribute warn numeric
+@attribute watch numeric
+@attribute wav numeric
+@attribute waveform numeric
+@attribute way numeric
+@attribute we numeric
+@attribute web numeric
+@attribute weight numeric
+@attribute wel numeric
+@attribute werkzeug numeric
+@attribute wh numeric
+@attribute what numeric
+@attribute when numeric
+@attribute whether numeric
+@attribute which numeric
+@attribute whil numeric
+@attribute whitespac numeric
+@attribute whol numeric
+@attribute wi numeric
+@attribute widg numeric
+@attribute width numeric
+@attribute wik numeric
+@attribute wikip numeric
+@attribute wil numeric
+@attribute window numeric
+@attribute with numeric
+@attribute within numeric
+@attribute without numeric
+@attribute won numeric
+@attribute word numeric
+@attribute work numeric
+@attribute workbook numeric
+@attribute worth numeric
+@attribute would numeric
+@attribute wrap numeric
+@attribute writ numeric
+@attribute wsg numeric
+@attribute www numeric
+@attribute x numeric
+@attribute x00 numeric
+@attribute x01 numeric
+@attribute xl numeric
+@attribute xlrd numeric
+@attribute xlsx numeric
+@attribute y numeric
+@attribute you numeric
+@attribute your numeric
+@attribute youtub numeric
+@attribute youtubev numeric
+@attribute zer numeric
+
+@data
+{9 1,30 1,61 1,158 1,473 1,688 1,702 1,835 1,887 1,896 1}
+{13 1,164 1,268 1,833 1,1181 1}
+{9 1,30 1,61 1,158 1,688 1,887 1,896 1}
+{9 1,30 1,158 1,488 1,509 1,835 1,896 1}
+{13 1,148 1,260 1}
+{9 1,211 1,488 1}
+{3 1,260 1,409 1,618 1,718 1,1015 1,1288 1}
+{9 1,488 1,756 1,896 1,914 1,1028 1}
+{13 1,301 1,896 1}
+{13 1,103 1,112 1,409 1}
+{15 1,756 1,872 1}
+{9 1,152 1,260 1,302 1,505 1,751 1,896 1}
+{13 1,914 1}
+{15 1,257 1,473 1,835 1,1202 1}
+{2 1,271 1,301 1,610 1,672 1,676 1,688 1,718 1,882 1}
+{15 1,219 1,756 1,922 1}
+{2 1,271 1,301 1,302 1,350 1,610 1,676 1,718 1,1181 1,1197 1}
+{13 1,123 1,384 1,610 1}
+{13 1,587 1,610 1}
+{13 1,260 1,366 1,896 1}
+{13 1,86 1}
+{4 1,69 1,76 1,97 1,98 1,158 1,169 1,185 1,260 1,301 1,317 1,350 1,394 1,451 1,544 1,797 1,914 1}
+{4 1,15 1,158 1,260 1,317 1,451 1,688 1,721 1,732 1,797 1,896 1,1061 1,1288 1}
+{15 1,29 1,110 1,122 1,129 1,149 1,158 1,162 1,199 1,260 1,302 1,317 1,344 1,451 1,688 1,718 1,721 1,797 1,900 1,914 1,1061 1,1197 1,1288 1,1289 1}
+{15 1,29 1,110 1,122 1,149 1,199 1,260 1,676 1,718 1,721 1,896 1,1061 1,1181 1,1197 1,1302 1,1303 1}
+{15 1,260 1,301 1,317 1,718 1,896 1,1130 1}
+{15 1,260 1,896 1}
+{15 1,141 1,571 1,676 1,718 1}
+{4 1,13 1,610 1,646 1}
+{15 1}
+{17 1,718 1,1190 1}
+{15 1,947 1,1197 1}
+{17 1,260 1,718 1}
+{4 1,302 1,317 1,324 1,350 1,577 1,610 1,718 1,896 1,1290 1}
+{4 1,13 1,610 1,646 1}
+{15 1}
+{13 1,129 1,162 1,896 1,914 1}
+{15 1,947 1,1197 1}
+{4 1,302 1,317 1,324 1,350 1,577 1,610 1,718 1,896 1,1290 1}
+{13 1,22 1,43 1,64 1,140 1,260 1,291 1,650 1,1197 1,1247 1}
+{13 1,618 1,1168 1}
+{13 1,302 1,394 1,597 1,688 1,718 1,777 1,778 1,900 1,1168 1,1183 1,1197 1,1280 1}
+{15 1,61 1,158 1,260 1,317 1,676 1,688 1,718 1,772 1,778 1,896 1,914 1,916 1,947 1,1147 1,1183 1,1184 1,1197 1,1237 1,1290 1}
+{15 1,778 1,921 1,947 1,1197 1}
+{15 1,86 1,257 1,350 1,384 1,394 1,488 1,718 1,937 1,953 1,1197 1,1290 1}
+{15 1,608 1,937 1,1197 1}
+{13 1,610 1,794 1,1197 1}
+{4 1,22 1,43 1,64 1,119 1,129 1,140 1,162 1,260 1,426 1,592 1,688 1,707 1,718 1,721 1,876 1,1181 1,1197 1,1247 1,1288 1}
+{13 1,301 1}
+{16 1,937 1}
+{1 1,15 1,260 1,301 1,317 1,407 1,592 1,610 1,688 1,896 1,900 1,1197 1,1247 1}
+{11 1,15 1,69 1,76 1,97 1,98 1,169 1,185 1,260 1,350 1,592 1,601 1,705 1,869 1,900 1,1197 1}
+{2 1,11 1,69 1,76 1,93 1,97 1,98 1,125 1,169 1,185 1,302 1,350 1,353 1,610 1,618 1,896 1,1197 1,1288 1,1301 1}
+{13 1,610 1}
+{13 1,260 1,1257 1}
+{13 1,56 1,61 1,123 1,156 1,610 1}
+{6 1,13 1,229 1,239 1,245 1,260 1,317 1,347 1,384 1,405 1,688 1,702 1,896 1,914 1,924 1,1301 1}
+{4 1,806 1}
+{4 1,538 1,616 1,1126 1,1254 1,1314 1,1320 1}
+{4 1,54 1,302 1,387 1,702 1,718 1,806 1,815 1,896 1,924 1,937 1,953 1,1132 1}
+{4 1,75 1,210 1,218 1,302 1,384 1,488 1,806 1,896 1,1197 1}
+{4 1,61 1,69 1,76 1,123 1,169 1,302 1,384 1,488 1,610 1,756 1,815 1,896 1,1184 1,1290 1}
+{4 1,211 1,260 1,326 1,488 1,896 1,1301 1}
+{4 1,17 1,61 1,69 1,75 1,76 1,169 1,302 1,317 1,326 1,347 1,676 1,705 1,718 1,742 1,756 1,882 1,1184 1,1197 1}
+{2 1,17 1,123 1,302 1,326 1,618 1,688 1,718 1,896 1}
+{2 1,4 1,17 1,117 1,218 1,302 1,610 1,718 1,806 1,869 1,1169 1,1179 1,1314 1}
+{2 1,17 1,46 1,113 1,347 1,387 1,718 1,721 1,749 1,851 1,900 1,924 1,1061 1,1197 1}
+{4 1,9 1,101 1,260 1,301 1,387 1,610 1,618 1,702 1,749 1,806 1,851 1,886 1,896 1,914 1,1197 1}
+{9 1,61 1,117 1,123 1,230 1,252 1,302 1,488 1,610 1,815 1,1254 1}
+{9 1,350 1,394 1,610 1,675 1,1197 1}
+{9 1,24 1,48 1,60 1,61 1,105 1,133 1,146 1,195 1,211 1,260 1,368 1,488 1,1181 1,1197 1,1288 1}
+{9 1,22 1,43 1,56 1,61 1,64 1,123 1,140 1,155 1,156 1,203 1,260 1,302 1,347 1,368 1,370 1,488 1,688 1,815 1,882 1,1157 1,1181 1,1197 1,1288 1}
+{14 1,15 1,163 1,260 1,301 1,302 1,618 1,718 1,722 1,914 1,1181 1}
+{9 1,66 1,488 1}
+{4 1,317 1,387 1,702 1,749 1,806 1,851 1,914 1,923 1}
+{15 1}
+{15 1,786 1,872 1,1301 1}
+{15 1,220 1,786 1,872 1,1303 1}
+{15 1,220 1,702 1,1202 1}
+{15 1,220 1,232 1,702 1,786 1,923 1,1008 1}
+{0 1,6 1,316 1,347 1,384 1}
+{0 1,6 1,918 1}
+{15 1,22 1,43 1,64 1,140 1,158 1,260 1,317 1,361 1,544 1,914 1,954 1,1124 1,1182 1,1247 1}
+{13 1,123 1,260 1,317 1,610 1,892 1}
+{13 1,56 1,156 1,260 1,450 1,610 1,924 1}
+{2 1,24 1,48 1,60 1,105 1,133 1,146 1,195 1,610 1,718 1,1181 1}
+{13 1,129 1,162 1,268 1,402 1,1197 1}
+{15 1,61 1,69 1,76 1,97 1,98 1,123 1,169 1,185 1,188 1,260 1,350 1,394 1,610 1,688 1}
+{15 1,610 1,688 1}
+{15 1,610 1,751 1}
+{15 1,610 1,672 1,751 1}
+{15 1,751 1}
+{15 1,751 1,1171 1}
+{13 1,668 1,941 1}
+{13 1,260 1,618 1,668 1,896 1,1146 1}
+{13 1,123 1,610 1,896 1}
+{2 1,4 1,10 1,163 1,194 1,350 1,384 1,614 1,618 1,688 1,702 1,822 1,1184 1,1197 1}
+{13 1,151 1,301 1,566 1,669 1}
+{13 1,260 1,646 1,1197 1}
+{4 1,540 1,896 1,953 1,1190 1}
+{13 1,718 1,1181 1}
+{13 1}
+{13 1,260 1,402 1,718 1,882 1,900 1,1288 1}
+{13 1,301 1,688 1}
+{2 1,17 1,136 1,152 1,260 1,383 1,395 1,735 1,941 1,1321 1}
+{2 1,17 1,941 1}
+{2 1,17 1,941 1}
+{13 1,136 1,914 1,1197 1,1301 1}
+{2 1,17 1,129 1,162 1,260 1,610 1,822 1,869 1,1181 1,1321 1}
+{15 1,346 1,610 1}
+{2 1,17 1,302 1,384 1,618 1,718 1,882 1}
+{13 1,610 1}
+{9 1,12 1,13 1,260 1,331 1,471 1,669 1,1246 1,1301 1}
+{13 1,168 1,284 1,592 1,1147 1,1197 1,1242 1,1268 1}
+{13 1,668 1,1197 1}
+{13 1,136 1,152 1,833 1,1197 1}
+{13 1,264 1,287 1,301 1,566 1,699 1,1197 1,1301 1}
+{13 1,361 1}
+{13 1,260 1,302 1,350 1,394 1,395 1,618 1,762 1,896 1,1015 1,1169 1,1181 1,1287 1}
+{4 1,38 1,47 1,51 1,104 1,111 1,118 1,186 1,394 1,416 1,522 1,688 1,1169 1,1178 1,1181 1,1223 1,1306 1}
+{13 1,63 1,150 1,350 1,892 1,1082 1,1181 1,1197 1}
+{13 1,22 1,43 1,64 1,140 1,896 1,1247 1}
+{2 1,260 1,544 1,618 1,892 1,914 1,1038 1}
+{15 1}
+{12 1,49 1,505 1,592 1,610 1,1181 1}
+{15 1,685 1}
+{15 1,670 1,1038 1}
+{15 1,163 1,194 1,918 1}
+{15 1}
+{13 1,141 1,376 1,676 1}
+{15 1}
+{13 1,86 1,126 1,142 1,270 1,900 1,1112 1,1181 1,1182 1}
+{6 1,733 1,1061 1}
+{15 1,1061 1}
+{6 1}
+{15 1,233 1,1061 1}
+{6 1,256 1}
+{13 1,260 1,702 1,1181 1}
+{6 1,226 1}
+{13 1,383 1,610 1,739 1}
+{4 1,592 1,653 1,676 1,718 1,1197 1,1296 1}
+{13 1,40 1,176 1,260 1,471 1,592 1,613 1,835 1,1061 1,1181 1,1242 1,1301 1}
+{17 1,356 1,592 1,618 1,835 1,1061 1,1093 1}
+{4 1,13 1,618 1,873 1}
+{2 1,9 1,107 1,260 1,301 1,707 1,718 1,1050 1}
+{13 1,260 1,350 1,394 1,835 1,1061 1,1169 1}
+{13 1,260 1,663 1,1197 1}
+{4 1,394 1,595 1,772 1,1112 1}
+{13 1,22 1,43 1,64 1,140 1,260 1,301 1,896 1,1001 1,1247 1}
+{13 1,260 1,718 1}
+{13 1,231 1,505 1,1301 1}
+{4 1,304 1,688 1,772 1,892 1,896 1,900 1,914 1,1112 1,1181 1,1197 1}
+{15 1,75 1,260 1,350 1,394 1,488 1,1191 1,1290 1}
+{13 1,688 1,896 1}
+{13 1}
+{13 1}
+{13 1,688 1,896 1}
+{13 1}
+{13 1}
+{13 1,760 1,1054 1,1301 1}
+{13 1,301 1,1001 1,1181 1,1197 1}
+{13 1,784 1,1197 1,1301 1}
+{4 1,17 1,148 1,324 1,702 1,721 1,805 1,882 1,1147 1,1181 1,1302 1}
+{4 1,17 1,882 1,924 1,1107 1}
+{15 1,17 1,27 1,260 1,772 1}
+{15 1,20 1,22 1,39 1,43 1,64 1,120 1,140 1,350 1,812 1,1247 1}
+{15 1}
+{15 1,302 1,798 1,882 1,914 1}
+{15 1}
+{15 1,302 1,368 1,610 1,673 1,882 1,914 1,1176 1,1197 1,1305 1}
+{15 1,302 1,368 1,583 1,914 1,1163 1,1176 1,1197 1}
+{15 1,384 1,1181 1}
+{15 1,707 1,1305 1}
+{13 1,260 1,302 1,618 1,718 1,721 1,896 1,1197 1}
+{13 1,707 1,896 1}
+{16 1}
+{16 1,210 1}
+{17 1}
+{13 1,260 1,301 1,718 1,1197 1,1288 1}
+{15 1}
+{2 1,17 1,83 1,137 1,153 1,231 1,301 1,1281 1,1301 1}
+{15 1}
+{2 1,4 1,17 1,63 1,119 1,134 1,191 1,260 1,368 1,707 1,718 1,802 1,896 1,900 1}
+{15 1,577 1}
+{2 1,4 1,15 1,17 1,31 1,127 1,301 1,618 1,621 1,702 1,1197 1}
+{15 1}
+{2 1,4 1,15 1,17 1,41 1,58 1,84 1,707 1,896 1,1301 1}
+{6 1,41 1,58 1,84 1,610 1,707 1,852 1,1022 1}
+{9 1}
+{9 1,114 1}
+{13 1,260 1,610 1,744 1,896 1,1197 1}
+{9 1,15 1,218 1,260 1,473 1,707 1}
+{15 1,473 1,504 1}
+{9 1,802 1}
+{15 1,163 1,473 1}
+{9 1,218 1,260 1,368 1,473 1}
+{2 1,4 1,384 1,1197 1}
+{9 1,66 1,103 1,106 1,112 1,118 1,302 1,367 1,488 1,802 1,1197 1,1289 1}
+{2 1,4 1,27 1,260 1,571 1,610 1,744 1,772 1,839 1,1282 1,1290 1}
+{4 1}
+{4 1}
+{4 1}
+{4 1}
+{4 1}
+{15 1}
+{15 1,18 1,129 1,162 1,301 1,621 1,1301 1}
+{15 1}
+{4 1,218 1,242 1,950 1}
+{9 1,13 1,22 1,43 1,56 1,64 1,140 1,155 1,156 1,203 1,383 1}
+{9 1,13 1,302 1,317 1,598 1,618 1,892 1,1197 1}
+{15 1,610 1,1147 1}
+{15 1}
+{15 1,950 1}
+{4 1,218 1,242 1,762 1}
+{15 1,950 1}
+{13 1,86 1,417 1,540 1,638 1,896 1,937 1,1197 1}
+{4 1,218 1,242 1,762 1}
+{13 1,260 1,317 1,361 1,610 1,688 1,1301 1}
+{13 1,260 1,350 1,361 1,394 1,900 1,914 1,953 1}
+{4 1,11 1,287 1,347 1}
+{4 1,11 1,15 1,61 1,69 1,70 1,76 1,97 1,98 1,123 1,169 1,185 1,188 1,260 1,287 1,347 1,350 1,353 1,610 1,1093 1}
+{4 1,24 1,48 1,60 1,105 1,133 1,146 1,195 1,317 1,379 1,688 1}
+{4 1,9 1,260 1,1303 1}
+{4 1,9 1,260 1,384 1,540 1,644 1,1181 1}
+{4 1,9 1,260 1,324 1,384 1,540 1,806 1,1179 1,1181 1}
+{6 1,348 1,417 1,618 1,631 1}
+{15 1,30 1,53 1,54 1,61 1,158 1,177 1,260 1,644 1,688 1,706 1,887 1,896 1,1237 1}
+{15 1,30 1,61 1,108 1,158 1,260 1,488 1,644 1,688 1,706 1,887 1,896 1}
+{15 1,75 1,87 1,109 1,197 1,676 1,718 1,721 1,1197 1,1237 1}
+{15 1,30 1,61 1,83 1,137 1,153 1,158 1,287 1,347 1,350 1,540 1,705 1,882 1,887 1,896 1,1093 1}
+{15 1,910 1}
+{15 1,835 1}
+{15 1,211 1,785 1,1202 1}
+{15 1,910 1}
+{15 1,785 1}
+{15 1}
+{15 1}
+{15 1}
+{15 1}
+{6 1,316 1,610 1}
+{6 1,918 1}
+{6 1,348 1,417 1,631 1}
+{6 1,348 1,417 1,427 1}
+{3 1,6 1,123 1,260 1,350 1,610 1,688 1,762 1,849 1,882 1,1178 1}
+{3 1,22 1,43 1,64 1,140 1,218 1,668 1,675 1,721 1,826 1,914 1,1237 1,1247 1,1301 1}
+{13 1,38 1,896 1,914 1}
+{4 1,13 1,69 1,76 1,93 1,125 1,169 1,302 1,398 1,618 1,718 1,1197 1}
+{1 1,2 1,15 1,22 1,43 1,64 1,140 1,384 1}
+{4 1,13 1,356 1,896 1,900 1,1001 1}
+{1 1,2 1,9 1,15 1}
+{4 1}
+{1 1,2 1,15 1,69 1,76 1,169 1,384 1,488 1,718 1}
+{4 1,70 1,302 1,718 1,900 1,1137 1}
+{4 1,13 1,75 1,123 1,302 1,610 1,688 1,1181 1}
+{9 1}
+{4 1,45 1,133 1,260 1,302 1,304 1,317 1,718 1,882 1,900 1,921 1,1112 1,1197 1}
+{9 1,70 1,150 1,610 1,718 1,822 1,892 1,914 1,1290 1}
+{9 1,56 1,156 1,260 1,488 1,676 1,718 1,751 1,914 1,1314 1}
+{9 1,141 1,303 1,426 1,488 1,751 1,772 1,896 1,914 1,1320 1}
+{9 1,260 1,676 1,718 1}
+{9 1,896 1,961 1,1145 1,1197 1}
+{9 1,317 1,346 1,488 1,743 1,961 1}
+{9 1,22 1,43 1,44 1,56 1,64 1,140 1,155 1,156 1,181 1,203 1,260 1,317 1,367 1,488 1,610 1,653 1,688 1,1296 1,1314 1}
+{9 1,61 1,98 1,123 1,188 1,610 1,772 1,914 1,961 1,1145 1,1197 1}
+{9 1,168 1,260 1,324 1,676 1,718 1,896 1,984 1,1147 1}
+{9 1,168 1,260 1,302 1,540 1,676 1,688 1,718 1,722 1,772 1,984 1}
+{9 1,367 1,488 1}
+{9 1,367 1,900 1,914 1}
+{9 1,426 1,505 1,772 1,914 1,953 1}
+{4 1,13 1,317 1,350 1,718 1}
+{9 1,367 1,488 1,781 1,900 1,914 1,1314 1}
+{4 1,13 1,688 1}
+{9 1,213 1}
+{9 1,210 1}
+{9 1,367 1,488 1,781 1,900 1,914 1,1320 1}
+{9 1,213 1}
+{9 1,210 1}
+{13 1,260 1,302 1,1202 1,1301 1}
+{9 1,302 1,367 1,370 1,488 1,781 1,900 1,914 1,1314 1,1320 1}
+{15 1,24 1,48 1,60 1,105 1,118 1,133 1,146 1,195 1,302 1,317 1,610 1,718 1,1181 1}
+{9 1,213 1}
+{6 1,15 1,688 1,718 1,721 1,900 1}
+{9 1,210 1}
+{17 1,79 1,618 1,698 1,882 1,1181 1,1202 1}
+{9 1,56 1,61 1,98 1,117 1,123 1,156 1,188 1,610 1,1197 1}
+{17 1,1168 1,1202 1,1301 1}
+{9 1,56 1,61 1,98 1,117 1,123 1,156 1,188 1,610 1,1197 1}
+{4 1,24 1,48 1,60 1,83 1,105 1,133 1,137 1,146 1,153 1,195 1,239 1,260 1,302 1,851 1,921 1,1181 1,1197 1,1301 1}
+{9 1,231 1,488 1,610 1,706 1,772 1}
+{4 1,29 1,110 1,122 1,136 1,149 1,152 1,199 1,260 1,688 1,718 1,793 1,896 1,1147 1,1197 1}
+{9 1,302 1,488 1,610 1,706 1}
+{9 1,150 1,488 1,618 1,892 1,914 1,1075 1,1145 1,1197 1}
+{9 1,618 1,676 1,777 1,1147 1,1181 1,1301 1}
+{9 1,302 1,367 1,610 1,676 1,961 1}
+{9 1,346 1,604 1,610 1,961 1}
+{2 1,4 1,171 1,200 1,210 1,218 1,618 1,760 1,1054 1,1197 1}
+{2 1,4 1,488 1,718 1}
+{9 1,22 1,43 1,56 1,64 1,123 1,140 1,144 1,155 1,156 1,203 1,260 1,302 1,350 1,367 1,488 1,676 1,688 1,914 1,1061 1,1197 1,1247 1}
+{9 1,64 1,168 1,260 1,676 1,718 1,914 1,1197 1}
+{9 1,41 1,58 1,84 1,302 1,505 1,566 1,1022 1,1145 1,1301 1}
+{4 1,13 1,139 1,260 1,271 1,426 1,471 1,672 1,835 1,1181 1}
+{9 1,610 1}
+{9 1,51 1,302 1,505 1,1145 1,1197 1}
+{9 1,22 1,43 1,64 1,140 1,260 1,367 1,426 1,488 1,688 1,801 1,1054 1,1247 1,1288 1,1301 1,1320 1}
+{9 1,350 1,367 1,368 1,394 1,488 1,676 1,718 1}
+{9 1,56 1,98 1,156 1,488 1,688 1,705 1,896 1,1145 1,1197 1}
+{2 1,13 1,93 1,125 1,206 1,260 1,384 1,718 1,1197 1}
+{1 1,2 1,9 1,15 1}
+{9 1,610 1}
+{9 1,1197 1}
+{13 1,260 1,702 1,1181 1}
+{9 1}
+{9 1}
+{1 1,2 1,9 1,15 1}
+{9 1,210 1}
+{9 1}
+{9 1}
+{17 1,79 1,210 1,896 1,1181 1,1197 1}
+{9 1}
+{17 1,1202 1}
+{17 1,210 1,473 1}
+{13 1,56 1,99 1,156 1,192 1,260 1,882 1,1288 1}
+{1 1,2 1,15 1,150 1,350 1,384 1,488 1,676 1,718 1,882 1,892 1,896 1,1050 1,1183 1}
+{6 1}
+{9 1}
+{2 1}
+{6 1,918 1,1246 1}
+{9 1,56 1,156 1,1288 1}
+{2 1,4 1,6 1,41 1,58 1,84 1,346 1,384 1,394 1,610 1,676 1,745 1,900 1,914 1,961 1,1321 1}
+{6 1}
+{9 1,61 1,158 1,260 1,772 1,896 1,1181 1,1288 1}
+{2 1,4 1,171 1,200 1,210 1,218 1,618 1,760 1,1054 1,1197 1}
+{6 1,668 1}
+{9 1,61 1,63 1,150 1,158 1,260 1,301 1,302 1,317 1,615 1,718 1,772 1,892 1,896 1,914 1,919 1,1018 1,1136 1,1147 1,1169 1,1301 1}
+{2 1,4 1,488 1,718 1}
+{9 1,61 1,158 1,260 1,772 1,896 1}
+{9 1,69 1,76 1,93 1,125 1,169 1,618 1,718 1,1197 1,1288 1}
+{13 1,896 1,914 1,1303 1}
+{2 1,17 1,302 1,326 1,610 1,762 1,873 1,896 1,953 1}
+{2 1,718 1,1160 1,1197 1,1202 1,1301 1}
+{2 1,17 1,872 1}
+{2 1,384 1,1202 1}
+{2 1,210 1,509 1,718 1,815 1,1160 1,1197 1,1202 1,1301 1}
+{2 1,17 1,872 1}
+{2 1,384 1,1202 1}
+{2 1,210 1,509 1,718 1,815 1,1197 1,1202 1,1301 1}
+{2 1,17 1,872 1}
+{2 1,384 1,1202 1}
+{2 1,210 1,509 1}
+{2 1,17 1,28 1,201 1,667 1,1202 1}
+{2 1,17 1,872 1}
+{2 1,17 1,22 1,43 1,64 1,140 1,260 1,302 1,718 1,896 1,1247 1}
+{2 1,301 1,317 1,953 1,1197 1}
+{2 1,260 1,317 1,384 1,896 1,923 1}
+{2 1,168 1,260 1,326 1,676 1,718 1,953 1,1160 1,1197 1,1290 1}
+{9 1,24 1,45 1,48 1,60 1,105 1,133 1,146 1,195 1,326 1,509 1,540 1,604 1,676 1,706 1,718 1,880 1,886 1,896 1,1197 1,1301 1}
+{9 1,326 1,604 1,610 1,880 1,896 1,1197 1}
+{9 1,64 1,231 1,488 1}
+{9 1,347 1,368 1,384 1,636 1,676 1,688 1,896 1}
+{9 1,66 1,488 1}
+{9 1,718 1,882 1,1288 1}
+{9 1,815 1,914 1,1147 1,1160 1}
+{9 1,1197 1,1280 1}
+{9 1,326 1,953 1,1160 1}
+{9 1,18 1,540 1,688 1,815 1,896 1,924 1}
+{9 1,260 1,326 1,350 1,367 1,488 1,676 1,815 1,1169 1,1271 1,1283 1}
+{9 1,13 1,129 1,162 1,260 1,302 1,613 1,618 1,873 1,945 1,1181 1,1246 1,1301 1}
+{9 1,41 1,58 1,84 1,610 1}
+{9 1,718 1,882 1,1288 1}
+{4 1,30 1,210 1,218 1,509 1,618 1,806 1,851 1,886 1,896 1,1283 1}
+{4 1,302 1,326 1,702 1,953 1}
+{4 1,239 1,326 1,342 1,676 1,702 1,718 1,851 1,896 1}
+{4 1,27 1,260 1,302 1,317 1,326 1,342 1,350 1,540 1,688 1,721 1,762 1,851 1,896 1,900 1,1050 1,1280 1}
+{4 1,109 1,197 1,302 1,326 1,350 1,688 1,718 1,1197 1}
+{4 1,229 1,326 1,676 1,702 1,718 1,851 1,896 1}
+{13 1,15 1,610 1,896 1,1321 1}
+{4 1,260 1,317 1,350 1,721 1,896 1}
+{9 1,15 1,30 1,61 1,158 1,886 1,887 1,896 1,936 1,968 1,1197 1}
+{4 1,63 1,229 1,260 1,326 1,350 1,540 1,688 1,702 1,718 1,896 1,1197 1}
+{9 1,49 1,921 1,936 1,1197 1,1301 1}
+{4 1,133 1,317 1,326 1,342 1,350 1,610 1,702 1,896 1}
+{9 1,69 1,76 1,93 1,125 1,129 1,162 1,169 1,936 1,968 1,1197 1}
+{4 1,27 1,133 1,210 1,384 1,675 1,762 1}
+{9 1}
+{4 1,218 1,260 1,350 1,604 1,896 1,914 1,953 1,1093 1,1197 1}
+{4 1,24 1,45 1,48 1,60 1,105 1,109 1,133 1,146 1,195 1,197 1,302 1,317 1,326 1,676 1,702 1,718 1,849 1,882 1,953 1}
+{15 1}
+{4 1,610 1,1160 1}
+{13 1,123 1,610 1,1314 1}
+{15 1,669 1,1038 1}
+{15 1}
+{15 1,427 1,797 1}
+{2 1,15 1,17 1,63 1,219 1,242 1,301 1,872 1,896 1,1160 1}
+{15 1,669 1,1038 1}
+{15 1,219 1,231 1,242 1,247 1,260 1,347 1,540 1,702 1,896 1,1160 1,1202 1}
+{15 1,427 1,790 1,797 1}
+{15 1,28 1,201 1,218 1,231 1,242 1,247 1,252 1,1202 1}
+{15 1,669 1,1038 1}
+{15 1,210 1,247 1,702 1,1160 1}
+{15 1,427 1,761 1,797 1}
+{15 1}
+{13 1,610 1,1147 1}
+{16 1,219 1}
+{16 1,210 1}
+{9 1,17 1}
+{17 1,718 1}
+{9 1,302 1,812 1,896 1,1303 1}
+{17 1,114 1,350 1,688 1,812 1,852 1,873 1,1197 1}
+{17 1}
+{9 1}
+{9 1,51 1,896 1}
+{9 1,17 1}
+{9 1,301 1,892 1,1001 1}
+{17 1,688 1,812 1,1303 1}
+{9 1,66 1,103 1,106 1,112 1,118 1,367 1,488 1,896 1,1197 1,1289 1}
+{4 1}
+{4 1}
+{4 1}
+{6 1}
+{6 1}
+{6 1,260 1,384 1,900 1,1145 1,1147 1}
+{2 1}
+{2 1,15 1,27 1,260 1,610 1}
+{15 1}
+{15 1,950 1}
+{4 1,15 1,718 1,1179 1}
+{15 1,718 1,852 1,1147 1,1179 1}
+{15 1,247 1,762 1,1147 1}
+{15 1,141 1,294 1,876 1,892 1,1147 1,1169 1}
+{15 1,950 1}
+{15 1,113 1,218 1,754 1,839 1,1147 1,1206 1}
+{3 1,15 1,301 1,892 1,896 1}
+{15 1,27 1,260 1,610 1}
+{15 1}
+{15 1,950 1}
+{4 1,242 1,260 1,368 1,387 1,762 1,852 1,1147 1}
+{15 1,69 1,76 1,123 1,152 1,169 1,350 1,383 1,384 1,688 1,699 1,718 1,882 1,936 1,937 1,1012 1,1093 1,1288 1}
+{2 1,38 1,47 1,104 1,111 1,186 1,304 1,718 1,882 1,937 1,1197 1}
+{13 1,260 1,366 1,451 1,610 1,797 1,1197 1}
+{4 1,56 1,156 1,454 1,1197 1}
+{4 1,344 1,366 1,676 1,718 1}
+{15 1,317 1,350 1,688 1,721 1,916 1,1015 1,1197 1}
+{13 1,451 1,610 1,797 1,1137 1}
+{13 1,260 1,1181 1}
+{13 1,61 1,123 1,260 1,350 1,505 1,610 1,716 1,849 1,1061 1,1197 1,1288 1}
+{13 1,31 1,56 1,93 1,125 1,127 1,134 1,156 1,260 1,595 1,661 1,1176 1,1197 1,1281 1}
+{13 1,610 1,654 1,891 1}
+{13 1,302 1,891 1}
+{13 1,14 1,302 1,1178 1}
+{2 1,17 1,69 1,76 1,169 1,317 1,324 1,350 1,610 1,718 1,863 1,914 1,1157 1,1181 1,1197 1,1301 1}
+{13 1,136 1,150 1,260 1,301 1,317 1,892 1,896 1,943 1,1181 1}
+{13 1,136 1,152 1,260 1,892 1,896 1,947 1,1197 1}
+{17 1,530 1,721 1,1169 1,1197 1}
+{4 1,13 1,260 1,505 1,1301 1}
+{13 1,260 1,430 1,1197 1}
+{4 1,24 1,48 1,60 1,105 1,133 1,146 1,195 1,260 1,505 1,591 1}
+{15 1,24 1,45 1,48 1,60 1,105 1,133 1,136 1,146 1,152 1,195 1,302 1,383 1,384 1,394 1,488 1}
+{4 1,31 1}
+{4 1,64 1,158 1,168 1,937 1,1197 1}
+{4 1,1197 1}
+{4 1}
+{4 1}
+{13 1,260 1,505 1,892 1}
+{13 1,135 1,302 1,317 1,505 1,896 1,1061 1}
+{13 1,136 1}
+{2 1,4 1,350 1,1197 1}
+{2 1,4 1,63 1,75 1,191 1,302 1,350 1,449 1,723 1,744 1,754 1,896 1,1197 1}
+{13 1,143 1,324 1,350 1,610 1,1197 1,1246 1}
+{15 1,302 1,667 1,718 1}
+{2 1,4 1,17 1,22 1,43 1,56 1,64 1,93 1,125 1,140 1,155 1,156 1,203 1,260 1,324 1,383 1,384 1,927 1,1182 1,1197 1,1246 1,1281 1}
+{15 1,270 1,738 1,772 1}
+{15 1,27 1,30 1,61 1,260 1,610 1,666 1,896 1,1050 1}
+{15 1,676 1}
+{15 1,48 1,164 1,914 1,1181 1}
+{15 1,718 1,1061 1}
+{13 1,260 1,326 1,384 1,914 1}
+{4 1,896 1}
+{4 1,218 1}
+{2 1,17 1,24 1,48 1,60 1,72 1,96 1,105 1,133 1,146 1,195 1,218 1,260 1,302 1,326 1,350 1,721 1,849 1,876 1,1160 1,1197 1}
+{6 1,41 1,58 1,84 1,621 1,1202 1}
+{6 1}
+{10 1,13 1,29 1,110 1,122 1,149 1,199 1,301 1,430 1,566 1,688 1,718 1,1288 1}
+{6 1,302 1,326 1,610 1,896 1}
+{15 1}
+{15 1,786 1,1202 1}
+{13 1,151 1,260 1,566 1}
+{15 1,210 1,213 1,218 1,231 1,242 1,786 1,896 1}
+{13 1,136 1,152 1,260 1,833 1,1197 1}
+{15 1,210 1}
+{15 1,210 1}
+{15 1,218 1}
+{9 1,781 1}
+{13 1,260 1,302 1,702 1,1004 1,1181 1,1197 1,1301 1}
+{4 1,69 1,76 1,93 1,125 1,169 1,208 1,287 1,302 1,350 1,384 1,702 1,718 1,721 1,739 1,1004 1,1197 1}
+{13 1,204 1,260 1,896 1}
+{4 1,38 1,47 1,104 1,111 1,1290 1}
+{9 1,301 1,540 1,718 1,722 1,896 1}
+{4 1,610 1}
+{13 1,136 1,152 1,301 1,1197 1}
+{4 1,63 1,191 1,302 1,721 1}
+{4 1,13 1,302 1,350 1,676 1,812 1,873 1,882 1,896 1,1112 1}
+{13 1}
+{3 1,4 1,13 1,17 1,287 1,302 1,598 1,900 1,1197 1}
+{9 1,29 1,110 1,122 1,149 1,199 1}
+{9 1,55 1,260 1,366 1,896 1,1134 1,1147 1}
+{9 1,1197 1}
+{9 1,260 1,366 1,896 1,1147 1}
+{13 1,260 1,896 1,1076 1}
+{9 1,1197 1}
+{4 1,17 1,29 1,110 1,122 1,149 1,199 1,260 1,302 1,350 1,610 1,688 1,849 1,892 1,1182 1,1280 1,1287 1,1290 1,1301 1}
+{9 1,260 1,896 1,984 1,1134 1,1147 1}
+{4 1,9 1,218 1,540 1}
+{9 1,1197 1}
+{4 1,9 1,231 1,260 1,718 1,896 1,1287 1}
+{9 1,260 1,896 1,984 1,1147 1}
+{4 1,9 1,242 1,260 1,407 1}
+{9 1,1197 1}
+{4 1,9 1,260 1,488 1}
+{9 1,55 1,260 1,896 1,1134 1,1147 1}
+{4 1,11 1,148 1,260 1,350 1,407 1,676 1,718 1,732 1,805 1,896 1,914 1,1181 1,1197 1}
+{9 1,1197 1}
+{13 1,44 1,69 1,76 1,97 1,98 1,169 1,181 1,185 1,260 1,350 1,882 1,896 1,1181 1,1197 1}
+{9 1,11 1,69 1,76 1,88 1,97 1,98 1,169 1,185 1,260 1,301 1,317 1,350 1,488 1,772 1,914 1,1093 1,1301 1}
+{9 1,260 1,896 1,1147 1}
+{4 1,260 1,350 1,384 1,394 1,488 1,623 1,688 1,896 1}
+{9 1,1197 1}
+{2 1,4 1,30 1,61 1,158 1,260 1,301 1,350 1,488 1,676 1,718 1,721 1,772 1,896 1,1197 1}
+{9 1,69 1,76 1,97 1,98 1,158 1,169 1,184 1,185 1,260 1,302 1,317 1,350 1,610 1,676 1,1147 1}
+{15 1}
+{9 1,1022 1}
+{15 1,666 1}
+{9 1,69 1,76 1,97 1,98 1,158 1,169 1,184 1,185 1,260 1,302 1,317 1,350 1,610 1,676 1,1147 1}
+{15 1,210 1,706 1}
+{9 1,1022 1}
+{15 1,666 1}
+{9 1,16 1}
+{15 1,706 1}
+{9 1,74 1,75 1,260 1,287 1,366 1,598 1,676 1,718 1,882 1,1171 1,1197 1}
+{15 1,51 1,1281 1}
+{9 1,74 1,75 1,260 1,302 1,366 1,618 1,676 1,718 1,896 1,1134 1,1197 1}
+{15 1,221 1,706 1}
+{15 1}
+{9 1,55 1,260 1,1181 1}
+{13 1,610 1,688 1}
+{9 1,106 1,118 1,122 1,149 1,260 1,302 1,317 1,350 1,488 1,610 1,718 1,849 1,851 1,896 1,914 1,920 1,1282 1,1290 1,1314 1}
+{13 1,145 1}
+{9 1,742 1,1288 1}
+{9 1,260 1,350 1,488 1,618 1,676 1,718 1,896 1,1197 1,1290 1}
+{9 1,16 1,238 1}
+{9 1,56 1,61 1,98 1,156 1,158 1,772 1,896 1,1197 1}
+{9 1,317 1,350 1,394 1,544 1,685 1,914 1}
+{9 1,24 1,48 1,60 1,105 1,133 1,146 1,195 1,260 1,324 1,610 1,783 1,1022 1}
+{9 1,71 1,350 1,1093 1}
+{9 1,488 1,718 1}
+{9 1,18 1,69 1,76 1,93 1,117 1,125 1,153 1,169 1,260 1,688 1,718 1,721 1,896 1,914 1,1181 1,1197 1}
+{9 1,69 1,76 1,93 1,97 1,98 1,125 1,169 1,185 1,260 1,350 1,394 1,718 1,721 1,896 1,923 1,1047 1,1181 1,1197 1}
+{9 1,301 1,394 1,610 1,1147 1}
+{9 1,384 1,488 1,668 1,676 1,718 1,1197 1}
+{9 1,41 1,58 1,84 1,264 1,610 1,735 1}
+{9 1}
+{3 1}
+{9 1}
+{9 1,48 1,64 1,168 1,260 1,302 1,317 1,350 1,384 1,394 1,488 1,718 1,896 1,900 1,914 1,1050 1,1093 1,1181 1,1197 1}
+{3 1,210 1,387 1}
+{9 1,260 1,350 1,394 1}
+{3 1,113 1,754 1,839 1,1206 1}
+{9 1,610 1,778 1}
+{3 1,218 1,440 1,610 1}
+{9 1,53 1,54 1,177 1,896 1}
+{3 1,573 1,754 1,839 1,1206 1}
+{9 1,103 1,112 1,488 1,676 1,718 1,778 1,922 1,953 1,1181 1,1290 1}
+{3 1,113 1,440 1,573 1,610 1,744 1,754 1,839 1,1206 1}
+{9 1,75 1,210 1,218 1,350 1,676 1,718 1,882 1,1197 1}
+{3 1,113 1,440 1,573 1,610 1,744 1,754 1,839 1,1206 1}
+{9 1,253 1,260 1,618 1,1197 1}
+{3 1,440 1,610 1}
+{9 1,132 1,145 1,618 1,675 1,777 1,812 1,914 1,1168 1}
+{3 1,113 1,754 1,839 1,1206 1}
+{9 1,75 1,86 1,260 1,302 1,488 1,676 1,718 1,721 1,778 1,1197 1}
+{3 1,247 1,440 1,610 1}
+{9 1,610 1,721 1,1061 1,1181 1,1197 1}
+{9 1,48 1,131 1,136 1,152 1,260 1,350 1,530 1,610 1,676 1,882 1,892 1,1112 1,1169 1,1181 1,1197 1}
+{6 1,9 1,41 1,58 1,84 1,610 1,1022 1}
+{9 1,61 1,141 1,676 1,896 1,1001 1,1197 1,1290 1,1321 1}
+{9 1,755 1,914 1,1001 1}
+{13 1,260 1,301 1,302 1,718 1,896 1,914 1}
+{4 1,260 1,350 1,384 1,394 1,451 1,688 1,896 1,1060 1,1290 1}
+{4 1,324 1,384 1,896 1,1060 1}
+{11 1,22 1,29 1,43 1,64 1,110 1,122 1,129 1,140 1,149 1,162 1,199 1,260 1,384 1,718 1,896 1,1247 1,1280 1}
+{11 1}
+{15 1}
+{11 1,15 1,231 1,618 1,685 1,886 1,1301 1}
+{11 1,15 1,699 1}
+{11 1,15 1,210 1,447 1,1301 1}
+{11 1,15 1,699 1}
+{11 1,15 1,210 1,447 1,1301 1}
+{11 1,15 1,220 1}
+{11 1,15 1,1301 1}
+{11 1,15 1}
+{11 1,15 1,1301 1}
+{11 1,15 1}
+{15 1}
+{15 1,129 1,162 1,231 1,688 1,1060 1,1181 1}
+{15 1,220 1,540 1,1184 1,1197 1}
+{15 1,287 1,896 1}
+{13 1,83 1,137 1,260 1,896 1,923 1}
+{9 1,61 1,158 1,260 1,301 1,350 1,365 1,394 1,772 1,896 1,914 1,923 1,1020 1}
+{13 1,291 1}
+{13 1,301 1,353 1,688 1,721 1,822 1}
+{9 1,69 1,76 1,101 1,119 1,219 1,230 1,254 1,260 1,488 1,604 1,610 1,718 1,721 1,785 1,896 1,914 1,937 1,1176 1,1181 1,1197 1,1283 1}
+{9 1,210 1,488 1,604 1,750 1,1283 1}
+{6 1,316 1}
+{6 1,13 1,301 1,316 1,610 1}
+{6 1,918 1}
+{6 1,918 1}
+{2 1,302 1,718 1,896 1,1076 1,1237 1}
+{2 1,6 1,718 1,756 1,863 1,900 1,1132 1,1321 1}
+{0 1,2 1,6 1,302 1,851 1}
+{0 1,2 1,6 1}
+{0 1,2 1,6 1,718 1,863 1,1321 1}
+{0 1,2 1,6 1,688 1}
+{0 1,2 1,5 1,6 1,260 1,688 1,812 1,914 1,1280 1}

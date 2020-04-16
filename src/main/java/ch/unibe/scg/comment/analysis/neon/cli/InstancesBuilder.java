@@ -14,13 +14,21 @@ import java.util.Set;
 
 public class InstancesBuilder {
 
-	public static final String[] TFIDF_FILTER_OPTIONS = new String[]{
+	public static final String[] TFIDF_FIXED_FILTER_OPTIONS = new String[]{
 			"-P", "tfidf-", // attribute prefix
 			"-L", // lowercase
 			"-stemmer", "weka.core.stemmers.IteratedLovinsStemmer", // stemmer
 			"-C", "true", // word counts
 			"-T", "true", // TF
 			"-I", "true" // IDF
+	};
+	public static final String[] TFIDF_EXTRACT_FILTER_OPTIONS = new String[]{
+			"-P", "tfidf-", // attribute prefix
+			"-L", // lowercase
+			"-stemmer", "weka.core.stemmers.IteratedLovinsStemmer", // stemmer
+			"-C", // word counts
+			"-T", // TF
+			"-I" // IDF
 	};
 	private final List<String> categories;
 	private final File heuristics;
@@ -132,7 +140,7 @@ public class InstancesBuilder {
 	private Instances tfidf(Instances instances) throws Exception {
 		int i = instances.attribute("text").index() + 1;
 		FixedDictionaryStringToWordVector filter = new FixedDictionaryStringToWordVector();
-		filter.setOptions(TFIDF_FILTER_OPTIONS);
+		filter.setOptions(TFIDF_FIXED_FILTER_OPTIONS);
 		filter.setAttributeIndices(String.format("%d-%d", i, i));
 		filter.setDictionaryFile(this.dictionary);
 		filter.setInputFormat(instances);

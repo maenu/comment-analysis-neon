@@ -53,8 +53,8 @@ public class PrepareExtractors {
 			for (String category : this.categories(statement)) {
 				try (
 						ResultSet result = statement.executeQuery(
-								"SELECT partition, \"" + category + "\" FROM " + this.data
-										+ "_preprocessed JOIN pharo_partition on (pharo_partition.class = " + this.data
+								"SELECT partition, \"" + category + "\" FROM " + this.data + "_preprocessed JOIN "
+										+ this.data + "_partition on (" + this.data + "_partition.class = " + this.data
 										+ "_preprocessed.class) WHERE \"" + category + "\" IS NOT NULL")
 				) {
 					while (result.next()) {
@@ -126,7 +126,7 @@ public class PrepareExtractors {
 		Path path = Files.createTempFile("dictionary", ".csv");
 		try {
 			StringToWordVector filter = new StringToWordVector();
-			filter.setOptions(InstancesBuilder.TFIDF_FILTER_OPTIONS);
+			filter.setOptions(InstancesBuilder.TFIDF_EXTRACT_FILTER_OPTIONS);
 			filter.setWordsToKeep(this.wordsToKeep);
 			filter.setAttributeIndicesArray(new int[]{0}); // first attribute is sentence
 			filter.setDoNotOperateOnPerClassBasis(true); // keep words irrespective of class
