@@ -1,0 +1,359 @@
+Evaluator,Reviewer ,Reviewer 2,Convention,Class,Comment,comment length,Summary,Usage,Parameters,Expand,Version,Development Notes,Todo,Exception,Links,Noise,warning,Recommendation,Dependecies,Precondition,Coding Guidelines,Extension,Subclass explaination,Observation
+E1,E2 (agree),,https://jupyter.readthedocs.io/en/latest/development_guide/documenting_ipython.html,Obj,Namespace to hold arbitrary information.,1,Namespace to hold arbitrary information.,,,,,,,,,,,,,,,,,
+E1,,E3 (agree),Numpy convention,capture_output,context manager for capturing stdout/err,1,context manager for capturing stdout/err,,,,,,,,,,,,,,,,,
+E2,E1 (agree),,,CellMagicRole,Cross reference role displayed with a %% prefix,1,Cross reference role displayed with a %% prefix,,,,,,,,,,,,,,,,,
+E2,,E3 (agree),,TBTools,Basic tools used by all traceback printer classes.,1,Basic tools used by all traceback printer classes.,,,,,,,,,,,,,,,,,
+E3,E1 (agree),,,CapturingDisplayPublisher,"
+A DisplayPublisher that store",1,"
+A DisplayPublisher that store",,,,,,,,,,,,,,,,,
+E3,E2 (agree),,,HelpEnd,Transformer for help syntax: obj? and obj??,1,Transformer for help syntax: obj? and obj??,,,,,,,,,,,,,,,,,
+E4,E1 (agree),,,RichPromptDisplayHook,"
+Subclass of base display hook using coloured prompt",1,Subclass of base display hook using coloured prompt,,,,,,,,,,,,,,,,,
+E4,E2 (agree),,,IPythonInputSplitter,"
+An input splitter that recognizes all of IPython's special syntax.",1,An input splitter that recognizes all of IPython's special syntax.,,,,,,,,,,,,,,,,,
+E1,,E4 (agree),,CellMagicRole,Cross reference role displayed with a %% prefix,1,Cross reference role displayed with a %% prefix,,,,,,,,,,,,,,,,,
+E2,,E4 (agree),,MyFrame,"
+This is MyFrame.  It just shows a few controls on a wxPanel,
+and has a simple menu.",2,"
+This is MyFrame.  It just shows a few controls on a wxPanel,
+and has a simple menu.",,,,,,,,,,,,,,,,,
+E3,,E4 (agree),,DummyMod,"
+A dummy module used for IPython's interactive module when
+a namespace must be assigned to the module's __dict__.",2,"A dummy module used for IPython's interactive module when
+a namespace must be assigned to the module's __dict__.",,,,,,,,,,,,,,,,,
+E4,,E3 (agree),,LazyEvaluate,"This is used for formatting strings with values that need to be updated
+at that time, such as the current time or working directory.",2,,,,,,"This is used for formatting strings with values that need to be updated
+at that time, such as the current time or working directory.",,,,,"This is used for formatting strings with values that need to be updated
+at that time, such as the current time or working directory.",,,,,,,
+E1,E2 (agree),,,DisplayHook,"The custom IPython displayhook to replace sys.displayhook.
+
+This class does many things, but the basic idea is that it is a callable
+that gets called anytime user code returns a value.",3,The custom IPython displayhook to replace sys.displayhook.,,,"This class does many things, but the basic idea is that it is a callable
+that gets called anytime user code returns a value.",,,,,,,,,,,,,,
+E2,E1 (agree),,,HistoryAccessor,,4,"
+Access the history database without adding to it.
+","
+This is intended for use by standalone history tools. IPython shells use
+HistoryManager, below, which is a subclass of this.",,,,,,,,,,,,,,,,
+E3,E1 (agree),,,GeoJSON,"
+GeoJSON expects JSON-able dict
+
+not an already-serialized JSON string.
+
+Scalar types (None, number, string) are not allowed, only dict containers.",5,"GeoJSON expects JSON-able dict
+",,,,,"not an already-serialized JSON string.
+
+Scalar types (None, number, string) are not allowed, only dict containers.",,,,,"not an already-serialized JSON string.
+
+Scalar types (None, number, string) are not allowed, only dict containers.",,,,,,,
+E4,E1 (disagree),E3 (agree with E1),,UserMagics,"
+Placeholder for user-defined magics to be added at runtime.
+
+All magics are eventually merged into a single namespace at runtime, but we
+use this class to isolate the magics defined dynamically by the user into
+their own class.",5,Placeholder for user-defined magics to be added at runtime.,,,"All magics are eventually merged into a single namespace at runtime, but we
+use this class to isolate the magics defined dynamically by the user into
+their own class.",,"All magics are eventually merged into a single namespace at runtime, but we
+use this class to isolate the magics defined dynamically by the user into
+their own class.",,,,,"All magics are eventually merged into a single namespace at runtime, but we
+use this class to isolate the magics defined dynamically by the user into
+their own class.",,,,,,,
+E1,,E3 (disagree),,TermColors,"
+Color escape sequences.
+
+This class defines the escape sequences for all the standard (ANSI?)
+colors in terminals. Also defines a NoColor escape which is just the null
+string, suitable for defining 'dummy' color schemes in terminals which get
+confused by color escapes.
+
+This class should be used as a mixin for building color schemes.",8,"Color escape sequences.
+
+This class defines the escape sequences for all the standard (ANSI?)
+colors in terminals. Also defines a NoColor escape which is just the null
+string, suitable for defining 'dummy' color schemes in terminals which get
+confused by color escapes.
+
+",This class should be used as a mixin for building color schemes.,,,,,,,,,,This class should be used as a mixin for building color schemes.,,,,,,
+E2,,E3 (agree),,Struct,"
+A dict subclass with attribute style access.
+
+This dict subclass has a a few extra features:
+
+* Attribute style access.
+* Protection of class members (like keys, items) when using attribute
+  style access.
+* The ability to restrict assignment to only existing keys.
+* Intelligent merging.
+* Overloaded operators.",10,"
+A dict subclass with attribute style access.
+",,,"
+This dict subclass has a a few extra features:
+
+* Attribute style access.
+* Protection of class members (like keys, items) when using attribute
+  style access.
+* The ability to restrict assignment to only existing keys.
+* Intelligent merging.
+* Overloaded operators.",,,,,,,,,,,,,,
+E3,E2 (agree),,,InteractiveShellApp,"
+A Mixin for applications that start InteractiveShell instances.
+
+Provides configurables for loading extensions and executing files
+as part of configuring a Shell environment.
+
+The following methods should be called by the :meth:`initialize` method
+of the subclass:
+
+  - :meth:`init_path`
+  - :meth:`init_shell` (to be implemented by the subclass)
+  - :meth:`init_gui_pylab`
+  - :meth:`init_extensions`
+  - :meth:`init_code`",13,"A Mixin for applications that start InteractiveShell instances.Provides configurables for loading extensions and executing files
+as part of configuring a Shell environment.",,,"The following methods should be called by the :meth:`initialize` method
+of the subclass:
+
+  - :meth:`init_path`
+  - :meth:`init_shell` (to be implemented by the subclass)
+  - :meth:`init_gui_pylab`
+  - :meth:`init_extensions`
+  - :meth:`init_code`",,,,,,,,,,,,,"The following methods should be called by the :meth:`initialize` method
+of the subclass:
+
+  - :meth:`init_path`
+  - :meth:`init_shell` (to be implemented by the subclass)
+  - :meth:`init_gui_pylab`
+  - :meth:`init_extensions`
+  - :meth:`init_code`",
+E4,E2 (agree),,,Magics,"
+Base class for implementing magic functions.
+
+Shell functions which can be reached as %function_name. All magic
+functions should accept a string, which they can parse for their own
+needs. This can make some functions easier to type, eg `%cd ../`
+vs. `%cd(""../"")`
+
+Classes providing magic functions need to subclass this class, and they
+MUST:
+
+- Use the method decorators `@line_magic` and `@cell_magic` to decorate
+  individual methods as magic functions, AND
+
+- Use the class decorator `@magics_class` to ensure that the magic
+  methods are properly registered at the instance level upon instance
+  initialization.
+
+See :mod:`magic_functions` for examples of actual implementation classes.",18,Base class for implementing magic functions.,"Classes providing magic functions need to subclass this class, and they
+MUST:
+
+- Use the method decorators `@line_magic` and `@cell_magic` to decorate
+  individual methods as magic functions, AND
+
+- Use the class decorator `@magics_class` to ensure that the magic
+  methods are properly registered at the instance level upon instance
+  initialization.",,"""All magic functions should accept a string, which they can parse for their own needs. 
+
+""",,"Shell functions which can be reached as %function_name.
+
+This can make some functions easier to type, eg `%cd ../`
+vs. `%cd(""../"")`",,,See :mod:`magic_functions` for examples of actual implementation classes.,,"All magic functions should accept a string, which they can parse for their own needs. 
+","Shell functions which can be reached as %function_name.
+
+This can make some functions easier to type, eg `%cd ../`
+vs. `%cd(""../"")`",,"All magic functions should accept a string, which they can parse for their own needs. 
+",,,,
+E1,,E4 (agree),,Audio,"
+Create an audio object.
+
+When this object is returned by an input cell or passed to the
+display function, it will result in Audio controls being displayed
+in the frontend (only works in the notebook).
+
+Parameters
+----------
+data : numpy array, list, unicode, str or bytes
+    Can be one of
+
+      * Numpy 1d array containing the desired waveform (mono)
+      * Numpy 2d array containing waveforms for each channel.
+        Shape=(NCHAN, NSAMPLES). For the standard channel order, see
+        http://msdn.microsoft.com/en-us/library/windows/hardware/dn653308(v=vs.85).aspx
+      * List of float or integer representing the waveform (mono)
+      * String containing the filename
+      * Bytestring containing raw PCM data or
+      * URL pointing to a file on the web.
+
+    If the array option is used, the waveform will be normalized.
+
+    If a filename or url is used, the format support will be browser
+    dependent.
+url : unicode
+    A URL to download the data from.
+filename : unicode
+    Path to a local file to load the data from.
+embed : boolean
+    Should the audio data be embedded using a data URI (True) or should
+    the original source be referenced. Set this to True if you want the
+    audio to playable later with no internet connection in the notebook.
+
+    Default is `True`, unless the keyword argument `url` is set, then
+    default value is `False`.
+rate : integer
+    The sampling rate of the raw data.
+    Only required when data parameter is being used as an array
+autoplay : bool
+    Set to True if the audio should immediately start playing.
+    Default is `False`.
+normalize : bool
+    Whether audio should be normalized (rescaled) to the maximum possible
+    range. Default is `True`. When set to `False`, `data` must be between
+    -1 and 1 (inclusive), otherwise an error is raised.
+    Applies only when `data` is a list or array of samples; other types of
+    audio are never normalized.
+
+Examples
+--------
+::
+
+    # Generate a sound
+    import numpy as np
+    framerate = 44100
+    t = np.linspace(0,5,framerate*5)
+    data = np.sin(2*np.pi*220*t) + np.sin(2*np.pi*224*t)
+    Audio(data,rate=framerate)
+
+    # Can also do stereo or more channels
+    dataleft = np.sin(2*np.pi*220*t)
+    dataright = np.sin(2*np.pi*224*t)
+    Audio([dataleft, dataright],rate=framerate)
+
+    Audio(""http://www.nch.com.au/acm/8k16bitpcm.wav"")  # From URL
+    Audio(url=""http://www.w3schools.com/html/horse.ogg"")
+
+    Audio('/path/to/sound.wav')  # From file
+    Audio(filename='/path/to/sound.ogg')
+
+    Audio(b'RAW_WAV_DATA..)  # From bytes
+    Audio(data=b'RAW_WAV_DATA..)
+
+See Also
+--------
+
+See also the ``Audio`` widgets form the ``ipywidget`` package for more flexibility and options.",78,Create an audio object.,"Examples
+--------
+::
+
+    # Generate a sound
+    import numpy as np
+    framerate = 44100
+    t = np.linspace(0,5,framerate*5)
+    data = np.sin(2*np.pi*220*t) + np.sin(2*np.pi*224*t)
+    Audio(data,rate=framerate)
+
+    # Can also do stereo or more channels
+    dataleft = np.sin(2*np.pi*220*t)
+    dataright = np.sin(2*np.pi*224*t)
+    Audio([dataleft, dataright],rate=framerate)
+
+    Audio(""http://www.nch.com.au/acm/8k16bitpcm.wav"")  # From URL
+    Audio(url=""http://www.w3schools.com/html/horse.ogg"")
+
+    Audio('/path/to/sound.wav')  # From file
+    Audio(filename='/path/to/sound.ogg')
+
+    Audio(b'RAW_WAV_DATA..)  # From bytes
+    Audio(data=b'RAW_WAV_DATA..)","Parameters
+----------
+data : numpy array, list, unicode, str or bytes
+    Can be one of
+
+      * Numpy 1d array containing the desired waveform (mono)
+      * Numpy 2d array containing waveforms for each channel.
+        Shape=(NCHAN, NSAMPLES). For the standard channel order, see
+        http://msdn.microsoft.com/en-us/library/windows/hardware/dn653308(v=vs.85).aspx
+      * List of float or integer representing the waveform (mono)
+      * String containing the filename
+      * Bytestring containing raw PCM data or
+      * URL pointing to a file on the web.
+
+    If the array option is used, the waveform will be normalized.
+
+    If a filename or url is used, the format support will be browser
+    dependent.
+url : unicode
+    A URL to download the data from.
+filename : unicode
+    Path to a local file to load the data from.
+embed : boolean
+    Should the audio data be embedded using a data URI (True) or should
+    the original source be referenced. Set this to True if you want the
+    audio to playable later with no internet connection in the notebook.
+
+    Default is `True`, unless the keyword argument `url` is set, then
+    default value is `False`.
+rate : integer
+    The sampling rate of the raw data.
+    Only required when data parameter is being used as an array
+autoplay : bool
+    Set to True if the audio should immediately start playing.
+    Default is `False`.
+normalize : bool
+    Whether audio should be normalized (rescaled) to the maximum possible
+    range. Default is `True`. When set to `False`, `data` must be between
+    -1 and 1 (inclusive), otherwise an error is raised.
+    Applies only when `data` is a list or array of samples; other types of
+    audio are never normalized.
+","When this object is returned by an input cell or passed to the
+display function, it will result in Audio controls being displayed
+in the frontend (only works in the notebook).
+",,,,,"See Also
+--------
+
+See also the ``Audio`` widgets form the ``ipywidget`` package for more flexibility and options.",,,,,,,,,
+E2,,E4 (disagree),,YouTubeVideo,"
+Class for embedding a YouTube Video in an IPython session, based on its video id.
+
+e.g. to embed the video from https://www.youtube.com/watch?v=foo , you would
+do::
+
+    vid = YouTubeVideo(""foo"")
+    display(vid)
+
+To start from 30 seconds::
+
+    vid = YouTubeVideo(""abc"", start=30)
+    display(vid)
+
+To calculate seconds from time as hours, minutes, seconds use
+:class:`datetime.timedelta`::
+
+    start=int(timedelta(hours=1, minutes=46, seconds=40).total_seconds())
+
+Other parameters can be provided as documented at
+https://developers.google.com/youtube/player_parameters#Parameters
+
+When converting the notebook using nbconvert, a jpeg representation of the video
+will be inserted in the document.",23,"
+Class for embedding a YouTube Video in an IPython session, based on its video id.
+","
+When converting the notebook using nbconvert, a jpeg representation of the video
+will be inserted in the document.
+
+e.g. to embed the video from https://www.youtube.com/watch?v=foo , you would
+do::
+
+    vid = YouTubeVideo(""foo"")
+    display(vid)
+
+To start from 30 seconds::
+
+    vid = YouTubeVideo(""abc"", start=30)
+    display(vid)
+
+To calculate seconds from time as hours, minutes, seconds use
+:class:`datetime.timedelta`::
+
+    start=int(timedelta(hours=1, minutes=46, seconds=40).total_seconds())
+
+","Other parameters can be provided as documented at
+https://developers.google.com/youtube/player_parameters#Parameters",,,,,,"Other parameters can be provided as documented at
+https://developers.google.com/youtube/player_parameters#Parameters",,,,,,,,,

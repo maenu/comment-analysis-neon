@@ -1,0 +1,1931 @@
+Evaluator,Reviewer ,Reviewer 2,Convention,Class,Comment,comment length,Summary,Usage,Parameters,Expand,Version,Development Notes,Todo,Exception,Links,Noise,Warning,Recommendation,Dependecies,Precondition,Coding Guidelines,Extension,Subclass explnation,Observation
+E1,E2 (agree),,https://github.com/pytorch/pytorch/blob/master/CONTRIBUTING.md,EnforceUnique,Raises an error if a key is seen more than once.,1,Raises an error if a key is seen more than once.,,,,,,,,,,,,,,,,,
+E1,E2 (agree),,Google Style,BaseTestCase,Base class used for all TensorBoard tests ,1,Base class used for all TensorBoard tests ,,,,,,,,,,,,,,,,,
+E3,E1 (agree),,https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html,ExceptionWrapper,Wraps an exception plus traceback to communicate across threads,1,Wraps an exception plus traceback to communicate across threads,,,,,,,,,,,,,,,,,
+E3,E2 (agree),,,StackedLSTMWithDropout,"Necessary for iterating through self.layers and dropout support
+ ",1,Necessary for iterating through self.layers and dropout support,,,,,,,,,,,,,,,,,
+E2,E1 (agree),,,ResNetBuilder,Helper class for constructing residual blocks.,1,Helper class for constructing residual blocks.,,,,,,,,,,,,,,,,,
+E2,,E3 (agree),,UploadTaskGroupBuilder,A simple class to upload checkpoints.,1,A simple class to upload checkpoints.,,,,,,,,,,,,,,,,,
+E4,E1 (agree),,,SharedCache,"
+dictionary from multiprocessing handles to StorageWeakRef",1,dictionary from multiprocessing handles to StorageWeakRef,,,,,,,,,,,,,,,,,
+E4,E2 (agree),,,TestQuantizedLinear,Tests the correctness of the quantized linear and linear_relu op.,1,Tests the correctness of the quantized linear and linear_relu op.,,,,,,,,,,,,,,,,,
+E1,,E3 (agree),,TestBuiltins,Tests for TorchScript support of Python builtin functions.,1,Tests for TorchScript support of Python builtin functions.,,,,,,,,,,,,,,,,,
+E1,,E4 (agree),,UploadTaskGroupBuilder,A simple class to upload checkpoints,1,A simple class to upload checkpoints,,,,,,,,,,,,,,,,,
+E3,,E4 (disagree),,cuFFTPlanCacheAttrContextProp,"Like regular ContextProp, but uses the `.device_index` attribute from the
+    calling object as the first argument to the getter and setter.",2,"Like regular ContextProp, but uses the `.device_index` attribute from the calling object as the first argument to the getter and setter.",,"Like regular ContextProp, but uses the `.device_index` attribute from the calling object as the first argument to the getter and setter.",,,,,,,,,,,,,,,
+E3,E1 (disagree),,,DeQuantStub,"
+Dequantize stub module, before calibration, this is same as identity,
+this will be swapped as `nnq.DeQuantize` in `convert`.",2,"Dequantize stub module, before calibration, this is same as identity,
+this will be swapped as `nnq.DeQuantize` in `convert`.",,,"this is same as identity,
+this will be swapped as `nnq.DeQuantize` in `convert`.",,,,,,,,,,,,,,
+E2,,E4 (agree),,BoundedGradientProjection,"
+Wright, S., & Nocedal, J. (1999). Numerical optimization. Springer Science,
+35(67-68), 7. Chapter 16",2,,,,,,,,,"
+Wright, S., & Nocedal, J. (1999). Numerical optimization. Springer Science,
+35(67-68), 7. Chapter 16",,,,,,,,,
+E2,E1 (disagree),,,TestYellowFin,"YellowFin: An automatic tuner for momentum SGD
+    (https://arxiv.org/abs/1706.03471)",2,YellowFin: An automatic tuner for momentum SGD,,,,,,,,"YellowFin: An automatic tuner for momentum SGD
+    (https://arxiv.org/abs/1706.03471)",,,,,,,,,
+E4,,E3 (agree),,TaskOutput,"
+Represents the output of a task. An output can be a blob,
+a list of blob, or a record.",2,Represents the output of a task.,,"An output can be a blob, a list of blob, or a record.",,,,,,,,,,,,,,,
+E4,E1 (agree),,,ExternalInitializer,"This class is used in cases when the parameter should not be initialized by
+the initializer, but rather provided in the workspace when param_init_net is
+executed.
+
+Current version is not doing any real sanity checks to the parameter.",5,,"This class is used in cases when the parameter should not be initialized by
+the initializer, but rather provided in the workspace when param_init_net is
+executed.",,,,Current version is not doing any real sanity checks to the parameter.,,,,,,,,,,,,
+E1,E2 (disagree),,,Subset,"
+Subset of a dataset at specified indices.
+
+Arguments:
+    dataset (Dataset): The whole Dataset
+    indices (sequence): Indices in the whole set selected for subset",5,Subset of a dataset at specified indices,,"Arguments:
+    dataset (Dataset): The whole Dataset
+    indices (sequence): Indices in the whole set selected for subset",,,,,,,,,,,,,,,
+E1,,E3 (agree),,YellowFinOptimizer,"
+YellowFin: An automatic tuner for momentum SGD
+
+See https://arxiv.org/abs/1706.03471 for more details. This implementation
+has separate learning rate and momentum per each parameter.",4,YellowFin: An automatic tuner for momentum SGD,,,,,This implementation has separate learning rate and momentum per each parameter.,,,See https://arxiv.org/abs/1706.03471 for more details. ,,,,,,,,,
+E3,E2 (agree),,,LastNWindowCollector,"
+Collect last-N samples from input record. If you have complex data,
+use PackRecords to pack it before using this layer.
+
+This layer is not thread safe.",4,Collect last-N samples from input record.,,,,,"If you have complex data,
+use PackRecords to pack it before using this layer.
+
+This layer is not thread safe.",,,,,This layer is not thread safe.,"If you have complex data,
+use PackRecords to pack it before using this layer.",,,,,,
+E3,,E4 (agree),,ConvReLU3d,"
+A ConvReLU3d module is a fused module of Conv3d and ReLU
+
+We adopt the same interface as :class:`torch.nn.quantized.Conv3d`.
+
+.. note::
+Attributes: Same as torch.nn.quantized.Conv3d",6,"
+A ConvReLU3d module is a fused module of Conv3d and ReLU",,,"We adopt the same interface as :class:`torch.nn.quantized.Conv3d`.
+Attributes: Same as torch.nn.quantized.Conv3d",,"
+.. note::
+Attributes: Same as torch.nn.quantized.Conv3d",,,,,"
+.. note::
+Attributes: Same as torch.nn.quantized.Conv3d",,,,,,,
+E2,,E3 (agree),,Caffe2OperatorTestCase,"
+This class includes all the information needed to benchmark an operator.
+op_bench: it's a user-defined class (child of Caffe2BenchmarkBase)
+which includes input and operator, .etc
+test_config: a namedtuple includes test_name, input_shape, tag, run_backward.
+When run_backward is false, the run_forward method will be executed, otherwise
+run_backward method will be executed.",6,This class includes all the information needed to benchmark an operator.,,,"
+op_bench: it's a user-defined class (child of Caffe2BenchmarkBase)
+which includes input and operator, .etc
+test_config: a namedtuple includes test_name, input_shape, tag, run_backward.
+When run_backward is false, the run_forward method will be executed, otherwise
+run_backward method will be executed.",,,,,,,,,,,,,,
+E2,,E4 (disagree),,NetModifier,"
+An abstraction class for supporting modifying a generated net.
+Inherited classes should implement the modify_net method where
+related operators are added to the net.
+
+Example usage:
+    modifier = SomeNetModifier(opts)
+    modifier(net)",7,"
+An abstraction class for supporting modifying a generated net.","
+Example usage:
+    modifier = SomeNetModifier(opts)
+    modifier(net)",,"
+Inherited classes should implement the modify_net method where
+related operators are added to the net.
+",,,,,,,,,,,,,"Inherited classes should implement the modify_net method where
+related operators are added to the net.",
+E4,E2 (agree),,,BuildType,"Checks build type. The build type will be given in :attr:`cmake_build_type_env`. If :attr:`cmake_build_type_env`
+is ``None``, then the build type will be inferred from ``CMakeCache.txt``. If ``CMakeCache.txt`` does not exist,
+os.environ['CMAKE_BUILD_TYPE'] will be used.
+
+Arguments:
+  cmake_build_type_env (str): The value of os.environ['CMAKE_BUILD_TYPE']. If None, the actual build type will be
+    inferred.",7,Checks build type.,"The build type will be given in :attr:`cmake_build_type_env`. If :attr:`cmake_build_type_env`
+is ``None``, then the build type will be inferred from ``CMakeCache.txt``. If ``CMakeCache.txt`` does not exist,
+os.environ['CMAKE_BUILD_TYPE'] will be used.","Arguments:
+cmake_build_type_env (str): The value of os.environ['CMAKE_BUILD_TYPE']. If None, the actual build type will be inferred.",,,,,,,,,,,,,,,
+E4,,E3 (agree),,StackTransform,"Transform functor that applies a sequence of transforms `tseq`
+component-wise to each submatrix at `dim`
+in a way compatible with :func:`torch.stack`.
+
+Example::
+   x = torch.stack([torch.range(1, 10), torch.range(1, 10)], dim=1)
+   t = StackTransform([ExpTransform(), identity_transform], dim=1)
+   y = t(x)",8,"Transform functor that applies a sequence of transforms `tseq`
+component-wise to each submatrix at `dim`
+in a way compatible with :func:`torch.stack`.","Example::
+   x = torch.stack([torch.range(1, 10), torch.range(1, 10)], dim=1)
+   t = StackTransform([ExpTransform(), identity_transform], dim=1)
+   y = t(x)",,,,,,,,,,,,,,,,
+E1,,E4 (agree),,QuantWrapper,"
+A wrapper class that wraps the input module, adds QuantStub and
+DeQuantStub and surround the call to module with call to quant and dequant
+modules.
+
+This is used by the `quantization` utility functions to add the quant and
+dequant modules, before `convert` function `QuantStub` will just be observer,
+it observes the input tensor, after `convert`, `QuantStub`
+will be swapped to `nnq.Quantize` which does actual quantization. Similarly
+for `DeQuantStub`.",9,"A wrapper class that wraps the input module, adds QuantStub and
+DeQuantStub and surround the call to module with call to quant and dequant
+modules.",,,"This is used by the `quantization` utility functions to add the quant and
+dequant modules, before `convert` function `QuantStub` will just be observer,
+it observes the input tensor, after `convert`, `QuantStub`
+will be swapped to `nnq.Quantize` which does actual quantization. Similarly
+for `DeQuantStub`.",,,,,,,,,,,,,,
+E1,E2 (agree),,,Error,"
+Each error is a section in the output of cuda-memcheck.
+Each error in the report has an error message and a backtrace. It looks like:
+
+========= Program hit cudaErrorInvalidValue (error 1) due to ""invalid argument"" on CUDA API call to cudaGetLastError.
+=========     Saved host backtrace up to driver entry point at error
+=========     Host Frame:/usr/lib/x86_64-linux-gnu/libcuda.so.1 [0x38c7b3]
+=========     Host Frame:/usr/local/cuda/lib64/libcudart.so.10.1 (cudaGetLastError + 0x163) [0x4c493]
+=========     Host Frame:/home/xgao/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch.so [0x5b77a05]
+=========     Host Frame:/home/xgao/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch.so [0x39d6d1d]
+=========     .....",10,Each error is a section in the output of cuda-memcheck.,,,Each error in the report has an error message and a backtrace,,,,"`========= Program hit cudaErrorInvalidValue (error 1) due to ""invalid argument"" on CUDA API call to cudaGetLastError",,,,,,,,,,
+E2,E1 (disagree),,,FisherSnedecor,"
+Creates a Fisher-Snedecor distribution parameterized by :attr:`df1` and :attr:`df2`.
+
+Example::
+
+    >>> m = FisherSnedecor(torch.tensor([1.0]), torch.tensor([2.0]))
+    >>> m.sample()  # Fisher-Snedecor-distributed with df1=1 and df2=2
+    tensor([ 0.2453])
+
+Args:
+    df1 (float or Tensor): degrees of freedom parameter 1
+    df2 (float or Tensor): degrees of freedom parameter 2",11,"
+Creates a Fisher-Snedecor distribution parameterized by :attr:`df1` and :attr:`df2`.
+
+","Example::
+
+    >>> m = FisherSnedecor(torch.tensor([1.0]), torch.tensor([2.0]))
+    >>> m.sample()  # Fisher-Snedecor-distributed with df1=1 and df2=2
+    tensor([ 0.2453])
+
+","Args:
+    df1 (float or Tensor): degrees of freedom parameter 1
+    df2 (float or Tensor): degrees of freedom parameter 2",,,,,,,,,,,,,,,
+E2,,E3 (disagree),,Poisson,"
+Creates a Poisson distribution parameterized by :attr:`rate`, the rate parameter.
+
+Samples are nonnegative integers, with a pmf given by
+
+.. math::
+  \mathrm{rate}^k \frac{e^{-\mathrm{rate}}}{k!}
+
+Example::
+
+    >>> m = Poisson(torch.tensor([4]))
+    >>> m.sample()
+    tensor([ 3.])
+
+Args:
+    rate (Number, Tensor): the rate parameter",15,"
+Creates a Poisson distribution parameterized by :attr:`rate`, the rate parameter.
+","
+Samples are nonnegative integers, with a pmf given by
+
+.. math::
+  \mathrm{rate}^k \frac{e^{-\mathrm{rate}}}{k!}
+
+Example::
+
+    >>> m = Poisson(torch.tensor([4]))
+    >>> m.sample()
+    tensor([ 3.])
+","
+Args:
+    rate (Number, Tensor): the rate parameter","
+Samples are nonnegative integers, with a pmf given by
+
+.. math::
+  \mathrm{rate}^k \frac{e^{-\mathrm{rate}}}{k!}",,,,,,,,,,,,,,
+E3,E1 (agree),,,Adamax,"
+Implements Adamax algorithm (a variant of Adam based on infinity norm).
+
+It has been proposed in `Adam: A Method for Stochastic Optimization`__.
+
+Arguments:
+    params (iterable): iterable of parameters to optimize or dicts defining
+        parameter groups
+    lr (float, optional): learning rate (default: 2e-3)
+    betas (Tuple[float, float], optional): coefficients used for computing
+        running averages of gradient and its square
+    eps (float, optional): term added to the denominator to improve
+        numerical stability (default: 1e-8)
+    weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
+
+__ https://arxiv.org/abs/1412.6980",15,"
+Implements Adamax algorithm (a variant of Adam based on infinity norm).
+It has been proposed in `Adam: A Method for Stochastic Optimization`__.
+",,"Arguments:
+    params (iterable): iterable of parameters to optimize or dicts defining
+        parameter groups
+    lr (float, optional): learning rate (default: 2e-3)
+    betas (Tuple[float, float], optional): coefficients used for computing
+        running averages of gradient and its square
+    eps (float, optional): term added to the denominator to improve
+        numerical stability (default: 1e-8)
+    weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
+",,,,,,__ https://arxiv.org/abs/1412.6980,,,,,,,,,
+E3,E2 (agree),,,Adadelta,"
+Implements Adadelta algorithm.
+
+It has been proposed in `ADADELTA: An Adaptive Learning Rate Method`__.
+
+Arguments:
+    params (iterable): iterable of parameters to optimize or dicts defining
+        parameter groups
+    rho (float, optional): coefficient used for computing a running average
+        of squared gradients (default: 0.9)
+    eps (float, optional): term added to the denominator to improve
+        numerical stability (default: 1e-6)
+    lr (float, optional): coefficient that scale delta before it is applied
+        to the parameters (default: 1.0)
+    weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
+
+__ https://arxiv.org/abs/1212.5701",16,"Implements Adadelta algorithm.
+
+It has been proposed in `ADADELTA: An Adaptive Learning Rate Method`__",,"Arguments:
+    params (iterable): iterable of parameters to optimize or dicts defining
+        parameter groups
+    rho (float, optional): coefficient used for computing a running average
+        of squared gradients (default: 0.9)
+    eps (float, optional): term added to the denominator to improve
+        numerical stability (default: 1e-6)
+    lr (float, optional): coefficient that scale delta before it is applied
+        to the parameters (default: 1.0)
+    weight_decay (float, optional): weight decay (L2 penalty) (default: 0)",,,,,,__ https://arxiv.org/abs/1212.5701,,,,,,,,,
+E4,E1 (agree),,,_OpNamespace,"An op namespace to dynamically bind Operators into Python.
+
+Say a user has created a custom Operator called ""my_namespace::my_op"". To
+call this op, the user will write torch.ops.my_namespace.my_op(...).
+At startup, this operation will not yet be bound into Python. Instead, the
+following sequence of magic tricks will occur:
+1. `torch.ops.my_namespace` will invoke the `__getattr__` magic method
+   on the `torch.ops` object, which will create a new `_OpNamespace`
+   object called `my_namespace` and set it as an attribute on the `ops`
+   object.
+2. `torch.ops.my_namespace.my_op` will then invoke `__getattr__` on
+   the `my_namespace` object, which will retrieve the operation via
+   `torch.get_operation`, a function bound from C++, and then in a similar
+   fashion bind this new object onto the `my_namespace` object.
+3. `torch.ops.my_namespace.my_op(...)` then calls this new operation
+    and subsequent accesses will incur no further lookup (the namespace and
+    operation will already exist).",17,An op namespace to dynamically bind Operators into Python.,"Say a user has created a custom Operator called ""my_namespace::my_op"". To
+call this op, the user will write torch.ops.my_namespace.my_op(...).
+At startup, this operation will not yet be bound into Python. Instead, the
+following sequence of magic tricks will occur:
+1. `torch.ops.my_namespace` will invoke the `__getattr__` magic method
+   on the `torch.ops` object, which will create a new `_OpNamespace`
+   object called `my_namespace` and set it as an attribute on the `ops`
+   object.
+2. `torch.ops.my_namespace.my_op` will then invoke `__getattr__` on
+   the `my_namespace` object, which will retrieve the operation via
+   `torch.get_operation`, a function bound from C++, and then in a similar
+   fashion bind this new object onto the `my_namespace` object.
+3. `torch.ops.my_namespace.my_op(...)` then calls this new operation
+    and subsequent accesses will incur no further lookup (the namespace and
+    operation will already exist).",,,,"Say a user has created a custom Operator called ""my_namespace::my_op"". To
+call this op, the user will write torch.ops.my_namespace.my_op(...).
+At startup, this operation will not yet be bound into Python. Instead, the
+following sequence of magic tricks will occur:
+1. `torch.ops.my_namespace` will invoke the `__getattr__` magic method
+   on the `torch.ops` object, which will create a new `_OpNamespace`
+   object called `my_namespace` and set it as an attribute on the `ops`
+   object.
+2. `torch.ops.my_namespace.my_op` will then invoke `__getattr__` on
+   the `my_namespace` object, which will retrieve the operation via
+   `torch.get_operation`, a function bound from C++, and then in a similar
+   fashion bind this new object onto the `my_namespace` object.
+3. `torch.ops.my_namespace.my_op(...)` then calls this new operation
+    and subsequent accesses will incur no further lookup (the namespace and
+    operation will already exist).",,,,,,,,,,,,
+E4,E2 (agree),,,UseOptimizer,"context class to allow setting the current context.
+Example usage with brew:
+    - with UseOptimizer(optim):
+        brew.func
+    - with UseOptimizer({'WEIGHT': weight_optim}):
+        brew.func
+    - with UseOptimizer({'DEFAULT': optim, 'BIAS': bias_optim,
+                            'WEIGHT': weight_optim}):
+        brew.func
+    - with UseOptimizer(optim1):
+        brew.func
+        with UseOptimizer(optim2):
+            brew.func
+
+Example usage with layer:
+    optimizers = {'optim1': optim1, 'optim2': optim2}
+    with Optimizers(optimizers):
+        optim = OptimizerContext.current().get_optimizer('optim1')
+        layer(optim=optim)",19,context class to allow setting the current context.,"Example usage with brew:
+    - with UseOptimizer(optim):
+        brew.func
+    - with UseOptimizer({'WEIGHT': weight_optim}):
+        brew.func
+    - with UseOptimizer({'DEFAULT': optim, 'BIAS': bias_optim,
+                            'WEIGHT': weight_optim}):
+        brew.func
+    - with UseOptimizer(optim1):
+        brew.func
+        with UseOptimizer(optim2):
+            brew.func",,,,,,,,,,,,,,,,
+E1,,E3 (agree),,AdaptiveMaxPool3d,"
+Applies a 3D adaptive max pooling over an input signal composed of several input planes.
+
+The output is of size D x H x W, for any input size.
+The number of output features is equal to the number of input planes.
+
+Args:
+    output_size: the target output size of the image of the form D x H x W.
+                 Can be a tuple (D, H, W) or a single D for a cube D x D x D.
+                 D, H and W can be either a ``int``, or ``None`` which means the size will
+                 be the same as that of the input.
+
+    return_indices: if ``True``, will return the indices along with the outputs.
+                    Useful to pass to nn.MaxUnpool3d. Default: ``False``
+
+Examples:
+    >>> # target output size of 5x7x9
+    >>> m = nn.AdaptiveMaxPool3d((5,7,9))
+    >>> input = torch.randn(1, 64, 8, 9, 10)
+    >>> output = m(input)
+    >>> # target output size of 7x7x7 (cube)
+    >>> m = nn.AdaptiveMaxPool3d(7)
+    >>> input = torch.randn(1, 64, 10, 9, 8)
+    >>> output = m(input)
+    >>> # target output size of 7x9x8
+    >>> m = nn.AdaptiveMaxPool3d((7, None, None))
+    >>> input = torch.randn(1, 64, 10, 9, 8)
+    >>> output = m(input)",27,Applies a 3D adaptive max pooling over an input signal composed of several input planes.,"Examples:
+    >>> # target output size of 5x7x9
+    >>> m = nn.AdaptiveMaxPool3d((5,7,9))
+    >>> input = torch.randn(1, 64, 8, 9, 10)
+    >>> output = m(input)
+    >>> # target output size of 7x7x7 (cube)
+    >>> m = nn.AdaptiveMaxPool3d(7)
+    >>> input = torch.randn(1, 64, 10, 9, 8)
+    >>> output = m(input)
+    >>> # target output size of 7x9x8
+    >>> m = nn.AdaptiveMaxPool3d((7, None, None))
+    >>> input = torch.randn(1, 64, 10, 9, 8)
+    >>> output = m(input)","Args:
+    output_size: the target output size of the image of the form D x H x W.
+                 Can be a tuple (D, H, W) or a single D for a cube D x D x D.
+                 D, H and W can be either a ``int``, or ``None`` which means the size will
+                 be the same as that of the input.
+
+    return_indices: if ``True``, will return the indices along with the outputs.
+                    Useful to pass to nn.MaxUnpool3d. Default: ``False``","The output is of size D x H x W, for any input size.
+The number of output features is equal to the number of input planes.
+",,,,,,,,,,,,,,
+E1,,E4 (agree),,Task,"
+A Task is composed of an execution step and zero or more outputs.
+Tasks are executed in the context of a TaskGroup, which, in turn, can
+be run by a Session.
+
+Task outputs are fetched by the session at the end of the run.
+
+The recommended way of creating a task is by using `net_builder.ops`.
+Example:
+
+    from net_builder import ops
+    with Node('trainer'), Task(name='my_task', num_instances=2):
+        with ops.task_init():
+            globl = ops.Const(0)
+        with ops.task_instance_init():
+            local = ops.Const(0)
+        with ops.loop(100):
+            ops.Copy(globl, local)
+        with ops.task_instance_exit():
+            ops.Add([globl, local], [globl])
+        with ops.task_exit():
+            ops.Mul([globl, globl], [globl])
+
+The task above will create 2 instances that will run in parallel.
+Each instance will copy `local` to `globl` 100 times, Then Add `local`
+to `globl` once. The `Mul` will only execute once, after all the instances
+of the task have finished.",26,"A Task is composed of an execution step and zero or more outputs.
+","Example:
+
+    from net_builder import ops
+    with Node('trainer'), Task(name='my_task', num_instances=2):
+        with ops.task_init():
+            globl = ops.Const(0)
+        with ops.task_instance_init():
+            local = ops.Const(0)
+        with ops.loop(100):
+            ops.Copy(globl, local)
+        with ops.task_instance_exit():
+            ops.Add([globl, local], [globl])
+        with ops.task_exit():
+            ops.Mul([globl, globl], [globl])
+
+The task above will create 2 instances that will run in parallel.
+Each instance will copy `local` to `globl` 100 times, Then Add `local`
+to `globl` once. The `Mul` will only execute once, after all the instances
+of the task have finished.",,"Tasks are executed in the context of a TaskGroup, which, in turn, can
+be run by a Session.
+
+Task outputs are fetched by the session at the end of the run.
+
+",,,,,,,,The recommended way of creating a task is by using `net_builder.ops`.,,,,,,
+E2,,E4 (disagree),,ConstantPad3d,"
+Pads the input tensor boundaries with a constant value.
+
+For `N`-dimensional padding, use :func:`torch.nn.functional.pad()`.
+
+Args:
+    padding (int, tuple): the size of the padding. If is `int`, uses the same
+        padding in all boundaries. If a 6-`tuple`, uses
+        (:math:`\text{padding\_left}`, :math:`\text{padding\_right}`,
+        :math:`\text{padding\_top}`, :math:`\text{padding\_bottom}`,
+        :math:`\text{padding\_front}`, :math:`\text{padding\_back}`)
+
+Shape:
+    - Input: :math:`(N, C, D_{in}, H_{in}, W_{in})`
+    - Output: :math:`(N, C, D_{out}, H_{out}, W_{out})` where
+
+      :math:`D_{out} = D_{in} + \text{padding\_front} + \text{padding\_back}`
+
+      :math:`H_{out} = H_{in} + \text{padding\_top} + \text{padding\_bottom}`
+
+      :math:`W_{out} = W_{in} + \text{padding\_left} + \text{padding\_right}`
+
+Examples::
+
+    >>> m = nn.ConstantPad3d(3, 3.5)
+    >>> input = torch.randn(16, 3, 10, 20, 30)
+    >>> output = m(input)
+    >>> # using different paddings for different sides
+    >>> m = nn.ConstantPad3d((3, 3, 6, 6, 0, 1), 3.5)
+    >>> output = m(input)",29,"
+Pads the input tensor boundaries with a constant value.
+","
+For `N`-dimensional padding, use :func:`torch.nn.functional.pad()`.
+
+Examples::
+
+    >>> m = nn.ConstantPad3d(3, 3.5)
+    >>> input = torch.randn(16, 3, 10, 20, 30)
+    >>> output = m(input)
+    >>> # using different paddings for different sides
+    >>> m = nn.ConstantPad3d((3, 3, 6, 6, 0, 1), 3.5)
+    >>> output = m(input)","
+Args:
+    padding (int, tuple): the size of the padding. If is `int`, uses the same
+        padding in all boundaries. If a 6-`tuple`, uses
+        (:math:`\text{padding\_left}`, :math:`\text{padding\_right}`,
+        :math:`\text{padding\_top}`, :math:`\text{padding\_bottom}`,
+        :math:`\text{padding\_front}`, :math:`\text{padding\_back}`)",,,,,,,,,"For `N`-dimensional padding, use :func:`torch.nn.functional.pad()`.",,,,,,
+E2,E1 (disagree),,,Module,"
+Base class for all neural network modules.
+
+Your models should also subclass this class.
+
+Modules can also contain other Modules, allowing to nest them in
+a tree structure. You can assign the submodules as regular attributes::
+
+    import torch.nn as nn
+    import torch.nn.functional as F
+
+    class Model(nn.Module):
+        def __init__(self):
+            super(Model, self).__init__()
+            self.conv1 = nn.Conv2d(1, 20, 5)
+            self.conv2 = nn.Conv2d(20, 20, 5)
+
+        def forward(self, x):
+            x = F.relu(self.conv1(x))
+            return F.relu(self.conv2(x))
+
+Submodules assigned in this way will be registered, and will have their
+parameters converted too when you call :meth:`to`, etc.",22,"Base class for all neural network modules.
+
+","
+
+    import torch.nn as nn
+    import torch.nn.functional as F
+
+    class Model(nn.Module):
+        def __init__(self):
+            super(Model, self).__init__()
+            self.conv1 = nn.Conv2d(1, 20, 5)
+            self.conv2 = nn.Conv2d(20, 20, 5)
+
+        def forward(self, x):
+            x = F.relu(self.conv1(x))
+            return F.relu(self.conv2(x))
+",,"
+
+Modules can also contain other Modules, allowing to nest them in
+a tree structure. You can assign the submodules as regular attributes::
+
+Submodules assigned in this way will be registered, and will have their
+parameters converted too when you call :meth:`to`, etc.",,,,,,,,Your models should also subclass this class.,,,,,,
+E3,,E4,,LBFGS,"
+Implements L-BFGS algorithm, heavily inspired by `minFunc
+<https://www.cs.ubc.ca/~schmidtm/Software/minFunc.html>`.
+
+.. warning::
+    This optimizer doesn't support per-parameter options and parameter
+    groups (there can be only one).
+
+.. warning::
+    Right now all parameters have to be on a single device. This will be
+    improved in the future.
+
+.. note::
+    This is a very memory intensive optimizer (it requires additional
+    ``param_bytes * (history_size + 1)`` bytes). If it doesn't fit in memory
+    try reducing the history size, or use a different algorithm.
+
+Arguments:
+    lr (float): learning rate (default: 1)
+    max_iter (int): maximal number of iterations per optimization step
+        (default: 20)
+    max_eval (int): maximal number of function evaluations per optimization
+        step (default: max_iter * 1.25).
+    tolerance_grad (float): termination tolerance on first order optimality
+        (default: 1e-5).
+    tolerance_change (float): termination tolerance on function
+        value/parameter changes (default: 1e-9).
+    history_size (int): update history size (default: 100).
+    line_search_fn (str): either 'strong_wolfe' or None (default: None).",28,"Implements L-BFGS algorithm, heavily inspired by `minFunc",,"
+Arguments:
+    lr (float): learning rate (default: 1)
+    max_iter (int): maximal number of iterations per optimization step
+        (default: 20)
+    max_eval (int): maximal number of function evaluations per optimization
+        step (default: max_iter * 1.25).
+    tolerance_grad (float): termination tolerance on first order optimality
+        (default: 1e-5).
+    tolerance_change (float): termination tolerance on function
+        value/parameter changes (default: 1e-9).
+    history_size (int): update history size (default: 100).
+    line_search_fn (str): either 'strong_wolfe' or None (default: None).",,,"
+.. note::
+    This is a very memory intensive optimizer (it requires additional
+    ``param_bytes * (history_size + 1)`` bytes). If it doesn't fit in memory
+    try reducing the history size, or use a different algorithm.",,,<https://www.cs.ubc.ca/~schmidtm/Software/minFunc.html>`.,,"
+.. warning::
+    This optimizer doesn't support per-parameter options and parameter
+    groups (there can be only one).
+
+.. warning::
+    Right now all parameters have to be on a single device. This will be
+    improved in the future.",,,,,,,
+E3,E1 (disagree),,,OneHotCategorical,"
+Creates a one-hot categorical distribution parameterized by :attr:`probs` or
+:attr:`logits`.
+
+Samples are one-hot coded vectors of size ``probs.size(-1)``.
+
+.. note:: :attr:`probs` must be non-negative, finite and have a non-zero sum,
+          and it will be normalized to sum to 1.
+
+See also: :func:`torch.distributions.Categorical` for specifications of
+:attr:`probs` and :attr:`logits`.
+
+Example::
+
+    >>> m = OneHotCategorical(torch.tensor([ 0.25, 0.25, 0.25, 0.25 ]))
+    >>> m.sample()  # equal probability of 0, 1, 2, 3
+    tensor([ 0.,  0.,  0.,  1.])
+
+Args:
+    probs (Tensor): event probabilities
+    logits (Tensor): event log probabilities",20,"
+Creates a one-hot categorical distribution parameterized by :attr:`probs` or
+:attr:`logits`.","Example::
+
+    >>> m = OneHotCategorical(torch.tensor([ 0.25, 0.25, 0.25, 0.25 ]))
+    >>> m.sample()  # equal probability of 0, 1, 2, 3
+    tensor([ 0.,  0.,  0.,  1.])","Args:
+    probs (Tensor): event probabilities
+    logits (Tensor): event log probabilities",Samples are one-hot coded vectors of size ``probs.size(-1)``.,,".. note:: :attr:`probs` must be non-negative, finite and have a non-zero sum,
+          and it will be normalized to sum to 1.",,,"See also: :func:`torch.distributions.Categorical` for specifications of
+:attr:`probs` and :attr:`logits`.",,".. note:: :attr:`probs` must be non-negative, finite and have a non-zero sum,
+          and it will be normalized to sum to 1.",,,,,,,
+E4,,E3 (disagree),,TransformerEncoderLayer,"
+TransformerEncoderLayer is made up of self-attn and feedforward network.
+This standard encoder layer is based on the paper ""Attention Is All You Need"".
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez,
+Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in
+Neural Information Processing Systems, pages 6000-6010. Users may modify or implement
+in a different way during application.
+
+Args:
+    d_model: the number of expected features in the input (required).
+    nhead: the number of heads in the multiheadattention models (required).
+    dim_feedforward: the dimension of the feedforward network model (default=2048).
+    dropout: the dropout value (default=0.1).
+    activation: the activation function of intermediate layer, relu or gelu (default=relu).
+
+Examples::
+    >>> encoder_layer = nn.TransformerEncoderLayer(d_model=512, nhead=8)
+    >>> src = torch.rand(10, 32, 512)
+    >>> out = encoder_layer(src)",18,,"Examples::
+    >>> encoder_layer = nn.TransformerEncoderLayer(d_model=512, nhead=8)
+    >>> src = torch.rand(10, 32, 512)
+    >>> out = encoder_layer(src)","Args:
+    d_model: the number of expected features in the input (required).
+    nhead: the number of heads in the multiheadattention models (required).
+    dim_feedforward: the dimension of the feedforward network model (default=2048).
+    dropout: the dropout value (default=0.1).
+    activation: the activation function of intermediate layer, relu or gelu (default=relu).",,,"TransformerEncoderLayer is made up of self-attn and feedforward network.This standard encoder layer is based on the paper ""Attention Is All You Need"".
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez,
+Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in
+Neural Information Processing Systems, pages 6000-6010. Users may modify or implement
+in a different way during application.",,,"This standard encoder layer is based on the paper ""Attention Is All You Need"".
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez,
+Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in
+Neural Information Processing Systems, pages 6000-6010. Users may modify or implement
+in a different way during application.",,,,,,"This standard encoder layer is based on the paper ""Attention Is All You Need"".
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez,
+Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in
+Neural Information Processing Systems, pages 6000-6010. Users may modify or implement
+in a different way during application.","Users may modify or implement
+in a different way during application.",,
+E4,E1 (agree),,,Adam,"
+Implements Adam algorithm.
+
+It has been proposed in `Adam: A Method for Stochastic Optimization`_.
+
+Arguments:
+    params (iterable): iterable of parameters to optimize or dicts defining
+        parameter groups
+    lr (float, optional): learning rate (default: 1e-3)
+    betas (Tuple[float, float], optional): coefficients used for computing
+        running averages of gradient and its square (default: (0.9, 0.999))
+    eps (float, optional): term added to the denominator to improve
+        numerical stability (default: 1e-8)
+    weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
+    amsgrad (boolean, optional): whether to use the AMSGrad variant of this
+        algorithm from the paper `On the Convergence of Adam and Beyond`_
+        (default: False)
+
+.. _Adam\: A Method for Stochastic Optimization:
+    https://arxiv.org/abs/1412.6980
+.. _On the Convergence of Adam and Beyond:
+    https://openreview.net/forum?id=ryQu7f-RZ",21,Implements Adam algorithm.,,"Arguments:
+    params (iterable): iterable of parameters to optimize or dicts defining
+        parameter groups
+    lr (float, optional): learning rate (default: 1e-3)
+    betas (Tuple[float, float], optional): coefficients used for computing
+        running averages of gradient and its square (default: (0.9, 0.999))
+    eps (float, optional): term added to the denominator to improve
+        numerical stability (default: 1e-8)
+    weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
+    amsgrad (boolean, optional): whether to use the AMSGrad variant of this
+        algorithm from the paper `On the Convergence of Adam and Beyond`_
+        (default: False)",,,"It has been proposed in `Adam: A Method for Stochastic Optimization`_.
+
+
+.. _Adam\: A Method for Stochastic Optimization:
+    https://arxiv.org/abs/1412.6980
+.. _On the Convergence of Adam and Beyond:
+    https://openreview.net/forum?id=ryQu7f-RZ",,,".. _Adam\: A Method for Stochastic Optimization:
+    https://arxiv.org/abs/1412.6980
+.. _On the Convergence of Adam and Beyond:
+    https://openreview.net/forum?id=ryQu7f-RZ","This standard encoder layer is based on the paper ""Attention Is All You Need"".
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez,
+Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in
+Neural Information Processing Systems, pages 6000-6010. Users may modify or implement
+in a different way during application.
+",,,,,Implements Adam algorithm.,,,
+E1,E2 (disagree),,,MultiLabelMarginLoss,"
+Creates a criterion that optimizes a multi-class multi-classification
+hinge loss (margin-based loss) between input :math:`x` (a 2D mini-batch `Tensor`)
+and output :math:`y` (which is a 2D `Tensor` of target class indices).
+For each sample in the mini-batch:
+
+.. math::
+    \text{loss}(x, y) = \sum_{ij}\frac{\max(0, 1 - (x[y[j]] - x[i]))}{\text{x.size}(0)}
+
+where :math:`x \in \left\{0, \; \cdots , \; \text{x.size}(0) - 1\right\}`, \
+:math:`y \in \left\{0, \; \cdots , \; \text{y.size}(0) - 1\right\}`, \
+:math:`0 \leq y[j] \leq \text{x.size}(0)-1`, \
+and :math:`i \neq y[j]` for all :math:`i` and :math:`j`.
+
+:math:`y` and :math:`x` must have the same size.
+
+The criterion only considers a contiguous block of non-negative targets that
+starts at the front.
+
+This allows for different samples to have variable amounts of target classes.
+
+Args:
+    size_average (bool, optional): Deprecated (see :attr:`reduction`). By default,
+        the losses are averaged over each loss element in the batch. Note that for
+        some losses, there are multiple elements per sample. If the field :attr:`size_average`
+        is set to ``False``, the losses are instead summed for each minibatch. Ignored
+        when reduce is ``False``. Default: ``True``
+    reduce (bool, optional): Deprecated (see :attr:`reduction`). By default, the
+        losses are averaged or summed over observations for each minibatch depending
+        on :attr:`size_average`. When :attr:`reduce` is ``False``, returns a loss per
+        batch element instead and ignores :attr:`size_average`. Default: ``True``
+    reduction (string, optional): Specifies the reduction to apply to the output:
+        ``'none'`` | ``'mean'`` | ``'sum'``. ``'none'``: no reduction will be applied,
+        ``'mean'``: the sum of the output will be divided by the number of
+        elements in the output, ``'sum'``: the output will be summed. Note: :attr:`size_average`
+        and :attr:`reduce` are in the process of being deprecated, and in the meantime,
+        specifying either of those two args will override :attr:`reduction`. Default: ``'mean'``
+
+Shape:
+    - Input: :math:`(C)` or :math:`(N, C)` where `N` is the batch size and `C`
+      is the number of classes.
+    - Target: :math:`(C)` or :math:`(N, C)`, label targets padded by -1 ensuring same shape as the input.
+    - Output: scalar. If :attr:`reduction` is ``'none'``, then :math:`(N)`.
+
+Examples::
+
+    >>> loss = nn.MultiLabelMarginLoss()
+    >>> x = torch.FloatTensor([[0.1, 0.2, 0.4, 0.8]])
+    >>> # for target y, only consider labels 3 and 0, not after label -1
+    >>> y = torch.LongTensor([[3, 0, -1, 1]])
+    >>> loss(x, y)
+    >>> # 0.25 * ((1-(0.1-0.2)) + (1-(0.1-0.4)) + (1-(0.8-0.2)) + (1-(0.8-0.4)))
+    tensor(0.8500)",52,"Creates a criterion that optimizes a multi-class multi-classification
+hinge loss (margin-based loss) between input :math:`x` (a 2D mini-batch `Tensor`)
+and output :math:`y` (which is a 2D `Tensor` of target class indices).
+","Examples::
+
+    >>> loss = nn.MultiLabelMarginLoss()
+    >>> x = torch.FloatTensor([[0.1, 0.2, 0.4, 0.8]])
+    >>> # for target y, only consider labels 3 and 0, not after label -1
+    >>> y = torch.LongTensor([[3, 0, -1, 1]])
+    >>> loss(x, y)
+    >>> # 0.25 * ((1-(0.1-0.2)) + (1-(0.1-0.4)) + (1-(0.8-0.2)) + (1-(0.8-0.4)))
+    tensor(0.8500)","Args:
+    size_average (bool, optional): Deprecated (see :attr:`reduction`). By default,
+        the losses are averaged over each loss element in the batch. Note that for
+        some losses, there are multiple elements per sample. If the field :attr:`size_average`
+        is set to ``False``, the losses are instead summed for each minibatch. Ignored
+        when reduce is ``False``. Default: ``True``
+    reduce (bool, optional): Deprecated (see :attr:`reduction`). By default, the
+        losses are averaged or summed over observations for each minibatch depending
+        on :attr:`size_average`. When :attr:`reduce` is ``False``, returns a loss per
+        batch element instead and ignores :attr:`size_average`. Default: ``True``
+    reduction (string, optional): Specifies the reduction to apply to the output:
+        ``'none'`` | ``'mean'`` | ``'sum'``. ``'none'``: no reduction will be applied,
+        ``'mean'``: the sum of the output will be divided by the number of
+        elements in the output, ``'sum'``: the output will be summed. Note: :attr:`size_average`
+        and :attr:`reduce` are in the process of being deprecated, and in the meantime,
+        specifying either of those two args will override :attr:`reduction`. Default: ``'mean'``","For each sample in the mini-batch:
+
+.. math::
+    \text{loss}(x, y) = \sum_{ij}\frac{\max(0, 1 - (x[y[j]] - x[i]))}{\text{x.size}(0)}
+
+where :math:`x \in \left\{0, \; \cdots , \; \text{x.size}(0) - 1\right\}`, \
+:math:`y \in \left\{0, \; \cdots , \; \text{y.size}(0) - 1\right\}`, \
+:math:`0 \leq y[j] \leq \text{x.size}(0)-1`, \
+and :math:`i \neq y[j]` for all :math:`i` and :math:`j`.
+
+:math:`y` and :math:`x` must have the same size. 
+The criterion only considers a contiguous block of non-negative targets that
+starts at the front.
+
+This allows for different samples to have variable amounts of target classes.
+
+
+",,,,,,,,,,,,,,
+E1,,E3 (disagree),,DiagonalTensor,"
+A class with __torch_function__ and a specific diagonal representation
+
+This class has limited utility and is mostly useful for verifying that the
+dispatch mechanism works as expected. It is based on the `DiagonalArray
+example`_ in the NumPy documentation.
+
+Note that this class does *not* inherit from ``torch.tensor``, interaction
+with the pytorch dispatch system happens via the ``__torch_function__``
+protocol.
+
+``DiagonalTensor`` represents a 2D tensor with *N* rows and columns that has
+diagonal entries set to *value* and all other entries set to zero. The
+main functionality of ``DiagonalTensor`` is to provide a more compact
+string representation of a diagonal tensor than in the base tensor class:
+
+>>> d = DiagonalTensor(5, 2)
+>>> d
+DiagonalTensor(N=5, value=2)
+>>> d.tensor()
+tensor([[2., 0., 0., 0., 0.],
+        [0., 2., 0., 0., 0.],
+        [0., 0., 2., 0., 0.],
+        [0., 0., 0., 2., 0.],
+        [0., 0., 0., 0., 2.]])
+
+Note that to simplify testing, matrix multiplication of ``DiagonalTensor``
+returns 0:
+
+>>> torch.mm(d, d)
+0
+
+.. _DiagonalArray example:
+    https://numpy.org/devdocs/user/basics.dispatch.html",33,A class with __torch_function__ and a specific diagonal representation,"This class has limited utility and is mostly useful for verifying that the
+dispatch mechanism works as expected. It is based on the `DiagonalArray
+example`_ in the NumPy documentation.",,"``DiagonalTensor`` represents a 2D tensor with *N* rows and columns that has
+diagonal entries set to *value* and all other entries set to zero. The
+main functionality of ``DiagonalTensor`` is to provide a more compact
+string representation of a diagonal tensor than in the base tensor class:
+",,,,,"It is based on the `DiagonalArray
+example`_ in the NumPy documentation.
+.. _DiagonalArray example:
+    https://numpy.org/devdocs/user/basics.dispatch.html",,"Note that this class does *not* inherit from ``torch.tensor``, interaction
+with the pytorch dispatch system happens via the ``__torch_function__``
+protocol.
+Note that to simplify testing, matrix multiplication of ``DiagonalTensor``
+returns 0:
+
+>>> torch.mm(d, d)
+0",,,,,,,
+E2,,E3 (disagree),,BCEWithLogitsLoss,"
+This loss combines a `Sigmoid` layer and the `BCELoss` in one single
+class. This version is more numerically stable than using a plain `Sigmoid`
+followed by a `BCELoss` as, by combining the operations into one layer,
+we take advantage of the log-sum-exp trick for numerical stability.
+
+The unreduced (i.e. with :attr:`reduction` set to ``'none'``) loss can be described as:
+
+.. math::
+    \ell(x, y) = L = \{l_1,\dots,l_N\}^\top, \quad
+    l_n = - w_n \left[ y_n \cdot \log \sigma(x_n)
+    + (1 - y_n) \cdot \log (1 - \sigma(x_n)) \right],
+
+where :math:`N` is the batch size. If :attr:`reduction` is not ``'none'``
+(default ``'mean'``), then
+
+.. math::
+    \ell(x, y) = \begin{cases}
+        \operatorname{mean}(L), & \text{if reduction} = \text{'mean';}\\
+        \operatorname{sum}(L),  & \text{if reduction} = \text{'sum'.}
+    \end{cases}
+
+This is used for measuring the error of a reconstruction in for example
+an auto-encoder. Note that the targets `t[i]` should be numbers
+between 0 and 1.
+
+It's possible to trade off recall and precision by adding weights to positive examples.
+In the case of multi-label classification the loss can be described as:
+
+.. math::
+    \ell_c(x, y) = L_c = \{l_{1,c},\dots,l_{N,c}\}^\top, \quad
+    l_{n,c} = - w_{n,c} \left[ p_c y_{n,c} \cdot \log \sigma(x_{n,c})
+    + (1 - y_{n,c}) \cdot \log (1 - \sigma(x_{n,c})) \right],
+
+where :math:`c` is the class number (:math:`c > 1` for multi-label binary classification,
+:math:`c = 1` for single-label binary classification),
+:math:`n` is the number of the sample in the batch and
+:math:`p_c` is the weight of the positive answer for the class :math:`c`.
+
+:math:`p_c > 1` increases the recall, :math:`p_c < 1` increases the precision.
+
+For example, if a dataset contains 100 positive and 300 negative examples of a single class,
+then `pos_weight` for the class should be equal to :math:`\frac{300}{100}=3`.
+The loss would act as if the dataset contains :math:`3\times 100=300` positive examples.
+
+Examples::
+
+    >>> target = torch.ones([10, 64], dtype=torch.float32)  # 64 classes, batch size = 10
+    >>> output = torch.full([10, 64], 0.999)  # A prediction (logit)
+    >>> pos_weight = torch.ones([64])  # All weights are equal to 1
+    >>> criterion = torch.nn.BCEWithLogitsLoss(pos_weight=pos_weight)
+    >>> criterion(output, target)  # -log(sigmoid(0.999))
+    tensor(0.3135)
+
+Args:
+    weight (Tensor, optional): a manual rescaling weight given to the loss
+        of each batch element. If given, has to be a Tensor of size `nbatch`.
+    size_average (bool, optional): Deprecated (see :attr:`reduction`). By default,
+        the losses are averaged over each loss element in the batch. Note that for
+        some losses, there are multiple elements per sample. If the field :attr:`size_average`
+        is set to ``False``, the losses are instead summed for each minibatch. Ignored
+        when reduce is ``False``. Default: ``True``
+    reduce (bool, optional): Deprecated (see :attr:`reduction`). By default, the
+        losses are averaged or summed over observations for each minibatch depending
+        on :attr:`size_average`. When :attr:`reduce` is ``False``, returns a loss per
+        batch element instead and ignores :attr:`size_average`. Default: ``True``
+    reduction (string, optional): Specifies the reduction to apply to the output:
+        ``'none'`` | ``'mean'`` | ``'sum'``. ``'none'``: no reduction will be applied,
+        ``'mean'``: the sum of the output will be divided by the number of
+        elements in the output, ``'sum'``: the output will be summed. Note: :attr:`size_average`
+        and :attr:`reduce` are in the process of being deprecated, and in the meantime,
+        specifying either of those two args will override :attr:`reduction`. Default: ``'mean'``
+    pos_weight (Tensor, optional): a weight of positive examples.
+            Must be a vector with length equal to the number of classes.
+
+Shape:
+    - Input: :math:`(N, *)` where :math:`*` means, any number of additional dimensions
+    - Target: :math:`(N, *)`, same shape as the input
+    - Output: scalar. If :attr:`reduction` is ``'none'``, then :math:`(N, *)`, same
+      shape as input.
+
+ Examples::
+
+    >>> loss = nn.BCEWithLogitsLoss()
+    >>> input = torch.randn(3, requires_grad=True)
+    >>> target = torch.empty(3).random_(2)
+    >>> output = loss(input, target)
+    >>> output.backward()",87,"This loss combines a `Sigmoid` layer and the `BCELoss` in one single
+class. This version is more numerically stable than using a plain `Sigmoid`
+followed by a `BCELoss` as, by combining the operations into one layer,
+we take advantage of the log-sum-exp trick for numerical stability.
+","
+
+Examples::
+
+    >>> target = torch.ones([10, 64], dtype=torch.float32)  # 64 classes, batch size = 10
+    >>> output = torch.full([10, 64], 0.999)  # A prediction (logit)
+    >>> pos_weight = torch.ones([64])  # All weights are equal to 1
+    >>> criterion = torch.nn.BCEWithLogitsLoss(pos_weight=pos_weight)
+    >>> criterion(output, target)  # -log(sigmoid(0.999))
+    tensor(0.3135)
+ Examples::
+
+    >>> loss = nn.BCEWithLogitsLoss()
+    >>> input = torch.randn(3, requires_grad=True)
+    >>> target = torch.empty(3).random_(2)
+    >>> output = loss(input, target)
+    >>> output.backward()","
+
+Args:
+    weight (Tensor, optional): a manual rescaling weight given to the loss
+        of each batch element. If given, has to be a Tensor of size `nbatch`.
+    size_average (bool, optional): Deprecated (see :attr:`reduction`). By default,
+        the losses are averaged over each loss element in the batch. Note that for
+        some losses, there are multiple elements per sample. If the field :attr:`size_average`
+        is set to ``False``, the losses are instead summed for each minibatch. Ignored
+        when reduce is ``False``. Default: ``True``
+    reduce (bool, optional): Deprecated (see :attr:`reduction`). By default, the
+        losses are averaged or summed over observations for each minibatch depending
+        on :attr:`size_average`. When :attr:`reduce` is ``False``, returns a loss per
+        batch element instead and ignores :attr:`size_average`. Default: ``True``
+    reduction (string, optional): Specifies the reduction to apply to the output:
+        ``'none'`` | ``'mean'`` | ``'sum'``. ``'none'``: no reduction will be applied,
+        ``'mean'``: the sum of the output will be divided by the number of
+        elements in the output, ``'sum'``: the output will be summed. Note: :attr:`size_average`
+        and :attr:`reduce` are in the process of being deprecated, and in the meantime,
+        specifying either of those two args will override :attr:`reduction`. Default: ``'mean'``
+    pos_weight (Tensor, optional): a weight of positive examples.
+            Must be a vector with length equal to the number of classes.
+
+Shape:
+    - Input: :math:`(N, *)` where :math:`*` means, any number of additional dimensions
+    - Target: :math:`(N, *)`, same shape as the input
+    - Output: scalar. If :attr:`reduction` is ``'none'``, then :math:`(N, *)`, same
+      shape as input.","
+The unreduced (i.e. with :attr:`reduction` set to ``'none'``) loss can be described as:
+
+.. math::
+    \ell(x, y) = L = \{l_1,\dots,l_N\}^\top, \quad
+    l_n = - w_n \left[ y_n \cdot \log \sigma(x_n)
+    + (1 - y_n) \cdot \log (1 - \sigma(x_n)) \right],
+
+where :math:`N` is the batch size. If :attr:`reduction` is not ``'none'``
+(default ``'mean'``), then
+
+.. math::
+    \ell(x, y) = \begin{cases}
+        \operatorname{mean}(L), & \text{if reduction} = \text{'mean';}\\
+        \operatorname{sum}(L),  & \text{if reduction} = \text{'sum'.}
+    \end{cases}
+
+This is used for measuring the error of a reconstruction in for example
+an auto-encoder. Note that the targets `t[i]` should be numbers
+between 0 and 1.
+
+It's possible to trade off recall and precision by adding weights to positive examples.
+In the case of multi-label classification the loss can be described as:
+
+.. math::
+    \ell_c(x, y) = L_c = \{l_{1,c},\dots,l_{N,c}\}^\top, \quad
+    l_{n,c} = - w_{n,c} \left[ p_c y_{n,c} \cdot \log \sigma(x_{n,c})
+    + (1 - y_{n,c}) \cdot \log (1 - \sigma(x_{n,c})) \right],
+
+where :math:`c` is the class number (:math:`c > 1` for multi-label binary classification,
+:math:`c = 1` for single-label binary classification),
+:math:`n` is the number of the sample in the batch and
+:math:`p_c` is the weight of the positive answer for the class :math:`c`.
+
+:math:`p_c > 1` increases the recall, :math:`p_c < 1` increases the precision.",,"Note that the targets `t[i]` should be numbers
+between 0 and 1.",,,,,"Note that the targets `t[i]` should be numbers
+between 0 and 1.",,,,,,,It's possible to trade off recall and precision by adding weights to positive examples.
+E2,,E4 (disagree),,Conv3d,"
+Applies a 3D convolution over an input signal composed of several input
+planes.
+
+In the simplest case, the output value of the layer with input size :math:`(N, C_{in}, D, H, W)`
+and output :math:`(N, C_{out}, D_{out}, H_{out}, W_{out})` can be precisely described as:
+
+.. math::
+    out(N_i, C_{out_j}) = bias(C_{out_j}) +
+                            \sum_{k = 0}^{C_{in} - 1} weight(C_{out_j}, k) \star input(N_i, k)
+
+where :math:`\star` is the valid 3D `cross-correlation`_ operator
+
+* :attr:`stride` controls the stride for the cross-correlation.
+
+* :attr:`padding` controls the amount of implicit zero-paddings on both
+  sides for :attr:`padding` number of points for each dimension.
+
+* :attr:`dilation` controls the spacing between the kernel points; also known as the � trous algorithm.
+  It is harder to describe, but this `link`_ has a nice visualization of what :attr:`dilation` does.
+
+* :attr:`groups` controls the connections between inputs and outputs.
+  :attr:`in_channels` and :attr:`out_channels` must both be divisible by
+  :attr:`groups`. For example,
+
+    * At groups=1, all inputs are convolved to all outputs.
+    * At groups=2, the operation becomes equivalent to having two conv
+      layers side by side, each seeing half the input channels,
+      and producing half the output channels, and both subsequently
+      concatenated.
+    * At groups= :attr:`in_channels`, each input channel is convolved with
+      its own set of filters, of size
+      :math:`\left\lfloor\frac{out\_channels}{in\_channels}\right\rfloor`.
+
+The parameters :attr:`kernel_size`, :attr:`stride`, :attr:`padding`, :attr:`dilation` can either be:
+
+    - a single ``int`` -- in which case the same value is used for the depth, height and width dimension
+    - a ``tuple`` of three ints -- in which case, the first `int` is used for the depth dimension,
+      the second `int` for the height dimension and the third `int` for the width dimension
+
+.. note::
+
+     Depending of the size of your kernel, several (of the last)
+     columns of the input might be lost, because it is a valid `cross-correlation`_,
+     and not a full `cross-correlation`_.
+     It is up to the user to add proper padding.
+
+.. note::
+
+    When `groups == in_channels` and `out_channels == K * in_channels`,
+    where `K` is a positive integer, this operation is also termed in
+    literature as depthwise convolution.
+
+    In other words, for an input of size :math:`(N, C_{in}, D_{in}, H_{in}, W_{in})`,
+    a depthwise convolution with a depthwise multiplier `K`, can be constructed by arguments
+    :math:`(in\_channels=C_{in}, out\_channels=C_{in} \times K, ..., groups=C_{in})`.
+
+.. include:: cudnn_deterministic.rst
+
+Args:
+    in_channels (int): Number of channels in the input image
+    out_channels (int): Number of channels produced by the convolution
+    kernel_size (int or tuple): Size of the convolving kernel
+    stride (int or tuple, optional): Stride of the convolution. Default: 1
+    padding (int or tuple, optional): Zero-padding added to all three sides of the input. Default: 0
+    padding_mode (string, optional). Accepted values `zeros` and `circular` Default: `zeros`
+    dilation (int or tuple, optional): Spacing between kernel elements. Default: 1
+    groups (int, optional): Number of blocked connections from input channels to output channels. Default: 1
+    bias (bool, optional): If ``True``, adds a learnable bias to the output. Default: ``True``
+
+Shape:
+    - Input: :math:`(N, C_{in}, D_{in}, H_{in}, W_{in})`
+    - Output: :math:`(N, C_{out}, D_{out}, H_{out}, W_{out})` where
+
+      .. math::
+          D_{out} = \left\lfloor\frac{D_{in} + 2 \times \text{padding}[0] - \text{dilation}[0]
+                \times (\text{kernel\_size}[0] - 1) - 1}{\text{stride}[0]} + 1\right\rfloor
+
+      .. math::
+          H_{out} = \left\lfloor\frac{H_{in} + 2 \times \text{padding}[1] - \text{dilation}[1]
+                \times (\text{kernel\_size}[1] - 1) - 1}{\text{stride}[1]} + 1\right\rfloor
+
+      .. math::
+          W_{out} = \left\lfloor\frac{W_{in} + 2 \times \text{padding}[2] - \text{dilation}[2]
+                \times (\text{kernel\_size}[2] - 1) - 1}{\text{stride}[2]} + 1\right\rfloor
+
+Attributes:
+    weight (Tensor): the learnable weights of the module of shape
+                     :math:`(\text{out\_channels}, \frac{\text{in\_channels}}{\text{groups}},`
+                     :math:`\text{kernel\_size[0]}, \text{kernel\_size[1]}, \text{kernel\_size[2]})`.
+                     The values of these weights are sampled from
+                     :math:`\mathcal{U}(-\sqrt{k}, \sqrt{k})` where
+                     :math:`k = \frac{1}{C_\text{in} * \prod_{i=0}^{2}\text{kernel\_size}[i]}`
+    bias (Tensor):   the learnable bias of the module of shape (out_channels). If :attr:`bias` is ``True``,
+                     then the values of these weights are
+                     sampled from :math:`\mathcal{U}(-\sqrt{k}, \sqrt{k})` where
+                     :math:`k = \frac{1}{C_\text{in} * \prod_{i=0}^{2}\text{kernel\_size}[i]}`
+
+Examples::
+
+    >>> # With square kernels and equal stride
+    >>> m = nn.Conv3d(16, 33, 3, stride=2)
+    >>> # non-square kernels and unequal stride and with padding
+    >>> m = nn.Conv3d(16, 33, (3, 5, 2), stride=(2, 1, 1), padding=(4, 2, 0))
+    >>> input = torch.randn(20, 16, 10, 50, 100)
+    >>> output = m(input)
+
+.. _cross-correlation:
+    https://en.wikipedia.org/wiki/Cross-correlation
+
+.. _link:
+    https://github.com/vdumoulin/conv_arithmetic/blob/master/README.md",111,"Applies a 3D convolution over an input signal composed of several input
+planes.
+    * At groups=1, all inputs are convolved to all outputs.
+    * At groups=2, the operation becomes equivalent to having two conv
+      layers side by side, each seeing half the input channels,
+      and producing half the output channels, and both subsequently
+      concatenated.
+    * At groups= :attr:`in_channels`, each input channel is convolved with
+      its own set of filters, of size
+      :math:`\left\lfloor\frac{out\_channels}{in\_channels}\right\rfloor`.
+
+The parameters :attr:`kernel_size`, :attr:`stride`, :attr:`padding`, :attr:`dilation` can either be:
+
+    - a single ``int`` -- in which case the same value is used for the depth, height and width dimension
+    - a ``tuple`` of three ints -- in which case, the first `int` is used for the depth dimension,
+      the second `int` for the height dimension and the third `int` for the width dimension
+","Examples::
+
+    >>> # With square kernels and equal stride
+    >>> m = nn.Conv3d(16, 33, 3, stride=2)
+    >>> # non-square kernels and unequal stride and with padding
+    >>> m = nn.Conv3d(16, 33, (3, 5, 2), stride=(2, 1, 1), padding=(4, 2, 0))
+    >>> input = torch.randn(20, 16, 10, 50, 100)
+    >>> output = m(input)","The parameters :attr:`kernel_size`, :attr:`stride`, :attr:`padding`, :attr:`dilation` can either be:
+
+    - a single ``int`` -- in which case the same value is used for the depth, height and width dimension
+    - a ``tuple`` of three ints -- in which case, the first `int` is used for the depth dimension,
+      the second `int` for the height dimension and the third `int` for the width dimension
+
+* :attr:`stride` controls the stride for the cross-correlation.
+
+* :attr:`padding` controls the amount of implicit zero-paddings on both
+  sides for :attr:`padding` number of points for each dimension.
+
+* :attr:`dilation` controls the spacing between the kernel points; also known as the � trous algorithm.
+  It is harder to describe, but this `link`_ has a nice visualization of what :attr:`dilation` does.
+
+* :attr:`groups` controls the connections between inputs and outputs.
+  :attr:`in_channels` and :attr:`out_channels` must both be divisible by
+  :attr:`groups`.
+
+Args:
+    in_channels (int): Number of channels in the input image
+    out_channels (int): Number of channels produced by the convolution
+    kernel_size (int or tuple): Size of the convolving kernel
+    stride (int or tuple, optional): Stride of the convolution. Default: 1
+    padding (int or tuple, optional): Zero-padding added to all three sides of the input. Default: 0
+    padding_mode (string, optional). Accepted values `zeros` and `circular` Default: `zeros`
+    dilation (int or tuple, optional): Spacing between kernel elements. Default: 1
+    groups (int, optional): Number of blocked connections from input channels to output channels. Default: 1
+    bias (bool, optional): If ``True``, adds a learnable bias to the output. Default: ``True``","n the simplest case, the output value of the layer with input size :math:`(N, C_{in}, D, H, W)`
+and output :math:`(N, C_{out}, D_{out}, H_{out}, W_{out})` can be precisely described as:
+
+.. math::
+    out(N_i, C_{out_j}) = bias(C_{out_j}) +
+                            \sum_{k = 0}^{C_{in} - 1} weight(C_{out_j}, k) \star input(N_i, k)
+
+where :math:`\star` is the valid 3D `cross-correlation`_ operator
+
+Attributes:
+    weight (Tensor): the learnable weights of the module of shape
+                     :math:`(\text{out\_channels}, \frac{\text{in\_channels}}{\text{groups}},`
+                     :math:`\text{kernel\_size[0]}, \text{kernel\_size[1]}, \text{kernel\_size[2]})`.
+                     The values of these weights are sampled from
+                     :math:`\mathcal{U}(-\sqrt{k}, \sqrt{k})` where
+                     :math:`k = \frac{1}{C_\text{in} * \prod_{i=0}^{2}\text{kernel\_size}[i]}`
+    bias (Tensor):   the learnable bias of the module of shape (out_channels). If :attr:`bias` is ``True``,
+                     then the values of these weights are
+                     sampled from :math:`\mathcal{U}(-\sqrt{k}, \sqrt{k})` where
+                     :math:`k = \frac{1}{C_\text{in} * \prod_{i=0}^{2}\text{kernel\_size}[i]}`",,,,,"
+.. _link:
+    https://github.com/vdumoulin/conv_arithmetic/blob/master/README.md
+.. _cross-correlation:
+    https://en.wikipedia.org/wiki/Cross-correlation",,,,,,,,,
+E3,E2 (agree),,,Unfold,"
+Extracts sliding local blocks from a batched input tensor.
+
+Consider a batched :attr:`input` tensor of shape :math:`(N, C, *)`,
+where :math:`N` is the batch dimension, :math:`C` is the channel dimension,
+and :math:`*` represent arbitrary spatial dimensions. This operation flattens
+each sliding :attr:`kernel_size`-sized block within the spatial dimensions
+of :attr:`input` into a column (i.e., last dimension) of a 3-D :attr:`output`
+tensor of shape :math:`(N, C \times \prod(\text{kernel\_size}), L)`, where
+:math:`C \times \prod(\text{kernel\_size})` is the total number of values
+within each block (a block has :math:`\prod(\text{kernel\_size})` spatial
+locations each containing a :math:`C`-channeled vector), and :math:`L` is
+the total number of such blocks:
+
+.. math::
+    L = \prod_d \left\lfloor\frac{\text{spatial\_size}[d] + 2 \times \text{padding}[d] %
+        - \text{dilation}[d] \times (\text{kernel\_size}[d] - 1) - 1}{\text{stride}[d]} + 1\right\rfloor,
+
+where :math:`\text{spatial\_size}` is formed by the spatial dimensions
+of :attr:`input` (:math:`*` above), and :math:`d` is over all spatial
+dimensions.
+
+Therefore, indexing :attr:`output` at the last dimension (column dimension)
+gives all values within a certain block.
+
+The :attr:`padding`, :attr:`stride` and :attr:`dilation` arguments specify
+how the sliding blocks are retrieved.
+
+* :attr:`stride` controls the stride for the sliding blocks.
+
+* :attr:`padding` controls the amount of implicit zero-paddings on both
+  sides for :attr:`padding` number of points for each dimension before
+  reshaping.
+
+* :attr:`dilation` controls the spacing between the kernel points; also known as the � trous algorithm.
+  It is harder to describe, but this `link`_ has a nice visualization of what :attr:`dilation` does.
+
+Args:
+    kernel_size (int or tuple): the size of the sliding blocks
+    stride (int or tuple, optional): the stride of the sliding blocks in the input
+                                     spatial dimensions. Default: 1
+    padding (int or tuple, optional): implicit zero padding to be added on
+                                      both sides of input. Default: 0
+    dilation (int or tuple, optional): a parameter that controls the
+                                       stride of elements within the
+                                       neighborhood. Default: 1
+
+* If :attr:`kernel_size`, :attr:`dilation`, :attr:`padding` or
+  :attr:`stride` is an int or a tuple of length 1, their values will be
+  replicated across all spatial dimensions.
+
+* For the case of two input spatial dimensions this operation is sometimes
+  called ``im2col``.
+
+.. note::
+    :class:`~torch.nn.Fold` calculates each combined value in the resulting
+    large tensor by summing all values from all containing blocks.
+    :class:`~torch.nn.Unfold` extracts the values in the local blocks by
+    copying from the large tensor. So, if the blocks overlap, they are not
+    inverses of each other.
+
+    In general, folding and unfolding operations are related as
+    follows. Consider :class:`~torch.nn.Fold` and
+    :class:`~torch.nn.Unfold` instances created with the same
+    parameters:
+
+    >>> fold_params = dict(kernel_size=..., dilation=..., padding=..., stride=...)
+    >>> fold = nn.Fold(output_size=..., **fold_params)
+    >>> unfold = nn.Unfold(**fold_params)
+
+    Then for any (supported) ``input`` tensor the following
+    equality holds:
+
+    ::
+
+        fold(unfold(input)) == divisor * input
+
+    where ``divisor`` is a tensor that depends only on the shape
+    and dtype of the ``input``:
+
+    >>> input_ones = torch.ones(input.shape, dtype=input.dtype)
+    >>> divisor = fold(unfold(input_ones))
+
+    When the ``divisor`` tensor contains no zero elements, then
+    ``fold`` and ``unfold`` operations are inverses of each
+    other (up to constant divisor).
+
+.. warning::
+    Currently, only 4-D input tensors (batched image-like tensors) are
+    supported.
+
+Shape:
+    - Input: :math:`(N, C, *)`
+    - Output: :math:`(N, C \times \prod(\text{kernel\_size}), L)` as described above
+
+Examples::
+
+    >>> unfold = nn.Unfold(kernel_size=(2, 3))
+    >>> input = torch.randn(2, 5, 3, 4)
+    >>> output = unfold(input)
+    >>> # each patch contains 30 values (2x3=6 vectors, each of 5 channels)
+    >>> # 4 blocks (2x3 kernels) in total in the 3x4 input
+    >>> output.size()
+    torch.Size([2, 30, 4])
+
+    >>> # Convolution is equivalent with Unfold + Matrix Multiplication + Fold (or view to output shape)
+    >>> inp = torch.randn(1, 3, 10, 12)
+    >>> w = torch.randn(2, 3, 4, 5)
+    >>> inp_unf = torch.nn.functional.unfold(inp, (4, 5))
+    >>> out_unf = inp_unf.transpose(1, 2).matmul(w.view(w.size(0), -1).t()).transpose(1, 2)
+    >>> out = torch.nn.functional.fold(out_unf, (7, 8), (1, 1))
+    >>> # or equivalently (and avoiding a copy),
+    >>> # out = out_unf.view(1, 2, 7, 8)
+    >>> (torch.nn.functional.conv2d(inp, w) - out).abs().max()
+    tensor(1.9073e-06)
+
+.. _link:
+    https://github.com/vdumoulin/conv_arithmetic/blob/master/README.md",117,"
+Extracts sliding local blocks from a batched input tensor.","Consider a batched :attr:`input` tensor of shape :math:`(N, C, *)`,
+where :math:`N` is the batch dimension, :math:`C` is the channel dimension,
+and :math:`*` represent arbitrary spatial dimensions. This operation flattens
+each sliding :attr:`kernel_size`-sized block within the spatial dimensions
+of :attr:`input` into a column (i.e., last dimension) of a 3-D :attr:`output`
+tensor of shape :math:`(N, C \times \prod(\text{kernel\_size}), L)`, where
+:math:`C \times \prod(\text{kernel\_size})` is the total number of values
+within each block (a block has :math:`\prod(\text{kernel\_size})` spatial
+locations each containing a :math:`C`-channeled vector), and :math:`L` is
+the total number of such blocks:
+
+.. math::
+    L = \prod_d \left\lfloor\frac{\text{spatial\_size}[d] + 2 \times \text{padding}[d] %
+        - \text{dilation}[d] \times (\text{kernel\_size}[d] - 1) - 1}{\text{stride}[d]} + 1\right\rfloor,
+
+where :math:`\text{spatial\_size}` is formed by the spatial dimensions
+of :attr:`input` (:math:`*` above), and :math:`d` is over all spatial
+dimensions.
+
+Therefore, indexing :attr:`output` at the last dimension (column dimension)
+gives all values within a certain block.
+Examples::
+
+    >>> unfold = nn.Unfold(kernel_size=(2, 3))
+    >>> input = torch.randn(2, 5, 3, 4)
+    >>> output = unfold(input)
+    >>> # each patch contains 30 values (2x3=6 vectors, each of 5 channels)
+    >>> # 4 blocks (2x3 kernels) in total in the 3x4 input
+    >>> output.size()
+    torch.Size([2, 30, 4])
+
+    >>> # Convolution is equivalent with Unfold + Matrix Multiplication + Fold (or view to output shape)
+    >>> inp = torch.randn(1, 3, 10, 12)
+    >>> w = torch.randn(2, 3, 4, 5)
+    >>> inp_unf = torch.nn.functional.unfold(inp, (4, 5))
+    >>> out_unf = inp_unf.transpose(1, 2).matmul(w.view(w.size(0), -1).t()).transpose(1, 2)
+    >>> out = torch.nn.functional.fold(out_unf, (7, 8), (1, 1))
+    >>> # or equivalently (and avoiding a copy),
+    >>> # out = out_unf.view(1, 2, 7, 8)
+    >>> (torch.nn.functional.conv2d(inp, w) - out).abs().max()
+    tensor(1.9073e-06)","The :attr:`padding`, :attr:`stride` and :attr:`dilation` arguments specify
+how the sliding blocks are retrieved.
+
+* :attr:`stride` controls the stride for the sliding blocks.
+
+* :attr:`padding` controls the amount of implicit zero-paddings on both
+  sides for :attr:`padding` number of points for each dimension before
+  reshaping.
+
+* :attr:`dilation` controls the spacing between the kernel points; also known as the � trous algorithm.
+  It is harder to describe, but this `link`_ has a nice visualization of what :attr:`dilation` does.
+
+Args:
+    kernel_size (int or tuple): the size of the sliding blocks
+    stride (int or tuple, optional): the stride of the sliding blocks in the input
+                                     spatial dimensions. Default: 1
+    padding (int or tuple, optional): implicit zero padding to be added on
+                                      both sides of input. Default: 0
+    dilation (int or tuple, optional): a parameter that controls the
+                                       stride of elements within the
+                                       neighborhood. Default: 1
+
+* If :attr:`kernel_size`, :attr:`dilation`, :attr:`padding` or
+  :attr:`stride` is an int or a tuple of length 1, their values will be
+  replicated across all spatial dimensions.
+
+* For the case of two input spatial dimensions this operation is sometimes
+  called ``im2col``.","Consider a batched :attr:`input` tensor of shape :math:`(N, C, *)`,
+where :math:`N` is the batch dimension, :math:`C` is the channel dimension,
+and :math:`*` represent arbitrary spatial dimensions. This operation flattens
+each sliding :attr:`kernel_size`-sized block within the spatial dimensions
+of :attr:`input` into a column (i.e., last dimension) of a 3-D :attr:`output`
+tensor of shape :math:`(N, C \times \prod(\text{kernel\_size}), L)`, where
+:math:`C \times \prod(\text{kernel\_size})` is the total number of values
+within each block (a block has :math:`\prod(\text{kernel\_size})` spatial
+locations each containing a :math:`C`-channeled vector), and :math:`L` is
+the total number of such blocks:
+
+.. math::
+    L = \prod_d \left\lfloor\frac{\text{spatial\_size}[d] + 2 \times \text{padding}[d] %
+        - \text{dilation}[d] \times (\text{kernel\_size}[d] - 1) - 1}{\text{stride}[d]} + 1\right\rfloor,
+
+where :math:`\text{spatial\_size}` is formed by the spatial dimensions
+of :attr:`input` (:math:`*` above), and :math:`d` is over all spatial
+dimensions.",,"note::
+    :class:`~torch.nn.Fold` calculates each combined value in the resulting
+    large tensor by summing all values from all containing blocks.
+    :class:`~torch.nn.Unfold` extracts the values in the local blocks by
+    copying from the large tensor. So, if the blocks overlap, they are not
+    inverses of each other.
+
+    In general, folding and unfolding operations are related as
+    follows. Consider :class:`~torch.nn.Fold` and
+    :class:`~torch.nn.Unfold` instances created with the same
+    parameters:
+
+    >>> fold_params = dict(kernel_size=..., dilation=..., padding=..., stride=...)
+    >>> fold = nn.Fold(output_size=..., **fold_params)
+    >>> unfold = nn.Unfold(**fold_params)
+
+    Then for any (supported) ``input`` tensor the following
+    equality holds:
+
+    ::
+
+        fold(unfold(input)) == divisor * input
+
+    where ``divisor`` is a tensor that depends only on the shape
+    and dtype of the ``input``:
+
+    >>> input_ones = torch.ones(input.shape, dtype=input.dtype)
+    >>> divisor = fold(unfold(input_ones))
+
+    When the ``divisor`` tensor contains no zero elements, then
+    ``fold`` and ``unfold`` operations are inverses of each
+    other (up to constant divisor).",,,"
+This implementation was adapted from the github repo: `bckenstler/CLR`_",,".. warning::
+    Currently, only 4-D input tensors (batched image-like tensors) are
+    supported.",,,,,,,
+E3,,E4 (disagree),,CyclicLR,"
+Sets the learning rate of each parameter group according to
+cyclical learning rate policy (CLR). The policy cycles the learning
+rate between two boundaries with a constant frequency, as detailed in
+the paper `Cyclical Learning Rates for Training Neural Networks`_.
+The distance between the two boundaries can be scaled on a per-iteration
+or per-cycle basis.
+
+Cyclical learning rate policy changes the learning rate after every batch.
+`step` should be called after a batch has been used for training.
+
+This class has three built-in policies, as put forth in the paper:
+
+* ""triangular"": A basic triangular cycle without amplitude scaling.
+* ""triangular2"": A basic triangular cycle that scales initial amplitude by half each cycle.
+* ""exp_range"": A cycle that scales initial amplitude by :math:`\text{gamma}^{\text{cycle iterations}}`
+  at each cycle iteration.
+
+This implementation was adapted from the github repo: `bckenstler/CLR`_
+
+Args:
+    optimizer (Optimizer): Wrapped optimizer.
+    base_lr (float or list): Initial learning rate which is the
+        lower boundary in the cycle for each parameter group.
+    max_lr (float or list): Upper learning rate boundaries in the cycle
+        for each parameter group. Functionally,
+        it defines the cycle amplitude (max_lr - base_lr).
+        The lr at any cycle is the sum of base_lr
+        and some scaling of the amplitude; therefore
+        max_lr may not actually be reached depending on
+        scaling function.
+    step_size_up (int): Number of training iterations in the
+        increasing half of a cycle. Default: 2000
+    step_size_down (int): Number of training iterations in the
+        decreasing half of a cycle. If step_size_down is None,
+        it is set to step_size_up. Default: None
+    mode (str): One of {triangular, triangular2, exp_range}.
+        Values correspond to policies detailed above.
+        If scale_fn is not None, this argument is ignored.
+        Default: 'triangular'
+    gamma (float): Constant in 'exp_range' scaling function:
+        gamma**(cycle iterations)
+        Default: 1.0
+    scale_fn (function): Custom scaling policy defined by a single
+        argument lambda function, where
+        0 <= scale_fn(x) <= 1 for all x >= 0.
+        If specified, then 'mode' is ignored.
+        Default: None
+    scale_mode (str): {'cycle', 'iterations'}.
+        Defines whether scale_fn is evaluated on
+        cycle number or cycle iterations (training
+        iterations since start of cycle).
+        Default: 'cycle'
+    cycle_momentum (bool): If ``True``, momentum is cycled inversely
+        to learning rate between 'base_momentum' and 'max_momentum'.
+        Default: True
+    base_momentum (float or list): Lower momentum boundaries in the cycle
+        for each parameter group. Note that momentum is cycled inversely
+        to learning rate; at the peak of a cycle, momentum is
+        'base_momentum' and learning rate is 'max_lr'.
+        Default: 0.8
+    max_momentum (float or list): Upper momentum boundaries in the cycle
+        for each parameter group. Functionally,
+        it defines the cycle amplitude (max_momentum - base_momentum).
+        The momentum at any cycle is the difference of max_momentum
+        and some scaling of the amplitude; therefore
+        base_momentum may not actually be reached depending on
+        scaling function. Note that momentum is cycled inversely
+        to learning rate; at the start of a cycle, momentum is 'max_momentum'
+        and learning rate is 'base_lr'
+        Default: 0.9
+    last_epoch (int): The index of the last batch. This parameter is used when
+        resuming a training job. Since `step()` should be invoked after each
+        batch instead of after each epoch, this number represents the total
+        number of *batches* computed, not the total number of epochs computed.
+        When last_epoch=-1, the schedule is started from the beginning.
+        Default: -1
+
+Example:
+    >>> optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9)
+    >>> scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=0.01, max_lr=0.1)
+    >>> data_loader = torch.utils.data.DataLoader(...)
+    >>> for epoch in range(10):
+    >>>     for batch in data_loader:
+    >>>         train_batch(...)
+    >>>         scheduler.step()
+
+
+.. _Cyclical Learning Rates for Training Neural Networks: https://arxiv.org/abs/1506.01186
+.. _bckenstler/CLR: https://github.com/bckenstler/CLR",90,"
+Sets the learning rate of each parameter group according to
+cyclical learning rate policy (CLR). The policy cycles the learning
+rate between two boundaries with a constant frequency, as detailed in
+the paper `Cyclical Learning Rates for Training Neural Networks`_.
+The distance between the two boundaries can be scaled on a per-iteration
+or per-cycle basis.","In the simplest case, the output value of the layer with input size :math:`(N, C_{in}, D, H, W)`
+and output :math:`(N, C_{out}, D_{out}, H_{out}, W_{out})` can be precisely described as:
+
+.. math::
+    out(N_i, C_{out_j}) = bias(C_{out_j}) +
+                            \sum_{k = 0}^{C_{in} - 1} weight(C_{out_j}, k) \star input(N_i, k)
+
+where :math:`\star` is the valid 3D `cross-correlation`_ operator
+
+Example:
+    >>> optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9)
+    >>> scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=0.01, max_lr=0.1)
+    >>> data_loader = torch.utils.data.DataLoader(...)
+    >>> for epoch in range(10):
+    >>>     for batch in data_loader:
+    >>>         train_batch(...)
+    >>>         scheduler.step()","
+* ""triangular"": A basic triangular cycle without amplitude scaling.
+* ""triangular2"": A basic triangular cycle that scales initial amplitude by half each cycle.
+* ""exp_range"": A cycle that scales initial amplitude by :math:`\text{gamma}^{\text{cycle iterations}}`
+  at each cycle iteration.","Cyclical learning rate policy changes the learning rate after every batch.
+`step` should be called after a batch has been used for training.This class has three built-in policies, as put forth in the paper:
+
+* ""triangular"": A basic triangular cycle without amplitude scaling.
+* ""triangular2"": A basic triangular cycle that scales initial amplitude by half each cycle.
+* ""exp_range"": A cycle that scales initial amplitude by :math:`\text{gamma}^{\text{cycle iterations}}`
+  at each cycle iteration.",,,,,"
+This implementation was adapted from the github repo: `bckenstler/CLR`_
+.. _Cyclical Learning Rates for Training Neural Networks: https://arxiv.org/abs/1506.01186
+.. _bckenstler/CLR: https://github.com/bckenstler/CLR",,,"Cyclical learning rate policy changes the learning rate after every batch.
+`step` should be called after a batch has been used for training.",,,,,,
+E4,E2 (agree),,,EmbeddingBag,"
+Computes sums or means of 'bags' of embeddings, without instantiating the
+intermediate embeddings.
+
+For bags of constant length and no :attr:`per_sample_weights`, this class
+
+    * with ``mode=""sum""`` is equivalent to :class:`~torch.nn.Embedding` followed by ``torch.sum(dim=0)``,
+    * with ``mode=""mean""`` is equivalent to :class:`~torch.nn.Embedding` followed by ``torch.mean(dim=0)``,
+    * with ``mode=""max""`` is equivalent to :class:`~torch.nn.Embedding` followed by ``torch.max(dim=0)``.
+
+However, :class:`~torch.nn.EmbeddingBag` is much more time and memory efficient than using a chain of these
+operations.
+
+EmbeddingBag also supports per-sample weights as an argument to the forward
+pass. This scales the output of the Embedding before performing a weighted
+reduction as specified by ``mode``. If :attr:`per_sample_weights`` is passed, the
+only supported ``mode`` is ``""sum""``, which computes a weighted sum according to
+:attr:`per_sample_weights`.
+
+Args:
+    num_embeddings (int): size of the dictionary of embeddings
+    embedding_dim (int): the size of each embedding vector
+    max_norm (float, optional): If given, each embedding vector with norm larger than :attr:`max_norm`
+                                is renormalized to have norm :attr:`max_norm`.
+    norm_type (float, optional): The p of the p-norm to compute for the :attr:`max_norm` option. Default ``2``.
+    scale_grad_by_freq (boolean, optional): if given, this will scale gradients by the inverse of frequency of
+                                            the words in the mini-batch. Default ``False``.
+                                            Note: this option is not supported when ``mode=""max""``.
+    mode (string, optional): ``""sum""``, ``""mean""`` or ``""max""``. Specifies the way to reduce the bag.
+                             ``""sum""`` computes the weighted sum, taking :attr:`per_sample_weights`
+                             into consideration. ``""mean""`` computes the average of the values
+                             in the bag, ``""max""`` computes the max value over each bag.
+                             Default: ``""mean""``
+    sparse (bool, optional): if ``True``, gradient w.r.t. :attr:`weight` matrix will be a sparse tensor. See
+                             Notes for more details regarding sparse gradients. Note: this option is not
+                             supported when ``mode=""max""``.
+
+Attributes:
+    weight (Tensor): the learnable weights of the module of shape `(num_embeddings, embedding_dim)`
+                     initialized from :math:`\mathcal{N}(0, 1)`.
+
+Inputs: :attr:`input` (LongTensor), :attr:`offsets` (LongTensor, optional), and
+    :attr:`per_index_weights` (Tensor, optional)
+
+    - If :attr:`input` is 2D of shape `(B, N)`,
+
+      it will be treated as ``B`` bags (sequences) each of fixed length ``N``, and
+      this will return ``B`` values aggregated in a way depending on the :attr:`mode`.
+      :attr:`offsets` is ignored and required to be ``None`` in this case.
+
+    - If :attr:`input` is 1D of shape `(N)`,
+
+      it will be treated as a concatenation of multiple bags (sequences).
+      :attr:`offsets` is required to be a 1D tensor containing the
+      starting index positions of each bag in :attr:`input`. Therefore,
+      for :attr:`offsets` of shape `(B)`, :attr:`input` will be viewed as
+      having ``B`` bags. Empty bags (i.e., having 0-length) will have
+      returned vectors filled by zeros.
+
+    per_sample_weights (Tensor, optional): a tensor of float / double weights, or None
+        to indicate all weights should be taken to be ``1``. If specified, :attr:`per_sample_weights`
+        must have exactly the same shape as input and is treated as having the same
+        :attr:`offsets`, if those are not ``None``. Only supported for ``mode='sum'``.
+
+
+Output shape: `(B, embedding_dim)`
+
+Examples::
+
+    >>> # an Embedding module containing 10 tensors of size 3
+    >>> embedding_sum = nn.EmbeddingBag(10, 3, mode='sum')
+    >>> # a batch of 2 samples of 4 indices each
+    >>> input = torch.LongTensor([1,2,4,5,4,3,2,9])
+    >>> offsets = torch.LongTensor([0,4])
+    >>> embedding_sum(input, offsets)
+    tensor([[-0.8861, -5.4350, -0.0523],
+            [ 1.1306, -2.5798, -1.0044]])",76,"Computes sums or means of 'bags' of embeddings, without instantiating the
+intermediate embeddings.","Examples::
+
+    >>> # an Embedding module containing 10 tensors of size 3
+    >>> embedding_sum = nn.EmbeddingBag(10, 3, mode='sum')
+    >>> # a batch of 2 samples of 4 indices each
+    >>> input = torch.LongTensor([1,2,4,5,4,3,2,9])
+    >>> offsets = torch.LongTensor([0,4])
+    >>> embedding_sum(input, offsets)
+    tensor([[-0.8861, -5.4350, -0.0523],
+            [ 1.1306, -2.5798, -1.0044]])","Args:
+    num_embeddings (int): size of the dictionary of embeddings
+    embedding_dim (int): the size of each embedding vector
+    max_norm (float, optional): If given, each embedding vector with norm larger than :attr:`max_norm`
+                                is renormalized to have norm :attr:`max_norm`.
+    norm_type (float, optional): The p of the p-norm to compute for the :attr:`max_norm` option. Default ``2``.
+    scale_grad_by_freq (boolean, optional): if given, this will scale gradients by the inverse of frequency of
+                                            the words in the mini-batch. Default ``False``.
+                                            Note: this option is not supported when ``mode=""max""``.
+    mode (string, optional): ``""sum""``, ``""mean""`` or ``""max""``. Specifies the way to reduce the bag.
+                             ``""sum""`` computes the weighted sum, taking :attr:`per_sample_weights`
+                             into consideration. ``""mean""`` computes the average of the values
+                             in the bag, ``""max""`` computes the max value over each bag.
+                             Default: ``""mean""``
+    sparse (bool, optional): if ``True``, gradient w.r.t. :attr:`weight` matrix will be a sparse tensor. See
+                             Notes for more details regarding sparse gradients. Note: this option is not
+                             supported when ``mode=""max""``.","Attributes:
+    weight (Tensor): the learnable weights of the module of shape `(num_embeddings, embedding_dim)`
+                     initialized from :math:`\mathcal{N}(0, 1)`.
+
+Inputs: :attr:`input` (LongTensor), :attr:`offsets` (LongTensor, optional), and
+    :attr:`per_index_weights` (Tensor, optional)
+
+    - If :attr:`input` is 2D of shape `(B, N)`,
+
+      it will be treated as ``B`` bags (sequences) each of fixed length ``N``, and
+      this will return ``B`` values aggregated in a way depending on the :attr:`mode`.
+      :attr:`offsets` is ignored and required to be ``None`` in this case.
+
+    - If :attr:`input` is 1D of shape `(N)`,
+
+      it will be treated as a concatenation of multiple bags (sequences).
+      :attr:`offsets` is required to be a 1D tensor containing the
+      starting index positions of each bag in :attr:`input`. Therefore,
+      for :attr:`offsets` of shape `(B)`, :attr:`input` will be viewed as
+      having ``B`` bags. Empty bags (i.e., having 0-length) will have
+      returned vectors filled by zeros.
+
+    per_sample_weights (Tensor, optional): a tensor of float / double weights, or None
+        to indicate all weights should be taken to be ``1``. If specified, :attr:`per_sample_weights`
+        must have exactly the same shape as input and is treated as having the same
+        :attr:`offsets`, if those are not ``None``. Only supported for ``mode='sum'``.",,"""For bags of constant length and no :attr:`per_sample_weights`, this class
+
+    * with ``mode=""""sum""""`` is equivalent to :class:`~torch.nn.Embedding` followed by ``torch.sum(dim=0)``,
+    * with ``mode=""""mean""""`` is equivalent to :class:`~torch.nn.Embedding` followed by ``torch.mean(dim=0)``,
+    * with ``mode=""""max""""`` is equivalent to :class:`~torch.nn.Embedding` followed by ``torch.max(dim=0)``.
+
+However, :class:`~torch.nn.EmbeddingBag` is much more time and memory efficient than using a chain of these
+operations.
+
+EmbeddingBag also supports per-sample weights as an argument to the forward
+pass. This scales the output of the Embedding before performing a weighted
+reduction as specified by ``mode``. If :attr:`per_sample_weights`` is passed, the
+only supported ``mode`` is ``""""sum""""``, which computes a weighted sum according to
+:attr:`per_sample_weights`.
+""",,,,,"However, :class:`~torch.nn.EmbeddingBag` is much more time and memory efficient than using a chain of these
+operations.
+For bags of constant length and no :attr:`per_sample_weights`, this class
+
+However, :class:`~torch.nn.EmbeddingBag` is much more time and memory efficient than using a chain of these
+operations.
+",,,,,,,
+E4,,E3 (disagree),,BatchNorm1d,"
+Applies Batch Normalization over a 2D or 3D input (a mini-batch of 1D
+inputs with optional additional channel dimension) as described in the paper
+`Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift`_ .
+
+.. math::
+
+    y = \frac{x - \mathrm{E}[x]}{\sqrt{\mathrm{Var}[x] + \epsilon}} * \gamma + \beta
+
+The mean and standard-deviation are calculated per-dimension over
+the mini-batches and :math:`\gamma` and :math:`\beta` are learnable parameter vectors
+of size `C` (where `C` is the input size). By default, the elements of :math:`\gamma` are set
+to 1 and the elements of :math:`\beta` are set to 0.
+
+Also by default, during training this layer keeps running estimates of its
+computed mean and variance, which are then used for normalization during
+evaluation. The running estimates are kept with a default :attr:`momentum`
+of 0.1.
+
+If :attr:`track_running_stats` is set to ``False``, this layer then does not
+keep running estimates, and batch statistics are instead used during
+evaluation time as well.
+
+.. note::
+    This :attr:`momentum` argument is different from one used in optimizer
+    classes and the conventional notion of momentum. Mathematically, the
+    update rule for running statistics here is
+    :math:`\hat{x}_\text{new} = (1 - \text{momentum}) \times \hat{x} + \text{momentum} \times x_t`,
+    where :math:`\hat{x}` is the estimated statistic and :math:`x_t` is the
+    new observed value.
+
+Because the Batch Normalization is done over the `C` dimension, computing statistics
+on `(N, L)` slices, it's common terminology to call this Temporal Batch Normalization.
+
+Args:
+    num_features: :math:`C` from an expected input of size
+        :math:`(N, C, L)` or :math:`L` from input of size :math:`(N, L)`
+    eps: a value added to the denominator for numerical stability.
+        Default: 1e-5
+    momentum: the value used for the running_mean and running_var
+        computation. Can be set to ``None`` for cumulative moving average
+        (i.e. simple average). Default: 0.1
+    affine: a boolean value that when set to ``True``, this module has
+        learnable affine parameters. Default: ``True``
+    track_running_stats: a boolean value that when set to ``True``, this
+        module tracks the running mean and variance, and when set to ``False``,
+        this module does not track such statistics and always uses batch
+        statistics in both training and eval modes. Default: ``True``
+
+Shape:
+    - Input: :math:`(N, C)` or :math:`(N, C, L)`
+    - Output: :math:`(N, C)` or :math:`(N, C, L)` (same shape as input)
+
+Examples::
+
+    >>> # With Learnable Parameters
+    >>> m = nn.BatchNorm1d(100)
+    >>> # Without Learnable Parameters
+    >>> m = nn.BatchNorm1d(100, affine=False)
+    >>> input = torch.randn(20, 100)
+    >>> output = m(input)
+
+.. _`Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift`:
+    https://arxiv.org/abs/1502.03167",63,"
+Applies Batch Normalization over a 2D or 3D input (a mini-batch of 1D
+inputs with optional additional channel dimension) as described in the paper
+`Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift`_ .","
+Examples::
+
+    >>> # With Learnable Parameters
+    >>> m = nn.BatchNorm1d(100)
+    >>> # Without Learnable Parameters
+    >>> m = nn.BatchNorm1d(100, affine=False)
+    >>> input = torch.randn(20, 100)
+    >>> output = m(input)","Args:
+    num_features: :math:`C` from an expected input of size
+        :math:`(N, C, L)` or :math:`L` from input of size :math:`(N, L)`
+    eps: a value added to the denominator for numerical stability.
+        Default: 1e-5
+    momentum: the value used for the running_mean and running_var
+        computation. Can be set to ``None`` for cumulative moving average
+        (i.e. simple average). Default: 0.1
+    affine: a boolean value that when set to ``True``, this module has
+        learnable affine parameters. Default: ``True``
+    track_running_stats: a boolean value that when set to ``True``, this
+        module tracks the running mean and variance, and when set to ``False``,
+        this module does not track such statistics and always uses batch
+        statistics in both training and eval modes. Default: ``True``",".. math::
+
+    y = \frac{x - \mathrm{E}[x]}{\sqrt{\mathrm{Var}[x] + \epsilon}} * \gamma + \beta
+
+The mean and standard-deviation are calculated per-dimension over
+the mini-batches and :math:`\gamma` and :math:`\beta` are learnable parameter vectors
+of size `C` (where `C` is the input size). By default, the elements of :math:`\gamma` are set
+to 1 and the elements of :math:`\beta` are set to 0.
+
+Also by default, during training this layer keeps running estimates of its
+computed mean and variance, which are then used for normalization during
+evaluation. The running estimates are kept with a default :attr:`momentum`
+of 0.1.
+
+If :attr:`track_running_stats` is set to ``False``, this layer then does not
+keep running estimates, and batch statistics are instead used during
+evaluation time as well.
+Shape:
+    - Input: :math:`(N, C)` or :math:`(N, C, L)`
+    - Output: :math:`(N, C)` or :math:`(N, C, L)` (same shape as input)",,".. note::
+    This :attr:`momentum` argument is different from one used in optimizer
+    classes and the conventional notion of momentum. Mathematically, the
+    update rule for running statistics here is
+    :math:`\hat{x}_\text{new} = (1 - \text{momentum}) \times \hat{x} + \text{momentum} \times x_t`,
+    where :math:`\hat{x}` is the estimated statistic and :math:`x_t` is the
+    new observed value.
+
+Because the Batch Normalization is done over the `C` dimension, computing statistics
+on `(N, L)` slices, it's common terminology to call this Temporal Batch Normalization.",,,"
+Applies Batch Normalization over a 2D or 3D input (a mini-batch of 1D
+inputs with optional additional channel dimension) as described in the paper
+`Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift`_ .
+
+.. _`Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift`:
+    https://arxiv.org/abs/1502.03167",,"
+If :attr:`track_running_stats` is set to ``False``, this layer then does not
+keep running estimates, and batch statistics are instead used during
+evaluation time as well.
+.. note::
+    This :attr:`momentum` argument is different from one used in optimizer
+    classes and the conventional notion of momentum. Mathematically, the
+    update rule for running statistics here is
+    :math:`\hat{x}_\text{new} = (1 - \text{momentum}) \times \hat{x} + \text{momentum} \times x_t`,
+    where :math:`\hat{x}` is the estimated statistic and :math:`x_t` is the
+    new observed value.
+
+Because the Batch Normalization is done over the `C` dimension, computing statistics
+on `(N, L)` slices, it's common terminology to call this Temporal Batch Normalization.",,,,".. _`Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift`:
+    https://arxiv.org/abs/1502.03167",,,
+E1,,E4 (disagree),,SGD,"
+Implements stochastic gradient descent (optionally with momentum).
+
+Nesterov momentum is based on the formula from
+`On the importance of initialization and momentum in deep learning`__.
+
+Args:
+    params (iterable): iterable of parameters to optimize or dicts defining
+        parameter groups
+    lr (float): learning rate
+    momentum (float, optional): momentum factor (default: 0)
+    weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
+    dampening (float, optional): dampening for momentum (default: 0)
+    nesterov (bool, optional): enables Nesterov momentum (default: False)
+
+Example:
+    >>> optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9)
+    >>> optimizer.zero_grad()
+    >>> loss_fn(model(input), target).backward()
+    >>> optimizer.step()
+
+__ http://www.cs.toronto.edu/%7Ehinton/absps/momentum.pdf
+
+.. note::
+    The implementation of SGD with Momentum/Nesterov subtly differs from
+    Sutskever et. al. and implementations in some other frameworks.
+
+    Considering the specific case of Momentum, the update can be written as
+
+    .. math::
+              v_{t+1} = \mu * v_{t} + g_{t+1} \\
+              p_{t+1} = p_{t} - lr * v_{t+1}
+
+    where p, g, v and :math:`\mu` denote the parameters, gradient,
+    velocity, and momentum respectively.
+
+    This is in contrast to Sutskever et. al. and
+    other frameworks which employ an update of the form
+
+    .. math::
+         v_{t+1} = \mu * v_{t} + lr * g_{t+1} \\
+         p_{t+1} = p_{t} - v_{t+1}
+
+    The Nesterov version is analogously modified.",44,"Implements stochastic gradient descent (optionally with momentum).
+","Example:
+    >>> optimizer = torch.optim.SGD(model.parameters(), lr=0.1, momentum=0.9)
+    >>> optimizer.zero_grad()
+    >>> loss_fn(model(input), target).backward()
+    >>> optimizer.step()","Args:
+    params (iterable): iterable of parameters to optimize or dicts defining
+        parameter groups
+    lr (float): learning rate
+    momentum (float, optional): momentum factor (default: 0)
+    weight_decay (float, optional): weight decay (L2 penalty) (default: 0)
+    dampening (float, optional): dampening for momentum (default: 0)
+    nesterov (bool, optional): enables Nesterov momentum (default: False)","Nesterov momentum is based on the formula from
+`On the importance of initialization and momentum in deep learning`__.",,"Nesterov momentum is based on the formula from
+`On the importance of initialization and momentum in deep learning`__.",,,,,".. note::
+    The implementation of SGD with Momentum/Nesterov subtly differs from
+    Sutskever et. al. and implementations in some other frameworks.
+
+        Considering the specific case of Momentum, the update can be written as
+
+    .. math::
+              v_{t+1} = \mu * v_{t} + g_{t+1} \\
+              p_{t+1} = p_{t} - lr * v_{t+1}
+
+    where p, g, v and :math:`\mu` denote the parameters, gradient,
+    velocity, and momentum respectively.
+
+    This is in contrast to Sutskever et. al. and
+    other frameworks which employ an update of the form
+
+    .. math::
+         v_{t+1} = \mu * v_{t} + lr * g_{t+1} \\
+         p_{t+1} = p_{t} - v_{t+1}
+
+    The Nesterov version is analogously modified.",,,,,,,
