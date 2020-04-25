@@ -53,9 +53,10 @@ public class PrepareExtractors {
 			for (String category : this.categories(statement)) {
 				try (
 						ResultSet result = statement.executeQuery(
-								"SELECT partition, \"" + category + "\" FROM " + this.data + "_preprocessed JOIN "
-										+ this.data + "_partition on (" + this.data + "_partition.class = " + this.data
-										+ "_preprocessed.class) WHERE \"" + category + "\" IS NOT NULL")
+								"SELECT partition, comment_sentence FROM " + this.data + "_mapping_clean JOIN "
+										+ this.data + "_sentence_partition on (" + this.data
+										+ "_sentence_partition.comment_sentence_id = " + this.data
+										+ "_mapping_clean.comment_sentence_id) WHERE category = \"" + category + "\"")
 				) {
 					while (result.next()) {
 						int partition = result.getInt("partition");
@@ -65,7 +66,7 @@ public class PrepareExtractors {
 						if (!partitions.get(partition).containsKey(category)) {
 							partitions.get(partition).put(category, new ArrayList<>());
 						}
-						partitions.get(partition).get(category).add(result.getString(category));
+						partitions.get(partition).get(category).add(result.getString("comment_sentence"));
 					}
 				}
 			}

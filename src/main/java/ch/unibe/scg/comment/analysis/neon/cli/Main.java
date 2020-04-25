@@ -24,7 +24,13 @@ public class Main {
 		CommandLineParser parser = new DefaultParser();
 		Options options = new Options();
 		options.addOption(Option.builder("D").longOpt("database").required().hasArg().desc("database path").build());
-		options.addOption(Option.builder("d").longOpt("data").required().hasArg().desc("data source [pharo]").build());
+		options.addOption(Option.builder("d")
+				.longOpt("data")
+				.required()
+				.hasArgs()
+				.valueSeparator(',')
+				.desc("data source [pharo|java|python]")
+				.build());
 		options.addOption(Option.builder("t")
 				.longOpt("task")
 				.required()
@@ -35,23 +41,24 @@ public class Main {
 		try {
 			CommandLine line = parser.parse(options, args);
 			String database = line.getOptionValue("database");
-			String data = line.getOptionValue("data");
 			for (String task : line.getOptionValues("task")) {
-				LOGGER.info("Running {}...", task);
-				if ("preprocess".equals(task)) {
-					(new Preprocess(database, data)).run();
-				} else if ("split-sentences".equals(task)) {
-					(new SplitSentences(database, data)).run();
-				} else if ("map-sentences".equals(task)) {
-					(new MapSentences(database, data)).run();
-				} else if ("partition".equals(task)) {
-					(new Partition(database, data, 3)).run();
-				} else if ("prepare-extractors".equals(task)) {
-					(new PrepareExtractors(database, data, 1000)).run();
-				} else if ("prepare-datasets".equals(task)) {
-					(new PrepareDatasets(database, data, 0)).run();
-				} else {
-					throw new IllegalArgumentException("task option is unknown");
+				for (String data : line.getOptionValues("data")) {
+					LOGGER.info("Running {} on {}...", task, data);
+					if ("preprocess".equals(task)) {
+						(new Preprocess(database, data)).run();
+					} else if ("split-sentences".equals(task)) {
+						(new SplitSentences(database, data)).run();
+					} else if ("map-sentences".equals(task)) {
+						(new MapSentences(database, data)).run();
+					} else if ("partition".equals(task)) {
+						(new Partition(database, data, new int[]{3, 1})).run();
+					} else if ("prepare-extractors".equals(task)) {
+						(new PrepareExtractors(database, data, 1000)).run();
+					} else if ("prepare-datasets".equals(task)) {
+						(new PrepareDatasets(database, data, 0)).run();
+					} else {
+						throw new IllegalArgumentException("task option is unknown");
+					}
 				}
 			}
 		} catch (ParseException | IllegalArgumentException e) {

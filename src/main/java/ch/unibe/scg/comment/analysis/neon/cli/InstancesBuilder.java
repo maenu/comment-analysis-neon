@@ -18,7 +18,6 @@ public class InstancesBuilder {
 			"-P", "tfidf-", // attribute prefix
 			"-L", // lowercase
 			"-stemmer", "weka.core.stemmers.IteratedLovinsStemmer", // stemmer
-			"-C", "true", // word counts
 			"-T", "true", // TF
 			"-I", "true" // IDF
 	};
@@ -26,7 +25,6 @@ public class InstancesBuilder {
 			"-P", "tfidf-", // attribute prefix
 			"-L", // lowercase
 			"-stemmer", "weka.core.stemmers.IteratedLovinsStemmer", // stemmer
-			"-C", // word counts
 			"-T", // TF
 			"-I" // IDF
 	};
