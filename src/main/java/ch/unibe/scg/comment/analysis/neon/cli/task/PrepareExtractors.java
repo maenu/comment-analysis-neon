@@ -1,6 +1,5 @@
 package ch.unibe.scg.comment.analysis.neon.cli.task;
 
-import ch.unibe.scg.comment.analysis.neon.cli.InstancesBuilder;
 import org.neon.model.Condition;
 import org.neon.model.Heuristic;
 import org.neon.pathsFinder.engine.Parser;
@@ -11,6 +10,7 @@ import org.neon.pathsFinder.model.Sentence;
 import weka.core.Attribute;
 import weka.core.DenseInstance;
 import weka.core.Instances;
+import weka.core.stemmers.IteratedLovinsStemmer;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
@@ -127,10 +127,12 @@ public class PrepareExtractors {
 		Path path = Files.createTempFile("dictionary", ".csv");
 		try {
 			StringToWordVector filter = new StringToWordVector();
-			filter.setOptions(InstancesBuilder.TFIDF_EXTRACT_FILTER_OPTIONS);
+			filter.setOutputWordCounts(true);
+			filter.setLowerCaseTokens(true);
+			filter.setDoNotOperateOnPerClassBasis(true);
+			filter.setStemmer(new IteratedLovinsStemmer());
 			filter.setWordsToKeep(this.wordsToKeep);
 			filter.setAttributeIndicesArray(new int[]{0}); // first attribute is sentence
-			filter.setDoNotOperateOnPerClassBasis(true); // keep words irrespective of class
 			filter.setDictionaryFileToSaveTo(path.toFile());
 			filter.setInputFormat(instances);
 			Filter.useFilter(instances, filter);

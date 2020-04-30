@@ -46,12 +46,15 @@ public class PrepareDatasets {
 			Map<Integer, String> sentences = new HashMap<>();
 			Map<Integer, Map<Integer, Set<String>>> partitions = new HashMap<>();
 			try (
-					ResultSet result = statement.executeQuery("SELECT * FROM " + this.data + "_ground_truth")
+					ResultSet result = statement.executeQuery(
+							"SELECT partition, m.comment_sentence_id AS id, m.comment_sentence AS sentence, category FROM "
+									+ this.data + "_mapping_clean AS m JOIN " + this.data
+									+ "_sentence_partition AS p ON (p.comment_sentence_id = m.comment_sentence_id)")
 			) {
 				while (result.next()) {
 					int partition = result.getInt("partition");
-					int id = result.getInt("comment_sentence_id");
-					String sentence = result.getString("comment_sentence");
+					int id = result.getInt("id");
+					String sentence = result.getString("sentence");
 					String category = result.getString("category");
 					sentences.put(id, sentence);
 					if (!partitions.containsKey(partition)) {
@@ -64,7 +67,7 @@ public class PrepareDatasets {
 				}
 			}
 			for (Map.Entry<Integer, Map<Integer, Set<String>>> partition : partitions.entrySet()) {
-				InstancesBuilder builder = this.instancesBuilder(statement, categories);
+				InstancesBuilder builder = this.instancesBuilder(statement, categories, partition.getKey());
 				for (Map.Entry<Integer, Set<String>> sentence : partition.getValue().entrySet()) {
 					builder.add(sentences.get(sentence.getKey()), sentence.getValue());
 				}
@@ -83,7 +86,7 @@ public class PrepareDatasets {
 	}
 
 	private InstancesBuilder instancesBuilder(
-			Statement statement, List<String> categories
+			Statement statement, List<String> categories, int partition
 	) throws SQLException, IOException {
 		try (
 				ResultSet result = statement.executeQuery(
@@ -96,7 +99,7 @@ public class PrepareDatasets {
 			Path dictionary = Files.createTempFile("dictionary", ".csv");
 			Files.write(dictionary, result.getBytes("dictionary"));
 			return new InstancesBuilder(
-					String.format("data-%d", this.extractorsPartition),
+					String.format("%s-features-%d-%d", this.data, this.extractorsPartition, partition),
 					categories,
 					heuristics.toFile(),
 					dictionary.toFile()

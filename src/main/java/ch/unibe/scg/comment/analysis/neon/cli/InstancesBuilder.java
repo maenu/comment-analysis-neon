@@ -1,33 +1,21 @@
 package ch.unibe.scg.comment.analysis.neon.cli;
 
-import meka.core.MLUtils;
 import weka.core.Attribute;
+import weka.core.DictionaryBuilder;
 import weka.core.Instances;
 import weka.core.SparseInstance;
+import weka.core.stemmers.IteratedLovinsStemmer;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.FixedDictionaryStringToWordVector;
 
 import java.io.File;
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
 public class InstancesBuilder {
 
-	public static final String[] TFIDF_FIXED_FILTER_OPTIONS = new String[]{
-			"-P", "tfidf-", // attribute prefix
-			"-L", // lowercase
-			"-stemmer", "weka.core.stemmers.IteratedLovinsStemmer", // stemmer
-			"-T", "true", // TF
-			"-I", "true" // IDF
-	};
-	public static final String[] TFIDF_EXTRACT_FILTER_OPTIONS = new String[]{
-			"-P", "tfidf-", // attribute prefix
-			"-L", // lowercase
-			"-stemmer", "weka.core.stemmers.IteratedLovinsStemmer", // stemmer
-			"-T", // TF
-			"-I" // IDF
-	};
 	private final List<String> categories;
 	private final File heuristics;
 	private final File dictionary;
@@ -45,8 +33,7 @@ public class InstancesBuilder {
 		}
 		// add text attribute last
 		attributes.add(new Attribute("text", true, null));
-		// name with -C for MEKA
-		this.instances = new Instances(String.format("%s: -C %d", name, this.categories.size()), attributes, 0);
+		this.instances = new Instances(name, attributes, 0);
 	}
 
 	public static String preprocess(String s) {
@@ -105,7 +92,6 @@ public class InstancesBuilder {
 	public Instances build() throws Exception {
 		Instances instances = this.tfidf(this.heuristic(this.instances));
 		instances.setRelationName(this.instances.relationName());
-		MLUtils.prepareData(instances);
 		return instances;
 	}
 
@@ -138,10 +124,21 @@ public class InstancesBuilder {
 	private Instances tfidf(Instances instances) throws Exception {
 		int i = instances.attribute("text").index() + 1;
 		FixedDictionaryStringToWordVector filter = new FixedDictionaryStringToWordVector();
-		filter.setOptions(TFIDF_FIXED_FILTER_OPTIONS);
+		filter.setLowerCaseTokens(true);
+		filter.setStemmer(new IteratedLovinsStemmer());
+		filter.setOutputWordCounts(true);
+		filter.setTFTransform(true);
+		filter.setIDFTransform(true);
+		filter.setAttributeNamePrefix("tfidf-");
 		filter.setAttributeIndices(String.format("%d-%d", i, i));
 		filter.setDictionaryFile(this.dictionary);
 		filter.setInputFormat(instances);
+		// fix broken m_count in dictionary build, any positive constant will work
+		Field mCount = DictionaryBuilder.class.getDeclaredField("m_count");
+		mCount.setAccessible(true);
+		Field mVectorizer = FixedDictionaryStringToWordVector.class.getDeclaredField("m_vectorizer");
+		mVectorizer.setAccessible(true);
+		mCount.set(mVectorizer.get(filter), 1000);
 		return Filter.useFilter(instances, filter);
 	}
 
