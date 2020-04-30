@@ -1,0 +1,3060 @@
+@relation python-features-0-0
+
+@attribute category-CodingGuidelines {0,1}
+@attribute category-Dependecies {0,1}
+@attribute category-DevelopmentNotes {0,1}
+@attribute category-Exception {0,1}
+@attribute category-Expand {0,1}
+@attribute category-Extension {0,1}
+@attribute category-Links {0,1}
+@attribute category-Noise {0,1}
+@attribute category-Observation {0,1}
+@attribute category-Parameters {0,1}
+@attribute category-Precondition {0,1}
+@attribute category-Recommendation {0,1}
+@attribute category-Subclassexplnation {0,1}
+@attribute category-Summary {0,1}
+@attribute category-Todo {0,1}
+@attribute category-Usage {0,1}
+@attribute category-Version {0,1}
+@attribute category-Warnings {0,1}
+@attribute heuristic-DevelopmentNotes- {0,1}
+@attribute 'heuristic-DevelopmentNotes-Attributes [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Calls [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Contains [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Creates [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Folds [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Is found.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Is made.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Manages [something].' {0,1}
+@attribute heuristic-DevelopmentNotes-Needs. {0,1}
+@attribute 'heuristic-DevelopmentNotes-Parsestrs [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Performs [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Places [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Provides [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Sees [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Specifies [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-To supply.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-Uses class.' {0,1}
+@attribute heuristic-DevelopmentNotes-Uses. {0,1}
+@attribute 'heuristic-DevelopmentNotes-You need.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[auxiliary] construct.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[auxiliary] create [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[auxiliary] not create.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[auxiliary] set.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] [auxiliary] create.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] [auxiliary] do.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] calculates [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] calls.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] creates [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] exists.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] has [something].' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] implements.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] is.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] modules.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] objects.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] overlaps.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] provides.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] returns list.' {0,1}
+@attribute 'heuristic-DevelopmentNotes-[something] uses [something].' {0,1}
+@attribute 'heuristic-Exception-Configs [something].' {0,1}
+@attribute 'heuristic-Exception-Traceback calls.' {0,1}
+@attribute 'heuristic-Exception-[something] requires [something].' {0,1}
+@attribute heuristic-Expand- {0,1}
+@attribute 'heuristic-Expand-Accesses [something].' {0,1}
+@attribute 'heuristic-Expand-Adds [something].' {0,1}
+@attribute heuristic-Expand-Allows. {0,1}
+@attribute 'heuristic-Expand-Array dtypes.' {0,1}
+@attribute 'heuristic-Expand-Array sees example.' {0,1}
+@attribute 'heuristic-Expand-Attributes [something].' {0,1}
+@attribute 'heuristic-Expand-Can be used.' {0,1}
+@attribute 'heuristic-Expand-Creates [something].' {0,1}
+@attribute 'heuristic-Expand-D is.' {0,1}
+@attribute heuristic-Expand-Does. {0,1}
+@attribute 'heuristic-Expand-Gets internal.' {0,1}
+@attribute 'heuristic-Expand-Has shape.' {0,1}
+@attribute 'heuristic-Expand-Implements [something].' {0,1}
+@attribute 'heuristic-Expand-Is called.' {0,1}
+@attribute 'heuristic-Expand-Is converted.' {0,1}
+@attribute 'heuristic-Expand-Is executed.' {0,1}
+@attribute 'heuristic-Expand-Is kept.' {0,1}
+@attribute 'heuristic-Expand-Is passed.' {0,1}
+@attribute 'heuristic-Expand-Is reflected.' {0,1}
+@attribute 'heuristic-Expand-Is set.' {0,1}
+@attribute 'heuristic-Expand-Is treated.' {0,1}
+@attribute 'heuristic-Expand-Is used.' {0,1}
+@attribute 'heuristic-Expand-Is viewed.' {0,1}
+@attribute heuristic-Expand-Is. {0,1}
+@attribute 'heuristic-Expand-It will be treated.' {0,1}
+@attribute 'heuristic-Expand-Makes [something].' {0,1}
+@attribute 'heuristic-Expand-Math ps.' {0,1}
+@attribute 'heuristic-Expand-Math ys.' {0,1}
+@attribute 'heuristic-Expand-Mathes [something].' {0,1}
+@attribute 'heuristic-Expand-Parses [something].' {0,1}
+@attribute 'heuristic-Expand-Rejects [something].' {0,1}
+@attribute 'heuristic-Expand-Returns [something].' {0,1}
+@attribute 'heuristic-Expand-Sees [something].' {0,1}
+@attribute 'heuristic-Expand-Stores message.' {0,1}
+@attribute 'heuristic-Expand-That has [something].' {0,1}
+@attribute 'heuristic-Expand-That scales amplitude.' {0,1}
+@attribute 'heuristic-Expand-This is used.' {0,1}
+@attribute 'heuristic-Expand-To make.' {0,1}
+@attribute 'heuristic-Expand-To provide.' {0,1}
+@attribute 'heuristic-Expand-Uses [something].' {0,1}
+@attribute heuristic-Expand-Uses. {0,1}
+@attribute 'heuristic-Expand-Will be swopped.' {0,1}
+@attribute 'heuristic-Expand-Wraps [something].' {0,1}
+@attribute 'heuristic-Expand-[auxiliary] construct.' {0,1}
+@attribute 'heuristic-Expand-[auxiliary] create [something].' {0,1}
+@attribute 'heuristic-Expand-[auxiliary] do [something].' {0,1}
+@attribute 'heuristic-Expand-[auxiliary] have [something].' {0,1}
+@attribute 'heuristic-Expand-[auxiliary] implement.' {0,1}
+@attribute 'heuristic-Expand-[auxiliary] s contents.' {0,1}
+@attribute 'heuristic-Expand-[something] [auxiliary] contain [something].' {0,1}
+@attribute 'heuristic-Expand-[something] [auxiliary] create [something].' {0,1}
+@attribute 'heuristic-Expand-[something] [auxiliary] have [something].' {0,1}
+@attribute 'heuristic-Expand-[something] adds [something].' {0,1}
+@attribute 'heuristic-Expand-[something] aggregates.' {0,1}
+@attribute 'heuristic-Expand-[something] attributes.' {0,1}
+@attribute 'heuristic-Expand-[something] calls.' {0,1}
+@attribute 'heuristic-Expand-[something] contains [something].' {0,1}
+@attribute 'heuristic-Expand-[something] does [something].' {0,1}
+@attribute 'heuristic-Expand-[something] exists.' {0,1}
+@attribute 'heuristic-Expand-[something] gets [something].' {0,1}
+@attribute 'heuristic-Expand-[something] handles.' {0,1}
+@attribute 'heuristic-Expand-[something] has [something].' {0,1}
+@attribute 'heuristic-Expand-[something] hes.' {0,1}
+@attribute 'heuristic-Expand-[something] implements.' {0,1}
+@attribute 'heuristic-Expand-[something] is number.' {0,1}
+@attribute 'heuristic-Expand-[something] is statistic.' {0,1}
+@attribute 'heuristic-Expand-[something] is.' {0,1}
+@attribute 'heuristic-Expand-[something] keeps.' {0,1}
+@attribute 'heuristic-Expand-[something] leaves.' {0,1}
+@attribute 'heuristic-Expand-[something] mathes.' {0,1}
+@attribute 'heuristic-Expand-[something] ns.' {0,1}
+@attribute 'heuristic-Expand-[something] represents [something].' {0,1}
+@attribute 'heuristic-Expand-[something] retains parity.' {0,1}
+@attribute 'heuristic-Expand-[something] returns [something].' {0,1}
+@attribute 'heuristic-Expand-[something] sizes [something].' {0,1}
+@attribute 'heuristic-Expand-[something] sizes.' {0,1}
+@attribute 'heuristic-Expand-[something] tensors.' {0,1}
+@attribute 'heuristic-Expand-[something] uses [something].' {0,1}
+@attribute 'heuristic-Expand-[something] uses.' {0,1}
+@attribute 'heuristic-Expand-[something] will result.' {0,1}
+@attribute 'heuristic-Expand-[something] will return [something].' {0,1}
+@attribute 'heuristic-Expand-[something] ys.' {0,1}
+@attribute heuristic-Expand-[verb]s. {0,1}
+@attribute 'heuristic-Links-Accelerates train.' {0,1}
+@attribute 'heuristic-Links-Can be found.' {0,1}
+@attribute 'heuristic-Links-Is based.' {0,1}
+@attribute 'heuristic-Links-Sees [something].' {0,1}
+@attribute 'heuristic-Links-Specifies [something].' {0,1}
+@attribute 'heuristic-Links-You need.' {0,1}
+@attribute 'heuristic-Links-[something] https github.' {0,1}
+@attribute 'heuristic-Observation-[something] has [something].' {0,1}
+@attribute heuristic-Parameters- {0,1}
+@attribute heuristic-Parameters-Allows. {0,1}
+@attribute 'heuristic-Parameters-Boolean dtypes array.' {0,1}
+@attribute 'heuristic-Parameters-Can be used.' {0,1}
+@attribute 'heuristic-Parameters-Category is given.' {0,1}
+@attribute 'heuristic-Parameters-Computes average.' {0,1}
+@attribute 'heuristic-Parameters-Contains [something].' {0,1}
+@attribute 'heuristic-Parameters-Creates [something].' {0,1}
+@attribute 'heuristic-Parameters-Datum is dataframe.' {0,1}
+@attribute 'heuristic-Parameters-Default means [something].' {0,1}
+@attribute 'heuristic-Parameters-Defaults [something].' {0,1}
+@attribute 'heuristic-Parameters-Defaults string.' {0,1}
+@attribute heuristic-Parameters-Defaults. {0,1}
+@attribute 'heuristic-Parameters-Defines [something].' {0,1}
+@attribute 'heuristic-Parameters-Dilation ints.' {0,1}
+@attribute 'heuristic-Parameters-Dtypes [something].' {0,1}
+@attribute heuristic-Parameters-Floats. {0,1}
+@attribute 'heuristic-Parameters-Has [something].' {0,1}
+@attribute 'heuristic-Parameters-Helps [something].' {0,1}
+@attribute 'heuristic-Parameters-Indicates [something].' {0,1}
+@attribute 'heuristic-Parameters-Is allowed.' {0,1}
+@attribute 'heuristic-Parameters-Is applied.' {0,1}
+@attribute 'heuristic-Parameters-Is enabled.' {0,1}
+@attribute 'heuristic-Parameters-Is normalized.' {0,1}
+@attribute 'heuristic-Parameters-Is passed.' {0,1}
+@attribute 'heuristic-Parameters-Is provided.' {0,1}
+@attribute 'heuristic-Parameters-Is set and this.' {0,1}
+@attribute 'heuristic-Parameters-Is set.' {0,1}
+@attribute 'heuristic-Parameters-Is used.' {0,1}
+@attribute heuristic-Parameters-Is. {0,1}
+@attribute 'heuristic-Parameters-Keeps [something].' {0,1}
+@attribute 'heuristic-Parameters-Loss [verb]s.' {0,1}
+@attribute 'heuristic-Parameters-Loss is summed.' {0,1}
+@attribute 'heuristic-Parameters-Method is.' {0,1}
+@attribute heuristic-Parameters-Needs. {0,1}
+@attribute heuristic-Parameters-Notes. {0,1}
+@attribute 'heuristic-Parameters-Optionals [something].' {0,1}
+@attribute 'heuristic-Parameters-Param allows.' {0,1}
+@attribute 'heuristic-Parameters-Param hides [something].' {0,1}
+@attribute 'heuristic-Parameters-Parameter is used.' {0,1}
+@attribute 'heuristic-Parameters-Params [something].' {0,1}
+@attribute 'heuristic-Parameters-Passes [something].' {0,1}
+@attribute 'heuristic-Parameters-Prints [something].' {0,1}
+@attribute 'heuristic-Parameters-Raises exception.' {0,1}
+@attribute heuristic-Parameters-Reads. {0,1}
+@attribute 'heuristic-Parameters-Removes [something].' {0,1}
+@attribute 'heuristic-Parameters-Request is sent.' {0,1}
+@attribute 'heuristic-Parameters-Returns [something].' {0,1}
+@attribute 'heuristic-Parameters-S false.' {0,1}
+@attribute 'heuristic-Parameters-Sees [something].' {0,1}
+@attribute 'heuristic-Parameters-Sets [something].' {0,1}
+@attribute heuristic-Parameters-Sets. {0,1}
+@attribute 'heuristic-Parameters-Should be used.' {0,1}
+@attribute 'heuristic-Parameters-Size ints size optional.' {0,1}
+@attribute 'heuristic-Parameters-Size ints.' {0,1}
+@attribute 'heuristic-Parameters-Specifies [something].' {0,1}
+@attribute 'heuristic-Parameters-Sums [something].' {0,1}
+@attribute heuristic-Parameters-Supports. {0,1}
+@attribute 'heuristic-Parameters-Takes [something].' {0,1}
+@attribute 'heuristic-Parameters-That scales amplitude.' {0,1}
+@attribute 'heuristic-Parameters-This is set.' {0,1}
+@attribute 'heuristic-Parameters-To apply.' {0,1}
+@attribute 'heuristic-Parameters-To attach.' {0,1}
+@attribute 'heuristic-Parameters-To disable.' {0,1}
+@attribute 'heuristic-Parameters-To include.' {0,1}
+@attribute 'heuristic-Parameters-To process [something].' {0,1}
+@attribute 'heuristic-Parameters-To remove [something].' {0,1}
+@attribute 'heuristic-Parameters-To retry.' {0,1}
+@attribute 'heuristic-Parameters-To send.' {0,1}
+@attribute 'heuristic-Parameters-To use.' {0,1}
+@attribute 'heuristic-Parameters-Value is used.' {0,1}
+@attribute 'heuristic-Parameters-Variable is shown.' {0,1}
+@attribute 'heuristic-Parameters-We retry.' {0,1}
+@attribute 'heuristic-Parameters-Which means.' {0,1}
+@attribute 'heuristic-Parameters-Will be applied.' {0,1}
+@attribute 'heuristic-Parameters-Will be infered.' {0,1}
+@attribute 'heuristic-Parameters-Will clean.' {0,1}
+@attribute 'heuristic-Parameters-[auxiliary] be set.' {0,1}
+@attribute 'heuristic-Parameters-[auxiliary] be used.' {0,1}
+@attribute 'heuristic-Parameters-[auxiliary] have [something].' {0,1}
+@attribute 'heuristic-Parameters-[auxiliary] is path.' {0,1}
+@attribute 'heuristic-Parameters-[auxiliary] is tensor.' {0,1}
+@attribute 'heuristic-Parameters-[auxiliary] provide.' {0,1}
+@attribute 'heuristic-Parameters-[auxiliary] return.' {0,1}
+@attribute 'heuristic-Parameters-[something] [auxiliary] contain [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] [auxiliary] have [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] [auxiliary] is name.' {0,1}
+@attribute 'heuristic-Parameters-[something] [auxiliary] retry.' {0,1}
+@attribute 'heuristic-Parameters-[something] adds.' {0,1}
+@attribute 'heuristic-Parameters-[something] args.' {0,1}
+@attribute 'heuristic-Parameters-[something] builds.' {0,1}
+@attribute 'heuristic-Parameters-[something] computes [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] controls stride.' {0,1}
+@attribute 'heuristic-Parameters-[something] defaults [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] defaults.' {0,1}
+@attribute 'heuristic-Parameters-[something] dicts.' {0,1}
+@attribute 'heuristic-Parameters-[something] does [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] errors [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] factors [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] floats.' {0,1}
+@attribute 'heuristic-Parameters-[something] forces.' {0,1}
+@attribute 'heuristic-Parameters-[something] gets.' {0,1}
+@attribute 'heuristic-Parameters-[something] has [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] has.' {0,1}
+@attribute 'heuristic-Parameters-[something] headers.' {0,1}
+@attribute 'heuristic-Parameters-[something] indexes [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] instances.' {0,1}
+@attribute 'heuristic-Parameters-[something] integers.' {0,1}
+@attribute 'heuristic-Parameters-[something] ints [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] ints.' {0,1}
+@attribute 'heuristic-Parameters-[something] is called.' {0,1}
+@attribute 'heuristic-Parameters-[something] is default.' {0,1}
+@attribute 'heuristic-Parameters-[something] is int.' {0,1}
+@attribute 'heuristic-Parameters-[something] is list.' {0,1}
+@attribute 'heuristic-Parameters-[something] is name.' {0,1}
+@attribute 'heuristic-Parameters-[something] is none.' {0,1}
+@attribute 'heuristic-Parameters-[something] is passed.' {0,1}
+@attribute 'heuristic-Parameters-[something] is.' {0,1}
+@attribute 'heuristic-Parameters-[something] likes [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] makes.' {0,1}
+@attribute 'heuristic-Parameters-[something] matches.' {0,1}
+@attribute 'heuristic-Parameters-[something] means and which.' {0,1}
+@attribute 'heuristic-Parameters-[something] means.' {0,1}
+@attribute 'heuristic-Parameters-[something] names.' {0,1}
+@attribute 'heuristic-Parameters-[something] numpies.' {0,1}
+@attribute 'heuristic-Parameters-[something] objects.' {0,1}
+@attribute 'heuristic-Parameters-[something] occurs.' {0,1}
+@attribute 'heuristic-Parameters-[something] params iterable optimize.' {0,1}
+@attribute 'heuristic-Parameters-[something] prompts.' {0,1}
+@attribute 'heuristic-Parameters-[something] reads.' {0,1}
+@attribute 'heuristic-Parameters-[something] reduces.' {0,1}
+@attribute 'heuristic-Parameters-[something] requires.' {0,1}
+@attribute 'heuristic-Parameters-[something] resolves.' {0,1}
+@attribute 'heuristic-Parameters-[something] retries.' {0,1}
+@attribute 'heuristic-Parameters-[something] sees [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] sequences.' {0,1}
+@attribute 'heuristic-Parameters-[something] sizes [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] specifies.' {0,1}
+@attribute 'heuristic-Parameters-[something] starts [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] strings.' {0,1}
+@attribute 'heuristic-Parameters-[something] strs [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] tuples.' {0,1}
+@attribute 'heuristic-Parameters-[something] urls.' {0,1}
+@attribute 'heuristic-Parameters-[something] uses [something].' {0,1}
+@attribute 'heuristic-Parameters-[something] values.' {0,1}
+@attribute 'heuristic-Parameters-[something] will sleep.' {0,1}
+@attribute 'heuristic-Parameters-[something] works.' {0,1}
+@attribute 'heuristic-Parameters-[verb]s end mark.' {0,1}
+@attribute 'heuristic-Parameters-[verb]s specify plot.' {0,1}
+@attribute heuristic-Parameters-[verb]s. {0,1}
+@attribute 'heuristic-Precondition-Is found.' {0,1}
+@attribute 'heuristic-Recommendation-Adds [something].' {0,1}
+@attribute 'heuristic-Recommendation-Should be used.' {0,1}
+@attribute 'heuristic-Recommendation-To use.' {0,1}
+@attribute 'heuristic-Recommendation-Uses [something].' {0,1}
+@attribute 'heuristic-Recommendation-[auxiliary] be used.' {0,1}
+@attribute 'heuristic-Recommendation-[auxiliary] use.' {0,1}
+@attribute 'heuristic-Recommendation-[something] nns.' {0,1}
+@attribute 'heuristic-Recommendation-[something] ops.' {0,1}
+@attribute 'heuristic-Subclassexplnation-To implement.' {0,1}
+@attribute 'heuristic-Subclassexplnation-[something] [auxiliary] implement [something].' {0,1}
+@attribute 'heuristic-Subclassexplnation-[something] has.' {0,1}
+@attribute 'heuristic-Subclassexplnation-[something] ns.' {0,1}
+@attribute 'heuristic-Subclassexplnation-[something] subclasses.' {0,1}
+@attribute heuristic-Summary- {0,1}
+@attribute 'heuristic-Summary-Accesses [something].' {0,1}
+@attribute 'heuristic-Summary-Adds [something].' {0,1}
+@attribute heuristic-Summary-Attempts. {0,1}
+@attribute 'heuristic-Summary-Bases [something].' {0,1}
+@attribute 'heuristic-Summary-Class objects.' {0,1}
+@attribute 'heuristic-Summary-Class uses.' {0,1}
+@attribute 'heuristic-Summary-Collects [something].' {0,1}
+@attribute 'heuristic-Summary-Combines [something].' {0,1}
+@attribute 'heuristic-Summary-Constructs [something].' {0,1}
+@attribute 'heuristic-Summary-Contains [something].' {0,1}
+@attribute 'heuristic-Summary-Creates distribution parameterize.' {0,1}
+@attribute 'heuristic-Summary-Dictionary is dictionary.' {0,1}
+@attribute 'heuristic-Summary-Do not exist.' {0,1}
+@attribute 'heuristic-Summary-Dons [something].' {0,1}
+@attribute 'heuristic-Summary-Error occurs.' {0,1}
+@attribute 'heuristic-Summary-Generates [something].' {0,1}
+@attribute 'heuristic-Summary-Gives to [something] [something].' {0,1}
+@attribute 'heuristic-Summary-Has [something].' {0,1}
+@attribute 'heuristic-Summary-Implements dict.' {0,1}
+@attribute 'heuristic-Summary-Instantiates [something].' {0,1}
+@attribute 'heuristic-Summary-Is found.' {0,1}
+@attribute 'heuristic-Summary-Is passed.' {0,1}
+@attribute 'heuristic-Summary-Is specified.' {0,1}
+@attribute 'heuristic-Summary-Is used.' {0,1}
+@attribute 'heuristic-Summary-It has.' {0,1}
+@attribute 'heuristic-Summary-Keeps [something].' {0,1}
+@attribute 'heuristic-Summary-Module modules.' {0,1}
+@attribute 'heuristic-Summary-Moves [something].' {0,1}
+@attribute heuristic-Summary-Namespaces. {0,1}
+@attribute 'heuristic-Summary-Produces [something].' {0,1}
+@attribute 'heuristic-Summary-Provides [something].' {0,1}
+@attribute 'heuristic-Summary-Reduces [something].' {0,1}
+@attribute 'heuristic-Summary-Replaces [something].' {0,1}
+@attribute 'heuristic-Summary-Represents [something].' {0,1}
+@attribute 'heuristic-Summary-Sets [something].' {0,1}
+@attribute 'heuristic-Summary-Structures [something].' {0,1}
+@attribute 'heuristic-Summary-Takes [something].' {0,1}
+@attribute 'heuristic-Summary-To hold [something].' {0,1}
+@attribute 'heuristic-Summary-To provide [something].' {0,1}
+@attribute 'heuristic-Summary-To use.' {0,1}
+@attribute heuristic-Summary-Types. {0,1}
+@attribute 'heuristic-Summary-Updates [something].' {0,1}
+@attribute 'heuristic-Summary-Uses [something].' {0,1}
+@attribute heuristic-Summary-Uses. {0,1}
+@attribute 'heuristic-Summary-Wraps [something].' {0,1}
+@attribute 'heuristic-Summary-[auxiliary] find template.' {0,1}
+@attribute 'heuristic-Summary-[auxiliary] insert.' {0,1}
+@attribute 'heuristic-Summary-[auxiliary] store [something].' {0,1}
+@attribute 'heuristic-Summary-[something] algorithms.' {0,1}
+@attribute 'heuristic-Summary-[something] allows [something].' {0,1}
+@attribute 'heuristic-Summary-[something] allows.' {0,1}
+@attribute 'heuristic-Summary-[something] bases.' {0,1}
+@attribute 'heuristic-Summary-[something] begins [something].' {0,1}
+@attribute 'heuristic-Summary-[something] combines [something].' {0,1}
+@attribute 'heuristic-Summary-[something] defines [something].' {0,1}
+@attribute 'heuristic-Summary-[something] encounters [something].' {0,1}
+@attribute 'heuristic-Summary-[something] exists.' {0,1}
+@attribute 'heuristic-Summary-[something] files [something].' {0,1}
+@attribute 'heuristic-Summary-[something] files.' {0,1}
+@attribute 'heuristic-Summary-[something] handles.' {0,1}
+@attribute 'heuristic-Summary-[something] has [something].' {0,1}
+@attribute 'heuristic-Summary-[something] keeps [something].' {0,1}
+@attribute 'heuristic-Summary-[something] matches.' {0,1}
+@attribute 'heuristic-Summary-[something] means.' {0,1}
+@attribute 'heuristic-Summary-[something] ns.' {0,1}
+@attribute 'heuristic-Summary-[something] parameters.' {0,1}
+@attribute 'heuristic-Summary-[something] provides [something].' {0,1}
+@attribute 'heuristic-Summary-[something] raises.' {0,1}
+@attribute 'heuristic-Summary-[something] removes.' {0,1}
+@attribute 'heuristic-Summary-[something] renders.' {0,1}
+@attribute 'heuristic-Summary-[something] represents.' {0,1}
+@attribute 'heuristic-Summary-[something] responses.' {0,1}
+@attribute 'heuristic-Summary-[something] sections.' {0,1}
+@attribute 'heuristic-Summary-[something] shows [something].' {0,1}
+@attribute 'heuristic-Summary-[something] stores.' {0,1}
+@attribute 'heuristic-Summary-[something] templates.' {0,1}
+@attribute 'heuristic-Summary-[something] tensors.' {0,1}
+@attribute 'heuristic-Summary-[something] values.' {0,1}
+@attribute 'heuristic-Summary-[something] views.' {0,1}
+@attribute 'heuristic-Summary-[verb]s [something] hash use.' {0,1}
+@attribute 'heuristic-Summary-[verb]s algorithm use.' {0,1}
+@attribute heuristic-Summary-[verb]s. {0,1}
+@attribute heuristic-Usage- {0,1}
+@attribute 'heuristic-Usage-Adds [something].' {0,1}
+@attribute heuristic-Usage-Adds. {0,1}
+@attribute 'heuristic-Usage-Array sees example.' {0,1}
+@attribute 'heuristic-Usage-Calls op.' {0,1}
+@attribute 'heuristic-Usage-Class has [something].' {0,1}
+@attribute 'heuristic-Usage-Configs [something].' {0,1}
+@attribute 'heuristic-Usage-Considers [something].' {0,1}
+@attribute 'heuristic-Usage-Constructs [something].' {0,1}
+@attribute 'heuristic-Usage-Contains [something].' {0,1}
+@attribute 'heuristic-Usage-Creates [something].' {0,1}
+@attribute 'heuristic-Usage-Dataset contains.' {0,1}
+@attribute heuristic-Usage-Defaults. {0,1}
+@attribute 'heuristic-Usage-Defs self.' {0,1}
+@attribute 'heuristic-Usage-Fns [something].' {0,1}
+@attribute 'heuristic-Usage-Generates [something].' {0,1}
+@attribute 'heuristic-Usage-Gets [something].' {0,1}
+@attribute 'heuristic-Usage-Gives [something].' {0,1}
+@attribute 'heuristic-Usage-Is added.' {0,1}
+@attribute 'heuristic-Usage-Is allowed.' {0,1}
+@attribute 'heuristic-Usage-Is considered.' {0,1}
+@attribute 'heuristic-Usage-Is defined.' {0,1}
+@attribute 'heuristic-Usage-Is followed.' {0,1}
+@attribute 'heuristic-Usage-Is found.' {0,1}
+@attribute 'heuristic-Usage-Is given.' {0,1}
+@attribute 'heuristic-Usage-Is intended.' {0,1}
+@attribute 'heuristic-Usage-Is passed.' {0,1}
+@attribute 'heuristic-Usage-Is set.' {0,1}
+@attribute 'heuristic-Usage-Is used.' {0,1}
+@attribute 'heuristic-Usage-It [verb]s.' {0,1}
+@attribute 'heuristic-Usage-It reads.' {0,1}
+@attribute 'heuristic-Usage-Loaders [something].' {0,1}
+@attribute 'heuristic-Usage-Loads [something].' {0,1}
+@attribute 'heuristic-Usage-M nns.' {0,1}
+@attribute 'heuristic-Usage-Model probers.' {0,1}
+@attribute heuristic-Usage-Ms. {0,1}
+@attribute 'heuristic-Usage-Parameter have be added.' {0,1}
+@attribute 'heuristic-Usage-Parsestrs [something].' {0,1}
+@attribute 'heuristic-Usage-Passes [something].' {0,1}
+@attribute 'heuristic-Usage-Permission limits.' {0,1}
+@attribute 'heuristic-Usage-Potatos [something].' {0,1}
+@attribute 'heuristic-Usage-Provides [something].' {0,1}
+@attribute 'heuristic-Usage-Raises [something].' {0,1}
+@attribute 'heuristic-Usage-Replaces [something].' {0,1}
+@attribute 'heuristic-Usage-S false.' {0,1}
+@attribute 'heuristic-Usage-Sets [something].' {0,1}
+@attribute 'heuristic-Usage-Targets [something].' {0,1}
+@attribute 'heuristic-Usage-To make [something].' {0,1}
+@attribute 'heuristic-Usage-To use.' {0,1}
+@attribute 'heuristic-Usage-Traceback calls.' {0,1}
+@attribute 'heuristic-Usage-Uses [something].' {0,1}
+@attribute heuristic-Usage-Uses. {0,1}
+@attribute heuristic-Usage-Verifies. {0,1}
+@attribute 'heuristic-Usage-Views [something].' {0,1}
+@attribute 'heuristic-Usage-Will be inserted.' {0,1}
+@attribute 'heuristic-Usage-Will insert.' {0,1}
+@attribute 'heuristic-Usage-Will print.' {0,1}
+@attribute 'heuristic-Usage-Will return.' {0,1}
+@attribute 'heuristic-Usage-Will wrap.' {0,1}
+@attribute 'heuristic-Usage-Wraps [something].' {0,1}
+@attribute 'heuristic-Usage-[auxiliary] act.' {0,1}
+@attribute 'heuristic-Usage-[auxiliary] be used.' {0,1}
+@attribute 'heuristic-Usage-[auxiliary] call.' {0,1}
+@attribute 'heuristic-Usage-[auxiliary] construct.' {0,1}
+@attribute 'heuristic-Usage-[auxiliary] copy.' {0,1}
+@attribute 'heuristic-Usage-[auxiliary] make [something].' {0,1}
+@attribute 'heuristic-Usage-[auxiliary] use.' {0,1}
+@attribute 'heuristic-Usage-[something] [auxiliary] exist and item.' {0,1}
+@attribute 'heuristic-Usage-[something] [auxiliary] exist.' {0,1}
+@attribute 'heuristic-Usage-[something] [auxiliary] have [something].' {0,1}
+@attribute 'heuristic-Usage-[something] [auxiliary] occur.' {0,1}
+@attribute 'heuristic-Usage-[something] [auxiliary] use.' {0,1}
+@attribute 'heuristic-Usage-[something] calls [something].' {0,1}
+@attribute 'heuristic-Usage-[something] contains [something].' {0,1}
+@attribute 'heuristic-Usage-[something] creates [something].' {0,1}
+@attribute 'heuristic-Usage-[something] defaults.' {0,1}
+@attribute 'heuristic-Usage-[something] do not exist.' {0,1}
+@attribute 'heuristic-Usage-[something] dtypes [something].' {0,1}
+@attribute 'heuristic-Usage-[something] foos.' {0,1}
+@attribute 'heuristic-Usage-[something] gets [something].' {0,1}
+@attribute 'heuristic-Usage-[something] gets.' {0,1}
+@attribute 'heuristic-Usage-[something] has [something].' {0,1}
+@attribute 'heuristic-Usage-[something] ignores.' {0,1}
+@attribute 'heuristic-Usage-[something] is none.' {0,1}
+@attribute 'heuristic-Usage-[something] is number.' {0,1}
+@attribute 'heuristic-Usage-[something] is.' {0,1}
+@attribute 'heuristic-Usage-[something] labels.' {0,1}
+@attribute 'heuristic-Usage-[something] means.' {0,1}
+@attribute 'heuristic-Usage-[something] names.' {0,1}
+@attribute 'heuristic-Usage-[something] needs.' {0,1}
+@attribute 'heuristic-Usage-[something] objects.' {0,1}
+@attribute 'heuristic-Usage-[something] ops.' {0,1}
+@attribute 'heuristic-Usage-[something] orders.' {0,1}
+@attribute 'heuristic-Usage-[something] potatos.' {0,1}
+@attribute 'heuristic-Usage-[something] prints [something].' {0,1}
+@attribute 'heuristic-Usage-[something] represents [something].' {0,1}
+@attribute 'heuristic-Usage-[something] requires.' {0,1}
+@attribute 'heuristic-Usage-[something] results.' {0,1}
+@attribute 'heuristic-Usage-[something] returns [something].' {0,1}
+@attribute 'heuristic-Usage-[something] ses.' {0,1}
+@attribute 'heuristic-Usage-[something] sets.' {0,1}
+@attribute 'heuristic-Usage-[something] sizes [something].' {0,1}
+@attribute 'heuristic-Usage-[something] targets size.' {0,1}
+@attribute 'heuristic-Usage-[something] torches.' {0,1}
+@attribute 'heuristic-Usage-[something] ts.' {0,1}
+@attribute 'heuristic-Usage-[something] uses [something].' {0,1}
+@attribute 'heuristic-Usage-[something] uses.' {0,1}
+@attribute 'heuristic-Usage-[something] will create [something].' {0,1}
+@attribute 'heuristic-Usage-[something] works.' {0,1}
+@attribute 'heuristic-Usage-[something] xes torch.' {0,1}
+@attribute 'heuristic-Usage-[verb]s identify.' {0,1}
+@attribute 'heuristic-Usage-[verb]s use.' {0,1}
+@attribute heuristic-Usage-[verb]s. {0,1}
+@attribute 'heuristic-Version-Is added.' {0,1}
+@attribute heuristic-Warnings- {0,1}
+@attribute 'heuristic-Warnings-Attributes [something].' {0,1}
+@attribute 'heuristic-Warnings-Creates [something].' {0,1}
+@attribute 'heuristic-Warnings-Is used.' {0,1}
+@attribute 'heuristic-Warnings-Python memcaches [something].' {0,1}
+@attribute 'heuristic-Warnings-To construct.' {0,1}
+@attribute 'heuristic-Warnings-[auxiliary] be initialized.' {0,1}
+@attribute 'heuristic-Warnings-[auxiliary] not create.' {0,1}
+@attribute 'heuristic-Warnings-[something] creates.' {0,1}
+@attribute 'heuristic-Warnings-[something] do not support.' {0,1}
+@attribute 'heuristic-Warnings-[something] employs [something].' {0,1}
+@attribute 'heuristic-Warnings-[something] has [something].' {0,1}
+@attribute 'heuristic-Warnings-[something] is.' {0,1}
+@attribute 'heuristic-Warnings-[something] may change.' {0,1}
+@attribute 'heuristic-Warnings-[something] modules.' {0,1}
+@attribute 'heuristic-Warnings-[something] uses [something].' {0,1}
+@attribute tfidf-0 numeric
+@attribute tfidf-01 numeric
+@attribute tfidf-05 numeric
+@attribute tfidf-1 numeric
+@attribute tfidf-10 numeric
+@attribute tfidf-100 numeric
+@attribute tfidf-12 numeric
+@attribute tfidf-123 numeric
+@attribute tfidf-1255 numeric
+@attribute tfidf-14126980 numeric
+@attribute tfidf-16 numeric
+@attribute tfidf-1999 numeric
+@attribute tfidf-1d numeric
+@attribute tfidf-1e numeric
+@attribute tfidf-2 numeric
+@attribute tfidf-20 numeric
+@attribute tfidf-27 numeric
+@attribute tfidf-2d numeric
+@attribute tfidf-3 numeric
+@attribute tfidf-30 numeric
+@attribute tfidf-300 numeric
+@attribute tfidf-31 numeric
+@attribute tfidf-3d numeric
+@attribute tfidf-4 numeric
+@attribute tfidf-42 numeric
+@attribute tfidf-440 numeric
+@attribute tfidf-5 numeric
+@attribute tfidf-6000 numeric
+@attribute tfidf-6010 numeric
+@attribute tfidf-64 numeric
+@attribute tfidf-6447 numeric
+@attribute tfidf-7 numeric
+@attribute tfidf-8 numeric
+@attribute tfidf-9 numeric
+@attribute tfidf-a numeric
+@attribute tfidf-ability numeric
+@attribute tfidf-about numeric
+@attribute tfidf-above numeric
+@attribute tfidf-abs numeric
+@attribute tfidf-abstract numeric
+@attribute tfidf-accelerating numeric
+@attribute tfidf-accept numeric
+@attribute tfidf-access numeric
+@attribute tfidf-accessed numeric
+@attribute tfidf-according numeric
+@attribute tfidf-account numeric
+@attribute tfidf-act numeric
+@attribute tfidf-actual numeric
+@attribute tfidf-actually numeric
+@attribute tfidf-adam numeric
+@attribute tfidf-add numeric
+@attribute tfidf-added numeric
+@attribute tfidf-adding numeric
+@attribute tfidf-additional numeric
+@attribute tfidf-adds numeric
+@attribute tfidf-admin numeric
+@attribute tfidf-adrian numeric
+@attribute tfidf-advance numeric
+@attribute tfidf-advances numeric
+@attribute tfidf-after numeric
+@attribute tfidf-algorithm numeric
+@attribute tfidf-alignments numeric
+@attribute tfidf-all numeric
+@attribute tfidf-allow numeric
+@attribute tfidf-allowed numeric
+@attribute tfidf-allows numeric
+@attribute tfidf-already numeric
+@attribute tfidf-also numeric
+@attribute tfidf-always numeric
+@attribute tfidf-amplitude numeric
+@attribute tfidf-an numeric
+@attribute tfidf-and numeric
+@attribute tfidf-any numeric
+@attribute tfidf-anything numeric
+@attribute tfidf-api numeric
+@attribute tfidf-app numeric
+@attribute tfidf-app1 numeric
+@attribute tfidf-append numeric
+@attribute tfidf-application numeric
+@attribute tfidf-applications numeric
+@attribute tfidf-applied numeric
+@attribute tfidf-applies numeric
+@attribute tfidf-apply numeric
+@attribute tfidf-apps numeric
+@attribute tfidf-arbitrary numeric
+@attribute tfidf-archive numeric
+@attribute tfidf-are numeric
+@attribute tfidf-args numeric
+@attribute tfidf-argument numeric
+@attribute tfidf-arguments numeric
+@attribute tfidf-array numeric
+@attribute tfidf-arrays numeric
+@attribute tfidf-arxiv numeric
+@attribute tfidf-as numeric
+@attribute tfidf-ascii numeric
+@attribute tfidf-assigned numeric
+@attribute tfidf-assumed numeric
+@attribute tfidf-astype numeric
+@attribute tfidf-at numeric
+@attribute tfidf-attach numeric
+@attribute tfidf-attention numeric
+@attribute tfidf-attr numeric
+@attribute tfidf-attribute numeric
+@attribute tfidf-attributes numeric
+@attribute tfidf-audio numeric
+@attribute tfidf-auth numeric
+@attribute tfidf-auto numeric
+@attribute tfidf-autoescape numeric
+@attribute tfidf-autofield numeric
+@attribute tfidf-automatic numeric
+@attribute tfidf-automatically numeric
+@attribute tfidf-average numeric
+@attribute tfidf-averaged numeric
+@attribute tfidf-axis numeric
+@attribute tfidf-b numeric
+@attribute tfidf-back numeric
+@attribute tfidf-backend numeric
+@attribute tfidf-backoff numeric
+@attribute tfidf-backward numeric
+@attribute tfidf-bag numeric
+@attribute tfidf-bags numeric
+@attribute tfidf-bar numeric
+@attribute tfidf-barh numeric
+@attribute tfidf-base numeric
+@attribute tfidf-based numeric
+@attribute tfidf-basic numeric
+@attribute tfidf-batch numeric
+@attribute tfidf-bckenstler numeric
+@attribute tfidf-be numeric
+@attribute tfidf-because numeric
+@attribute tfidf-been numeric
+@attribute tfidf-before numeric
+@attribute tfidf-begin numeric
+@attribute tfidf-behavior numeric
+@attribute tfidf-being numeric
+@attribute tfidf-below numeric
+@attribute tfidf-between numeric
+@attribute tfidf-bias numeric
+@attribute tfidf-binary numeric
+@attribute tfidf-block numeric
+@attribute tfidf-blocks numeric
+@attribute tfidf-body numeric
+@attribute tfidf-bool numeric
+@attribute tfidf-boolean numeric
+@attribute tfidf-booleanarray numeric
+@attribute tfidf-both numeric
+@attribute tfidf-bottom numeric
+@attribute tfidf-boundaries numeric
+@attribute tfidf-breaks numeric
+@attribute tfidf-build numeric
+@attribute tfidf-built numeric
+@attribute tfidf-business numeric
+@attribute tfidf-but numeric
+@attribute tfidf-by numeric
+@attribute tfidf-bytecode numeric
+@attribute tfidf-bytes numeric
+@attribute tfidf-bytestring numeric
+@attribute tfidf-bz2 numeric
+@attribute tfidf-c numeric
+@attribute tfidf-cache numeric
+@attribute tfidf-call numeric
+@attribute tfidf-callable numeric
+@attribute tfidf-called numeric
+@attribute tfidf-calls numeric
+@attribute tfidf-can numeric
+@attribute tfidf-cannot numeric
+@attribute tfidf-carrots numeric
+@attribute tfidf-case numeric
+@attribute tfidf-catch numeric
+@attribute tfidf-categorical numeric
+@attribute tfidf-categoricaldtype numeric
+@attribute tfidf-categoricalindex numeric
+@attribute tfidf-categoricals numeric
+@attribute tfidf-categories numeric
+@attribute tfidf-category numeric
+@attribute tfidf-cdot numeric
+@attribute tfidf-cell numeric
+@attribute tfidf-center numeric
+@attribute tfidf-certain numeric
+@attribute tfidf-chain numeric
+@attribute tfidf-change numeric
+@attribute tfidf-changed numeric
+@attribute tfidf-channel numeric
+@attribute tfidf-channels numeric
+@attribute tfidf-characters numeric
+@attribute tfidf-charset numeric
+@attribute tfidf-check numeric
+@attribute tfidf-checks numeric
+@attribute tfidf-cid numeric
+@attribute tfidf-class numeric
+@attribute tfidf-classes numeric
+@attribute tfidf-classification numeric
+@attribute tfidf-clean numeric
+@attribute tfidf-cleaned numeric
+@attribute tfidf-client numeric
+@attribute tfidf-clr numeric
+@attribute tfidf-code numeric
+@attribute tfidf-collection numeric
+@attribute tfidf-color numeric
+@attribute tfidf-colormap numeric
+@attribute tfidf-colors numeric
+@attribute tfidf-column numeric
+@attribute tfidf-com numeric
+@attribute tfidf-combine numeric
+@attribute tfidf-command numeric
+@attribute tfidf-comment numeric
+@attribute tfidf-comments numeric
+@attribute tfidf-common numeric
+@attribute tfidf-comparison numeric
+@attribute tfidf-computed numeric
+@attribute tfidf-computes numeric
+@attribute tfidf-computing numeric
+@attribute tfidf-config numeric
+@attribute tfidf-configuration numeric
+@attribute tfidf-connection numeric
+@attribute tfidf-consider numeric
+@attribute tfidf-considered numeric
+@attribute tfidf-const numeric
+@attribute tfidf-construct numeric
+@attribute tfidf-constructed numeric
+@attribute tfidf-constructor numeric
+@attribute tfidf-contain numeric
+@attribute tfidf-container numeric
+@attribute tfidf-containing numeric
+@attribute tfidf-contains numeric
+@attribute tfidf-content numeric
+@attribute tfidf-contents numeric
+@attribute tfidf-context numeric
+@attribute tfidf-contexts numeric
+@attribute tfidf-contrib numeric
+@attribute tfidf-controls numeric
+@attribute tfidf-conv3d numeric
+@attribute tfidf-convert numeric
+@attribute tfidf-converted numeric
+@attribute tfidf-convrelu3d numeric
+@attribute tfidf-cookies numeric
+@attribute tfidf-copy numeric
+@attribute tfidf-covariate numeric
+@attribute tfidf-create numeric
+@attribute tfidf-created numeric
+@attribute tfidf-creates numeric
+@attribute tfidf-creating numeric
+@attribute tfidf-creation numeric
+@attribute tfidf-crypt numeric
+@attribute tfidf-current numeric
+@attribute tfidf-custom numeric
+@attribute tfidf-cycle numeric
+@attribute tfidf-d numeric
+@attribute tfidf-dash numeric
+@attribute tfidf-data numeric
+@attribute tfidf-database numeric
+@attribute tfidf-dataframe numeric
+@attribute tfidf-dataset numeric
+@attribute tfidf-date numeric
+@attribute tfidf-dateoffset numeric
+@attribute tfidf-day numeric
+@attribute tfidf-db numeric
+@attribute tfidf-decay numeric
+@attribute tfidf-decorator numeric
+@attribute tfidf-deep numeric
+@attribute tfidf-def numeric
+@attribute tfidf-default numeric
+@attribute tfidf-defaults numeric
+@attribute tfidf-defined numeric
+@attribute tfidf-defining numeric
+@attribute tfidf-dependencies numeric
+@attribute tfidf-dependency numeric
+@attribute tfidf-depending numeric
+@attribute tfidf-deprecated numeric
+@attribute tfidf-depth numeric
+@attribute tfidf-dequantize numeric
+@attribute tfidf-described numeric
+@attribute tfidf-description numeric
+@attribute tfidf-details numeric
+@attribute tfidf-device numeric
+@attribute tfidf-df1 numeric
+@attribute tfidf-df2 numeric
+@attribute tfidf-diagonal numeric
+@attribute tfidf-diagonalarray numeric
+@attribute tfidf-dict numeric
+@attribute tfidf-dictionary numeric
+@attribute tfidf-dicts numeric
+@attribute tfidf-different numeric
+@attribute tfidf-dilation numeric
+@attribute tfidf-dim numeric
+@attribute tfidf-dimension numeric
+@attribute tfidf-dimensions numeric
+@attribute tfidf-directory numeric
+@attribute tfidf-disable numeric
+@attribute tfidf-disabled numeric
+@attribute tfidf-disk numeric
+@attribute tfidf-dispatch numeric
+@attribute tfidf-display numeric
+@attribute tfidf-divided numeric
+@attribute tfidf-divisor numeric
+@attribute tfidf-django numeric
+@attribute tfidf-do numeric
+@attribute tfidf-document numeric
+@attribute tfidf-documentation numeric
+@attribute tfidf-does numeric
+@attribute tfidf-doesn numeric
+@attribute tfidf-don numeric
+@attribute tfidf-done numeric
+@attribute tfidf-dtype numeric
+@attribute tfidf-dtypes numeric
+@attribute tfidf-during numeric
+@attribute tfidf-dynamically numeric
+@attribute tfidf-each numeric
+@attribute tfidf-easier numeric
+@attribute tfidf-eg numeric
+@attribute tfidf-either numeric
+@attribute tfidf-element numeric
+@attribute tfidf-elements numeric
+@attribute tfidf-ell numeric
+@attribute tfidf-else numeric
+@attribute tfidf-em numeric
+@attribute tfidf-embedding numeric
+@attribute tfidf-embeddingbag numeric
+@attribute tfidf-embeddings numeric
+@attribute tfidf-empty numeric
+@attribute tfidf-enabled numeric
+@attribute tfidf-encoder numeric
+@attribute tfidf-encoding numeric
+@attribute tfidf-end numeric
+@attribute tfidf-environment numeric
+@attribute tfidf-equal numeric
+@attribute tfidf-equality numeric
+@attribute tfidf-equivalent numeric
+@attribute tfidf-error numeric
+@attribute tfidf-errors numeric
+@attribute tfidf-escape numeric
+@attribute tfidf-estimated numeric
+@attribute tfidf-estimates numeric
+@attribute tfidf-etc numeric
+@attribute tfidf-eval numeric
+@attribute tfidf-evaluation numeric
+@attribute tfidf-even numeric
+@attribute tfidf-eventually numeric
+@attribute tfidf-every numeric
+@attribute tfidf-evil numeric
+@attribute tfidf-example numeric
+@attribute tfidf-examples numeric
+@attribute tfidf-excel numeric
+@attribute tfidf-except numeric
+@attribute tfidf-exception numeric
+@attribute tfidf-exceptions numeric
+@attribute tfidf-execute numeric
+@attribute tfidf-executed numeric
+@attribute tfidf-execution numeric
+@attribute tfidf-exist numeric
+@attribute tfidf-existing numeric
+@attribute tfidf-exists numeric
+@attribute tfidf-exit numeric
+@attribute tfidf-exp numeric
+@attribute tfidf-expected numeric
+@attribute tfidf-expects numeric
+@attribute tfidf-experimental numeric
+@attribute tfidf-expr numeric
+@attribute tfidf-expression numeric
+@attribute tfidf-expressions numeric
+@attribute tfidf-extension numeric
+@attribute tfidf-extensions numeric
+@attribute tfidf-external numeric
+@attribute tfidf-f numeric
+@attribute tfidf-factor numeric
+@attribute tfidf-fail numeric
+@attribute tfidf-false numeric
+@attribute tfidf-feature numeric
+@attribute tfidf-features numeric
+@attribute tfidf-feedforward numeric
+@attribute tfidf-few numeric
+@attribute tfidf-field numeric
+@attribute tfidf-fields numeric
+@attribute tfidf-file numeric
+@attribute tfidf-filename numeric
+@attribute tfidf-files numeric
+@attribute tfidf-filters numeric
+@attribute tfidf-final numeric
+@attribute tfidf-find numeric
+@attribute tfidf-first numeric
+@attribute tfidf-flag numeric
+@attribute tfidf-float numeric
+@attribute tfidf-fn numeric
+@attribute tfidf-fold numeric
+@attribute tfidf-followed numeric
+@attribute tfidf-followedby numeric
+@attribute tfidf-following numeric
+@attribute tfidf-foo numeric
+@attribute tfidf-for numeric
+@attribute tfidf-forcelist numeric
+@attribute tfidf-form numeric
+@attribute tfidf-format numeric
+@attribute tfidf-forms numeric
+@attribute tfidf-forward numeric
+@attribute tfidf-found numeric
+@attribute tfidf-frac numeric
+@attribute tfidf-frame numeric
+@attribute tfidf-framerate numeric
+@attribute tfidf-from numeric
+@attribute tfidf-func numeric
+@attribute tfidf-function numeric
+@attribute tfidf-functional numeric
+@attribute tfidf-functionality numeric
+@attribute tfidf-functions numeric
+@attribute tfidf-further numeric
+@attribute tfidf-fused numeric
+@attribute tfidf-g numeric
+@attribute tfidf-gamma numeric
+@attribute tfidf-generated numeric
+@attribute tfidf-generic numeric
+@attribute tfidf-geometry numeric
+@attribute tfidf-get numeric
+@attribute tfidf-getlist numeric
+@attribute tfidf-github numeric
+@attribute tfidf-given numeric
+@attribute tfidf-globl numeric
+@attribute tfidf-google numeric
+@attribute tfidf-gradient numeric
+@attribute tfidf-graph numeric
+@attribute tfidf-green numeric
+@attribute tfidf-group numeric
+@attribute tfidf-groups numeric
+@attribute tfidf-gt numeric
+@attribute tfidf-gui numeric
+@attribute tfidf-guy numeric
+@attribute tfidf-gzip numeric
+@attribute tfidf-h numeric
+@attribute tfidf-half numeric
+@attribute tfidf-handle numeric
+@attribute tfidf-handler numeric
+@attribute tfidf-handles numeric
+@attribute tfidf-has numeric
+@attribute tfidf-hashing numeric
+@attribute tfidf-hat numeric
+@attribute tfidf-have numeric
+@attribute tfidf-having numeric
+@attribute tfidf-header numeric
+@attribute tfidf-headers numeric
+@attribute tfidf-hebrew numeric
+@attribute tfidf-hebrewprober numeric
+@attribute tfidf-height numeric
+@attribute tfidf-hello numeric
+@attribute tfidf-help numeric
+@attribute tfidf-here numeric
+@attribute tfidf-hidden numeric
+@attribute tfidf-history numeric
+@attribute tfidf-hooks numeric
+@attribute tfidf-hours numeric
+@attribute tfidf-how numeric
+@attribute tfidf-however numeric
+@attribute tfidf-html numeric
+@attribute tfidf-http numeric
+@attribute tfidf-httpbin numeric
+@attribute tfidf-https numeric
+@attribute tfidf-i numeric
+@attribute tfidf-id numeric
+@attribute tfidf-identifier numeric
+@attribute tfidf-identity numeric
+@attribute tfidf-ie numeric
+@attribute tfidf-if numeric
+@attribute tfidf-ignore numeric
+@attribute tfidf-ignored numeric
+@attribute tfidf-immediately numeric
+@attribute tfidf-implement numeric
+@attribute tfidf-implementation numeric
+@attribute tfidf-implementations numeric
+@attribute tfidf-implemented numeric
+@attribute tfidf-implements numeric
+@attribute tfidf-implicit numeric
+@attribute tfidf-import numeric
+@attribute tfidf-in numeric
+@attribute tfidf-include numeric
+@attribute tfidf-inconsistent numeric
+@attribute tfidf-increment numeric
+@attribute tfidf-index numeric
+@attribute tfidf-indexes numeric
+@attribute tfidf-indicating numeric
+@attribute tfidf-indices numeric
+@attribute tfidf-individual numeric
+@attribute tfidf-info numeric
+@attribute tfidf-information numeric
+@attribute tfidf-init numeric
+@attribute tfidf-initial numeric
+@attribute tfidf-initialization numeric
+@attribute tfidf-initialized numeric
+@attribute tfidf-inp numeric
+@attribute tfidf-input numeric
+@attribute tfidf-inputs numeric
+@attribute tfidf-inside numeric
+@attribute tfidf-instance numeric
+@attribute tfidf-instances numeric
+@attribute tfidf-instead numeric
+@attribute tfidf-int numeric
+@attribute tfidf-int32 numeric
+@attribute tfidf-integer numeric
+@attribute tfidf-integerarray numeric
+@attribute tfidf-intended numeric
+@attribute tfidf-interactive numeric
+@attribute tfidf-interface numeric
+@attribute tfidf-intermediate numeric
+@attribute tfidf-internal numeric
+@attribute tfidf-interval numeric
+@attribute tfidf-intervalindex numeric
+@attribute tfidf-into numeric
+@attribute tfidf-ints numeric
+@attribute tfidf-invalid numeric
+@attribute tfidf-ipython numeric
+@attribute tfidf-is numeric
+@attribute tfidf-isinstance numeric
+@attribute tfidf-isn numeric
+@attribute tfidf-isolate numeric
+@attribute tfidf-it numeric
+@attribute tfidf-item numeric
+@attribute tfidf-items numeric
+@attribute tfidf-iterable numeric
+@attribute tfidf-iteration numeric
+@attribute tfidf-iterations numeric
+@attribute tfidf-iteritems numeric
+@attribute tfidf-iterkeys numeric
+@attribute tfidf-its numeric
+@attribute tfidf-itself numeric
+@attribute tfidf-j numeric
+@attribute tfidf-jinja numeric
+@attribute tfidf-jinja2 numeric
+@attribute tfidf-json numeric
+@attribute tfidf-just numeric
+@attribute tfidf-k numeric
+@attribute tfidf-keep numeric
+@attribute tfidf-kernel numeric
+@attribute tfidf-key numeric
+@attribute tfidf-keyerror numeric
+@attribute tfidf-keys numeric
+@attribute tfidf-keyword numeric
+@attribute tfidf-kind numeric
+@attribute tfidf-kwargs numeric
+@attribute tfidf-l numeric
+@attribute tfidf-l2 numeric
+@attribute tfidf-label numeric
+@attribute tfidf-last numeric
+@attribute tfidf-layer numeric
+@attribute tfidf-layout numeric
+@attribute tfidf-learnable numeric
+@attribute tfidf-learning numeric
+@attribute tfidf-left numeric
+@attribute tfidf-legal numeric
+@attribute tfidf-len numeric
+@attribute tfidf-length numeric
+@attribute tfidf-like numeric
+@attribute tfidf-limits numeric
+@attribute tfidf-line numeric
+@attribute tfidf-lines numeric
+@attribute tfidf-link numeric
+@attribute tfidf-liquids numeric
+@attribute tfidf-list numeric
+@attribute tfidf-lists numeric
+@attribute tfidf-load numeric
+@attribute tfidf-loaded numeric
+@attribute tfidf-loader numeric
+@attribute tfidf-loading numeric
+@attribute tfidf-local numeric
+@attribute tfidf-location numeric
+@attribute tfidf-log numeric
+@attribute tfidf-logic numeric
+@attribute tfidf-lookup numeric
+@attribute tfidf-loss numeric
+@attribute tfidf-losses numeric
+@attribute tfidf-lr numeric
+@attribute tfidf-lt numeric
+@attribute tfidf-m numeric
+@attribute tfidf-made numeric
+@attribute tfidf-magic numeric
+@attribute tfidf-magics numeric
+@attribute tfidf-maintain numeric
+@attribute tfidf-maintained numeric
+@attribute tfidf-make numeric
+@attribute tfidf-makes numeric
+@attribute tfidf-manager numeric
+@attribute tfidf-many numeric
+@attribute tfidf-marked numeric
+@attribute tfidf-marking numeric
+@attribute tfidf-markup numeric
+@attribute tfidf-mary numeric
+@attribute tfidf-mask numeric
+@attribute tfidf-match numeric
+@attribute tfidf-matches numeric
+@attribute tfidf-math numeric
+@attribute tfidf-mathcal numeric
+@attribute tfidf-mathematically numeric
+@attribute tfidf-matplotlib numeric
+@attribute tfidf-max numeric
+@attribute tfidf-may numeric
+@attribute tfidf-mean numeric
+@attribute tfidf-means numeric
+@attribute tfidf-memcached numeric
+@attribute tfidf-memory numeric
+@attribute tfidf-merged numeric
+@attribute tfidf-message numeric
+@attribute tfidf-messages numeric
+@attribute tfidf-metaclass numeric
+@attribute tfidf-metadata numeric
+@attribute tfidf-meth numeric
+@attribute tfidf-method numeric
+@attribute tfidf-methods numeric
+@attribute tfidf-might numeric
+@attribute tfidf-migration numeric
+@attribute tfidf-migrations numeric
+@attribute tfidf-mini numeric
+@attribute tfidf-minutes numeric
+@attribute tfidf-missing numeric
+@attribute tfidf-mixin numeric
+@attribute tfidf-mode numeric
+@attribute tfidf-model numeric
+@attribute tfidf-models numeric
+@attribute tfidf-modifications numeric
+@attribute tfidf-modified numeric
+@attribute tfidf-modify numeric
+@attribute tfidf-module numeric
+@attribute tfidf-modules numeric
+@attribute tfidf-momentum numeric
+@attribute tfidf-month numeric
+@attribute tfidf-more numeric
+@attribute tfidf-most numeric
+@attribute tfidf-msg numeric
+@attribute tfidf-mu numeric
+@attribute tfidf-multi numeric
+@attribute tfidf-multipart numeric
+@attribute tfidf-multiple numeric
+@attribute tfidf-multivalue numeric
+@attribute tfidf-must numeric
+@attribute tfidf-my numeric
+@attribute tfidf-n numeric
+@attribute tfidf-na numeric
+@attribute tfidf-name numeric
+@attribute tfidf-names numeric
+@attribute tfidf-namespace numeric
+@attribute tfidf-nan numeric
+@attribute tfidf-ndarray numeric
+@attribute tfidf-necessary numeric
+@attribute tfidf-need numeric
+@attribute tfidf-needed numeric
+@attribute tfidf-needs numeric
+@attribute tfidf-nesterov numeric
+@attribute tfidf-net numeric
+@attribute tfidf-network numeric
+@attribute tfidf-neural numeric
+@attribute tfidf-never numeric
+@attribute tfidf-new numeric
+@attribute tfidf-newline numeric
+@attribute tfidf-news numeric
+@attribute tfidf-nn numeric
+@attribute tfidf-nnq numeric
+@attribute tfidf-no numeric
+@attribute tfidf-node numeric
+@attribute tfidf-nodes numeric
+@attribute tfidf-non numeric
+@attribute tfidf-none numeric
+@attribute tfidf-norm numeric
+@attribute tfidf-normalization numeric
+@attribute tfidf-normally numeric
+@attribute tfidf-not numeric
+@attribute tfidf-notany numeric
+@attribute tfidf-note numeric
+@attribute tfidf-notebook numeric
+@attribute tfidf-notes numeric
+@attribute tfidf-np numeric
+@attribute tfidf-null numeric
+@attribute tfidf-number numeric
+@attribute tfidf-numerical numeric
+@attribute tfidf-numpy numeric
+@attribute tfidf-nums numeric
+@attribute tfidf-object numeric
+@attribute tfidf-objects numeric
+@attribute tfidf-observed numeric
+@attribute tfidf-occurred numeric
+@attribute tfidf-occurs numeric
+@attribute tfidf-odf numeric
+@attribute tfidf-of numeric
+@attribute tfidf-off numeric
+@attribute tfidf-offsets numeric
+@attribute tfidf-omdict numeric
+@attribute tfidf-on numeric
+@attribute tfidf-once numeric
+@attribute tfidf-one numeric
+@attribute tfidf-ones numeric
+@attribute tfidf-online numeric
+@attribute tfidf-only numeric
+@attribute tfidf-onwards numeric
+@attribute tfidf-op numeric
+@attribute tfidf-open numeric
+@attribute tfidf-operation numeric
+@attribute tfidf-operations numeric
+@attribute tfidf-operator numeric
+@attribute tfidf-operators numeric
+@attribute tfidf-ops numeric
+@attribute tfidf-optimization numeric
+@attribute tfidf-optimize numeric
+@attribute tfidf-optimizer numeric
+@attribute tfidf-option numeric
+@attribute tfidf-optional numeric
+@attribute tfidf-options numeric
+@attribute tfidf-or numeric
+@attribute tfidf-order numeric
+@attribute tfidf-ordered numeric
+@attribute tfidf-org numeric
+@attribute tfidf-original numeric
+@attribute tfidf-other numeric
+@attribute tfidf-otherwise numeric
+@attribute tfidf-out numeric
+@attribute tfidf-output numeric
+@attribute tfidf-outputs numeric
+@attribute tfidf-over numeric
+@attribute tfidf-own numeric
+@attribute tfidf-p numeric
+@attribute tfidf-padding numeric
+@attribute tfidf-paddings numeric
+@attribute tfidf-pages numeric
+@attribute tfidf-pandas numeric
+@attribute tfidf-paper numeric
+@attribute tfidf-param numeric
+@attribute tfidf-parameter numeric
+@attribute tfidf-parameters numeric
+@attribute tfidf-params numeric
+@attribute tfidf-parent numeric
+@attribute tfidf-parse numeric
+@attribute tfidf-parsed numeric
+@attribute tfidf-parser numeric
+@attribute tfidf-parsestring numeric
+@attribute tfidf-parsing numeric
+@attribute tfidf-particular numeric
+@attribute tfidf-pass numeric
+@attribute tfidf-passed numeric
+@attribute tfidf-passing numeric
+@attribute tfidf-password numeric
+@attribute tfidf-path numeric
+@attribute tfidf-pd numeric
+@attribute tfidf-penalty numeric
+@attribute tfidf-pep numeric
+@attribute tfidf-per numeric
+@attribute tfidf-perform numeric
+@attribute tfidf-permission numeric
+@attribute tfidf-pi numeric
+@attribute tfidf-pkg numeric
+@attribute tfidf-place numeric
+@attribute tfidf-plot numeric
+@attribute tfidf-plotting numeric
+@attribute tfidf-pm numeric
+@attribute tfidf-point numeric
+@attribute tfidf-pointed numeric
+@attribute tfidf-points numeric
+@attribute tfidf-pool numeric
+@attribute tfidf-pools numeric
+@attribute tfidf-pos numeric
+@attribute tfidf-position numeric
+@attribute tfidf-positive numeric
+@attribute tfidf-possible numeric
+@attribute tfidf-possibly numeric
+@attribute tfidf-post numeric
+@attribute tfidf-pot numeric
+@attribute tfidf-potatoes numeric
+@attribute tfidf-precision numeric
+@attribute tfidf-prefix numeric
+@attribute tfidf-preparedrequest numeric
+@attribute tfidf-present numeric
+@attribute tfidf-prevent numeric
+@attribute tfidf-print numeric
+@attribute tfidf-prints numeric
+@attribute tfidf-probably numeric
+@attribute tfidf-prober numeric
+@attribute tfidf-probers numeric
+@attribute tfidf-process numeric
+@attribute tfidf-processing numeric
+@attribute tfidf-prod numeric
+@attribute tfidf-produce numeric
+@attribute tfidf-produced numeric
+@attribute tfidf-project numeric
+@attribute tfidf-prompt numeric
+@attribute tfidf-provide numeric
+@attribute tfidf-provided numeric
+@attribute tfidf-provides numeric
+@attribute tfidf-python numeric
+@attribute tfidf-quantized numeric
+@attribute tfidf-quantstub numeric
+@attribute tfidf-query numeric
+@attribute tfidf-r numeric
+@attribute tfidf-radio numeric
+@attribute tfidf-raise numeric
+@attribute tfidf-raised numeric
+@attribute tfidf-randn numeric
+@attribute tfidf-range numeric
+@attribute tfidf-rate numeric
+@attribute tfidf-rather numeric
+@attribute tfidf-raw numeric
+@attribute tfidf-read numeric
+@attribute tfidf-readable numeric
+@attribute tfidf-reads numeric
+@attribute tfidf-recall numeric
+@attribute tfidf-recent numeric
+@attribute tfidf-recommended numeric
+@attribute tfidf-record numeric
+@attribute tfidf-red numeric
+@attribute tfidf-redirect numeric
+@attribute tfidf-reduce numeric
+@attribute tfidf-reducing numeric
+@attribute tfidf-reduction numeric
+@attribute tfidf-ref numeric
+@attribute tfidf-refer numeric
+@attribute tfidf-refs numeric
+@attribute tfidf-related numeric
+@attribute tfidf-relative numeric
+@attribute tfidf-relu numeric
+@attribute tfidf-remove numeric
+@attribute tfidf-rendered numeric
+@attribute tfidf-replaced numeric
+@attribute tfidf-replaces numeric
+@attribute tfidf-replacing numeric
+@attribute tfidf-report numeric
+@attribute tfidf-represent numeric
+@attribute tfidf-representation numeric
+@attribute tfidf-representing numeric
+@attribute tfidf-represents numeric
+@attribute tfidf-req numeric
+@attribute tfidf-request numeric
+@attribute tfidf-requests numeric
+@attribute tfidf-required numeric
+@attribute tfidf-requires numeric
+@attribute tfidf-resolve numeric
+@attribute tfidf-resolved numeric
+@attribute tfidf-resource numeric
+@attribute tfidf-response numeric
+@attribute tfidf-responsible numeric
+@attribute tfidf-result numeric
+@attribute tfidf-resulting numeric
+@attribute tfidf-results numeric
+@attribute tfidf-retries numeric
+@attribute tfidf-retry numeric
+@attribute tfidf-return numeric
+@attribute tfidf-returned numeric
+@attribute tfidf-returns numeric
+@attribute tfidf-right numeric
+@attribute tfidf-rule numeric
+@attribute tfidf-rules numeric
+@attribute tfidf-run numeric
+@attribute tfidf-running numeric
+@attribute tfidf-runtime numeric
+@attribute tfidf-s numeric
+@attribute tfidf-safe numeric
+@attribute tfidf-same numeric
+@attribute tfidf-sample numeric
+@attribute tfidf-samples numeric
+@attribute tfidf-sanity numeric
+@attribute tfidf-savepoint numeric
+@attribute tfidf-say numeric
+@attribute tfidf-sbcharsetprober numeric
+@attribute tfidf-scalar numeric
+@attribute tfidf-scales numeric
+@attribute tfidf-scaling numeric
+@attribute tfidf-second numeric
+@attribute tfidf-seconds numeric
+@attribute tfidf-see numeric
+@attribute tfidf-self numeric
+@attribute tfidf-send numeric
+@attribute tfidf-sent numeric
+@attribute tfidf-sequence numeric
+@attribute tfidf-sequences numeric
+@attribute tfidf-series numeric
+@attribute tfidf-server numeric
+@attribute tfidf-session numeric
+@attribute tfidf-sessions numeric
+@attribute tfidf-set numeric
+@attribute tfidf-setresultsname numeric
+@attribute tfidf-sets numeric
+@attribute tfidf-setting numeric
+@attribute tfidf-settings numeric
+@attribute tfidf-sgd numeric
+@attribute tfidf-shape numeric
+@attribute tfidf-shared numeric
+@attribute tfidf-shell numeric
+@attribute tfidf-shift numeric
+@attribute tfidf-should numeric
+@attribute tfidf-shows numeric
+@attribute tfidf-side numeric
+@attribute tfidf-sides numeric
+@attribute tfidf-sigma numeric
+@attribute tfidf-signal numeric
+@attribute tfidf-similar numeric
+@attribute tfidf-simon numeric
+@attribute tfidf-simple numeric
+@attribute tfidf-since numeric
+@attribute tfidf-single numeric
+@attribute tfidf-site numeric
+@attribute tfidf-size numeric
+@attribute tfidf-sleep numeric
+@attribute tfidf-sliding numeric
+@attribute tfidf-so numeric
+@attribute tfidf-some numeric
+@attribute tfidf-spacing numeric
+@attribute tfidf-sparse numeric
+@attribute tfidf-spatial numeric
+@attribute tfidf-special numeric
+@attribute tfidf-specific numeric
+@attribute tfidf-specified numeric
+@attribute tfidf-specifies numeric
+@attribute tfidf-specify numeric
+@attribute tfidf-specifying numeric
+@attribute tfidf-sql numeric
+@attribute tfidf-sqrt numeric
+@attribute tfidf-square numeric
+@attribute tfidf-stability numeric
+@attribute tfidf-stack numeric
+@attribute tfidf-standalone numeric
+@attribute tfidf-standard numeric
+@attribute tfidf-start numeric
+@attribute tfidf-state numeric
+@attribute tfidf-statement numeric
+@attribute tfidf-statements numeric
+@attribute tfidf-static numeric
+@attribute tfidf-statistic numeric
+@attribute tfidf-statistics numeric
+@attribute tfidf-stats numeric
+@attribute tfidf-status numeric
+@attribute tfidf-step numeric
+@attribute tfidf-stochastic numeric
+@attribute tfidf-stops numeric
+@attribute tfidf-store numeric
+@attribute tfidf-stores numeric
+@attribute tfidf-stories numeric
+@attribute tfidf-str numeric
+@attribute tfidf-stream numeric
+@attribute tfidf-stride numeric
+@attribute tfidf-string numeric
+@attribute tfidf-stringarray numeric
+@attribute tfidf-strings numeric
+@attribute tfidf-structure numeric
+@attribute tfidf-structured numeric
+@attribute tfidf-stub numeric
+@attribute tfidf-style numeric
+@attribute tfidf-subclass numeric
+@attribute tfidf-subclasses numeric
+@attribute tfidf-subject numeric
+@attribute tfidf-subsequent numeric
+@attribute tfidf-subtype numeric
+@attribute tfidf-such numeric
+@attribute tfidf-sum numeric
+@attribute tfidf-summed numeric
+@attribute tfidf-supplied numeric
+@attribute tfidf-support numeric
+@attribute tfidf-supported numeric
+@attribute tfidf-supports numeric
+@attribute tfidf-suppress numeric
+@attribute tfidf-swapped numeric
+@attribute tfidf-syntax numeric
+@attribute tfidf-system numeric
+@attribute tfidf-systems numeric
+@attribute tfidf-t numeric
+@attribute tfidf-table numeric
+@attribute tfidf-tables numeric
+@attribute tfidf-tags numeric
+@attribute tfidf-take numeric
+@attribute tfidf-takes numeric
+@attribute tfidf-target numeric
+@attribute tfidf-task numeric
+@attribute tfidf-template numeric
+@attribute tfidf-templates numeric
+@attribute tfidf-tensor numeric
+@attribute tfidf-tensors numeric
+@attribute tfidf-term numeric
+@attribute tfidf-test numeric
+@attribute tfidf-testing numeric
+@attribute tfidf-tests numeric
+@attribute tfidf-text numeric
+@attribute tfidf-than numeric
+@attribute tfidf-that numeric
+@attribute tfidf-the numeric
+@attribute tfidf-their numeric
+@attribute tfidf-them numeric
+@attribute tfidf-then numeric
+@attribute tfidf-there numeric
+@attribute tfidf-therefore numeric
+@attribute tfidf-these numeric
+@attribute tfidf-they numeric
+@attribute tfidf-this numeric
+@attribute tfidf-those numeric
+@attribute tfidf-thread numeric
+@attribute tfidf-three numeric
+@attribute tfidf-through numeric
+@attribute tfidf-throwable numeric
+@attribute tfidf-thrown numeric
+@attribute tfidf-time numeric
+@attribute tfidf-timeout numeric
+@attribute tfidf-times numeric
+@attribute tfidf-title numeric
+@attribute tfidf-to numeric
+@attribute tfidf-token numeric
+@attribute tfidf-top numeric
+@attribute tfidf-torch numeric
+@attribute tfidf-total numeric
+@attribute tfidf-traceback numeric
+@attribute tfidf-track numeric
+@attribute tfidf-trade numeric
+@attribute tfidf-training numeric
+@attribute tfidf-transaction numeric
+@attribute tfidf-treated numeric
+@attribute tfidf-tree numeric
+@attribute tfidf-triangular numeric
+@attribute tfidf-true numeric
+@attribute tfidf-try numeric
+@attribute tfidf-tuple numeric
+@attribute tfidf-tuples numeric
+@attribute tfidf-two numeric
+@attribute tfidf-type numeric
+@attribute tfidf-types numeric
+@attribute tfidf-u numeric
+@attribute tfidf-uint16 numeric
+@attribute tfidf-undefined numeric
+@attribute tfidf-under numeric
+@attribute tfidf-underlying numeric
+@attribute tfidf-unf numeric
+@attribute tfidf-unfold numeric
+@attribute tfidf-unicode numeric
+@attribute tfidf-unix numeric
+@attribute tfidf-unless numeric
+@attribute tfidf-unlike numeric
+@attribute tfidf-up numeric
+@attribute tfidf-update numeric
+@attribute tfidf-updated numeric
+@attribute tfidf-updating numeric
+@attribute tfidf-url numeric
+@attribute tfidf-urllib3 numeric
+@attribute tfidf-usage numeric
+@attribute tfidf-use numeric
+@attribute tfidf-used numeric
+@attribute tfidf-useful numeric
+@attribute tfidf-user numeric
+@attribute tfidf-users numeric
+@attribute tfidf-uses numeric
+@attribute tfidf-using numeric
+@attribute tfidf-utility numeric
+@attribute tfidf-v numeric
+@attribute tfidf-validation numeric
+@attribute tfidf-value numeric
+@attribute tfidf-valueerror numeric
+@attribute tfidf-values numeric
+@attribute tfidf-variable numeric
+@attribute tfidf-variables numeric
+@attribute tfidf-various numeric
+@attribute tfidf-vcard numeric
+@attribute tfidf-vcards numeric
+@attribute tfidf-vcs numeric
+@attribute tfidf-vector numeric
+@attribute tfidf-verifies numeric
+@attribute tfidf-version numeric
+@attribute tfidf-versionadded numeric
+@attribute tfidf-versionchanged numeric
+@attribute tfidf-vertex numeric
+@attribute tfidf-via numeric
+@attribute tfidf-vid numeric
+@attribute tfidf-view numeric
+@attribute tfidf-vodka numeric
+@attribute tfidf-w numeric
+@attribute tfidf-want numeric
+@attribute tfidf-warning numeric
+@attribute tfidf-was numeric
+@attribute tfidf-wav numeric
+@attribute tfidf-way numeric
+@attribute tfidf-we numeric
+@attribute tfidf-web numeric
+@attribute tfidf-weight numeric
+@attribute tfidf-weighted numeric
+@attribute tfidf-weights numeric
+@attribute tfidf-well numeric
+@attribute tfidf-were numeric
+@attribute tfidf-what numeric
+@attribute tfidf-when numeric
+@attribute tfidf-where numeric
+@attribute tfidf-whether numeric
+@attribute tfidf-which numeric
+@attribute tfidf-while numeric
+@attribute tfidf-whitelist numeric
+@attribute tfidf-widget numeric
+@attribute tfidf-width numeric
+@attribute tfidf-will numeric
+@attribute tfidf-windows numeric
+@attribute tfidf-with numeric
+@attribute tfidf-within numeric
+@attribute tfidf-without numeric
+@attribute tfidf-word numeric
+@attribute tfidf-work numeric
+@attribute tfidf-working numeric
+@attribute tfidf-works numeric
+@attribute tfidf-world numeric
+@attribute tfidf-wrap numeric
+@attribute tfidf-wrapped numeric
+@attribute tfidf-wrapper numeric
+@attribute tfidf-wraps numeric
+@attribute tfidf-writable numeric
+@attribute tfidf-www numeric
+@attribute tfidf-x numeric
+@attribute tfidf-xlrd numeric
+@attribute tfidf-xticks numeric
+@attribute tfidf-y numeric
+@attribute tfidf-year numeric
+@attribute tfidf-you numeric
+@attribute tfidf-your numeric
+@attribute tfidf-yourself numeric
+@attribute tfidf-youtube numeric
+@attribute tfidf-yticks numeric
+@attribute tfidf-zero numeric
+@attribute tfidf-zeros numeric
+
+@data
+{9 1,60 1,152 1,399 1,776 2.645544,999 1.248919,1015 1.833427,1140 2.430561,1195 2.556936,1205 0.862826}
+{13 1,333 1,416 1,568 3.827185,774 3.346732,1138 5.620496,1500 1.505208}
+{9 1,60 1,152 1,283 1,399 1,495 1,999 1.248919,1140 2.430561,1195 2.556936,1205 0.862826}
+{9 1,60 1,399 1,790 1.725184,813 5.620496,1140 2.430561,1172 3.439289,1205 0.862826}
+{13 1,272 1,379 1,563 0.668856,1112 3.546138,1209 1.853232,1499 3.125997}
+{3 1,563 0.668856,927 1.795436,1036 0.969274,1321 3.192061,1601 2.231155}
+{9 1,790 1.725184,1068 3.192061,1205 0.862826,1229 1.549133,1338 5.304445}
+{13 1,599 1.575542,1205 0.862826,1463 4.026591}
+{13 1,246 1,274 1,380 1,881 3.672514,1120 2.911014}
+{15 1,850 3.827185,1068 3.192061,1178 2.304185}
+{15 1,561 3.346732,776 2.645544,1140 2.430561,1523 2.090487}
+{2 1,13 1,599 1.575542,1500 1.505208}
+{13 1,316 1,857 2.911014,872 3.827185,917 1.027802}
+{4 1,13 1,60 1,98 1,103 1,152 1,316 1,357 1,361 1,399 1,458 1,563 0.668856,599 1.575542,999 1.248919,1082 2.062757,1199 2.119372,1205 0.862826,1520 0.77268,1611 1.653826,1619 3.827185}
+{13 1,563 0.668856,668 3.125997,1205 0.862826}
+{4 1,67 1,82 1,155 1,173 1,180 1,230 1,307 1,340 1,399 1,427 1,460 1,516 1,563 1.060112,599 1.575542,622 2.518717,657 1.274594,693 1.973606,756 2.747162,839 3.065685,1105 3.125997,1229 1.549133}
+{13 1,127 1,131 1,269 1,314 1,381 1,484 1,525 1,1036 0.969274}
+{4 1,15 1,82 1,103 1,361 1,399 1,427 1,458 1,563 1.060112,622 2.518717,756 2.747162,999 1.248919,1040 1.716883,1049 3.672514,1105 3.125997,1205 0.862826,1373 2.076483,1601 2.231155,1619 3.827185}
+{13 1,34 1,63 1,99 1,153 1,347 1,355 1,366 1,367 1,592 3.439289,681 2.454059,1217 3.827185,1240 3.265091,1520 0.77268,1630 2.503591,1631 3.672514}
+{15 1,22 1,46 1,127 1,131 1,159 1,269 1,314 1,381 1,399 1,409 1,427 1,428 1,473 1,484 1,515 1,521 1,525 1,563 1.553037,600 1.801611,622 1.589133,644 4.026591,731 3.192061,756 2.747162,872 3.827185,881 5.820797,999 1.248919,1036 0.969274,1040 1.716883,1105 3.125997,1185 4.026591,1209 3.706464,1229 3.098266,1373 2.076483,1379 9.576182,1520 0.77268,1601 2.231155,1603 3.346732}
+{15 1,101 1,139 1,152 1,246 1,281 1,316 1,399 1,429 1,450 1,465 1,470 1,474 1,505 1,563 1.060112,917 1.629028,1040 1.716883,1229 2.455318,1321 3.192061,1513 3.827185,1520 1.224669,1630 2.503591}
+{15 1,77 1,399 1,563 0.668856,599 1.575542,622 1.589133,1036 0.969274,1101 3.827185,1205 1.367547,1379 4.788091,1437 3.827185}
+{4 1,13 1,917 1.027802,958 3.346732,1270 3.346732}
+{15 1}
+{17 1,1036 0.969274,1511 6.827445}
+{15 1,152 1,399 1,1262 2.711608,1270 3.346732,1520 0.77268}
+{17 1,563 0.668856,1036 0.969274}
+{4 1,60 1,81 1,84 1,91 1,109 1,143 1,316 1,600 1.801611,622 1.589133,627 2.385826,657 1.274594,872 3.827185,917 1.027802,1036 0.969274,1205 0.862826,1270 3.346732,1350 2.585232,1604 2.023138}
+{4 1,13 1,917 1.027802,958 3.346732,1270 3.346732}
+{15 1}
+{15 1,152 1,399 1,1262 2.711608,1270 3.346732,1520 0.77268}
+{4 1,60 1,81 1,84 1,91 1,109 1,143 1,316 1,600 1.801611,622 1.589133,627 2.385826,657 1.274594,872 3.827185,917 1.027802,1036 0.969274,1205 0.862826,1270 3.346732,1350 2.585232,1604 2.023138}
+{13 1,392 1,927 1.795436,1084 3.439289,1480 3.346732}
+{4 1,60 1,86 1,118 1,248 1,270 1,271 1,503 1,563 0.668856,917 1.027802,1038 4.026591,1040 1.716883,1209 1.853232,1482 2.454059,1495 3.439289,1520 0.77268,1592 3.010204}
+{13 1,362 1,431 1,600 1.13669,693 1.973606,907 4.026591,999 1.248919,1036 0.969274,1084 3.439289,1086 3.125997,1209 1.853232,1480 3.346732,1503 3.439289,1520 0.77268,1592 3.010204}
+{4 1,15 1,60 1,132 1,350 1,387 1,399 1,406 1,452 1,494 1,563 0.668856,600 1.13669,630 2.062757,655 4.052648,687 4.097496,711 3.439289,744 4.026591,813 7.092276,1015 1.833427,1036 1.536263,1114 5.306055,1159 4.052648,1205 0.862826}
+{4 1,32 1,56 1,60 1,75 1,93 1,127 1,131 1,138 1,139 1,162 1,170 1,201 1,245 1,246 1,269 1,295 1,306 1,314 1,359 1,381 1,474 1,484 1,504 1,523 1,525 1,528 1,563 1.060112,600 1.13669,756 4.354148,899 4.026591,1021 2.529751,1036 0.969274,1105 4.954588,1205 0.862826,1495 5.451144,1611 1.653826}
+{4 1,15 1,21 1,60 1,117 1,135 1,136 1,152 1,158 1,288 1,326 1,399 1,408 1,472 1,500 1,547 2.407833,563 1.553037,630 4.125514,668 6.251993,687 5.170464,711 3.439289,730 3.265091,750 3.672514,776 2.645544,813 5.620496,836 4.394672,987 3.439289,1015 1.833427,1021 2.529751,1036 0.969274,1057 7.411735,1064 3.192061,1067 2.911014,1114 5.306055,1159 2.556936,1195 2.556936,1205 2.00342,1237 2.304185,1300 7.65437,1498 5.059501,1612 4.954588}
+{15 1,152 1,399 1,430 1,1086 4.954588,1234 2.747162,1262 5.423215,1520 1.224669}
+{4 1,15 1,60 1,152 1,399 1,600 1.13669,668 3.125997,1036 0.969274,1064 3.192061,1114 2.285194,1195 2.556936,1205 0.862826,1470 3.546138}
+{15 1,499 1,1080 4.026591,1248 2.677789,1520 1.224669}
+{4 1,15 1,60 1,69 1,127 1,131 1,269 1,314 1,381 1,399 1,484 1,525 1,600 1.13669,630 2.062757,682 1.602997,776 2.645544,813 5.620496,919 2.784638,1015 1.833427,1036 1.536263,1114 4.570387,1205 0.862826,1239 2.824257,1498 2.529751}
+{13 1,182 1,342 1,354 1,637 4.026591,644 4.026591,917 1.027802,1101 3.827185,1520 0.77268}
+{15 1,333 1,399 1,416 1,563 0.668856,627 2.385826,630 2.062757,668 3.125997,707 3.827185,730 3.265091,813 5.620496,1067 2.911014,1237 2.304185,1612 3.125997}
+{4 1,22 1,39 1,42 1,46 1,60 1,105 1,111 1,143 1,159 1,162 1,170 1,301 1,306 1,332 1,359 1,409 1,424 1,473 1,515 1,521 1,563 0.668856,730 3.265091,790 1.725184,900 2.824257,999 1.248919,1021 2.529751,1023 2.677789,1036 1.536263,1040 2.721195,1183 4.026591,1500 1.505208,1520 0.77268,1564 2.430561,1601 2.231155}
+{16 1,512 1,1248 2.677789}
+{9 1,600 1.13669,630 4.125514,668 3.125997,977 3.265091,1455 2.747162}
+{1 1,15 1,332 1,399 1,411 1,414 1,563 0.668856,599 1.575542,622 1.589133,637 4.026591,715 3.439289,900 2.824257,917 1.027802,999 1.248919,1205 0.862826,1209 1.853232,1520 0.77268,1564 2.430561}
+{9 1,244 1,630 2.062757,668 3.125997,917 1.027802,1455 4.354148}
+{11 1,15 1,27 1,108 1,173 1,180 1,186 1,213 1,230 1,283 1,305 1,307 1,311 1,340 1,356 1,427 1,447 1,460 1,488 1,495 1,516 1,563 0.668856,657 2.020184,900 2.824257,909 3.672514,1020 2.585232,1167 3.125997,1175 2.784638,1209 1.853232,1520 1.224669}
+{9 1,60 1,152 1,399 1,630 3.269393,674 3.439289,813 3.546138,836 2.197336,917 1.629028,997 4.026591,1195 2.556936,1205 1.367547,1209 1.853232,1275 4.026591}
+{9 1,152 1,589 3.265091,622 1.589133,630 2.062757,665 3.010204,1057 3.192061,1275 4.026591}
+{9 1,48 1,86 1,118 1,122 1,151 1,169 1,248 1,254 1,334 1,377 1,480 1,524 1,563 0.668856,630 2.062757,681 2.454059,825 3.546138,1036 0.969274,1040 1.716883,1080 4.026591,1205 0.862826,1520 0.77268,1600 3.192061}
+{9 1,152 1,188 1,205 1,260 1,261 1,668 4.954588,813 3.546138,999 1.248919,1015 1.833427,1021 4.00956,1057 3.192061,1205 1.367547,1229 2.455318,1455 4.354148}
+{9 1,143 1,188 1,244 1,301 1,529 2.104779,563 0.668856,790 1.725184,1021 2.529751,1205 0.862826,1229 1.549133,1248 2.677789,1455 2.747162,1500 1.505208,1612 3.125997}
+{9 1,152 1,261 1,532 1.823732,563 0.668856,599 1.575542,630 4.789574,657 1.274594,813 3.546138,988 1.523694,1021 2.529751,1036 0.969274,1057 3.192061,1075 2.958836,1205 0.862826,1229 2.455318,1455 2.747162,1502 2.784638}
+{13 1,316 1,600 1.13669,1205 1.367547,1456 4.026591}
+{9 1,20 1,60 1,74 1,152 1,262 1,813 3.546138,917 1.027802,1015 1.833427,1036 0.969274,1205 0.862826}
+{13 1,272 1,379 1,825 3.546138,1112 3.546138,1188 1.884044}
+{13 1,886 3.672514,1112 3.546138,1205 0.862826}
+{2 1,15 1,1178 2.304185}
+{2 1,13 1,15 1,17 1,272 1,379 1,451 1,627 2.385826,825 3.546138,886 3.672514,1015 1.833427,1040 1.716883,1112 3.546138,1188 1.884044,1458 2.181026,1500 1.505208,1612 3.125997}
+{2 1,18 1,21 1,44 1,60 1,152 1,158 1,208 1,326 1,408 1,668 3.125997,682 1.602997,750 3.672514,836 2.197336,912 3.546138,927 1.795436,999 1.248919,1359 3.065685,1471 2.824257}
+{13 1,563 0.668856,574 3.827185,650 3.346732,1205 0.862826}
+{2 1,13 1,15 1,17 1,55 1,92 1,134 1,199 1,389 1,497 1,563 0.668856,1082 2.062757,1364 2.911014}
+{2 1,15 1,1178 2.304185}
+{13 1,733 2.958836,927 1.795436,1604 2.023138}
+{15 1}
+{2 1,18 1,60 1,152 1,668 3.125997,682 1.602997,927 1.795436,999 1.248919,1546 3.672514}
+{15 1,101 1,421 1,450 1,485 1,563 1.060112,630 2.062757,682 1.602997,886 3.672514,949 3.827185,988 1.523694,1036 0.969274,1040 1.716883,1066 7.1183,1112 3.546138,1520 0.77268,1614 8.886449}
+{2 1,53 1,668 3.125997,836 2.197336,988 1.523694,1188 1.884044,1205 0.862826,1234 2.747162,1422 3.065685}
+{15 1,298 1,399 1,474 1,600 1.13669,622 1.589133,662 4.026591,733 2.958836,774 3.346732,988 1.523694,999 1.248919,1185 4.026591,1205 0.862826,1615 4.026591,1630 2.503591}
+{15 1}
+{15 1,532 1.823732}
+{15 1,630 2.062757,886 3.672514}
+{15 1,129 1,727 3.827185,1072 3.192061}
+{15 1,543 2.343804}
+{15 1}
+{2 1,15 1,1178 2.304185}
+{15 1,1293 3.346732}
+{15 1,547 2.407833}
+{2 1,23 1,808 2.747162,912 3.546138,1057 3.192061,1247 2.248704}
+{15 1,20 1,319 1,346 1,424 1,439 1,453 1,454 1,455 1,457 1,474 1,563 0.668856,600 1.801611,601 2.784638,657 2.020184,661 4.026591,668 3.125997,682 2.54069,731 3.192061,733 4.689644,988 1.523694,999 1.248919,1021 2.529751,1036 0.969274,1130 3.747639,1205 0.862826,1236 3.010204,1237 3.652047,1293 3.346732,1433 4.026591,1439 3.546138,1520 1.54536,1611 1.653826,1619 3.827185}
+{2 1}
+{15 1,552 3.192061}
+{2 1}
+{15 1,441 1,601 2.784638,838 3.346732,872 3.827185,988 1.523694,1229 1.549133}
+{2 1,1455 2.747162}
+{15 1,194 1,454 1,455 1,493 1,599 1.575542,857 2.911014,927 1.795436,1020 2.585232,1293 3.346732,1370 3.346732,1520 0.77268}
+{2 1,18 1,29 1,30 1,242 1,600 1.801611,622 1.589133,679 3.672514,733 4.689644,839 3.065685,917 1.027802,927 1.795436,999 2.497839,1036 0.969274,1040 1.716883,1090 3.672514,1130 3.747639,1167 3.125997,1205 0.862826,1229 1.549133,1267 3.827185,1275 4.026591,1440 3.439289,1502 2.784638,1504 2.614732,1520 0.77268,1615 4.026591}
+{9 1,627 2.385826,662 4.026591,1449 3.265091,1592 3.010204}
+{9 1,152 1,170 1,453 1,454 1,563 0.668856,657 1.274594,733 2.958836,971 6.065945,999 1.248919,1205 0.862826,1293 3.346732,1604 2.023138}
+{2 1,23 1,912 3.546138,1247 2.248704,1546 3.672514}
+{2 1,912 3.546138,1015 2.905912,1546 3.672514}
+{9 1,152 1,194 1,272 1,316 1,379 1,399 1,493 1,563 1.060112,672 2.866279,715 3.439289,733 2.958836,819 3.672514,830 3.546138,988 2.414997,999 1.248919,1112 3.546138,1205 0.862826,1209 1.853232,1293 3.346732,1482 2.454059}
+{2 1,137 1,393 1,563 0.668856,600 1.13669,1015 1.833427,1036 0.969274,1205 0.862826,1209 1.853232,1500 1.505208}
+{9 1,59 1,283 1,495 1,563 0.668856,657 1.274594,672 2.866279,715 5.451144,733 2.958836,857 2.911014,917 1.027802,988 1.523694,1303 3.827185,1480 3.346732,1520 0.77268}
+{9 1,790 1.725184,1036 0.969274}
+{2 1,1015 1.833427,1209 1.853232}
+{9 1,599 1.575542,1140 3.852348,1319 3.827185,1373 2.076483,1388 2.866279,1499 3.125997,1520 0.77268}
+{2 1,1015 1.833427}
+{9 1,60 1,84 1,127 1,152 1,265 1,316 1,399 1,682 1.602997,715 3.439289,741 5.620496,927 1.795436,1036 0.969274,1082 2.062757,1205 0.862826,1373 2.076483}
+{2 1,912 3.546138,1015 1.833427,1209 1.853232,1546 3.672514}
+{15 1}
+{15 1,502 1,1523 2.090487}
+{14 1,15 1,415 1,563 0.668856,599 2.497175,600 1.13669,886 3.672514,927 1.795436,1036 0.969274,1041 3.346732,1229 1.549133,1500 1.505208}
+{15 1,543 2.343804,548 3.827185,552 3.192061}
+{15 1,532 1.823732,533 2.711608,535 3.546138,547 2.407833,1316 3.346732,1523 2.090487,1587 3.125997}
+{13 1,563 1.060112,681 2.454059,917 1.027802,1036 0.969274,1167 3.125997}
+{15 1,543 2.343804,547 2.407833,552 3.192061,555 3.346732,1014 4.307638,1316 3.346732,1523 2.090487,1545 4.026591}
+{2 1,15 1,1178 2.304185}
+{2 1,26 1,563 0.668856,600 1.801611,665 3.010204,682 1.602997,968 3.546138,1036 0.969274,1205 0.862826,1296 3.672514,1381 4.307638,1604 2.023138}
+{15 1}
+{15 1,552 3.192061,555 3.346732,1014 6.827445,1236 3.010204,1545 6.381996,1546 3.672514}
+{15 1,532 1.823732,543 2.343804}
+{2 1,600 1.13669,917 1.027802,979 2.784638,1036 0.969274,1175 2.784638,1195 2.556936,1205 0.862826,1498 2.529751}
+{15 1,529 2.104779,532 1.823732,1585 3.065685,1587 4.954588}
+{13 1,282 1,316 1,348 1,563 0.668856,601 2.784638,1040 1.716883,1205 0.862826,1470 3.546138,1520 0.77268}
+{15 1,532 1.823732,543 2.343804,1236 3.010204,1482 2.454059,1523 2.090487}
+{2 1,836 2.197336,949 3.827185,999 1.97949,1036 0.969274,1296 5.820797,1498 2.529751,1520 0.77268}
+{2 1,15 1,1178 2.304185}
+{2 1,53 1,1140 3.852348,1296 3.672514,1381 4.307638}
+{15 1}
+{15 1,56 1,138 1,139 1,162 1,170 1,245 1,246 1,295 1,306 1,325 1,359 1,407 1,474 1,504 1,523 1,528 1,537 4.026591,601 2.784638,622 1.589133,679 3.672514,825 3.546138,908 2.958836,1140 3.852348,1185 4.026591,1234 2.747162,1381 6.827445,1520 0.77268,1604 2.023138}
+{15 1,532 2.890547,560 3.827185,561 3.346732,563 0.668856,600 1.13669,912 3.546138,1229 1.549133,1236 6.020407,1545 6.381996}
+{15 1,43 1,86 1,98 1,118 1,248 1,270 1,271 1,399 1,446 1,464 1,644 4.026591,999 1.248919,1036 0.969274,1092 4.026591,1140 2.430561,1205 0.862826,1381 4.307638,1520 0.77268}
+{15 1,532 1.823732,543 2.343804,560 3.827185,561 3.346732,1523 2.090487,1585 3.065685}
+{2 1,36 1,101 1,164 1,209 1,319 1,360 1,537 4.026591,563 0.668856,967 6.827445,999 1.248919,1090 3.672514,1140 3.852348,1564 2.430561}
+{15 1}
+{2 1,927 1.795436,968 3.546138,1120 2.911014,1140 2.430561,1205 0.862826,1296 3.672514,1359 3.065685}
+{15 1}
+{2 1,13 1,600 1.801611,844 3.346732,900 2.824257,917 1.027802,1040 1.716883,1140 2.430561,1209 1.853232,1422 3.065685,1520 0.77268}
+{15 1,92 1,134 1,199 1,389 1,497 1,563 0.668856,622 1.589133,682 1.602997,968 3.546138,1040 1.716883,1049 3.672514,1174 4.026591,1364 2.911014}
+{15 1}
+{15 1,78 1,176 1,316 1,338 1,399 1,425 1,563 0.668856,622 1.589133,968 3.546138,1020 2.585232,1036 0.969274,1140 2.430561,1296 5.820797,1520 1.224669}
+{15 1,509 1,563 0.668856,601 2.784638,917 1.027802,927 1.795436,949 3.827185,1040 1.716883,1205 0.862826,1296 5.820797,1601 2.231155}
+{13 1,316 1,886 3.672514,917 1.027802}
+{15 1,43 1,86 1,98 1,118 1,248 1,270 1,271 1,433 1,446 1,464 1,563 0.668856,917 1.027802,967 4.307638,968 3.546138,988 1.523694,1036 0.969274,1140 3.852348,1296 7.345027,1520 1.224669}
+{15 1,25 1,399 1,433 1,600 1.13669,674 3.439289,968 3.546138,999 1.248919,1036 0.969274,1101 3.827185,1140 2.430561,1296 3.672514,1520 0.77268}
+{13 1,358 1,395 1,599 1.575542,917 1.027802,1199 2.119372,1585 3.065685}
+{15 1,509 1,511 1,537 4.026591,561 3.346732,839 3.065685,919 2.784638,999 1.248919,1036 1.536263,1205 1.367547,1229 1.549133,1364 2.911014}
+{2 1,27 1,31 1,34 1,35 1,99 1,162 1,170 1,234 1,306 1,347 1,355 1,359 1,440 1,563 0.668856,1138 3.546138,1520 0.77268,1564 2.430561}
+{13 1,60 1,152 1,316 1,399 1,563 0.668856,999 1.248919,1082 2.062757,1199 2.119372,1205 0.862826,1629 3.672514}
+{13 1,162 1,170 1,306 1,359 1,397 1,398 1,589 3.265091,1261 3.546138,1564 2.430561}
+{15 1,83 1,365 1,419 1,589 3.265091,657 1.274594,681 2.454059,682 1.602997,744 4.026591,908 2.958836,1036 0.969274,1150 3.010204,1157 2.824257,1520 0.77268,1630 2.503591}
+{13 1,139 1,246 1,322 1,474 1,563 0.668856,751 4.026591,917 1.027802,1239 2.824257}
+{15 1,399 1,917 1.027802,1066 3.065685}
+{15 1,1066 3.065685}
+{15 1,1066 3.065685}
+{13 1,979 2.784638,1254 3.346732}
+{13 1,316 1,332 1,563 1.060112,927 1.795436,979 2.784638,1205 0.862826,1456 4.026591}
+{6 1,980 2.747162,1624 3.672514}
+{6 1}
+{13 1,26 1,563 0.668856,958 3.346732,1520 1.224669}
+{6 1,999 1.248919,1232 3.010204,1594 3.672514,1615 4.026591}
+{4 1,60 1,152 1,836 2.197336,1205 0.862826,1209 1.853232,1266 2.677789,1511 4.307638}
+{9 1,13 1,22 1,159 1,316 1,409 1,515 1,917 1.027802}
+{13 1,563 0.668856,707 3.827185,1036 0.969274,1188 1.884044,1209 1.853232,1601 2.231155}
+{13 1,316 1,917 1.027802}
+{13 1,599 1.575542,1205 0.862826,1500 1.505208}
+{2 1,1205 0.862826,1262 2.711608,1611 1.653826}
+{2 1,54 1,1520 0.77268}
+{15 1,281 1,429 1,750 3.672514,999 1.248919,1040 1.716883,1321 3.192061}
+{13 1,363 1,389 1,459 1,563 1.060112,575 4.026591,622 1.589133,693 1.973606,723 3.827185,917 1.027802,1495 3.439289,1500 1.505208}
+{15 1,1036 0.969274,1040 1.716883,1053 3.672514,1601 2.231155}
+{4 1,600 1.13669,756 2.747162,1199 2.119372,1205 1.367547,1350 2.585232,1394 3.672514,1500 1.505208,1611 1.653826}
+{4 1,600 1.13669,723 6.065945,917 1.027802,1199 2.119372,1205 0.862826}
+{2 1,17 1,127 1,131 1,269 1,314 1,366 1,367 1,381 1,424 1,484 1,525 1,563 1.060112,592 3.439289,600 1.13669,622 1.589133,682 1.602997,756 2.747162,917 1.027802,979 2.784638,1021 2.529751,1036 1.536263,1040 1.716883,1188 1.884044,1229 1.549133,1319 3.827185,1495 3.439289,1499 3.125997,1520 1.224669,1561 2.585232,1585 3.065685}
+{13 1,599 1.575542,999 1.248919}
+{2 1,17 1,31 1,40 1,42 1,54 1,347 1,440 1,520 1,521 1,563 0.668856,681 2.454059,694 3.439289,1052 3.827185,1129 3.265091,1254 3.346732,1630 2.503591,1632 4.026591}
+{2 1,17 1,1254 3.346732}
+{2 1,17 1,22 1,46 1,159 1,409 1,473 1,515 1,521 1,563 0.668856,917 1.027802,1130 2.364497,1175 2.784638,1500 1.505208,1630 2.503591}
+{15 1,477 1,650 3.346732,892 6.065945,917 1.027802}
+{13 1,386 1,390 1,563 1.337713,668 3.125997,733 2.958836,999 1.248919,1205 0.862826,1604 3.206598}
+{13 1,563 0.668856,751 4.026591,756 2.747162,917 1.027802,1437 3.827185}
+{11 1,13 1,162 1,170 1,306 1,359 1,398 1,772 4.026591,1188 1.884044,1261 3.546138,1564 2.430561}
+{2 1,18 1,513 1,772 4.026591,1036 0.969274,1188 1.884044,1209 1.853232,1474 2.958836}
+{13 1,162 1,170 1,306 1,359 1,600 1.13669,756 2.747162,774 3.346732,917 1.027802,1495 3.439289,1564 2.430561}
+{13 1,339 1,563 0.668856,900 2.824257}
+{13 1,316 1,389 1,872 3.827185,917 1.027802,965 3.827185}
+{5 1,6 1,13 1,559 4.026591,1333 3.546138}
+{11 1,13 1,15 1,24 1,302 1,337 1,422 1,554 4.026591,599 1.575542,923 3.010204,1265 4.026591,1334 4.026591,1407 2.214039,1520 0.77268,1561 2.585232}
+{13 1,917 1.027802}
+{13 1,917 1.027802}
+{13 1,18 1,60 1,152 1,563 0.668856,1058 2.784638,1205 0.862826}
+{13 1,139 1,152 1,246 1,316 1,474 1,917 1.027802,999 1.97949,1495 3.439289}
+{13 1,563 0.668856,1520 0.77268}
+{13 1,30 1,63 1,153 1,202 1,351 1,367 1,444 1,592 3.439289,756 4.354148,1520 0.77268}
+{13 1,894 3.827185,917 1.027802,1234 2.747162}
+{15 1,1611 2.621252}
+{13 1,78 1,176 1,316 1,338 1,425 1,584 4.026591,900 2.824257,1458 2.181026,1520 1.224669,1555 3.125997,1585 3.065685}
+{13 1,979 2.784638,1520 0.77268}
+{15 1,872 3.827185}
+{15 1}
+{13 1,316 1,733 2.958836,917 1.027802,1495 3.439289}
+{15 1,928 3.065685}
+{13 1,316 1,600 1.13669,917 1.027802,1130 2.364497,1199 2.119372,1495 3.439289}
+{13 1,563 0.668856}
+{15 1,266 1,269 1,275 1,474 1,487 1,600 1.13669,808 2.747162,857 2.911014,900 2.824257,1058 2.784638}
+{6 1,621 3.439289,980 2.747162}
+{13 1,363 1,459 1,563 0.668856,599 1.575542,657 1.274594,839 3.065685,979 2.784638,1021 2.529751,1036 0.969274,1040 2.721195,1229 2.455318,1321 3.192061,1458 2.181026,1500 1.505208,1520 0.77268}
+{2 1,48 1,122 1,151 1,169 1,254 1,334 1,377 1,480 1,524 1,600 1.13669,836 2.197336,1147 3.010204,1248 2.677789,1266 2.677789}
+{4 1,43 1,70 1,86 1,106 1,118 1,248 1,271 1,298 1,464 1,474 1,693 1.973606,723 3.827185,825 3.546138,999 1.248919,1482 3.889592,1495 3.439289,1500 2.385699,1543 4.026591,1585 3.065685,1615 4.026591}
+{4 1,9 1,15 1,162 1,170 1,306 1,359 1,1020 2.585232,1129 3.265091,1130 2.364497,1498 2.529751,1520 0.77268}
+{2 1,15 1,844 5.304445,1109 3.265091,1618 3.546138}
+{4 1,60 1,94 1,319 1,364 1,644 4.026591,908 2.958836,999 1.248919,1520 0.77268,1534 3.546138}
+{2 1,15 1,553 6.827445,1109 6.530182}
+{4 1,94 1,601 2.784638,644 4.026591,836 2.197336,999 1.248919}
+{2 1,15 1,844 5.304445,1618 3.546138}
+{13 1,634 4.307638,927 1.795436,1500 1.505208}
+{2 1,15 1,844 5.304445,951 6.065945,1096 6.065945,1109 3.265091,1618 3.546138}
+{2 1,917 1.027802,1140 2.430561}
+{2 1,15 1,18 1,49 1,103 1,124 1,193 1,316 1,361 1,437 1,457 1,458 1,599 1.575542,979 2.784638,1040 1.716883,1130 2.364497,1199 2.119372,1205 0.862826,1237 2.304185,1500 2.385699,1619 3.827185}
+{2 1,15 1,477 1}
+{13 1,21 1,52 1,158 1,321 1,326 1,408 1,489 1,657 1.274594,682 1.602997,750 3.672514,1199 2.119372,1290 6.381996,1390 4.026591,1394 3.672514,1500 1.505208,1520 0.77268}
+{2 1,15 1,412 1,789 3.546138,979 2.784638,1388 2.866279}
+{2 1,563 0.668856,839 3.065685,927 1.795436,1199 2.119372,1229 1.549133,1350 4.097496}
+{12 1,808 2.747162,900 2.824257,917 1.027802,1500 1.505208}
+{15 1,998 3.546138,1349 3.827185,1350 4.097496}
+{2 1,12 1,15 1,315 1,399 1,543 2.343804,547 2.407833,563 0.668856,999 1.97949,1036 0.969274,1205 0.862826,1308 4.613848,1455 2.747162,1498 2.529751}
+{15 1,253 1,479 1,980 2.747162,981 3.827185,1350 2.585232}
+{13 1,730 3.265091,900 2.824257}
+{15 1,120 1,253 1,415 1,478 1,1232 3.010204,1312 3.439289,1349 3.827185}
+{2 1,15 1,650 5.304445,844 10.60889,951 3.827185,1096 3.827185,1109 7.581307,1373 2.076483}
+{15 1,1312 3.439289}
+{13 1,366 1,367 1,592 3.439289,954 4.026591,988 1.523694}
+{15 1,1290 4.026591}
+{15 1,1312 3.439289,1373 2.076483}
+{13 1,563 0.668856,1015 3.666853,1021 2.529751,1500 1.505208}
+{13 1,681 2.454059,917 1.027802,1054 3.265091}
+{13 1,349 1,442 1,563 1.060112,774 3.346732,900 2.824257,919 2.784638,1140 2.430561,1209 1.853232,1373 2.076483,1500 1.505208,1555 3.125997,1611 1.653826}
+{17 1,74 1,663 3.265091,900 2.824257,927 1.795436,1140 2.430561,1373 2.076483,1407 2.214039}
+{13 1,21 1,117 1,158 1,326 1,388 1,408 1,472 1,563 0.668856,599 1.575542,750 3.672514,980 2.747162,1199 2.119372,1350 2.585232,1373 2.076483,1394 3.672514,1520 0.77268,1604 2.023138}
+{4 1,13 1,152 1,316 1,418 1,592 3.439289,927 1.795436,1180 2.645544,1321 3.192061}
+{2 1,9 1,259 1,563 0.668856,599 1.575542,1023 2.677789,1036 1.536263,1364 2.911014}
+{4 1,529 2.104779,983 5.175047,1074 3.672514,1388 2.866279}
+{4 1,18 1,60 1,71 1,120 1,121 1,152 1,187 1,253 1,415 1,478 1,600 1.801611,622 1.589133,665 3.010204,681 2.454059,836 2.197336,917 1.027802,983 3.265091,988 1.523694,1082 2.062757,1157 2.824257,1188 1.884044,1199 2.119372,1205 0.862826,1364 2.911014,1388 2.866279,1500 1.505208,1612 3.125997}
+{4 1,45 1,71 1,116 1,275 1,415 1,487 1,563 0.668856,657 1.274594,1041 3.346732,1119 2.824257,1188 1.884044,1604 2.023138}
+{4 1,18 1,60 1,152 1,563 0.668856,999 1.248919,1036 0.969274,1040 1.716883,1041 3.346732,1082 2.062757,1520 0.77268}
+{4 1,30 1,60 1,140 1,162 1,170 1,202 1,306 1,351 1,359 1,388 1,444 1,496 1,499 1,627 2.385826,983 5.175047,988 1.523694,999 1.248919,1041 3.346732,1072 3.192061,1082 2.062757,1199 2.119372,1359 3.065685,1388 2.866279,1520 0.77268,1564 2.430561}
+{4 1,1074 3.672514,1075 2.958836,1364 2.911014,1388 2.866279}
+{17 1,1611 1.653826}
+{4 1,1021 2.529751,1075 2.958836}
+{4 1,1021 2.529751,1075 2.958836}
+{17 1}
+{17 1,1232 3.010204}
+{17 1,758 3.827185}
+{17 1,517 1,980 2.747162,1308 2.911014,1624 3.672514}
+{17 1}
+{17 1,517 1,731 3.192061,980 2.747162,1308 2.911014}
+{17 1,1232 3.010204}
+{17 1,18 1,209 1,246 1,513 1,522 1,825 3.546138,1036 0.969274,1040 1.716883,1188 2.986139,1474 2.958836}
+{17 1}
+{17 1}
+{17 1}
+{15 1,399 1,723 3.827185,917 1.027802,1036 0.969274,1520 0.77268}
+{15 1}
+{13 1,316 1,917 1.027802,1495 3.439289,1504 2.614732,1585 3.065685}
+{15 1,1058 2.784638,1130 2.364497,1517 3.672514}
+{15 1,17 1,399 1,999 1.248919}
+{4 1,693 1.973606,1082 2.062757,1359 3.065685,1422 3.065685}
+{15 1,291 1,563 0.668856,600 1.13669,1036 0.969274,1058 2.784638,1205 0.862826,1458 2.181026,1517 5.820797}
+{15 1,47 1,60 1,119 1,127 1,131 1,152 1,259 1,269 1,314 1,373 1,381 1,399 1,466 1,467 1,484 1,498 1,525 1,563 0.668856,599 1.575542,657 1.274594,790 1.725184,988 2.414997,1023 2.677789,1036 0.969274,1040 2.721195,1041 3.346732,1180 2.645544,1188 1.884044,1195 2.556936,1205 0.862826,1229 1.549133,1373 3.291148,1407 3.509169,1517 7.345027,1611 1.653826}
+{11 1,303 1,318 1,400 1,622 1.589133,900 2.824257,919 4.413547,988 1.523694,1175 2.784638,1205 0.862826,1407 2.214039,1630 2.503591}
+{15 1,399 1,917 1.027802,1058 2.784638,1364 2.911014}
+{15 1,47 1,84 1,119 1,267 1,329 1,373 1,466 1,467 1,475 1,482 1,657 1.274594,825 3.546138,988 1.523694,999 1.248919,1041 3.346732,1157 2.824257,1183 4.026591,1188 1.884044,1364 2.911014}
+{15 1,399 1,512 1,600 1.13669,917 1.629028,999 1.248919,1036 0.969274,1058 4.413547,1234 2.747162,1480 3.346732,1500 1.505208,1517 3.672514,1520 0.77268}
+{13 1,162 1,170 1,306 1,359 1,563 0.668856,599 1.575542,1205 0.862826,1308 2.911014,1564 2.430561}
+{15 1,563 0.668856,1180 2.645544,1229 1.549133,1517 3.672514,1593 3.065685}
+{17 1,18 1,170 1,246 1,513 1,522 1,825 3.546138,999 1.248919,1041 3.346732,1188 1.884044,1205 0.862826,1474 2.958836}
+{16 1,113 1,303 1,318 1,400 1,545 4.026591,857 4.613848,917 1.027802,1248 2.677789,1474 2.958836,1513 3.827185}
+{12 1,927 1.795436,998 3.546138}
+{9 1,12 1,15 1,785 3.265091}
+{9 1,12 1,15 1}
+{12 1,20 1,563 0.668856,600 1.13669,622 1.589133,1040 1.716883}
+{9 1,15 1,48 1,107 1,112 1,122 1,151 1,169 1,231 1,237 1,254 1,334 1,341 1,377 1,468 1,480 1,524 1,1040 1.716883,1205 0.862826,1209 1.853232,1229 1.549133}
+{9 1,12 1,15 1,785 3.265091}
+{9 1,15 1,60 1,152 1,301 1,316 1,349 1,399 1,442 1,563 1.337713,1082 4.125514,1205 2.230373,1262 4.297797,1370 3.346732}
+{10 1,17 1,187 1,519 1,600 1.801611,622 1.589133,659 2.911014,731 3.192061,947 3.672514,1010 3.672514,1021 2.529751,1066 3.065685,1086 3.125997,1188 1.884044,1205 0.862826,1229 1.549133,1236 3.010204,1500 1.505208,1502 2.784638,1611 1.653826}
+{13 1,350 1,563 0.668856,999 1.248919,1205 0.862826,1303 3.827185}
+{13 1,389 1}
+{2 1,563 0.668856,599 1.575542,600 1.13669,836 3.482695,1036 1.536263}
+{2 1,127 1,131 1,269 1,314 1,381 1,484 1,525 1,563 0.668856,665 3.010204,997 4.026591,1036 0.969274,1082 2.062757,1180 2.645544,1195 4.052648,1520 0.77268}
+{8 1,48 1,122 1,151 1,169 1,254 1,334 1,377 1,480 1,524 1,563 0.668856,600 1.13669,657 1.274594,693 1.973606,1120 2.911014,1175 2.784638,1195 4.052648,1500 1.505208,1520 0.77268}
+{15 1,127 1,131 1,152 1,170 1,246 1,269 1,314 1,316 1,349 1,381 1,399 1,442 1,484 1,525 1,622 1.589133,657 1.274594,693 1.973606,1036 0.969274,1205 0.862826,1474 2.958836,1520 0.77268}
+{13 1,543 2.343804,808 2.747162,1611 1.653826}
+{11 1,15 1,399 1,431 1,481 1,503 1,600 1.801611,601 2.784638,839 3.065685,917 1.027802,947 3.672514,958 3.346732,988 1.523694,999 1.97949,1020 2.585232,1038 4.026591,1040 1.716883,1054 3.265091,1084 5.451144,1188 1.884044,1209 2.937303,1229 1.549133,1275 6.381996,1407 3.509169,1482 2.454059,1500 1.505208,1503 3.439289,1520 1.794108}
+{4 1,61 1,75 1,84 1,92 1,127 1,199 1,317 1,601 2.784638,999 1.248919,1010 3.672514,1041 3.346732,1058 4.413547,1082 3.269393,1112 3.546138,1199 2.119372,1205 0.862826,1209 2.937303,1229 1.549133,1364 2.911014,1422 3.065685,1500 1.505208,1520 0.77268}
+{9 1,238 1,266 1,275 1,487 1,563 1.060112,657 1.274594,1262 2.711608,1407 2.214039}
+{17 1,481 1,599 1.575542,600 1.13669,1234 2.747162,1520 0.77268,1612 3.125997}
+{15 1,41 1,80 1,115 1,229 1,426 1,563 0.668856,657 1.274594,693 1.973606,790 2.734352,1513 3.827185,1604 2.023138}
+{13 1}
+{13 1,375 1,600 1.13669,819 3.672514,927 2.845699,1084 3.439289,1448 3.439289,1502 2.784638}
+{11 1,563 0.668856,681 2.454059,927 1.795436,1502 2.784638}
+{13 1}
+{11 1}
+{13 1,1350 2.585232}
+{4 1,20 1,45 1,116 1,275 1,471 1,487 1,563 0.668856,600 1.801611,917 1.027802,927 1.795436,1010 3.672514,1209 1.853232,1217 3.827185,1308 2.911014,1321 3.192061,1407 2.214039,1604 2.023138}
+{4 1,785 3.265091}
+{4 1}
+{4 1}
+{13 1,344 1,999 1.248919,1084 3.439289,1199 2.119372,1205 0.862826}
+{4 1,32 1,93 1,201 1}
+{4 1,785 3.265091}
+{13 1}
+{4 1}
+{13 1,1072 3.192061,1367 3.265091,1611 1.653826}
+{4 1,79 1,601 2.784638,1175 2.784638,1275 4.026591,1520 1.224669}
+{13 1,386 1,392 1,599 1.575542,1308 2.911014,1500 1.505208,1520 0.77268}
+{15 1,486 1,622 2.518717,681 2.454059,819 3.672514,825 3.546138,1036 0.969274,1120 2.911014,1157 2.824257,1500 1.505208,1520 1.224669}
+{13 1,387 1,599 1.575542,999 1.248919,1041 3.346732}
+{4 1,17 1,825 3.546138,1188 1.884044,1239 2.824257}
+{15 1,17 1,55 1,92 1,134 1,199 1,389 1,497 1,563 0.668856,1082 2.062757,1364 2.911014}
+{15 1,38 1,104 1,162 1,170 1,306 1,359 1,462 1,657 1.274594,1119 2.824257,1564 2.430561}
+{15 1}
+{15 1}
+{15 1,600 1.801611,672 6.655294,886 5.820797,949 3.827185,1229 1.549133,1474 2.958836,1494 6.381996,1520 0.77268}
+{15 1,421 1,682 1.602997,1023 2.677789,1500 1.505208}
+{15 1,168 1,910 3.065685,1023 2.677789,1614 3.827185}
+{13 1,333 1,341 1,416 1,1040 1.716883,1132 3.827185,1520 0.77268}
+{2 1,15 1,18 1,48 1,56 1,122 1,127 1,131 1,138 1,139 1,151 1,162 1,169 1,170 1,245 1,246 1,254 1,269 1,295 1,306 1,314 1,334 1,359 1,377 1,381 1,404 1,470 1,474 1,480 1,484 1,504 1,523 1,524 1,525 1,528 1,563 0.668856,679 3.672514,681 2.454059,733 2.958836,999 1.248919,1036 0.969274,1600 3.192061}
+{13 1,60 1,210 1,316 1,346 1,353 1,439 1,563 0.668856,600 1.13669,927 1.795436,1036 0.969274,1040 1.716883,1205 0.862826,1520 0.77268}
+{13 1,316 1,917 1.027802,1140 2.430561}
+{12 1,13 1,339 1,366 1,367 1,563 0.668856,592 3.439289,622 1.589133,657 1.274594,1066 3.065685,1205 0.862826,1458 2.181026,1500 1.505208,1520 0.77268}
+{12 1,13 1,919 2.784638}
+{13 1,25 1,357 1,563 0.668856,599 1.575542,1036 0.969274,1520 0.77268,1601 2.231155}
+{13 1,563 0.668856,919 2.784638,1154 3.672514,1254 3.346732}
+{2 1}
+{15 1}
+{13 1,121 1,399 1,563 0.668856,774 3.346732,808 2.747162,917 1.027802,1058 2.784638,1205 0.862826,1520 0.77268}
+{15 1,776 6.142762,1414 8.615276}
+{13 1,808 2.747162,1230 3.346732}
+{15 1,415 1,776 5.291087,1414 6.827445}
+{13 1,328 1,364 1,391 1,563 1.060112,693 1.973606,808 4.354148,1036 0.969274,1058 2.784638,1266 2.677789,1500 1.505208}
+{2 1,4 1,47 1,119 1,373 1,682 1.602997,1520 0.77268}
+{13 1,328 1,563 0.668856,599 1.575542,600 1.13669,808 4.354148,1036 0.969274,1205 0.862826,1230 5.304445,1500 1.505208}
+{2 1,4 1,55 1,60 1,90 1,92 1,134 1,199 1,389 1,497 1,563 0.668856,865 4.026591,917 1.027802,919 2.784638,1058 2.784638,1082 2.062757,1150 3.010204,1364 2.911014,1594 3.672514,1604 2.023138}
+{4 1,1041 3.346732}
+{4 1,563 0.668856,808 2.747162,1388 2.866279}
+{4 1,60 1,77 1,152 1,316 1,399 1,599 1.575542,600 1.13669,836 2.197336,917 1.027802,1036 0.969274,1058 2.784638,1080 4.026591,1082 3.269393,1101 3.827185,1205 0.862826,1209 1.853232,1230 3.346732,1334 4.026591,1500 1.505208,1611 1.653826}
+{4 1,133 1,246 1,274 1,380 1,563 0.668856,599 1.575542,600 1.801611,657 1.274594,693 1.973606,808 4.354148,1120 2.911014,1130 2.364497,1199 3.359125,1208 6.065945,1500 1.505208,1611 2.621252}
+{4 1,127 1,131 1,133 1,185 1,269 1,314 1,381 1,484 1,525 1,808 2.747162,1130 2.364497,1208 3.827185,1500 1.505208,1611 1.653826}
+{4 1,13 1,900 2.824257,1090 3.672514,1205 0.862826}
+{15 1,60 1,316 1,399 1,417 1,435 1,512 1,659 2.911014,681 2.454059,808 2.747162,1130 2.364497,1248 4.244195,1520 0.77268}
+{4 1,60 1,152 1,210 1,316 1,353 1,399 1,563 1.060112,721 6.065945,1021 2.529751,1040 1.716883,1082 2.062757,1130 2.364497,1205 0.862826,1388 2.866279,1504 2.614732,1520 0.77268,1604 2.023138}
+{15 1,60 1,316 1,399 1,417 1,435 1,512 1,599 1.575542,659 2.911014,1058 2.784638,1130 2.364497,1248 2.677789,1520 0.77268}
+{4 1,900 2.824257}
+{15 1,1041 3.346732}
+{4 1,18 1,60 1,152 1,316 1,399 1,563 0.668856,682 3.205993,721 9.89313,836 2.197336,862 3.546138,900 6.557722,908 4.689644,999 1.248919,1021 2.529751,1036 2.250585,1082 3.269393,1205 0.862826}
+{12 1,49 1,108 1,124 1,255 1,311 1,313 1,721 3.827185,1188 1.884044,1407 2.214039,1520 0.77268}
+{15 1,60 1,152 1,316 1,399 1,600 1.13669,808 2.747162,999 2.497839,1041 5.304445,1058 2.784638,1082 3.269393,1130 3.747639,1205 0.862826,1502 4.413547,1611 4.275078}
+{12 1,49 1,60 1,73 1,108 1,124 1,152 1,210 1,296 1,312 1,316 1,353 1,394 1,399 1,563 1.337713,600 1.13669,1020 2.585232,1082 2.062757,1157 2.824257,1205 1.367547,1364 2.911014,1604 2.023138}
+{15 1,1130 2.364497,1175 2.784638,1208 3.827185}
+{11 1,56 1,138 1,139 1,162 1,170 1,213 1,245 1,246 1,295 1,305 1,306 1,356 1,359 1,447 1,470 1,474 1,504 1,523 1,528 1,1520 0.77268,1588 4.026591,1611 1.653826,1630 2.503591}
+{15 1,1082 2.062757,1084 3.439289}
+{6 1,24 1,302 1,337 1,422 1,600 1.801611,627 2.385826,657 1.274594,664 4.026591,693 1.973606,731 3.192061,923 3.010204,999 1.248919,1130 2.364497,1175 2.784638,1205 0.862826}
+{6 1,731 3.192061}
+{6 1,24 1,302 1,337 1,422 1,600 1.13669,627 2.385826,657 1.274594,693 1.973606,923 3.010204,1208 3.827185,1555 3.125997}
+{13 1,316 1,563 0.668856,1036 0.969274,1205 0.862826,1500 1.505208}
+{4 1,682 1.602997,999 1.248919,1520 0.77268}
+{4 1,60 1,62 1,113 1,152 1,240 1,303 1,316 1,318 1,399 1,400 1,415 1,563 0.668856,622 1.589133,756 4.354148,1082 2.062757,1205 0.862826,1520 0.77268}
+{11 1,35 1,56 1,138 1,139 1,162 1,170 1,213 1,245 1,246 1,295 1,305 1,306 1,308 1,356 1,359 1,447 1,470 1,474 1,504 1,523 1,528 1,1520 0.77268,1588 4.026591,1611 1.653826,1630 2.503591}
+{13 1,316 1,917 1.027802,1495 3.439289}
+{13 1,316 1,917 1.027802}
+{4 1,32 1,93 1,201 1,286 1,674 3.439289,785 3.265091,917 1.027802,999 1.248919,1040 1.716883,1140 2.430561,1373 2.076483}
+{8 1,187 1,283 1,339 1,495 1,600 1.13669,627 2.385826,657 1.274594,682 1.602997,774 3.346732,838 5.304445,1167 3.125997,1188 1.884044,1308 2.911014,1482 2.454059,1500 1.505208,1502 2.784638,1520 0.77268,1561 2.585232}
+{13 1,48 1,122 1,151 1,169 1,254 1,296 1,330 1,334 1,377 1,394 1,480 1,524 1,600 1.13669,733 2.958836,830 3.546138,1209 1.853232,1482 2.454059,1500 1.505208}
+{15 1,78 1,176 1,193 1,268 1,316 1,338 1,399 1,425 1,437 1,1209 1.853232,1234 2.747162,1248 4.244195,1520 0.77268}
+{9 1,291 1,390 1,563 0.668856,988 1.523694,1020 2.585232,1036 0.969274,1040 1.716883,1205 0.862826,1458 3.456844}
+{13 1,332 1,563 0.668856,599 1.575542,1020 2.585232,1205 0.862826,1520 0.77268}
+{9 1,917 1.027802,1036 0.969274}
+{9 1,223 1,599 1.575542,657 1.274594,971 3.827185,988 1.523694,1209 1.853232,1247 2.248704,1407 2.214039}
+{9 1,223 1,1185 4.026591,1188 1.884044}
+{9 1,60 1,152 1,280 1,563 0.668856,657 1.274594,917 1.027802,988 1.523694,1015 1.833427,1183 4.026591,1229 1.549133,1247 2.248704,1304 6.065945,1458 2.181026,1504 2.614732,1520 0.77268,1561 2.585232}
+{9 1,60 1,152 1,238 1,266 1,275 1,301 1,487 1,657 1.274594,988 1.523694,1304 3.827185,1520 0.77268}
+{9 1,27 1,30 1,186 1,202 1,280 1,351 1,444 1,657 1.274594,917 1.027802,988 2.414997,1040 1.716883,1167 3.125997,1247 2.248704,1304 6.065945,1504 2.614732,1520 0.77268}
+{9 1,657 1.274594,927 1.795436,988 1.523694,1015 2.905912,1036 0.969274,1209 1.853232,1247 2.248704,1304 3.827185,1504 2.614732,1561 2.585232}
+{15 1,173 1,180 1,340 1,427 1,516 1,584 4.026591,657 1.274594,681 2.454059,682 1.602997,999 1.248919,1036 0.969274,1119 2.824257,1240 3.265091,1480 3.346732,1631 3.672514}
+{15 1,56 1,138 1,139 1,162 1,170 1,245 1,246 1,295 1,306 1,359 1,474 1,504 1,523 1,528 1,584 4.026591,622 1.589133}
+{9 1,252 1,363 1,389 1,459 1,563 0.668856,575 4.026591,622 1.589133,909 5.820797,1036 0.969274,1247 2.248704,1520 0.77268}
+{15 1,303 1,318 1,400 1,406 1,438 1,452 1,599 1.575542,600 1.13669,919 2.784638,1199 2.119372,1373 2.076483,1520 0.77268,1561 2.585232,1585 3.065685}
+{9 1,790 1.725184,1036 0.969274}
+{15 1,406 1,438 1,452 1,563 0.668856,599 1.575542,600 1.13669,919 2.784638,1082 2.062757,1199 2.119372,1373 2.076483,1520 0.77268,1561 2.585232,1585 4.858996}
+{9 1,82 1,152 1,173 1,180 1,204 1,222 1,230 1,296 1,304 1,307 1,316 1,340 1,394 1,399 1,427 1,460 1,465 1,516 1,657 1.274594,909 5.820797,917 1.027802,988 1.523694,1040 1.716883,1247 2.248704,1373 2.076483,1407 2.214039,1604 2.023138}
+{15 1,438 1,599 1.575542,1199 2.119372,1520 0.77268}
+{15 1,406 1,438 1,452 1,599 1.575542,1199 2.119372,1520 0.77268,1585 4.858996}
+{9 1,60 1,80 1,152 1,178 1,179 1,212 1,426 1,570 3.827185,600 1.13669,988 1.523694,1036 1.536263,1247 2.248704,1327 4.026591,1504 2.614732,1520 0.77268}
+{8 1,18 1,60 1,80 1,152 1,426 1,1188 1.884044,1199 3.359125,1205 0.862826,1266 4.244195}
+{9 1,60 1,152 1,170 1,246 1,298 1,399 1,474 1,681 2.454059,977 3.265091,999 1.248919,1036 0.969274,1040 1.716883,1195 2.556936,1205 0.862826,1474 2.958836,1520 0.77268,1615 4.026591}
+{8 1,22 1,46 1,48 1,122 1,151 1,159 1,169 1,254 1,258 1,334 1,377 1,409 1,473 1,480 1,515 1,521 1,524 1,526 1,563 0.668856,681 3.889592,707 3.827185,1036 0.969274,1040 2.721195,1119 5.648515,1175 5.569276,1188 1.884044,1209 1.853232,1229 2.455318,1373 2.076483,1380 6.827445,1448 3.439289,1500 1.505208,1520 1.224669}
+{9 1,259 1,271 1,357 1,599 2.497175,909 3.672514,1023 2.677789,1247 2.248704}
+{9 1,60 1,152 1,174 1,189 1,367 1,420 1,563 0.668856,592 3.439289,599 1.575542,657 1.274594,756 2.747162,927 2.845699,988 1.523694,999 1.248919,1036 1.536263,1205 0.862826,1209 1.853232,1247 2.248704,1248 2.677789,1504 2.614732}
+{9 1,163 1,170 1,246 1,295 1,971 6.065945,1247 2.248704,1458 2.181026}
+{9 1,190 1,301 1,927 1.795436,971 3.827185,1237 2.304185,1247 2.248704}
+{3 1,162 1,170 1,306 1,359 1,532 1.823732,979 2.784638,987 3.439289,1040 1.716883,1132 3.827185,1229 1.549133,1551 5.820797,1564 2.430561,1611 1.653826}
+{13 1,22 1,60 1,159 1,316 1,388 1,409 1,496 1,515 1,622 1.589133,693 1.973606,917 1.027802,999 1.97949,1140 3.852348,1188 1.884044,1359 3.065685}
+{4 1,22 1,45 1,46 1,116 1,159 1,275 1,409 1,451 1,473 1,487 1,515 1,521 1,600 1.13669,659 2.911014,1495 3.439289,1500 1.505208,1504 2.614732}
+{4 1,13 1,17 1,48 1,61 1,122 1,151 1,169 1,254 1,317 1,334 1,377 1,480 1,524 1,563 0.668856,659 2.911014,694 3.439289,862 3.546138,927 1.795436,988 1.523694,1040 1.716883,1154 3.672514,1285 7.345027,1320 3.439289,1350 2.585232,1500 1.505208,1630 2.503591}
+{13 1,330 1,600 1.13669,681 2.454059,830 3.546138,1327 4.026591,1370 3.346732,1482 2.454059,1495 3.439289}
+{4 1,13 1,36 1,82 1,101 1,164 1,173 1,180 1,209 1,319 1,340 1,360 1,427 1,516 1,600 1.13669,697 4.026591,927 1.795436,1036 0.969274,1359 3.065685,1520 0.77268,1621 3.827185}
+{0 1,272 1,379 1,1112 3.546138,1205 0.862826}
+{4 1,13 1,74 1,316 1,663 3.265091,1205 0.862826,1209 1.853232,1308 2.911014}
+{4 1,1188 1.884044}
+{13 1,316 1,682 1.602997,1105 3.125997,1199 2.119372,1209 2.937303,1520 1.224669}
+{15 1,731 5.059297,1140 2.430561,1285 3.672514}
+{15 1,1285 3.672514}
+{15 1,258 1,263 1,474 1,563 0.668856,731 3.192061,1036 0.969274}
+{13 1,54 1,132 1,350 1,387 1,494 1,563 0.668856,600 1.13669,1520 0.77268}
+{13 1,278 1,331 1,372 1,563 0.668856,663 3.265091,857 4.613848,999 1.248919,1254 3.346732,1601 2.231155}
+{4 1,600 1.13669,857 4.613848,1334 4.026591,1612 3.125997}
+{4 1,13 1,1040 1.716883,1205 0.862826,1495 3.439289}
+{2 1,3 1,10 1,24 1,302 1,337 1,422 1,872 3.827185,923 3.010204,1036 0.969274,1515 3.827185,1561 2.585232,1601 2.231155}
+{4 1,13 1,115 1,389 1,563 0.668856,600 1.13669,643 2.958836,682 1.602997,988 1.523694,1364 2.911014,1422 3.065685}
+{13 1,568 3.827185,1254 3.346732}
+{13 1,15 1,31 1,34 1,99 1,234 1,316 1,347 1,352 1,355 1,440 1,1120 2.911014,1205 0.862826,1359 3.065685,1520 1.224669}
+{11 1,13 1,14 1,758 3.827185}
+{15 1,388 1,496 1,529 2.104779,532 1.823732,563 0.668856,622 1.589133,682 1.602997,862 3.546138,1074 3.672514,1082 3.269393,1359 6.13137}
+{11 1,13 1,14 1}
+{15 1,32 1,93 1,201 1,286 1}
+{15 1}
+{2 1,15 1}
+{2 1,15 1,1023 4.244195,1455 2.747162,1614 3.827185}
+{2 1,15 1,784 5.620496,919 2.784638,1023 5.355578,1148 3.265091,1455 2.747162,1629 3.672514}
+{2 1,15 1,28 1,52 1,436 1,489 1,563 0.668856,1199 2.119372,1359 3.065685,1364 2.911014,1455 2.747162}
+{2 1,15 1,28 1,436 1,535 3.546138,540 3.672514,550 3.672514}
+{4 1,13 1,121 1,358 1,376 1,391 1,563 0.668856,574 3.827185,730 3.265091,774 3.346732,984 3.672514,1140 2.430561,1500 1.505208}
+{2 1,15 1,388 1,496 1,498 1,529 2.104779,789 3.546138,863 4.026591,911 5.451144,1082 2.062757,1148 3.265091,1293 3.346732,1359 7.1183,1373 5.367632,1495 8.890433}
+{2 1,15 1,784 3.546138,999 1.97949,1148 3.265091,1359 6.13137,1495 6.878578}
+{13 1,563 1.060112,1585 3.065685,1611 1.653826}
+{15 1,1293 3.346732}
+{15 1,388 1,496 1,529 2.104779,535 5.620496,540 5.820797,550 3.672514,1082 2.062757,1148 3.265091,1359 7.1183}
+{15 1,550 3.672514,784 3.546138,999 1.97949,1148 3.265091,1359 6.13137}
+{15 1,535 5.620496,540 5.820797,550 5.820797,784 3.546138,1148 3.265091,1629 3.672514}
+{9 1,13 1,45 1,116 1,275 1,487 1,600 1.13669,622 1.589133,682 1.602997,1500 1.505208,1520 0.77268,1555 3.125997}
+{3 1,43 1,86 1,106 1,118 1,248 1,384 1,441 1,464 1,563 1.337713,697 4.026591,825 3.546138,857 2.911014,919 2.784638,1140 3.852348,1229 1.549133,1407 3.509169,1604 2.023138,1611 1.653826}
+{13 1,303 1,318 1,400 1,563 0.668856,919 2.784638,1209 1.853232}
+{13 1,47 1,119 1,139 1,246 1,329 1,373 1,467 1,474 1,475 1,563 0.668856,825 3.546138,872 3.827185,1188 1.884044,1601 2.231155}
+{9 1}
+{9 1,139 1,195 1,246 1,322 1,441 1,474 1,644 6.381996,872 3.827185,1601 2.231155}
+{9 1,60 1,152 1,170 1,316 1,399 1,563 0.668856,907 4.026591,1082 2.062757,1205 0.862826,1500 1.505208,1601 2.231155}
+{9 1,60 1,152 1,316 1,399 1,563 0.668856,708 4.026591,872 3.827185,1082 2.062757,1205 0.862826}
+{13 1,374 1,375 1,774 3.346732,900 2.824257,1188 1.884044,1216 3.346732,1229 1.549133,1327 4.026591,1500 1.505208,1603 3.346732}
+{4 1,988 1.523694,1140 2.430561,1234 4.354148,1440 3.439289,1520 0.77268,1611 1.653826}
+{2 1,917 1.027802,1036 0.969274,1237 2.304185,1495 3.439289}
+{3 1,599 1.575542,600 1.13669,681 2.454059,1054 3.265091,1515 3.827185,1601 2.231155}
+{6 1,927 1.795436,983 3.265091}
+{6 1}
+{6 1,599 1.575542,1140 2.430561}
+{13 1,29 1,681 2.454059,715 3.439289,1036 0.969274,1040 1.716883,1262 2.711608,1267 3.827185,1520 0.77268}
+{6 1,756 2.747162}
+{2 1,92 1,121 1,134 1,199 1,389 1,497 1,599 1.575542,908 2.958836,1020 2.585232,1040 1.716883,1054 3.265091,1205 1.367547,1217 3.827185,1364 4.613848}
+{2 1,29 1,127 1,131 1,269 1,314 1,381 1,484 1,525 1,565 4.026591,657 1.274594,693 1.973606,715 3.439289,1040 1.716883,1229 1.549133,1267 3.827185,1407 2.214039,1600 3.192061}
+{6 1,60 1,152 1,599 1.575542,1140 2.430561,1205 0.862826}
+{16 1,367 1,512 1,592 3.439289,777 4.307638}
+{6 1}
+{9 1,47 1,119 1,329 1,373 1,467 1,475 1,563 0.668856,600 1.13669,715 3.439289,825 3.546138,933 4.026591,988 1.523694,1036 0.969274,1188 2.986139,1504 2.614732}
+{9 1,296 1,394 1,563 1.060112,988 1.523694,1036 0.969274,1247 2.248704}
+{6 1,979 2.784638}
+{9 1,296 1,394 1,563 1.060112,988 1.523694,1036 0.969274,1247 2.248704}
+{6 1}
+{9 1,563 0.668856,715 3.439289,988 1.523694,1036 0.969274,1247 2.248704,1267 3.827185}
+{9 1,563 0.668856,715 3.439289,988 1.523694,1036 0.969274,1247 2.248704,1267 3.827185,1321 5.059297}
+{9 1,176 1,193 1,268 1,284 1,338 1,437 1,988 1.523694,1036 1.938548,1209 1.853232,1247 2.248704,1262 4.297797,1504 2.614732}
+{9 1,60 1,80 1,152 1,171 1,178 1,179 1,189 1,212 1,366 1,367 1,426 1,563 0.668856,592 3.439289,777 6.827445,988 1.523694,1036 1.536263,1247 2.248704,1439 3.546138,1456 4.026591,1520 1.224669}
+{9 1,84 1,86 1,118 1,246 1,248 1,267 1,270 1,271 1,274 1,333 1,380 1,416 1,482 1,657 1.274594,682 1.602997,790 1.725184,839 3.065685,1015 1.833427,1036 0.969274,1120 2.911014,1150 3.010204,1183 4.026591,1209 1.853232,1229 1.549133,1364 2.911014,1600 3.192061,1604 2.023138,1611 1.653826}
+{13 1,246 1,319 1,358 1,563 0.668856,988 1.523694,1500 1.505208,1520 0.77268}
+{9 1,13 1,22 1,46 1,159 1,409 1,473 1,515 1,521 1,563 1.060112,600 1.13669,919 2.784638,927 1.795436,1180 2.645544,1261 3.546138,1500 1.505208,1561 2.585232,1611 1.653826}
+{13 1,36 1,52 1,101 1,164 1,209 1,316 1,319 1,321 1,336 1,360 1,489 1,563 0.668856,599 2.497175,663 3.265091,917 1.027802,927 1.795436,1021 2.529751,1199 2.119372,1458 2.181026,1500 1.505208,1520 0.77268,1601 2.231155,1619 3.827185}
+{15 1,67 1,82 1,97 1,152 1,155 1,173 1,176 1,180 1,230 1,307 1,316 1,338 1,340 1,399 1,427 1,460 1,465 1,516 1,601 2.784638,657 2.020184,693 1.973606,917 1.027802,1021 2.529751,1199 2.119372,1234 2.747162,1407 2.214039,1500 1.505208}
+{15 1,622 1.589133,1036 0.969274}
+{13 1,320 1,872 3.827185}
+{13 1,15 1,128 1,182 1,342 1,378 1,592 3.439289,917 1.629028,1056 3.827185,1205 0.862826,1278 4.026591,1350 2.585232,1526 3.672514,1630 2.503591}
+{13 1,886 3.672514,999 1.248919,1140 2.430561}
+{4 1,12 1,18 1,25 1,60 1,70 1,127 1,131 1,143 1,152 1,269 1,314 1,315 1,381 1,484 1,525 1,600 1.13669,657 1.274594,682 1.602997,830 3.546138,978 3.827185,1021 2.529751,1036 0.969274,1120 2.911014,1180 2.645544,1205 0.862826,1520 0.77268,1604 2.023138}
+{9 1,216 1,256 1,389 1,423 1,965 7.65437,1234 2.747162,1247 2.248704,1350 2.585232,1520 0.77268,1611 1.653826}
+{9 1,22 1,36 1,39 1,42 1,46 1,82 1,101 1,105 1,111 1,159 1,164 1,173 1,180 1,191 1,209 1,319 1,340 1,360 1,409 1,427 1,473 1,515 1,516 1,521 1,1247 2.248704,1248 2.677789,1278 4.026591,1520 0.77268,1556 4.026591}
+{9 1}
+{15 1}
+{13 1,316 1,917 1.027802,1495 3.439289,1625 2.478383}
+{15 1,253 1,479 1,980 2.747162,1350 2.585232}
+{14 1,30 1,202 1,351 1,444 1,965 3.827185,980 4.354148,999 1.248919,1625 2.478383}
+{2 1,21 1,30 1,60 1,117 1,152 1,158 1,202 1,326 1,351 1,408 1,444 1,472 1,563 0.668856,750 3.672514,825 3.546138,965 3.827185,988 2.414997,1040 1.716883,1188 1.884044,1229 1.549133,1373 2.076483,1520 0.77268}
+{15 1,253 1,479 1,980 2.747162,1350 2.585232}
+{15 1,731 3.192061,1105 3.125997,1312 3.439289}
+{2 1,15 1,399 1,563 0.668856,601 2.784638,663 3.265091,927 1.795436,999 2.497839,1084 3.439289,1303 3.827185,1373 2.076483,1520 1.224669,1625 2.478383,1631 3.672514}
+{15 1,980 2.747162,1350 2.585232}
+{15 1,731 3.192061,1074 3.672514,1105 3.125997}
+{15 1,1278 4.026591}
+{13 1,22 1,159 1,409 1,515 1,599 1.575542,1199 2.119372}
+{4 1,78 1,140 1,316 1,338 1,388 1,496 1,599 1.575542,663 3.265091,682 1.602997,999 2.497839,1015 1.833427,1036 0.969274,1040 1.716883,1191 4.026591,1199 2.119372,1229 1.549133,1359 3.065685,1364 2.911014,1520 0.77268,1601 2.231155,1615 4.026591}
+{9 1,657 1.274594,682 1.602997,693 1.973606,1082 2.062757,1205 0.862826,1209 1.853232,1229 1.549133,1455 2.747162}
+{9 1,21 1,158 1,276 1,326 1,408 1,541 4.026591,546 3.546138,711 3.439289,750 5.820797,836 2.197336,917 1.027802}
+{9 1}
+{9 1,32 1,93 1,201 1,711 3.439289,917 1.027802,980 2.747162,1230 3.346732,1439 3.546138}
+{9 1}
+{9 1,21 1,60 1,152 1,158 1,301 1,316 1,326 1,350 1,399 1,408 1,563 0.668856,750 5.820797,910 3.065685,1023 2.677789,1082 2.062757,1205 0.862826,1209 1.853232,1229 2.455318,1275 4.026591,1320 3.439289,1458 2.181026,1520 0.77268,1555 3.125997,1594 3.672514}
+{9 1,173 1,180 1,340 1,427 1,516 1,563 0.668856,657 1.274594,920 3.827185,988 1.523694,1036 0.969274,1229 1.549133,1474 2.958836,1555 3.125997}
+{13 1,176 1,193 1,268 1,338 1,437 1,563 1.337713,808 2.747162,836 2.197336,1036 1.536263,1086 6.251993,1205 0.862826,1500 1.505208,1520 0.77268}
+{9 1,563 0.668856,927 1.795436,1520 0.77268,1555 4.954588}
+{4 1,15 1,30 1,60 1,202 1,351 1,420 1,444 1,563 0.668856,657 1.274594,682 2.54069,693 1.973606,790 1.725184,927 1.795436,1036 0.969274,1266 2.677789,1520 0.77268,1604 2.023138}
+{9 1,431 1,563 0.668856,927 1.795436,1084 3.439289,1262 2.711608,1520 1.224669}
+{15 1,605 4.026591,1086 3.125997}
+{9 1,36 1,101 1,164 1,209 1,319 1,360 1,563 0.668856,657 2.020184,672 2.866279,1229 1.549133,1334 4.026591,1407 3.509169,1564 2.430561}
+{15 1,605 4.026591}
+{9 1,30 1,202 1,203 1,351 1,444 1,988 1.523694,999 1.248919,1180 2.645544,1191 4.026591,1520 1.224669,1588 4.026591,1611 1.653826,1630 2.503591}
+{15 1,431 1,605 4.026591,682 1.602997,1084 3.439289}
+{9 1,259 1,316 1,1023 2.677789,1205 0.862826,1320 3.439289}
+{9 1,60 1,152 1,173 1,180 1,191 1,230 1,290 1,307 1,340 1,369 1,399 1,427 1,460 1,516 1,599 1.575542,622 1.589133,663 3.265091,671 2.784638,988 1.523694,1036 0.969274,1248 2.677789,1407 2.214039,1440 3.439289,1520 0.77268,1601 2.231155}
+{9 1,175 1,657 1.274594,671 2.784638,1185 6.381996,1407 2.214039,1520 0.77268,1603 3.346732}
+{9 1,790 1.725184,1036 0.969274}
+{9 1,18 1,60 1,84 1,127 1,152 1,175 1,265 1,316 1,399 1,563 0.668856,1036 0.969274,1082 2.062757,1174 4.026591,1185 4.026591,1205 1.367547,1229 1.549133,1234 2.747162,1601 2.231155}
+{15 1}
+{15 1,332 1,414 1,563 0.668856,622 1.589133,998 3.546138,1193 5.620496,1482 2.454059}
+{15 1,543 2.343804,1193 3.546138}
+{15 1,503 1,1193 3.546138,1269 4.026591,1482 2.454059}
+{13 1,342 1,563 0.668856,917 1.027802,1229 1.549133,1293 3.346732,1525 3.192061}
+{15 1,1269 4.026591,1482 2.454059}
+{4 1,101 1,139 1,246 1,450 1,474 1,505 1,1053 3.672514,1373 2.076483}
+{15 1,86 1,106 1,464 1,693 1.973606,711 3.439289,825 3.546138,1193 3.546138,1229 1.549133}
+{17 1,600 1.13669,999 1.248919,1040 1.716883,1188 1.884044,1373 2.076483,1564 2.430561}
+{15 1,543 2.343804,1193 3.546138}
+{13 1,316 1,599 1.575542,657 1.274594,694 3.439289,1321 3.192061,1601 2.231155}
+{15 1,1269 4.026591,1482 2.454059}
+{15 1,980 2.747162,1624 3.672514}
+{15 1}
+{9 1,213 1,305 1,356 1,447 1,980 2.747162,1130 3.747639,1247 2.248704,1520 0.77268}
+{15 1}
+{9 1,220 1,294 1,1247 2.248704,1520 0.77268,1555 4.954588}
+{15 1,927 1.795436,980 2.747162,1555 4.954588,1591 4.026591,1624 3.672514}
+{9 1,152 1,220 1,256 1,389 1,808 2.747162,965 6.065945,1205 0.862826,1247 2.248704,1520 0.77268}
+{15 1}
+{9 1,152 1,374 1,375 1,808 2.747162,1154 3.672514,1205 0.862826,1247 2.248704,1520 0.77268}
+{9 1,214 1,628 4.026591,1247 2.248704,1350 2.585232,1520 1.224669}
+{15 1}
+{9 1,152 1,210 1,353 1,563 0.668856,808 2.747162,919 2.784638,988 1.523694,1036 0.969274,1058 2.784638,1082 2.062757,1205 0.862826,1229 1.549133}
+{15 1,1262 2.711608,1520 0.77268}
+{9 1,214 1,339 1,628 4.026591,917 1.027802,988 1.523694,1036 0.969274,1053 5.820797,1188 1.884044,1229 1.549133,1247 2.248704,1350 2.585232,1520 1.224669}
+{9 1,294 1,1247 3.564111,1248 2.677789,1520 1.224669,1555 4.954588}
+{15 1}
+{9 1,152 1,210 1,353 1,563 0.668856,808 2.747162,919 2.784638,988 1.523694,1036 0.969274,1058 2.784638,1082 2.062757,1205 0.862826,1229 1.549133}
+{15 1,643 2.958836,1320 3.439289,1591 4.026591}
+{9 1,164 1,634 6.827445,958 3.346732,1229 1.549133,1247 2.248704,1561 2.585232}
+{15 1,643 2.958836,682 1.602997,927 1.795436,1320 3.439289,1591 4.026591}
+{9 1,152 1,192 1,214 1,301 1,628 4.026591,808 2.747162,1205 0.862826,1229 1.549133,1247 2.248704,1350 2.585232,1520 1.224669}
+{6 1}
+{9 1,15 1,152 1,808 2.747162,917 1.027802,1205 0.862826,1247 2.248704}
+{15 1,998 3.546138,1349 3.827185,1350 4.097496}
+{15 1,253 1,479 1,980 2.747162,981 3.827185,1350 2.585232}
+{15 1,120 1,253 1,415 1,478 1,1232 3.010204,1349 3.827185}
+{15 1,253 1,1290 4.026591}
+{3 1,121 1,127 1,131 1,269 1,278 1,314 1,381 1,484 1,525 1,599 1.575542,872 3.827185,1350 2.585232,1500 1.505208,1631 3.672514}
+{13 1,278 1,331 1,374 1,375 1,563 1.060112,857 2.911014,1601 2.231155}
+{13 1,197 1,218 1,385 1,563 1.060112,668 3.125997,756 2.747162,917 1.027802,1105 3.125997,1520 0.77268}
+{4 1,139 1,246 1,411 1,474 1,1520 0.77268}
+{4 1,644 4.026591,668 3.125997,731 3.192061,881 3.672514,988 1.523694,1036 0.969274,1234 2.747162}
+{3 1,13 1,59 1,283 1,495 1,563 0.668856,1308 2.911014,1373 2.076483}
+{2 1,26 1,563 0.668856,681 2.454059,682 2.54069,1036 0.969274,1185 4.026591,1188 1.884044,1319 3.827185,1561 2.585232,1604 2.023138}
+{13 1,917 1.027802,1480 3.346732}
+{15 1,399 1,563 1.060112,599 1.575542,622 1.589133,751 4.026591,857 2.911014,917 1.027802,999 1.248919}
+{13 1}
+{4 1,22 1,39 1,42 1,46 1,68 1,105 1,111 1,159 1,409 1,473 1,506 1,515 1,521 1,563 0.668856,657 1.274594,693 1.973606,836 2.197336,1175 2.784638,1199 2.119372,1422 3.065685,1611 1.653826}
+{15 1,152 1,399 1,420 1,563 1.060112,622 1.589133,657 1.274594,693 1.973606,790 1.725184,917 1.027802,1278 4.026591}
+{13 1,756 2.747162,917 1.027802,1105 3.125997}
+{15 1,980 2.747162,1350 2.585232}
+{13 1,563 0.668856,1500 1.505208}
+{15 1,731 3.192061}
+{15 1,152 1,399 1,790 1.725184,917 1.027802,1229 1.549133,1239 2.824257,1266 2.677789,1278 4.026591,1350 2.585232,1604 2.023138}
+{13 1,352 1,563 0.668856,1334 4.026591,1611 1.653826}
+{15 1,980 2.747162}
+{15 1,980 2.747162,1350 2.585232}
+{13 1,349 1,442 1,774 3.346732,1035 4.026591,1520 0.77268}
+{4 1,74 1,86 1,118 1,127 1,131 1,248 1,269 1,314 1,381 1,484 1,525 1,563 1.060112,681 2.454059,825 3.546138,984 3.672514,1036 1.536263,1040 1.716883,1364 2.911014,1500 2.385699,1561 2.585232}
+{15 1,164 1,443 1,657 1.274594,682 1.602997,693 1.973606}
+{15 1,980 2.747162,1350 2.585232}
+{13 1,51 1,152 1,316 1,343 1,399 1,527 1,563 1.060112,657 1.274594,808 2.747162,917 1.027802,1035 4.026591,1157 2.824257,1373 3.291148,1520 0.77268,1601 2.231155}
+{3 1,457 1,657 1.274594,857 2.911014,999 1.248919,1556 4.026591,1619 3.827185}
+{13 1,808 2.747162,1053 3.672514}
+{3 1,872 3.827185}
+{3 1,657 1.274594,872 3.827185,999 1.248919,1604 2.023138}
+{2 1,17 1,247 1,418 1,592 3.439289,751 4.026591,808 2.747162,1183 4.026591,1188 1.884044,1195 2.556936,1458 2.181026}
+{9 1,210 1,353 1,1234 2.747162,1239 2.824257}
+{9 1,60 1,152 1,197 1,203 1,218 1,600 1.13669,644 4.026591,1183 4.026591,1209 1.853232,1234 2.747162,1520 1.224669}
+{9 1,60 1,152 1,203 1,529 2.104779,894 3.827185,908 2.958836,1209 1.853232,1520 1.224669}
+{9 1,60 1,152 1,203 1,215 1,600 1.13669,1209 1.853232,1329 3.439289,1520 1.224669}
+{9 1,857 2.911014,977 3.265091,1021 2.529751,1209 1.853232,1247 2.248704,1520 0.77268}
+{13 1,600 1.13669}
+{9 1,170 1,198 1,217 1,269 1,301 1,474 1,857 2.911014,1036 0.969274,1188 1.884044,1350 4.097496,1390 4.026591,1394 5.820797,1520 1.224669,1593 3.065685,1604 2.023138}
+{9 1,152 1,196 1,219 1,239 1,281 1,857 2.911014,977 3.265091,1021 2.529751,1209 1.853232,1247 2.248704,1321 5.059297,1520 0.77268}
+{13 1,60 1,61 1,316 1,317 1,399 1,1040 1.716883,1520 0.77268,1613 3.439289}
+{9 1,48 1,107 1,112 1,122 1,151 1,169 1,198 1,231 1,237 1,254 1,334 1,377 1,468 1,480 1,524 1,588 3.125997,857 2.911014,1119 2.824257,1350 4.097496,1390 4.026591,1394 3.672514,1422 3.065685,1520 0.77268}
+{15 1,424 1,682 1.602997,917 1.027802,1021 2.529751,1036 0.969274}
+{9 1,60 1,152 1,203 1,529 2.104779,894 3.827185,908 2.958836,1205 0.862826,1209 1.853232,1520 1.224669}
+{9 1,977 3.265091,1021 2.529751,1247 2.248704,1267 3.827185,1329 5.451144,1520 0.77268}
+{9 1,1329 3.439289,1520 0.77268}
+{9 1,388 1,563 1.337713,980 2.747162,1036 0.969274,1229 1.549133,1329 3.439289,1448 3.439289,1611 1.653826}
+{13 1,290 1,369 1,563 0.668856,917 1.027802,1138 3.546138,1440 3.439289,1500 1.505208}
+{9 1,60 1,152 1,203 1,215 1,600 1.13669,1209 1.853232,1329 3.439289,1520 1.224669}
+{4 1,12 1,108 1,311 1,657 1.274594,682 1.602997,1010 9.49331,1129 8.440138,1262 2.711608,1520 0.77268}
+{9 1,60 1,152 1,203 1,529 2.104779,894 3.827185,908 2.958836,1205 0.862826,1209 1.853232,1520 1.224669}
+{9 1,152 1,224 1,239 1,316 1,399 1,980 2.747162,1130 3.747639,1205 0.862826,1209 1.853232,1247 2.248704,1407 2.214039,1500 1.505208,1593 3.065685}
+{9 1,83 1,152 1,224 1,419 1,657 1.274594,682 1.602997,744 4.026591,790 1.725184,1130 2.364497,1209 1.853232,1248 2.677789,1350 2.585232,1520 0.77268,1593 3.065685,1604 2.023138,1611 2.621252}
+{9 1,790 1.725184,1130 2.364497}
+{9 1,60 1,152 1,203 1,219 1,563 0.668856,601 2.784638,1209 1.853232,1520 1.224669}
+{9 1,152 1,252 1,316 1,399 1,563 1.060112,980 2.747162,1023 2.677789,1205 0.862826,1209 1.853232,1247 2.248704,1407 2.214039,1448 5.451144,1500 1.505208,1593 3.065685}
+{13 1,599 1.575542,1015 1.833427,1035 4.026591,1205 0.862826,1373 2.076483,1500 1.505208}
+{9 1,127 1,131 1,185 1,269 1,314 1,381 1,484 1,525 1,563 0.668856,600 1.13669,988 1.523694,999 1.97949,1010 3.672514,1036 1.938548,1130 3.747639,1350 2.585232,1448 5.451144}
+{2 1,17 1,27 1,97 1,173 1,180 1,186 1,283 1,340 1,427 1,488 1,495 1,516 1,622 1.589133,627 2.385826,657 1.274594,917 1.027802,920 3.827185,1036 0.969274,1167 3.125997,1229 1.549133,1458 2.181026,1470 3.546138,1500 2.385699,1520 0.77268,1611 1.653826,1615 4.026591}
+{9 1,213 1,246 1,250 1,251 1,563 1.337713,588 3.125997,646 6.381996,665 3.010204,682 1.602997,857 2.911014,910 3.065685,1150 3.010204,1247 2.248704,1520 0.77268,1534 5.620496,1613 3.439289}
+{9 1,297 1,917 1.027802,1420 4.307638,1556 4.026591}
+{9 1,60 1,152 1,399 1,532 1.823732,543 2.343804,646 4.026591,1195 2.556936,1205 0.862826}
+{13 1,73 1,316 1,917 1.027802}
+{2 1,11 1,622 1.589133,657 1.274594,693 1.973606,1604 2.023138}
+{4 1,10 1,17 1,90 1,563 0.668856,570 3.827185,693 1.973606,917 1.027802,1167 3.125997,1240 3.265091,1407 2.214039,1458 2.181026,1502 2.784638,1604 2.023138}
+{9 1,297 1,917 1.027802,1420 6.827445}
+{2 1,11 1,43 1,271 1,357 1,693 1.973606,838 3.346732,1520 0.77268}
+{9 1,665 3.010204}
+{9 1,630 2.062757,657 1.274594,1040 1.716883,1174 4.026591,1499 3.125997}
+{15 1,27 1,31 1,186 1,283 1,315 1,347 1,440 1,488 1,495 1,511 1,600 1.13669,1157 2.824257,1167 3.125997,1520 0.77268}
+{15 1,36 1,100 1,101 1,162 1,164 1,170 1,209 1,306 1,319 1,359 1,360 1,449 1,600 1.801611,622 1.589133,1130 3.747639,1520 0.77268}
+{9 1,60 1,152 1,529 2.104779,646 4.026591,682 1.602997,790 1.725184,1036 0.969274,1520 0.77268}
+{15 1,35 1,36 1,100 1,101 1,162 1,164 1,170 1,209 1,306 1,319 1,359 1,360 1,449 1,627 2.385826,1010 3.672514,1130 2.364497,1500 1.505208,1520 0.77268}
+{9 1,92 1,134 1,152 1,195 1,199 1,301 1,384 1,389 1,441 1,497 1,563 0.668856,599 1.575542,600 1.13669,659 2.911014,671 2.784638,872 3.827185,988 1.523694,999 1.248919,1120 2.911014,1209 2.937303,1229 1.549133,1247 2.248704,1329 3.439289,1364 2.911014,1407 2.214039,1448 6.878578,1520 0.77268,1593 3.065685,1603 3.346732}
+{9 1}
+{9 1,127 1,131 1,269 1,278 1,314 1,381 1,484 1,525 1,999 1.248919,1036 0.969274,1082 2.062757,1230 3.346732,1350 2.585232}
+{9 1,152 1,588 4.954588,622 1.589133,630 2.062757,671 2.784638,965 6.065945,1209 1.853232,1247 2.248704,1448 3.439289,1520 0.77268,1603 3.346732}
+{9 1,171 1,197 1,316 1,563 1.060112,927 1.795436,965 6.065945,1036 0.969274,1205 0.862826,1206 3.827185,1209 1.853232,1247 2.248704,1329 6.878578,1350 4.097496,1364 2.911014,1520 0.77268,1601 2.231155}
+{13 1,1036 0.969274}
+{13 1,48 1,122 1,151 1,169 1,254 1,334 1,341 1,377 1,390 1,480 1,524 1,563 1.337713,600 1.13669,899 4.026591,1040 1.716883,1054 3.265091,1209 1.853232}
+{13 1,342 1,345 1,354 1,1520 0.77268}
+{4 1,48 1,122 1,151 1,169 1,254 1,334 1,377 1,480 1,524 1,563 1.060112,808 2.747162,899 4.026591}
+{4 1,19 1,66 1,514 1}
+{4 1,1058 2.784638,1520 1.224669}
+{4 1}
+{13 1,139 1,246 1,474 1,682 1.602997,1525 3.192061}
+{13 1,287 1,727 3.827185}
+{13 1,727 3.827185,999 1.248919}
+{11 1,15 1,173 1,180 1,204 1,230 1,304 1,307 1,340 1,399 1,427 1,460 1,516 1,563 0.668856,622 1.589133,657 1.274594,678 3.672514,727 3.827185,917 1.027802,1138 3.546138,1407 2.214039}
+{13 1,165 1,371 1,627 2.385826,657 1.274594,917 1.027802,1520 0.77268,1561 2.585232}
+{2 1,4 1,17 1,35 1,36 1,56 1,60 1,100 1,101 1,138 1,139 1,162 1,164 1,170 1,209 1,245 1,246 1,295 1,306 1,319 1,359 1,360 1,449 1,474 1,504 1,523 1,528 1,563 0.668856,627 2.385826,681 2.454059,682 1.602997,1021 4.00956,1240 3.265091,1502 2.784638,1520 0.77268,1561 2.585232,1593 3.065685}
+{15 1,838 3.346732,927 1.795436,980 2.747162,1520 0.77268,1584 4.307638,1624 3.672514}
+{15 1}
+{15 1,1584 6.827445}
+{15 1,548 3.827185,927 1.795436,1440 3.439289,1520 0.77268}
+{15 1,548 3.827185,1440 3.439289,1584 6.827445}
+{15 1,56 1,138 1,139 1,162 1,170 1,245 1,246 1,295 1,306 1,359 1,474 1,504 1,523 1,528 1,622 1.589133,927 1.795436,1520 0.77268}
+{15 1}
+{15 1}
+{6 1,9 1,234 1,622 1.589133,627 2.385826,657 1.274594,693 1.973606,980 2.747162,1234 2.747162,1248 2.677789}
+{6 1,9 1}
+{6 1,9 1,731 3.192061,1248 4.244195}
+{15 1,162 1,170 1,306 1,359 1,363 1,453 1,454 1,456 1,459 1,511 1,563 0.668856,657 1.274594,999 1.248919,1191 4.026591,1205 0.862826,1564 2.430561,1584 4.307638,1601 2.231155}
+{13 1,139 1,213 1,246 1,305 1,320 1,356 1,368 1,447 1,470 1,474 1,563 0.668856,657 1.274594,865 4.026591,1036 0.969274,1119 2.824257,1188 1.884044,1229 1.549133,1520 0.77268,1601 2.231155,1604 2.023138}
+{15 1}
+{15 1,998 3.546138,1350 4.097496,1373 2.076483}
+{15 1,415 1,980 2.747162,981 3.827185,1373 2.076483}
+{15 1,563 0.668856,622 1.589133,756 2.747162,1105 3.125997,1229 1.549133}
+{15 1,1350 2.585232,1611 1.653826}
+{15 1,415 1,498 1,622 1.589133,980 2.747162,981 3.827185,1373 3.291148}
+{15 1,415 1,1232 3.010204}
+{13 1,381 1,563 0.668856,657 1.274594,1500 1.505208,1520 0.77268}
+{15 1,1067 2.911014,1150 3.010204,1274 3.546138,1325 3.346732,1525 3.192061,1561 2.585232}
+{15 1,563 0.668856,643 2.958836,1261 3.546138,1274 3.546138,1561 2.585232}
+{15 1,543 2.343804}
+{13 1,24 1,302 1,337 1,422 1,886 3.672514,917 1.027802,923 3.010204,1036 0.969274,1112 3.546138,1239 2.824257,1498 2.529751}
+{15 1,868 3.346732}
+{15 1,868 3.346732,999 1.97949,1274 5.620496}
+{9 1,21 1,24 1,36 1,63 1,101 1,110 1,117 1,153 1,158 1,164 1,165 1,172 1,209 1,216 1,236 1,272 1,302 1,319 1,326 1,337 1,360 1,371 1,379 1,408 1,418 1,422 1,472 1,563 0.668856,592 3.439289,600 1.13669,657 1.274594,731 3.192061,750 3.672514,789 5.620496,790 2.734352,886 7.345027,923 4.77106,988 1.523694,999 1.248919,1036 1.536263,1112 5.620496,1132 3.827185,1183 6.381996,1188 2.986139,1458 2.181026,1495 3.439289,1500 2.385699,1520 1.54536}
+{15 1,492 1,532 1.823732,543 2.343804,917 1.027802,999 1.248919,1151 10.002026,1274 3.546138,1467 3.827185}
+{15 1}
+{15 1,1274 3.546138}
+{15 1,532 1.823732,1344 6.065945}
+{15 1,784 3.546138,1217 3.827185}
+{15 1,253 1,479 1,1151 4.307638}
+{15 1,481 1,836 2.197336,917 1.027802,987 3.439289,1112 3.546138,1458 3.456844}
+{15 1,1159 2.556936}
+{15 1,1274 3.546138}
+{15 1,886 3.672514,917 1.027802,999 1.248919}
+{15 1,415 1,555 3.346732,682 1.602997,868 3.346732,927 1.795436}
+{15 1,194 1,493 1,1293 3.346732,1344 3.827185}
+{15 1}
+{15 1,1059 4.026591}
+{13 1,31 1,54 1,347 1,383 1,440 1,599 1.575542,1520 0.77268}
+{13 1,152 1,563 0.668856,715 3.439289,808 2.747162,1205 0.862826,1388 2.866279}
+{13 1,320 1}
+{4 1,17 1,47 1,60 1,119 1,127 1,131 1,269 1,314 1,316 1,373 1,381 1,484 1,519 1,525 1,563 1.060112,600 1.801611,657 1.274594,790 1.725184,808 2.747162,917 1.027802,999 1.248919,1010 3.672514,1157 2.824257,1199 2.119372,1502 4.413547,1592 3.010204,1600 7.411735,1604 2.023138,1611 1.653826}
+{15 1,152 1,213 1,221 1,305 1,316 1,356 1,399 1,447 1,465 1,510 1,511 1,563 0.668856,731 3.192061,917 2.386483,979 2.784638,1205 0.862826,1520 1.794108}
+{4 1,9 1,532 1.823732,836 2.197336}
+{4 1,9 1,543 2.343804,563 0.668856,1036 0.969274,1205 0.862826,1321 3.192061,1600 3.192061}
+{13 1,316 1,568 3.827185,917 1.027802}
+{4 1,9 1,563 0.668856,790 1.725184}
+{4 1,11 1,152 1,272 1,379 1,563 0.668856,657 1.274594,715 3.439289,808 4.354148,988 1.523694,1036 0.969274,1041 3.346732,1049 3.672514,1082 2.062757,1112 3.546138,1205 1.367547,1229 1.549133,1500 1.505208,1520 0.77268}
+{13 1,101 1,173 1,180 1,213 1,230 1,305 1,307 1,319 1,329 1,340 1,356 1,427 1,447 1,450 1,460 1,516 1,563 0.668856,657 1.274594,825 3.546138,1188 1.884044,1205 0.862826,1500 1.505208,1520 0.77268}
+{9 1,11 1,97 1,173 1,180 1,204 1,230 1,304 1,307 1,308 1,340 1,427 1,460 1,516 1,563 0.668856,599 1.575542,622 1.589133,657 1.274594,790 1.725184,808 2.747162,1082 2.062757,1229 1.549133,1407 2.214039,1611 1.653826}
+{2 1,4 1,60 1,84 1,109 1,127 1,152 1,265 1,316 1,399 1,563 0.668856,599 1.575542,657 1.274594,790 1.725184,988 1.523694,1036 1.536263,1040 1.716883,1082 3.269393,1205 1.367547,1520 0.77268}
+{15 1,1534 3.546138}
+{15 1}
+{15 1,441 1}
+{15 1,439 1,492 1,977 3.265091,1286 3.065685}
+{15 1,857 2.911014,872 3.827185}
+{15 1,529 2.104779,1021 2.529751}
+{15 1}
+{15 1,977 3.265091}
+{15 1,1021 2.529751}
+{15 1,271 1,1593 3.065685}
+{15 1,535 3.546138,1021 2.529751}
+{13 1,917 1.027802,999 1.248919}
+{13 1,375 1}
+{15 1,1058 2.784638,1286 3.065685}
+{13 1,345 1,599 1.575542,1021 2.529751,1216 3.346732,1308 2.911014,1520 0.77268}
+{15 1,296 1,394 1,727 3.827185}
+{15 1,20 1,42 1,45 1,116 1,275 1,403 1,471 1,487 1,521 1,563 1.060112,774 3.346732,1158 4.77106,1216 3.346732,1380 4.307638,1561 2.585232}
+{15 1,536 8.053182,1286 7.924681}
+{15 1,20 1,403 1,461 1,1216 3.346732,1520 0.77268,1523 2.090487,1561 2.585232}
+{15 1,1286 3.065685}
+{2 1,15 1,1216 3.346732}
+{2 1,15 1,1158 3.010204}
+{2 1,15 1,1158 3.010204,1216 3.346732}
+{15 1,1251 4.026591}
+{15 1}
+{2 1,15 1,278 1,316 1,469 1,532 1.823732,1020 2.585232,1205 0.862826}
+{2 1,15 1,1523 2.090487}
+{2 1,15 1,1216 3.346732}
+{15 1,727 3.827185,1286 3.065685}
+{15 1,727 3.827185,1286 3.065685,1328 12.377036}
+{2 1,15 1,20 1,22 1,30 1,39 1,42 1,45 1,46 1,105 1,111 1,116 1,159 1,202 1,275 1,351 1,409 1,444 1,471 1,473 1,487 1,499 1,506 1,515 1,521 1,563 0.668856,599 1.575542,600 1.13669,622 1.589133,1040 1.716883,1158 3.010204,1175 2.784638,1199 4.238744,1209 1.853232,1216 5.304445,1604 2.023138}
+{3 1,15 1,1286 3.065685}
+{2 1,15 1,543 2.343804}
+{15 1,529 2.104779,536 4.026591,687 2.585232,1625 2.478383}
+{2 1,15 1,1523 2.090487}
+{3 1,529 2.104779,536 4.026591,687 2.585232,1286 4.858996}
+{2 1,15 1,1216 3.346732}
+{3 1,15 1,45 1,58 1,116 1,275 1,448 1,487 1,1067 2.911014,1150 3.010204,1325 3.346732,1525 3.192061}
+{2 1,15 1,1158 3.010204}
+{3 1,15 1,57 1,405 1,532 1.823732,741 3.546138,917 1.027802,1569 3.672514}
+{2 1,15 1,547 2.407833}
+{3 1,15 1,45 1,57 1,58 1,116 1,275 1,405 1,448 1,487 1,741 3.546138,868 3.346732,917 1.027802,1058 2.784638,1067 2.911014,1150 3.010204,1286 3.065685,1325 3.346732,1525 3.192061}
+{2 1,15 1,1523 2.090487}
+{2 1,15 1,1216 3.346732}
+{3 1,15 1,45 1,58 1,116 1,275 1,448 1,487 1,948 3.827185,1067 2.911014,1150 3.010204,1325 3.346732,1525 3.192061}
+{2 1,15 1,1158 3.010204}
+{3 1,15 1,399 1,552 3.192061,727 3.827185,741 3.546138,917 1.027802,948 3.827185}
+{2 1,15 1,1158 3.010204,1216 3.346732}
+{2 1,15 1,45 1,47 1,116 1,119 1,275 1,373 1,467 1,487 1,600 1.801611,933 4.026591,1092 4.026591,1175 2.784638,1180 2.645544,1504 2.614732}
+{15 1,439 1,492 1,977 3.265091}
+{15 1,1286 3.065685}
+{13 1,599 1.575542,659 2.911014,999 1.248919,1040 1.716883,1130 2.364497}
+{9 1,60 1,152 1,157 1,165 1,173 1,180 1,192 1,240 1,247 1,279 1,301 1,316 1,399 1,533 2.711608,542 3.827185,563 0.668856,790 3.450368,808 2.747162,910 6.13137,917 1.027802,949 3.827185,1036 0.969274,1040 1.716883,1095 3.439289,1205 1.367547,1229 1.549133,1247 2.248704,1248 5.355578,1370 3.346732,1494 4.026591,1500 1.505208,1520 1.794108,1595 3.010204}
+{9 1,529 2.104779,790 1.725184,910 3.065685,1065 4.026591,1595 3.010204}
+{6 1,1232 3.010204}
+{0 1,13 1,365 1,578 3.546138,589 3.265091}
+{2 1,563 0.668856,578 3.546138,659 2.911014,917 1.027802,999 1.248919,1040 1.716883,1130 2.364497}
+{2 1,6 1,563 0.668856,578 3.546138,621 3.439289,917 1.027802,980 2.747162,1130 2.364497}
+{2 1,6 1,538 4.026591,1232 3.010204}
+{2 1,6 1,917 1.027802,1171 3.439289}
+{2 1,6 1,984 3.672514}
+{2 1,339 1,574 6.065945,599 1.575542,600 1.13669,657 1.274594,917 1.027802,988 1.523694,1036 0.969274,1500 1.505208,1520 0.77268}
+{13 1,563 0.668856,1520 0.77268}
+{13 1,30 1,47 1,119 1,202 1,351 1,373 1,444 1}
+{4 1,113 1,303 1,318 1,400 1,563 0.668856,1058 2.784638,1615 4.026591}
+{13 1,296 1,394 1,999 1.248919,1604 2.023138}
+{13 1,365 1,563 0.668856,578 3.546138,589 3.265091,1185 4.026591,1205 0.862826,1209 1.853232}
+{13 1,22 1,159 1,409 1,515 1,917 1.027802,1205 0.862826,1209 1.853232,1229 1.549133}
+{9 1,60 1,62 1,113 1,152 1,165 1,192 1,240 1,247 1,279 1,301 1,303 1,316 1,318 1,399 1,400 1,542 3.827185,547 2.407833,561 3.346732,600 1.13669,657 1.274594,790 3.450368,808 2.747162,910 7.924681,917 1.027802,949 3.827185,1040 1.716883,1065 4.026591,1095 3.439289,1205 1.367547,1229 1.549133,1247 2.248704,1248 4.244195,1370 3.346732,1494 4.026591,1520 1.54536,1595 4.77106}
+{13 1,949 3.827185,1585 3.065685}
+{9 1,529 2.104779}
+{13 1,162 1,170 1,306 1,319 1,359 1,397 1,563 0.668856,589 3.265091,1520 0.77268,1534 3.546138,1564 2.430561}
+{6 1,538 4.026591,1232 3.010204}
+{13 1,1082 2.062757}
+{13 1,56 1,138 1,139 1,162 1,170 1,245 1,246 1,295 1,306 1,359 1,362 1,375 1,474 1,504 1,523 1,528 1,563 0.668856,600 1.13669,907 4.026591,1052 3.827185,1086 3.125997,1480 3.346732,1520 0.77268,1604 2.023138}
+{13 1,316 1,510 1,511 1,563 0.668856,917 1.027802,1564 2.430561}
+{13 1,316 1,359 1,551 3.827185,563 0.668856,599 1.575542,1015 2.905912,1205 0.862826,1239 2.824257,1278 4.026591}
+{4 1,127 1,131 1,269 1,314 1,381 1,484 1,525 1,601 2.784638,776 2.645544,917 1.027802,955 3.546138,1015 1.833427,1036 0.969274,1205 0.862826,1237 2.304185,1587 3.125997,1625 3.928144}
+{4 1,60 1,152 1,399 1,1015 1.833427,1036 0.969274,1195 4.052648,1205 1.367547,1237 2.304185,1520 0.77268}
+{13 1,49 1,52 1,73 1,124 1,489 1,563 0.668856,681 2.454059,1036 0.969274,1199 2.119372,1500 1.505208,1520 0.77268}
+{9 1,152 1,776 2.645544,919 2.784638,955 3.546138,1205 1.367547,1237 3.652047,1587 3.125997,1625 3.928144}
+{9 1,563 1.337713,657 1.274594,693 1.973606,776 6.838631,917 1.027802,955 3.546138,1229 1.549133,1587 3.125997,1625 3.928144}
+{13 1,344 1,599 1.575542}
+{9 1,246 1,261 1,274 1,380 1,563 0.668856,600 1.13669,622 1.589133,657 2.020184,693 1.973606,776 2.645544,839 3.065685,955 3.546138,1015 1.833427,1021 2.529751,1120 2.911014,1183 4.026591,1205 0.862826,1229 1.549133,1500 1.505208,1587 3.125997,1604 2.023138}
+{9 1,92 1,199 1,235 1,456 1,988 1.523694,1237 2.304185,1364 4.613848,1611 1.653826}
+{13 1,563 1.060112,984 3.672514,1036 0.969274,1082 2.062757,1205 0.862826,1285 3.672514,1494 4.026591,1520 0.77268}
+{9 1,164 1,200 1,411 1,443 1,790 1.725184}
+{15 1,152 1,445 1,501 1,1097 2.866279,1178 2.304185,1205 0.862826,1237 2.304185}
+{13 1,152 1,316 1,324 1,370 1,399 1,600 1.13669,1021 2.529751,1205 0.862826,1520 0.77268,1611 1.653826}
+{15 1,555 3.346732,560 3.827185,562 3.672514,1015 1.833427,1523 2.090487}
+{15 1,152 1,445 1,501 1,532 1.823732,533 2.711608,558 3.439289,561 3.346732,562 3.672514,1015 1.833427,1097 4.542945,1178 2.304185,1205 0.862826,1237 3.652047,1316 3.346732}
+{15 1,152 1,445 1,501 1,532 1.823732,533 2.711608,558 3.439289,561 3.346732,562 3.672514,1015 1.833427,1097 4.542945,1178 2.304185,1205 0.862826,1237 3.652047,1316 3.346732}
+{15 1,532 1.823732,543 2.343804}
+{15 1,532 1.823732,533 2.711608,558 3.439289,561 3.346732,562 3.672514,1015 1.833427,1097 2.866279,1237 2.304185,1316 3.346732}
+{13 1,316 1,678 3.672514,917 1.027802}
+{13 1,563 0.668856,1574 3.439289}
+{13 1,60 1,62 1,303 1,316 1,318 1,399 1,400 1,563 1.060112,1520 0.77268,1574 5.451144}
+{13 1,316 1,563 0.668856,644 4.026591,819 3.672514,999 1.248919,1036 0.969274,1205 0.862826,1574 3.439289}
+{15 1,60 1,101 1,316 1,399 1,401 1,417 1,450 1,510 1,511 1,512 1,1520 0.77268,1564 2.430561,1574 5.451144}
+{15 1,22 1,39 1,42 1,46 1,105 1,111 1,159 1,162 1,170 1,306 1,359 1,409 1,473 1,506 1,515 1,521 1,563 1.060112,819 3.672514,917 1.027802,1209 1.853232,1564 2.430561}
+{15 1}
+{15 1,911 3.439289,1574 3.439289}
+{15 1,731 3.192061}
+{13 1,139 1,152 1,246 1,316 1,322 1,399 1,474 1,917 1.027802,1495 3.439289}
+{15 1,911 3.439289,953 4.026591}
+{15 1,657 1.274594,682 1.602997,693 1.973606,1551 3.672514,1574 3.439289}
+{6 1,13 1,60 1,316 1,348 1,541 4.026591,546 3.546138,551 3.827185,563 1.060112,622 1.589133,655 5.113873,682 1.602997,711 3.439289,788 3.827185,813 3.546138,999 1.248919,1015 2.905912,1172 3.439289,1185 6.381996,1205 0.862826,1229 1.549133,1239 2.824257,1246 3.546138,1406 3.827185,1611 1.653826}
+{15 1}
+{15 1,776 2.645544,868 3.346732,1574 3.439289}
+{4 1,131 1,657 1.274594,924 3.546138,1434 4.026591,1625 4.956766,1628 3.192061}
+{15 1,731 3.192061}
+{4 1,60 1,84 1,136 1,137 1,600 2.27338,655 2.556936,657 1.274594,687 4.097496,813 3.546138,1015 1.833427,1036 0.969274,1114 3.621946,1120 2.911014,1205 0.862826,1239 2.824257,1248 2.677789,1266 2.677789,1439 3.546138}
+{15 1,415 1,1574 3.439289}
+{4 1,82 1,128 1,152 1,173 1,180 1,316 1,340 1,399 1,427 1,516 1,600 1.13669,682 1.602997,790 1.725184,917 1.027802,1040 1.716883,1056 3.827185,1068 3.192061,1120 2.911014,1185 4.026591,1205 0.862826,1370 3.346732,1504 2.614732,1604 2.023138}
+{15 1,1036 0.969274,1183 4.026591}
+{4 1,77 1,530 3.827185,563 0.668856,630 2.062757,790 1.725184,1147 3.010204,1205 0.862826,1370 3.346732,1611 1.653826}
+{15 1,24 1,162 1,170 1,302 1,306 1,337 1,359 1,422 1,657 1.274594,693 1.973606,923 3.010204,1229 1.549133,1564 2.430561}
+{4 1,17 1,60 1,80 1,128 1,152 1,173 1,179 1,180 1,340 1,426 1,427 1,516 1,600 1.13669,622 1.589133,630 2.062757,655 2.556936,825 3.546138,988 1.523694,1020 2.585232,1036 0.969274,1056 3.827185,1068 3.192061,1188 1.884044,1370 5.304445,1504 2.614732,1520 0.77268,1526 3.672514}
+{15 1}
+{15 1,529 2.104779,907 4.026591,953 4.026591,1574 3.439289}
+{2 1,4 1,17 1,49 1,114 1,124 1,126 1,296 1,394 1,532 1.823732,600 1.13669,917 1.027802,962 8.053182,1036 1.938548,1114 4.570387,1147 4.77106,1175 4.413547,1370 3.346732,1482 3.889592,1498 5.059501,1625 6.406527}
+{15 1,413 1,911 3.439289,953 4.026591,1540 4.026591}
+{2 1,17 1,20 1,25 1,45 1,116 1,275 1,461 1,471 1,487 1,655 4.052648,687 2.585232,736 4.026591,813 3.546138,830 3.546138,1036 0.969274,1040 1.716883,1064 3.192061,1159 2.556936,1185 6.381996,1209 1.853232,1239 2.824257,1373 2.076483,1520 0.77268}
+{9 1,152 1,164 1,209 1,296 1,316 1,394 1,399 1,542 3.827185,555 3.346732,600 1.13669,790 1.725184,917 1.027802,1120 2.911014,1147 3.010204,1370 5.304445}
+{15 1,776 2.645544,868 3.346732,1574 3.439289}
+{9 1,41 1,60 1,80 1,152 1,179 1,229 1,657 1.274594,693 1.973606,917 1.027802,987 3.439289,1183 4.026591,1520 0.77268}
+{15 1,776 2.645544,868 3.346732,1574 3.439289}
+{9 1,56 1,60 1,138 1,139 1,152 1,162 1,170 1,245 1,246 1,295 1,306 1,316 1,359 1,474 1,486 1,504 1,523 1,528 1,563 0.668856,600 2.639313,655 2.556936,672 2.866279,674 3.439289,790 1.725184,825 3.546138,863 4.026591,999 1.248919,1120 2.911014,1188 1.884044,1370 5.304445,1470 3.546138,1500 1.505208,1520 1.224669,1526 7.345027,1601 3.536297}
+{9 1,164 1,411 1,790 1.725184}
+{4 1,60 1,152 1,622 1.589133,687 6.002723,1015 2.905912,1064 5.059297,1114 5.306055,1159 5.937022,1229 2.455318,1237 2.304185}
+{15 1}
+{15 1,309 1,432 1,1097 2.866279,1178 2.304185,1248 2.677789,1611 1.653826}
+{15 1,534 3.265091,1015 1.833427,1523 2.090487}
+{15 1,534 3.265091,544 3.546138,1015 1.833427,1097 2.866279,1237 2.304185,1316 3.346732}
+{0 1,6 1,348 1,621 3.439289,655 2.556936,682 1.602997,788 3.827185,980 2.747162,1172 3.439289,1185 4.026591,1406 3.827185}
+{0 1,6 1,1232 3.010204}
+{15 1,162 1,170 1,306 1,359 1,399 1,563 0.668856,622 1.589133,665 3.010204,730 3.265091,839 3.065685,1058 2.784638,1199 2.119372,1229 2.455318,1267 3.827185,1433 4.026591,1502 2.784638,1564 2.430561}
+{13 1,22 1,39 1,42 1,46 1,105 1,111 1,159 1,409 1,473 1,515 1,521 1,568 3.827185,707 3.827185,1520 0.77268}
+{13 1,367 1,385 1}
+{13 1,917 1.027802,927 1.795436,1130 2.364497}
+{13 1,1272 3.439289}
+{13 1,324 1,370 1,563 0.668856,600 1.13669,999 1.248919,1068 3.192061,1209 1.853232}
+{13 1,162 1,170 1,210 1,306 1,324 1,353 1,359 1,563 1.060112,622 1.589133,682 2.54069,882 4.026591,917 1.027802,1021 2.529751,1036 0.969274,1068 3.192061,1090 3.672514,1205 0.862826,1209 1.853232,1471 2.824257,1499 3.125997,1564 2.430561,1593 3.065685}
+{4 1,60 1,622 1.589133,630 2.062757,657 1.274594,693 1.973606,987 3.439289,1183 4.026591,1520 0.77268,1611 1.653826}
+{13 1,917 1.027802}
+{4 1,129 1,532 3.647464,704 6.827445,1064 7.411735,1072 3.192061,1090 5.820797,1114 2.285194,1159 7.670809,1367 3.265091,1522 3.546138,1587 3.125997,1625 4.956766,1628 6.384121}
+{4 1,84 1,87 1,88 1,127 1,131 1,269 1,314 1,381 1,655 2.556936,1036 0.969274,1114 2.285194,1159 2.556936}
+{13 1,316 1,736 4.026591,917 1.027802,1205 0.862826,1495 3.439289}
+{2 1,4 1,10 1,34 1,99 1,120 1,253 1,415 1,478 1,657 1.274594,682 1.602997,920 6.065945,927 1.795436,999 1.248919,1015 1.833427,1130 2.364497,1504 2.614732,1520 1.224669}
+{4 1,88 1,131 1,142 1,486 1,661 4.026591,988 2.414997,1064 5.059297,1114 2.285194,1120 4.613848,1471 4.476342,1498 5.873899,1625 2.478383,1628 3.192061}
+{4 1,97 1,173 1,180 1,340 1,427 1,516 1,563 0.668856,599 1.575542,850 3.827185,857 2.911014,917 1.629028,999 1.248919,1036 0.969274,1205 0.862826}
+{4 1,8 1,15 1,60 1,62 1,303 1,316 1,318 1,399 1,400 1,600 1.13669,682 1.602997,1040 1.716883,1206 3.827185,1373 2.076483,1520 1.224669,1595 3.010204}
+{13 1,1036 0.969274,1495 3.439289,1500 1.505208}
+{13 1}
+{4 1,89 1,131 1,142 1,532 3.647464,687 9.26796,704 6.827445,1064 7.411735,1072 3.192061,1090 5.820797,1114 2.285194,1159 7.670809,1241 3.546138,1367 3.265091,1522 3.546138,1587 3.125997,1625 4.956766,1628 6.384121}
+{4 1,60 1,87 1,123 1,130 1,152 1,399 1,532 2.890547,600 1.13669,655 2.556936,687 6.682728,917 2.055605,999 1.248919,1036 1.938548,1066 4.858996,1114 6.415349,1159 2.556936,1195 4.052648,1205 1.367547,1241 3.546138,1595 3.010204}
+{13 1,15 1,316 1,672 2.866279,1205 0.862826,1611 1.653826}
+{15 1,21 1,117 1,130 1,158 1,326 1,408 1,410 1,472 1,534 5.175047,547 2.407833,549 6.827445,563 1.060112,600 1.13669,657 1.274594,750 3.672514,917 1.629028,924 3.546138,988 1.523694,1114 2.285194,1205 0.862826,1407 2.214039,1504 2.614732,1520 0.77268,1595 3.010204}
+{4 1,15 1,60 1,84 1,399 1,543 2.343804,563 1.337713,600 1.13669,672 5.732558,682 1.602997,917 1.027802,1036 0.969274,1111 3.546138,1543 4.026591,1611 2.621252}
+{15 1,89 1,363 1,389 1,410 1,459 1,534 3.265091,547 2.407833,549 4.307638,575 4.026591,622 1.589133,750 3.672514,988 1.523694,1114 2.285194}
+{15 1,445 1,1523 2.090487}
+{15 1,167 1,476 1,533 2.711608,558 3.439289,1209 1.853232,1523 2.090487}
+{15 1,19 1,38 1,66 1,104 1,325 1,407 1,462 1,514 1,518 1,599 1.575542,927 1.795436,928 3.065685,1015 1.833427,1520 0.77268}
+{15 1,533 2.711608,558 3.439289,655 2.556936,1237 2.304185,1523 2.090487}
+{4 1,15 1,32 1,33 1,65 1,93 1,148 1,201 1,207 1,286 1,402 1,664 4.026591,672 2.866279}
+{15 1,533 2.711608,558 3.439289,563 0.668856,1523 2.090487,1595 3.010204}
+{15 1,532 1.823732,558 3.439289,1209 1.853232,1520 0.77268,1523 2.090487,1595 3.010204}
+{16 1,529 2.104779}
+{15 1,1178 2.304185}
+{17 1}
+{4 1,15 1,17 1,83 1,419 1,744 4.026591,1036 0.969274}
+{9 1,563 0.668856,655 2.556936,836 2.197336,1205 0.862826,1520 0.77268,1595 4.77106}
+{9 1,60 1,233 1,563 0.668856,657 1.274594,988 1.523694,1205 0.862826,1520 0.77268}
+{9 1,1248 2.677789}
+{9 1,276 1}
+{9 1,152 1,183 1,655 2.556936,682 1.602997,790 1.725184,836 2.197336,999 1.248919,1239 2.824257}
+{9 1,15 1,154 1,167 1,476 1,532 1.823732,563 0.668856,672 2.866279,776 2.645544,1611 1.653826}
+{9 1,127 1,131 1,187 1,269 1,314 1,381 1,484 1,525 1,917 1.027802,1188 1.884044,1266 2.677789,1500 1.505208}
+{9 1,1111 3.546138}
+{9 1,1036 0.969274,1601 2.231155}
+{9 1,15 1,164 1,200 1,209 1,246 1,258 1,274 1,298 1,411 1,443 1,450 1,463 1,474 1,485 1,491 1,505 1,507 1,600 1.13669,671 2.784638,790 1.725184,1111 3.546138,1520 0.77268,1603 3.346732}
+{9 1,32 1,93 1,201 1,282 1,286 1,630 2.062757,671 2.784638,790 1.725184}
+{4 1}
+{9 1,152 1,183 1,184 1,208 1,630 2.062757,682 1.602997,790 1.725184,836 2.197336,917 1.027802,1209 1.853232,1229 1.549133,1239 2.824257,1471 2.824257}
+{4 1,1130 2.364497}
+{9 1,33 1,148 1,152 1,162 1,163 1,170 1,193 1,207 1,213 1,790 1.725184,1120 2.911014,1183 4.026591,1237 2.304185,1458 2.181026,1471 2.824257,1520 1.224669}
+{4 1,1183 4.026591}
+{9 1,60 1,152 1,173 1,180 1,208 1,226 1,230 1,399 1,657 2.549189,682 1.602997,999 1.248919,1120 2.911014,1180 2.645544,1183 4.026591,1195 2.556936,1205 1.367547,1237 4.60837,1471 5.648515}
+{4 1,1364 2.911014}
+{4 1,15 1}
+{9 1,15 1,60 1,161 1,486 1,563 0.668856,790 1.725184,1120 2.911014,1205 0.862826,1595 4.77106}
+{15 1}
+{9 1,60 1,152 1,233 1,399 1,563 0.668856,657 1.274594,1075 2.958836,1157 2.824257,1195 2.556936,1205 0.862826,1520 0.77268,1611 1.653826}
+{4 1,15 1,22 1,68 1,159 1,409 1,515 1,599 1.575542,928 3.065685,1611 1.653826}
+{9 1,60 1,152 1,399 1,445 1,601 2.784638,622 1.589133,813 3.546138,1015 2.905912,1114 4.570387,1120 2.911014,1159 4.052648,1195 2.556936,1205 0.862826,1237 2.304185}
+{9 1,60 1,84 1,152 1,267 1,482 1,622 1.589133,630 2.062757,988 1.523694,1015 1.833427,1036 0.969274,1114 2.285194,1159 2.556936,1183 4.026591,1504 2.614732}
+{15 1,1263 3.065685}
+{15 1}
+{15 1,543 2.343804,1015 1.833427,1237 3.652047}
+{12 1,13 1,127 1,131 1,269 1,314 1,381 1,1159 2.556936}
+{13 1,31 1,34 1,54 1,99 1,234 1,347 1,355 1,357 1,440 1,1138 3.546138,1520 1.224669}
+{13 1,369 1,661 4.026591,665 3.010204,1629 3.672514}
+{6 1,13 1,600 1.13669,917 1.027802,1230 3.346732,1611 1.653826}
+{16 1}
+{16 1,529 2.104779}
+{9 1,1248 2.677789}
+{9 1,21 1,110 1,117 1,158 1,236 1,287 1,326 1,408 1,472 1,600 1.13669,601 2.784638,657 1.274594,750 3.672514,1157 4.476342,1188 1.884044}
+{4 1,6 1,9 1,36 1,60 1,67 1,82 1,101 1,127 1,131 1,152 1,155 1,164 1,173 1,180 1,182 1,209 1,230 1,269 1,284 1,307 1,314 1,316 1,319 1,324 1,340 1,342 1,354 1,360 1,370 1,381 1,427 1,460 1,484 1,516 1,525 1,600 1.13669,657 1.274594,693 1.973606,838 3.346732,988 1.523694,999 1.248919,1036 0.969274,1101 6.065945,1180 2.645544,1183 4.026591,1205 0.862826,1230 5.304445,1500 1.505208,1520 1.54536,1601 2.231155}
+{4 1}
+{6 1}
+{6 1}
+{2 1,1188 1.884044}
+{2 1,6 1,18 1,33 1,60 1,148 1,152 1,207 1,563 0.668856,917 1.027802,1036 0.969274,1205 1.367547}
+{2 1,6 1,32 1,93 1,201 1,1333 3.546138}
+{2 1,6 1,917 1.027802}
+{6 1,540 3.672514,1050 3.827185,1373 2.076483}
+{15 1}
+{6 1}
+{15 1,484 1,1263 3.065685,1482 2.454059}
+{6 1,560 3.827185}
+{6 1,15 1,491 1,563 0.668856,643 2.958836,1230 3.346732,1263 3.065685}
+{6 1,539 3.827185}
+{15 1,529 2.104779,532 1.823732,543 3.714842,547 2.407833,563 1.728969,643 5.917672,687 2.585232,1164 3.346732,1199 2.119372,1482 2.454059}
+{15 1,242 1,325 1,407 1,423 1,630 2.062757,657 1.274594,678 5.820797,999 1.248919}
+{15 1}
+{15 1,47 1,119 1,329 1,373 1,467 1,475 1,825 3.546138,1188 1.884044}
+{9 1,242 1,325 1,407 1,678 3.672514}
+{9 1,227 1,242 1,657 1.274594,678 3.672514,988 1.523694,1183 4.026591}
+{12 1,13 1,368 1,599 1.575542,1209 1.853232}
+{13 1,398 1,599 1.575542,1167 3.125997,1520 0.77268}
+{4 1,48 1,107 1,112 1,122 1,151 1,169 1,231 1,237 1,254 1,334 1,341 1,377 1,468 1,480 1,524 1,599 1.575542,681 2.454059,1040 1.716883,1132 3.827185,1230 3.346732}
+{4 1,1188 1.884044}
+{9 1,1248 2.677789}
+{4 1,76 1,644 6.381996,657 2.020184,917 1.027802,1036 0.969274,1130 3.747639,1234 2.747162,1370 6.693464,1601 2.231155}
+{9 1,60 1,152 1,532 1.823732,813 3.546138,1205 0.862826}
+{9 1,18 1,60 1,152 1,156 1,423 1,657 1.274594,988 1.523694,999 1.248919,1164 3.346732,1188 1.884044,1611 1.653826}
+{9 1,27 1,186 1,283 1,488 1,495 1,657 1.274594,1041 3.346732,1167 3.125997,1520 0.77268}
+{9 1,152 1,156 1,227 1,423 1,600 1.13669,657 1.274594,927 1.795436,988 1.523694,999 1.248919,1188 2.986139}
+{13 1,137 1,393 1,563 0.668856,746 3.827185,1015 1.833427,1611 1.653826}
+{9 1,152 1,657 1.274594,988 1.523694,999 1.248919,1188 1.884044,1229 1.549133,1359 3.065685}
+{11 1,15 1,1178 2.304185}
+{9 1,67 1,155 1,173 1,180 1,230 1,307 1,340 1,427 1,460 1,516 1,657 1.274594,694 3.439289,988 1.523694,1229 2.455318,1230 3.346732,1611 1.653826}
+{11 1,15 1}
+{11 1,15 1}
+{9 1,86 1,118 1,248 1,270 1,271 1,529 2.104779,563 0.668856,671 2.784638,790 1.725184,1015 1.833427,1205 0.862826}
+{9 1,152 1,1021 2.529751,1205 0.862826}
+{3 1}
+{3 1,825 3.546138,988 1.523694,1188 1.884044,1569 3.672514}
+{15 1}
+{11 1,15 1,309 1,432 1,1097 2.866279,1178 2.304185}
+{6 1}
+{15 1,547 2.407833,1015 1.833427,1523 2.090487}
+{6 1}
+{11 1,162 1,170 1,306 1,309 1,359 1,533 2.711608,539 3.827185,544 3.546138,547 2.407833,548 3.827185,917 1.027802,1015 1.833427,1097 4.542945,1178 2.304185,1237 2.304185,1316 3.346732,1564 2.430561}
+{6 1,563 0.668856}
+{6 1,917 1.027802}
+{2 1,1188 1.884044}
+{2 1,980 2.747162,1561 2.585232}
+{2 1}
+{2 1,917 1.027802,979 2.784638}
+{15 1}
+{15 1,1263 3.065685}
+{15 1,563 1.728969,643 7.64848,687 6.682728,1230 3.346732}
+{15 1,687 2.585232,1263 3.065685}
+{15 1,48 1,107 1,112 1,122 1,151 1,169 1,231 1,237 1,254 1,334 1,377 1,468 1,480 1,524 1,563 0.668856,600 1.13669,693 1.973606,1230 3.346732}
+{15 1,563 1.060112,643 4.689644,687 4.097496,1230 3.346732}
+{15 1,563 1.553037,643 6.870204,687 6.002723,1230 3.346732}
+{15 1,687 2.585232}
+{4 1,60 1,69 1,123 1,131 1,316 1,600 1.13669,622 1.589133,657 1.274594,687 4.097496,693 1.973606,776 4.193088,955 5.620496,999 1.97949,1015 1.833427,1068 3.192061,1114 3.621946,1159 4.052648,1205 0.862826,1236 6.989476,1237 3.652047,1587 4.954588,1611 1.653826}
+{4 1,89 1,130 1,529 2.104779,532 1.823732,687 6.002723,983 5.175047,999 1.248919,1015 1.833427,1050 7.65437,1055 8.053182,1114 2.285194,1159 4.052648,1236 6.989476,1471 2.824257,1595 3.010204}
+{4 1,551 3.827185,1036 0.969274,1114 2.285194}
+{9 1,60 1,152 1,399 1,630 3.269393,674 3.439289,813 3.546138,836 2.197336,917 1.629028,997 4.026591,1195 2.556936,1205 1.367547,1209 1.853232,1275 4.026591}
+{9 1,152 1,589 3.265091,622 1.589133,630 2.062757,665 3.010204,1057 3.192061,1275 4.026591}
+{9 1,48 1,86 1,118 1,122 1,151 1,169 1,248 1,254 1,334 1,377 1,480 1,524 1,563 0.668856,630 2.062757,681 2.454059,825 3.546138,1036 0.969274,1040 1.716883,1080 4.026591,1205 0.862826,1520 0.77268,1600 3.192061}
+{9 1,600 1.13669,630 4.125514,657 1.274594,674 3.439289,682 1.602997,711 5.451144,949 3.827185,999 1.248919,1157 2.824257,1236 3.010204}
+{13 1,398 1,532 1.823732,627 2.385826,949 3.827185,1015 1.833427,1237 2.304185,1520 0.77268}
+{13 1,32 1,93 1,169 1,201 1,334 1,346 1,439 1,543 2.343804,600 1.801611,627 2.385826,674 3.439289,682 1.602997,711 5.451144,836 2.197336,949 3.827185,956 5.820797,1015 1.833427,1068 3.192061,1237 2.304185,1520 0.77268}
+{13 1,152 1,316 1,398 1,399 1,627 2.385826,630 2.062757,711 7.985782,836 2.197336,924 3.546138,949 3.827185,999 1.97949,1015 1.833427,1036 0.969274,1040 1.716883,1072 3.192061,1114 2.285194,1205 1.367547,1236 3.010204,1240 3.265091,1367 3.265091,1611 1.653826}
+{9 1,13 1,82 1,152 1,173 1,180 1,222 1,316 1,340 1,399 1,427 1,516 1,563 1.060112,600 1.801611,798 6.827445,813 8.233878,908 2.958836,917 2.386483,969 6.381996,999 1.97949,1021 6.539311,1036 1.536263,1205 0.862826,1604 3.206598,1608 6.381996}
+{9 1,60 1,240 1,316 1,399 1,532 1.823732,790 1.725184,1015 1.833427,1021 2.529751,1205 0.862826,1229 1.549133,1520 0.77268}
+{9 1,529 2.104779,790 1.725184,1458 2.181026}
+{9 1,152 1,570 3.827185,600 1.13669,665 3.010204,790 1.725184,1021 2.529751,1057 3.192061,1229 1.549133}
+{9 1,60 1,152 1,260 1,261 1,399 1,532 1.823732,668 3.125997,711 5.451144,790 1.725184,927 1.795436,949 3.827185,1015 1.833427,1021 2.529751,1195 2.556936,1205 0.862826,1237 2.304185,1520 0.77268}
+{9 1,60 1,62 1,113 1,152 1,240 1,303 1,316 1,318 1,399 1,400 1,532 1.823732,563 0.668856,671 2.784638,790 1.725184,988 1.523694,1237 2.304185,1520 0.77268}
+{9 1,164 1,411 1,790 1.725184}
+{4 1,60 1,136 1,529 2.104779,532 1.823732,543 2.343804,687 2.585232,711 3.439289,924 3.546138,927 1.795436,983 5.175047,999 1.248919,1055 8.053182,1057 3.192061,1114 3.621946,1205 1.725652,1236 3.010204,1300 3.827185,1434 6.381996,1498 4.00956,1540 4.026591,1595 3.010204}
+{4 1,60 1,135 1,136 1,288 1,500 1,529 2.104779,532 1.823732,543 2.343804,630 2.062757,687 2.585232,924 3.546138,927 1.795436,983 5.175047,988 1.523694,999 1.248919,1036 0.969274,1055 8.053182,1057 3.192061,1114 3.621946,1205 0.862826,1300 3.827185,1434 6.381996,1498 4.00956,1504 2.614732,1540 4.026591,1595 3.010204}
+{15 1}
+{15 1,600 1.13669,1057 3.192061,1097 2.866279,1178 2.304185,1455 2.747162,1611 1.653826}
+{15 1,529 2.104779,532 2.890547,539 3.827185,543 4.687608,547 2.407833,552 3.192061,555 3.346732,760 3.265091,1015 1.833427,1455 2.747162,1523 2.090487}
+{15 1,533 2.711608,534 3.265091,539 3.827185,544 3.546138,1015 1.833427,1097 2.866279,1237 2.304185,1316 3.346732}
+{12 1,242 1,325 1,407 1,415 1,678 3.672514,988 1.523694,1036 0.969274,1344 3.827185,1520 0.77268}
+{6 1}
+{6 1,150 1,942 4.026591,980 2.747162,1080 4.026591}
+{13 1}
+{13 1,323 1,325 1,407 1,600 1.13669,678 3.672514,687 2.585232,1520 0.77268}
+{13 1,316 1,871 4.026591,917 1.027802,1021 2.529751,1199 2.119372}
+{0 1,2 1,1626 3.827185}
+{2 1,6 1,32 1,93 1,201 1,871 4.026591,917 1.027802,1321 3.192061}
+{9 1,1248 2.677789}
+{9 1,1229 1.549133,1262 2.711608}
+{9 1,1262 2.711608}
+{9 1}
+{9 1,563 0.668856,1199 2.119372,1229 1.549133,1626 3.827185}
+{9 1,52 1,152 1,181 1,232 1,399 1,489 1,563 1.060112,657 1.274594,988 1.523694,1199 2.119372,1204 4.026591,1229 2.455318,1262 4.297797,1458 2.181026,1520 1.224669}
+{9 1,41 1,80 1,178 1,203 1,229 1,426 1,563 0.668856,657 1.274594,790 1.725184,988 1.523694,1036 0.969274,1157 2.824257,1183 4.026591,1188 1.884044,1229 1.549133,1262 2.711608,1455 2.747162,1520 0.77268}
+{9 1,84 1,267 1,482 1,570 3.827185,1183 4.026591,1204 4.026591,1229 1.549133,1626 3.827185}
+{9 1,187 1,281 1,920 3.827185,1188 1.884044,1204 4.026591,1205 0.862826,1236 3.010204,1321 3.192061,1500 1.505208}
+{13 1,165 1,371 1,563 0.668856,600 1.13669,789 3.546138,917 1.027802,1440 3.439289,1500 1.505208,1611 1.653826}
+{2 1,4 1,13 1,17 1,51 1,60 1,343 1,527 1,563 1.060112,600 1.13669,760 3.265091,763 3.827185,1036 0.969274,1205 0.862826,1338 3.346732}
+{16 1}
+{4 1,622 1.589133,1523 2.090487,1593 3.065685}
+{17 1}
+{2 1,4 1,17 1}
+{2 1,17 1,760 3.265091}
+{2 1,4 1,17 1,19 1,66 1,115 1,514 1,622 1.589133,1188 1.884044,1523 2.090487}
+{2 1,4 1,17 1,1178 2.304185}
+{2 1,4 1,15 1,17 1,19 1,38 1,66 1,104 1,325 1,407 1,462 1,514 1,518 1,599 1.575542,927 1.795436,928 3.065685,1015 1.833427,1520 0.77268}
+{2 1,4 1,17 1}
+{2 1,4 1,15 1,17 1,32 1,60 1,65 1,93 1,201 1,286 1,399 1,402 1,1023 2.677789,1205 0.862826,1209 1.853232,1611 1.653826}
+{2 1,17 1,760 3.265091}
+{6 1,32 1,93 1,147 1,201 1,917 1.027802,1023 2.677789,1160 3.546138,1333 3.546138}
+{9 1,1248 2.677789}
+{9 1,276 1}
+{9 1,15 1,532 1.823732,563 0.668856,776 2.645544,1023 2.677789}
+{9 1,154 1,167 1,171 1,476 1,532 1.823732,563 0.668856,672 2.866279,776 2.645544}
+{9 1,164 1,200 1,209 1,246 1,258 1,274 1,298 1,411 1,443 1,450 1,463 1,474 1,485 1,491 1,505 1,507 1,600 1.13669,671 2.784638,790 1.725184,1111 3.546138,1520 0.77268,1603 3.346732}
+{4 1}
+{4 1,1183 4.026591}
+{4 1,1130 2.364497}
+{15 1,22 1,68 1,159 1,409 1,515 1,599 1.575542,928 3.065685,1611 1.653826}
+{15 1}
+{15 1,484 1,1021 2.529751,1263 3.065685}
+{4 1,15 1,64 1,167 1,476 1,532 1.823732,547 2.407833,1183 4.026591,1263 3.065685}
+{15 1,532 1.823732,547 3.816324,1021 2.529751,1022 4.026591,1075 2.958836,1164 3.346732}
+{15 1}
+{4 1,15 1,532 2.890547,547 4.815665,1022 6.381996,1075 2.958836,1164 3.346732,1183 4.026591}
+{13 1,30 1,202 1,316 1,351 1,444 1,724 3.827185,836 2.197336,949 3.827185,1205 0.862826,1248 2.677789,1520 0.77268}
+{4 1,15 1,532 2.890547,547 4.815665,1075 2.958836,1164 3.346732,1183 4.026591,1541 6.827445}
+{13 1,563 0.668856,622 1.589133,665 3.010204,746 3.827185,917 1.027802,999 1.248919,1172 3.439289,1246 3.546138,1611 1.653826}
+{13 1,563 0.668856,657 1.274594,665 3.010204,693 1.973606,1209 1.853232,1229 1.549133,1266 4.244195}
+{4 1,11 1,15 1,74 1,82 1,152 1,173 1,180 1,230 1,307 1,316 1,340 1,399 1,427 1,460 1,461 1,465 1,516 1,563 0.668856,588 3.125997,655 2.556936,657 1.274594,659 2.911014,917 1.027802,1407 2.214039,1449 3.265091}
+{4 1,18 1,48 1,122 1,151 1,169 1,254 1,334 1,377 1,404 1,480 1,524 1,622 1.589133,679 3.672514,999 1.97949,1246 3.546138}
+{4 1,9 1,563 0.668856,1613 3.439289}
+{4 1,9 1,257 1,563 0.668856,682 1.602997,836 2.197336,956 3.672514,1010 3.672514,1500 1.505208}
+{4 1,9 1,257 1,563 0.668856,627 2.385826,682 1.602997,836 2.197336,882 4.026591,1010 3.672514,1114 2.285194,1498 4.00956,1500 1.505208}
+{6 1,656 4.026591,724 3.827185,927 1.795436,942 4.026591}
+{15 1,60 1,135 1,136 1,152 1,288 1,399 1,500 1,563 0.668856,956 3.672514,999 1.248919,1021 2.529751,1195 2.556936,1205 1.367547,1449 3.265091,1551 3.672514}
+{15 1,60 1,152 1,260 1,261 1,399 1,563 0.668856,790 1.725184,956 3.672514,999 1.248919,1021 2.529751,1195 2.556936,1205 1.367547,1449 3.265091}
+{15 1,80 1,84 1,203 1,267 1,426 1,482 1,988 1.523694,1036 1.536263,1040 1.716883,1183 4.026591,1449 5.175047,1520 0.77268,1551 3.672514}
+{15 1,60 1,132 1,152 1,350 1,387 1,399 1,494 1,511 1,588 4.954588,655 4.052648,657 1.274594,836 3.482695,1020 2.585232,1188 1.884044,1195 5.113873,1205 1.725652,1407 2.214039,1449 3.265091}
+{15 1,1140 2.430561,1402 3.827185}
+{15 1,530 3.827185,1095 3.439289,1147 3.010204,1248 2.677789,1523 2.090487}
+{15 1,530 3.827185,1086 3.125997,1095 5.451144,1523 2.090487}
+{15 1}
+{15 1}
+{13 1,599 1.575542,917 1.027802}
+{15 1}
+{15 1,430 1,533 2.711608,655 4.052648,917 1.629028,999 1.97949,1086 3.125997}
+{9 1,1248 2.677789}
+{9 1,1193 3.546138,1455 2.747162}
+{15 1,1449 3.265091}
+{9 1,167 1,1205 0.862826}
+{4 1}
+{6 1,150 1,656 4.026591,724 3.827185,942 4.026591,980 2.747162}
+{6 1,656 4.026591,724 3.827185,731 3.192061}
+{15 1}
+{15 1,1263 3.065685}
+{15 1}
+{13 1,86 1,1205 0.862826,1229 1.549133,1272 3.439289}
+{1 1,2 1,9 1,15 1,162 1,170 1,306 1,359 1,644 4.026591,682 1.602997,1272 3.439289}
+{9 1,1248 2.677789}
+{9 1,20 1,52 1,74 1,262 1,489 1,917 1.027802,1036 0.969274,1130 2.364497,1199 2.119372,1229 1.549133,1604 2.023138}
+{9 1,139 1,160 1,246 1,474 1,563 0.668856,790 1.725184,988 1.523694,1036 0.969274,1066 3.065685,1183 4.026591,1229 1.549133,1625 2.478383}
+{9 1,63 1,153 1,367 1,592 3.439289,730 3.265091,790 1.725184,1066 4.858996,1082 2.062757,1183 4.026591,1205 1.367547,1209 1.853232,1229 1.549133,1272 3.439289,1628 3.192061}
+{9 1,160 1,563 0.668856,988 1.523694,1036 0.969274}
+{9 1,152 1,292 1,1062 6.065945,1205 0.862826,1272 3.439289,1455 2.747162,1520 0.77268}
+{9 1,56 1,101 1,138 1,139 1,162 1,170 1,245 1,246 1,295 1,306 1,359 1,450 1,474 1,504 1,505 1,523 1,528 1,563 0.668856,622 1.589133,671 2.784638,790 1.725184,917 1.027802,969 4.026591,999 1.248919,1608 4.026591,1625 2.478383}
+{9 1,152 1,213 1,221 1,292 1,305 1,316 1,356 1,399 1,447 1,465 1,917 1.027802,1082 2.062757,1229 1.549133,1272 3.439289,1455 2.747162,1520 0.77268}
+{9 1,176 1,194 1,338 1,563 0.668856,627 2.385826,988 1.523694,1036 0.969274,1205 0.862826,1293 3.346732,1458 3.456844,1522 3.546138}
+{9 1,152 1,176 1,194 1,338 1,563 0.668856,600 1.13669,836 2.197336,988 1.523694,999 1.248919,1036 1.536263,1041 3.346732,1082 3.269393,1293 3.346732}
+{9 1,671 2.784638,790 2.734352,1183 4.026591}
+{9 1,730 3.265091,808 2.747162,1082 2.062757,1117 3.125997,1229 1.549133,1266 2.677789}
+{4 1,13 1,102 1,622 2.518717,657 1.274594,1036 0.969274,1179 4.026591,1463 4.026591}
+{9 1,671 2.784638,790 1.725184,1090 3.672514,1209 1.853232,1229 2.455318,1625 2.478383}
+{4 1,13 1,999 1.248919}
+{9 1}
+{9 1,529 2.104779}
+{9 1}
+{9 1,529 2.104779}
+{13 1,563 1.060112,600 1.13669,1523 2.090487,1611 1.653826}
+{15 1,48 1,122 1,151 1,169 1,254 1,298 1,334 1,377 1,404 1,451 1,474 1,480 1,507 1,524 1,600 1.13669,622 1.589133,820 4.026591,917 1.027802,1036 0.969274,1150 3.010204,1500 1.505208,1615 4.026591}
+{6 1,15 1,146 1,999 1.248919,1036 0.969274,1040 1.716883,1209 1.853232}
+{9 1,529 2.104779}
+{9 1,139 1,152 1,213 1,221 1,246 1,296 1,305 1,316 1,356 1,394 1,399 1,447 1,465 1,470 1,474 1,917 1.027802,1520 0.77268}
+{17 1,278 1,820 4.026591,1480 3.346732,1523 2.090487,1611 1.653826}
+{9 1,139 1,152 1,213 1,221 1,246 1,296 1,305 1,316 1,356 1,394 1,399 1,447 1,465 1,470 1,474 1,917 1.027802,1520 0.77268}
+{4 1,48 1,60 1,122 1,132 1,151 1,169 1,254 1,334 1,350 1,377 1,387 1,480 1,494 1,524 1,546 3.546138,563 0.668856,600 1.801611,730 3.265091,1159 2.556936,1234 2.747162,1500 1.505208,1520 1.224669,1611 1.653826}
+{9 1,543 3.714842,790 1.725184,917 2.055605,1021 2.529751,1082 3.269393,1183 4.026591,1272 3.439289}
+{4 1,31 1,34 1,54 1,99 1,127 1,131 1,234 1,269 1,314 1,347 1,355 1,381 1,440 1,484 1,525 1,563 1.060112,999 1.248919,1036 0.969274,1205 1.367547,1458 2.181026,1499 3.125997,1520 0.77268}
+{9 1,52 1,489 1,727 3.827185,728 8.615276,790 1.725184,927 1.795436,1117 3.125997,1183 4.026591,1199 2.119372,1229 1.549133,1455 2.747162,1520 0.77268}
+{9 1,728 4.307638,927 1.795436,988 1.523694,1084 3.439289,1117 3.125997,1458 2.181026,1500 1.505208,1611 1.653826}
+{9 1,33 1,148 1,168 1,207 1,650 3.346732,910 3.065685,917 1.027802,1069 3.827185,1272 3.439289}
+{2 1,4 1,9 1,129 1,529 2.104779,532 1.823732,675 4.026591,927 1.795436,1072 3.192061,1367 3.265091,1520 0.77268,1522 3.546138}
+{9 1,917 1.027802}
+{9 1,247 1,270 1,271 1,600 1.13669,808 2.747162,1455 2.747162,1520 0.77268}
+{9 1,657 1.274594,671 4.413547,672 2.866279,693 1.973606,790 1.725184,988 1.523694,1036 0.969274,1272 3.439289}
+{9 1,139 1,213 1,246 1,305 1,356 1,447 1,470 1,474 1,644 8.053182,790 1.725184,999 1.248919,1020 2.585232,1183 4.026591,1205 0.862826,1272 3.439289,1455 2.747162,1520 0.77268}
+{1 1,2 1,9 1,15 1,644 4.026591}
+{9 1,33 1,148 1,207 1,1272 3.439289,1520 0.77268}
+{9 1}
+{9 1,1272 3.439289}
+{1 1,2 1,9 1,15 1,644 4.026591}
+{9 1,533 2.711608}
+{9 1,164 1,246 1,1117 3.125997,1130 2.364497,1272 3.439289,1520 1.224669}
+{9 1,1364 2.911014}
+{9 1,1117 3.125997}
+{9 1}
+{17 1,1523 2.090487}
+{9 1,1229 1.549133}
+{17 1,529 2.104779,776 4.193088}
+{1 1,2 1,15 1,52 1,489 1,644 6.381996,657 1.274594,682 1.602997,790 1.725184,988 1.523694,1036 0.969274,1117 3.125997,1188 1.884044,1199 2.119372,1205 0.862826,1209 1.853232,1364 4.613848,1503 3.439289}
+{6 1,980 2.747162}
+{2 1,4 1,6 1,32 1,33 1,93 1,147 1,148 1,201 1,207 1,650 5.304445,651 4.026591,682 1.602997,693 1.973606,917 1.629028,988 1.523694,1061 4.026591,1062 3.827185,1069 3.827185,1117 3.125997,1209 1.853232,1229 1.549133,1272 3.439289,1467 3.827185,1630 2.503591}
+{6 1,820 4.026591}
+{6 1,979 2.784638}
+{2 1,4 1,9 1,531 4.026591,706 4.026591,790 1.725184,1036 0.969274}
+{13 1,246 1,316 1,336 1,380 1,648 4.307638,1120 2.911014,1205 1.367547,1229 1.549133,1471 2.824257,1613 3.439289}
+{2 1,1036 0.969274,1471 2.824257,1520 0.77268,1523 2.090487,1611 1.653826}
+{2 1,17 1,1178 2.304185}
+{2 1,529 2.104779,813 3.546138,1036 0.969274,1120 2.911014,1471 2.824257,1520 0.77268,1523 2.090487,1611 1.653826}
+{2 1,17 1,1178 2.304185}
+{2 1,682 1.602997,1523 2.090487}
+{2 1,17 1,1178 2.304185}
+{2 1,682 1.602997,1523 2.090487}
+{2 1,529 2.104779,813 3.546138}
+{2 1,17 1,502 1,978 3.827185,1523 2.090487}
+{2 1,17 1,1178 2.304185}
+{2 1,17 1,162 1,170 1,306 1,359 1,563 0.668856,600 1.13669,708 4.026591,846 3.827185,1036 0.969274,1205 0.862826,1499 3.125997,1564 2.430561}
+{2 1,246 1,599 1.575542,622 1.589133,846 3.827185,917 1.027802,1266 2.677789,1474 2.958836,1520 0.77268,1595 3.010204}
+{2 1,18 1,29 1,257 1,316 1,563 0.668856,622 1.589133,682 1.602997,1205 0.862826,1237 2.304185,1267 3.827185,1595 3.010204}
+{2 1,44 1,60 1,176 1,243 1,338 1,563 0.668856,630 3.269393,988 1.523694,1036 1.536263,1266 4.244195,1471 4.476342,1474 2.958836,1520 0.77268,1595 6.020407,1604 2.023138}
+{9 1,48 1,107 1,112 1,122 1,151 1,152 1,169 1,205 1,231 1,237 1,254 1,260 1,261 1,334 1,377 1,468 1,480 1,524 1,630 3.269393,808 2.747162,813 3.546138,836 3.482695,910 3.065685,988 1.523694,1021 4.00956,1036 0.969274,1185 10.408587,1205 1.725652,1499 3.125997,1520 0.77268,1611 1.653826}
+{9 1,630 2.062757,910 3.065685,917 1.027802,1185 8.053182,1205 0.862826,1241 5.620496,1520 0.77268}
+{9 1,162 1,170 1,193 1,543 2.343804,790 1.725184}
+{9 1,164 1,200 1,411 1,443 1,790 1.725184}
+{9 1,33 1,148 1,207 1,348 1,648 4.307638,1520 0.77268,1592 3.010204}
+{9 1,44 1,60 1,210 1,243 1,353 1,630 2.062757,744 4.026591,1021 2.529751,1266 2.677789,1471 4.476342,1595 4.77106}
+{9 1,18 1,44 1,60 1,152 1,157 1,243 1,648 6.827445,836 2.197336,999 1.248919,1120 2.911014,1205 0.862826,1239 2.824257}
+{9 1,137 1,161 1,233 1,393 1,486 1,563 0.668856,630 2.062757,657 1.274594,671 2.784638,790 1.725184,988 1.523694,1120 2.911014,1312 3.439289,1482 2.454059,1587 3.125997,1595 3.010204}
+{9 1,32 1,93 1,201 1,917 1.027802,1188 1.884044}
+{4 1,60 1,137 1,143 1,393 1,529 2.104779,532 1.823732,813 3.546138,927 1.795436,1010 3.672514,1114 2.285194,1159 2.556936,1205 1.367547,1595 4.77106}
+{4 1,60 1,600 1.13669,630 4.125514,1015 2.905912,1206 3.827185,1266 2.677789,1595 3.010204}
+{4 1,546 3.546138,630 2.062757,643 2.958836,988 1.523694,1015 1.833427,1036 0.969274,1159 2.556936,1205 0.862826}
+{4 1,81 1,85 1,92 1,114 1,134 1,141 1,199 1,235 1,287 1,389 1,456 1,497 1,563 0.668856,600 1.13669,622 1.589133,630 2.062757,643 4.689644,648 4.307638,657 1.274594,836 2.197336,999 1.248919,1040 1.716883,1075 2.958836,1159 2.556936,1205 0.862826,1209 1.853232,1364 2.911014,1592 3.010204}
+{4 1,84 1,267 1,482 1,600 1.13669,630 2.062757,657 1.274594,999 1.248919,1036 0.969274,1183 4.026591,1206 3.827185,1520 0.77268}
+{4 1,81 1,85 1,143 1,563 0.668856,622 1.589133,648 4.307638,657 1.274594,1040 1.716883,1205 0.862826}
+{4 1,83 1,169 1,334 1,622 1.589133,630 3.269393,643 4.689644,648 4.307638,657 1.274594,917 1.027802,1015 1.833427,1205 0.862826,1206 3.827185,1585 3.065685}
+{4 1,72 1,92 1,134 1,141 1,143 1,169 1,199 1,235 1,334 1,389 1,456 1,497 1,529 2.104779,648 4.307638,682 1.602997,987 3.439289,1075 2.958836,1364 2.911014}
+{4 1,60 1,171 1,532 1.823732,563 0.668856,657 2.020184,910 3.065685,1183 4.026591,1205 0.862826,1229 1.549133,1266 2.677789,1407 2.214039,1520 1.224669,1595 6.020407}
+{4 1,48 1,60 1,72 1,81 1,84 1,107 1,112 1,122 1,151 1,152 1,169 1,231 1,237 1,254 1,267 1,334 1,377 1,468 1,480 1,482 1,524 1,600 1.13669,622 2.518717,630 3.269393,988 2.414997,1015 1.833427,1036 0.969274,1157 2.824257,1183 4.026591,1188 1.884044,1206 3.827185,1266 2.677789,1595 3.010204}
+{4 1,917 1.027802,1471 2.824257,1474 2.958836}
+{15 1}
+{2 1,15 1,17 1,21 1,51 1,60 1,158 1,326 1,408 1,527 1,533 2.711608,547 2.407833,599 1.575542,750 3.672514,1178 2.304185,1205 0.862826,1471 2.824257}
+{15 1,257 1,316 1,533 2.711608,543 2.343804,547 2.407833,552 3.192061,563 0.668856,655 2.556936,836 2.197336,846 3.827185,1015 1.833427,1205 1.367547,1471 2.824257,1523 2.090487}
+{9 1,1248 2.677789}
+{9 1,182 1,342 1,790 1.725184,908 4.689644,1021 2.529751,1056 3.827185,1067 2.911014,1159 2.556936}
+{9 1}
+{13 1,917 1.027802,1474 2.958836}
+{2 1,17 1,56 1,138 1,139 1,162 1,170 1,245 1,246 1,295 1,306 1,359 1,474 1,504 1,523 1,528 1,563 0.668856,1020 2.585232,1054 3.265091,1205 0.862826}
+{13 1,917 1.027802,1433 4.026591,1520 0.77268}
+{4 1,43 1,79 1,86 1,98 1,101 1,106 1,118 1,162 1,170 1,248 1,306 1,359 1,450 1,464 1,682 1.602997,825 3.546138,1036 0.969274,1500 1.505208,1520 0.77268}
+{14 1,917 1.027802,1474 2.958836}
+{13 1,917 1.027802,1458 2.181026}
+{16 1,533 2.711608}
+{17 1,83 1,419 1,744 4.026591,1036 0.969274}
+{17 1,258 1,276 1,526 1,657 1.274594,999 1.248919,1119 2.824257,1160 3.546138,1180 2.645544,1520 0.77268}
+{17 1,1164 3.346732}
+{9 1,1248 2.677789}
+{9 1,270 1,271 1,316 1,1205 0.862826}
+{9 1,17 1}
+{17 1,258 1,526 1,999 1.248919,1119 2.824257,1613 3.439289}
+{4 1}
+{4 1,1183 4.026591}
+{4 1,1183 4.026591}
+{6 1}
+{6 1}
+{2 1,1188 1.884044}
+{2 1,15 1,92 1,134 1,199 1,389 1,497 1,563 0.668856,737 3.827185,917 1.027802,1130 2.364497,1364 2.911014}
+{13 1,18 1,316 1,389 1,563 0.668856,836 2.197336,857 2.911014,999 1.248919,1036 0.969274,1205 0.862826,1237 2.304185}
+{4 1,48 1,122 1,151 1,169 1,254 1,334 1,377 1,480 1,524 1,563 0.668856,599 1.575542,600 1.13669,836 2.197336,857 4.613848,999 1.248919,1344 3.827185}
+{4 1,15 1,126 1,1036 0.969274,1183 4.026591,1498 2.529751}
+{3 1,45 1,116 1,275 1,487 1,532 1.823732,857 2.911014,1209 1.853232,1520 1.224669}
+{15 1,126 1,1036 0.969274,1160 3.546138,1458 2.181026,1498 2.529751}
+{15 1,552 3.192061,1075 2.958836,1458 2.181026}
+{15 1,366 1,367 1,592 3.439289,829 3.827185,1183 4.026591,1199 2.119372,1458 2.181026,1482 2.454059}
+{15 1,1263 3.065685}
+{15 1,45 1,116 1,275 1,487 1,532 2.890547,1067 2.911014,1150 3.010204,1325 3.346732,1458 2.181026,1525 3.192061}
+{3 1,15 1,59 1,283 1,495 1,599 1.575542,1199 2.119372,1205 0.862826,1458 2.181026,1569 3.672514}
+{15 1,92 1,134 1,199 1,389 1,399 1,497 1,563 0.668856,737 3.827185,917 1.027802,1130 2.364497,1364 2.911014}
+{15 1}
+{15 1,1263 3.065685}
+{4 1,64 1,547 2.407833,563 1.060112,672 2.866279,687 2.585232,1075 2.958836,1160 3.546138,1183 4.026591,1458 2.181026}
+{2 1,43 1,86 1,106 1,118 1,248 1,464 1,601 2.784638,715 3.439289,1036 0.969274,1188 1.884044,1248 2.677789,1520 0.77268}
+{13 1,22 1,159 1,327 1,409 1,515 1,563 0.668856,600 1.13669,630 3.269393,682 1.602997,804 4.026591,805 4.026591,1248 2.677789}
+{15 1}
+{15 1,434 1,1097 2.866279,1523 2.090487}
+{15 1,533 2.711608,1523 2.090487}
+{15 1,532 1.823732,543 2.343804,544 3.546138,600 1.13669,804 4.026591,805 4.026591,1097 2.866279,1611 1.653826}
+{9 1,241 1,532 1.823732,543 2.343804,804 4.026591,805 4.026591,910 4.858996,1205 1.367547,1229 2.455318,1248 4.244195}
+{13 1,323 1,927 1.795436,1015 1.833427,1067 2.911014,1159 2.556936,1327 4.026591}
+{6 1}
+{6 1}
+{6 1}
+{6 1,979 2.784638}
+{17 1,600 1.13669,657 1.274594,693 1.973606,829 3.827185,949 3.827185,1209 1.853232,1248 4.244195,1266 2.677789,1474 2.958836,1482 2.454059}
+{17 1,127 1,131 1,255 1,269 1,313 1,314 1,381 1,484 1,525 1,563 0.668856,657 1.274594,1209 1.853232,1248 2.677789,1367 3.265091,1520 0.77268}
+{17 1,657 1.274594,999 1.248919}
+{2 1,162 1,170 1,306 1,319 1,348 1,359 1,563 0.668856,589 3.265091,829 3.827185,988 1.523694,999 1.248919,1040 1.716883,1229 1.549133,1482 2.454059,1534 3.546138}
+{13 1,316 1,600 1.13669,917 1.027802,1458 2.181026}
+{2 1,11 1,563 0.668856,682 1.602997,1130 2.364497,1160 5.620496,1234 2.747162}
+{9 1,162 1,170 1,193 1,245 1,246 1,249 1,251 1,258 1,295 1,298 1,474 1,491 1,542 3.827185,562 3.672514,790 1.725184,910 3.065685,1209 1.853232,1248 2.677789,1494 4.026591}
+{9 1,162 1,170 1,193 1,245 1,246 1,249 1,258 1,261 1,295 1,298 1,474 1,491 1,534 3.265091,790 1.725184,1021 2.529751}
+{15 1}
+{9 1,292 1,790 1.725184,839 3.065685,911 3.439289,1183 6.381996,1229 1.549133,1455 2.747162}
+{15 1,1373 2.076483,1455 2.747162}
+{15 1}
+{13 1,1495 3.439289,1520 0.77268,1611 1.653826}
+{13 1,51 1,316 1,527 1,917 1.027802,1172 3.439289}
+{13 1,1495 3.439289,1520 0.77268}
+{4 1,21 1,63 1,110 1,117 1,153 1,158 1,236 1,326 1,408 1,472 1,563 0.668856,592 3.439289,693 1.973606,750 3.672514,999 1.248919,1234 2.747162,1503 3.439289,1520 0.77268}
+{4 1,622 1.589133,693 1.973606,1630 2.503591}
+{13 1,1495 3.439289,1520 0.77268}
+{13 1,927 1.795436}
+{15 1,622 1.589133,892 3.827185}
+{15 1,789 3.546138,1010 3.672514,1140 2.430561,1388 4.542945}
+{15 1,532 1.823732,544 3.546138,555 3.346732,1388 2.866279}
+{13 1,319 1,384 1,415 1,563 1.060112,600 1.13669,659 2.911014,857 2.911014,1188 1.884044,1205 0.862826,1520 0.77268,1601 2.231155}
+{15 1,544 5.620496,555 3.346732}
+{4 1,399 1,1059 4.026591,1205 0.862826}
+{15 1,412 1,789 3.546138,892 3.827185,917 1.027802,1338 3.346732,1388 4.542945,1625 3.928144}
+{15 1,892 3.827185,1338 3.346732,1364 2.911014,1388 2.866279,1625 2.478383}
+{15 1,1625 2.478383}
+{13 1,52 1,321 1,489 1,600 1.13669,686 6.381996,917 1.027802,1199 2.119372,1312 3.439289,1474 2.958836,1500 1.505208,1587 3.125997}
+{4 1,45 1,48 1,107 1,112 1,116 1,122 1,151 1,169 1,231 1,237 1,254 1,275 1,334 1,377 1,468 1,480 1,487 1,524 1,600 1.13669,657 1.274594,862 3.546138,999 1.248919,1129 3.265091,1248 2.677789,1502 2.784638,1520 1.224669,1592 3.010204,1601 2.231155,1630 2.503591}
+{2 1,17 1,563 1.060112,686 4.026591,917 1.027802,954 4.026591,999 1.248919,1036 0.969274,1373 2.076483,1604 2.023138}
+{2 1,17 1,18 1,48 1,122 1,151 1,169 1,254 1,334 1,377 1,480 1,513 1,524 1,563 0.668856,917 1.027802,1180 2.645544,1199 2.119372,1474 2.958836}
+{13 1,31 1,52 1,347 1,440 1,489 1,563 1.060112,599 2.497175,622 1.589133,1040 1.716883,1199 3.359125,1205 0.862826,1500 1.505208,1621 3.827185}
+{13 1,1084 3.439289,1199 2.119372,1205 0.862826}
+{13 1,31 1,54 1,347 1,383 1,440 1,563 0.668856,1090 3.672514,1199 2.119372,1205 0.862826,1262 2.711608,1520 0.77268}
+{17 1,38 1,104 1,246 1,319 1,462 1,518 1,830 3.546138,1040 1.716883,1482 2.454059,1520 0.77268,1534 3.546138,1632 4.026591}
+{2 1,10 1,24 1,302 1,657 1.274594,923 3.010204,999 1.248919,1230 3.346732,1373 2.076483,1520 0.77268}
+{2 1,4 1,10 1,38 1,104 1,162 1,170 1,306 1,359 1,462 1,657 1.274594,1119 2.824257,1564 2.430561}
+{15 1}
+{13 1,22 1,60 1,137 1,159 1,393 1,409 1,515 1,546 5.620496,563 1.553037,600 1.13669,655 2.556936,665 3.010204,1015 1.833427,1036 0.969274,1114 3.621946,1205 0.862826,1237 2.304185,1500 1.505208,1604 2.023138,1625 2.478383,1628 3.192061}
+{15 1,600 1.13669,622 1.589133,886 8.527313,984 5.820797,1023 6.217633}
+{4 1,529 3.335996,532 1.823732,924 3.546138,983 3.265091,1050 3.827185,1114 2.285194,1471 2.824257,1498 4.00956,1625 5.754627,1628 5.059297}
+{4 1,135 1,136 1,288 1,500 1,529 5.908862,532 3.647464,600 1.801611,704 6.827445,917 1.027802,983 5.175047,999 1.97949,1050 7.65437,1072 5.059297,1114 6.415349,1367 5.175047,1498 5.059501,1625 4.956766,1628 7.411735}
+{4 1,48 1,63 1,107 1,112 1,122 1,151 1,153 1,169 1,231 1,237 1,254 1,334 1,367 1,377 1,468 1,480 1,524 1,592 3.439289,917 1.027802,1205 0.862826,1520 0.77268}
+{9 1,32 1,93 1,135 1,136 1,201 1,286 1,288 1,500 1,630 2.062757,671 2.784638}
+{9 1,152 1,183 1,655 2.556936,682 1.602997,790 1.725184,836 2.197336,999 1.248919,1239 2.824257}
+{9 1,127 1,131 1,187 1,269 1,314 1,381 1,484 1,525 1,917 1.027802,1188 1.884044,1266 2.677789,1500 1.505208}
+{9 1,60 1,80 1,152 1,179 1,184 1,426 1,630 2.062757,836 2.197336,900 2.824257,917 1.027802,988 1.523694,1020 2.585232,1036 0.969274,1471 2.824257,1520 0.77268}
+{9 1,1036 0.969274,1601 2.231155}
+{9 1,32 1,93 1,201 1,282 1,286 1,630 2.062757,671 2.784638,790 1.725184}
+{9 1,92 1,199 1,282 1,563 0.668856,600 1.13669,630 3.269393,655 2.556936,1020 2.585232,1036 0.969274,1266 2.677789,1364 2.911014,1601 2.231155}
+{9 1,33 1,148 1,152 1,162 1,163 1,170 1,193 1,207 1,213 1,790 1.725184,1120 2.911014,1183 4.026591,1237 2.304185,1458 2.181026,1471 2.824257,1520 1.224669}
+{9 1,60 1,152 1,173 1,180 1,208 1,226 1,230 1,399 1,657 2.549189,682 1.602997,999 1.248919,1120 2.911014,1180 2.645544,1183 4.026591,1195 2.556936,1205 1.367547,1237 4.60837,1471 5.648515}
+{13 1,382 1,563 0.668856,733 2.958836,1248 2.677789,1520 0.77268}
+{4 1,78 1,176 1,193 1,268 1,316 1,338 1,399 1,425 1,437 1,1209 1.853232,1248 4.244195,1520 0.77268}
+{15 1}
+{13 1,278 1,917 1.027802,988 1.523694,1090 3.672514,1456 4.026591}
+{15 1,508 1,1523 2.090487,1625 2.478383}
+{15 1,406 1,452 1,529 2.104779,530 3.827185,532 1.823732,547 2.407833,588 3.125997,600 1.13669,744 4.026591,910 3.065685,917 1.027802,1066 4.858996,1188 1.884044,1523 2.090487,1628 5.059297}
+{13 1,36 1,82 1,101 1,164 1,173 1,180 1,209 1,319 1,340 1,360 1,364 1,391 1,427 1,516 1,917 1.027802,1209 1.853232,1520 0.77268}
+{13 1,78 1,316 1,338 1,600 1.801611,682 1.602997,1010 3.672514,1040 1.716883,1084 3.439289,1373 2.076483,1520 0.77268}
+{4 1,36 1,56 1,91 1,100 1,101 1,120 1,138 1,139 1,162 1,164 1,170 1,209 1,245 1,246 1,253 1,295 1,306 1,319 1,359 1,360 1,415 1,449 1,474 1,478 1,504 1,523 1,528 1,599 1.575542,600 1.13669,927 1.795436,1520 0.77268}
+{12 1,255 1,313 1,315 1,565 4.026591,830 3.546138,1482 2.454059,1520 0.77268}
+{2 1,563 1.337713,681 2.454059,1020 2.585232,1613 3.439289}
+{13 1,563 0.668856,808 2.747162,1199 2.119372}
+{13 1,73 1,335 1,600 1.13669,622 2.518717,808 2.747162,1130 2.364497,1205 0.862826,1373 2.076483}
+{2 1,4 1,21 1,41 1,60 1,80 1,110 1,117 1,152 1,158 1,229 1,236 1,326 1,408 1,426 1,472 1,600 1.801611,657 1.274594,750 3.672514,1041 3.346732,1058 5.569276,1067 2.911014,1205 0.862826,1520 0.77268}
+{15 1,570 7.65437,1053 5.820797,1082 2.062757}
+{15 1,60 1,92 1,134 1,141 1,199 1,235 1,389 1,399 1,456 1,497 1,563 0.668856,917 1.027802,965 7.65437,977 3.265091,1205 1.367547,1364 2.911014}
+{15 1,988 1.523694}
+{15 1,416 1,423 1,737 3.827185,1058 2.784638,1229 1.549133,1500 1.505208}
+{15 1,662 4.026591,1036 0.969274,1373 2.076483}
+{13 1,316 1,563 0.668856,568 3.827185,599 1.575542,917 1.027802,1171 3.439289,1474 2.958836}
+{4 1,12 1,49 1,60 1,73 1,108 1,124 1,312 1,316 1,399 1,417 1,512 1,1130 2.364497,1171 5.451144,1407 2.214039,1520 0.77268}
+{15 1,1171 3.439289}
+{4 1,532 1.823732}
+{13 1,727 3.827185,917 1.027802,1074 3.672514,1209 1.853232,1237 2.304185,1458 2.181026}
+{6 1,32 1,93 1,201 1,928 3.065685,1523 2.090487}
+{6 1}
+{10 1,13 1,127 1,131 1,269 1,314 1,381 1,384 1,484 1,525 1,599 1.575542,733 2.958836,857 2.911014,999 1.248919,1036 0.969274,1601 2.231155}
+{6 1,600 1.13669,630 3.269393,917 1.027802,1205 0.862826}
+{15 1,434 1,1097 2.866279,1523 2.090487}
+{13 1,278 1,331 1,563 0.668856,857 2.911014}
+{15 1,529 2.104779}
+{13 1,999 1.248919}
+{15 1,529 2.104779}
+{13 1,955 3.546138}
+{15 1,532 1.823732}
+{9 1,1090 3.672514}
+{13 1,342 1,378 1,563 0.668856,756 2.747162,1205 0.862826}
+{15 1,391 1,600 1.13669,1040 1.716883,1520 0.77268}
+{2 1,17 1,22 1,40 1,159 1,316 1,409 1,515 1,520 1,600 1.13669,622 1.589133,627 2.385826,657 1.274594,682 1.602997,1036 0.969274,1040 1.716883,1188 1.884044,1205 0.862826,1373 2.076483,1407 2.214039,1474 2.958836}
+{2 1,756 2.747162,1036 0.969274}
+{9 1,15 1,152 1,278 1,418 1,469 1,592 3.439289,600 1.13669,630 3.269393,927 1.795436,1157 2.824257,1188 1.884044,1209 2.937303,1251 4.026591}
+{9 1,15 1,63 1,120 1,153 1,172 1,253 1,281 1,399 1,415 1,418 1,478 1,575 4.026591,592 3.439289,600 1.801611,622 2.518717,756 4.354148,908 2.958836,928 3.065685,1321 3.192061,1373 2.076483,1520 0.77268}
+{9 1,196 1,209 1,246 1,253 1,750 3.672514,756 2.747162,808 2.747162,1041 3.346732,1058 2.784638,1321 3.192061,1474 2.958836}
+{9 1,92 1,127 1,131 1,134 1,185 1,199 1,269 1,314 1,381 1,389 1,484 1,497 1,525 1,563 1.060112,599 1.575542,681 2.454059,829 3.827185,894 3.827185,917 1.027802,1036 0.969274,1059 4.026591,1129 3.265091,1130 2.364497,1199 2.119372,1364 2.911014,1482 2.454059,1500 1.505208,1611 1.653826}
+{13 1,22 1,159 1,327 1,382 1,409 1,515 1,563 0.668856,630 2.062757,682 1.602997,1248 4.244195}
+{15 1}
+{15 1,434 1,1097 2.866279,1523 2.090487}
+{15 1,137 1,393 1,547 2.407833,552 3.192061,1097 2.866279}
+{9 1,241 1,1195 2.556936,1248 2.677789}
+{13 1,127 1,131 1,269 1,314 1,372 1,381 1,484 1,525 1,999 1.248919,1500 1.505208}
+{2 1,11 1}
+{2 1,11 1,600 1.801611,657 1.274594,999 1.248919,1230 3.346732,1262 2.711608,1520 0.77268}
+{13 1,103 1,361 1,401 1,458 1,563 0.668856,600 2.27338,1015 1.833427,1310 4.307638,1500 1.505208,1520 1.224669,1611 1.653826,1619 3.827185,1621 3.827185}
+{4 1,36 1,82 1,97 1,101 1,102 1,113 1,164 1,173 1,180 1,209 1,303 1,318 1,319 1,340 1,360 1,400 1,427 1,516 1,588 3.125997,600 1.13669,657 2.020184,682 1.602997,1015 1.833427,1036 0.969274,1040 1.716883,1054 3.265091,1179 4.026591,1310 6.827445,1520 1.224669}
+{13 1,316 1,395 1,563 0.668856,1205 0.862826,1585 3.065685}
+{4 1,86 1,118 1,248 1,825 3.546138,1604 2.023138}
+{9 1,60 1,152 1,258 1,263 1,474 1,599 1.575542,836 2.197336,1036 0.969274,1041 3.346732,1205 0.862826}
+{4 1,917 1.027802}
+{13 1,563 0.668856}
+{13 1,19 1,66 1,316 1,325 1,407 1,514 1,668 3.125997,917 1.027802}
+{13 1,563 0.668856,947 3.672514,1611 1.653826}
+{13 1,73 1,1147 3.010204,1611 1.653826}
+{9 1,168 1,192 1,247 1,279 1,301 1,529 4.209558,671 2.784638,790 4.005754,808 2.747162,910 7.1183,917 1.027802,949 3.827185,1065 4.026591,1095 3.439289,1147 6.989476,1170 6.827445,1205 0.862826,1229 1.549133,1247 2.248704,1248 4.244195,1520 0.77268,1595 4.77106}
+{15 1,1523 2.090487}
+{15 1}
+{15 1,1140 2.430561,1402 3.827185}
+{4 1,13 1,73 1,335 1,563 1.060112,682 1.602997,808 2.747162,857 2.911014,1205 0.862826,1520 0.77268}
+{15 1,413 1,911 3.439289,1015 1.833427,1140 2.430561}
+{15 1,644 4.026591}
+{15 1,1449 3.265091}
+{4 1,21 1,117 1,158 1,326 1,408 1,472 1,600 1.13669,750 3.672514,998 3.546138,1040 1.716883,1234 2.747162,1495 3.439289}
+{4 1,13 1,60 1,152 1,600 1.13669,657 1.274594,988 2.414997,1084 3.439289,1119 2.824257,1180 2.645544,1188 1.884044,1205 0.862826,1422 3.065685}
+{9 1,127 1,131 1,269 1,314 1,381 1,484 1,525 1,1010 3.672514,1248 2.677789}
+{9 1,563 0.668856,661 4.026591,668 4.954588,1205 0.862826,1440 3.439289,1458 3.456844}
+{9 1,790 1.725184,1520 0.77268}
+{9 1,152 1,291 1,299 1,563 0.668856,668 4.954588,1205 0.862826,1458 3.456844}
+{17 1,600 1.13669,999 1.248919,1234 2.747162}
+{17 1,60 1,152 1,406 1,452 1,622 1.589133,657 1.274594,693 1.973606,744 4.026591,1147 3.010204,1205 0.862826}
+{9 1,563 0.668856,661 4.026591,1205 0.862826,1293 3.346732,1440 3.439289,1458 3.456844}
+{17 1,532 4.234575,935 4.026591,1095 3.439289,1114 2.285194,1152 4.026591,1241 5.620496,1482 6.889416,1566 8.053182}
+{17 1,600 1.801611,935 4.026591,1114 2.285194,1147 3.010204,1152 4.026591,1241 3.546138,1248 2.677789,1566 4.026591}
+{9 1,152 1,299 1,563 0.668856,1205 0.862826,1293 3.346732,1458 3.456844}
+{17 1,127 1,131 1,269 1,314 1,381 1,484 1,525 1,999 1.248919,1036 0.969274,1520 0.77268}
+{9 1,790 1.725184,1520 0.77268}
+{17 1,523 1,528 1,599 1.575542,600 1.13669,919 2.784638,1205 0.862826,1234 2.747162,1604 2.023138}
+{17 1,532 4.234575,935 4.026591,1095 3.439289,1114 2.285194,1152 4.026591,1241 5.620496,1482 6.889416,1566 8.053182}
+{9 1,790 1.725184,1520 0.77268}
+{17 1,1036 0.969274,1170 4.307638}
+{9 1,152 1,291 1,299 1,563 0.668856,731 5.059297,1205 0.862826,1458 3.456844}
+{9 1,790 1.725184,1520 0.77268}
+{9 1,173 1,180 1,226 1,230 1,307 1,340 1,399 1,427 1,460 1,516 1,563 0.668856,600 1.13669,622 1.589133,657 1.274594,917 1.027802,988 1.523694,1458 2.181026}
+{9 1,1333 3.546138}
+{9 1,173 1,180 1,226 1,230 1,307 1,340 1,399 1,427 1,460 1,516 1,563 0.668856,600 1.13669,622 1.589133,657 1.274594,731 5.059297,917 1.027802,988 1.523694,1458 2.181026}
+{9 1,1333 3.546138}
+{9 1,60 1,80 1,178 1,179 1,197 1,426 1,563 0.668856,588 3.125997,668 6.251993,908 2.958836,988 1.523694,1036 1.536263,1188 1.884044,1520 0.77268}
+{9 1,152 1,790 1.725184,1520 0.77268}
+{9 1,287 1,290 1,369 1,563 0.668856,1440 3.439289,1500 1.505208}
+{9 1,127 1,131 1,152 1,181 1,246 1,258 1,263 1,266 1,269 1,298 1,314 1,381 1,399 1,474 1,491 1,563 0.668856,600 1.13669,622 2.518717,657 1.274594,790 2.734352,917 1.027802,1036 1.536263,1157 2.824257,1159 5.113873,1205 0.862826,1209 1.853232,1229 1.549133,1312 5.451144,1480 3.346732,1594 3.672514,1604 2.023138,1625 2.478383}
+{9 1,1056 3.827185,1601 2.231155}
+{9 1,152 1,250 1,563 0.668856,657 1.274594,790 1.725184,927 1.795436,988 1.523694,1036 0.969274,1205 0.862826,1520 0.77268,1604 2.023138}
+{9 1,16 1,545 4.026591}
+{9 1,181 1,232 1,246 1,269 1,622 1.589133,657 1.274594,693 1.973606,839 3.065685,998 3.546138,1229 1.549133,1262 2.711608,1458 2.181026}
+{9 1,48 1,122 1,151 1,169 1,254 1,334 1,377 1,480 1,524 1,563 0.668856,627 2.385826,917 1.027802,1333 3.546138}
+{9 1,174 1,657 1.274594,1407 2.214039}
+{9 1,790 1.725184,1036 0.969274}
+{13 1,121 1,376 1,808 2.747162,927 1.795436,1520 0.77268}
+{9 1,36 1,67 1,82 1,101 1,155 1,164 1,170 1,173 1,180 1,209 1,217 1,230 1,307 1,319 1,340 1,360 1,427 1,460 1,516 1,563 1.060112,657 1.274594,693 1.973606,886 3.672514,1036 0.969274,1040 1.716883,1205 0.862826,1237 2.304185,1359 3.065685,1500 1.505208,1520 0.77268}
+{13 1,917 1.027802,1388 2.866279,1513 3.827185}
+{9 1,599 1.575542,693 1.973606,917 1.027802,997 4.026591,1021 2.529751,1183 4.026591,1209 1.853232,1458 2.181026}
+{13 1,600 1.13669,1068 3.192061,1474 2.958836}
+{9 1,60 1,174 1,682 1.602997,790 1.725184,979 2.784638,988 1.523694,1036 0.969274,1520 0.77268}
+{9 1,32 1,93 1,201 1,286 1,565 4.026591,917 1.027802,1052 3.827185}
+{9 1}
+{9 1,1109 3.265091}
+{13 1,1437 3.827185}
+{9 1,174 1,176 1,193 1,235 1,255 1,268 1,313 1,338 1,389 1,437 1,563 0.668856,600 1.13669,622 1.589133,657 2.020184,682 1.602997,693 1.973606,790 1.725184,1036 0.969274,1205 0.862826,1209 1.853232,1229 1.549133,1364 2.911014,1407 2.214039,1500 1.505208,1520 0.77268}
+{15 1,508 1,1523 2.090487,1625 2.478383}
+{9 1,563 0.668856,657 1.274594,693 1.973606}
+{15 1,1437 3.827185,1523 2.090487}
+{15 1,502 1,532 1.823732,533 2.711608,1523 2.090487}
+{9 1,135 1,136 1,152 1,288 1,500 1,1205 0.862826}
+{15 1,532 3.647464,533 2.711608,813 5.620496,1482 3.889592,1625 2.478383,1628 3.192061}
+{9 1,228 1,246 1,274 1,380 1,721 3.827185,790 1.725184,988 1.523694,1036 0.969274,1084 3.439289,1086 3.125997,1120 2.911014,1236 3.010204,1266 2.677789,1499 3.125997,1500 1.505208,1604 2.023138}
+{9 1,60 1,80 1,179 1,228 1,426 1,529 2.104779,532 1.823732,657 1.274594,721 3.827185,988 2.414997,1036 1.536263,1188 1.884044,1520 0.77268}
+{9 1,30 1,60 1,80 1,179 1,202 1,258 1,351 1,426 1,444 1,563 0.668856,600 1.13669,715 3.439289,790 1.725184,988 3.047387,1036 1.536263,1040 1.716883,1086 3.125997,1350 2.585232,1520 0.77268}
+{9 1,215 1,917 1.027802,1040 1.716883,1267 3.827185,1373 2.076483,1500 1.505208,1520 0.77268}
+{9 1,31 1,54 1,60 1,234 1,255 1,313 1,330 1,347 1,440 1,563 1.060112,657 1.274594,830 3.546138,917 1.027802,988 2.414997,1188 1.884044,1199 3.359125,1422 3.065685,1482 2.454059,1500 1.505208,1520 1.224669}
+{13 1,563 0.668856,627 2.385826,1205 0.862826}
+{9 1,257 1,917 1.027802,999 1.248919}
+{4 1,76 1,563 1.060112,657 1.274594,682 1.602997,693 1.973606,756 2.747162,999 1.97949,1205 0.862826,1370 3.346732,1489 3.125997,1604 2.023138}
+{4 1,152 1,627 2.385826,682 1.602997,1205 0.862826,1237 2.304185,1370 3.346732,1489 3.125997}
+{11 1,22 1,127 1,131 1,159 1,162 1,170 1,269 1,306 1,314 1,359 1,381 1,409 1,484 1,515 1,525 1,563 0.668856,682 1.602997,1036 0.969274,1171 3.439289,1205 0.862826,1489 3.125997,1564 2.430561,1592 3.010204}
+{11 1,1216 3.346732}
+{15 1}
+{11 1,15 1,529 2.104779,746 3.827185,1216 3.346732,1611 1.653826}
+{11 1,15 1,1010 3.672514,1216 3.346732,1489 3.125997}
+{11 1,15 1,529 2.104779,746 3.827185,1216 3.346732,1611 1.653826}
+{11 1,15 1,310 1,490 1,534 3.265091,1216 3.346732}
+{11 1,15 1,944 3.546138,1216 3.346732,1611 1.653826}
+{11 1,15 1,310 1,490 1,881 3.672514,1216 3.346732,1489 3.125997}
+{11 1,15 1,303 1,318 1,400 1,944 5.620496,1216 3.346732,1611 1.653826}
+{11 1,15 1,310 1,490 1,881 3.672514,1216 3.346732,1489 3.125997}
+{15 1,944 7.092276}
+{15 1,22 1,39 1,42 1,46 1,105 1,111 1,159 1,409 1,473 1,506 1,515 1,521 1,543 2.343804,999 1.248919,1370 3.346732,1489 3.125997,1500 1.505208}
+{15 1,401 1,463 1,534 3.265091,836 2.197336,944 5.620496,1504 2.614732,1520 1.224669}
+{15 1,60 1,152 1,588 3.125997,1205 0.862826,1489 3.125997}
+{13 1,18 1,316 1,350 1,563 0.668856,1205 0.862826,1237 2.304185,1489 3.125997}
+{9 1,60 1,152 1,316 1,399 1,563 1.337713,599 1.575542,657 1.274594,693 1.973606,1082 2.062757,1205 0.862826,1229 1.549133,1237 2.304185,1327 4.026591}
+{13 1,316 1,917 1.027802,1205 0.862826,1308 2.911014,1474 2.958836,1495 3.439289}
+{13 1,600 1.13669,1205 0.862826,1216 3.346732,1338 3.346732,1495 3.439289}
+{6 1,13 1,599 1.575542,621 3.439289,917 1.027802,980 2.747162,1147 3.010204,1402 3.827185}
+{6 1,1232 3.010204}
+{2 1,18 1,25 1,600 1.13669,1036 0.969274,1172 3.439289,1205 0.862826,1388 2.866279,1551 3.672514}
+{2 1,6 1,37 1,146 1,149 1,283 1,495 1,850 3.827185,1036 1.536263,1068 3.192061,1167 3.125997,1209 1.853232,1246 3.546138,1439 3.546138,1630 2.503591}
+{0 1,2 1,6 1,37 1,149 1,283 1,495 1,1036 0.969274,1167 3.125997,1630 2.503591}
+{0 1,2 1,6 1,556 4.026591,557 4.026591,999 1.97949,1480 3.346732}
+{0 1,2 1,5 1,6 1,49 1,124 1,563 0.668856,999 1.248919,1119 2.824257,1229 1.549133,1561 2.585232,1592 3.010204}
