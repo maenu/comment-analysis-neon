@@ -1,10 +1,13 @@
 package ch.unibe.scg.comment.analysis.neon.cli;
 
+import ch.unibe.scg.comment.analysis.neon.cli.task.BuildClassifiers;
 import ch.unibe.scg.comment.analysis.neon.cli.task.MapSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.Partition;
 import ch.unibe.scg.comment.analysis.neon.cli.task.PrepareDatasets;
+import ch.unibe.scg.comment.analysis.neon.cli.task.PrepareExperiments;
 import ch.unibe.scg.comment.analysis.neon.cli.task.PrepareExtractors;
 import ch.unibe.scg.comment.analysis.neon.cli.task.Preprocess;
+import ch.unibe.scg.comment.analysis.neon.cli.task.RunExperiments;
 import ch.unibe.scg.comment.analysis.neon.cli.task.SplitSentences;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
@@ -15,6 +18,8 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.nio.file.Paths;
 
 public class Main {
 
@@ -56,6 +61,33 @@ public class Main {
 						(new PrepareExtractors(database, data, 1000)).run();
 					} else if ("prepare-datasets".equals(task)) {
 						(new PrepareDatasets(database, data, 0)).run();
+					} else if ("prepare-experiments".equals(task)) {
+						(new PrepareExperiments(
+								database,
+								data,
+								Paths.get(System.getProperty("user.dir"))
+										.resolve("data")
+										.resolve(data)
+										.resolve("experiment")
+						)).run();
+					} else if ("run-experiments".equals(task)) {
+						(new RunExperiments(
+								data,
+								Paths.get(System.getProperty("user.dir"))
+										.resolve("data")
+										.resolve(data)
+										.resolve("experiment"),
+								1
+						)).run();
+					} else if ("build-classifiers".equals(task)) {
+						(new BuildClassifiers(
+								data,
+								Paths.get(System.getProperty("user.dir"))
+										.resolve("data")
+										.resolve(data)
+										.resolve("experiment"),
+								1
+						)).run();
 					} else {
 						throw new IllegalArgumentException("task option is unknown");
 					}

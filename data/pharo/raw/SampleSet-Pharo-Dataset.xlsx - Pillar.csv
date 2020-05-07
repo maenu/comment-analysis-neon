@@ -1,0 +1,276 @@
+Evaluator,Reviewer ,Reviewer 2,class,Comment,Comment size,Intent(who I am),Responsibilities(What I do and What I know),Collaborators,Key messages,Key implementation points,Instance variables,Reference to other resources (other class(es)/documentation),Subclasses Explanation,Class references,Example,To do comments,Coding guidlines,Warnings/ Note,Discourse,Links,Extension,Recommendations,Observations,Precondition,Dependencies,License/ copyright information,Other
+E1,E2 (agree),,PRPreformatted,I am preformatted text or source code. My children are instances of *PRText*.,1,I am preformatted text or source code.,,,,,,,My children are instances of *PRText*.,,,,,,,,,,,,,,
+E1,E2 (agree),,PRHeadingLevelOffsetTransformer,"Convert from the level of a Pillar heading to the level of heading in the exported document. For example, a ==headingLevelOffset== of 3 converts a 1st level Pillar heading to an ==<h4>== in HTML.",1,,Convert from the level of a Pillar heading to the level of heading in the exported document,,,,,,,," For example, a ==headingLevelOffset== of 3 converts a 1st level Pillar heading to an ==<h4>== in HTML.",,,,,,,,,,,,
+E1,,E3(disagree),PRUnorderedList,I am an unordered list. I am typically used for unnumbered lists,1,I am an unordered list,, I am typically used for unnumbered lists,,,,,,,,,,,,,,,,,,,
+E2,,E3(agree),PRSyntaxError,An error about syntax,1,An error about syntax,,,,,,,,,,,,,,,,,,,,,
+E2,,E1 (agree),PRParseWarning,I am a warning for the parse of a Pillar file.,1,I am a warning for the parse of a Pillar file.,,,,,,,,,,,,,,,,,,,,,
+E2,,E1 (disagree),ChrysalPillarishConfiguration,I'm a pillar specific class to manage code not generated for the configuration class. Pillar code should not use me but my subclass.,1,I'm a pillar specific class to manage code not generated for the configuration class. ,I'm a pillar specific class to manage code not generated for the configuration class. ,,,,,, Pillar code should not use me but my subclass.,,,,,,,,,Pillar code should not use me but my subclass.,,,,,
+E3,E2 (agree),,PRObject,"I am a superclass of most objects within Pier. I hold a dictionary of properties, so that users can easily annotate me with new values. I am visitable.",1,I am a superclass of most objects within Pier.," I hold a dictionary of properties, so that users can easily annotate me with new values. I am visitable.",,,,,,,,,,,,,,,,,,,,
+E3,E2 (agree),,PRPillarParserMain,"I'm responsible for starting the parsing process of a Pillar document. If possible, I will use a compiled version of PRPillarParser. I will also use the STON reader to read potentital metadata at the begining of the stream.",1,,I'm responsible for starting the parsing process of a Pillar document,"If possible, I will use a compiled version of PRPillarParser. I will also use the STON reader to read potentital metadata at the begining of the stream.",,,,,,"PRPillarParser
+STON",,,,,,,,,,,,,
+E3,,E1 (agree),PRHTMLScriptLanguage,Hypertext markup language,1,Hypertext markup language,,,,,,,,,,,,,,,,,,,,,
+E1,E2 (agree),,PRBashScriptLanguage,Bash scripting language,1,Bash scripting language,,,,,,,,,,,,,,,,,,,,,
+E1,,E3(agree),PRWatcher,"A class to watch served sites.
+Each 5 seconds, the website is regenerated",2,A class to watch served sites.,"A class to watch served sites.
+Each 5 seconds, the website is regenerated",,,,,,,,,,,,,,,,,,,,
+E2,,E1 (disagree),PRList,"I am an abstract list. I represent the abstraction over ordered, unordered HTML or latex list. My children are instances of *PRListItem*. If you need a container of elements better use of PRDocumentGroup.",2,"I am an abstract list. I represent the abstraction over ordered, unordered HTML or latex list. ",,,,,,,My children are instances of *PRListItem*. If you need a container of elements better use of PRDocumentGroup.,,,,,,,,, If you need a container of elements better use of PRDocumentGroup.,,,,,
+E2,,E3(agree),PRMarkdownWriter,"I am a writer for CommonMark
+http://spec.commonmark.org/0.28/",2,"""I am a writer for CommonMark",,,,,,"
+http://spec.commonmark.org/0.28/""",,,,,,,,,,,,,,,
+E3,E2 (agree),,PRPillarParser,I use the PRPillarGrammar and I build a PRDocument.,2,,I use the PRPillarGrammar and I build a PRDocument.,I use the PRPillarGrammar and I build a PRDocument.,,,,,,"PRPillarGrammar
+PRDocument.",,,,,,,,,,,,,
+E3,,E1 (agree),PRPillarParserOld,"I am a parser for a Pillar syntax. 
+I use the PRPillarGrammar and I build a PRDocument.",2,I am a parser for a Pillar syntax.,I use the PRPillarGrammar and I build a PRDocument.,I use the PRPillarGrammar and I build a PRDocument.,,,,,,"PRPillarGrammar
+PRDocument.",,,,,,,,,,,,,
+E1,E2 (agree),,PRParagraph,"I'm a paragraph of text containing text, line breaks or annotations.
+I'm close to a latex or HTML paragraph. I do not contain complex structures such as lists, codeblocks. 
+                ",3,"I'm a paragraph of text containing text, line breaks or annotations.","I'm close to a latex or HTML paragraph. I do not contain complex structures such as lists, codeblocks. ",,,,,,,,,,,,,,,,,,,,
+E2,,E3(agree),PRParameter,"I represent a key and value pair. 
+My key is instance of PRParameterKey and its associated vaue is an instance of PRParameterValue.
+",3,"""I represent a key and value pair. 
+",,"My key is instance of PRParameterKey and its associated vaue is an instance of PRParameterValue.
+""",,,,,," PRParameterKey
+ PRParameterValue",,,,,,,,,,,,,
+E3,E2 (agree),,PRShowClassTransformer,"I am a transformer for the showClass annotation.
+
+I know how to  visit a showClass annotation and the way to transform it.
+
+I create a PRCodeblock with the class definition within it.",5,I am a transformer for the showClass annotation.,I know how to visit a showClass annotation and the way to transform it.,"
+I create a PRCodeblock with the class definition within it.",,,,,,PRCodeblock,,,,,,,,,,,,,
+E1,,E3(agree),PRFootnote,"I am a footnote, you can create me with :
+
+noted: aString
+
+It create a footnote with note specified in parameter.",5,I am a footnote,"
+It create a footnote with note specified in parameter.",,,,,,,,noted: aString,,,,,,,,,,,,
+E2,,E1 (disagree),PRHTMLCanvas,"An HTML canvas that facilitates writing HTML to a stream. The main method is #tag that allow you to write something like this:
+
+canvas tag
+        name: 'a';
+        parameterAt: 'href' put: href;
+        with: [ ""some code that generates the HTML inside the link"" ]",6,An HTML canvas that facilitates writing HTML to a stream. ,An HTML canvas that facilitates writing HTML to a stream. The main method is #tag that allow you to write something like this:,,The main method is #tag that allow you to write something like this:,,"
+
+canvas tag
+        name: 'a';
+        parameterAt: 'href' put: href;
+        with: [ ""some code that generates the HTML inside the link"" ]",,,,,,,,,,,,,,,,
+E3,E2 (agree),,PRLaTeXEnvironment,"A LaTeX environment
+
+To emit
+
+\begin{XXX}
+kjlkjkl
+\end{XXX}",7,A LaTeX environment,To emit,,,,,,,,,,,,,,,,,,,,
+E1,,E3(agree),PRInputFileAnnotation,"I include a reference to a pillar file. With me we can add a transformation to remplace an annotation to a pillar file by his tree.
+
+My tag is: 'inputFile''.
+
+I can have in parameter:
+- a path to a file with the key ""value="" (required, you can write it without the key)
+
+Examples: 
+
+${inputFile:myFile.pillar}$
+
+${inputFile:value=directory/myFile.pillar}$",12,,"I include a reference to a pillar file.
+With me we can add a transformation to remplace an annotation to a pillar file by his tree.
+",,"My tag is: 'inputFile''.
+
+I can have in parameter:
+- a path to a file with the key ""value="" (required, you can write it without the key)",,,,,,"Examples: 
+
+${inputFile:myFile.pillar}$
+
+${inputFile:value=directory/myFile.pillar}$",,,,,,,,,,,,
+E2,,E1 (disagree),PRDocumentListAnnotation,"I am class representing a DocumentListAnnotation. 
+I allow users to get abstracts of files located in a directory and specify a link to access these files.
+I can choose the number of files to take and the way to sort them.
+We can also choose they way abstracts will be represented by specifying templates. We ahave the possibility of giving multiple templates.
+Then abstracts will alternately change templates if you specified mutliple directories.
+
+When no template file is specified, abstracts are generated as DocumentGroup containing different files elements.
+With templates the annotation is remplaced by a Raw document in Html.
+For templates values, you can not specify directories, only .mustache files. You have to specify complete path starting from the project directory.
+Also for the path, the complete path from the project directory.
+
+${docList:path=blogs|limit=3|sort=date|templates=#('templates/docArticle.mustache' 'templates/template.mustache')}$
+
+${docList:path=wrongDirectory|limit=3|sort=date|templates=#('templates/docArticle.mustache' 'templates/template.mustache')}$ should raise an Error",14,"""I am class representing a DocumentListAnnotation. ","
+I allow users to get abstracts of files located in a directory and specify a link to access these files.
+I can choose the number of files to take and the way to sort them.
+We can also choose they way abstracts will be represented by specifying templates. We ahave the possibility of giving multiple templates.
+Then abstracts will alternately change templates if you specified mutliple directories.
+
+When no template file is specified, abstracts are generated as DocumentGroup containing different files elements.
+With templates the annotation is remplaced by a Raw document in Html.
+For templates values, you can not specify directories, only .mustache files. You have to specify complete path starting from the project directory.",,,,,,,,"Also for the path, the complete path from the project directory.
+
+${docList:path=blogs|limit=3|sort=date|templates=#('templates/docArticle.mustache' 'templates/template.mustache')}$
+
+${docList:path=wrongDirectory|limit=3|sort=date|templates=#('templates/docArticle.mustache' 'templates/template.mustache')}$ should raise an Error""",,,"For templates values, you can not specify directories, only .mustache files. You have to specify complete path starting from the project directory.",,,,,,,,,
+E3,E2 (agree),,PRPhase,"I am an abstract class to describe a Phase of an export. 
+A Phase takes an input, transforms it and returns an output.
+
+A phase holds a configuration. This configuration is a  the configuration of the export.
+
+To create a new phase you have to define its prority as a class method then to define the action of the Phase with a method actionOn: anInput. This method will return an output. 
+You can also add some transformations to the output like: 
+
+transformerInputFileOn: aCollection
+        <pillarTransformer: 1> ""the parameter is the priority of the transformation""
+        aCollection
+                do: [ :each | 
+                        PRFileInclusion new
+                                configuration: self configuration;
+                                start: each ]",15,I am an abstract class to describe a Phase of an export.,"A Phase takes an input, transforms it and returns an output.
+
+A phase holds a configuration. This configuration is a  the configuration of the export.",,,,,,,,"
+To create a new phase you have to define its prority as a class method then to define the action of the Phase with a method actionOn: anInput. This method will return an output. 
+You can also add some transformations to the output like: 
+
+transformerInputFileOn: aCollection
+        <pillarTransformer: 1> ""the parameter is the priority of the transformation""
+        aCollection
+                do: [ :each | 
+                        PRFileInclusion new
+                                configuration: self configuration;
+                                start: each ]",,,,,,,,,,,,
+E1,,E3(agree),PRScreenshotAnnotation,"I am an annotation used to show a screenshot of a given class and method.
+
+I am used in a PRDocument to include a PRPicture and add a PNG file to the /figures chapter subfolder.
+
+My parameters are: 
+- package: the targetted package
+- class: the targetted class
+- method: the targetted method
+- caption: the caption that will appear under my figure in the final book
+- width: PRFigure width (as would be used in a more classic figure inclusion with +caption .>file|width=50)
+- label: PRFigure label (as would be used in a more classic figure inclusion with +caption .>file|label=aa)
+
+I am used as follows in a document:
+
+        ${screenshot:package=Kernel|class=Integer|method=+|caption='The Plus Method'|width=50|label=aa}$
+        
+Note:
+        Contrary to the loader or run annotations, there is a transformation going on here: a PRFigure is created in the end, so there is a need here to use a PRNodeTransformer subclass, PRScreenshotTransformer.",18,I am an annotation,"used to show a screenshot of a given class and method.
+
+I am used in a PRDocument to include a PRPicture and add a PNG file to the /figures chapter subfolder.","
+I am used in a PRDocument to include a PRPicture and add a PNG file to the /figures chapter subfolder.","My parameters are: 
+- package: the targetted package
+- class: the targetted class
+- method: the targetted method
+- caption: the caption that will appear under my figure in the final book
+- width: PRFigure width (as would be used in a more classic figure inclusion with +caption .>file|width=50)
+- label: PRFigure label (as would be used in a more classic figure inclusion with +caption .>file|label=aa)",,,,,"
+PRDocument, PRPicture ","I am used as follows in a document:
+
+        ${screenshot:package=Kernel|class=Integer|method=+|caption='The Plus Method'|width=50|label=aa}$",,,"Note:
+        Contrary to the loader or run annotations, there is a transformation going on here: a PRFigure is created in the end, so there is a need here to use a PRNodeTransformer subclass, PRScreenshotTransformer.",,,,,,,,,
+E2,,E1 (agree),PRAbstractCommand,"I'm an object managing configuration. I'm usually invoked from a command line but not only.
+
+My main entry point is 
+
+	createConfiguration: confFilename baseDirectory: baseDirectory argDictionary: arguments
+
+When you type on the command line
+	
+	./pharo-ui Pillar.image pillar export --to=""latex"" Chapters/Chapter1/chapter1.pillar
+	
+You can obtain the same doing; 
+
+	PRExportBuilder new 	
+		createConfiguration: 'pillar.conf' 
+		baseDirectory:  FileSystem workingDirectory   
+		argDictionary: {
+				'inputFile'-> (FileSystem workingDirectory / 'Chapters/Chapter1/chapter1.pillar') .
+				'defaultExporters' -> {'latex'}
+				} asDictionary;
+		export
+		",21,"""I'm an object managing configuration. ","I'm usually invoked from a command line but not only.
+",,,,,,,,"
+My main entry point is 
+
+	createConfiguration: confFilename baseDirectory: baseDirectory argDictionary: arguments
+
+When you type on the command line
+	
+	./pharo-ui Pillar.image pillar export --to=""""latex"""" Chapters/Chapter1/chapter1.pillar
+	
+You can obtain the same doing; 
+
+	PRExportBuilder new 	
+		createConfiguration: 'pillar.conf' 
+		baseDirectory:  FileSystem workingDirectory   
+		argDictionary: {
+				'inputFile'-> (FileSystem workingDirectory / 'Chapters/Chapter1/chapter1.pillar') .
+				'defaultExporters' -> {'latex'}
+				} asDictionary;
+		export
+		""",,,,,,,,,,,,
+E3,E2 (agree),,PRBookTesterVisitor,"I am a visitor specialized in visiting books and testing their code. Therefore, I only redefine visitCodeBlock: and specify it with the different parameters the codelock may have.
+
+I gather all results as PRBookTestResult s in allTestsResults.
+
+visitCodeblock: uses executeAndReport: creating a PRBookTestResult with the result of the evaluation of the codeblock.
+
+checkAndReportFileNamed: starts the visit in a given file.
+
+Every codeblock can be specified with the following parameters implying a specialized visit:
+- testcase: The codeblock is an example defined as follows, 
+                                [[[testcase=true
+                                (stimuli) >>> result
+                                ]]]
+        
+- methodDefinition: The codeblock is a method definition defined as follows,
+                                [[[methodDefinition=true
+                                ClassName >> methodName
+                                        method body
+                                ]]]
+        
+- classDefinition 
+                                [[[classDefinition=true
+                                Object subclass: #YourClass
+                                        instanceVariableNames: 'iv1 iv2'
+                                        classVariableNames: ''
+                                        package: 'YourPackage'
+                                ]]]
+        
+- evaluation
+                                [[[testcase=true
+                                (stimuli) >>> result
+                                ]]]
+
+
+",35,I am a visitor specialized in visiting books and testing their code.,"Therefore, I only redefine visitCodeBlock: and specify it with the different parameters the codelock may have.
+
+I gather all results as PRBookTestResult s in allTestsResults.
+",I am a visitor specialized in visiting books and testing their code.,"
+visitCodeblock: uses executeAndReport: creating a PRBookTestResult with the result of the evaluation of the codeblock.
+
+checkAndReportFileNamed: starts the visit in a given file.",,,,,PRBookTestResult,,,,,,,"
+Every codeblock can be specified with the following parameters implying a specialized visit:
+- testcase: The codeblock is an example defined as follows, 
+                                [[[testcase=true
+                                (stimuli) >>> result
+                                ]]]
+        
+- methodDefinition: The codeblock is a method definition defined as follows,
+                                [[[methodDefinition=true
+                                ClassName >> methodName
+                                        method body
+                                ]]]
+        
+- classDefinition 
+                                [[[classDefinition=true
+                                Object subclass: #YourClass
+                                        instanceVariableNames: 'iv1 iv2'
+                                        classVariableNames: ''
+                                        package: 'YourPackage'
+                                ]]]
+        
+- evaluation
+                                [[[testcase=true
+                                (stimuli) >>> result
+                                ]]]
+
+",,,,,,

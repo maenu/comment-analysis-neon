@@ -1,0 +1,499 @@
+Evaluator,Reviewer,Reviewer 2,class,Comment,Comment size,Intent,Responsibilities,Collaborators,Key messages,Key implementation points,Instance variables,ReferenceToOtherResources,Subclasses Explanation,Class references,Example,Todo comments,Coding guidlines,Warnings,Discourse,Links,Extensions,Recommendations,Observations,Preconditions,Dependencies,License/copyright ,Other
+E1,E2 (agree),,WAEncoder,I encode everything that is written to myself using #nextPut: and #nextPutAll: onto the wrapped stream.,1,,I encode everything that is written to myself using #nextPut: and #nextPutAll: onto the wrapped stream.,,I encode everything that is written to myself using #nextPut: and #nextPutAll: onto the wrapped stream.,,,,,,,,,,,,,,,,,,
+E1,E2 (agree),,WAImageStatus,A WAImageStatus displays information about the current Smalltalk image.,1,,A WAImageStatus displays information about the current Smalltalk image.,,,,,,,,,,,,,,,,,,,,
+E1,E2 (disagree),E3 (agree with E2),WAPainterVisitor,An implementation of the Visitor pattern for Painter subclasses.,1,An implementation of the Visitor pattern for Painter subclasses.,An implementation of the Visitor pattern for Painter subclasses.,An implementation of the Visitor pattern for Painter subclasses.,,,,,An implementation of the Visitor pattern for Painter subclasses.,,,,,,,,,,,,,,
+E1,,E3 (agree),WACopyHandlerPlugin,I make a copy of an application.,1,,I make a copy of an application.,,,,,,,,,,,,,,,,,,,,
+E1,,E3 (agree),WAInvisibleSessionTrackingStrategy,I am the abstract base class for classes that that use some request attribute that is present on every request for tracking sessions. For document handlers query fields are used.,1,I am the abstract base class, for classes that that use some request attribute that is present on every request for tracking sessions.,For document handlers query fields are used.,,,,,,,,,,,,,,,,,,,
+E1,,E3 (agree),WAFormCharEncodingFromHandlerTest,I test that the encoding from the handler is taken if a handler is present but a codec is missing.,1,,I test that the encoding from the handler is taken if a handler is present but a codec is missing.,,,,,,,,,,,,,,,,,,,,
+E2,,E1 (agree),WAPharoUrlEncoder,I am a Pharo specific URL encoder.,1,I am a Pharo specific URL encoder.,,,,,,,,,,,URL,,,,,,,,,,
+E2,,E1 (agree),WAPharoXmlEncoder,I am a Pharo specific XML encoder.,1,I am a Pharo specific XML encoder.,,,,,,,,,,,XML,,,,,,,,,,
+E2,,E1 (agree),WADynamicVariable,I exist for legacy purposes. You should subclass GRDynamicVariable.,1,,I exist for legacy purposes. ,,,,,,,,,,,,,,,You should subclass GRDynamicVariable.,,,,,
+E2,,E3 (agree),WACancelButtonTag,Creates a Cancel submit button.,1,,Creates a Cancel submit button.,,,,,,,,,,,,,,,,,,,,
+E2,,E3 (agree),WADevelopment,A WADevelopment is a collection of convenience methods for dealing with Seaside development in Squeak. This code is not supposed to be ported.,1,A WADevelopment is a collection of convenience methods for dealing with Seaside development in Squeak. ,A WADevelopment is a collection of convenience methods for dealing with Seaside development in Squeak. ,,,,,,,,,,,This code is not supposed to be ported.,,,,,,,,,
+E2,,E3 (agree),WAPharoEncoder,I am  the common superclass for Pharo encoders.,1,I am  the common superclass for Pharo encoders.,I am  the common superclass for Pharo encoders.,,,,,,,,,,,,,,,,,,,,
+E3,E2 (agree),,JQLoad,Load HTML from a remote file and inject it into the DOM.,1,,Load HTML from a remote file and inject it into the DOM.,,,,,,,,,,,,,,,,,,,,
+E3,E2 (agree),,WAUrlAttribute,WAUrlAttribute represents a URL attribute. It converts between text entered on the configuration page and WAUrl instances.,1,WAUrlAttribute represents a URL attribute.,It converts between text entered on the configuration page and WAUrl instances.,,,,,,,,,,,,,,,,,,,,
+E3,E2 (agree),,WARequestContextNotFound,This exception is raised when trying to obtain the current request context when none is available.,1,,,,,,,,,,,,,,,,,,,This exception is raised when trying to obtain the current request context when none is available.,,,
+E3,,E1 (agree),WARedirectingRegistry,I revert to the old < 3.3.0 behavior which is easier for tests.,1,,I revert to the old < 3.3.0 behavior which is easier for tests.,,,,,,,,,,,,,,,,,,,,
+E3,,E1 (disagree),WACanvasWidget,A common superclass for all widgets that want to use WAHtmlCanvas as their renderer.,1,A common superclass for all widgets that want to use WAHtmlCanvas as their renderer.,,,,,,,A common superclass for all widgets that want to use WAHtmlCanvas as their renderer.,WAHtmlCanvas,,,,,,,,,,,,,
+E3,,E1 (agree),WAMemoryToolPlugin,I display the memory usage tool.,1,,I display the memory usage tool.,,,,,,,,,,,,,,,,,,,,
+E1,E2 (agree),,WAObjectTag,"Defines an embedded object. Use this element to add multimedia to your XHTML page.
+This element allows you to specify the data and parameters for objects inserted into HTML documents, and the code that can be used to display/manipulate that data.",2,Defines an embedded object,"Use this element to add multimedia to your XHTML page.This element allows you to specify the data and parameters for objects inserted into HTML documents, and the code that can be used to display/manipulate that data.",,,,,,,,,,,,,,,Use this element to add multimedia to your XHTML page.,,,,,
+E1,E2 (agree),,WARubyFunctionalTest,"Examples taken directly from spec:
+http://www.w3.org/TR/2001/REC-ruby-20010531/",2,,,,,,,,,,,,"Examples taken directly from spec:
+http://www.w3.org/TR/2001/REC-ruby-20010531/",,,"Examples taken directly from spec:
+http://www.w3.org/TR/2001/REC-ruby-20010531/",,,,,,,
+E1,E2 (agree),,WAPlugin,"I am an abstract root class for all plugins. Plugins are an easy way to add or remove additional tools without changing the codebase. To add a new plugin make sure you choose the right superclass so that the tool can detect your code.
+
+The appearance of all plugins, such as icons, has to be configured using CSS.",3,I am an abstract root class for all plugins,"Plugins are an easy way to add or remove additional tools without changing the codebase. To add a new plugin make sure you choose the right superclass so that the tool can detect your code.
+
+The appearance of all plugins, such as icons, has to be configured using CSS.",,,,,,,,,,,,,,,,,"
+The appearance of all plugins, such as icons, has to be configured using CSS.",,,
+E1,,E3 (agree),WAOptionGroupTag,"The OPTGROUP element allows authors to group choices logically. This is particularly helpful when the user must choose from a long list of options; groups of related choices are easier to grasp and remember than a single long list of options.
+
+It has crappy browser support and noone as ever used it. See WAInputTest >> #renderOptionGroupOn: for examples.",3,,The OPTGROUP element allows authors to group choices logically. This is particularly helpful when the user must choose from a long list of options; groups of related choices are easier to grasp and remember than a single long list of options.,,,,,See WAInputTest >> #renderOptionGroupOn: for examples.,, WAInputTest >> #renderOptionGroupOn: for examples., WAInputTest >> #renderOptionGroupOn: for examples.,,,It has crappy browser support and noone as ever used it. ,It has crappy browser support and noone as ever used it. ,,,, This is particularly helpful when the user must choose from a long list of options; groups of related choices are easier to grasp and remember than a single long list of options.,,,,
+E1,,E3 (agree),WARequestContext,"WARequestContext encapsulates all the knowledge that should be available while processing a single request. It does not matter if this is a request to a static file, an AJAX request, a long Comet request or a normal Seaside requestion.
+
+The request context is valid only during the request that caused it. It should not be stored. Neither within instance variables, nor within the execution stack so that it might be captured by a continuation. In both cases this might lead to memory leaks.",3,,"WARequestContext encapsulates all the knowledge that should be available while processing a single request. It does not matter if this is a request to a static file, an AJAX request, a long Comet request or a normal Seaside requestion.",,,The request context is valid only during the request that caused it. ,,,,,,,,"It should not be stored. Neither within instance variables, nor within the execution stack so that it might be captured by a continuation. In both cases this might lead to memory leaks.",,,,"It should not be stored. Neither within instance variables, nor within the execution stack so that it might be captured by a continuation. In both cases this might lead to memory leaks.",,,,,
+E1,,E3 (agree),WAHtmlHaltAndErrorHandler,"This exception handler also catches halts, in order to prevent Debugger windows from popping up and blocking server processes in deployed images.
+
+Subclass this to provide a customized response or more advanced handling (e.g. emailing of errors).",3,,"This exception handler also catches halts, in order to prevent Debugger windows from popping up and blocking server processes in deployed images.","This exception handler also catches halts, in order to prevent Debugger windows from popping up and blocking server processes in deployed images.",,,,,Subclass this to provide a customized response or more advanced handling (e.g. emailing of errors).,,,,,,,,,,,,,,
+E2,,E1 (disagree),WAMemoryInput,"A WAMemoryInput is a dialog that allows the user to enter an amount of memory.
+
+This is a Seaside internal class. Do not rely on it being present. If you need it, copy and paste it.",3,"""A WAMemoryInput is a dialog that allows the user to enter an amount of memory. This is a Seaside internal class. ","""A WAMemoryInput is a dialog that allows the user to enter an amount of memory.
+",,,,,,,,,,,"Do not rely on it being present. If you need it, copy and paste it.""",,,,"This is a Seaside internal class. Do not rely on it being present. If you need it, copy and paste it.",,,,,
+E2,,E1 (disagree),WAImageButtonTag,"Creates a graphical submit button. The value of the src attribute specifies the URI of the image that will decorate the button. For accessibility reasons, authors should provide alternate text for the image via the alt attribute. 
+
+When a pointing device is used to click on the image, the form is submitted and the click coordinates passed to the server. The x value is measured in pixels from the left of the image, and the y value in pixels from the top of the image. The submitted data includes name.x=x-value and name.y=y-value where ""name"" is the value of the name attribute, and x-value and y-value are the x and y coordinate values, respectively.",3,,"""Creates a graphical submit button. The value of the src attribute specifies the URI of the image that will decorate the button. ",,,"For accessibility reasons, authors should provide alternate text for the image via the alt attribute. 
+
+When a pointing device is used to click on the image, the form is submitted and the click coordinates passed to the server. The x value is measured in pixels from the left of the image, and the y value in pixels from the top of the image. The submitted data includes name.x=x-value and name.y=y-value where """"name"""" is the value of the name attribute, and x-value and y-value are the x and y coordinate values, respectively.""",,,,,,,src attribute specifies the URI," For accessibility reasons, authors should provide alternate text for the image via the alt attribute. ",,,,,,,,,
+E2,,E1 (disagree),WAProtectionFilter,"The protection filter ensures that the wrapped request handler only accepts requests from the same IP. Do add this filter to a WASession for example to avoid session hijacking, do not add it to static request handlers such as WAApplication or WADispatcher as this might restrict access to the handler if your IP changes.
+
+Note that checking for IP addresses is not bullet proof and should never be used as the sole security measure for a web application as IP addresses can be easily spoofed.",3,,"""The protection filter ensures that the wrapped request handler only accepts requests from the same IP. Do add this filter to a WASession for example to avoid session hijacking, do not add it to static request handlers such as WAApplication or WADispatcher as this might restrict access to the handler if your IP changes.",,,,,,,,,,,"
+Note that checking for IP addresses is not bullet proof and should never be used as the sole security measure for a web application as IP addresses can be easily spoofed.""",,,," Do add this filter to a WASession for example to avoid session hijacking, do not add it to static request handlers such as WAApplication or WADispatcher as this might restrict access to the handler if your IP changes.",,,,,
+E2,,E3 (agree),WAVideoTag,"Supported only on experimental Opera
+http://people.opera.com/howcome/2007/video/
+
+A video element represents a video or movie, with an alternate representation given by its contents.
+
+http://www.whatwg.org/specs/web-apps/current-work/#video
+http://lists.whatwg.org/pipermail/whatwg-whatwg.org/attachments/20070228/6a0cdddc/attachment.txt",7,,,,,,,"""Supported only on experimental Opera
+http://people.opera.com/howcome/2007/video/
+
+A video element represents a video or movie, with an alternate representation given by its contents.
+
+http://www.whatwg.org/specs/web-apps/current-work/#video
+http://lists.whatwg.org/pipermail/whatwg-whatwg.org/attachments/20070228/6a0cdddc/attachment.txt""",,,,,,,,,,,,,,,
+E2,,E3 (disagree),WATagBrush,"This is the superclass for all XML element classes. Its main additions are
+- element name (#tag)
+- attributes (instance of WAHtmlAttributes)
+- common events (onXXX), this is a hack and would better be solved with traits",4,"""This is the superclass for all XML element classes.",,,," Its main additions are
+- element name (#tag)
+- attributes (instance of WAHtmlAttributes)
+- common events (onXXX), this is a hack and would better be solved with traits""",,,,,,,,,this is a hack and would better be solved with traits,,,,,,,,
+E2,,E3 (agree),WAInspector,"This is an abstract implementation of a web-based object inspector. Platforms should implement their own subclasses, specifying behaviour for all unimplemented methods.
+
+Note that #openNativeInspectorOn: on the class-side also needs to be implemented.
+
+Also subclasses probably want to implement #initialize and #unload on the class-side to call 'self select' and 'self unselect' respectively. This will ensure they are registered as the current implementation when they are loaded.",5,"""This is an abstract implementation of a web-based object inspector. ","Platforms should implement their own subclasses, specifying behaviour for all unimplemented methods.",,,,,,"
+Also subclasses probably want to implement #initialize and #unload on the class-side to call 'self select' and 'self unselect' respectively. This will ensure they are registered as the current implementation when they are loaded.""",,,,,"
+Note that #openNativeInspectorOn: on the class-side also needs to be implemented.",,,,,,,,,
+E3,E2 (agree),,WAFormTag,"The FORM element acts as a container for input elements and buttons.
+
+Evaluation order:
+The input fields callbacks will be evaluated in the order they
+appear in the XHTML. Buttons will always be evaluated last, no matter
+where they are positioned.",6,,The FORM element acts as a container for input elements and buttons.,The FORM element acts as a container for input elements and buttons.,,"Evaluation order:
+The input fields callbacks will be evaluated in the order they
+appear in the XHTML. Buttons will always be evaluated last, no matter
+where they are positioned.",,,,,,,,,,,,,,,,,
+E3,E2 (agree),,WAFormDecoration,"A WAFormDecoration places its component inside an html form tag. The buttons inst var must be set. The component that a WAFormDecoration decorates must implement the method ""defaultButton"", which returns the string/symbol of the default button (one selected by default) of the form. Don't place any decorators between WAFormDecoration and its component otherwise ""defaultButton"" method fails. For each string/symbol in the buttons inst var the decorated component must implement a method of the same name, which is called when the button is selected.
+
+Instance Variables
+        buttons:                <Collection of strings or symbols>
+
+buttons
+        - list of strings or symbols, each string/symbol is the label (first letter capitalized) for a button and the name of the callback method on component when button is pressed, ",,,A WAFormDecoration places its component inside an html form tag.,A WAFormDecoration places its component inside an html form tag.,"buttons
+        - list of strings or symbols, each string/symbol is the label (first letter capitalized) for a button and the name of the callback method on component when button is pressed, ",,"Instance Variables
+        buttons:                <Collection of strings or symbols>",,,,,,,"Don't place any decorators between WAFormDecoration and its component otherwise ""defaultButton"" method fails.",,,,,,"The buttons inst var must be set. The component that a WAFormDecoration decorates must implement the method ""defaultButton"", which returns the string/symbol of the default button (one selected by default) of the form. 
+
+ For each string/symbol in the buttons inst var the decorated component must implement a method of the same name, which is called when the button is selected.
+",,,
+E3,E2 (agree),,WAListAttribute,"WAListAttribute is an attribute that is restricted to a list of values. 
+
+Instance Variables:
+        options        <Block>        A block returning a list of possible values for the attribute",4,WAListAttribute is an attribute that is restricted to a list of values.,,,,,"
+Instance Variables:
+        options        <Block>        A block returning a list of possible values for the attribute",,,,,,,,,,,,,,,,
+E3,,E1 (agree),WAIframeTag,"The IFRAME element allows authors to insert a frame within a block of text. Inserting an inline frame within a section of text is much like inserting an object via the OBJECT element: they both allow you to insert an HTML document in the middle of another, they may both be aligned with surrounding text, etc. 
+
+The information to be inserted inline is designated by the src attribute of this element. The contents of the IFRAME element, on the other hand, should only be displayed by user agents that do not support frames or are configured not to display frames.
+
+Inline frames may not be resized.",5,,The IFRAME element allows authors to insert a frame within a block of text.,,,"The information to be inserted inline is designated by the src attribute of this element. The contents of the IFRAME element, on the other hand, should only be displayed by user agents that do not support frames or are configured not to display frames.",,,,," Inserting an inline frame within a section of text is much like inserting an object via the OBJECT element: they both allow you to insert an HTML document in the middle of another, they may both be aligned with surrounding text, etc. ",,,"
+Inline frames may not be resized.",,,,,,,,,
+E3,,E1 (disagree),WAErrorHandler,"WAErrorHandler catches Errors and Warnings and provides two methods for handling each type of exception:
+
+handleError:
+handleWarning:
+
+If either method is not implemented, the default implementation will call #handleDefault:, which can be used to provide common behaviour for both exception types.",6,,WAErrorHandler catches Errors and Warnings and provides two methods for handling each type of exception:,WAErrorHandler catches Errors and Warnings and provides two methods for handling each type of exception:,"handleError:
+handleWarning:","If either method is not implemented, the default implementation will call #handleDefault:, which can be used to provide common behaviour for both exception types.",,,,"Error
+Warning",,,,"If either method is not implemented, the default implementation will call #handleDefault:, which can be used to provide common behaviour for both exception types.",,,,,,,,,
+E3,,E1 (disagree),WABulkReapingCache,"I am a cache that reaps all elements at once instead of incrementally.
+
+I am intended to be used in GemStone/S instead of WAHashCache. A background process should send #reap to me.
+
+    Instance Variables
+        dictionary:                <Dictionary>",6,I am a cache that reaps all elements at once instead of incrementally.,,I am intended to be used in GemStone/S instead of WAHashCache. A background process should send #reap to me.,,,"   Instance Variables
+        dictionary:                <Dictionary>",,,WAHashCache,,,,,,,,,, A background process should send #reap to me.,,,
+E1,E2 (agree),,WACookie,"I represent a cookie, a piece of information that is stored on the client and read and writable by the server. I am basically a key/value pair of strings.
+You can never trust information in a cookie, the client is free to edit it.
+I model only a part of the full cookie specification.
+
+Browser support:
+http://www.mnot.net/blog/2006/10/27/cookie_fun
+
+Netscape spec
+http://cgi.netscape.com/newsref/std/cookie_spec.html
+
+Cookie spec
+http://tools.ietf.org/html/rfc2109
+
+Cookie 2 spec
+https://tools.ietf.org/html/rfc6265
+
+HttpOnly
+http://msdn2.microsoft.com/en-us/library/ms533046.aspx
+https://bugzilla.mozilla.org/show_bug.cgi?id=178993
+
+Compared to WARequestCookie I represent the information that is sent to the user agent.",21,"I represent a cookie, a piece of information that is stored on the client and read and writable by the server. I am basically a key/value pair of strings.
+I represent the information that is sent to the user agent.",I model only a part of the full cookie specification.,"
+Compared to WARequestCookie I represent the information that is sent to the user agent.",,"Browser support:
+http://www.mnot.net/blog/2006/10/27/cookie_fun
+
+Netscape spec
+http://cgi.netscape.com/newsref/std/cookie_spec.html
+
+Cookie spec
+http://tools.ietf.org/html/rfc2109
+
+Cookie 2 spec
+https://tools.ietf.org/html/rfc6265
+
+HttpOnly
+http://msdn2.microsoft.com/en-us/library/ms533046.aspx
+https://bugzilla.mozilla.org/show_bug.cgi?id=178993",,"Browser support:
+http://www.mnot.net/blog/2006/10/27/cookie_fun
+
+Netscape spec
+http://cgi.netscape.com/newsref/std/cookie_spec.html
+
+Cookie spec
+http://tools.ietf.org/html/rfc2109
+
+Cookie 2 spec
+https://tools.ietf.org/html/rfc6265
+
+HttpOnly
+http://msdn2.microsoft.com/en-us/library/ms533046.aspx
+https://bugzilla.mozilla.org/show_bug.cgi?id=178993",,,,,,"You can never trust information in a cookie, the client is free to edit it.",,"Browser support:
+http://www.mnot.net/blog/2006/10/27/cookie_fun
+
+Netscape spec
+http://cgi.netscape.com/newsref/std/cookie_spec.html
+
+Cookie spec
+http://tools.ietf.org/html/rfc2109
+
+Cookie 2 spec
+https://tools.ietf.org/html/rfc6265
+
+HttpOnly
+http://msdn2.microsoft.com/en-us/library/ms533046.aspx
+https://bugzilla.mozilla.org/show_bug.cgi?id=178993",,,,,,,
+E1,E2 (agree),,WALabelledFormDialog,"WALabelledFormDialog is an abstract class for generating html forms. Given a data model WALabelledFormDialog displays a label and input field for each instance variable of interest. User supplied data is placed in the data model.
+
+Subclasses need to implment the methods labelForSelector:, model, and rows. The ""model"" method just returns the object whose fields we wish to populate with date. The ""rows"" method returns a collections of symbols. One symbol for each row of data in the dialog. The symbol is used generate the accessor methods for the data in the model. The method ""labelForSelector:"" returns the labels for each row and each submit button in the form.
+
+A standard text input field is used for each row of data. To use other html widgets for input for = a datum implement the method renderXXXOn: where XXX is the symbol for the row. See ""renderNameOn:"" in example below.
+
+The default form has one button ""Ok"". Override the ""buttons"" method to change the text or number of submit buttons on the form. Override the ""defaultButton"" method to indicate which button is the default. For each button in the form the subclass needs a method with the same name as the button, which is called when the user clicks that button. See example below.
+
+LabelledFormDialogExample subclass of WALabelledFormDialog instance methods
+        initialize
+                super initialize.
+                contact := Contact new. ""contact is an inst var""
+                self addMessage: 'Please enter the followning information'.
+
+        model
+                ^ contact
+
+        ok
+                self answer: contact
+
+        cancel
+                self answer
+
+        rows
+                ^ #(name phoneNumber)
+
+        buttons
+                #(ok cancel)
+
+        labelForSelector: aSymbol
+                aSymbol == #name ifTrue: [^'Your Name'].
+                aSymbol == #phoneNumber ifTrue: [^'Phone Number'].
+                aSymbol == #ok ifTrue: [^'Ok'].
+                aSymbol == #cancel ifTrue: [^'Cancel'].
+                ^ super labelForSelector: aSymbol
+
+        renderNameOn: html 
+                ""Show how to specily special input instead of using simple text field.""
+                (html select)
+                                list: #('Roger' 'Pete');
+                                selected: 'Roger';
+                                callback: [:v | contact name: v]
+
+Contact Class used above has instance variables name, phoneNumber with standard getter and setter methods",44,WALabelledFormDialog is an abstract class for generating html forms.," Given a data model WALabelledFormDialog displays a label and input field for each instance variable of interest. User supplied data is placed in the data model.
+
+A standard text input field is used for each row of data. To use other html widgets for input for = a datum implement the method renderXXXOn: where XXX is the symbol for the row. See ""renderNameOn:"" in example below.",,"Contact Class used above has instance variables name, phoneNumber with standard getter and setter methods.
+ model
+                ^ contact
+
+        ok
+                self answer: contact
+
+        cancel
+                self answer
+
+        rows
+                ^ #(name phoneNumber)
+
+        buttons
+                #(ok cancel)
+         labelForSelector: aSymbol
+                aSymbol == #name ifTrue: [^'Your Name'].
+                aSymbol == #phoneNumber ifTrue: [^'Phone Number'].
+                aSymbol == #ok ifTrue: [^'Ok'].
+                aSymbol == #cancel ifTrue: [^'Cancel'].
+                ^ super labelForSelector: aSymbol","The default form has one button ""Ok"". Override the ""buttons"" method to change the text or number of submit buttons on the form. Override the ""defaultButton"" method to indicate which button is the default. For each button in the form the subclass needs a method with the same name as the button, which is called when the user clicks that button. See example below.","Contact Class used above has instance variables name, phoneNumber with standard getter and setter methods
+   contact := Contact new. ""contact is an inst var""",,"Subclasses need to implment the methods labelForSelector:, model, and rows. The ""model"" method just returns the object whose fields we wish to populate with date. The ""rows"" method returns a collections of symbols. One symbol for each row of data in the dialog. The symbol is used generate the accessor methods for the data in the model. The method ""labelForSelector:"" returns the labels for each row and each submit button in the form.",,"LabelledFormDialogExample subclass of WALabelledFormDialog instance methods
+        initialize
+                super initialize.
+                contact := Contact new. ""contact is an inst var""
+                self addMessage: 'Please enter the followning information'.
+
+        model
+                ^ contact
+
+        ok
+                self answer: contact
+
+        cancel
+                self answer
+
+        rows
+                ^ #(name phoneNumber)
+
+        buttons
+                #(ok cancel)
+
+        labelForSelector: aSymbol
+                aSymbol == #name ifTrue: [^'Your Name'].
+                aSymbol == #phoneNumber ifTrue: [^'Phone Number'].
+                aSymbol == #ok ifTrue: [^'Ok'].
+                aSymbol == #cancel ifTrue: [^'Cancel'].
+                ^ super labelForSelector: aSymbol
+
+        renderNameOn: html 
+                ""Show how to specily special input instead of using simple text field.""
+                (html select)
+                                list: #('Roger' 'Pete');
+                                selected: 'Roger';
+                                callback: [:v | contact name: v]",,,,,,,,,,,,
+E1,E2 (agree),,WADelayedAnswerDecoration,"WADelayedAnswerDecoration adds a delay in displaying a component. 
+
+See WADelayFunctionalTest for sample usage.
+Select 'Delay"" tab of the Functional Seaside Test Suite to run an example  (http://127.0.0.1:xxxx/tests/functional/WADelayFunctionalTest)
+
+Instance Variables:
+        delay        <Integer>        delay length in seconds 
+",8,,WADelayedAnswerDecoration adds a delay in displaying a component. ,,,,"Instance Variables:
+        delay        <Integer>        delay length in seconds 
+","See WADelayFunctionalTest for sample usage.
+Select 'Delay"" tab of the Functional Seaside Test Suite to run an example  (http://127.0.0.1:xxxx/tests/functional/WADelayFunctionalTest)",,,,,,,,"
+Select 'Delay"" tab of the Functional Seaside Test Suite to run an example  (http://127.0.0.1:xxxx/tests/functional/WADelayFunctionalTest)",,,,,,,
+E2,,E3 (disagree),WADatalistTag,"datalist together with the a new list attribute for input is used to make comboboxes:
+
+<input list=browsers>
+<datalist id=browsers>
+ <option value=""Safari"">
+ <option value=""Internet Explorer"">
+ <option value=""Opera"">
+ <option value=""Firefox"">
+</datalist>
+",10,,"datalist together with the a new list attribute for input is used to make comboboxes:
+
+",,,,,,,,"
+<input list=browsers>
+<datalist id=browsers>
+ <option value=""Safari"">
+ <option value=""Internet Explorer"">
+ <option value=""Opera"">
+ <option value=""Firefox"">
+</datalist>",,,,,,,,,,,,
+E2,,E3 (agree),WAComboResponse,"WAComboResponse is a combination of a buffered and a streaming response. By default, WAComboResponse will buffer the entire response to be sent at the end of the request processing cycle. If streaming is desired, the response can be flushed by sending it the #flush message. Flushing a response will sent all previously buffered data using chunked transfer-encoding (which preserves persistent connections). Clients can flush the response as often as they want at appropriate points in their response generation; everything buffered up to that point will be sent. For example, a search results page might use something like:
+
+renderContentOn: aCanvas
+	""Render the search page""
+
+	self renderSearchLabelOn: aCanvas.
+	aCanvas flush. ""flush before starting search to give immediate feedback""
+
+	self searchResultsDo:[:aResult|
+		self renderSearchResultOn: aCanvas.
+		aCanvas flush. ""flush after each search result""
+	].
+
+After a response has been flushed once, header modifications are no longer possible and will raise a WAIllegalStateException.
+
+Server adaptors need to be aware that a committed response must be closed, when complete. An uncommitted response should be handled as usual by the server adapter.",16,"""WAComboResponse is a combination of a buffered and a streaming response. ","By default, WAComboResponse will buffer the entire response to be sent at the end of the request processing cycle. If streaming is desired, the response can be flushed by sending it the #flush message. ","Flushing a response will sent all previously buffered data using chunked transfer-encoding (which preserves persistent connections). Clients can flush the response as often as they want at appropriate points in their response generation; everything buffered up to that point will be sent. 
+
+After a response has been flushed once, header modifications are no longer possible and will raise a WAIllegalStateException.
+
+Server adaptors need to be aware that a committed response must be closed, when complete. An uncommitted response should be handled as usual by the server adapter."" ",,,,,,,"For example, a search results page might use something like:
+
+renderContentOn: aCanvas
+	""""Render the search page""""
+
+	self renderSearchLabelOn: aCanvas.
+	aCanvas flush. """"flush before starting search to give immediate feedback""""
+
+	self searchResultsDo:[:aResult|
+		self renderSearchResultOn: aCanvas.
+		aCanvas flush. """"flush after each search result""""
+	].",,,,,,,,,,,,
+E2,,E3 (disagree),WAUpTimeTracker,"WAUpTimeTracker is used to track the TimeStamp when the image last booted.
+
+Access the TimeStamp when the image booted as follows:
+
+	WAUpTimeTracker imageBootTime.
+
+Access the Duration how long ago the image booted as follows:
+
+	WAUpTimeTracker imageUpTime.
+
+At system startup the imageBootTime is (re)set automatically.
+
+This is a work around for Time millisecondClockValue wrapping around.",13,,"""WAUpTimeTracker is used to track the TimeStamp when the image last booted.
+
+Access the TimeStamp when the image booted as follows:
+
+	WAUpTimeTracker imageBootTime.
+
+Access the Duration how long ago the image booted as follows:
+
+	WAUpTimeTracker imageUpTime.
+
+At system startup the imageBootTime is (re)set automatically.","
+Access the TimeStamp when the image booted as follows:
+
+	WAUpTimeTracker imageBootTime.
+
+Access the Duration how long ago the image booted as follows:
+
+	WAUpTimeTracker imageUpTime.
+
+At system startup the imageBootTime is (re)set automatically.
+","
+Access the TimeStamp when the image booted as follows:
+
+	WAUpTimeTracker imageBootTime.
+
+Access the Duration how long ago the image booted as follows:
+
+	WAUpTimeTracker imageUpTime.
+
+At system startup the imageBootTime is (re)set automatically.
+",,,,,,,,,"
+This is a work around for Time millisecondClockValue wrapping around.""",,,,,,,,,
+E3,E2 (disagree),E1 (agree with E2),WAServerAdaptor,"A WAServer is the abstract base class for all servers. Actual servers do not have to subclass it but have to support the protocol:
+ - #codec
+ - #usesSmalltalkEncoding
+
+Instance Variables
+        codec:                <WACodec>
+
+codec
+        - the codec used for response conversion from characters to bytes",9,A WAServer is the abstract base class for all servers.,,," - #codec
+ - #usesSmalltalkEncoding
+
+codec
+        - the codec used for response conversion from characters to bytes",,"Instance Variables
+        codec:                <WACodec>",,,,,,,,,, Actual servers do not have to subclass it but have to support the protocol:,,,,,,
+E3,E2 (agree),,WASelection,"WASelection creates a selectable list. Items can be any object. If optional labelBlock is not given the string versions of the items are displayed to user, otherwise labelBlock is used to generate the text to display for each item. Returns the item selected by user, (not the index nor the text shown the user). 
+
+        | selection |
+        selection := WASelection new.
+        selection items: #(1 'cat' 'rat').
+        selection 
+                labelBlock: [:item | item = 1 ifTrue: ['First'] ifFalse: [item asUppercase]].
+        result := self call: selection.
+        self inform: result printString
+
+Instance Variables:
+        items        <Array of Objects>         
+        labelBlock        <One arg Block>        
+",14,,WASelection creates a selectable list.,,," Items can be any object. If optional labelBlock is not given the string versions of the items are displayed to user, otherwise labelBlock is used to generate the text to display for each item. Returns the item selected by user, (not the index nor the text shown the user). ","
+Instance Variables:
+        items        <Array of Objects>         
+        labelBlock        <One arg Block>        ",,,,"
+        | selection |
+        selection := WASelection new.
+        selection items: #(1 'cat' 'rat').
+        selection 
+                labelBlock: [:item | item = 1 ifTrue: ['First'] ifFalse: [item asUppercase]].
+        result := self call: selection.
+        self inform: result printString",,,,,,,,,,,,
+E3,,E1 (disagree),WAExpiringCache,"I am the abstract base class for caches that remove entries. Subclasses are intended to use to track sessions.
+
+    Instance Variables
+        maximumSize                        <Integer>
+        maximumRelativeAge                <Integer>
+        maximumAbsoluteAge        <Integer>
+        overflowAction                        <Symbol>
+                                
+maximumSize:
+        Number of sessions supported. When this limit is reached the overflow action is run. 0 for no maximum size. Has to be positive.
+
+maximumRelativeAge:
+        After so many seconds of inactivity a session is considered expired. 0 for no limit. Has to be positive.
+
+maximumAbsoluteAge:
+        After so many seconds after its creation a session is considered expired no matter when it was last accessed. 0 for no limit. Has to be positive.
+
+overflowAction:
+        What to do when the maximum number of sessions is reached. Only matters when the maximum size is bigger than 0.
+        Possible values:
+                #removeRelativeOldest remove the entry that hasn't been accessed for the longest time
+                #removeAbsoluteOldest remove the entry that has been created the longest time ago
+                #signalError signal WAMaximumNumberOfSessionsExceededError",23,I am the abstract base class for caches that remove entries.,,,"                            
+maximumSize:
+        Number of sessions supported. When this limit is reached the overflow action is run. 0 for no maximum size. Has to be positive.
+
+maximumRelativeAge:
+        After so many seconds of inactivity a session is considered expired. 0 for no limit. Has to be positive.
+
+maximumAbsoluteAge:
+        After so many seconds after its creation a session is considered expired no matter when it was last accessed. 0 for no limit. Has to be positive.
+
+overflowAction:
+        What to do when the maximum number of sessions is reached. Only matters when the maximum size is bigger than 0.
+        Possible values:
+                #removeRelativeOldest remove the entry that hasn't been accessed for the longest time
+                #removeAbsoluteOldest remove the entry that has been created the longest time ago
+                #signalError signal WAMaximumNumberOfSessionsExceededError",,"    Instance Variables
+        maximumSize                        <Integer>
+        maximumRelativeAge                <Integer>
+        maximumAbsoluteAge        <Integer>
+        overflowAction                        <Symbol>",,Subclasses are intended to use to track sessions.,,,,,,,,,,,When this limit is reached the overflow action is run. 0 for no maximum size. Has to be positive.,,,
+E3,,E1 (agree),WAPath,"WAPath represents a path navigation (breadcrumbs) for a web page and displays standard breadcrumbs(xxx >> yyy >> zzz). WAPath maintains a stack of associations, one for each ""location"" or ""page"" in the path. The association key is the text that is displayed in the breadcrimb. The association value is an object of your choosing, which your code uses to restore that ""page"". 
+
+To add to the path use the method WAPath>>pushSegment: anObject name: 'lulu'. The name: arguement is the association key, the segment: argument is the association value.
+
+The method WAPath>>currentSegment returns object associated with the current ""page"". Your code is not notified when the user clicks on a link in the WAPath object. So when you render a page call WAPath>>currentSegment to get the current object, and generate the page accordingly.
+
+See WAInspector for example use.
+
+Use WATrail to handle breadcrumbs for sequences of call: and answers:.
+
+Instance Variables:
+        stack        <Array of associations(String->Object) > History of the page. Keys -> display string, values -> object used in helping generating page.
+",13,WAPath represents a path navigation (breadcrumbs) for a web page ,"and displays standard breadcrumbs(xxx >> yyy >> zzz). WAPath maintains a stack of associations,"," one for each ""location"" or ""page"" in the path. The association key is the text that is displayed in the breadcrimb. The association value is an object of your choosing, which your code uses to restore that ""page"". ","To add to the path use the method WAPath>>pushSegment: anObject name: 'lulu'. The name: arguement is the association key, the segment: argument is the association value.
+
+The method WAPath>>currentSegment returns object associated with the current ""page"". Your code is not notified when the user clicks on a link in the WAPath object. So when you render a page call WAPath>>currentSegment to get the current object, and generate the page accordingly.",,"
+Instance Variables:
+        stack        <Array of associations(String->Object) > History of the page. Keys -> display string, values -> object used in helping generating page.","See WAInspector for example use.
+Use WATrail to handle breadcrumbs for sequences of call: and answers:.
+",,"WAInspector
+WATrail",,,,,,,,,,,,,

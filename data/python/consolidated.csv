@@ -1,14 +1,14 @@
-class,stratum,comment,Summary,Usage,Parameters,Expand,Version,Development Notes,Todo,Exception,Links,Noise,Warnings,Recommendation,Dependecies,Precondition,Coding Guidelines,Extension,Subclass explnation,Observation
-AccessMixin,1,"
+stratum,class,comment,Summary,Usage,Parameters,Expand,Version,Development Notes,Todo,Exception,Links,Noise,Warnings,Recommendation,Dependecies,Precondition,Coding Guidelines,Extension,Subclass explnation,Observation
+1,AccessMixin,"
 Abstract CBV mixin that gives access mixins the same customizable
 functionality.","
 Abstract CBV mixin that gives access mixins the same customizable
 functionality.",,,,,,,,,,,,,,,,,
-AmbiguityError,1,More than one migration matches a name prefix.,More than one migration matches a name prefix.,,,,,,,,,,,,,,,,,
-AppConfigStub,1,Stub of an AppConfig. Only provides a label and a dict of models.,Stub of an AppConfig.,,Only provides a label and a dict of models.,,,,,,,,,,,,,,,
-Archive,1,The external API class that encapsulates an archive implementation.,The external API class that encapsulates an archive implementation.,,,,,The external API class that encapsulates an archive implementation.,,,,,,,,,,,,
-ArchiveIndexView,1,Top-level archive of date-based items.,Top-level archive of date-based items.,,,,,,,,,,,,,,,,,
-Atomic,1,"
+1,AmbiguityError,More than one migration matches a name prefix.,More than one migration matches a name prefix.,,,,,,,,,,,,,,,,,
+1,AppConfigStub,Stub of an AppConfig. Only provides a label and a dict of models.,Stub of an AppConfig.,,Only provides a label and a dict of models.,,,,,,,,,,,,,,,
+1,Archive,The external API class that encapsulates an archive implementation.,The external API class that encapsulates an archive implementation.,,,,,The external API class that encapsulates an archive implementation.,,,,,,,,,,,,
+1,ArchiveIndexView,Top-level archive of date-based items.,Top-level archive of date-based items.,,,,,,,,,,,,,,,,,
+1,Atomic,"
 Guarantee the atomic execution of a given block.
 
 An instance can be used either as a decorator or as a context manager.
@@ -52,7 +52,7 @@ This allows reentrancy even if the same AtomicWrapper is reused.",,"An instance 
 decorated function in the instance itself, used as a context manager.",,,,,,,"
 This is a private API.
 Since database connections are thread-local, this is thread-safe.",,,,,,,
-AtomicTests,1,"
+1,AtomicTests,"
 Tests for the atomic decorator and context manager.
 
 The tests make assertions on internal attributes because there isn't a
@@ -69,7 +69,7 @@ robust way to ask the database for its current transaction state.
 Since the decorator syntax is converted into a context manager (see the
 implementation), there are only a few basic tests with the decorator
 syntax and the bulk of the tests use the context manager syntax.",,,,,,,,,,,,,,
-AutoFieldMeta,1,"
+1,AutoFieldMeta,"
 Metaclass to maintain backward inheritance compatibility for AutoField.
 
 It is intended that AutoFieldMixin become public API when it is possible to
@@ -97,9 +97,9 @@ When these issues have been addressed, this metaclass could be used to
 deprecate inheritance from AutoField and use of isinstance() with AutoField
 for detecting automatically-generated fields.","In many areas Django also relies on using isinstance() to check for an
 automatically-generated field as a subclass of AutoField",,,,,
-BadSignature,1,Signature does not match.,Signature does not match.,,,,,,,,,,,,,,,,,
-BarAccount,1,A service-specific account of type Bar.,A service-specific account of type Bar.,,,,,,,,,,,,,,,,,
-BaseCommand,1,"The base class from which all management commands ultimately
+1,BadSignature,Signature does not match.,Signature does not match.,,,,,,,,,,,,,,,,,
+1,BarAccount,A service-specific account of type Bar.,A service-specific account of type Bar.,,,,,,,,,,,,,,,,,
+1,BaseCommand,"The base class from which all management commands ultimately
 derive.
 
 Use this class if you want access to all of the mechanisms which
@@ -223,7 +223,7 @@ specialized methods as needed.
 parse the command-line arguments and work out what code to call in
 response; if you don't need to change any of that behavior,
 consider using one of the subclasses defined in this file.",
-BaseDatabaseSchemaEditor,1,"
+1,BaseDatabaseSchemaEditor,"
 This class and its subclasses are responsible for emitting schema-changing
 statements to the databases - model creation/removal/alteration, field
 renaming, index fiddling, and so on.","
@@ -232,15 +232,15 @@ statements to the databases - model creation/removal/alteration, field
 renaming, index fiddling, and so on.",,,,,"This class and its subclasses are responsible for emitting schema-changing
 statements to the databases - model creation/removal/alteration, field
 renaming, index fiddling, and so on.",,,,,,,,,,,,
-BaseExpression,1,Base class for all query expressions.,Base class for all query expressions.,,,,,,,,,,,,,,,,,
-BaseUpdateView,1,"
+1,BaseExpression,Base class for all query expressions.,Base class for all query expressions.,,,,,,,,,,,,,,,,,
+1,BaseUpdateView,"
 Base view for updating an existing object.
 
 Using this base class requires subclassing to provide a response mixin.","
 Base view for updating an existing object.",,,,,"
 Using this base class requires subclassing to provide a response mixin.",,,,,,,,,,,,
-BaseYearArchiveView,1,List of objects published in a given year.,List of objects published in a given year.,,,,,,,,,,,,,,,,,
-BCryptSHA256PasswordHasher,1,"
+1,BaseYearArchiveView,List of objects published in a given year.,List of objects published in a given year.,,,,,,,,,,,,,,,,,
+1,BCryptSHA256PasswordHasher,"
 Secure password hashing using the bcrypt algorithm (recommended)
 
 This is considered by many to be the most secure algorithm but you
@@ -250,7 +250,7 @@ issues.",Secure password hashing using the bcrypt algorithm (recommended),"This 
 must first install the bcrypt library. ",,,,,,,,,"Please be warned that
 this library depends on native C code and might cause portability
 issues.",,,,,,,
-BoundWidget,1,"
+1,BoundWidget,"
 A container class used for iterating over widgets. This is useful for
 widgets that have choices. For example, the following can be used in a
 template:
@@ -270,17 +270,17 @@ template:
   </label>
 {% endfor %}",,,,"This is useful for
 widgets that have choices.",,,,,,,,,,,,
-CacheHandler,1,"
+1,CacheHandler,"
 A Cache Handler to manage access to Cache instances.
 
 Ensure only one instance of each alias exists per thread.",A Cache Handler to manage access to Cache instances.,,,Ensure only one instance of each alias exists per thread.,,,,,,,,,,,,,,
-Choices,1,Class for creating enumerated choices.,Class for creating enumerated choices.,,Class for creating enumerated choices.,,,,,,,,,,,,,,,
-ChunkIter,1,"
+1,Choices,Class for creating enumerated choices.,Class for creating enumerated choices.,,Class for creating enumerated choices.,,,,,,,,,,,,,,,
+1,ChunkIter,"
 An iterable that will yield chunks of data. Given a file-like object as the
 constructor, yield chunks of read operations from that object.","
 An iterable that will yield chunks of data. ",,,"Given a file-like object as the
 constructor, yield chunks of read operations from that object.",,,,,,,,,,,,,,
-Client,1,"
+1,Client,"
 A class that can act as a client for testing purposes.
 
 It allows the user to compose GET and POST requests, and
@@ -313,56 +313,54 @@ HTML rendered to the end-user.",,,,,"This is not intended as a replacement for T
 the like - it is here to allow testing against the
 contexts and templates produced by a view, rather than the
 HTML rendered to the end-user.",,,,,,,
-Combinable,1,"
+1,Combinable,"
 Provide the ability to combine one or two objects with
 some connector. For example F('foo') + F('bar').","Provide the ability to combine one or two objects with
 some connector.",For example F('foo') + F('bar').,,,,,,,,,,,,,,,,
-ConsoleDirective,1,"
+1,ConsoleDirective,"
 A reStructuredText directive which renders a two-tab code block in which
 the second tab shows a Windows command line equivalent of the usual
 Unix-oriented examples.","A reStructuredText directive which renders a two-tab code block in which
 the second tab shows a Windows command line equivalent of the usual
 Unix-oriented examples.",,,,,,,,,,,,,,,,,
-Context,1,A stack container for variable context,A stack container for variable context,,,,,,,,,,,,,,,,,
-CryptPasswordHasher,1,"Password hashing using UNIX crypt (not recommended)
+1,Context,A stack container for variable context,A stack container for variable context,,,,,,,,,,,,,,,,,
+1,CryptPasswordHasher,"Password hashing using UNIX crypt (not recommended)
 
 The crypt module is not supported on all platforms.",Password hashing using UNIX crypt (not recommended),,,,,The crypt module is not supported on all platforms.,,,,,,Password hashing using UNIX crypt (not recommended),,,,,,
-CustomArticleAdmin,1,Tests various hooks for using custom templates and contexts.,Tests various hooks for using custom templates and contexts.,,,,,,,,,,,,,,,,,
-CustomCacheKeyValidationTests,1,"Tests for the ability to mixin a custom ``validate_key`` method to
+1,CustomArticleAdmin,Tests various hooks for using custom templates and contexts.,Tests various hooks for using custom templates and contexts.,,,,,,,,,,,,,,,,,
+1,CustomCacheKeyValidationTests,"Tests for the ability to mixin a custom ``validate_key`` method to
 a custom cache backend that otherwise inherits from a builtin
 backend, and override the default key validation. Refs #6447.","Tests for the ability to mixin a custom ``validate_key`` method to
-a custom cache backend that otherwise inherits from a builtin
-backend, and override the default key validation. Refs #6447.",,,,,,,,Refs #6447.,,,,,,,"Tests for the ability to mixin a custom ``validate_key`` method to
-a custom cache backend that otherwise inherits from a builtin
-backend, and override the default key validation. Refs #6447.",,
-CustomHeaderRemoteUserTest,1,"
+a custom cache backend ",,,"that otherwise inherits from a builtin
+backend, and override the default key validation. ",,,,,Refs #6447.,,,,,,,,,
+1,CustomHeaderRemoteUserTest,"
 Tests a custom RemoteUserMiddleware subclass with custom HTTP auth user
 header.","
 Tests a custom RemoteUserMiddleware subclass",,Tests a custom RemoteUserMiddleware subclass with custom HTTP auth user,,,,,,,,,,,,,,Tests a custom RemoteUserMiddleware subclass with custom HTTP auth user,
-DatabaseReceiver,1,Used in the tests for the database argument in signals (#13552),Used in the tests for the database argument in signals (#13552),,,,,,,,,,,,,,,,,
-DblFromGeom,1,"
+1,DatabaseReceiver,Used in the tests for the database argument in signals (#13552),Used in the tests for the database argument in signals (#13552),,,,,,,,,,,,,,,,,
+1,DblFromGeom,"
 Argument is a Geometry, return type is double that is passed
 in by reference as the last argument.",,,"
 Argument is a Geometry,
 
 return type is double that is passed
 in by reference as the last argument",,,,,,,,,,,,,,,
-DisallowedModelAdminToField,1,Invalid to_field was passed to admin view via URL query string,Invalid to_field was passed to admin view via URL query string,,,,,,,,,,,,,,,,,
-DjangoHTMLTranslator,1,Django-specific reST to HTML tweaks.,Django-specific reST to HTML tweaks.,,,,,,,,,,,,,,,,,
-Dumpdata,1,Tests for dumpdata management command.,Tests for dumpdata management command.,,,,,,,,,,,,,,,,,
-EarliestOrLatestTests,1,Tests for the earliest() and latest() objects methods,Tests for the earliest() and latest() objects methods,,,,,,,,,,,,,,,,,
-EmptyStringsAsNullTest,1,"Filtering on non-null character fields works as expected.
+1,DisallowedModelAdminToField,Invalid to_field was passed to admin view via URL query string,Invalid to_field was passed to admin view via URL query string,,,,,,,,,,,,,,,,,
+1,DjangoHTMLTranslator,Django-specific reST to HTML tweaks.,Django-specific reST to HTML tweaks.,,,,,,,,,,,,,,,,,
+1,Dumpdata,Tests for dumpdata management command.,Tests for dumpdata management command.,,,,,,,,,,,,,,,,,
+1,EarliestOrLatestTests,Tests for the earliest() and latest() objects methods,Tests for the earliest() and latest() objects methods,,,,,,,,,,,,,,,,,
+1,EmptyStringsAsNullTest,"Filtering on non-null character fields works as expected.
 The reason for these tests is that Oracle treats '' as NULL, and this
 can cause problems in query construction. Refs #17957.",,,,,,,,,Refs #17957.,,,,,,,,,
-ErrorDict,1,"A collection of errors that knows how to display itself in various formats.
+1,ErrorDict,"A collection of errors that knows how to display itself in various formats.
 
 The dictionary keys are the field names, and the values are the errors.",A collection of errors that knows how to display itself in various formats.,"The dictionary keys are the field names, and the values are the errors.",,,,,,,,,,,,,,,,
-ExceptionThatFailsUnpickling,1,"
+1,ExceptionThatFailsUnpickling,"
 After pickling, this class fails unpickling with an error about incorrect
 arguments passed to __init__().","
 After pickling, this class fails unpickling with an error about incorrect
 arguments passed to __init__().",,,,,,,,,,,,,,,,,
-FakePayload,1,"
+1,FakePayload,"
 A wrapper around BytesIO that restricts what can be read since data from
 the network can't be sought and cannot be read outside of its content
 length. This makes sure that views can't do anything under the test client
@@ -371,32 +369,32 @@ A wrapper around BytesIO that restricts what can be read since data from
 the network can't be sought and cannot be read outside of its content
 length.",,,"This makes sure that views can't do anything under the test client
 that wouldn't work in real life.",,,,,,,,,,,,,,
-FallbackStorage,1,"
+1,FallbackStorage,"
 Try to store all messages in the first backend. Store any unstored
 messages in each subsequent backend.",,,,"
 Try to store all messages in the first backend. Store any unstored
 messages in each subsequent backend.",,,,,,,,,,,,,,
-FootNote,1,Model added for ticket 19838,,,,,,Model added for ticket 19838,,,,,,,,,,,,
-FrenchTestCase,1,Tests using the French translations of the sampleproject.,Tests using the French translations of the sampleproject.,,,,,,,,,,,,,,,,,
-GeoFlexibleFieldLookupDict,1,"Subclass that includes updates the `base_data_types_reverse` dict
+1,FootNote,Model added for ticket 19838,,,,,,Model added for ticket 19838,,,,,,,,,,,,
+1,FrenchTestCase,Tests using the French translations of the sampleproject.,Tests using the French translations of the sampleproject.,,,,,,,,,,,,,,,,,
+1,GeoFlexibleFieldLookupDict,"Subclass that includes updates the `base_data_types_reverse` dict
 for geometry field types.",,,,,,,,,,,,,,,,,"Subclass that includes updates the `base_data_types_reverse` dict
 for geometry field types.",
-Group,1,Table Column Fields,Table Column Fields,,,,,,,,,,,,,,,,,
-GZipMiddleware,1,"
+1,Group,Table Column Fields,Table Column Fields,,,,,,,,,,,,,,,,,
+1,GZipMiddleware,"
 Compress content if the browser allows gzip compression.
 Set the Vary header accordingly, so that caches will base their storage
 on the Accept-Encoding header.","Compress content if the browser allows gzip compression.Set the Vary header accordingly, so that caches will base their storage
 on the Accept-Encoding header.",,,,,,,,,,,,,,,,,
-HiddenRangeWidget,1,"A widget that splits input into two <input type=""hidden""> inputs.","A widget that splits input into two <input type=""hidden""> inputs.",,,,,,,,,,,,,,,,,
-ImageFileDescriptor,1,"
+1,HiddenRangeWidget,"A widget that splits input into two <input type=""hidden""> inputs.","A widget that splits input into two <input type=""hidden""> inputs.",,,,,,,,,,,,,,,,,
+1,ImageFileDescriptor,"
 Just like the FileDescriptor, but for ImageFields. The only difference is
 assigning the width/height to the width_field/height_field, if appropriate.","
 Just like the FileDescriptor, but for ImageFields. ",,,"The only difference is
 assigning the width/height to the width_field/height_field, if appropriate.",,,,,,,,,,,,,,
-IncompleteCategoryFormWithExclude,1,"A form that replaces the model's url field with a custom one. This should
+1,IncompleteCategoryFormWithExclude,"A form that replaces the model's url field with a custom one. This should
 prevent the model field's validation from being called.",A form that replaces the model's url field with a custom one. ,,,,,,,,,,"This should
 prevent the model field's validation from being called.",,,,,,,
-Individual,1,"
+1,Individual,"
 A model with a FK to itself. It won't be registered with the admin, so the
 corresponding raw ID widget won't have a magnifying glass link to select
 related instances (rendering will be called programmatically in this case).",A model with a FK to itself.,"It won't be registered with the admin, so the
@@ -404,11 +402,11 @@ corresponding raw ID widget won't have a magnifying glass link to select
 related instances (rendering will be called programmatically in this case).",,,,"It won't be registered with the admin, so the
 corresponding raw ID widget won't have a magnifying glass link to select
 related instances (rendering will be called programmatically in this case).",,,,,,,,,,,,
-InputStreamExhausted,1,No more reads are allowed from this device.,No more reads are allowed from this device.,,,No more reads are allowed from this device.,,,,,,,,,,,,,,
-IntFromGeom,1,"Argument is a geometry, return type is an integer.",,,"Argument is a geometry, return type is an integer.",,,"Argument is a geometry, return type is an integer.",,,,,,,,,,,,
-InvalidBasesError,1,A model's base classes can't be resolved.,A model's base classes can't be resolved.,,,,,,,,,,,,,,,,,
-KMLSitemap,1,A minimal hook to produce KML sitemaps.,A minimal hook to produce KML sitemaps.,,,,,,,,,,,,,,,,,
-ListMixin,1,"A base class which provides complete list interface.
+1,InputStreamExhausted,No more reads are allowed from this device.,No more reads are allowed from this device.,,,No more reads are allowed from this device.,,,,,,,,,,,,,,
+1,IntFromGeom,"Argument is a geometry, return type is an integer.",,,"Argument is a geometry, return type is an integer.",,,"Argument is a geometry, return type is an integer.",,,,,,,,,,,,
+1,InvalidBasesError,A model's base classes can't be resolved.,A model's base classes can't be resolved.,,,,,,,,,,,,,,,,,
+1,KMLSitemap,A minimal hook to produce KML sitemaps.,A minimal hook to produce KML sitemaps.,,,,,,,,,,,,,,,,,
+1,ListMixin,"A base class which provides complete list interface.
 Derived classes must call ListMixin's __init__() function
 and implement the following:
 
@@ -482,20 +480,20 @@ int _maxlength:
 
 type or tuple _allowed:
     A type or tuple of allowed item types [Optional]",,,,,,,,,,,,,,
-LogoutThenLoginTests,1,Tests for the logout_then_login view,Tests for the logout_then_login view,,,,,,,,,,,,,,,,,
-MakeListTests,1,"
+1,LogoutThenLoginTests,Tests for the logout_then_login view,Tests for the logout_then_login view,,,,,,,,,,,,,,,,,
+1,MakeListTests,"
 The make_list filter can destroy existing escaping, so the results are
 escaped.",,,,"The make_list filter can destroy existing escaping, so the results are
 escaped.",,,,,,,,,,,,,,
-ManagementForm,1,"
+1,ManagementForm,"
 Keep track of how many form instances are displayed on the page. If adding
 new forms via JavaScript, you should increment the count field of this form
 as well.",Keep track of how many form instances are displayed on the page.,,,,,,,,,,,"If adding
 new forms via JavaScript, you should increment the count field of this form
 as well.",,,,,,
-MemcachedCache,1,An implementation of a cache binding using python-memcached,An implementation of a cache binding using python-memcached,,,,,,,,,,,,,,,,,
-MemoryFileUploadHandler,1,File upload handler to stream uploads into memory (used for small files).,File upload handler to stream uploads into memory (used for small files).,,,,,,,,,,,,,,,,,(used for small files)
-Migration,1,"
+1,MemcachedCache,An implementation of a cache binding using python-memcached,An implementation of a cache binding using python-memcached,,,,,,,,,,,,,,,,,
+1,MemoryFileUploadHandler,File upload handler to stream uploads into memory (used for small files).,File upload handler to stream uploads into memory (used for small files).,,,,,,,,,,,,,,,,,(used for small files)
+1,Migration,"
 The base class for all migrations.
 
 Migration files will import this from django.db.migrations.Migration
@@ -528,7 +526,7 @@ Graph as instances, having been initialized with their app label and name.",,,"N
 Graph as instances, having been initialized with their app label and name.",,,"
 Migration files will import this from django.db.migrations.Migration
 and subclass it as a class called Migration.",
-MigrationGraph,1,"
+1,MigrationGraph,"
 Represent the digraph of all migrations in a project.
 
 Each migration is a node, and each dependency is an edge. There are
@@ -571,7 +569,7 @@ replacing migration, and repoint any dependencies that pointed to the
 replaced migrations to point to the replacing one.",,,,,,"Every new numbered migration
 has a declared dependency to the previous number, meaning that VCS
 branch merges can be detected and resolved."
-MigrationLoader,1,"Load migration files from disk and their status from the database.
+1,MigrationLoader,"Load migration files from disk and their status from the database.
 
 Migration files are expected to live in the ""migrations"" directory of
 an app. Their names are entirely unimportant from a code perspective,
@@ -608,29 +606,29 @@ new migration.
 ",,,,,,,,"Migration files are expected to live in the ""migrations"" directory of
 an app. Their names are entirely unimportant from a code perspective,
 but will probably follow the 1234_name.py convention.",,,,,,
-MigrationQuestioner,1,"
+1,MigrationQuestioner,"
 Give the autodetector responses to questions it might have.
 This base class has a built-in noninteractive mode, but the
 interactive subclass is what the command-line arguments will use.",Give the autodetector responses to questions it might have.,"This base class has a built-in noninteractive mode, but the
 interactive subclass is what the command-line arguments will use.",,,,"This base class has a built-in noninteractive mode, but the
 interactive subclass is what the command-line arguments will use.",,,,,,,,,,,,
-MigrationWriter,1,"
+1,MigrationWriter,"
 Take a Migration instance and is able to produce the contents
 of the migration file from it.","
 Take a Migration instance and is able to produce the contents
 of the migration file from it.",,,,,,,,,,,,,,,,,
-ModelBase,1,Metaclass for all models.,Metaclass for all models.,,,,,,,,,,,,,,,,,
-ModelSignal,1,"
+1,ModelBase,Metaclass for all models.,Metaclass for all models.,,,,,,,,,,,,,,,,,
+1,ModelSignal,"
 Signal subclass that allows the sender to be lazily specified as a string
 of the `app_label.ModelName` form.","Signal subclass that allows the sender to be lazily specified as a string
 of the `app_label.ModelName` form.",,,,,,,,,,,,,,,,"Signal subclass that allows the sender to be lazily specified as a string
 of the `app_label.ModelName` form.",
-MultiPartParser,1,"A rfc2388 multipart/form-data parser.
+1,MultiPartParser,"A rfc2388 multipart/form-data parser.
 
 ``MultiValueDict.parse()`` reads the input stream in ``chunk_size`` chunks
 and returns a tuple of ``(MultiValueDict(POST), MultiValueDict(FILES))``.",A rfc2388 multipart/form-data parser.,,,,,"``MultiValueDict.parse()`` reads the input stream in ``chunk_size`` chunks
 and returns a tuple of ``(MultiValueDict(POST), MultiValueDict(FILES))``.",,,,,,,,,,,,
-MultiValueDict,1,"
+1,MultiValueDict,"
 A subclass of dictionary customized to handle multiple values for the
 same key.
 
@@ -666,7 +664,7 @@ which returns a list for every key, even though most Web forms submit
 single name-value pairs.",,"This class exists to solve the irritating problem raised by cgi.parse_qs,
 which returns a list for every key, even though most Web forms submit
 single name-value pairs.",,,,,,,,,,,,
-MultiValueField,1,"
+1,MultiValueField,"
 Aggregate the logic of multiple Fields.
 
 Its clean() method takes a ""decompressed"" list of values, which are then
@@ -689,7 +687,7 @@ field, etc. Once all fields are cleaned, the list of clean values is
 You'll probably want to use this with MultiWidget.",,,,,"Subclasses should not have to implement clean(). Instead, they must
 implement compress(), which takes a list of valid values and returns a
 ""compressed"" version of those values -- a single value.",
-MultiWidget,1,"
+1,MultiWidget,"
 A widget that is composed of multiple widgets.
 
 In addition to the values added by Widget.get_context(), this widget
@@ -700,9 +698,9 @@ You'll probably want to use this class with MultiValueField.",A widget that is c
 adds a list of subwidgets to the context as widget['subwidgets'].
 These can be looped over and rendered like normal widgets.
 ",,,,,,,,You'll probably want to use this class with MultiValueField.,,,,,,
-MyModel,1,Model subclass with a custom base using metaclass.,Model subclass with a custom base using metaclass.,,,,,,,,,,,,,,,,,
-NestedObjectsTests,1,Tests for ``NestedObject`` utility collection.,Tests for ``NestedObject`` utility collection.,,,,,,,,,,,,,,,,,
-Operation,1,"
+1,MyModel,Model subclass with a custom base using metaclass.,Model subclass with a custom base using metaclass.,,,,,,,,,,,,,,,,,
+1,NestedObjectsTests,Tests for ``NestedObject`` utility collection.,Tests for ``NestedObject`` utility collection.,,,,,,,,,,,,,,,,,
+1,Operation,"
 Base class for migration operations.
 
 It's responsible for both mutating the in-memory model state
@@ -724,16 +722,16 @@ considered immutable.",,,,"Note that some operations won't modify memory state a
 copying operations), and some will need their modifications to be
 optionally specified by the user (e.g. custom Python code snippets)
 "
-OverwritingStorage,1,"Overwrite existing files instead of appending a suffix to generate an
+1,OverwritingStorage,"Overwrite existing files instead of appending a suffix to generate an
 unused name.","Overwrite existing files instead of appending a suffix to generate an
 unused name.",,,,,,,,,,,,,,,,,
-ParentWithDependentChildren,1,"Issue #20522
+1,ParentWithDependentChildren,"Issue #20522
 Model where the validation of child foreign-key relationships depends
 on validation of the parent","Model where the validation of child foreign-key relationships depends
 on validation of the parent",,,,,,,,Issue #20522,,,,"Issue #20522
 Model where the validation of child foreign-key relationships depends
 on validation of the parent",,,,,
-Permission,1,"
+1,Permission,"
 The permissions system provides a way to assign permissions to specific
 users and groups of users.
 
@@ -771,18 +769,18 @@ not currently possible to say ""Mary may change news stories, but only the
 ones she created herself"" or ""Mary may only change news stories that have a
 certain status or publication date.""
 "
-PermissionDeniedBackendTest,1,Other backends are not checked once a backend raises PermissionDenied,,,,,,,,,,,Other backends are not checked once a backend raises PermissionDenied,,,,,,,
-PrePopulatedPostLargeSlug,1,"Regression test for #15938: a large max_length for the slugfield must not
+1,PermissionDeniedBackendTest,Other backends are not checked once a backend raises PermissionDenied,,,,,,,,,,,Other backends are not checked once a backend raises PermissionDenied,,,,,,,
+1,PrePopulatedPostLargeSlug,"Regression test for #15938: a large max_length for the slugfield must not
 be localized in prepopulated_fields_js.html or it might end up breaking
 the javascript (ie, using THOUSAND_SEPARATOR ends up with maxLength=1,000)",,,,,,,,"Regression test for #15938: a large max_length for the slugfield must not
 be localized in prepopulated_fields_js.html or it might end up breaking
 the javascript (ie, using THOUSAND_SEPARATOR ends up with maxLength=1,000)",Regression test for #15938:,,,,,,,,,
-ProxyModelInheritanceTests,1,"Proxy model inheritance across apps can result in migrate not creating the table
+1,ProxyModelInheritanceTests,"Proxy model inheritance across apps can result in migrate not creating the table
 for the proxied model (as described in #12286).  This test creates two dummy
 apps and calls migrate, then verifies that the table has been created.","Proxy model inheritance across apps can result in migrate not creating the table
 for the proxied model (as described in #12286).",,," This test creates two dummy
 apps and calls migrate, then verifies that the table has been created.",,,,,,,,,,,,,,
-RawPostDataException,1,"
+1,RawPostDataException,"
 You cannot access raw_post_data from a request that has
 multipart/* POST data if it has been accessed via POST,
 FILES, etc..","You cannot access raw_post_data from a request that has
@@ -792,14 +790,14 @@ FILES, etc..",,,,,,,"
 You cannot access raw_post_data from a request that has
 multipart/* POST data if it has been accessed via POST,
 FILES, etc..",,,,,,,
-RemoteTestRunner,1,"Run tests and record everything but don't display anything.
+1,RemoteTestRunner,"Run tests and record everything but don't display anything.
 
 The implementation matches the unpythonic coding style of unittest2.",Run tests and record everything but don't display anything.,,,,,,,,,,,,,,The implementation matches the unpythonic coding style of unittest2.,,,
-RequestFactoryEnvironmentTests,1,"Regression tests for #8551 and #17067: ensure that environment variables
+1,RequestFactoryEnvironmentTests,"Regression tests for #8551 and #17067: ensure that environment variables
 are set correctly in RequestFactory.","Regression tests for #8551 and #17067: ensure that environment variables
 are set correctly in RequestFactory.",,," ensure that environment variables
 are set correctly in RequestFactory.",,,,,,,,,,,,,,
-ReverseGenericManyToOneDescriptor,1,"
+1,ReverseGenericManyToOneDescriptor,"
 Accessor to the related objects manager on the one-to-many relation created
 by GenericRelation.
 
@@ -815,7 +813,7 @@ by GenericRelation.","In the example::
         comments = GenericRelation(Comment)
 
 ``post.comments`` is a ReverseGenericManyToOneDescriptor instance.",,,,,,,,,,,,,,,,
-SameAsLookup,1,"
+1,SameAsLookup,"
 The ""~="" operator is the ""same as"" operator. It tests actual geometric
 equality of two features. So if A and B are the same feature,
 vertex-by-vertex, the operator returns true.","The ""~="" operator is the ""same as"" operator. It tests actual geometric
@@ -823,38 +821,38 @@ equality of two features. So if A and B are the same feature,
 vertex-by-vertex, the operator returns true.",,,"The ""~="" operator is the ""same as"" operator. It tests actual geometric
 equality of two features. So if A and B are the same feature,
 vertex-by-vertex, the operator returns true.",,,,,,,,,,,,,,
-Serializer,1,Convert a queryset to JSON.,Convert a queryset to JSON.,,,,,,,,,,,,,,,,,
-SessionStorage,1,"Store messages in the session (that is, django.contrib.sessions).","Store messages in the session (that is, django.contrib.sessions).",,,,,,"Store messages in the session (that is, django.contrib.sessions).",,,,,"Store messages in the session (that is, django.contrib.sessions).",,,,,,
-SessionStore,1,"
+1,Serializer,Convert a queryset to JSON.,Convert a queryset to JSON.,,,,,,,,,,,,,,,,,
+1,SessionStorage,"Store messages in the session (that is, django.contrib.sessions).","Store messages in the session (that is, django.contrib.sessions).",,,,,,"Store messages in the session (that is, django.contrib.sessions).",,,,,"Store messages in the session (that is, django.contrib.sessions).",,,,,,
+1,SessionStore,"
 A database session store, that handles updating the account ID column
 inside the custom session model.","
 A database session store, ",,,"that handles updating the account ID column
 inside the custom session model.",,,,,,,,,,,,,,
-SimpleView,1,A simple view with a docstring.,A simple view with a docstring.,,,,,,,,,,,,,,,,,
-SpatialRefSysMixin,1,"
+1,SimpleView,A simple view with a docstring.,A simple view with a docstring.,,,,,,,,,,,,,,,,,
+1,SpatialRefSysMixin,"
 The SpatialRefSysMixin is a class used by the database-dependent
 SpatialRefSys objects to reduce redundant code.","
 The SpatialRefSysMixin is a class used by the database-dependent
 SpatialRefSys objects to reduce redundant code.",,,,,"
 The SpatialRefSysMixin is a class used by the database-dependent
 SpatialRefSys objects to reduce redundant code.",,,,,,,,,,,,
-SplitHiddenDateTimeWidget,1,"A widget that splits datetime input into two <input type=""hidden""> inputs.","A widget that splits datetime input into two <input type=""hidden""> inputs.",,,,,,,,,,,,,,,,,
-StaticFilesHandler,1,"WSGI middleware that intercepts calls to the static files directory, as
+1,SplitHiddenDateTimeWidget,"A widget that splits datetime input into two <input type=""hidden""> inputs.","A widget that splits datetime input into two <input type=""hidden""> inputs.",,,,,,,,,,,,,,,,,
+1,StaticFilesHandler,"WSGI middleware that intercepts calls to the static files directory, as
 defined by the STATIC_URL setting, and serves those files.","WSGI middleware that intercepts calls to the static files directory, as
 defined by the STATIC_URL setting, and serves those files.",,"WSGI middleware that intercepts calls to the static files directory, as
 defined by the STATIC_URL setting, and serves those files.",,,,,,,,,,,,,,,
-StrictAssignmentTests,1,"Should a model do anything special with __setattr__() or descriptors which
+1,StrictAssignmentTests,"Should a model do anything special with __setattr__() or descriptors which
 raise a ValidationError, a model form should catch the error (#24706).",,,,,,,,"Should a model do anything special with __setattr__() or descriptors which
 raise a ValidationError, a model form should catch the error (#24706).",,,,,,,,,,
-SubCategoryForm,1,"
+1,SubCategoryForm,"
 Subclassing without specifying a Meta on the class will use
 the parent's Meta (or the first parent in the MRO if there are
 multiple parent classes).",,,,,,,,,,,,,,,,,"
 Subclassing without specifying a Meta on the class will use
 the parent's Meta (or the first parent in the MRO if there are
 multiple parent classes).",
-SuccessMessageMixin,1,Add a success message on successful form submission.,Add a success message on successful form submission.,,,,,,,,,,,,,,,,,
-TemplateDoesNotExist,1,"
+1,SuccessMessageMixin,Add a success message on successful form submission.,Add a success message on successful form submission.,,,,,,,,,,,,,,,,,
+1,TemplateDoesNotExist,"
 The exception used when a template does not exist. Optional arguments:
 
 backend
@@ -885,13 +883,13 @@ chain
     A list of intermediate TemplateDoesNotExist exceptions. This is used to
     encapsulate multiple exceptions when loading templates from multiple
     engines.",,,,,,,,,,,,,,,
-TestImageFieldFile,1,"
+1,TestImageFieldFile,"
 Custom Field File class that records whether or not the underlying file
 was opened.","
 Custom Field File class that records whether or not the underlying file
 was opened.",,,,,,,,,,,,,,,,,
-TestRouter,1,Routes to the 'other' database if the model name starts with 'Other'.,,,,Routes to the 'other' database if the model name starts with 'Other'.,,,,,,,,,,,,,,
-TestUtils,1,"
+1,TestRouter,Routes to the 'other' database if the model name starts with 'Other'.,,,,Routes to the 'other' database if the model name starts with 'Other'.,,,,,,,,,,,,,,
+1,TestUtils,"
 This __doc__ output is required for testing. I copied this example from
 `admindocs` documentation. (TITLE)
 
@@ -925,16 +923,16 @@ Display an individual :model:`myapp.MyModel`.
 :template:`myapp/my_template.html` (DESCRIPTION)
 
 some_metadata: some data",,,,,,,,,
-UniqueAnchor,1,"This is a model that can be used as
+1,UniqueAnchor,"This is a model that can be used as
 something for other models to point at","This is a model that can be used as
 something for other models to point at",,,,,,,,,,,,,,,,,
-UpdateError,1,Occurs if Django tries to update a session that was deleted.,Occurs if Django tries to update a session that was deleted.,,,,,,,,,,,,,,,,,
-UserCreationForm,1,"
+1,UpdateError,Occurs if Django tries to update a session that was deleted.,Occurs if Django tries to update a session that was deleted.,,,,,,,,,,,,,,,,,
+1,UserCreationForm,"
 A form that creates a user, with no privileges, from the given username and
 password.","A form that creates a user, with no privileges, from the given username and
 password.",,"A form that creates a user, with no privileges, from the given username and
 password.",,,,,,,,,,,,,,,
-VariableWrapper,1,"
+1,VariableWrapper,"
 An adapter class for cursor variables that prevents the wrapped object
 from being converted into a string when used to instantiate an OracleParam.
 This can be used generally for any other object that should be passed into
@@ -942,7 +940,7 @@ Cursor.execute as-is.","An adapter class for cursor variables that prevents the 
 from being converted into a string when used to instantiate an OracleParam.
 ","This can be used generally for any other object that should be passed into
 Cursor.execute as-is.",,,,,,,,,,,,,,,,
-WindowFrame,1,"
+1,WindowFrame,"
 Model the frame clause in window expressions. There are two types of frame
 clauses which are subclasses, however, all processing and validation (by no
 means intended to be complete) is done here. Thus, providing an end for a
@@ -953,8 +951,8 @@ clauses which are subclasses, however, all processing and validation (by no
 means intended to be complete) is done here.",,,,,,,,,,,,,"There are two types of frame
 clauses which are subclasses, however, all processing and validation (by no
 means intended to be complete) is done here.",
-XFrameOptionsDecoratorsTests,1,Tests for the X-Frame-Options decorators.,Tests for the X-Frame-Options decorators.,,,,,,,,,,,,,,,,,
-XFrameOptionsMiddleware,1,"
+1,XFrameOptionsDecoratorsTests,Tests for the X-Frame-Options decorators.,Tests for the X-Frame-Options decorators.,,,,,,,,,,,,,,,,,
+1,XFrameOptionsMiddleware,"
 Set the X-Frame-Options HTTP header in HTTP responses.
 
 Do not set the header if it's already set or if the response contains
@@ -979,7 +977,7 @@ response can only be loaded on a frame within the same site.
 To prevent the
 response from being loaded in a frame in any site, set X_FRAME_OPTIONS in
 your project's Django settings to 'DENY'.",Set the X-Frame-Options HTTP header in HTTP responses.,,,,,,,,,,,
-Audio,2,"Create an audio object.
+2,Audio,"Create an audio object.
 
 When this object is returned by an input cell or passed to the
 display function, it will result in Audio controls being displayed
@@ -1125,21 +1123,21 @@ in the frontend (only works in the notebook).
 --------
 
 See also the ``Audio`` widgets form the ``ipywidget`` package for more flexibility and options.",,,,,,,,,
-capture_output,2,context manager for capturing stdout/err,context manager for capturing stdout/err,,,,,,,,,,,,,,,,,
-CapturingDisplayPublisher,2,"
+2,capture_output,context manager for capturing stdout/err,context manager for capturing stdout/err,,,,,,,,,,,,,,,,,
+2,CapturingDisplayPublisher,"
 A DisplayPublisher that store","
 A DisplayPublisher that store",,,,,,,,,,,,,,,,,
-CellMagicRole,2,Cross reference role displayed with a %% prefix,Cross reference role displayed with a %% prefix,,,,,,,,,,,,,,,,,
-DisplayHook,2,"The custom IPython displayhook to replace sys.displayhook.
+2,CellMagicRole,Cross reference role displayed with a %% prefix,Cross reference role displayed with a %% prefix,,,,,,,,,,,,,,,,,
+2,DisplayHook,"The custom IPython displayhook to replace sys.displayhook.
 
 This class does many things, but the basic idea is that it is a callable
 that gets called anytime user code returns a value.",The custom IPython displayhook to replace sys.displayhook.,,,"This class does many things, but the basic idea is that it is a callable
 that gets called anytime user code returns a value.",,,,,,,,,,,,,,
-DummyMod,2,"
+2,DummyMod,"
 A dummy module used for IPython's interactive module when
 a namespace must be assigned to the module's __dict__.","A dummy module used for IPython's interactive module when
 a namespace must be assigned to the module's __dict__.",,,,,,,,,,,,,,,,,
-GeoJSON,2,"
+2,GeoJSON,"
 GeoJSON expects JSON-able dict
 
 not an already-serialized JSON string.
@@ -1150,8 +1148,8 @@ Scalar types (None, number, string) are not allowed, only dict containers.","Geo
 Scalar types (None, number, string) are not allowed, only dict containers.",,,,,"not an already-serialized JSON string.
 
 Scalar types (None, number, string) are not allowed, only dict containers.",,,,,,,
-HelpEnd,2,Transformer for help syntax: obj? and obj??,Transformer for help syntax: obj? and obj??,,,,,,,,,,,,,,,,,
-HistoryAccessor,2,"
+2,HelpEnd,Transformer for help syntax: obj? and obj??,Transformer for help syntax: obj? and obj??,,,,,,,,,,,,,,,,,
+2,HistoryAccessor,"
 Access the history database without adding to it.
 
 This is intended for use by standalone history tools. IPython shells use
@@ -1160,7 +1158,7 @@ Access the history database without adding to it.
 ","
 This is intended for use by standalone history tools. IPython shells use
 HistoryManager, below, which is a subclass of this.",,,,,,,,,,,,,,,,
-InteractiveShellApp,2,"
+2,InteractiveShellApp,"
 A Mixin for applications that start InteractiveShell instances.
 
 Provides configurables for loading extensions and executing files
@@ -1189,13 +1187,13 @@ of the subclass:
   - :meth:`init_gui_pylab`
   - :meth:`init_extensions`
   - :meth:`init_code`",
-IPythonInputSplitter,2,"
+2,IPythonInputSplitter,"
 An input splitter that recognizes all of IPython's special syntax.",An input splitter that recognizes all of IPython's special syntax.,,,,,,,,,,,,,,,,,
-LazyEvaluate,2,"This is used for formatting strings with values that need to be updated
+2,LazyEvaluate,"This is used for formatting strings with values that need to be updated
 at that time, such as the current time or working directory.",,,,,,"This is used for formatting strings with values that need to be updated
 at that time, such as the current time or working directory.",,,,,"This is used for formatting strings with values that need to be updated
 at that time, such as the current time or working directory.",,,,,,,
-Magics,2,"
+2,Magics,"
 Base class for implementing magic functions.
 
 Shell functions which can be reached as %function_name. All magic
@@ -1232,15 +1230,15 @@ vs. `%cd(""../"")`",,,See :mod:`magic_functions` for examples of actual implemen
 This can make some functions easier to type, eg `%cd ../`
 vs. `%cd(""../"")`",,"All magic functions should accept a string, which they can parse for their own needs. 
 ",,,,
-MyFrame,2,"
+2,MyFrame,"
 This is MyFrame.  It just shows a few controls on a wxPanel,
 and has a simple menu.","
 This is MyFrame.  It just shows a few controls on a wxPanel,
 and has a simple menu.",,,,,,,,,,,,,,,,,
-Obj,2,Namespace to hold arbitrary information.,Namespace to hold arbitrary information.,,,,,,,,,,,,,,,,,
-RichPromptDisplayHook,2,"
+2,Obj,Namespace to hold arbitrary information.,Namespace to hold arbitrary information.,,,,,,,,,,,,,,,,,
+2,RichPromptDisplayHook,"
 Subclass of base display hook using coloured prompt",Subclass of base display hook using coloured prompt,,,,,,,,,,,,,,,,,
-Struct,2,"
+2,Struct,"
 A dict subclass with attribute style access.
 
 This dict subclass has a a few extra features:
@@ -1261,8 +1259,8 @@ This dict subclass has a a few extra features:
 * The ability to restrict assignment to only existing keys.
 * Intelligent merging.
 * Overloaded operators.",,,,,,,,,,,,,,
-TBTools,2,Basic tools used by all traceback printer classes.,Basic tools used by all traceback printer classes.,,,,,,,,,,,,,,,,,
-TermColors,2,"
+2,TBTools,Basic tools used by all traceback printer classes.,Basic tools used by all traceback printer classes.,,,,,,,,,,,,,,,,,
+2,TermColors,"
 Color escape sequences.
 
 This class defines the escape sequences for all the standard (ANSI?)
@@ -1278,7 +1276,7 @@ string, suitable for defining 'dummy' color schemes in terminals which get
 confused by color escapes.
 
 ",This class should be used as a mixin for building color schemes.,,,,,,,,,,This class should be used as a mixin for building color schemes.,,,,,,
-UserMagics,2,"
+2,UserMagics,"
 Placeholder for user-defined magics to be added at runtime.
 
 All magics are eventually merged into a single namespace at runtime, but we
@@ -1290,7 +1288,7 @@ use this class to isolate the magics defined dynamically by the user into
 their own class.",,,,,"All magics are eventually merged into a single namespace at runtime, but we
 use this class to isolate the magics defined dynamically by the user into
 their own class.",,,,,,,
-YouTubeVideo,2,"Class for embedding a YouTube Video in an IPython session, based on its video id.
+2,YouTubeVideo,"Class for embedding a YouTube Video in an IPython session, based on its video id.
 
 e.g. to embed the video from https://www.youtube.com/watch?v=foo , you would
 do::
@@ -1334,7 +1332,7 @@ To calculate seconds from time as hours, minutes, seconds use
     start=int(timedelta(hours=1, minutes=46, seconds=40).total_seconds())","Other parameters can be provided as documented at
 https://developers.google.com/youtube/player_parameters#Parameters",,,,,,"Other parameters can be provided as documented at
 https://developers.google.com/youtube/player_parameters#Parameters",,,,,,,,,
-_MockPOP3,3,"Base mock that pretends to be a poplib POP3 connection.
+3,_MockPOP3,"Base mock that pretends to be a poplib POP3 connection.
 
 >>> pm = POP3Mailbox('localhost', user='bad', conn_cls=_MockPOP3)
 Traceback (most recent call last):
@@ -1399,11 +1397,11 @@ AccessError
 Traceback (most recent call last):
    ...
 KeyError: ...",,,,,,,,,,,,,,,,
-AutocryptSearch,3,Search for the Autocrypt database.,Search for the Autocrypt database.,,,,,,,,,,,,,,,,,
-AutoTlsConnBroker,3,"This broker tries to auto-upgrade connections to use TLS, or at
+3,AutocryptSearch,Search for the Autocrypt database.,Search for the Autocrypt database.,,,,,,,,,,,,,,,,,
+3,AutoTlsConnBroker,"This broker tries to auto-upgrade connections to use TLS, or at
 least do the SSL handshake here so we can record info about it.","This broker tries to auto-upgrade connections to use TLS, or at
 least do the SSL handshake here so we can record info about it.",,,,,,,,,,,,,,,,,
-ConfigDict,3,"A sanity-checking, self-documenting dictionary of program settings.
+3,ConfigDict,"A sanity-checking, self-documenting dictionary of program settings.
 
 The object must be initialized with a dictionary which describes in
 a structured way what variables exist, what their legal values are,
@@ -1597,7 +1595,7 @@ and what their defaults are and what they are for.
 ","If the sanity check is itself a dictionary of rules, values are expected
 to be dictionaries or lists of items that match the rules defined. This
 should be used with an empty list or dictionary as a default value.",,,,,,
-ConfigureMailboxes,3,"
+3,ConfigureMailboxes,"
 Add one or more mailboxes.
 
 If not account is specified, the mailbox is only assigned an ID for use
@@ -1609,31 +1607,31 @@ in the metadata index.
 
 If an account is specified, the mailbox will be assigned to that account
 and configured for automatic indexing.",,,,,,,,,,,,
-ConnectToGuiOMatic,3,Connect to a waiting gui-o-matic GUI,Connect to a waiting gui-o-matic GUI,,,,,,,,,,,,,,,,,
-ContactSet,3,"Set contact lines, ensuring contact exists","Set contact lines, ensuring contact exists",,,,,,,,,,,,,,,,,
-EncryptedIntDict,3,"EncryptedDict which only deals in signed 64-bit int values.
+3,ConnectToGuiOMatic,Connect to a waiting gui-o-matic GUI,Connect to a waiting gui-o-matic GUI,,,,,,,,,,,,,,,,,
+3,ContactSet,"Set contact lines, ensuring contact exists","Set contact lines, ensuring contact exists",,,,,,,,,,,,,,,,,
+3,EncryptedIntDict,"EncryptedDict which only deals in signed 64-bit int values.
 This also adds a working keys() function.",EncryptedDict which only deals in signed 64-bit int values.,,,This also adds a working keys() function.,,,,,,,,,,,,,,
-EncryptedUnicodeDict,3,EncryptedDict which only deals in unicode values.,EncryptedDict which only deals in unicode values.,,,,,,,,,,,,,,,,,
-Event,3,"This is a single event in the event log. Actual interpretation and
+3,EncryptedUnicodeDict,EncryptedDict which only deals in unicode values.,EncryptedDict which only deals in unicode values.,,,,,,,,,,,,,,,,,
+3,Event,"This is a single event in the event log. Actual interpretation and
 rendering of events should be handled by the respective source class.",This is a single event in the event log.,,," Actual interpretation and
 rendering of events should be handled by the respective source class.",,,,,,,," Actual interpretation and
 rendering of events should be handled by the respective source class.",,,,,,
-Forward,3,Create forwarding drafts of one or more messages,Create forwarding drafts of one or more messages,,,,,,,,,,,,,,,,,
-Group_,3,View groups,View groups,,,,,,,,,,,,,,,,,
-HashCash,3,Try to collide a hash using the SMTorP algorithm,Try to collide a hash using the SMTorP algorithm,,,,,,,,,,,,,,,,,
-ListTags,3,List tags,List tags,,,,,,,,,,,,,,,,,
-MailpileJinjaLoader,3,"A Jinja2 template loader which uses the Mailpile configuration
+3,Forward,Create forwarding drafts of one or more messages,Create forwarding drafts of one or more messages,,,,,,,,,,,,,,,,,
+3,Group_,View groups,View groups,,,,,,,,,,,,,,,,,
+3,HashCash,Try to collide a hash using the SMTorP algorithm,Try to collide a hash using the SMTorP algorithm,,,,,,,,,,,,,,,,,
+3,ListTags,List tags,List tags,,,,,,,,,,,,,,,,,
+3,MailpileJinjaLoader,"A Jinja2 template loader which uses the Mailpile configuration
 and plugin system to find template files.","""
 A Jinja2 template loader which uses the Mailpile configuration
 and plugin system to find template files.""",,,,,,,,,,,,,,,,,
-MailpileMailbox,3,A Maildir class for Windows (using ! instead of : in filenames),A Maildir class for Windows (using ! instead of : in filenames),,,,,,,,,,,,,,,,,
-MailpileVFS,3,"This is a router object that implements the VFS interface but,
+3,MailpileMailbox,A Maildir class for Windows (using ! instead of : in filenames),A Maildir class for Windows (using ! instead of : in filenames),,,,,,,,,,,,,,,,,
+3,MailpileVFS,"This is a router object that implements the VFS interface but,
 delegating calls to individual implementations.","This is a router object that implements the VFS interface but,
 delegating calls to individual implementations.",,,,,,,,,,,,,,,,,
-MoveFilter,3,Move an auto-tagging rule,Move an auto-tagging rule,,,,,,,,,,,,,,,,,
-OldPostingList,3,A posting list is a map of search terms to message IDs.,A posting list is a map of search terms to message IDs.,,,,,,,,,,,,,,,,,
-Rescan,3,Add new messages to index,Add new messages to index,,,,,,,,,,,,,,,,,
-StorageBackedLongs,3,"This combines StorageBackedData with Pack/UnpackLongList to pack
+3,MoveFilter,Move an auto-tagging rule,Move an auto-tagging rule,,,,,,,,,,,,,,,,,
+3,OldPostingList,A posting list is a map of search terms to message IDs.,A posting list is a map of search terms to message IDs.,,,,,,,,,,,,,,,,,
+3,Rescan,Add new messages to index,Add new messages to index,,,,,,,,,,,,,,,,,
+3,StorageBackedLongs,"This combines StorageBackedData with Pack/UnpackLongList to pack
 and save sets of ints.
 
 >>> storage = {'sbl': '\x01\x00\x00\x00\x00\x00\x00\x00'}
@@ -1655,10 +1653,10 @@ True
 >>> sbl.save()
 >>> UnpackLongList(storage['sbl']) == [1, 2]
 True",,,,,,,,,,,,,,,,
-Util,3,Utility functions for builds,Utility functions for builds,,,,,,,,,,,,,,,,,
-Vcard,3,Display a single vcard,Display a single vcard,,,,,,,,,,,,,,,,,
-VCardSet,3,"Add a lines to a VCard, ensuring VCard exists","Add a lines to a VCard, ensuring VCard exists",,,,,,,,,,,,,,,,,
-VCardStore,3,"This is a disk-backed in-memory collection of VCards.
+3,Util,Utility functions for builds,Utility functions for builds,,,,,,,,,,,,,,,,,
+3,Vcard,Display a single vcard,Display a single vcard,,,,,,,,,,,,,,,,,
+3,VCardSet,"Add a lines to a VCard, ensuring VCard exists","Add a lines to a VCard, ensuring VCard exists",,,,,,,,,,,,,,,,,
+3,VCardStore,"This is a disk-backed in-memory collection of VCards.
 
 >>> vcs = VCardStore(cfg, '/tmp')
 
@@ -1708,15 +1706,15 @@ True
 >>> vcs.del_vcards(*vcs.find_vcards(['guy']))
 >>> vcs.find_vcards(['guy'])
 []",,,,,,,,,,,,,,,,
-_MergeOperation,4,"Perform a database (SQL) merge operation between two DataFrame or Series
+4,_MergeOperation,"Perform a database (SQL) merge operation between two DataFrame or Series
 objects using either columns as keys or their row indexes",,Perform a database (SQL) merge operation between two DataFrame or Series objects using either columns as keys or their row indexes,,,,,,,,,,,,,,,,
-AbstractEngine,4,Object serving as a base class for all engines.,Object serving as a base class for all engines.,,,,,,,,,,,,,,,,,
-AbstractHolidayCalendar,4,Abstract interface to create holidays following certain rules.,Abstract interface to create holidays following certain rules.,,,,,,,,,,,,,,,,,
-AccessorCallableDocumenter,4,"This documenter lets us removes .__call__ from the method signature for
+4,AbstractEngine,Object serving as a base class for all engines.,Object serving as a base class for all engines.,,,,,,,,,,,,,,,,,
+4,AbstractHolidayCalendar,Abstract interface to create holidays following certain rules.,Abstract interface to create holidays following certain rules.,,,,,,,,,,,,,,,,,
+4,AccessorCallableDocumenter,"This documenter lets us removes .__call__ from the method signature for
 callable accessors like Series.plot","This documenter lets us removes .__call__ from the method signature for
 callable accessors like Series.plot",,,,,,,,,,,,,,,,,
-AccessorDocumenter,4,Specialized Documenter subclass for accessors.,Specialized Documenter subclass for accessors.,,,,,,,,,,,,,,,,,
-Base,4,"
+4,AccessorDocumenter,Specialized Documenter subclass for accessors.,Specialized Documenter subclass for accessors.,,,,,,,,,,,,,,,,,
+4,Base,"
 Common tests for all variations of IntervalIndex construction. Input data
 to be supplied in breaks format, then converted by the subclass method
 get_kwargs_from_breaks to the expected format.","
@@ -1725,7 +1723,7 @@ to be supplied in breaks format, then converted by the subclass method
 get_kwargs_from_breaks to the expected format.",,,,,,,,"Input data
 to be supplied in breaks format, then converted by the subclass method
 get_kwargs_from_breaks to the expected format.",,,,
-BaseInterfaceTests,4,"
+4,BaseInterfaceTests,"
 Tests that the basic interface is satisfied.
 ------------------------------------------------------------------------
     Interface
@@ -1734,7 +1732,7 @@ Tests that the basic interface is satisfied.
 ------------------------------------------------------------------------
     Interface
     ------------------------------------------------------------------------",,,,,,,,,,,,,,,,,
-BooleanArray,4,"Array of boolean (True/False) data with missing values.
+4,BooleanArray,"Array of boolean (True/False) data with missing values.
 
 This is a pandas Extension array for boolean data, under the hood
 represented by 2 numpy arrays: a boolean array with the data and
@@ -1824,10 +1822,10 @@ BooleanArray",.. version added:: 1.0.0,,,, See :ref:`boolean.kleene` for more.,,
 
    BooleanArray is considered experimental. The implementation and
    parts of the API may change without warning.",,,,,,,
-BusinessHour,4,DateOffset subclass representing possibly n business hours.,DateOffset subclass representing possibly n business hours.,,,,,,,,,,,,,,,,DateOffset subclass representing possibly n business hours.,
-BusinessMixin,4,Mixin to business types to provide related functions.,Mixin to business types to provide related functions.,,,,,,,,,,,,,,,,,
-BYearBegin,4,DateOffset increments between business year begin dates.,DateOffset increments between business year begin dates.,,,,,,,,,,,,,,,,,
-CategoricalDtype,4,"Type for categorical data with the categories and orderedness.
+4,BusinessHour,DateOffset subclass representing possibly n business hours.,DateOffset subclass representing possibly n business hours.,,,,,,,,,,,,,,,,DateOffset subclass representing possibly n business hours.,
+4,BusinessMixin,Mixin to business types to provide related functions.,Mixin to business types to provide related functions.,,,,,,,,,,,,,,,,,
+4,BYearBegin,DateOffset increments between business year begin dates.,DateOffset increments between business year begin dates.,,,,,,,,,,,,,,,,,
+4,CategoricalDtype,"Type for categorical data with the categories and orderedness.
 
 .. versionchanged:: 0.21.0
 
@@ -1903,7 +1901,7 @@ See Also
 --------
 Categorical
 ",,,,,,,,,
-CategoricalIndex,4,"Index based on an underlying :class:`Categorical`.
+4,CategoricalIndex,"Index based on an underlying :class:`Categorical`.
 
 CategoricalIndex, like Categorical, can only take on a limited,
 and usually fixed, number of possible values (`categories`). Also,
@@ -2066,15 +2064,15 @@ Index : The base pandas Index type.
 Categorical : A categorical array.
 CategoricalDtype : Type for categorical data.",,,,,,,,"
 Index based on an underlying :class:`Categorical`.",
-CheckingBuildExt,4,Subclass build_ext to get clearer report if Cython is necessary.,,,,,,,,,,,,,,,,,Subclass build_ext to get clearer report if Cython is necessary.,
-CythonCommand,4,"
+4,CheckingBuildExt,Subclass build_ext to get clearer report if Cython is necessary.,,,,,,,,,,,,,,,,,Subclass build_ext to get clearer report if Cython is necessary.,
+4,CythonCommand,"
 Custom distutils command subclassed from Cython.Distutils.build_ext
 to compile pyx->c, and stop there. All this does is override the
 C-compile method build_extension() with a no-op.","Custom distutils command subclassed from Cython.Distutils.build_ext
 to compile pyx->c, and stop there.",,,,,,,,,,,,,,,,"All this does is override the
 C-compile method build_extension() with a no-op.",
-DataIndexableCol,4,represent a data column that can be indexed ,represent a data column that can be indexed ,,,,,,,,,,,,,,,,,
-ExcelFile,4,"
+4,DataIndexableCol,represent a data column that can be indexed ,represent a data column that can be indexed ,,,,,,,,,,,,,,,,,
+4,ExcelFile,"
 Class for parsing tabular excel sheets into DataFrame objects.
 Uses xlrd. See read_excel for more documentation
 
@@ -2095,10 +2093,10 @@ engine : str, default None
     If io is not a buffer or path, this must be set to identify io.
     Acceptable values are None, ``xlrd``, ``openpyxl`` or ``odf``.
     Note that ``odf`` reads tables out of OpenDocument formatted files.",,,Uses xlrd. See read_excel for more documentation,,,See read_excel for more documentation,,,,,,Uses xlrd. ,,,
-Holiday,4,"Class that defines a holiday with start/end dates and rules
+4,Holiday,"Class that defines a holiday with start/end dates and rules
 for observance.","Class that defines a holiday with start/end dates and rules
 for observance.",,,,,,,,,,,,,,,,,
-IntegerArray,4,"Array of integer (optional missing) values.
+4,IntegerArray,"Array of integer (optional missing) values.
 
 .. versionadded:: 0.24.0
 
@@ -2223,7 +2221,7 @@ We represent an IntegerArray with 2 numpy arrays:
 
 To construct an IntegerArray from generic array-like input, use
 :func:`pandas.array` with one of the integer dtypes (see examples).",,,,,,,
-IntervalDtype,4,"An ExtensionDtype for Interval data.
+4,IntervalDtype,"An ExtensionDtype for Interval data.
 
 **This is not an actual numpy dtype**, but a duck type.
 
@@ -2256,8 +2254,8 @@ Methods
 -------
 None
 ",,"**This is not an actual numpy dtype**, but a duck type.",,,,,"**This is not an actual numpy dtype**, but a duck type.",,,,,,,
-NonConsolidatableMixIn,4,hold methods for the nonconsolidatable blocks ,hold methods for the nonconsolidatable blocks ,,,,,,,,,,,,,,,,,
-PlotAccessor,4,"Make plots of Series or DataFrame.
+4,NonConsolidatableMixIn,hold methods for the nonconsolidatable blocks ,hold methods for the nonconsolidatable blocks ,,,,,,,,,,,,,,,,,
+4,PlotAccessor,"Make plots of Series or DataFrame.
 
 Uses the backend specified by the
 option ``plotting.backend``. By default, matplotlib is used.
@@ -2487,7 +2485,7 @@ Notes
 - See matplotlib documentation online for more on this subject
 ",,,,"Uses the backend specified by the
 option ``plotting.backend``. By default, matplotlib is used.",,,,,
-SelectNSeries,4,"Implement n largest/smallest for Series
+4,SelectNSeries,"Implement n largest/smallest for Series
 
 Parameters
 ----------
@@ -2506,13 +2504,13 @@ keep : {'first', 'last'}, default 'first'
 Returns
 -------
 nordered : Series",,,,,,,,,,,,,,,
-SetopCheck,4,"This is called to decorate the set operations of IntervalIndex
+4,SetopCheck,"This is called to decorate the set operations of IntervalIndex
 to perform the type check in advance.","This is called to decorate the set operations of IntervalIndex
 to perform the type check in advance.",,,,,"This is called to decorate the set operations of IntervalIndex
 to perform the type check in advance.",,,,,,,,,,,,
-SQLiteTable,4,"Patch the SQLTable for fallback support.
+4,SQLiteTable,"Patch the SQLTable for fallback support.
 Instead of a table variable just use the Create Table statement.",Patch the SQLTable for fallback support.,,,,,Instead of a table variable just use the Create Table statement.,,,,,Instead of a table variable just use the Create Table statement.,,,,,,,
-SQLTable,4,"
+4,SQLTable,"
 For mapping Pandas tables to SQL tables.
 Uses fact that table is reflected by SQLAlchemy to
 do better type conversions.
@@ -2522,7 +2520,7 @@ TODO: support for multiIndex",For mapping Pandas tables to SQL tables.,,,"Uses f
 do better type conversions.
 Also holds various flags needed to avoid having to
 pass them between functions all the time.",,,TODO: support for multiIndex,,,,,,,,,,,
-StringArray,4,"Extension array for string data.
+4,StringArray,"Extension array for string data.
 
 .. versionadded:: 1.0.0
 
@@ -2638,7 +2636,7 @@ Series.str
 
    In particular, the NA value used may change to no longer be
    ``numpy.nan``.",,,,,,,
-StringMethods,4,"
+4,StringMethods,"
 Vectorized string functions for Series and Index. NAs stay NA unless
 handled otherwise by a particular method. Patterned after Python's string
 methods, with some inspiration from R's stringr package.
@@ -2657,17 +2655,17 @@ methods, with some inspiration from R's stringr package.
 """,,,"Patterned after Python's string
 methods, with some inspiration from R's stringr package.
 """,,,
-TermValue,4,hold a term value the we use to construct a condition/filter ,hold a term value the we use to construct a condition/filter ,,,,,,,,,,,,,,,,,
-TestDatetimelikeSubtype,4,Tests specific to IntervalIndex with datetime-like subtype,Tests specific to IntervalIndex with datetime-like subtype,,,,,,,,,,,,,,,,,
-TestFromArrays,4,Tests specific to IntervalIndex.from_arrays,Tests specific to IntervalIndex.from_arrays,,,,,,,,,,,,,,,,,
-TestFromTuples,4,Tests specific to IntervalIndex.from_tuples,Tests specific to IntervalIndex.from_tuples,,,,,,,,,,,,,,,,,
-TestPeriodIndexSeriesComparisonConsistency,4,"Test PeriodIndex and Period Series Ops consistency 
+4,TermValue,hold a term value the we use to construct a condition/filter ,hold a term value the we use to construct a condition/filter ,,,,,,,,,,,,,,,,,
+4,TestDatetimelikeSubtype,Tests specific to IntervalIndex with datetime-like subtype,Tests specific to IntervalIndex with datetime-like subtype,,,,,,,,,,,,,,,,,
+4,TestFromArrays,Tests specific to IntervalIndex.from_arrays,Tests specific to IntervalIndex.from_arrays,,,,,,,,,,,,,,,,,
+4,TestFromTuples,Tests specific to IntervalIndex.from_tuples,Tests specific to IntervalIndex.from_tuples,,,,,,,,,,,,,,,,,
+4,TestPeriodIndexSeriesComparisonConsistency,"Test PeriodIndex and Period Series Ops consistency 
 TODO: needs parametrization+de-duplication",Test PeriodIndex and Period Series Ops consistency ,,,,,,TODO: needs parametrization+de-duplication,,,,,,,,,,,
-TestSorted,4,everything you wanted to test about sorting ,everything you wanted to test about sorting ,,,,,,,,,,,,,,,,,
-UnsortedIndexError,4,"Error raised when attempting to get a slice of a MultiIndex,
+4,TestSorted,everything you wanted to test about sorting ,everything you wanted to test about sorting ,,,,,,,,,,,,,,,,,
+4,UnsortedIndexError,"Error raised when attempting to get a slice of a MultiIndex,
 and the index has not been lexsorted. Subclass of `KeyError`.","Error raised when attempting to get a slice of a MultiIndex,
 and the index has not been lexsorted.",,,Subclass of `KeyError`.,,,,,,,,,,,,,,
-_BZ2Proxy,5,"Small proxy class that enables external file object
+5,_BZ2Proxy,"Small proxy class that enables external file object
 support for ""r:bz2"" and ""w:bz2"" modes. This is actually
 a workaround for a limitation in bz2 module's BZ2File
 class which (unlike gzip.GzipFile) has no support for
@@ -2679,17 +2677,17 @@ a file object argument.",,,,,"This is actually
 a workaround for a limitation in bz2 module's BZ2File
 class which (unlike gzip.GzipFile) has no support for
 a file object argument.",,,,,,,
-_FileInFile,5,"
+5,_FileInFile,"
 A thin wrapper around an existing file object that
 provides a part of its data as an individual file
 object.","A thin wrapper around an existing file object that
 provides a part of its data as an individual file
 object.",,,,,,,,,,,,,,,,,
-_MovedItems,5,Lazy loading of moved objects,Lazy loading of moved objects,,,,,,,,,,,,,,,,,
-_PathParents,5,"This object provides sequence-like access to the logical ancestors
+5,_MovedItems,Lazy loading of moved objects,Lazy loading of moved objects,,,,,,,,,,,,,,,,,
+5,_PathParents,"This object provides sequence-like access to the logical ancestors
 of a path.  Don't try to construct it yourself.","This object provides sequence-like access to the logical ancestors
 of a path.",,,,,,,,,,  Don't try to construct it yourself.,,,,,,,
-And,5,"
+5,And,"
 Requires all given :class:`ParseExpression` s to be found in the given order.
 Expressions may be separated by whitespace.
 May be constructed using the ``'+'`` operator.
@@ -2723,7 +2721,7 @@ May be constructed using the ``'+'`` operator.
 May also be constructed using the ``'-'`` operator, which will
 suppress backtracking.
 ",,,,
-Argument,5,"
+5,Argument,"
 Arguments are positional parameters to a command.  They generally
 provide fewer features than options but can have infinite ``nargs``
 and are required by default.
@@ -2731,9 +2729,9 @@ and are required by default.
 All parameters are passed onwards to the parameter constructor.",Arguments are positional parameters to a command.,"They generally
 provide fewer features than options but can have infinite ``nargs``
 and are required by default.",,All parameters are passed onwards to the parameter constructor,,,,,,,,,,,,,,
-BaseCommand_,5,A CLI command.,A CLI command.,,,,,,,,,,,,,,,,,
-BrokenStdoutLoggingError,5,Raised if BrokenPipeError occurs for the stdout stream while logging.,Raised if BrokenPipeError occurs for the stdout stream while logging.,,,,,,,,,,,,,,,,,
-Bucket,5,"
+5,BaseCommand_,A CLI command.,A CLI command.,,,,,,,,,,,,,,,,,
+5,BrokenStdoutLoggingError,Raised if BrokenPipeError occurs for the stdout stream while logging.,Raised if BrokenPipeError occurs for the stdout stream while logging.,,,,,,,,,,,,,,,,,
+5,Bucket,"
 Buckets are used to store the bytecode for one template.  It's created
 and initialized by the bytecode cache and passed to the loading functions.
 
@@ -2745,11 +2743,11 @@ and initialized by the bytecode cache and passed to the loading functions.
 
 ",,,"The buckets get an internal checksum from the cache assigned and use this
 to automatically reject outdated cache material. ",,,,,,,,,,,,,Individual bytecode cache subclasses don't have to care about cache invalidation.,
-CallBlock,5,"
+5,CallBlock,"
 Like a macro without a name but a call instead.  `call` is called with
 the unnamed macro as `caller` argument this node holds.",,," `call` is called with
 the unnamed macro as `caller` argument this node holds.",,,Like a macro without a name but a call instead. ,,,,,,,,,,,,
-CaseInsensitiveDict,5,"
+5,CaseInsensitiveDict,"
 A case-insensitive ``dict``-like object.
 
 Implements all methods and operations of
@@ -2800,11 +2798,11 @@ The structure remembers the
 case of the last key to be set, and ``iter(instance)``,
 ``keys()``, ``items()``, ``iterkeys()``, and ``iteritems()``
 will contain case-sensitive keys. ",,,,,,,,,,,,
-ColoredString,5,Enhanced string for __len__ operations on Colored output.,Enhanced string for __len__ operations on Colored output.,,,,,,,,,,,,,,,,,
-CommandError,5,Raised when there is an error in command-line arguments,Raised when there is an error in command-line arguments,,,,,,,,,,,,,Raised when there is an error in command-line arguments,,,,
-ConnectionError,5,A Connection error occurred.,A Connection error occurred.,,,,,,,,,,,,,,,,,
-CONSOLE_SCREEN_BUFFER_INFO,5,struct in wincon.h.,struct in wincon.h.,,,,,,,,,,,,,,,,,
-Context_,5,"
+5,ColoredString,Enhanced string for __len__ operations on Colored output.,Enhanced string for __len__ operations on Colored output.,,,,,,,,,,,,,,,,,
+5,CommandError,Raised when there is an error in command-line arguments,Raised when there is an error in command-line arguments,,,,,,,,,,,,,Raised when there is an error in command-line arguments,,,,
+5,ConnectionError,A Connection error occurred.,A Connection error occurred.,,,,,,,,,,,,,,,,,
+5,CONSOLE_SCREEN_BUFFER_INFO,struct in wincon.h.,struct in wincon.h.,,,,,,,,,,,,,,,,,
+5,Context_,"
 The template context holds the variables of a template.  It stores the
 values passed to the template and also the names the template exports.
 Creating instances is neither supported nor useful as it's created
@@ -2846,29 +2844,29 @@ be created by hand.
 The context is immutable.",,,,,"Creating instances is neither supported nor useful as it's created
 automatically at various stages of the template evaluation and should not
 be created by hand.",,,,,,,
-ConvertingTuple,5,A converting tuple wrapper.,A converting tuple wrapper.,,,,,,,,,,,,,,,,,
-CookieConflictError,5,"
+5,ConvertingTuple,A converting tuple wrapper.,A converting tuple wrapper.,,,,,,,,,,,,,,,,,
+5,CookieConflictError,"
 There are two cookies that meet the criteria specified in the cookie jar.
 Use .get and .set and include domain and path args in order to be more specific.",There are two cookies that meet the criteria specified in the cookie jar.,,,,,Use .get and .set and include domain and path args in order to be more specific.,,,,,,Use .get and .set and include domain and path args in order to be more specific.,,,,,,
-DataViewSequence,5,"
+5,DataViewSequence,"
 A sequence of data views.
 
 Each entry is an instance of `item_class`.","
 A sequence of data views.
 ",,"
 Each entry is an instance of `item_class`.",,,,,,,,,,,,,,,
-Date,5,A date literal.,A date literal.,,,,,,,,,,,,,,,,,
-DependencyWarning,5,"Warned when an attempt is made to import a module with missing optional
+5,Date,A date literal.,A date literal.,,,,,,,,,,,,,,,,,
+5,DependencyWarning,"Warned when an attempt is made to import a module with missing optional
 dependencies.",Warned when an attempt is made to import a module with missing optional dependencies.,,,,,,,,,,,,,,,,,
-DirectedGraph,5,A graph structure with directed edges.,A graph structure with directed edges.,,,,,,,,,,,,,,,,,
-Distribution,5,"
+5,DirectedGraph,A graph structure with directed edges.,A graph structure with directed edges.,,,,,,,,,,,,,,,,,
+5,Distribution,"
 A base class for distributions, whether installed or from indexes.
 Either way, it must have some metadata, so that's all that's needed
 for construction.","A base class for distributions, whether installed or from indexes.","Either way, it must have some metadata, so that's all that's needed
 for construction.",,,,,,,,,,,,,,,,
-DocumentErrorTree,5,"Implements a dict-like class to query errors by indexes following the
+5,DocumentErrorTree,"Implements a dict-like class to query errors by indexes following the
 structure of a validated document. ",Implements a dict-like class to query errors ,,,by indexes following the structure of a validated document.,,,,,,,,,,,,,,
-Environment,5,"The core component of Jinja is the `Environment`.  It contains
+5,Environment,"The core component of Jinja is the `Environment`.  It contains
 important shared variables like configuration, filters, tests,
 globals and others.  Instances of this class may be modified if
 they are not shared and if no template was loaded so far.
@@ -3114,19 +3112,19 @@ will lead to surprising effects and undefined behavior.",".. versionadded:: 2.2
         .. versionadded:: 2.7",,,"Modifications on environments after the first template was loaded
 will lead to surprising effects and undefined behavior.",        See :ref:`bytecode-cache` for more information.,,"Modifications on environments after the first template was loaded
 will lead to surprising effects and undefined behavior.",,,,,,,
-EOF,5,"Raised when EOF is read from a child.
+5,EOF,"Raised when EOF is read from a child.
 This usually means the child has exited.",This usually means the child has exited.,,,,,,,"Raised when EOF is read from a child.
 ",,,,,,,,,,
-ExceptionPexpect,5,Base class for all exceptions raised by this module.,Base class for all exceptions raised by this module.,,,,,,,,,,,,,,,,,
-ExtractError,5,General exception for extract errors.,General exception for extract errors.,,,,,,,,,,,,,,,,,
-FakeFile,5,"Wrap a list of lines in an object with readline() to make
+5,ExceptionPexpect,Base class for all exceptions raised by this module.,Base class for all exceptions raised by this module.,,,,,,,,,,,,,,,,,
+5,ExtractError,General exception for extract errors.,General exception for extract errors.,,,,,,,,,,,,,,,,,
+5,FakeFile,"Wrap a list of lines in an object with readline() to make
 ConfigParser happy.",Wrap a list of lines in an object ,,,with readline() to make ConfigParser happy.,,,,,,,,,,,,,,
-fdspawn,5,"This is like pexpect.spawn but allows you to supply your own open file
+5,fdspawn,"This is like pexpect.spawn but allows you to supply your own open file
 descriptor. For example, you could use it to read through a file looking
 for patterns, or to control a modem or serial device. ","This is like pexpect.spawn but allows you to supply your own open file
 descriptor. ","For example, you could use it to read through a file looking
 for patterns, or to control a modem or serial device. ",,,,,,,,,,,,,,,,
-FileMetadata,5,"
+5,FileMetadata,"
 Metadata handler for standalone PKG-INFO files
 
 Usage::
@@ -3162,7 +3160,7 @@ Metadata handler for standalone PKG-INFO files
 This provider rejects all data and metadata requests except for PKG-INFO,
 which is treated as existing, and will be the contents of the file at
 the provided location.",,,,,,,,,,,,,,
-FileSystemLoader,5,"Loads templates from the file system.  This loader can find templates
+5,FileSystemLoader,"Loads templates from the file system.  This loader can find templates
 in folders on the file system and is the preferred way to load them.
 
 The loader takes the path to the templates as string, or if multiple
@@ -3194,9 +3192,9 @@ by setting the `encoding` parameter to something else.
 
 To follow symbolic links, set the *followlinks* parameter to ``True``::",,,".. versionchanged:: 2.8+
    The *followlinks* parameter was added.",,,,,,,,,,,,,
-Filter,5,Alphabetizes attributes for elements,Alphabetizes attributes for elements,,,,,,,,,,,,,,,,,
-Filter_,5,Sanitizes token stream of XHTML+MathML+SVG and of inline style attributes,Sanitizes token stream of XHTML+MathML+SVG and of inline style attributes,,,,,,,,,,,,,,,,,
-FollowedBy,5,"
+5,Filter,Alphabetizes attributes for elements,Alphabetizes attributes for elements,,,,,,,,,,,,,,,,,
+5,Filter_,Sanitizes token stream of XHTML+MathML+SVG and of inline style attributes,Sanitizes token stream of XHTML+MathML+SVG and of inline style attributes,,,,,,,,,,,,,,,,,
+5,FollowedBy,"
 Lookahead matching of the given parse expression.
 ``FollowedBy`` does *not* advance the parsing position within
 the input string, it only verifies that the specified parse
@@ -3252,12 +3250,12 @@ expression matches at the current position.  ``FollowedBy``
 always returns a null token list. If any results names are defined
 in the lookahead expression, those *will* be returned for access by
 name.",,,,,,,
-Getattr,5,"Get an attribute or item from an expression that is a ascii-only
+5,Getattr,"Get an attribute or item from an expression that is a ascii-only
 bytestring and prefer the attribute.",,"Get an attribute or item from an expression that is a ascii-only
 bytestring and prefer the attribute.",,,,,"Get an attribute or item from an expression that is a ascii-only
 bytestring and prefer the attribute.",,,,,,,,,,,
-HashMissing,5,A hash was needed for a requirement but is absent.,A hash was needed for a requirement but is absent.,,,,,,,,,,,,,,,,,
-HebrewProber,5,"The prober is divided between two SBCharSetProbers and a HebrewProber,
+5,HashMissing,A hash was needed for a requirement but is absent.,A hash was needed for a requirement but is absent.,,,,,,,,,,,,,,,,,
+5,HebrewProber,"The prober is divided between two SBCharSetProbers and a HebrewProber,
 all of which are managed, created, fed data, inquired and deleted by the
 SBCSGroupProber. The two SBCharSetProbers identify that the text is in
 fact some kind of Hebrew, Logical or Visual. The final decision about which
@@ -3313,25 +3311,25 @@ This in practice exactly simulates a visual Hebrew model using the windows-1255 
 
 Disjointed from the model probers, the results of the HebrewProber
 alone are meaningless.",,,,,,,,,,,,
-HTMLParser,5,"
+5,HTMLParser,"
 HTML parser
 
 Generates a tree structure from a stream of (possibly malformed) HTML.","
 HTML parser
 
 Generates a tree structure from a stream of (possibly malformed) HTML.",,,,,,,,,,,,,,,,,
-HTTPError,5,An HTTP error occurred.,An HTTP error occurred.,,,,,,,,,,,,,,,,,
-InCellPhase,5,http://www.whatwg.org/specs/web-apps/current-work/in-cell,,,,,,,,,http://www.whatwg.org/specs/web-apps/current-work/in-cell,,,,,,,,,
-InsecurePlatformWarning,5,Warned when certain SSL configuration is not available on a platform.,Warned when certain SSL configuration is not available on a platform.,,,,,,,,,,,,,,,,,
-InspectedValidator,5,Metaclass for all validators ,Metaclass for all validators ,,,,,,,,,,,,,,,,,
-InstalledDistribution,5,"
+5,HTTPError,An HTTP error occurred.,An HTTP error occurred.,,,,,,,,,,,,,,,,,
+5,InCellPhase,http://www.whatwg.org/specs/web-apps/current-work/in-cell,,,,,,,,,http://www.whatwg.org/specs/web-apps/current-work/in-cell,,,,,,,,,
+5,InsecurePlatformWarning,Warned when certain SSL configuration is not available on a platform.,Warned when certain SSL configuration is not available on a platform.,,,,,,,,,,,,,,,,,
+5,InspectedValidator,Metaclass for all validators ,Metaclass for all validators ,,,,,,,,,,,,,,,,,
+5,InstalledDistribution,"
 Created with the *path* of the ``.dist-info`` directory provided to the
 constructor. It reads the metadata contained in ``pydist.json`` when it is
 instantiated., or uses a passed in Metadata instance (useful for when
 dry-run mode is being used).",,"It reads the metadata contained in ``pydist.json`` when it is
 instantiated., or uses a passed in Metadata instance (useful for when
 dry-run mode is being used).",,,,Created with the *path* of the ``.dist-info`` directory provided to the constructor.,,,,,,,,,,,,
-InternalName,5,"An internal name in the compiler.  You cannot create these nodes
+5,InternalName,"An internal name in the compiler.  You cannot create these nodes
 yourself but the parser provides a
 :meth:`~jinja2.parser.Parser.free_identifier` method that creates
 a new identifier for you.  This identifier is not available from the
@@ -3344,19 +3342,19 @@ yourself but the parser provides a
 :meth:`~jinja2.parser.Parser.free_identifier` method that creates
 a new identifier for you.  This identifier is not available from the
 template and is not threated specially by the compiler.",,,,,,,
-InvalidDateError,5,A date field was improperly specified.,A date field was improperly specified.,,,,,,,,,,,,,,,,,
-InvalidHeaderError,5,Exception for invalid headers.,Exception for invalid headers.,,,,,,,,,,,,,,,,,
-InvalidVersion,5,"An invalid version was found, users should refer to PEP 440.","An invalid version was found, ",users should refer to PEP 440.,,,,,,,,,,users should refer to PEP 440.,,,,,,
-Kanji,5,Unicode set for Kanji Unicode Character Range,Unicode set for Kanji Unicode Character Range,,,,,,,,,,,,,,,,,
-Katakana,5,Unicode set for Katakana  Unicode Character Range,Unicode set for Katakana  Unicode Character Range,,,,,,,,,,,,,,,,,
-KeyType,5,"
+5,InvalidDateError,A date field was improperly specified.,A date field was improperly specified.,,,,,,,,,,,,,,,,,
+5,InvalidHeaderError,Exception for invalid headers.,Exception for invalid headers.,,,,,,,,,,,,,,,,,
+5,InvalidVersion,"An invalid version was found, users should refer to PEP 440.","An invalid version was found, ",users should refer to PEP 440.,,,,,,,,,,users should refer to PEP 440.,,,,,,
+5,Kanji,Unicode set for Kanji Unicode Character Range,Unicode set for Kanji Unicode Character Range,,,,,,,,,,,,,,,,,
+5,Katakana,Unicode set for Katakana  Unicode Character Range,Unicode set for Katakana  Unicode Character Range,,,,,,,,,,,,,,,,,
+5,KeyType,"
 The type of a Key.
 
 Keys can be bare (unquoted), or quoted using basic (""), or literal (')
 quotes following the same escaping rules as single-line StringType.",The type of a Key.,,"Keys can be bare (unquoted), or quoted using basic (""), or literal (')
 quotes following the same escaping rules as single-line StringType.","Keys can be bare (unquoted), or quoted using basic (""), or literal (')
 quotes following the same escaping rules as single-line StringType.",,,,,,,,,,,,,,
-LockFailed,5,"
+5,LockFailed,"
 Lock file creation failed for some other reason.
 
 >>> try:
@@ -3367,7 +3365,7 @@ Lock file creation failed for some other reason.
 ...   raise LockFailed
 ... except LockError:
 ...   Pass",,,,,,,,,,,,,,,,
-LRUCache,5,"A simple LRU Cache implementation.
+5,LRUCache,"A simple LRU Cache implementation.
 this is fast for small capacities (something below 1000) but doesn't
     scale.  But as long as it's only used as storage for templates this
     won't do any harm.",A simple LRU Cache implementation.,,,,,"this is fast for small capacities (something below 1000) but doesn't
@@ -3375,7 +3373,7 @@ this is fast for small capacities (something below 1000) but doesn't
     won't do any harm.",,,,,"this is fast for small capacities (something below 1000) but doesn't
     scale.  But as long as it's only used as storage for templates this
     won't do any harm.",,,,,,,
-Markup,5,"A string that is ready to be safely inserted into an HTML or XML
+5,Markup,"A string that is ready to be safely inserted into an HTML or XML
 document, either because it was escaped or because it was marked
 safe.
 
@@ -3468,7 +3466,7 @@ Markup('<em>foo &amp; bar</em>')
 Markup('<em>Hello</em> &lt;foo&gt;')",,,,,,,,,,,"This is a subclass of the text type (``str`` in Python 3,
 ``unicode`` in Python 2). It has the same methods as that type, but
 all methods escape their arguments and return a ``Markup`` instance.",
-MemcachedBytecodeCache,5,"This class implements a bytecode cache that uses a memcache cache for
+5,MemcachedBytecodeCache,"This class implements a bytecode cache that uses a memcache cache for
 storing the information.  It does not enforce a specific memcache library
 (tummy's memcache or cmemcache) but will accept any class that provides
 the minimal interface required.
@@ -3547,9 +3545,9 @@ does not support storing binary data, only unicode.  You can however pass
 the underlying cache client to the bytecode cache which is available
 as `django.core.cache.cache._client`.)
 ",,,,,,,
-MemoizedZipManifests,5,Memoized zipfile manifests.,Memoized zipfile manifests.,,,,,,,,,,,,,,,,,
-MetadataMissingError,5,A required metadata is missing,A required metadata is missing,,,,,,,,,,,,,,,,,
-MethodDispatcher,5,"Dict with 2 special properties:
+5,MemoizedZipManifests,Memoized zipfile manifests.,Memoized zipfile manifests.,,,,,,,,,,,,,,,,,
+5,MetadataMissingError,A required metadata is missing,A required metadata is missing,,,,,,,,,,,,,,,,,
+5,MethodDispatcher,"Dict with 2 special properties:
 
 On initiation, keys that are lists, sets or tuples are converted to
 multiple keys so accessing any one of the items in the original
@@ -3566,14 +3564,14 @@ list-like object returns the matching value
 
 md = MethodDispatcher({(""foo"", ""bar""):""baz""}) md[""foo""] == ""baz""
 A default value which can be set through the default attribute.",,,,,,,,,,,,,,
-Module_six_moves_urllib_parse,5,Lazy loading of moved objects in six.moves.urllib_parse,Lazy loading of moved objects in six.moves.urllib_parse,,,,,,,,,,,,,,,,,
-Module_six_moves_urllib_request,5,Lazy loading of moved objects in six.moves.urllib_request,Lazy loading of moved objects in six.moves.urllib_request,,,,,,,,,,,,,,,,,
-Module_six_moves_urllib_response,5,Lazy loading of moved objects in six.moves.urllib_response,Lazy loading of moved objects in six.moves.urllib_response,,,,,,,,,,,,,,,,,
-Mul,5,Multiplies the left with the right node.,Multiplies the left with the right node.,,,,,,,,,,,,,,,,,
-NativeEnvironment,5,An environment that renders templates to native Python types.,An environment that renders templates to native Python types.,,,,,,,,,,,,,,,,,
-Node,5,Represents an item in the tree,Represents an item in the tree,,,,,,,,,,,,,,,,,
-NoMatch,5,A token that will never match.,A token that will never match.,,,,,,,,,,,,,,,,,
-NotAny,5,"
+5,Module_six_moves_urllib_parse,Lazy loading of moved objects in six.moves.urllib_parse,Lazy loading of moved objects in six.moves.urllib_parse,,,,,,,,,,,,,,,,,
+5,Module_six_moves_urllib_request,Lazy loading of moved objects in six.moves.urllib_request,Lazy loading of moved objects in six.moves.urllib_request,,,,,,,,,,,,,,,,,
+5,Module_six_moves_urllib_response,Lazy loading of moved objects in six.moves.urllib_response,Lazy loading of moved objects in six.moves.urllib_response,,,,,,,,,,,,,,,,,
+5,Mul,Multiplies the left with the right node.,Multiplies the left with the right node.,,,,,,,,,,,,,,,,,
+5,NativeEnvironment,An environment that renders templates to native Python types.,An environment that renders templates to native Python types.,,,,,,,,,,,,,,,,,
+5,Node,Represents an item in the tree,Represents an item in the tree,,,,,,,,,,,,,,,,,
+5,NoMatch,A token that will never match.,A token that will never match.,,,,,,,,,,,,,,,,,
+5,NotAny,"
 Lookahead to disallow matching with the given parse expression.
 ``NotAny`` does *not* advance the parsing position within the
 input string, it only verifies that the specified parse expression
@@ -3618,7 +3616,7 @@ input string, it only verifies that the specified parse expression
 does *not* match at the current position.  Also, ``NotAny`` does
 *not* skip over leading whitespace. ``NotAny`` always returns
 a null token list. ",,,,,,,
-NotMyLock,5,"
+5,NotMyLock,"
 Raised when an attempt is made to unlock a file someone else locked.
 
 >>> try:
@@ -3629,7 +3627,7 @@ Raised when an attempt is made to unlock a file someone else locked.
 ...   raise NotMyLock
 ... except UnlockError:
 ...   Pass",,,,,,,,,,,,,,,,
-omdict,5,"
+5,omdict,"
 Ordered Multivalue Dictionary.
 
 A multivalue dictionary is a dictionary that can store multiple values per
@@ -3723,7 +3721,7 @@ function comments below and online at
 
 Additional omdict information and documentation can also be found at the
 above url.",,,,,,,,,
-Option,5,"
+5,Option,"
 Options are usually optional values on the command line and
 have some extra features that arguments don't have.
 
@@ -3791,7 +3789,7 @@ have some extra features that arguments don't have.",All other parameters are pa
                            context.
 :param help: the help string.
 :param hidden: hide this option from help outputs.",,,,,,,,,,,,,,,
-PacifyFlushWrapper,5,"
+5,PacifyFlushWrapper,"
 This wrapper is used to catch and suppress BrokenPipeErrors resulting
 from ``.flush()`` being called on broken pipe during the shutdown/final-GC
 of the Python interpreter. Notably ``.flush()`` is always called on
@@ -3808,21 +3806,21 @@ Notably ``.flush()`` is always called on
 ``sys.stdout`` and ``sys.stderr``. So as to have minimal impact on any
 other cleanup code, and the case where the underlying file is not a broken
 pipe, all calls and attributes are proxied.",,,,,,,,,,,,,,
-PackageIndex,5,Represents a Package Index and provides easier access to endpoints,Represents a Package Index and provides easier access to endpoints,,,,,,,,,,,,,,,,,
-ParseError,5,"
+5,PackageIndex,Represents a Package Index and provides easier access to endpoints,Represents a Package Index and provides easier access to endpoints,,,,,,,,,,,,,,,,,
+5,ParseError,"
 This error occurs when the parser encounters a syntax error
 in the TOML being parsed. The error references the line and
 location within the line where the error was encountered.","
 This error occurs when the parser encounters a syntax error
 in the TOML being parsed. ",,,The error references the line and location within the line where the error was encountered.,,,,,,,,,,,,,,
-ParseFatalException,5,"user-throwable exception thrown when inconsistent parse content
+5,ParseFatalException,"user-throwable exception thrown when inconsistent parse content
 is found; stops all parsing immediately",,,,,,"user-throwable exception thrown when inconsistent parse content
 is found; stops all parsing immediately",,"user-throwable exception thrown when inconsistent parse content
 is found; stops all parsing immediately",,,,,,"user-throwable exception thrown when inconsistent parse content
 is found; ",,,,
-ParserElement,5,Abstract base level parser element class.,Abstract base level parser element class.,,,,,,,,,,,,,,,,,
-ParseResultBytes,5,Compatibility shim for the urlparse.ParseResultBytes object.,Compatibility shim for the urlparse.ParseResultBytes object.,,,,,,,,,,,,,,,,,
-ParseResults,5,"Structured parse results, to provide multiple means of access to
+5,ParserElement,Abstract base level parser element class.,Abstract base level parser element class.,,,,,,,,,,,,,,,,,
+5,ParseResultBytes,Compatibility shim for the urlparse.ParseResultBytes object.,Compatibility shim for the urlparse.ParseResultBytes object.,,,,,,,,,,,,,,,,,
+5,ParseResults,"Structured parse results, to provide multiple means of access to
 the parsed data:
 
    - as a list (``len(results)``)
@@ -3925,7 +3923,7 @@ prints::
     test(""'month' in result"")
     test(""'minutes' in result"")
     test(""result.dump()"", str)",,,,,,,,,,,,
-ParseSyntaxException,5,"
+5,ParseSyntaxException,"
 just like :class:`ParseFatalException`, but thrown internally
 when an :class:`ErrorStop<And._ErrorStop>` ('-' operator) indicates
 that parsing is to stop immediately because an unbacktrackable
@@ -3933,7 +3931,7 @@ syntax error has been found.",,,,,,,,"just like :class:`ParseFatalException`, bu
 when an :class:`ErrorStop<And._ErrorStop>` ('-' operator) indicates
 that parsing is to stop immediately because an unbacktrackable
 syntax error has been found.",,,,,,,,,,
-Path,5,"The path type is similar to the :class:`File` type but it performs
+5,Path,"The path type is similar to the :class:`File` type but it performs
 different checks.  First of all, instead of returning an open file
 handle it returns just the filename.  Secondly, it can perform various
 basic checks about what the file or directory should be.
@@ -3986,8 +3984,8 @@ different checks.  ",,"
    `allow_dash` was added.","First of all, instead of returning an open file
 handle it returns just the filename.  Secondly, it can perform various
 basic checks about what the file or directory should be.",,,,,,,,,,,,
-PipError,5,Base pip exception,Base pip exception,,,,,,,,,,,,,,,,,
-PoolManager,5,"Allows for arbitrary requests while transparently keeping track of
+5,PipError,Base pip exception,Base pip exception,,,,,,,,,,,,,,,,,
+5,PoolManager,"Allows for arbitrary requests while transparently keeping track of
 necessary connection pools for you.
 
 :param num_pools:
@@ -4027,7 +4025,7 @@ necessary connection pools for you.
 :param \**connection_pool_kw:
     Additional parameters are used to create fresh
     :class:`urllib3.connectionpool.ConnectionPool` instances.",,,,,,,,,,,,,,,
-PrefixLoader,5,"A loader that is passed a dict of loaders where each loader is bound
+5,PrefixLoader,"A loader that is passed a dict of loaders where each loader is bound
 to a prefix.  The prefix is delimited from the template by a slash per
 default, which can be changed by setting the `delimiter` argument to
 something else::
@@ -4053,12 +4051,12 @@ By loading ``'app1/index.html'`` the file from the app1 package is loaded,
 by loading ``'app2/index.html'`` the file from the second.",," The prefix is delimited from the template by a slash per
 default, which can be changed by setting the `delimiter` argument to
 something else::",,,,,,,,,,,,,,
-ProcessedTraceback,5,Holds a Jinja preprocessed traceback for printing or reraising.,Holds a Jinja preprocessed traceback for printing or reraising.,,,,,,,,,,,,,,,,,
-PyPIJSONLocator,5,"This locator uses PyPI''s JSON interface. It''s very limited in functionality
+5,ProcessedTraceback,Holds a Jinja preprocessed traceback for printing or reraising.,Holds a Jinja preprocessed traceback for printing or reraising.,,,,,,,,,,,,,,,,,
+5,PyPIJSONLocator,"This locator uses PyPI''s JSON interface. It''s very limited in functionality
 and probably not worth using.",,,,This locator uses PyPI''s JSON interface.,,,,,,,"It''s very limited in functionality
 and probably not worth using.",,,,,,,
-ReadError,5,Raised when an archive cannot be read,Raised when an archive cannot be read,,,,,,,,,,,,,,,,,
-Request,5,"
+5,ReadError,Raised when an archive cannot be read,Raised when an archive cannot be read,,,,,,,,,,,,,,,,,
+5,Request,"
 A user-created :class:`Request <Request>` object.
 
 Used to prepare a :class:`PreparedRequest <PreparedRequest>`, which is sent to the server.
@@ -4102,11 +4100,11 @@ Usage::
 :param auth: Auth handler or (user, pass) tuple.
 :param cookies: dictionary or CookieJar of cookies to attach to this request.
 :param hooks: dictionary of callback hooks, for internal usage.",,,"Used to prepare a :class:`PreparedRequest <PreparedRequest>`, which is sent to the server.",,,,,,,,,,,,
-RequestException,5,"There was an ambiguous exception that occurred while handling your
+5,RequestException,"There was an ambiguous exception that occurred while handling your
 request.",,,,,,,,"There was an ambiguous exception that occurred while handling your
 request.",,,,,,,,,,
-RequirementsFileParseError,5,Raised when a general error occurs parsing a requirements file line.,Raised when a general error occurs parsing a requirements file line.,,,,,,,,,,,,,,,,,
-RequirementUninstaller,5,"
+5,RequirementsFileParseError,Raised when a general error occurs parsing a requirements file line.,Raised when a general error occurs parsing a requirements file line.,,,,,,,,,,,,,,,,,
+5,RequirementUninstaller,"
 A context manager to remove a package for the inner block.
 
 This uses `UninstallPathSet` to control the workflow. If the inner block
@@ -4114,18 +4112,18 @@ exits correctly, the uninstallation is committed, otherwise rolled back.","
 A context manager to remove a package for the inner block.",,,"
 This uses `UninstallPathSet` to control the workflow. If the inner block
 exits correctly, the uninstallation is committed, otherwise rolled back.",,,,,,,,,,,,,,
-RequiresPythonCache,5,Cache a candidate's Requires-Python information.,Cache a candidate's Requires-Python information.,,,,,,,Cache a candidate's Requires-Python information.,,,,,,,,,,
-Resource,5,"
+5,RequiresPythonCache,Cache a candidate's Requires-Python information.,Cache a candidate's Requires-Python information.,,,,,,,Cache a candidate's Requires-Python information.,,,,,,,,,,
+5,Resource,"
 A class representing an in-package resource, such as a data file. This is
 not normally instantiated by user code, but rather by a
 :class:`ResourceFinder` which manages the resource.","A class representing an in-package resource, such as a data file.",,,,,"This is
 not normally instantiated by user code, but rather by a
 :class:`ResourceFinder` which manages the resource.",,,,,,,,,,,,
-ResourceFinder,5,Resource finder for file system resources.,Resource finder for file system resources.,,,,,,,,,,,,,,,,,
-ResourceManager,5,Manage resource extraction and packages,Manage resource extraction and packages,,,,,,,,,,,,,,,,,
-ResponseError,5,Used as a container for an error reason supplied in a MaxRetryError.,,Used as a container for an error reason supplied in a MaxRetryError.,,,,,,,,,,,,,,,,
-ResponseNotChunked,5,Response needs to be chunked in order to read it as chunks.,,Response needs to be chunked in order to read it as chunks.,,,,,,,,,,,,,,,,
-Retry,5,"Retry configuration.
+5,ResourceFinder,Resource finder for file system resources.,Resource finder for file system resources.,,,,,,,,,,,,,,,,,
+5,ResourceManager,Manage resource extraction and packages,Manage resource extraction and packages,,,,,,,,,,,,,,,,,
+5,ResponseError,Used as a container for an error reason supplied in a MaxRetryError.,,Used as a container for an error reason supplied in a MaxRetryError.,,,,,,,,,,,,,,,,
+5,ResponseNotChunked,Response needs to be chunked in order to read it as chunks.,,Response needs to be chunked in order to read it as chunks.,,,,,,,,,,,,,,,,
+5,Retry,"Retry configuration.
 
 Each retry attempt will create a new Retry object with updated values, so
 they can be safely reused.
@@ -4355,15 +4353,15 @@ they can be safely reused.
 ",,,,"Errors will be wrapped in :class:`~urllib3.exceptions.MaxRetryError` unless
 retries are disabled, in which case the causing exception will be raised.","
         See :ref:`bytecode-cache` for more information.",,,,,,,,,
-SafeFileCache,5,"A file based cache which is safe to use even when the target directory may
+5,SafeFileCache,"A file based cache which is safe to use even when the target directory may
 not be accessible or writable.","A file based cache which is safe to use even when the target directory may
 not be accessible or writable.",,,,,,,,,,,,,,,,,
-SchemaValidatorMixin,5,"
+5,SchemaValidatorMixin,"
 This validator mixin provides mechanics to validate schemas passed to a Cerberus
 validator. ","
 This validator mixin provides mechanics to validate schemas passed to a Cerberus
 validator. ",,,,,,,,,,,,,,,,,
-Session,5,"A Requests session.
+5,Session,"A Requests session.
 
 Provides cookie persistence, connection-pooling, and configuration.
 
@@ -4393,7 +4391,7 @@ Or as a context manager::
   >>> with requests.Session() as s:
   >>>     s.get('https://httpbin.org/get')
   <Response [200]>",,,,,,,,,,,,,,,,
-SkipTo,5,"Token for skipping over all undefined text until the matched
+5,SkipTo,"Token for skipping over all undefined text until the matched
 expression is found.
 
 Parameters:
@@ -4501,13 +4499,13 @@ prints::
  - failOn - (default= ``None``) define expressions that are not allowed to be
       included in the skipped test; if found before the target expression is found,
       the SkipTo is not a match",,,,,,,,,,,,,,,
-TarFile,5,The TarFile Class provides an interface to tar archives.,The TarFile Class provides an interface to tar archives.,,,,,,,,,,,,,,,,,
-Token,5,Token class.,Token class.,,,,,,,,,,,,,,,,,
-TokenStreamIterator,5,"
+5,TarFile,The TarFile Class provides an interface to tar archives.,The TarFile Class provides an interface to tar archives.,,,,,,,,,,,,,,,,,
+5,Token,Token class.,Token class.,,,,,,,,,,,,,,,,,
+5,TokenStreamIterator,"
 The iterator for tokenstreams.  Iterate over the stream
 until the eof token is reached.",The iterator for tokenstreams.,,,"Iterate over the stream
 until the eof token is reached.",,,,,,,,,,,,,,
-TreeBuilder,5,"
+5,TreeBuilder,"
 Base treebuilder implementation
 
 * documentClass - the class to use for the bottommost node of a document
@@ -4517,11 +4515,11 @@ Base treebuilder implementation
 * elementClass - the class to use for HTML Elements
 * commentClass - the class to use for comments
 * doctypeClass - the class to use for doctypes",,,,,,,,,,,,,,,,
-Trie,5,Abstract base class for tries,Abstract base class for tries,,,,,,,,,,,,,,,,,
-UndefinedEnvironmentName,5,"A name was attempted to be used that does not exist inside of the
+5,Trie,Abstract base class for tries,Abstract base class for tries,,,,,,,,,,,,,,,,,
+5,UndefinedEnvironmentName,"A name was attempted to be used that does not exist inside of the
 environment.","A name was attempted to be used that does not exist inside of the
 environment.",,,,,,,,,,,,,,,,,
-UnlockError,5,"
+5,UnlockError,"
 Base class for errors arising from attempts to release the lock.
 
 >>> try:
@@ -4531,8 +4529,8 @@ Base class for errors arising from attempts to release the lock.
 ...   raise UnlockError
 ... except Error:
 ...   Pass",,,,,,,,,,,,,,,,
-ZipResourceFinder,5,Resource finder for resources in .zip files.,Resource finder for resources in .zip files.,,,,,,,,,,,,,,,,,
-_OpNamespace,6,"An op namespace to dynamically bind Operators into Python.
+5,ZipResourceFinder,Resource finder for resources in .zip files.,Resource finder for resources in .zip files.,,,,,,,,,,,,,,,,,
+6,_OpNamespace,"An op namespace to dynamically bind Operators into Python.
 
 Say a user has created a custom Operator called ""my_namespace::my_op"". To
 call this op, the user will write torch.ops.my_namespace.my_op(...).
@@ -4577,7 +4575,7 @@ following sequence of magic tricks will occur:
 3. `torch.ops.my_namespace.my_op(...)` then calls this new operation
     and subsequent accesses will incur no further lookup (the namespace and
     operation will already exist).",,,,,,,,,,,,
-Adadelta,6,"Implements Adadelta algorithm.
+6,Adadelta,"Implements Adadelta algorithm.
 
 It has been proposed in `ADADELTA: An Adaptive Learning Rate Method`__.
 
@@ -4604,7 +4602,7 @@ It has been proposed in `ADADELTA: An Adaptive Learning Rate Method`__",,"Argume
     lr (float, optional): coefficient that scale delta before it is applied
         to the parameters (default: 1.0)
     weight_decay (float, optional): weight decay (L2 penalty) (default: 0)",,,,,,__ https://arxiv.org/abs/1212.5701,,,,,,,,,
-Adam,6,"Implements Adam algorithm.
+6,Adam,"Implements Adam algorithm.
 
 It has been proposed in `Adam: A Method for Stochastic Optimization`_.
 
@@ -4649,7 +4647,7 @@ Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N
 Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in
 Neural Information Processing Systems, pages 6000-6010. Users may modify or implement
 in a different way during application.",,,,,Implements Adam algorithm.,,,
-Adamax,6,"Implements Adamax algorithm (a variant of Adam based on infinity norm).
+6,Adamax,"Implements Adamax algorithm (a variant of Adam based on infinity norm).
 
 It has been proposed in `Adam: A Method for Stochastic Optimization`__.
 
@@ -4675,7 +4673,7 @@ It has been proposed in `Adam: A Method for Stochastic Optimization`__.
     eps (float, optional): term added to the denominator to improve
         numerical stability (default: 1e-8)
     weight_decay (float, optional): weight decay (L2 penalty) (default: 0)",,,,,,__ https://arxiv.org/abs/1412.6980,,,,,,,,,
-AdaptiveMaxPool3d,6,"Applies a 3D adaptive max pooling over an input signal composed of several input planes.
+6,AdaptiveMaxPool3d,"Applies a 3D adaptive max pooling over an input signal composed of several input planes.
 
 The output is of size D x H x W, for any input size.
 The number of output features is equal to the number of input planes.
@@ -4723,8 +4721,8 @@ Examples:
                     Useful to pass to nn.MaxUnpool3d. Default: ``False``","The output is of size D x H x W, for any input size.
 The number of output features is equal to the number of input planes.
 ",,,,,,,,,,,,,,
-BaseTestCase,6,Base class used for all TensorBoard tests ,Base class used for all TensorBoard tests ,,,,,,,,,,,,,,,,,
-BatchNorm1d,6,"Applies Batch Normalization over a 2D or 3D input (a mini-batch of 1D
+6,BaseTestCase,Base class used for all TensorBoard tests ,Base class used for all TensorBoard tests ,,,,,,,,,,,,,,,,,
+6,BatchNorm1d,"Applies Batch Normalization over a 2D or 3D input (a mini-batch of 1D
 inputs with optional additional channel dimension) as described in the paper
 `Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift`_ .
 
@@ -4855,7 +4853,7 @@ evaluation time as well.
 Because the Batch Normalization is done over the `C` dimension, computing statistics
 on `(N, L)` slices, it's common terminology to call this Temporal Batch Normalization.",,,,".. _`Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift`:
     https://arxiv.org/abs/1502.03167",,,
-BCEWithLogitsLoss,6,"This loss combines a `Sigmoid` layer and the `BCELoss` in one single
+6,BCEWithLogitsLoss,"This loss combines a `Sigmoid` layer and the `BCELoss` in one single
 class. This version is more numerically stable than using a plain `Sigmoid`
 followed by a `BCELoss` as, by combining the operations into one layer,
 we take advantage of the log-sum-exp trick for numerical stability.
@@ -5022,10 +5020,10 @@ where :math:`c` is the class number (:math:`c > 1` for multi-label binary classi
 :math:`p_c > 1` increases the recall, :math:`p_c < 1` increases the precision.",,"Note that the targets `t[i]` should be numbers
 between 0 and 1.",,,,,"Note that the targets `t[i]` should be numbers
 between 0 and 1.",,,,,,,It's possible to trade off recall and precision by adding weights to positive examples.
-BoundedGradientProjection,6,"Wright, S., & Nocedal, J. (1999). Numerical optimization. Springer Science,
+6,BoundedGradientProjection,"Wright, S., & Nocedal, J. (1999). Numerical optimization. Springer Science,
 35(67-68), 7. Chapter 16",,,,,,,,,"Wright, S., & Nocedal, J. (1999). Numerical optimization. Springer Science,
 35(67-68), 7. Chapter 16",,,,,,,,,
-BuildType,6,"Checks build type. The build type will be given in :attr:`cmake_build_type_env`. If :attr:`cmake_build_type_env`
+6,BuildType,"Checks build type. The build type will be given in :attr:`cmake_build_type_env`. If :attr:`cmake_build_type_env`
 is ``None``, then the build type will be inferred from ``CMakeCache.txt``. If ``CMakeCache.txt`` does not exist,
 os.environ['CMAKE_BUILD_TYPE'] will be used.
 
@@ -5035,7 +5033,7 @@ Arguments:
 is ``None``, then the build type will be inferred from ``CMakeCache.txt``. If ``CMakeCache.txt`` does not exist,
 os.environ['CMAKE_BUILD_TYPE'] will be used.","Arguments:
 cmake_build_type_env (str): The value of os.environ['CMAKE_BUILD_TYPE']. If None, the actual build type will be inferred.",,,,,,,,,,,,,,,
-Caffe2OperatorTestCase,6,"This class includes all the information needed to benchmark an operator.
+6,Caffe2OperatorTestCase,"This class includes all the information needed to benchmark an operator.
 op_bench: it's a user-defined class (child of Caffe2BenchmarkBase)
 which includes input and operator, .etc
 test_config: a namedtuple includes test_name, input_shape, tag, run_backward.
@@ -5045,7 +5043,7 @@ which includes input and operator, .etc
 test_config: a namedtuple includes test_name, input_shape, tag, run_backward.
 When run_backward is false, the run_forward method will be executed, otherwise
 run_backward method will be executed.",,,,,,,,,,,,,,
-ConstantPad3d,6,"Pads the input tensor boundaries with a constant value.
+6,ConstantPad3d,"Pads the input tensor boundaries with a constant value.
 
 For `N`-dimensional padding, use :func:`torch.nn.functional.pad()`.
 
@@ -5090,7 +5088,7 @@ Examples::
         (:math:`\text{padding\_left}`, :math:`\text{padding\_right}`,
         :math:`\text{padding\_top}`, :math:`\text{padding\_bottom}`,
         :math:`\text{padding\_front}`, :math:`\text{padding\_back}`)",,,,,,,,,"For `N`-dimensional padding, use :func:`torch.nn.functional.pad()`.",,,,,,
-Conv3d,6,"Applies a 3D convolution over an input signal composed of several input
+6,Conv3d,"Applies a 3D convolution over an input signal composed of several input
 planes.
 
 In the simplest case, the output value of the layer with input size :math:`(N, C_{in}, D, H, W)`
@@ -5273,7 +5271,7 @@ Attributes:
     https://github.com/vdumoulin/conv_arithmetic/blob/master/README.md
 .. _cross-correlation:
     https://en.wikipedia.org/wiki/Cross-correlation",,,,,,,,,
-ConvReLU3d,6,"A ConvReLU3d module is a fused module of Conv3d and ReLU
+6,ConvReLU3d,"A ConvReLU3d module is a fused module of Conv3d and ReLU
 
 We adopt the same interface as :class:`torch.nn.quantized.Conv3d`.
 
@@ -5282,9 +5280,9 @@ Attributes: Same as torch.nn.quantized.Conv3d",A ConvReLU3d module is a fused mo
 Attributes: Same as torch.nn.quantized.Conv3d",,".. note::
 Attributes: Same as torch.nn.quantized.Conv3d",,,,,".. note::
 Attributes: Same as torch.nn.quantized.Conv3d",,,,,,,
-cuFFTPlanCacheAttrContextProp,6,"Like regular ContextProp, but uses the `.device_index` attribute from the
+6,cuFFTPlanCacheAttrContextProp,"Like regular ContextProp, but uses the `.device_index` attribute from the
     calling object as the first argument to the getter and setter.","Like regular ContextProp, but uses the `.device_index` attribute from the calling object as the first argument to the getter and setter.",,"Like regular ContextProp, but uses the `.device_index` attribute from the calling object as the first argument to the getter and setter.",,,,,,,,,,,,,,,
-CyclicLR,6,"Sets the learning rate of each parameter group according to
+6,CyclicLR,"Sets the learning rate of each parameter group according to
 cyclical learning rate policy (CLR). The policy cycles the learning
 rate between two boundaries with a constant frequency, as detailed in
 the paper `Cyclical Learning Rates for Training Neural Networks`_.
@@ -5407,12 +5405,12 @@ Example:
 .. _Cyclical Learning Rates for Training Neural Networks: https://arxiv.org/abs/1506.01186
 .. _bckenstler/CLR: https://github.com/bckenstler/CLR",,,"Cyclical learning rate policy changes the learning rate after every batch.
 `step` should be called after a batch has been used for training.",,,,,,
-DeQuantStub,6,"
+6,DeQuantStub,"
 Dequantize stub module, before calibration, this is same as identity,
 this will be swapped as `nnq.DeQuantize` in `convert`.","Dequantize stub module, before calibration, this is same as identity,
 this will be swapped as `nnq.DeQuantize` in `convert`.",,,"this is same as identity,
 this will be swapped as `nnq.DeQuantize` in `convert`.",,,,,,,,,,,,,,
-DiagonalTensor,6,"A class with __torch_function__ and a specific diagonal representation
+6,DiagonalTensor,"A class with __torch_function__ and a specific diagonal representation
 
 This class has limited utility and is mostly useful for verifying that the
 dispatch mechanism works as expected. It is based on the `DiagonalArray
@@ -5460,7 +5458,7 @@ returns 0:
 
 >>> torch.mm(d, d)
 0",,,,,,,
-EmbeddingBag,6,"Computes sums or means of 'bags' of embeddings, without instantiating the
+6,EmbeddingBag,"Computes sums or means of 'bags' of embeddings, without instantiating the
 intermediate embeddings.
 
 For bags of constant length and no :attr:`per_sample_weights`, this class
@@ -5607,8 +5605,8 @@ For bags of constant length and no :attr:`per_sample_weights`, this class
 However, :class:`~torch.nn.EmbeddingBag` is much more time and memory efficient than using a chain of these
 operations.
 ",,,,,,,
-EnforceUnique,6,Raises an error if a key is seen more than once.,Raises an error if a key is seen more than once.,,,,,,,,,,,,,,,,,
-Error,6,"Each error is a section in the output of cuda-memcheck.
+6,EnforceUnique,Raises an error if a key is seen more than once.,Raises an error if a key is seen more than once.,,,,,,,,,,,,,,,,,
+6,Error,"Each error is a section in the output of cuda-memcheck.
 Each error in the report has an error message and a backtrace. It looks like:
 
 ========= Program hit cudaErrorInvalidValue (error 1) due to ""invalid argument"" on CUDA API call to cudaGetLastError.
@@ -5618,15 +5616,15 @@ Each error in the report has an error message and a backtrace. It looks like:
 =========     Host Frame:/home/xgao/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch.so [0x5b77a05]
 =========     Host Frame:/home/xgao/anaconda3/lib/python3.7/site-packages/torch/lib/libtorch.so [0x39d6d1d]
 =========     .....",Each error is a section in the output of cuda-memcheck.,,,Each error in the report has an error message and a backtrace,,,,"`========= Program hit cudaErrorInvalidValue (error 1) due to ""invalid argument"" on CUDA API call to cudaGetLastError",,,,,,,,,,
-ExceptionWrapper,6,Wraps an exception plus traceback to communicate across threads,Wraps an exception plus traceback to communicate across threads,,,,,,,,,,,,,,,,,
-ExternalInitializer,6,"This class is used in cases when the parameter should not be initialized by
+6,ExceptionWrapper,Wraps an exception plus traceback to communicate across threads,Wraps an exception plus traceback to communicate across threads,,,,,,,,,,,,,,,,,
+6,ExternalInitializer,"This class is used in cases when the parameter should not be initialized by
 the initializer, but rather provided in the workspace when param_init_net is
 executed.
 
 Current version is not doing any real sanity checks to the parameter.",,"This class is used in cases when the parameter should not be initialized by
 the initializer, but rather provided in the workspace when param_init_net is
 executed.",,,,Current version is not doing any real sanity checks to the parameter.,,,,,,,,,,,,
-FisherSnedecor,6,"Creates a Fisher-Snedecor distribution parameterized by :attr:`df1` and :attr:`df2`.
+6,FisherSnedecor,"Creates a Fisher-Snedecor distribution parameterized by :attr:`df1` and :attr:`df2`.
 
 Example::
 
@@ -5643,7 +5641,7 @@ Args:
     tensor([ 0.2453])","Args:
     df1 (float or Tensor): degrees of freedom parameter 1
     df2 (float or Tensor): degrees of freedom parameter 2",,,,,,,,,,,,,,,
-LastNWindowCollector,6,"
+6,LastNWindowCollector,"
 Collect last-N samples from input record. If you have complex data,
 use PackRecords to pack it before using this layer.
 
@@ -5652,7 +5650,7 @@ use PackRecords to pack it before using this layer.
 
 This layer is not thread safe.",,,,,This layer is not thread safe.,"If you have complex data,
 use PackRecords to pack it before using this layer.",,,,,,
-LBFGS,6,"Implements L-BFGS algorithm, heavily inspired by `minFunc
+6,LBFGS,"Implements L-BFGS algorithm, heavily inspired by `minFunc
 <https://www.cs.ubc.ca/~schmidtm/Software/minFunc.html>`.
 
 .. warning::
@@ -5701,7 +5699,7 @@ Arguments:
 .. warning::
     Right now all parameters have to be on a single device. This will be
     improved in the future.",,,,,,,
-Module,6,"Base class for all neural network modules.
+6,Module,"Base class for all neural network modules.
 
 Your models should also subclass this class.
 
@@ -5742,7 +5740,7 @@ a tree structure. You can assign the submodules as regular attributes::
 
 Submodules assigned in this way will be registered, and will have their
 parameters converted too when you call :meth:`to`, etc.",,,,,,,,Your models should also subclass this class.,,,,,,
-MultiLabelMarginLoss,6,"Creates a criterion that optimizes a multi-class multi-classification
+6,MultiLabelMarginLoss,"Creates a criterion that optimizes a multi-class multi-classification
 hinge loss (margin-based loss) between input :math:`x` (a 2D mini-batch `Tensor`)
 and output :math:`y` (which is a 2D `Tensor` of target class indices).
 For each sample in the mini-batch:
@@ -5833,7 +5831,7 @@ The criterion only considers a contiguous block of non-negative targets that
 starts at the front.
 
 This allows for different samples to have variable amounts of target classes.",,,,,,,,,,,,,,
-NetModifier,6,"
+6,NetModifier,"
 An abstraction class for supporting modifying a generated net.
 Inherited classes should implement the modify_net method where
 related operators are added to the net.
@@ -5849,7 +5847,7 @@ Inherited classes should implement the modify_net method where
 related operators are added to the net.
 ",,,,,,,,,,,,,"Inherited classes should implement the modify_net method where
 related operators are added to the net.",
-OneHotCategorical,6,"Creates a one-hot categorical distribution parameterized by :attr:`probs` or
+6,OneHotCategorical,"Creates a one-hot categorical distribution parameterized by :attr:`probs` or
 :attr:`logits`.
 
 Samples are one-hot coded vectors of size ``probs.size(-1)``.
@@ -5880,7 +5878,7 @@ Creates a one-hot categorical distribution parameterized by :attr:`probs` or
           and it will be normalized to sum to 1.",,,"See also: :func:`torch.distributions.Categorical` for specifications of
 :attr:`probs` and :attr:`logits`.",,".. note:: :attr:`probs` must be non-negative, finite and have a non-zero sum,
           and it will be normalized to sum to 1.",,,,,,,
-Poisson,6,"Creates a Poisson distribution parameterized by :attr:`rate`, the rate parameter.
+6,Poisson,"Creates a Poisson distribution parameterized by :attr:`rate`, the rate parameter.
 
 Samples are nonnegative integers, with a pmf given by
 
@@ -5912,7 +5910,7 @@ Samples are nonnegative integers, with a pmf given by
 
 .. math::
   \mathrm{rate}^k \frac{e^{-\mathrm{rate}}}{k!}",,,,,,,,,,,,,,
-QuantWrapper,6,"
+6,QuantWrapper,"
 A wrapper class that wraps the input module, adds QuantStub and
 DeQuantStub and surround the call to module with call to quant and dequant
 modules.
@@ -5928,8 +5926,8 @@ dequant modules, before `convert` function `QuantStub` will just be observer,
 it observes the input tensor, after `convert`, `QuantStub`
 will be swapped to `nnq.Quantize` which does actual quantization. Similarly
 for `DeQuantStub`.",,,,,,,,,,,,,,
-ResNetBuilder,6,Helper class for constructing residual blocks.,Helper class for constructing residual blocks.,,,,,,,,,,,,,,,,,
-SGD,6,"Implements stochastic gradient descent (optionally with momentum).
+6,ResNetBuilder,Helper class for constructing residual blocks.,Helper class for constructing residual blocks.,,,,,,,,,,,,,,,,,
+6,SGD,"Implements stochastic gradient descent (optionally with momentum).
 
 Nesterov momentum is based on the formula from
 `On the importance of initialization and momentum in deep learning`__.
@@ -6006,11 +6004,11 @@ __ http://www.cs.toronto.edu/%7Ehinton/absps/momentum.pdf
          p_{t+1} = p_{t} - v_{t+1}
 
     The Nesterov version is analogously modified.",,,,,,,
-SharedCache,6,"
+6,SharedCache,"
 dictionary from multiprocessing handles to StorageWeakRef",dictionary from multiprocessing handles to StorageWeakRef,,,,,,,,,,,,,,,,,
-StackedLSTMWithDropout,6,"Necessary for iterating through self.layers and dropout support
+6,StackedLSTMWithDropout,"Necessary for iterating through self.layers and dropout support
  ",Necessary for iterating through self.layers and dropout support,,,,,,,,,,,,,,,,,
-StackTransform,6,"Transform functor that applies a sequence of transforms `tseq`
+6,StackTransform,"Transform functor that applies a sequence of transforms `tseq`
 component-wise to each submatrix at `dim`
 in a way compatible with :func:`torch.stack`.
 
@@ -6023,7 +6021,7 @@ in a way compatible with :func:`torch.stack`.","Example::
    x = torch.stack([torch.range(1, 10), torch.range(1, 10)], dim=1)
    t = StackTransform([ExpTransform(), identity_transform], dim=1)
    y = t(x)",,,,,,,,,,,,,,,,
-Subset,6,"
+6,Subset,"
 Subset of a dataset at specified indices.
 
 Arguments:
@@ -6031,7 +6029,7 @@ Arguments:
     indices (sequence): Indices in the whole set selected for subset",Subset of a dataset at specified indices,,"Arguments:
     dataset (Dataset): The whole Dataset
     indices (sequence): Indices in the whole set selected for subset",,,,,,,,,,,,,,,
-Task,6,"A Task is composed of an execution step and zero or more outputs.
+6,Task,"A Task is composed of an execution step and zero or more outputs.
 Tasks are executed in the context of a TaskGroup, which, in turn, can
 be run by a Session.
 
@@ -6081,15 +6079,15 @@ be run by a Session.
 Task outputs are fetched by the session at the end of the run.
 
 ",,,,,,,,The recommended way of creating a task is by using `net_builder.ops`.,,,,,,
-TaskOutput,6,"
+6,TaskOutput,"
 Represents the output of a task. An output can be a blob,
 a list of blob, or a record.",Represents the output of a task.,,"An output can be a blob, a list of blob, or a record.",,,,,,,,,,,,,,,
-TestBuiltins,6,Tests for TorchScript support of Python builtin functions.,Tests for TorchScript support of Python builtin functions.,,,,,,,,,,,,,,,,,
-TestQuantizedLinear,6,Tests the correctness of the quantized linear and linear_relu op.,Tests the correctness of the quantized linear and linear_relu op.,,,,,,,,,,,,,,,,,
-TestYellowFin,6,"YellowFin: An automatic tuner for momentum SGD
+6,TestBuiltins,Tests for TorchScript support of Python builtin functions.,Tests for TorchScript support of Python builtin functions.,,,,,,,,,,,,,,,,,
+6,TestQuantizedLinear,Tests the correctness of the quantized linear and linear_relu op.,Tests the correctness of the quantized linear and linear_relu op.,,,,,,,,,,,,,,,,,
+6,TestYellowFin,"YellowFin: An automatic tuner for momentum SGD
     (https://arxiv.org/abs/1706.03471)",YellowFin: An automatic tuner for momentum SGD,,,,,,,,"YellowFin: An automatic tuner for momentum SGD
     (https://arxiv.org/abs/1706.03471)",,,,,,,,,
-TransformerEncoderLayer,6,"TransformerEncoderLayer is made up of self-attn and feedforward network.
+6,TransformerEncoderLayer,"TransformerEncoderLayer is made up of self-attn and feedforward network.
 This standard encoder layer is based on the paper ""Attention Is All You Need"".
 Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez,
 Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in
@@ -6128,7 +6126,7 @@ Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advance
 Neural Information Processing Systems, pages 6000-6010. Users may modify or implement
 in a different way during application.","Users may modify or implement
 in a different way during application.",,
-Unfold,6,"Extracts sliding local blocks from a batched input tensor.
+6,Unfold,"Extracts sliding local blocks from a batched input tensor.
 
 Consider a batched :attr:`input` tensor of shape :math:`(N, C, *)`,
 where :math:`N` is the batch dimension, :math:`C` is the channel dimension,
@@ -6364,8 +6362,8 @@ dimensions.",,"note::
 This implementation was adapted from the github repo: `bckenstler/CLR`_",,".. warning::
     Currently, only 4-D input tensors (batched image-like tensors) are
     supported.",,,,,,,
-UploadTaskGroupBuilder,6,A simple class to upload checkpoints,A simple class to upload checkpoints,,,,,,,,,,,,,,,,,
-UseOptimizer,6,"context class to allow setting the current context.
+6,UploadTaskGroupBuilder,A simple class to upload checkpoints.,A simple class to upload checkpoints.,,,,,,,,,,,,,,,,,
+6,UseOptimizer,"context class to allow setting the current context.
 Example usage with brew:
     - with UseOptimizer(optim):
         brew.func
@@ -6395,13 +6393,13 @@ Example usage with layer:
         brew.func
         with UseOptimizer(optim2):
             brew.func",,,,,,,,,,,,,,,,
-YellowFinOptimizer,6,"YellowFin: An automatic tuner for momentum SGD
+6,YellowFinOptimizer,"YellowFin: An automatic tuner for momentum SGD
 
 See https://arxiv.org/abs/1706.03471 for more details. This implementation
 has separate learning rate and momentum per each parameter.",YellowFin: An automatic tuner for momentum SGD,,,,,This implementation has separate learning rate and momentum per each parameter.,,,See https://arxiv.org/abs/1706.03471 for more details.,,,,,,,,,
-AuthBase,7,Base class that all auth implementations derive from,Base class that all auth implementations derive from,,,,,,,,,,,,,,,,,
-InvalidHeader,7,The header value provided was somehow invalid.,The header value provided was somehow invalid.,,,,,,,,,,,,,,,,,
-PreparedRequest,7,"The fully mutable :class:`PreparedRequest <PreparedRequest>` object,
+7,AuthBase,Base class that all auth implementations derive from,Base class that all auth implementations derive from,,,,,,,,,,,,,,,,,
+7,InvalidHeader,The header value provided was somehow invalid.,The header value provided was somehow invalid.,,,,,,,,,,,,,,,,,
+7,PreparedRequest,"The fully mutable :class:`PreparedRequest <PreparedRequest>` object,
 containing the exact bytes that will be sent to the server.
 
 Generated from either a :class:`Request <Request>` object or manually.
@@ -6428,6 +6426,6 @@ containing the exact bytes that will be sent to the server.","Usage::
   >>> s = requests.Session()
   >>> s.send(r)
   <Response [200]>",,,,Generated from either a :class:`Request <Request>` object or manually.,,,,,,,,,,,,
-Response,7,"The :class:`Response <Response>` object, which contains a
+7,Response,"The :class:`Response <Response>` object, which contains a
 server's response to an HTTP request.","The :class:`Response <Response>` object, which contains a
 server's response to an HTTP request.",,,,,,,,,,,,,,,,,

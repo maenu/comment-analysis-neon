@@ -4,12 +4,17 @@ import weka.core.Attribute;
 import weka.core.DictionaryBuilder;
 import weka.core.Instances;
 import weka.core.SparseInstance;
+import weka.core.converters.ArffLoader;
+import weka.core.converters.ArffSaver;
 import weka.core.stemmers.IteratedLovinsStemmer;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.FixedDictionaryStringToWordVector;
 
 import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Field;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -34,6 +39,23 @@ public class InstancesBuilder {
 		// add text attribute last
 		attributes.add(new Attribute("text", true, null));
 		this.instances = new Instances(name, attributes, 0);
+	}
+
+	public static Instances load(byte[] bytes) throws IOException {
+		ArffLoader loader = new ArffLoader();
+		Path path = Files.createTempFile("dataset", ".arff");
+		Files.write(path, bytes);
+		loader.setFile(path.toFile());
+		return loader.getDataSet();
+	}
+
+	public static byte[] save(Instances instances) throws IOException {
+		ArffSaver saver = new ArffSaver();
+		Path path = Files.createTempFile("dataset", ".arff");
+		saver.setFile(path.toFile());
+		saver.setInstances(instances);
+		saver.writeBatch();
+		return Files.readAllBytes(path);
 	}
 
 	public static String preprocess(String s) {

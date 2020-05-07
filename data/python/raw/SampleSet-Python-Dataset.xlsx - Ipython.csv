@@ -30,7 +30,11 @@ E1,E2 (agree),,,DisplayHook,"The custom IPython displayhook to replace sys.displ
 This class does many things, but the basic idea is that it is a callable
 that gets called anytime user code returns a value.",3,The custom IPython displayhook to replace sys.displayhook.,,,"This class does many things, but the basic idea is that it is a callable
 that gets called anytime user code returns a value.",,,,,,,,,,,,,,
-E2,E1 (agree),,,HistoryAccessor,,4,"
+E2,E1 (agree),,,HistoryAccessor,"
+Access the history database without adding to it.
+
+This is intended for use by standalone history tools. IPython shells use
+HistoryManager, below, which is a subclass of this.",4,"
 Access the history database without adding to it.
 ","
 This is intended for use by standalone history tools. IPython shells use

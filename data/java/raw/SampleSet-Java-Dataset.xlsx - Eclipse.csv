@@ -1,214 +1,214 @@
-Evaluator,Reviewer 1,Reviewer 2,Project,Class,Comment,comment length,summary,Exapnd,rational,deprecation,usage,exception,Notice,todo,Incomplete,Commented code,directive,formatter,License,Ownership,Pointer,Auto generated,Noise,Warning,Recommendation,Precondition,Coding Guidelines,Extension,Subclass explnation,Observation
-E1,,E4 (agree),Eclipse,AddBreakpointRulerAction.java, * Ruler action to add breakpoint with a dialog properties.,3,Ruler action to add breakpoint with a dialog properties.,,,,,,,,,,,,,,,,,,,,,,,
-E1,,E4 (disagree),,BindingClassifierTest.java, * Tests for {@link BindingClassifier}.,3,Tests for {@link BindingClassifier}.,,,,,,,,,,,,,,{@link BindingClassifier},,,,,,,,,
-E1,,E4 (agree),,CDebugModelPresentation.java, * @see IDebugModelPresentation,3,,,,,,,,,,,,,,,@see IDebugModelPresentation,,,,,,,,,
-E1,,E4 (agree),,CElementDelta.java, * @see ICElementDelta,3,,,,,,,,,,,,,,,@see ICElementDelta,,,,,,,,,
+Evaluator,Reviewer 1,Reviewer 2,Project,Class,Comment,comment length,summary,Exapnd,rational,deprecation,usage,exception,todo,Incomplete,Commented code,directive,formatter,License,Ownership,Pointer,Auto generated,Noise,Warning,Recommendation,Precondition,Coding Guidelines,Extension,Subclass explnation,Observation
+E1,,E4 (agree),Eclipse,AddBreakpointRulerAction.java, * Ruler action to add breakpoint with a dialog properties.,3,Ruler action to add breakpoint with a dialog properties.,,,,,,,,,,,,,,,,,,,,,,
+E1,,E4 (disagree),,BindingClassifierTest.java, * Tests for {@link BindingClassifier}.,3,Tests for {@link BindingClassifier}.,,,,,,,,,,,,,{@link BindingClassifier},,,,,,,,,
+E1,,E4 (agree),,CDebugModelPresentation.java, * @see IDebugModelPresentation,3,,,,,,,,,,,,,,@see IDebugModelPresentation,,,,,,,,,
+E1,,E4 (agree),,CElementDelta.java, * @see ICElementDelta,3,,,,,,,,,,,,,,@see ICElementDelta,,,,,,,,,
 E1,,E4 (agree),,CPPASTProblem.java," * C++-specific implementation allows actions to visit the problem.
- ",3,C++-specific implementation allows actions to visit the problem.,,,,,,,,,,,,,,,,,,,,,,,
-E1,,E4 (agree),,CPPASTReferenceOperator.java, * Reference operator for declarators.,3,Reference operator for declarators,,,,,,,,,,,,,,,,,,,,,,,
-E1,,E4 (agree),,CPropertyTester.java, * A property tester that determines if a file is an executable or a C/C++ project.,3,A property tester that determines if a file is an executable or a C/C++ project.,,,,,,,,,,,,,,,,,,,,,,,
-E1,E2 (agree),,,DOMParserTestSuite.java, * @author jcamelon,3,,,,,,,,,,,,,,@author jcamelon,,,,,,,,,,
-E1,E2 (agree),,,DsfDebugUITools.java, * @since 1.1,3,,,,@since 1.1,,,,,,,,,,,,,,,,,,,,
-E1,E2 (agree),,,DummyPage.java, This class is just to replace a category reference in org.eclipse.cdt.ui that| we exclude because we do not bring in the org.eclipse.cdt.managedbuild.ui plug-in.,1,This class is just to replace a category reference in org.eclipse.cdt.ui,,that| we exclude because we do not bring in the org.eclipse.cdt.managedbuild.ui plug-in.,,,,,,,,,,,,,,,,,,,,,
-E1,E2 (agree),,,IBHistoryAction.java, * Action used for the include browser forward / backward buttons,3,Action used for the include browser forward / backward buttons,,,,,,,,,,,,,,,,,,,,,,,
-E1,E2 (agree),,,MachOBinaryParserPage.java, * @noextend This class is not intended to be subclassed by clients.,3,,,,,@noextend This class is not intended to be subclassed by clients.,,,,,,,,,,,,,,,,,,,
+ ",3,C++-specific implementation allows actions to visit the problem.,,,,,,,,,,,,,,,,,,,,,,
+E1,,E4 (agree),,CPPASTReferenceOperator.java, * Reference operator for declarators.,3,Reference operator for declarators,,,,,,,,,,,,,,,,,,,,,,
+E1,,E4 (agree),,CPropertyTester.java, * A property tester that determines if a file is an executable or a C/C++ project.,3,A property tester that determines if a file is an executable or a C/C++ project.,,,,,,,,,,,,,,,,,,,,,,
+E1,E2 (agree),,,DOMParserTestSuite.java, * @author jcamelon,3,,,,,,,,,,,,,@author jcamelon,,,,,,,,,,
+E1,E2 (agree),,,DsfDebugUITools.java, * @since 1.1,3,,,,@since 1.1,,,,,,,,,,,,,,,,,,,
+E1,E2 (agree),,,DummyPage.java, This class is just to replace a category reference in org.eclipse.cdt.ui that| we exclude because we do not bring in the org.eclipse.cdt.managedbuild.ui plug-in.,1,This class is just to replace a category reference in org.eclipse.cdt.ui,,that| we exclude because we do not bring in the org.eclipse.cdt.managedbuild.ui plug-in.,,,,,,,,,,,,,,,,,,,,
+E1,E2 (agree),,,IBHistoryAction.java, * Action used for the include browser forward / backward buttons,3,Action used for the include browser forward / backward buttons,,,,,,,,,,,,,,,,,,,,,,
+E1,E2 (agree),,,MachOBinaryParserPage.java, * @noextend This class is not intended to be subclassed by clients.,3,,,,,@noextend This class is not intended to be subclassed by clients.,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,AutotoolsProblemMarkerInfo.java,"
- * @noextend This class is not intended to be subclassed by clients.",2,,,,,@noextend This class is not intended to be subclassed by clients,,,,,,,,,,,,,,,,,,,
-E1,E2 (agree),,,ManageConfigRunner.java, * @noextend This class is not intended to be subclassed by clients.,3,,,,,@noextend This class is not intended to be subclassed by clients,,,,,,,,,,,,,,,,,,,
-E1,,E3 (agree),,PDOMMacroReferenceName.java," * Represents declarations, definitions and references to bindings, except for macros.",3,"Represents declarations, definitions and references to bindings, except for macros.",,,,,,,,,,,,,,,,,,,,,,,
-E1,,E3 (agree),,RenameCSourceFolderChange.java, * @author EE4 Graf IFS,3,,,,,,,,,,,,,,@author EE4 Graf IFS,,,,,,,,,,
-E1,,E3 (disagree),,ReturnCheckerTest.java, * Test for {@see ReturnCheckerTest} class,3,Test for {@see ReturnCheckerTest} class,,,,,,,,,,,,,, * Test for {@see ReturnCheckerTest} class,,,,,,,,,
-E1,,E3 (agree),,SourceDocumentProvider.java, * SourceDocumentProvider,3,,,,,,,,,SourceDocumentProvider,,,,,,,,,,,,,,,
+ * @noextend This class is not intended to be subclassed by clients.",2,,,,,@noextend This class is not intended to be subclassed by clients,,,,,,,,,,,,,,,,,,
+E1,E2 (agree),,,ManageConfigRunner.java, * @noextend This class is not intended to be subclassed by clients.,3,,,,,@noextend This class is not intended to be subclassed by clients,,,,,,,,,,,,,,,,,,
+E1,,E3 (agree),,PDOMMacroReferenceName.java," * Represents declarations, definitions and references to bindings, except for macros.",3,"Represents declarations, definitions and references to bindings, except for macros.",,,,,,,,,,,,,,,,,,,,,,
+E1,,E3 (agree),,RenameCSourceFolderChange.java, * @author EE4 Graf IFS,3,,,,,,,,,,,,,@author EE4 Graf IFS,,,,,,,,,,
+E1,,E3 (disagree),,ReturnCheckerTest.java, * Test for {@see ReturnCheckerTest} class,3,Test for {@see ReturnCheckerTest} class,,,,,,,,,,,,, * Test for {@see ReturnCheckerTest} class,,,,,,,,,
+E1,,E3 (agree),,SourceDocumentProvider.java, * SourceDocumentProvider,3,,,,,,,,SourceDocumentProvider,,,,,,,,,,,,,,,
 E1,,E3 (agree),,SpellEvent.java,"
- * Spell event fired for words detected by a spell check iterator.",3,Spell event fired for words detected by a spell check iterator.,,,,,,,,,,,,,,,,,,,,,,,
+ * Spell event fired for words detected by a spell check iterator.",3,Spell event fired for words detected by a spell check iterator.,,,,,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,StringDialogField.java,"
- * Dialog field containing a label and a text control.",3,Dialog field containing a label and a text control.,,,,,,,,,,,,,,,,,,,,,,,
+ * Dialog field containing a label and a text control.",3,Dialog field containing a label and a text control.,,,,,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,TriggerCellModifier.java,"
- * Cell modifier used to edit the trigger value.",3,Cell modifier used to edit the trigger value.,,,,,,,,,,,,,,,,,,,,,,,
-E1,,E3 (agree),,WordIgnoreProposal.java, * Proposal to ignore the word during the current editing session.,3,Proposal to ignore the word during the current editing session.,,,,,,,,,,,,,,,,,,,,,,,
+ * Cell modifier used to edit the trigger value.",3,Cell modifier used to edit the trigger value.,,,,,,,,,,,,,,,,,,,,,,
+E1,,E3 (agree),,WordIgnoreProposal.java, * Proposal to ignore the word during the current editing session.,3,Proposal to ignore the word during the current editing session.,,,,,,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,CPPDeferredFunction.java," * Represents a reference to a (member) function (instance), which cannot be resolved because
- * an argument depends on a template parameter. A compiler would resolve it during instantiation.",4,"Represents a reference to a (member) function (instance), which cannot be resolved because an argument depends on a template parameter.",A compiler would resolve it during instantiation.,,,,,,,,,,,,,,,,,,,,,,
+ * an argument depends on a template parameter. A compiler would resolve it during instantiation.",4,"Represents a reference to a (member) function (instance), which cannot be resolved because an argument depends on a template parameter.",A compiler would resolve it during instantiation.,,,,,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,CPPTemplates.java," * Collection of static methods to perform template instantiation, member specialization and
  * type instantiation.
- ",4,"Collection of static methods to perform template instantiation, member specialization and type instantiation.",,,,,,,,,,,,,,,,,,,,,,,
+ ",4,"Collection of static methods to perform template instantiation, member specialization and type instantiation.",,,,,,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,DefaultFortranDependencyCalculator.java,"*
  *  This class implements the Dependency Manager and Output Name Provider interfaces
- *  for a very ""quick & dirty"" ifort tool-chain on Win32",4,"This class implements the Dependency Manager and Output Name Provider interfaces for a very ""quick & dirty"" ifort tool-chain on Win32",,,,,,,,,,,,,,,,,,,,,,,
+ *  for a very ""quick & dirty"" ifort tool-chain on Win32",4,"This class implements the Dependency Manager and Output Name Provider interfaces for a very ""quick & dirty"" ifort tool-chain on Win32",,,,,,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,DOMGCCParserExtensionTestSuite.java,"*
  * @author jcamelon
- *",4,,,,,,,,,,,,,,@author jcamelon,,,,,,,,,,
+ *",4,,,,,,,,,,,,,@author jcamelon,,,,,,,,,,
 E1,,E4 (agree),,GCCKeywords.java," * @noextend This interface is not intended to be extended by clients.
  * @noinstantiate This class is not intended to be instantiated by clients.",4,,,,,"@noextend This interface is not intended to be extended by clients.
-  @noinstantiate This class is not intended to be instantiated by clients.",,,,,,,,,,,,,,,,,,,
+  @noinstantiate This class is not intended to be instantiated by clients.",,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,GDBControl_7_12.java,"
  * Need a new FinalLaunchSequence for GDB 7.12
  * @since 5.2",4,,,,"Need a new FinalLaunchSequence for GDB 7.12
- @since 5.2",,,,,,,,,,,,,,,,,,,,
+ @since 5.2",,,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,GdbExpressionVMProvider.java," * A specialization of ExpressionVMProvider that uses a GDB-specific variable VM
- * node. To understand why this is necessary, see GdbVariableVMNode.",4,A specialization of ExpressionVMProvider,that uses a GDB-specific variable VM node,,,,,,,,,,,,,"To understand why this is necessary, see GdbVariableVMNode",,,,,,,,,
+ * node. To understand why this is necessary, see GdbVariableVMNode.",4,A specialization of ExpressionVMProvider,that uses a GDB-specific variable VM node,,,,,,,,,,,,"To understand why this is necessary, see GdbVariableVMNode",,,,,,,,,
 E1,E2 (agree),,,IBuildObject.java," * @noextend This class is not intended to be subclassed by clients.
  * @noimplement This interface is not intended to be implemented by clients.",4,,,,,"@noextend This class is not intended to be subclassed by clients 
- @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,,
+ @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,ICLibraryFileEntry.java,"
  * Representation in the project model of language settings entries
- * such as library file (-l gcc option). See {@link ICSettingEntry#LIBRARY_FILE}.",4,Representation in the project model of language settings entries such as library file (-l gcc option).,,,,,,,,,,,,,,See {@link ICSettingEntry#LIBRARY_FILE}.,,,,,,,,,
+ * such as library file (-l gcc option). See {@link ICSettingEntry#LIBRARY_FILE}.",4,Representation in the project model of language settings entries such as library file (-l gcc option).,,,,,,,,,,,,,See {@link ICSettingEntry#LIBRARY_FILE}.,,,,,,,,,
 E1,E2 (agree),,,ICPointerType.java," * @noextend This interface is not intended to be extended by clients.
  * @noimplement This interface is not intended to be implemented by clients.",4,,,,,"@noextend This class is not intended to be subclassed by clients 
- @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,,
+ @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,ICPPPointerToMemberType.java,"
  * @noextend This interface is not intended to be extended by clients.
  * @noimplement This interface is not intended to be implemented by clients.",4,,,,,"@noextend This class is not intended to be subclassed by clients 
- @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,,
+ @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,IInclude.java," * Represents an include declaration in a C translation unit.
  *
  * @noextend This interface is not intended to be extended by clients.
  * @noimplement This interface is not intended to be implemented by clients.",4,Represents an include declaration in a C translation unit,,,,"@noextend This interface is not intended to be extended by clients.
-  @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,,
+  @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,IJSSwitchCase.java," * A JavaScript switch case from the <a href=""https://github.com/estree/estree/blob/master/spec.md#switchcase"">ESTree
- * Specification</a>",4,"A JavaScript switch case from the <a href=""https://github.com/estree/estree/blob/master/spec.md#switchcase"">ESTree Specification</a>",,,,,,,,,,,,,,,,,,,,,,,
+ * Specification</a>",4,"A JavaScript switch case from the <a href=""https://github.com/estree/estree/blob/master/spec.md#switchcase"">ESTree Specification</a>",,,,,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,IMacroEntry.java," * @noextend This interface is not intended to be extended by clients.
  * @noimplement This interface is not intended to be implemented by clients.",4,,,,,"@noextend This interface is not intended to be extended by clients. 
-  @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,,
+  @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,IRegisters2.java," * Service extension of IRegisters to manage user defined Register Groups
- * @since 2.6",4,Service extension of IRegisters to manage user defined Register Groups,,,@since 2.6,,,,,,,,,,,,,,,,,,,,
+ * @since 2.6",4,Service extension of IRegisters to manage user defined Register Groups,,,@since 2.6,,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,IViewInMemory.java,"
  * Provides the ability to view a variable in the memory view.
- * @since 7.4",4,Provides the ability to view a variable in the memory view.,,,@since 7.4,,,,,,,,,,,,,,,,,,,,
+ * @since 7.4",4,Provides the ability to view a variable in the memory view.,,,@since 7.4,,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,MIThreadCreatedEvent.java,"
  * This can only be detected by gdb/mi after GDB 6.8.
- *",4,,,,This can only be detected by gdb/mi after GDB 6.8.,,,,,,,,,,,,,,,,,,,,
+ *",4,,,,This can only be detected by gdb/mi after GDB 6.8.,,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,MultiCfgContributedEnvironment.java,"
  *
  * @noextend This class is not intended to be subclassed by clients.
- ",4,,,,,@noextend This class is not intended to be subclassed by clients.,,,,,,,,,,,,,This class is not intended to be subclassed by clients.,,,,,,
+ ",4,,,,,@noextend This class is not intended to be subclassed by clients.,,,,,,,,,,,,This class is not intended to be subclassed by clients.,,,,,,
 E1,,E3 (agree),,MultiLaunchConfigurationTabGroup.java," * Tab group for Launch Group.
  * @deprecated See Bug 517722, Launch Groups are now part of Platform.
- ",4,Tab group for Launch Group.,,,"@deprecated See Bug 517722, Launch Groups are now part of Platform.",,,,,,,,,,,,,,,,,,,,
+ ",4,Tab group for Launch Group.,,,"@deprecated See Bug 517722, Launch Groups are now part of Platform.",,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,QtPDOMNameIndex.java," * A data structure for storing lists of PDOMNames that are indexed by a String key.
- * This is equivalent to the java type Map<String, List<PDOMName>>.",4,A data structure for storing lists of PDOMNames that are indexed by a String key.,"This is equivalent to the java type Map<String, List<PDOMName>>",,,,,,,,,,,,,,,,,,,,,,
+ * This is equivalent to the java type Map<String, List<PDOMName>>.",4,A data structure for storing lists of PDOMNames that are indexed by a String key.,"This is equivalent to the java type Map<String, List<PDOMName>>",,,,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,TestsRunnerProvidersManager.java,"
  * Collects the data from the Tests Runner provider plug-in extension points and
- * provides the convenient access to it.",4,Collects the data from the Tests Runner provider plug-in extension points and provides the convenient access to it.,,,,,,,,,,,,,,,,,,,,,,,
+ * provides the convenient access to it.",4,Collects the data from the Tests Runner provider plug-in extension points and provides the convenient access to it.,,,,,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,WorkingCopyTests.java," * Contains unit test cases for Working Copies. Run using JUnit Plugin Test
- * configuration launcher.",4,Contains unit test cases for Working Copies,,,,Run using JUnit Plugin Test configuration launcher.,,,,,,,,,,,,,,,,,,,
+ * configuration launcher.",4,Contains unit test cases for Working Copies,,,,Run using JUnit Plugin Test configuration launcher.,,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,AddLineBreakpointActionDelegate.java,"
  * A delegate for the ""Add Line Breakpoint"" action.
  * <p>
- * Initially derived from AddFunctionBreakpointActionDelegate",5,"A delegate for the ""Add Line Breakpoint"" action.",Initially derived from AddFunctionBreakpointActionDelegate,,,,,,,,,,,,,,,,,,,,,,
+ * Initially derived from AddFunctionBreakpointActionDelegate",5,"A delegate for the ""Add Line Breakpoint"" action.",Initially derived from AddFunctionBreakpointActionDelegate,,,,,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,C99BuildASTParserAction.java,"
  * Semantic actions called by the C99 parser to build an AST.
  *
- * @author Mike Kucera",5,Semantic actions called by the C99 parser to build an AST.,,,,,,,,,,,,,@author Mike Kucera,,,,,,,,,,
+ * @author Mike Kucera",5,Semantic actions called by the C99 parser to build an AST.,,,,,,,,,,,,@author Mike Kucera,,,,,,,,,,
 E1,,E4 (agree),,CommonBuildTab.java,"
  * Common utilities for Core Build launch configuration tabs.
  *
- * @since 9.1",5,Common utilities for Core Build launch configuration tabs.,,,@since 9.1,,,,,,,,,,,,,,,,,,,,
+ * @since 9.1",5,Common utilities for Core Build launch configuration tabs.,,,@since 9.1,,,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,ContainerTabModel.java,"
  * @since 1.2.1
  * @author jjohnstn
  *
- ",5,,,,@since 1.2.1,,,,,,,,,,@author jjohnstn,,,,,,,,,,
+ ",5,,,,@since 1.2.1,,,,,,,,,@author jjohnstn,,,,,,,,,,
 E1,,E4 (agree),,CoreBuildGenericLaunchConfigProvider.java,"
  * Core launch configuration provider used by generic target types.
  *
- * @since 8.3",5,Core launch configuration provider used by generic target types.,,,@since 8.3,,,,,,,,,,,,,,,,,,,,
+ * @since 8.3",5,Core launch configuration provider used by generic target types.,,,@since 8.3,,,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,CUIPreferenceInitializer.java,"
  * This class implements the setting of the CUI initial preference store settings.
  *
- * @noextend This class is not intended to be subclassed by clients.",5,This class implements the setting of the CUI initial preference store settings.,,,,@noextend This class is not intended to be subclassed by clients.,,,,,,,,,,,,,,,,,,,
+ * @noextend This class is not intended to be subclassed by clients.",5,This class implements the setting of the CUI initial preference store settings.,,,,@noextend This class is not intended to be subclassed by clients.,,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,CWordFinder.java,"
  * This is a helper class for the text editor to be able to determine, given a
  * particular offset in a document, various candidates segments for things like
- * context help, proposals and hovering.",5,"This is a helper class for the text editor to be able to determine, given a particular offset in a document, various candidates segments for things like context help, proposals and hovering.",,,,,,,,,,,,,,,,,,,,,,,
+ * context help, proposals and hovering.",5,"This is a helper class for the text editor to be able to determine, given a particular offset in a document, various candidates segments for things like context help, proposals and hovering.",,,,,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,FoldingConfigurationBlock.java,"
  * Configures C Editor folding preferences.
  *
- * @since 3.0",5,Configures C Editor folding preferences,,,@since 3.0,,,,,,,,,,,,,,,,,,,,
+ * @since 3.0",5,Configures C Editor folding preferences,,,@since 3.0,,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,GDBSourceLookup.java,"
  * Default implementation of {@link IGDBSourceLookup}
  *
- * @since 5.0",5,Default implementation of {@link IGDBSourceLookup},,,@since 5.0,,,,,,,,,,,,,,,,,,,,
+ * @since 5.0",5,Default implementation of {@link IGDBSourceLookup},,,@since 5.0,,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,GroupDebugContextsCommandHandler.java,"
  * Command handler to trigger grouping of debug contexts operation.
  *
- * @since 7.1",5,Command handler to trigger grouping of debug contexts operation.,,,@since 7.1,,,,,,,,,,,,,,,,,,,,
+ * @since 7.1",5,Command handler to trigger grouping of debug contexts operation.,,,@since 7.1,,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,ICLanguageSettingPathEntry.java,"
  * Representation in the project model of language settings entries of
  * path-kind such as include paths (-I) or include files and others.
- * See interface hierarchy for more specifics.",5,Representation in the project model of language settings entries of path-kind such as include paths (-I) or include files and others.,,,,,,,,,,,,,,See interface hierarchy for more specifics.,,,,,,,,,
+ * See interface hierarchy for more specifics.",5,Representation in the project model of language settings entries of path-kind such as include paths (-I) or include files and others.,,,,,,,,,,,,,See interface hierarchy for more specifics.,,,,,,,,,
 E1,E2 (agree),,,ICSourceNotFoundDescription.java,"
  * This interface is used to provide a description of a debug element,
  * usually a stack frame, when no source can be located for it.
- * An instance is usually provided by an adapter.",5,"This interface is used to provide a description of a debug element, usually a stack frame, when no source can be located for it.",An instance is usually provided by an adapter.,,,,,,,,,,,,,,,,,,,,,,
+ * An instance is usually provided by an adapter.",5,"This interface is used to provide a description of a debug element, usually a stack frame, when no source can be located for it.",An instance is usually provided by an adapter.,,,,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,INodeFactory.java,"
  * Control Flow Graph Node factory
  *
- * @noextend This interface is not intended to be extended by clients.",5,Control Flow Graph Node factory,,,,@noextend This interface is not intended to be extended by clients.,,,,,,,,,,,,,,,,,,,
+ * @noextend This interface is not intended to be extended by clients.",5,Control Flow Graph Node factory,,,,@noextend This interface is not intended to be extended by clients.,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,IScannerInfoConsoleParser.java,"
  * Parses a line of command output looking for scanner info entries.
  *
- * @author vhirsl",5,Parses a line of command output looking for scanner info entries.,,,,,,,,,,,,,@author vhirsl,,,,,,,,,,
+ * @author vhirsl",5,Parses a line of command output looking for scanner info entries.,,,,,,,,,,,,@author vhirsl,,,,,,,,,,
 E1,,E3 (agree),,ProcStatParser.java,"
  * @author Marc Dumais
  * TODO: extend to more than the tick counters.
- * @see also http://www.linuxhowtos.org/System/procstat.htm",5,,,,,,,,TODO: extend to more than the tick counters.,,,,,,@author Marc Dumais,@see also http://www.linuxhowtos.org/System/procstat.htm,,,,,,,,,
+ * @see also http://www.linuxhowtos.org/System/procstat.htm",5,,,,,,,TODO: extend to more than the tick counters.,,,,,,@author Marc Dumais,@see also http://www.linuxhowtos.org/System/procstat.htm,,,,,,,,,
 E1,,E3 (agree),,SCDOptionsEnum.java,"
  * Enumeration class for scanner configuration affecting command line options
  *
- * @author vhirsl",5,Enumeration class for scanner configuration affecting command line options,,,,,,,,,,,,,@author vhirsl,,,,,,,,,,
+ * @author vhirsl",5,Enumeration class for scanner configuration affecting command line options,,,,,,,,,,,,@author vhirsl,,,,,,,,,,
 E1,,E3 (agree),,ToggleDynamicPrintfAdapter.java,"
  * Toggles a dynamic printf in a C/C++ editor.
  *
- * @since 7.5",5,Toggles a dynamic printf in a C/C++ editor.,,,@since 7.5,,,,,,,,,,,,,,,,,,,,
+ * @since 7.5",5,Toggles a dynamic printf in a C/C++ editor.,,,@since 7.5,,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,TracepointActionsPropertyPage.java,"
  * Property page for Tracepoint actions
  *
- * @since 2.1",5,Property page for Tracepoint actions,,,@since 2.1,,,,,,,,,,,,,,,,,,,,
+ * @since 2.1",5,Property page for Tracepoint actions,,,@since 2.1,,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,TypedCDTViewerFilter.java,"
  * see org.eclipse.cdt.internal.ui.dialogs.TypedViewerFilter
  *
- * @noextend This class is not intended to be subclassed by clients.",5,,,,,@noextend This class is not intended to be subclassed by clients.,,,,,,,,,,see org.eclipse.cdt.internal.ui.dialogs.TypedViewerFilter,,,,,,,,,
+ * @noextend This class is not intended to be subclassed by clients.",5,,,,,@noextend This class is not intended to be subclassed by clients.,,,,,,,,,see org.eclipse.cdt.internal.ui.dialogs.TypedViewerFilter,,,,,,,,,
 E1,,E3 (agree),,UncallCommandHandler.java,"
  * Command handler to trigger an uncall operation
  *
  * @since 7.0
- ",5,Command handler to trigger an uncall operation,,,@since 7.0,,,,,,,,,,,,,,,,,,,,
+ ",5,Command handler to trigger an uncall operation,,,@since 7.0,,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,UPCKeyword.java,"
  * Enumeration of keywords that UPC adds to C99.
  *
  * @author Mike Kucera
- ",5,Enumeration of keywords that UPC adds to C99.,,,,,,,,,,,,,@author Mike Kucera,,,,,,,,,,
+ ",5,Enumeration of keywords that UPC adds to C99.,,,,,,,,,,,,@author Mike Kucera,,,,,,,,,,
 E1,,E3 (agree),,UPCLanguage.java,"
  * Implementation of the ILanguage extension point, adds UPC as a language to CDT.
  *
- * @author Mike Kucera",5,"Implementation of the ILanguage extension point, adds UPC as a language to CDT.",,,,,,,,,,,,,@author Mike Kucera,,,,,,,,,,
+ * @author Mike Kucera",5,"Implementation of the ILanguage extension point, adds UPC as a language to CDT.",,,,,,,,,,,,@author Mike Kucera,,,,,,,,,,
 E1,,E4 (agree),,AbstractTrialUndoActionProvider.java,"
  * Base class for parser action classes which support trial, undo and
  * final actions.
  |
-         * Action for a null rule",6,"Base class for parser action classes which support trial, undo and final actions.",Action for a null rule,,,,,,,,,,,,,,,,,,,,,,
+         * Action for a null rule",6,"Base class for parser action classes which support trial, undo and final actions.",Action for a null rule,,,,,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,AllTemplateEngineTests.java," * This is a TestSuite, the TestCases created to test Template engine are
  * added to testsuite.
  * The test suite will execute all the Testcases added to the Suite.
  *
- * @since 4.0",7,"This is a TestSuite, the TestCases created to test Template engine are added to testsuite.",The test suite will execute all the Testcases added to the Suite.,,@since 4.0,,,,,,,,,,,,,,,,,,,,
+ * @since 4.0",7,"This is a TestSuite, the TestCases created to test Template engine are added to testsuite.",The test suite will execute all the Testcases added to the Suite.,,@since 4.0,,,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,AutoconfMacroParameterListValidator.java,"
  * This class provides the macro call parameter parsing for the Autoconf Editor hover
  * It is modified from the CDT class CParameterListValidator
  *
  * @author jjohnstn
- *",7,This class provides the macro call parameter parsing for the Autoconf Editor hover,It is modified from the CDT class CParameterListValidator,,,,,,,,,,,,@author jjohnstn,,,,,,,,,,
+ *",7,This class provides the macro call parameter parsing for the Autoconf Editor hover,It is modified from the CDT class CParameterListValidator,,,,,,,,,,,@author jjohnstn,,,,,,,,,,
 E1,,E4 (agree),,ClangToolChain.java,"
  * The Clang toolchain. There's little different from the GCC toolchain other
  * than the toolchain type and name.
  *
  * @author dschaefer
- *",7,The Clang toolchain.,There's little different from the GCC toolchain other than the toolchain type and name.,,,,,,,,,,,,@author dschaefer,,,,,,,,,,
+ *",7,The Clang toolchain.,There's little different from the GCC toolchain other than the toolchain type and name.,,,,,,,,,,,@author dschaefer,,,,,,,,,,
 E1,,E4 (agree),,DefaultEnvironmentContextInfo.java,"
  * The default implementation of the IContextInfo used by the Environment Variable Provider
  * Used to represent the Configuration, Project, Workspace and Eclipse environment contexts
  *
- * @since 3.0",6,The default implementation of the IContextInfo used by the Environment Variable Provider,,"Used to represent the Configuration, Project, Workspace and Eclipse environment contexts",@since 3.0,,,,,,,,,,,,,,,,,,,,
+ * @since 3.0",6,The default implementation of the IContextInfo used by the Environment Variable Provider,,"Used to represent the Configuration, Project, Workspace and Eclipse environment contexts",@since 3.0,,,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,DocCommentOwnerBlock.java,"
  * Project property page for setting documentation comment owner.
  * <em>This class is not intended for use outside of CDT</em>
@@ -218,46 +218,46 @@ E1,,E4 (agree),,DocCommentOwnerBlock.java,"
  
  
   @noextend This class is not intended to be subclassed by clients. 
- @noinstantiate This class is not intended to be instantiated by clients.",,,,,,,,,,,,,,,,,,,
+ @noinstantiate This class is not intended to be instantiated by clients.",,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,ElementNumberFormatsContribution.java,"
  * Dynamic menu contribution that shows available number formats in the current
  * selection of the view.
  *
- * @since 2.2",6,Dynamic menu contribution that shows available number formats in the current selection of the view.,,,@since 2.2,,,,,,,,,,,,,,,,,,,,
+ * @since 2.2",6,Dynamic menu contribution that shows available number formats in the current selection of the view.,,,@since 2.2,,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,FindStdLibPath.java,"
  * The purpose is to find a path where stdc++ library is located.
  * Currently the shell script is only for Linux.
  *
- * TODO: It might not be able to execute scripts therefore place the command into a variable.",6,,,The purpose is to find a path where stdc++ library is located.,,Currently the shell script is only for Linux.,,,TODO: It might not be able to execute scripts therefore place the command into a variable.,,,,,,,,,,,,,,,,
+ * TODO: It might not be able to execute scripts therefore place the command into a variable.",6,,,The purpose is to find a path where stdc++ library is located.,,Currently the shell script is only for Linux.,,TODO: It might not be able to execute scripts therefore place the command into a variable.,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,FormattedValueTests.java,"
  * Tests to verify the operation of FormattedValuesVMUtil
  * @since 2.2
  |
-	 * helper class that stores some element paths and nodes using a certain format",6,Tests to verify the operation of FormattedValuesVMUtil,helper class that stores some element paths and nodes using a certain forma,,@since 2.2,,,,,,,,,,,,,,,,,,,,
+	 * helper class that stores some element paths and nodes using a certain format",6,Tests to verify the operation of FormattedValuesVMUtil,helper class that stores some element paths and nodes using a certain forma,,@since 2.2,,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,ICPPAliasTemplateInstance.java," * Represents an instance of an alias template (14.5.7).
  * @since 5.5
  *
  * @noextend This interface is not intended to be extended by clients.
  * @noimplement This interface is not intended to be implemented by clients.
  ",7,Represents an instance of an alias template (14.5.7).,,,@since 5.5,"@noextend This interface is not intended to be extended by clients. 
-  @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,,
+  @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,ICPPASTLinkageSpecification.java,"
  * This interface represents a linkage specification. e.g. extern ""C"" { ... }
  *
  * @noextend This interface is not intended to be extended by clients.
  * @noimplement This interface is not intended to be implemented by clients.",6,"This interface represents a linkage specification. e.g. extern ""C"" { ... }",,,,"@noextend This interface is not intended to be extended by clients.
-  @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,,
+  @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,IDsfDebugServicesFactory.java,"
  * A factory to create DSF services.  Using this interface allows
  * to easily have different service implementation for different backends.
  *
- * @since 1.1",6,A factory to create DSF services.,,Using this interface allows to easily have different service implementation for different backends.,@since 1.1,,,,,,,,,,,,,,,,,,,,
+ * @since 1.1",6,A factory to create DSF services.,,Using this interface allows to easily have different service implementation for different backends.,@since 1.1,,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,IMIBackend.java,"
  * Service for controlling the back end process.
  * @since 1.1
  |
 	 * Event indicating that the back end process has started or terminated.
-	 ",6,Service for controlling the back end process.,Event indicating that the back end process has started or terminated,,@since 1.1,,,,,,,,,,,,,,,,,,,,
+	 ",6,Service for controlling the back end process.,Event indicating that the back end process has started or terminated,,@since 1.1,,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,IMSASTDeclspecList.java,"
  * Represents a Microsoft attribute specifier, introduced by __declspec.
  *
@@ -265,51 +265,51 @@ E1,E2 (agree),,,IMSASTDeclspecList.java,"
  * @noextend This interface is not intended to be extended by clients.
  * @noimplement This interface is not intended to be implemented by clients.
  ",7,"Represents a Microsoft attribute specifier, introduced by __declspec.",,,@since 6.6,"@noextend This interface is not intended to be extended by clients. 
- @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,,
+ @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,IRefreshAllTarget.java,"
  * A retargetable action target which allows a debugger to refresh all of its
  * active views with fresh data from the debug target.
  *
- * @since 1.1",6,A retargetable action target which allows a debugger to refresh all of its active views with fresh data from the debug target.,,,@since 1.1,,,,,,,,,,,,,,,,,,,,
+ * @since 1.1",6,A retargetable action target which allows a debugger to refresh all of its active views with fresh data from the debug target.,,,@since 1.1,,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,MIReverseDebugEnabler.java,"
  *
  * This class permits to enable, disable or toggle the reverse
  * debugging mode.
  *
- * @since 4.2",7,"This class permits to enable, disable or toggle the reverse debugging mode.",,,@since 4.2,,,,,,,,,,,,,,,,,,,,
+ * @since 4.2",7,"This class permits to enable, disable or toggle the reverse debugging mode.",,,@since 4.2,,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,MIThreadGroupAddedEvent.java,"
  * =thread-group-added,id=""i1""
  *
  * This can only be detected by gdb/mi with GDB >= 7.2.
  * @since 5.1",6,,"=thread-group-added,id=""i1""",,"This can only be detected by gdb/mi with GDB >= 7.2.
-  @since 5.1",,,,,,,,,,,,,"=thread-group-added,id=""i1""",,,,,,,
+  @since 5.1",,,,,,,,,,,,"=thread-group-added,id=""i1""",,,,,,,
 E1,,E3 (disagree),,PDOMDependencyGenerator.java," * @author Doug Schaefer
  *
  * @noextend This class is not intended to be subclassed by clients.
  * @noinstantiate This class is not intended to be instantiated by clients.",6,,,,,"@noextend This class is not intended to be subclassed by clients. 
- @noinstantiate This class is not intended to be instantiated by clients.",,,,,,,,,@author Doug Schaefer,,,," * @noextend This class is not intended to be subclassed by clients.
+ @noinstantiate This class is not intended to be instantiated by clients.",,,,,,,,@author Doug Schaefer,,,," * @noextend This class is not intended to be subclassed by clients.
  * @noinstantiate This class is not intended to be instantiated by clients.",,,,,,
 E1,,E3 (agree),,ProblemMarkerManager.java,"
  * Listens to resource deltas and filters for marker changes of type
  * IMarker.PROBLEM Viewers showing error ticks should register as listener to
  * this type.
  |
-         * Visitors used to filter the element delta changes",7,Listens to resource deltas and filters for marker changes of type IMarker.PROBLEM,Visitors used to filter the element delta change,,,Viewers showing error ticks should register as listener to this type.,,,,,,,,,,,,,,,,,,,
+         * Visitors used to filter the element delta changes",7,Listens to resource deltas and filters for marker changes of type IMarker.PROBLEM,Visitors used to filter the element delta change,,,Viewers showing error ticks should register as listener to this type.,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,ProcessLauncher.java,"
  * This class implements external process launching for internal builder.
  *
  * NOTE: This class is subject to change and discuss,
- * and is currently available in experimental mode only",6,This class implements external process launching for internal builder.,,,,,,,,,,,,,,,,,"NOTE: This class is subject to change and discuss, and is currently available in experimental mode only",,,,,,
+ * and is currently available in experimental mode only",6,This class implements external process launching for internal builder.,,,,,,,,,,,,,,,,"NOTE: This class is subject to change and discuss, and is currently available in experimental mode only",,,,,,
 E1,,E3 (agree),,StandardCElementLabelProvider.java,"
  * CElementLabelProvider that respects settings from the Appearance preference page.
  * Triggers a viewer update when a preference changes.
  *
- * @deprecated Use {@link AppearanceAwareLabelProvider} instead.",6,CElementLabelProvider that respects settings from the Appearance preference page.,Triggers a viewer update when a preference changes.,,@deprecated Use {@link AppearanceAwareLabelProvider} instead.,,,,,,,,,,,,,,,,,,,,
+ * @deprecated Use {@link AppearanceAwareLabelProvider} instead.",6,CElementLabelProvider that respects settings from the Appearance preference page.,Triggers a viewer update when a preference changes.,,@deprecated Use {@link AppearanceAwareLabelProvider} instead.,,,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,VMHasChildrenUpdate.java," * Helper class implementation of the {@link IHasChildrenUpdate} update object.
  *
  * @see VMViewerUpdate
  *
- * @since 1.0",7,Helper class implementation of the {@link IHasChildrenUpdate} update object.,,,@since 1.0,,,,,,,,,,,@see VMViewerUpdate,,,,,,,,,
+ * @since 1.0",7,Helper class implementation of the {@link IHasChildrenUpdate} update object.,,,@since 1.0,,,,,,,,,,@see VMViewerUpdate,,,,,,,,,
 E1,,E4 (agree),,AbstractCPropertyTab.java,"
  * It is a parent for all standard property tabs
  * in new CDT model.
@@ -336,7 +336,7 @@ E1,,E4 (agree),,AbstractCPropertyTab.java,"
   - several utility methods to create widgets in the
   uniform manner (setupLabel(), setupText() etc).
   - means to handle control messages which are the main
-  communication way for new CDT model pages and tabs.",,"Although it's enough for new tabs to implement ICPropertyTab interface only, it would be better to extend them from this class.",,,,,,,,,,,,,,,,,,,
+  communication way for new CDT model pages and tabs.",,"Although it's enough for new tabs to implement ICPropertyTab interface only, it would be better to extend them from this class.",,,,,,,,,,,,,,,,,,
 E1,,E4 (agree),,AddMemoryBlocks.java,"
  * Adds memory blocks to the Memory view.
  *
@@ -350,7 +350,7 @@ E1,,E4 (agree),,AddMemoryBlocks.java,"
  * <p>
  * @since 3.2
  *
- | In order to avoid duplicating the addMemoryBlocks method--one| version for expressions, one for memory-space+address, we pass in a| an opaque parameter and let the logic within addMemoryBlocks| differentiate where needed via isinstanceof| Request object used to get the memory spaces ",14,Adds memory blocks to the Memory view.,"<p> CDT adapter logic will link us to a CMemoryBlockRetrievalExtension if and only if the CDI backend support memory spaces. When this is the case, the platform will call us to add a memory monitor to the memory view. We must put up a dialog, handle the user input, create the memory blocks with default renderings and add them to the view. <p>",,@since 3.2,"In order to avoid duplicating the addMemoryBlocks method--one| version for expressions, one for memory-space+address, we pass in a| an opaque parameter and let the logic within addMemoryBlocks| differentiate where needed via isinstanceof| Request object used to get the memory spaces",,,,,,,,,,,,,,,,,,,
+ | In order to avoid duplicating the addMemoryBlocks method--one| version for expressions, one for memory-space+address, we pass in a| an opaque parameter and let the logic within addMemoryBlocks| differentiate where needed via isinstanceof| Request object used to get the memory spaces ",14,Adds memory blocks to the Memory view.,"<p> CDT adapter logic will link us to a CMemoryBlockRetrievalExtension if and only if the CDI backend support memory spaces. When this is the case, the platform will call us to add a memory monitor to the memory view. We must put up a dialog, handle the user input, create the memory blocks with default renderings and add them to the view. <p>",,@since 3.2,"In order to avoid duplicating the addMemoryBlocks method--one| version for expressions, one for memory-space+address, we pass in a| an opaque parameter and let the logic within addMemoryBlocks| differentiate where needed via isinstanceof| Request object used to get the memory spaces",,,,,,,,,,,,,,,,,,
 E1,,E4 (disagree),,CConfigurationDescriptionCache.java,"
  * CConfigurationDescriptionCache is a proxy class for serialization of configuration description data.
  *
@@ -413,7 +413,7 @@ E1,,E4 (disagree),,CConfigurationDescriptionCache.java,"
   *
   * @see ICConfigurationDescription
   * @see CConfigurationDescription
-  * @see CProjectDescriptionEvent",,,,,,,,,,"@see ICConfigurationDescription
+  * @see CProjectDescriptionEvent",,,,,,,,,"@see ICConfigurationDescription
   * @see CConfigurationDescription
   * @see CProjectDescriptionEvent",,,,,,,,,
 E1,,E4 (agree),,CPPImplicitVariable.java,"
@@ -426,7 +426,7 @@ E1,,E4 (agree),,CPPImplicitVariable.java,"
  ",8,Represents a variable implicitly created in C++ code.,,,,"For example the initializer of a structured binding decomposition [dcl.struct.bind]:
   <code>auto [first, second] = decomposed;</code>
   
- The <code>initializerEvaluation</code> has to be supplied.",,,,,,,,,,,,,,,,,,,
+ The <code>initializerEvaluation</code> has to be supplied.",,,,,,,,,,,,,,,,,,
 E1,,E4 (disagree),,DisplayDsfExecutor.java,"
  * DSF executor which uses the display thread to run the submitted runnables
  * and callables.  The implementation is based on the default DSF executor
@@ -434,7 +434,7 @@ E1,,E4 (disagree),,DisplayDsfExecutor.java,"
  * each executable in the display thread.
  *
  * @since 1.0
- ",8,DSF executor which uses the display thread to run the submitted runnables and callables.,The implementation is based on the default DSF executor which still creates its own thread. However this thread blocks when running each executable in the display thread.,,@since 1.0,,,,,,,,,,,,,,,,,,,,
+ ",8,DSF executor which uses the display thread to run the submitted runnables and callables.,The implementation is based on the default DSF executor which still creates its own thread. However this thread blocks when running each executable in the display thread.,,@since 1.0,,,,,,,,,,,,,,,,,,,
 E1,,E4 (disagree),,GnuMakefileGenerator.java,"
  * This is a specialized makefile generator that takes advantage of the
  * extensions present in Gnu Make.
@@ -601,7 +601,7 @@ E1,,E4 (disagree),,GnuMakefileGenerator.java,"
   * @return a suitable Make rule compatible path
   |
   * This class is used to recursively walk the project and determine which
-  * modules contribute buildable source files.",,,,,,,,,,,,,,,,,,,
+  * modules contribute buildable source files.",,,,,,,,,,,,,,,,,,
 E1,,E4 (disagree),,ICodeReaderFactory.java,"
  * This is the interface that an AST Service uses to delegate the construction
  * of a CodeReader.
@@ -609,7 +609,7 @@ E1,,E4 (disagree),,ICodeReaderFactory.java,"
  * @author jcamelon
  * @deprecated replaced by {@link IncludeFileContentProvider}
  * @noreference This interface is not intended to be referenced by clients.
- ",8,This is the interface that an AST Service uses to delegate the construction of a CodeReader.,,,@deprecated replaced by {@link IncludeFileContentProvider},@noreference This interface is not intended to be referenced by clients.,,,,,,,,,@author jcamelon,{@link IncludeFileContentProvider},,,,,,,,,
+ ",8,This is the interface that an AST Service uses to delegate the construction of a CodeReader.,,,@deprecated replaced by {@link IncludeFileContentProvider},@noreference This interface is not intended to be referenced by clients.,,,,,,,,@author jcamelon,{@link IncludeFileContentProvider},,,,,,,,,
 E1,E2 (agree),,,ICPPASTVirtSpecifier.java,"
  * A virt-specifier at the end of a function declaration.
  * There are two virt-specifiers, 'final' and 'override'.
@@ -617,29 +617,30 @@ E1,E2 (agree),,,ICPPASTVirtSpecifier.java,"
  * @noimplement This interface is not intended to be implemented by clients.
  * @noextend This interface is not intended to be extended by clients.
  * @since 5.7",8,A virt-specifier at the end of a function declaration.,"There are two virt-specifiers, 'final' and 'override'.",,@since 5.7,"@noimplement This interface is not intended to be implemented by clients.
-  @noextend This interface is not intended to be extended by clients.",,,,,,,,,,,,,,,,,,,
+  @noextend This interface is not intended to be extended by clients.",,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,IGDBTraceControl.java,"
  * The TraceControl service provides access to the debugger Tracing functionality.
  * It is used to do such things as start and stop tracing.
  *
  * @since 3.0
  |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
-	 * Marker interface for a context on which trace operations can be performed
-	 |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
-	 * Specific Trace Record context.  It describes tracing data.
-	 |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
-	 * This is the model data interface that corresponds to ITraceRecordDMContext.
-	 |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
-	 * Trace events
-	 |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////| @since 4.4 ",14,The TraceControl service provides access to the debugger Tracing functionality.,,It is used to do such things as start and stop tracing.,@since 3.0,,,"|///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
-  * Marker interface for a context on which trace operations can be performed
-  |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
-  * Specific Trace Record context. It describes tracing data.
-  |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
-  * This is the model data interface that corresponds to ITraceRecordDMContext.
-  |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
-  * Trace events
-  |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////| @since 4.4",,,,,,,,,,,,,,,,,
+         * Marker interface for a context on which trace operations can be performed
+         |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
+         * Specific Trace Record context.  It describes tracing data.
+         |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
+         * This is the model data interface that corresponds to ITraceRecordDMContext.
+         |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
+         * Trace events
+         |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////| @since 4.4 ",14,The TraceControl service provides access to the debugger Tracing functionality.," |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
+         * Marker interface for a context on which trace operations can be performed
+         |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
+         * Specific Trace Record context.  It describes tracing data.
+         |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
+         * This is the model data interface that corresponds to ITraceRecordDMContext.
+         |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////|
+         * Trace events
+         |///////////////////////////////////////////////| GDB specific part|///////////////////////////////////////////////| ",It is used to do such things as start and stop tracing.,"@since 3.0
+@since 4.4 ",,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,IPropertyChangeParticipant.java,"
  * Implemented by classes which can optionally participate in property
  * change events, and report whether an event would affect them without
@@ -651,7 +652,7 @@ E1,E2 (agree),,,IPropertyChangeParticipant.java,"
  * @since 5.0
  ",10,"Implemented by classes which can optionally participate in property change events, and report whether an event would affect them without adapting to it.",,,@since 5.0,"<p>
   Clients may implement this interface.
-  </p>",,,,,,,,,,,,,,,,,,,
+  </p>",,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,ITestItem.java,"
  * Base interface to the structural item of test hierarchy (test suite or test
  * case).
@@ -659,12 +660,13 @@ E1,E2 (agree),,,ITestItem.java,"
  * @noextend This interface is not intended to be extended by clients.
  * @noimplement This interface is not intended to be implemented by clients.
  |
-	 * Represents status of the test item.
-	 *
-	 * @note Order of values is significant (cause enumeration values comparison
-	 * is necessary)
-	 ",12,Represents status of the test item,Base interface to the structural item of test hierarchy (test suite or test case).,,,"@noextend This interface is not intended to be extended by clients.
-  @noimplement This interface is not intended to be implemented by clients.",,@note Order of values is significant (cause enumeration values comparison is necessary),,,,,,,,,,,,,,,,,
+         * Represents status of the test item.
+         *
+         * @note Order of values is significant (cause enumeration values comparison
+         * is necessary)
+         ",12,Represents status of the test item,"Base interface to the structural item of test hierarchy (test suite or test case).
+@note Order of values is significant (cause enumeration values comparison is necessary)",,,"@noextend This interface is not intended to be extended by clients.
+  @noimplement This interface is not intended to be implemented by clients.",,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,LanguageSettingsProvidersSerializer.java,"
  * Helper class handling serialization and notifications for language settings entries {@link ICLanguageSettingEntry}.
  | those are for readability of xml only|
@@ -681,7 +683,7 @@ E1,E2 (agree),,,LanguageSettingsProvidersSerializer.java,"
  Dummy class to represent ill-defined provider. | those are for readability of xml only|
  language settings provider listener-cfgDescription association | those are for readability of xml only|
   Wrapper for workspace providers to ensure level of indirection. That way workspace providers can be changed/replaced without notifying/changing the configurations which keep the providers in their lists | those are for readability of xml only|
- Language Settings Change Event implementation.",,,,,,,,,,,,,,,,,,,,,,,
+ Language Settings Change Event implementation.",,,,,,,,,,,,,,,,,,,,,,
 E1,E2 (agree),,,MIAsyncErrorProcessor.java,"
  * In some cases GDB reports 'exec-*' commands failure after the '^running' event is fired.
  * For instance, if an invalid breakpoint is set no error is reported but the consequent
@@ -701,7 +703,7 @@ E1,E2 (agree),,,MIAsyncErrorProcessor.java,"
  * This class handles these type of situations by firing MIErrorEvent when such an error appears.
  *
  * @since 5.3
- ",20,This class handles these type of situations by firing MIErrorEvent when such an error appears.,,"In some cases GDB reports 'exec-*' commands failure after the '^running' event is fired. For instance, if an invalid breakpoint is set no error is reported but the consequent 'exec-continue' command fails.",@since 5.3,,,,,,,,,,,,,"36-exec-continue --thread 1
+ ",20,This class handles these type of situations by firing MIErrorEvent when such an error appears.,,"In some cases GDB reports 'exec-*' commands failure after the '^running' event is fired. For instance, if an invalid breakpoint is set no error is reported but the consequent 'exec-continue' command fails.",@since 5.3,,,,,,,,,,,,"36-exec-continue --thread 1
   36^running
   *running,thread-id=""all""
   (gdb)
@@ -735,7 +737,7 @@ E1,E2 (agree),,,MIBreakpointsSynchronizer.java,"
 	 * @see MIBreakpointsSynchronizer class documentation for design comments
 	 ",23,"Provides synchronization between breakpoints set from outside of the Eclipse breakpoint framework (GDB console, trace files, etc.) and the Breakpoints view.","| Catchpoint expressions| GDB tracepoint commands|
   Class to store an event that needs to be performed by the synchronizer
- @see MIBreakpointsSynchronizer class documentation for design comment",,@since 4.2,,,,,,,,,,,"* <p>
+ @see MIBreakpointsSynchronizer class documentation for design comment",,@since 4.2,,,,,,,,,,"* <p>
   * Bug 530377: Prior to fixing 530377, events that arrived from GDB faster than
   * DSF/Eclipse fully processed them could cause the state within the
   * synchronizer and manager to become corrupt. This would happen because it
@@ -760,7 +762,7 @@ E1,,E3 (agree),,MIDataListRegisterNames.java,"
  *
  ",12,Show a list of register names for the current target.,"If no arguments are given, it shows a list of the names of all the registers. 
  If integer numbers are given as arguments, it will print a list of the names of the registers corresponding to the arguments.
- To ensure consistency between a register name and its number, the output list may include empty register names.",,,-data-list-register-names [ ( REGNO )+ ],,,,,,,,,,,,,,,,,,,
+ To ensure consistency between a register name and its number, the output list may include empty register names.",,,-data-list-register-names [ ( REGNO )+ ],,,,,,,,,,,,,,,,,,
 E1,,E3 (agree),,MIEnvironmentDirectory.java,"
  *
  *      -environment-directory [-r] PATHDIR
@@ -771,7 +773,7 @@ E1,,E3 (agree),,MIEnvironmentDirectory.java,"
  ",8,Add directory PATHDIR to beginning of search path for source files.,,,,"-environment-directory [-r] PATHDIR
  
  
- -r will first reset the path to its default",,,,,,,,,,,,,,,,,,,
+ -r will first reset the path to its default",,,,,,,,,,,,,,,,,,
 E1,,E3 (disagree),,MIStack.java,"
          * Same as with frame objects, this is a base class for the IVariableDMData object that uses an MIArg object to
          * provide the data.  Sub-classes must supply the MIArg object.
@@ -823,7 +825,7 @@ E1,,E3 (disagree),,MIStack.java,"
   it will eliminate the issue with invalid data on subsequent invocations. We don't cache errors.
   |
   * Base class for the IFrameDMData object that uses an MIFrame object to
-  * provide the data. Sub-classes must provide the MIFrame object",,Sub-classes must supply the MIArg object,,,,,,,,,,,,,,, Sub-classes must supply the MIArg object.Sub-classes must provide the MIFrame object,,,"         * Base class for the IFrameDMData object that uses an MIFrame object to
+  * provide the data. Sub-classes must provide the MIFrame object",,Sub-classes must supply the MIArg object,,,,,,,,,,,,,, Sub-classes must supply the MIArg object.Sub-classes must provide the MIFrame object,,,"         * Base class for the IFrameDMData object that uses an MIFrame object to
          * provide the data.  Sub-classes must provide the MIFrame object",
 E1,,E3 (agree),,ResultsView.java,"
  * Represents a view part showing the testing results (count statistics,
@@ -834,8 +836,8 @@ E1,,E3 (agree),,ResultsView.java,"
          * @note <code>Auto</code> state may be not acceptable for some methods (see
          * their comments for details).
          ",9,"Represents a view part showing the testing results (count statistics, red/green bar, tests hierarchy and test messages).
- | Persistence tags| Represents view orientatio",,,,,,* @note <code>Auto</code> state may be not acceptable for some methods (see their comments for details).,,,,,,,,,,,"         * @note <code>Auto</code> state may be not acceptable for some methods (see
-         * their comments for details).",,,,,,
+ | Persistence tags| Represents view orientatio",,,,,,,,,,,,,,,,"         * @note <code>Auto</code> state may be not acceptable for some methods (see
+         * their comments for details).",* @note <code>Auto</code> state may be not acceptable for some methods (see their comments for details).,,,,,
 E1,,E3 (disagree),,RulerColumnDescriptor.java,"
  * The description of an extension to the
  * <code>org.eclipse.ui.workbench.texteditor.rulerColumns</code> extension point. Instances are
@@ -845,7 +847,7 @@ E1,,E3 (disagree),,RulerColumnDescriptor.java,"
  * @noinstantiate This class is not intended to be instantiated by clients.
  ",8,The description of an extension to the <code>org.eclipse.ui.workbench.texteditor.rulerColumns</code> extension point,,,@since 7.2,"Instances are immutable. Instances can be obtained from a {@link RulerColumnRegistry}.
  
-  @noinstantiate This class is not intended to be instantiated by clients.",,,,,,,,,, Instances can be obtained from a {@link RulerColumnRegistry}.,,, * @noinstantiate This class is not intended to be instantiated by clients.,,,,,,
+  @noinstantiate This class is not intended to be instantiated by clients.",,,,,,,,, Instances can be obtained from a {@link RulerColumnRegistry}.,,, * @noinstantiate This class is not intended to be instantiated by clients.,,,,,,
 E1,,E3 (disagree),,SourceLookupTest.java,"
  * Tests that interaction with source lookups works as expected.
  * <p>
@@ -902,7 +904,7 @@ E1,,E3 (disagree),,SourceLookupTest.java,"
   * <li><b>RN</b>: Relative and Non-Canonical path (a ../ in path passed to GCC)
   * </li>
   * <li><b>No suffix</b>: Compilation that does not need mapping to be found
-  * </ul>",,,,,,,,,,"See the Makefile for more
+  * </ul>",,,,,,,,,"See the Makefile for more
  * information.",,,,,,,,,
 E1,,E3 (agree),,TracingConsole.java,"
  * A console that is used to print traces.  The console is attached to a launch.
@@ -922,9 +924,10 @@ E1,,E3 (agree),,TracingConsole.java,"
          * But instead of making the console read-only, we allow
          * the user to type things to allow for comments to be
          * inserted within the traces.
-         ",19,A console that is used to print traces. The console is attached to a launch.,"* All of these tests use one of SourceLookup*.exe that was built from a file that was ""moved"" since build time. At build time the SourceLookup.cc file was located in the {@link #BUILD_PATH} directory, but it is now located in the {@link BaseTestCase#SOURCE_PATH} directory. <p>",We don't actually make the console read-only because it is nice for the user to be able to add delimiters such as empty lines within the traces.,@since 2.1,"A reading Job which will prevent the input stream from filling up. We don't actually do anything with the data we read, since the Trace console should not accept input.
+         ",19,A console that is used to print traces. The console is attached to a launch.,"* All of these tests use one of SourceLookup*.exe that was built from a file that was ""moved"" since build time. At build time the SourceLookup.cc file was located in the {@link #BUILD_PATH} directory, but it is now located in the {@link BaseTestCase#SOURCE_PATH} directory. <p>",We don't actually make the console read-only because it is nice for the user to be able to add delimiters such as empty lines within the traces.,"@since 2.1
+This class was moved from package org.eclipse.cdt.dsf.gdb.internal.ui.tracing","A reading Job which will prevent the input stream from filling up. We don't actually do anything with the data we read, since the Trace console should not accept input.
   
- But instead of making the console read-only, we allow the user to type things to allow for comments to be inserted within the traces.",,This class was moved from package org.eclipse.cdt.dsf.gdb.internal.ui.tracing,,,,,,,,,,,"We don't actually do anything with
+ But instead of making the console read-only, we allow the user to type things to allow for comments to be inserted within the traces.",,,,,,,,,,,,"We don't actually do anything with
          * the data we read, since the Trace console should not
          * accept input.
          *
@@ -956,7 +959,7 @@ E1,,E3 (agree),,WhiteSpaceOptions.java,"
          * Preview snippets.
          |        private void createBeforeEllipsis(Map workingValues, InnerNode parent) {|                createOption(parent, workingValues, FormatterMessages.WhiteSpaceOptions_vararg_parameter, DefaultCodeFormatterConstants.FORMATTER_INSERT_SPACE_BEFORE_ELLIPSIS, VARARG_PARAMETER_PREVIEW);|        }||        private void createAfterEllipsis(Map workingValues, InnerNode parent) {|                createOption(parent, workingValues, FormatterMessages.WhiteSpaceOptions_vararg_parameter, DefaultCodeFormatterConstants.FORMATTER_INSERT_SPACE_AFTER_ELLIPSIS, VARARG_PARAMETER_PREVIEW);|        }| syntax element tree|    private InnerNode createReturnTree(Map workingValues, InnerNode parent) {|            final InnerNode root= new InnerNode(parent, workingValues, FormatterMessages.WhiteSpaceOptions_return);|            createOption(root, workingValues, FormatterMessages.WhiteSpaceTabPage_before_parenthesized_expressions, DefaultCodeFormatterConstants.FORMATTER_INSERT_SPACE_BEFORE_PARENTHESIZED_EXPRESSION_IN_RETURN, RETURN_PREVIEW);|            return root;|    }|    private InnerNode createThrowTree(Map workingValues, InnerNode parent) {|            final InnerNode root= new InnerNode(parent, workingValues, FormatterMessages.WhiteSpaceOptions_throw);|            createOption(root, workingValues, FormatterMessages.WhiteSpaceTabPage_before_parenthesized_expressions, DefaultCodeFormatterConstants.FORMATTER_INSERT_SPACE_BEFORE_PARENTHESIZED_EXPRESSION_IN_THROW, THROW_PREVIEW);|            return root;|    }|
          * A node representing a concrete white space option in the tree.
-         ",,,,,"* Preview snippets.
+         ",,,,"* Preview snippets.
   | private void createBeforeEllipsis(Map workingValues, InnerNode parent) {| createOption(parent, workingValues, FormatterMessages.WhiteSpaceOptions_vararg_parameter, DefaultCodeFormatterConstants.FORMATTER_INSERT_SPACE_BEFORE_ELLIPSIS, VARARG_PARAMETER_PREVIEW);| }|| private void createAfterEllipsis(Map workingValues, InnerNode parent) {| createOption(parent, workingValues, FormatterMessages.WhiteSpaceOptions_vararg_parameter, DefaultCodeFormatterConstants.FORMATTER_INSERT_SPACE_AFTER_ELLIPSIS, VARARG_PARAMETER_PREVIEW);| }| syntax element tree| private InnerNode createReturnTree(Map workingValues, InnerNode parent) {| final InnerNode root= new InnerNode(parent, workingValues, FormatterMessages.WhiteSpaceOptions_return);| createOption(root, workingValues, FormatterMessages.WhiteSpaceTabPage_before_parenthesized_expressions, DefaultCodeFormatterConstants.FORMATTER_INSERT_SPACE_BEFORE_PARENTHESIZED_EXPRESSION_IN_RETURN, RETURN_PREVIEW);| return root;| }| private InnerNode createThrowTree(Map workingValues, InnerNode parent) {| final InnerNode root= new InnerNode(parent, workingValues, FormatterMessages.WhiteSpaceOptions_throw);| createOption(root, workingValues, FormatterMessages.WhiteSpaceTabPage_before_parenthesized_expressions, DefaultCodeFormatterConstants.FORMATTER_INSERT_SPACE_BEFORE_PARENTHESIZED_EXPRESSION_IN_THROW, THROW_PREVIEW);| return root;| }|
   * Represents a node in the options tree.
   |

@@ -1,0 +1,606 @@
+Evaluator,Reviewer,Reviewer 2,class,Comment,Comment size,Intent,Responsibilities,Collaborators,Key messages,Key implementation points,Instance variables,ReferenceToOtherResources,Subclasses Explanation,Class references,Example,Todo comments,Coding guidlines,Warnings,Discourse,Links,Extensions,Recommendations,Observations,Preconditions,Dependencies,License/copyright ,Other
+E1,E2 (agree),,FamixTTrait,FAMIXTrait models a trait as it can be found in Pharo or PHP.,1,,FAMIXTrait models a trait as it can be found in Pharo or PHP.,FAMIXTrait models a trait as it can be found in Pharo or PHP.,,,,,,,,,,,,,,,,,,,
+E1,E2 (agree),,MooseSystemComplexityLocator,self openOn: MooseModel root allModels last allModelClasses,1,,,,,,,,,,self openOn: MooseModel root allModels last allModelClasses,,,,,,,,,,,,
+E1,E2 (agree),,FAMIXNamespaceGroup,FAMIXNamespaceGroup is a MooseGroup containing only FAMIX enities of type FAMIXNamespace.,1,FAMIXNamespaceGroup is a MooseGroup , containing only FAMIX enities of type FAMIXNamespace., containing only FAMIX enities of type FAMIXNamespace.,,,,,,FAMIXNamespace,,,,,,,,,,,,,
+E1,,E3(agree),KGBForMetricsTestResource,I am a test resource building a FamixStModel with some of KGB packages used for metrics tests.,1,I am a test resource ,building a FamixStModel with some of KGB packages used for metrics test,building a FamixStModel with some of KGB packages used for metrics test,,,,,,FamixStModel,,,,,,,,,,,,,
+E1,,E3(agree),FameOppositeClassNotExistRule,Check if the opposite class declared in a pragma #MSEProperty:type:opposite: is defined.,1,,Check if the opposite class declared in a pragma #MSEProperty:type:opposite: is defined.,,,,,,,,,,,,,,,,,,,,
+E2,,E3(agree),MalBreadthFirstSearchPath,"Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a `search key') and explores the neighbor nodes first, before moving to the next level neighbours. (source: Wikipedia)",1,Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures. ,"Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a `search key') and explores the neighbor nodes first, before moving to the next level neighbours.",,,,, (source: Wikipedia),,,,,,,,,,,,,,,
+E2,,E3(disagree),FAMIXAnnotationTypeGroup,FAMIXAnnotationTypeGroup is a MooseGroup containing only FAMIX enities of type FAMIXAnnotationType.,1,FAMIXAnnotationTypeGroup is a MooseGroup containing only FAMIX enities of type FAMIXAnnotationType.,FAMIXAnnotationTypeGroup is a MooseGroup containing only FAMIX enities of type FAMIXAnnotationType.,,,,,,,"MooseGroup
+FAMIXAnnotationType.",,,,,,,,,,,,,
+E2,,E3(disagree),MalRowMatrix,"Copyright (c), 2004-2007 Adrian Kuhn. This class is part of Hapax. Hapax is distributed under BSD License, see package comment.",1,"This class is part of Hapax. Hapax is distributed under BSD License, see package comment.",,"This class is part of Hapax. Hapax is distributed under BSD License, see package comment.",,,,"This class is part of Hapax. Hapax is distributed under BSD License, see package comment.",,,,,,,,,,,,,,"Copyright (c), 2004-2007 Adrian Kuhn. This class is part of Hapax. Hapax is distributed under BSD License, see package comment.",
+E2,,E1 (agree),MooseVisualLocator,The MooseVisualLocator is a simple template that offers a list of classes on the left hand side and some presentation on the right hand side. It is meant to be subclassed.,1,The MooseVisualLocator is a simple template ,that offers a list of classes on the left hand side and some presentation on the right hand side.,,, It is meant to be subclassed.,,,,,,,,,,,,,,,,,
+E2,,E1 (disagree),MalDendrogramNode,"Copyright (c), 2004-2007 Adrian Kuhn. This class is part of Hapax. Hapax is distributed under BSD License, see package comment.",1,"This class is part of Hapax. Hapax is distributed under BSD License, see package comment.",,"This class is part of Hapax. Hapax is distributed under BSD License, see package comment.",,,," Hapax is distributed under BSD License, see package comment.",,,,,,,,,,,,,,"Copyright (c), 2004-2007 Adrian Kuhn. Hapax is distributed under BSD License,",
+E2,,E1 (disagree),ManifestMooseQuery,I store metadata for this package. These meta data are used by other tools such as the SmalllintManifestChecker and the critics Browser,1,,I store metadata for this package. ,These meta data are used by other tools such as the SmalllintManifestChecker and the critics Browser,,,,,, SmalllintManifestChecker,,,,,,,,,,,,,
+E3,E2 (agree),,MalFormalContext,MalFormalContext mammals2 computeConcepts,1,,,,,,,,,,MalFormalContext mammals2 computeConcepts,,,,,,,,,,,,
+E3,E2 (agree),,PackageBlueprintTestResource,I am a test resource building a FamixStModel with the package blueprint test resource entities.,1,I am a test resource building a FamixStModel with the package blueprint test resource entities.,I am a test resource building a FamixStModel with the package blueprint test resource entities.,I am a test resource building a FamixStModel with the package blueprint test resource entities.,,,,,,FamixStModel,,,,,,,,,,,,,
+E3,E2 (agree),,ManifestFamixPharoSmalltalkEntities,I store metadata for this package. These meta data are used by other tools such as the SmalllintManifestChecker and the critics Browser,1,,I store metadata for this package.,These meta data are used by other tools such as the SmalllintManifestChecker and the critics Browser,,,,,,SmalllintManifestChecker,,,,,,,,,,,,,
+E3,,E1 (agree),MalNodeWithPreviousAndNext,"A basic node able to host the model and to represent edges with no additional class.
+Edges are navigable in both way through the nextNodes and prevousNodes instances variables.",2,,A basic node able to host the model and to represent edges with no additional class.,,,,Edges are navigable in both way through the nextNodes and prevousNodes instances variables.,,,,,,,,,,,,,,,,
+E3,,E1 (agree),MooseAbstractImporter,"I'm the root for the new importer.
+This way my subclasses share error logging and importerContext",2,I'm the root for the new importer.,,,,,,,This way my subclasses share error logging and importerContext,,,,,,,,,,,,,,
+E3,,E1 (agree),FamixTPackage,"FAMIXPackage represents a package in the source language, meaning that it provides a means to group entities without any baring on lexical scoping. 
+
+Java extractors map Java packages to FAMIXNamespaces. They can also mirror the same information in terms of FAMIXPackage instances.",3,"FAMIXPackage represents a package in the source language,",meaning that it provides a means to group entities without any baring on lexical scoping.,,,Java extractors map Java packages to FAMIXNamespaces. They can also mirror the same information in terms of FAMIXPackage instances.,,,,"FAMIXNamespaces
+FAMIXPackage",,,,,,,,,,,,,
+E1,E2 (agree),,TOODependencyQueries,"A TOODependencyQueries defines a vocabulary to compute dependencies of object-oriented entities.
+
+For more informations: https://moosequery.ferlicot.fr/",3,,A TOODependencyQueries defines a vocabulary to compute dependencies of object-oriented entities.,,,,,"
+For more informations: https://moosequery.ferlicot.fr/",,,,,,,,"
+https://moosequery.ferlicot.fr/",,,,,,,
+E1,E2 (agree),,MalKruskal,"Kruskal's algorithm is a greedy algorithm in graph theory that finds a minimum spanning tree for a connected weighted graph. This means it finds a subset of the edges that forms a tree that includes every vertex, where the total weight of all the edges in the tree is minimized. If the graph is not connected, then it finds a minimum spanning forest (a minimum spanning tree for each connected component).
+
+See https://en.wikipedia.org/wiki/Kruskal%27s_algorithm",3,,"Kruskal's algorithm is a greedy algorithm in graph theory that finds a minimum spanning tree for a connected weighted graph. This means it finds a subset of the edges that forms a tree that includes every vertex, where the total weight of all the edges in the tree is minimized. If the graph is not connected, then it finds a minimum spanning forest (a minimum spanning tree for each connected component).",,,,,"
+See https://en.wikipedia.org/wiki/Kruskal%27s_algorithm",,,,,,,,"
+See https://en.wikipedia.org/wiki/Kruskal%27s_algorithm",,,,,,,
+E1,E2 (agree),,FamixGenerator,"| g |
+g := FamixGenerator new.
+g generateWithoutCleaning.
+FamixCompatibilityGenerator resetMetamodel. ",4,,,,,,,,,,"| g |
+g := FamixGenerator new.
+g generateWithoutCleaning.
+FamixCompatibilityGenerator resetMetamodel. ",,,,,,,,,,,,
+E1,,E3(agree),FamixTDereferencedInvocation,"Represents an invocation which function is contained in a pointer.
+
+The function itself is typically unknown (referenced by the pointer).
+
+It has a referencer which is the pointer variable",5,Represents an invocation which function is contained in a pointer.,The function itself is typically unknown (referenced by the pointer).It has a referencer which is the pointer variable,,,,,,,,,,,The function itself is typically unknown (referenced by the pointer).,,,,,,,,,
+E1,,E3(agree),MooseCustomTask,"MooseCustomTask is a task perform some computation specified as a block.
+
+The main API is then
+
+        with: aBlock description: aDescription length: aNumber",5,MooseCustomTask is a task perform some computation specified as a block.,,,"The main API is then
+
+        with: aBlock description: aDescription length: aNumber",,,,,,,,,,,,,,,,,,
+E1,,E3(agree),FamixTParameterType,"ParameterType represents the symbolic type used in parameterizable classes. This is a FAMIXType.
+
+Example:
+public class AClass<A,B,C> {
+...
+}
+
+Where AClass is a ParameterizableClass. A, B and C are ParameterType of AClass.",8,ParameterType represents the symbolic type used in parameterizable classes. This is a FAMIXType.,,,,,,,,,"Example:
+public class AClass<A,B,C> {
+...
+}
+
+Where AClass is a ParameterizableClass. A, B and C are ParameterType of AClass.",,,,,,,,,,,,
+E2,,E1 (disagree),FmxMBPrintVisitor,"I'm a visitor for instances of #FamixMetamodelGenerator and subclasses.
+
+I just visit each node in the builder, and print it on the Transcript.
+
+see FmxMBVisitor to see how to use me.
+",6,"""I'm a visitor for instances of #FamixMetamodelGenerator and subclasses.
+","
+I just visit each node in the builder, and print it on the Transcript.
+",,,,,"
+see FmxMBVisitor to see how to use me.
+""",,FmxMBVisitor,,,,,,,,,,,,,
+E2,,E1 (disagree),MalTerms,"Terms subclasses Bag with support for handling stopwords etc.
+
+example: string
+        | terms |
+        terms := Terms new.
+        terms addString: string using: CamelCaseScanner new.
+        terms withCoundDo: [ :term :count |
+                term -> count ].
+
+Copyright (c), 2004-2007 Adrian Kuhn. This class is part of Hapax. Hapax is distributed under BSD License, see package comment.",10,"""Terms subclasses Bag with support for handling stopwords etc.","""Terms subclasses Bag with support for handling stopwords etc.","Copyright (c), 2004-2007 Adrian Kuhn. This class is part of Hapax. Hapax is distributed under BSD License, see package comment.""",,,,"Hapax is distributed under BSD License, see package comment.",,,example: string | terms | terms := Terms new. terms addString: string using: CamelCaseScanner new. terms withCoundDo: [ :term :count | term -> count ]. ,,,,,,,,,,,"Copyright (c), 2004-2007 Adrian Kuhn. This class is part of Hapax. Hapax is distributed under BSD License, see package comment.",
+E2,,E1 (agree),FMOne,"Description
+--------------------
+
+I am a relation slot representing a property containing only one element.
+
+Examples
+--------------------
+
+        Trait named: #FamixTMethod
+                slots: { #parentType => FMOne type: #FamixTWithMethods opposite: #methods }
+                package: 'Famix-Traits-Method'",11,"Description
+--------------------
+
+I am a relation slot representing a property containing only one element.",,,,,,,,,"
+Examples
+--------------------
+
+        Trait named: #FamixTMethod
+                slots: { #parentType => FMOne type: #FamixTWithMethods opposite: #methods }
+                package: 'Famix-Traits-Method'",,,,,,,,,,,,
+E2,,E3(disagree),LANInterface,"LAN Interface comments for testing purposes.
+
+Instance Variables:
+	addressee	<ValueHolder>	description of addressee
+	contents	<ValueHolder>	description of contents
+	deviceNameMenu	<ValueModel>	description of deviceNameMenu
+	nextNode	<ValueHolder>	description of nextNode
+	nodeList	<SelectionInList>	description of nodeList
+	nodeName	<ValueHolder>	description of nodeName
+	originator	<ValueHolder>	description of originator
+",11,"""LAN Interface comments for testing purposes.","""LAN Interface comments for testing purposes.",,,,"
+Instance Variables:
+	addressee	<ValueHolder>	description of addressee
+	contents	<ValueHolder>	description of contents
+	deviceNameMenu	<ValueModel>	description of deviceNameMenu
+	nextNode	<ValueHolder>	description of nextNode
+	nodeList	<SelectionInList>	description of nodeList
+	nodeName	<ValueHolder>	description of nodeName
+	originator	<ValueHolder>	description of originator
+""",,,,,,,,,,,,,,,,
+E2,,E3(agree),FMMSEPrinter,"Description
+--------------------
+
+I am responsible of printing the MSE format markup during a model export.
+
+Examples
+--------------------
+
+        | printer |
+        printer := FMMSEPrinter onString.
+        FMMetaMetaModel default exportWithPrinter: printer.
+        printer stream contents",12,"""Description
+--------------------
+
+I am responsible of printing the MSE format markup during a model export.",,,,,,,,,"
+Examples
+--------------------
+
+	| printer |
+	printer := FMMSEPrinter onString.
+	FMMetaMetaModel default exportWithPrinter: printer.
+	printer stream contents""",,,,,,,,,,,,
+E2,,E3(agree),FMFutureProperty,"Description
+--------------------
+
+I represent a property of the object currently been imported while it is not yet imported.
+
+I will be useful until all my values are resolved. Each time a value is resolved I'll check if I can be resolved. In that case, I'll push my values in real property.
+ 
+Internal Representation and Key Implementation Points.
+--------------------
+
+    Instance Variables
+	parentClass:		<aFMFutureEntity>		The entity owning the property.
+	values:			<aCollection>			The values of the property. Those values can contain dangling references while everything is not imported yet.",13,"""Description
+--------------------
+
+I represent a property of the object currently been imported while it is not yet imported.","
+I represent a property of the object currently been imported while it is not yet imported.
+
+I will be useful until all my values are resolved. Each time a value is resolved I'll check if I can be resolved. In that case, I'll push my values in real property.
+ ",,,,"
+Internal Representation and Key Implementation Points.
+--------------------
+
+    Instance Variables
+	parentClass:		<aFMFutureEntity>		The entity owning the property.
+	values:			<aCollection>			The values of the property. Those values can contain dangling references while everything is not imported yet.""",,,,,,,,,,,,,,,,
+E3,E2 (agree),,FamixJavaEntity,"file :=  'ArgoUML-0.34.mse' asFileReference readStream.
+
+dictionary := Dictionary newFrom: (
+        FamixJavaEntity withAllSubclasses collect: [ :c | 
+                cn := c name withoutPrefix: #FamixJava.
+                ('FAMIX.', cn) -> ('FamixJava-Entities.', cn) ]).
+
+dictionary at: 'FAMIX.JavaSourceLanguage' put: 'FamixJava-Entities.SourceLanguage'.
+
+repo := MooseModel importFrom: file withMetamodel: FamixJavaGenerator metamodel translationDictionary: dictionary.
+
+model := MooseModel new.
+        model silentlyAddAll: repo elements.
+        model entityStorage forRuntime.
+model.",15,,,,,,,,,,"file :=  'ArgoUML-0.34.mse' asFileReference readStream.
+
+dictionary := Dictionary newFrom: (
+        FamixJavaEntity withAllSubclasses collect: [ :c | 
+                cn := c name withoutPrefix: #FamixJava.
+                ('FAMIX.', cn) -> ('FamixJava-Entities.', cn) ]).
+
+dictionary at: 'FAMIX.JavaSourceLanguage' put: 'FamixJava-Entities.SourceLanguage'.
+
+repo := MooseModel importFrom: file withMetamodel: FamixJavaGenerator metamodel translationDictionary: dictionary.
+
+model := MooseModel new.
+        model silentlyAddAll: repo elements.
+        model entityStorage forRuntime.
+model.",,,,,,,,,,,,
+E3,E2 (agree),,FMRelationSlot,"Description
+--------------------
+
+I am an abstract slot used to declare fame properties for a class.
+The declared properties with my subclasses must have an opposite.
+
+A relation slot will have:
+- A name which is the name of the property
+- A type which is the type of the property 
+- An inverse name which is the name of the opposite property.
+
+My sublasses will define everything related to the cardinality of the relation side.
+ 
+Internal Representation and Key Implementation Points.
+--------------------
+
+    Instance Variables
+        inverseName:                <aString>                The name of the opposite slot.
+        inverseSlot:                <aSlot>
+        targetClass:                <aClass>",20,"Description
+--------------------
+
+I am an abstract slot", used to declare fame properties for a class.,,,,"A relation slot will have:
+- A name which is the name of the property
+- A type which is the type of the property 
+- An inverse name which is the name of the opposite property.
+
+
+Internal Representation and Key Implementation Points.
+--------------------
+
+    Instance Variables
+        inverseName:                <aString>                The name of the opposite slot.
+        inverseSlot:                <aSlot>
+        targetClass:                <aClass>",,My sublasses will define everything related to the cardinality of the relation side.,,,,,,,,The declared properties with my subclasses must have an opposite.,,,,,,
+E3,E2 (agree),,MalLatticePatterns,"The class implements the identification of patterns in FCA lattices. We can detect like horizontal decomposition with the algos in the class.
+
+| data fca context lattice |
+        data := #(#(#Cat #(#fourlegs #hair)) #(#Dog #(#smart #fourlegs #hair)) #(#Dolphin #(#smart #marine)) #(#Gibbon #(#hair #smart #thumbed)) #(#Man #(#smart #thumbed)) #(#Whale #(#smart #marine))).
+        fca := MalFormalContext new.
+        context := fca with: data using: #first using: #last.
+        (MalLatticePatterns on: (MalLattice on: context)) reportPatterns
+
+For moose models
+        
+|fca model treillis context|
+model := (MooseModel root allModels) second.
+fca := MalFormalContext new.
+context := fca with: (model allModelClasses) using: #yourself using: [:cl | cl methods collect: [:m | m name]].
+treillis := (MalLattice on: context).
+Transcript clear.
+(MalLatticePatterns on: treillis) reportPatterns.
+(MalLattice new viewLattice: treillis).
+
+
+Smalltalk collection class hierarchy:
+
+|fca model treillis context|
+treillis := (MalLattice on: MalFormalContext classHierarchyCollection).
+(MalLatticePatterns on: treillis) reportModules.",25,,The class implements the identification of patterns in FCA lattices. We can detect like horizontal decomposition with the algos in the class.,,,,,,,,"| data fca context lattice |
+        data := #(#(#Cat #(#fourlegs #hair)) #(#Dog #(#smart #fourlegs #hair)) #(#Dolphin #(#smart #marine)) #(#Gibbon #(#hair #smart #thumbed)) #(#Man #(#smart #thumbed)) #(#Whale #(#smart #marine))).
+        fca := MalFormalContext new.
+        context := fca with: data using: #first using: #last.
+        (MalLatticePatterns on: (MalLattice on: context)) reportPatterns
+
+For moose models
+        
+|fca model treillis context|
+model := (MooseModel root allModels) second.
+fca := MalFormalContext new.
+context := fca with: (model allModelClasses) using: #yourself using: [:cl | cl methods collect: [:m | m name]].
+treillis := (MalLattice on: context).
+Transcript clear.
+(MalLatticePatterns on: treillis) reportPatterns.
+(MalLattice new viewLattice: treillis).
+
+
+Smalltalk collection class hierarchy:
+
+|fca model treillis context|
+treillis := (MalLattice on: MalFormalContext classHierarchyCollection).
+(MalLatticePatterns on: treillis) reportModules.",,,,,,,,,,,,
+E3,,E1 (agree),MalHgNode,"A MalHgNode is a node inside a hierarchical graph. It knows the graph it belongs to, its children and its parent, on which level in the graph it resides and its outgoing ind incoming edges. One can also store arbitrary informaition as attributes to a node.
+
+Instance Variables
+        attributes:                <Dictionary>
+        children:                <OrderedCollection>
+        hiGraph:                <MalHierarchicalGraph>
+        incoming:                <OrderedCollection>
+        level:                      <Number>
+        outgoing:                <OrderedCollection>
+        parent:                      <MalHgNode>
+
+attributes
+        - Dictionary to attach arbitrary information to a node
+
+children
+        - This nodes children. Empty collection if the node is a leaf in the hierarchy.
+
+hiGraph
+        - The MalHierarchicalGraph this node belongs to.
+
+incoming
+        - All incoming edges to this node.
+
+level
+        - The level this node is on in the hierachy where 0 is the top level (root nodes). The larger the number, the deeper down in the hierarchy the node is located.
+
+outgoing
+        - All outgoing edges from this node.
+
+parent
+        - This nodes parent",31,A MalHgNode is a node inside a hierarchical graph.,"It knows the graph it belongs to, its children and its parent, on which level in the graph it resides and its outgoing ind incoming edges. One can also store arbitrary informaition as attributes to a node.",,"
+attributes
+        - Dictionary to attach arbitrary information to a node
+
+children
+        - This nodes children. Empty collection if the node is a leaf in the hierarchy.
+
+hiGraph
+        - The MalHierarchicalGraph this node belongs to.
+
+incoming
+        - All incoming edges to this node.
+
+level
+        - The level this node is on in the hierachy where 0 is the top level (root nodes). The larger the number, the deeper down in the hierarchy the node is located.
+
+outgoing
+        - All outgoing edges from this node.
+
+parent
+        - This nodes parent",,"
+Instance Variables
+        attributes:                <Dictionary>
+        children:                <OrderedCollection>
+        hiGraph:                <MalHierarchicalGraph>
+        incoming:                <OrderedCollection>
+        level:                      <Number>
+        outgoing:                <OrderedCollection>
+        parent:                      <MalHgNode>",,"It knows the graph it belongs to, its children and its parent, on which level in the graph it resides and its outgoing ind incoming edges",,,,,,,,,,,,,,
+E3,,E1 (disagree),MooseEntity,"MooseEntity is an abstract entity. Entities should subclass this class.
+Any moose entity should answer its mooseID, its mooseName and its mooseModel.
+
+!!Extension mechanism
+
+The state instance variable provides a mechanism for extending the state of entities. This is achieved through MooseEntityState. Using this mechanism, a package can extend an entity to add more state. This extension will only be visible when the package is loaded. This is an important mechanism to enable extensibility and modularity. 
+
+For example, if you have YourEntity that subclasses MooseEntity, you can extend it with:
+
+YourEntity>>yourExtendingAttribute
+        ^ self privateState attributeAt: #yourExtendingAttribute
+YourEntity>>yourExtendingAttribute: aValue
+        ^ self privateState attributeAt: #yourExtendingAttribute put: aValue
+
+(see MooseEntityState for more information)
+
+
+!!Meta descriptions
+
+Entities should also be meta-described in terms of Fame. This is achieved by means of pragmas:
+
+- First, on the class side, you should have a method . For example, YourEntity could have
+YourEntity class>>annotation
+        <MSEClass: #YourEntity super: #MooseEntity>
+        <package: 'YourPackage'>
+        <MSEComment: 'The YourEntity Smalltalk class has a correspondent YourEntity meta entity in the Fame world'>
+
+- The pragma <MSEProperty:type:> must be placed in the getter method to denote a Fame property. For example:
+YourEntity>>yourExtendingAttribute
+        <MSEProperty: #yourExtendingAttribute type: #YourType>
+        <MSEComment: 'This is an attribute extended in a different package'>
+        ^ self privateState attributeAt: #yourExtendingAttribute
+        
+        
+!!Important API
+
+- mooseID is an Integer that uniquely identifies this entity within the entire Moose environment. 
+        It should not change nor be nil. It is generated automatically during the creation of the MooseEntity.
+- mooseModel of an entity is must be an instance of MooseModel. It may be nil if the entity is not part of a model.        
+        Each entity belongs to one and only one model, if an entity has not yet been added to a model or if an entity has been removed from a model the mooseModel is undefined, that is it may be nil.
+- mooseDescription - returns the corresponding FM3MetaDescription instance
+- mooseName - returns a symbol that should qualify the current entity. It does not have to be unique",42,MooseEntity is an abstract entity.,,,"Any moose entity should answer its mooseID, its mooseName and its mooseModel.
+
+
+!!Important API
+
+- mooseID is an Integer that uniquely identifies this entity within the entire Moose environment. 
+        It should not change nor be nil. It is generated automatically during the creation of the MooseEntity.
+- mooseModel of an entity is must be an instance of MooseModel. It may be nil if the entity is not part of a model.        
+        Each entity belongs to one and only one model, if an entity has not yet been added to a model or if an entity has been removed from a model the mooseModel is undefined, that is it may be nil.
+- mooseDescription - returns the corresponding FM3MetaDescription instance
+- mooseName - returns a symbol that should qualify the current entity. It does not have to be unique",,,,,,"
+!!Extension mechanism
+
+The state instance variable provides a mechanism for extending the state of entities. This is achieved through MooseEntityState. Using this mechanism, a package can extend an entity to add more state. This extension will only be visible when the package is loaded. This is an important mechanism to enable extensibility and modularity. 
+
+For example, if you have YourEntity that subclasses MooseEntity, you can extend it with:
+
+YourEntity>>yourExtendingAttribute
+        ^ self privateState attributeAt: #yourExtendingAttribute
+YourEntity>>yourExtendingAttribute: aValue
+        ^ self privateState attributeAt: #yourExtendingAttribute put: aValue
+
+(see MooseEntityState for more information)
+
+
+!!Meta descriptions
+
+Entities should also be meta-described in terms of Fame. This is achieved by means of pragmas:
+
+- First, on the class side, you should have a method . For example, YourEntity could have
+YourEntity class>>annotation
+        <MSEClass: #YourEntity super: #MooseEntity>
+        <package: 'YourPackage'>
+        <MSEComment: 'The YourEntity Smalltalk class has a correspondent YourEntity meta entity in the Fame world'>
+
+- The pragma <MSEProperty:type:> must be placed in the getter method to denote a Fame property. For example:
+YourEntity>>yourExtendingAttribute
+        <MSEProperty: #yourExtendingAttribute type: #YourType>
+        <MSEComment: 'This is an attribute extended in a different package'>
+        ^ self privateState attributeAt: #yourExtendingAttribute
+  ",,,,,,"!!Extension mechanism
+
+The state instance variable provides a mechanism for extending the state of entities. This is achieved through MooseEntityState. Using this mechanism, a package can extend an entity to add more state. This extension will only be visible when the package is loaded. This is an important mechanism to enable extensibility and modularity. ",Entities should subclass this class.,,,,,
+E3,,E1 (agree),FMModel,"Description
+--------------------
+
+I am a model used in the scope of Fame.
+
+I contains real instances of a class representing a concept in the current metamodel. This class is described by an entity of my meta-model. 
+
+I have a meta-model containing descriptions of my content. A FMModel has a FMMetaModel as meta-model which has a FMMetaMetaModel has metamodel. 
+
+For example, in the Smalltalk metamodel of Famix, if we want to represent the Point class we will have:
+- A FMModel containing an instance of FamixStClass representing the Point class.
+- A FMMetaModel containing instances of FM3Elements describing FamixStClass.
+- A FMMetaMetaModel containing instances of FM3Element describing FM3 meta model (Package, Class and Property).
+
+I include a system of caches in case my users want to store informations to speed up an application.
+
+I will initialize myself with a new FMMetaModel but this one can be replaced by an existing one.
+
+Public API and Key Messages
+--------------------
+
+- #metaDescriptionOn:                 Allows one to get the meta-description of an element.
+
+Examples
+--------------------
+        
+        | model |
+        model := FMModel new.
+        model metamodel importString: FMHeinekenExample metamodelMSE.
+        model.
+
+
+        model := (FMModel withMetamodel: (FMMetaModel fromString: FMHeinekenExample metamodelMSE)).
+ 
+Internal Representation and Key Implementation Points.
+--------------------
+
+    Instance Variables
+        additionalProperties:                <aDictionary>                A cache used to store some informations about the model.
+        elements:                                                <aCollection>                All the entities of the model.
+        metamodel:                                        <aFMMetaModel>                The meta-model describing my entities.",41,"Description
+--------------------
+
+I am a model used in the scope of Fame.","
+I contains real instances of a class representing a concept in the current metamodel. ","This class is described by an entity of my meta-model. 
+
+I have a meta-model containing descriptions of my content. A FMModel has a FMMetaModel as meta-model which has a FMMetaMetaModel has metamodel. ","Public API and Key Messages
+--------------------
+
+- #metaDescriptionOn:                 Allows one to get the meta-description of an element.","
+I include a system of caches in case my users want to store informations to speed up an application.
+
+I will initialize myself with a new FMMetaModel but this one can be replaced by an existing one.","
+Internal Representation and Key Implementation Points.
+--------------------
+
+    Instance Variables
+        additionalProperties:                <aDictionary>                A cache used to store some informations about the model.
+        elements:                                                <aCollection>                All the entities of the model.
+        metamodel:                                        <aFMMetaModel>                The meta-model describing my entities.",,,FMMetaModel,"
+For example, in the Smalltalk metamodel of Famix, if we want to represent the Point class we will have:
+- A FMModel containing an instance of FamixStClass representing the Point class.
+- A FMMetaModel containing instances of FM3Elements describing FamixStClass.
+- A FMMetaMetaModel containing instances of FM3Element describing FM3 meta model (Package, Class and Property).
+Examples
+--------------------
+        
+        | model |
+        model := FMModel new.
+        model metamodel importString: FMHeinekenExample metamodelMSE.
+        model.
+
+
+        model := (FMModel withMetamodel: (FMMetaModel fromString: FMHeinekenExample metamodelMSE)).",,,,,,,,,,,,
+E1,E2 (agree),,TDependencyQueries,"Description
+--------------------
+
+This trait provides a common, paradigm agnostic vocabulary to query dependencies of software entities.
+
+It includes some generic way to query an entity via its associations. The API offer the possibility to query an entity with three parameters:
+- The direction of the navigation (Incoming/Outgoing -- in/out)
+- The kind of association (FAMIXAcces, FAMIXReference, all...)
+- The scope of the query (The receiver, the receiver and its children)
+
+The actual core of the algorithms are in MooseQueryCalculator class.
+
+Most  of the generic methods takes a symbol to describe the direction. This symbol will be used to find a MooseQueryAbstactDirectionStrategy to configure a MooseQueryCalculator.
+
+For more informations: https://moosequery.ferlicot.fr/
+
+Public API and Key Messages
+--------------------
+
+- #query: aSymbol with: aFAMIXAssociation                                 Looks for the associations of the kind aFAMIXAssociation in the direction described by the symbol in the receiver and its children.
+- #queryLocal: aSymbol with: aFAMIXAssociation                 Looks for the associations of the kind aFAMIXAssociation in the direction described by the symbol in the receiver.
+- #queryAll: aSymbol                                                                         Looks for the associations in the direction described by the symbol in the receiver and its children.
+
+There is a lot of other generic queries. You can find all of them in the ""moose-queries-generic"" protocol.
+
+Examples
+--------------------
+
+        aFAMIXClass query: #in with: FAMIXInheritance.
+                --> Will return a MooseIncomingQueryResult containing the FAMIXInheritance associations having aFAMIXClass or its children as target
+                        
+        aFAMIXMethod query: #out with: FAMIXAccess.
+                --> Will return a MooseOutgoingQueryResult containing the FAMIXAccess associations having aFAMIXMethod or its children as source
+        
+        
+        aFAMIXClass queryLocal: #in with: FAMIXInheritance.
+                --> Will return a MooseIncomingQueryResult containing the FAMIXInheritance associations having aFAMIXClass as target
+        
+        aFAMIXMethod queryLocal: #out with: FAMIXAccess.
+                --> Will return a MooseOutgoingQueryResult containing the FAMIXAccess associations having aFAMIXMethod as source                
+        
+                        
+        aFAMIXClass queryAll: #in.
+                --> Will return a MooseIncomingQueryResult containing the FAMIXAssociation having aFAMIXClass or its children as target
+        
+        aFAMIXMethod queryAll: #out.
+                --> Will return a MooseOutgoingQueryResult containing the FAMIXAssociation having aFAMIXMethod or its children as source
+        
+                
+        aFAMIXClass queryAllLocal: #in.
+                --> Will return a MooseIncomingQueryResult containing the FAMIXAssociation having aFAMIXClass as target
+        
+        aFAMIXMethod queryAllLocal: #out.
+                --> Will return a MooseOutgoingQueryResult containing the FAMIXAssociation having aFAMIXMethod as source
+",55,,"Description
+--------------------
+
+This trait provides a common, paradigm agnostic vocabulary to query dependencies of software entities.","
+The actual core of the algorithms are in MooseQueryCalculator class.","It includes some generic way to query an entity via its associations. The API offer the possibility to query an entity with three parameters:
+- The direction of the navigation (Incoming/Outgoing -- in/out)
+- The kind of association (FAMIXAcces, FAMIXReference, all...)
+- The scope of the query (The receiver, the receiver and its children)
+Public API and Key Messages
+--------------------
+
+- #query: aSymbol with: aFAMIXAssociation                                 Looks for the associations of the kind aFAMIXAssociation in the direction described by the symbol in the receiver and its children.
+- #queryLocal: aSymbol with: aFAMIXAssociation                 Looks for the associations of the kind aFAMIXAssociation in the direction described by the symbol in the receiver.
+- #queryAll: aSymbol                                                                         Looks for the associations in the direction described by the symbol in the receiver and its children.
+","Most  of the generic methods takes a symbol to describe the direction. This symbol will be used to find a MooseQueryAbstactDirectionStrategy to configure a MooseQueryCalculator.
+
+",,"
+The actual core of the algorithms are in MooseQueryCalculator class.
+For more informations: https://moosequery.ferlicot.fr/
+There is a lot of other generic queries. You can find all of them in the ""moose-queries-generic"" protocol.",,"
+MooseQueryCalculator class.","Examples
+--------------------
+
+        aFAMIXClass query: #in with: FAMIXInheritance.
+                --> Will return a MooseIncomingQueryResult containing the FAMIXInheritance associations having aFAMIXClass or its children as target
+                        
+        aFAMIXMethod query: #out with: FAMIXAccess.
+                --> Will return a MooseOutgoingQueryResult containing the FAMIXAccess associations having aFAMIXMethod or its children as source
+        
+        
+        aFAMIXClass queryLocal: #in with: FAMIXInheritance.
+                --> Will return a MooseIncomingQueryResult containing the FAMIXInheritance associations having aFAMIXClass as target
+        
+        aFAMIXMethod queryLocal: #out with: FAMIXAccess.
+                --> Will return a MooseOutgoingQueryResult containing the FAMIXAccess associations having aFAMIXMethod as source                
+        
+                        
+        aFAMIXClass queryAll: #in.
+                --> Will return a MooseIncomingQueryResult containing the FAMIXAssociation having aFAMIXClass or its children as target
+        
+        aFAMIXMethod queryAll: #out.
+                --> Will return a MooseOutgoingQueryResult containing the FAMIXAssociation having aFAMIXMethod or its children as source
+        
+                
+        aFAMIXClass queryAllLocal: #in.
+                --> Will return a MooseIncomingQueryResult containing the FAMIXAssociation having aFAMIXClass as target
+        
+        aFAMIXMethod queryAllLocal: #out.
+                --> Will return a MooseOutgoingQueryResult containing the FAMIXAssociation having aFAMIXMethod as source",,,,,For more informations: https://moosequery.ferlicot.fr/,,,,,,,
