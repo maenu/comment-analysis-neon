@@ -1,0 +1,1892 @@
+@relation 0-0-codingguidlines-heuristic
+
+@attribute 'heuristic-Classreferences-Contains [something].' {0,1}
+@attribute 'heuristic-Classreferences-Creates [something].' {0,1}
+@attribute 'heuristic-Classreferences-I is resource [something] build.' {0,1}
+@attribute 'heuristic-Classreferences-Is used.' {0,1}
+@attribute 'heuristic-Classreferences-That allows user.' {0,1}
+@attribute 'heuristic-Classreferences-To use.' {0,1}
+@attribute 'heuristic-Classreferences-Uses [something].' {0,1}
+@attribute 'heuristic-Classreferences-[auxiliary] use [something].' {0,1}
+@attribute 'heuristic-Classreferences-[something] is.' {0,1}
+@attribute 'heuristic-Classreferences-[something] uses [something].' {0,1}
+@attribute heuristic-Collaborators- {0,1}
+@attribute 'heuristic-Collaborators-Accesses [something].' {0,1}
+@attribute 'heuristic-Collaborators-Builds [something].' {0,1}
+@attribute 'heuristic-Collaborators-Contains [something].' {0,1}
+@attribute 'heuristic-Collaborators-Does [something].' {0,1}
+@attribute 'heuristic-Collaborators-I is resource [something] build.' {0,1}
+@attribute 'heuristic-Collaborators-I is used.' {0,1}
+@attribute 'heuristic-Collaborators-I plays role.' {0,1}
+@attribute 'heuristic-Collaborators-I uses [something].' {0,1}
+@attribute 'heuristic-Collaborators-Includes [something].' {0,1}
+@attribute 'heuristic-Collaborators-Is created.' {0,1}
+@attribute 'heuristic-Collaborators-Is sent.' {0,1}
+@attribute 'heuristic-Collaborators-Is used.' {0,1}
+@attribute 'heuristic-Collaborators-Tests [something].' {0,1}
+@attribute 'heuristic-Collaborators-To create.' {0,1}
+@attribute heuristic-Collaborators-Uses. {0,1}
+@attribute 'heuristic-Collaborators-Will send.' {0,1}
+@attribute 'heuristic-Collaborators-[auxiliary] be used.' {0,1}
+@attribute 'heuristic-Collaborators-[something] allows [something].' {0,1}
+@attribute 'heuristic-Collaborators-[something] catches [something].' {0,1}
+@attribute 'heuristic-Collaborators-[something] is class.' {0,1}
+@attribute 'heuristic-Collaborators-[something] is.' {0,1}
+@attribute 'heuristic-Collaborators-[something] listens.' {0,1}
+@attribute 'heuristic-Collaborators-[something] maintains [something].' {0,1}
+@attribute 'heuristic-Collaborators-[something] provides [something].' {0,1}
+@attribute 'heuristic-Collaborators-[something] subclasses.' {0,1}
+@attribute 'heuristic-Collaborators-[something] uses [something].' {0,1}
+@attribute heuristic-Example- {0,1}
+@attribute heuristic-Example-Addmetrices. {0,1}
+@attribute 'heuristic-Example-Adds [something].' {0,1}
+@attribute 'heuristic-Example-Adds circle.' {0,1}
+@attribute 'heuristic-Example-Anxdfile adocuments.' {0,1}
+@attribute 'heuristic-Example-Applies [something].' {0,1}
+@attribute 'heuristic-Example-Builds [something].' {0,1}
+@attribute 'heuristic-Example-Can do.' {0,1}
+@attribute 'heuristic-Example-Can use.' {0,1}
+@attribute 'heuristic-Example-Computes [something].' {0,1}
+@attribute 'heuristic-Example-Contains instance.' {0,1}
+@attribute 'heuristic-Example-Creates [something].' {0,1}
+@attribute heuristic-Example-Creates. {0,1}
+@attribute 'heuristic-Example-Defines [something].' {0,1}
+@attribute heuristic-Example-Does. {0,1}
+@attribute 'heuristic-Example-Enclosure [auxiliary] be computed.' {0,1}
+@attribute 'heuristic-Example-Enclosure is case.' {0,1}
+@attribute 'heuristic-Example-Extends [something].' {0,1}
+@attribute 'heuristic-Example-Files [something].' {0,1}
+@attribute 'heuristic-Example-Fills path.' {0,1}
+@attribute 'heuristic-Example-Gtgraphtreemaplayoutexample squarifywithsevennodes [something].' {0,1}
+@attribute 'heuristic-Example-I is used.' {0,1}
+@attribute 'heuristic-Example-Iftrues [something].' {0,1}
+@attribute 'heuristic-Example-Informs [something].' {0,1}
+@attribute 'heuristic-Example-Initializes [something].' {0,1}
+@attribute 'heuristic-Example-Injects [something].' {0,1}
+@attribute 'heuristic-Example-Is computed.' {0,1}
+@attribute 'heuristic-Example-Is described.' {0,1}
+@attribute 'heuristic-Example-Is repeated.' {0,1}
+@attribute 'heuristic-Example-Is taken.' {0,1}
+@attribute heuristic-Example-Is. {0,1}
+@attribute heuristic-Example-Lineshapes. {0,1}
+@attribute 'heuristic-Example-Meets [something].' {0,1}
+@attribute 'heuristic-Example-Model treillis.' {0,1}
+@attribute 'heuristic-Example-Moves [something].' {0,1}
+@attribute heuristic-Example-Notes. {0,1}
+@attribute 'heuristic-Example-Paints [something].' {0,1}
+@attribute 'heuristic-Example-Pngs [something].' {0,1}
+@attribute 'heuristic-Example-Rtellipses size.' {0,1}
+@attribute 'heuristic-Example-Runs [something].' {0,1}
+@attribute 'heuristic-Example-Sees [something].' {0,1}
+@attribute 'heuristic-Example-Sends [something].' {0,1}
+@attribute 'heuristic-Example-Sends method.' {0,1}
+@attribute 'heuristic-Example-Shapes [something].' {0,1}
+@attribute 'heuristic-Example-Splits [something].' {0,1}
+@attribute 'heuristic-Example-Starts [something].' {0,1}
+@attribute 'heuristic-Example-Template templates.' {0,1}
+@attribute 'heuristic-Example-This is achieved.' {0,1}
+@attribute 'heuristic-Example-To create [something].' {0,1}
+@attribute 'heuristic-Example-To define [something].' {0,1}
+@attribute 'heuristic-Example-To give [something].' {0,1}
+@attribute 'heuristic-Example-To initialize.' {0,1}
+@attribute 'heuristic-Example-To know [something].' {0,1}
+@attribute 'heuristic-Example-Translates [something].' {0,1}
+@attribute 'heuristic-Example-Uses [something].' {0,1}
+@attribute 'heuristic-Example-V adds to add and e1 [verb]s [something].' {0,1}
+@attribute 'heuristic-Example-Views [something].' {0,1}
+@attribute 'heuristic-Example-Vs element.' {0,1}
+@attribute 'heuristic-Example-We [auxiliary] move.' {0,1}
+@attribute 'heuristic-Example-We add area.' {0,1}
+@attribute 'heuristic-Example-We have [something].' {0,1}
+@attribute 'heuristic-Example-We want.' {0,1}
+@attribute 'heuristic-Example-You have [something].' {0,1}
+@attribute 'heuristic-Example-[auxiliary] add [something].' {0,1}
+@attribute 'heuristic-Example-[auxiliary] have [something].' {0,1}
+@attribute 'heuristic-Example-[auxiliary] place.' {0,1}
+@attribute 'heuristic-Example-[auxiliary] send [something].' {0,1}
+@attribute 'heuristic-Example-[auxiliary] translate.' {0,1}
+@attribute 'heuristic-Example-[auxiliary] use [something].' {0,1}
+@attribute 'heuristic-Example-[something] [auxiliary] appear.' {0,1}
+@attribute 'heuristic-Example-[something] [auxiliary] have [something].' {0,1}
+@attribute 'heuristic-Example-[something] [auxiliary] use [something].' {0,1}
+@attribute 'heuristic-Example-[something] adds [something].' {0,1}
+@attribute 'heuristic-Example-[something] adds edge.' {0,1}
+@attribute 'heuristic-Example-[something] adds.' {0,1}
+@attribute 'heuristic-Example-[something] ars.' {0,1}
+@attribute 'heuristic-Example-[something] asfilereferences.' {0,1}
+@attribute 'heuristic-Example-[something] builds.' {0,1}
+@attribute 'heuristic-Example-[something] can extend [something].' {0,1}
+@attribute 'heuristic-Example-[something] can use.' {0,1}
+@attribute 'heuristic-Example-[something] cls [something].' {0,1}
+@attribute 'heuristic-Example-[something] collects.' {0,1}
+@attribute 'heuristic-Example-[something] does to inform and self [verb]s [something].' {0,1}
+@attribute 'heuristic-Example-[something] does to inform and self.' {0,1}
+@attribute 'heuristic-Example-[something] does.' {0,1}
+@attribute 'heuristic-Example-[something] files.' {0,1}
+@attribute 'heuristic-Example-[something] gs [something].' {0,1}
+@attribute 'heuristic-Example-[something] has.' {0,1}
+@attribute 'heuristic-Example-[something] iftrues [something].' {0,1}
+@attribute 'heuristic-Example-[something] imports.' {0,1}
+@attribute 'heuristic-Example-[something] is case.' {0,1}
+@attribute 'heuristic-Example-[something] is example.' {0,1}
+@attribute 'heuristic-Example-[something] is to implement.' {0,1}
+@attribute 'heuristic-Example-[something] is.' {0,1}
+@attribute 'heuristic-Example-[something] meets [something].' {0,1}
+@attribute 'heuristic-Example-[something] needs.' {0,1}
+@attribute 'heuristic-Example-[something] numberofmethods [something].' {0,1}
+@attribute 'heuristic-Example-[something] oks.' {0,1}
+@attribute 'heuristic-Example-[something] previewexpands previewheight.' {0,1}
+@attribute 'heuristic-Example-[something] ps.' {0,1}
+@attribute 'heuristic-Example-[something] rtellipses.' {0,1}
+@attribute 'heuristic-Example-[something] rtviews.' {0,1}
+@attribute 'heuristic-Example-[something] shapes [something].' {0,1}
+@attribute 'heuristic-Example-[something] should have [something].' {0,1}
+@attribute 'heuristic-Example-[something] shows [something].' {0,1}
+@attribute 'heuristic-Example-[something] smalltalks [something].' {0,1}
+@attribute 'heuristic-Example-[something] spartacanvas.' {0,1}
+@attribute 'heuristic-Example-[something] starts.' {0,1}
+@attribute 'heuristic-Example-[something] types.' {0,1}
+@attribute 'heuristic-Example-[something] uses [something].' {0,1}
+@attribute 'heuristic-Example-[something] vs.' {0,1}
+@attribute 'heuristic-Example-[something] wants.' {0,1}
+@attribute 'heuristic-Example-[something] will return.' {0,1}
+@attribute 'heuristic-Example-[verb]s previewheight previewexpand.' {0,1}
+@attribute 'heuristic-Example-[verb]s worstvalueround.' {0,1}
+@attribute heuristic-Example-[verb]s. {0,1}
+@attribute 'heuristic-Extensions-Extends [something].' {0,1}
+@attribute 'heuristic-Extensions-Paint uses [something].' {0,1}
+@attribute 'heuristic-Extensions-Uses [something].' {0,1}
+@attribute 'heuristic-Extensions-[auxiliary] configure.' {0,1}
+@attribute 'heuristic-Extensions-[something] [auxiliary] have.' {0,1}
+@attribute 'heuristic-Extensions-[something] [auxiliary] use [something].' {0,1}
+@attribute 'heuristic-Extensions-[something] provides [something].' {0,1}
+@attribute heuristic-Instancevariables- {0,1}
+@attribute 'heuristic-Instancevariables-Glyph lies.' {0,1}
+@attribute 'heuristic-Instancevariables-Zooms [something].' {0,1}
+@attribute 'heuristic-Instancevariables-[something] acollections [something].' {0,1}
+@attribute 'heuristic-Instancevariables-[something] blocks.' {0,1}
+@attribute 'heuristic-Instancevariables-[something] objects [something].' {0,1}
+@attribute 'heuristic-Instancevariables-[something] objects object.' {0,1}
+@attribute 'heuristic-Instancevariables-[something] objects to object.' {0,1}
+@attribute 'heuristic-Instancevariables-[something] osmzoomlevels.' {0,1}
+@attribute heuristic-Intent- {0,1}
+@attribute 'heuristic-Intent-Bases [something].' {0,1}
+@attribute 'heuristic-Intent-Builds [something].' {0,1}
+@attribute 'heuristic-Intent-Contains [something].' {0,1}
+@attribute 'heuristic-Intent-Creates [something].' {0,1}
+@attribute 'heuristic-Intent-Defines [something].' {0,1}
+@attribute 'heuristic-Intent-Displays [something].' {0,1}
+@attribute 'heuristic-Intent-Does [something].' {0,1}
+@attribute 'heuristic-Intent-Has [something].' {0,1}
+@attribute 'heuristic-Intent-I defines apus.' {0,1}
+@attribute 'heuristic-Intent-I filters.' {0,1}
+@attribute 'heuristic-Intent-I has [something].' {0,1}
+@attribute 'heuristic-Intent-I implements algorithm.' {0,1}
+@attribute 'heuristic-Intent-I implements.' {0,1}
+@attribute 'heuristic-Intent-I is class.' {0,1}
+@attribute 'heuristic-Intent-I is collection.' {0,1}
+@attribute 'heuristic-Intent-I is element.' {0,1}
+@attribute 'heuristic-Intent-I is example.' {0,1}
+@attribute 'heuristic-Intent-I is group.' {0,1}
+@attribute 'heuristic-Intent-I is list.' {0,1}
+@attribute 'heuristic-Intent-I is resource [something] build.' {0,1}
+@attribute 'heuristic-Intent-I is source.' {0,1}
+@attribute 'heuristic-Intent-I is superclass.' {0,1}
+@attribute 'heuristic-Intent-I is type.' {0,1}
+@attribute 'heuristic-Intent-I ms.' {0,1}
+@attribute 'heuristic-Intent-I represents line.' {0,1}
+@attribute 'heuristic-Intent-I to is class create.' {0,1}
+@attribute 'heuristic-Intent-I visitors.' {0,1}
+@attribute 'heuristic-Intent-Implements [something].' {0,1}
+@attribute 'heuristic-Intent-Performs [something].' {0,1}
+@attribute 'heuristic-Intent-Tests [something].' {0,1}
+@attribute 'heuristic-Intent-That allows user.' {0,1}
+@attribute 'heuristic-Intent-That creates [something].' {0,1}
+@attribute 'heuristic-Intent-That uses [something].' {0,1}
+@attribute 'heuristic-Intent-This is class.' {0,1}
+@attribute 'heuristic-Intent-To get [something].' {0,1}
+@attribute 'heuristic-Intent-To manage [something].' {0,1}
+@attribute heuristic-Intent-Uses. {0,1}
+@attribute 'heuristic-Intent-[auxiliary] create [something].' {0,1}
+@attribute 'heuristic-Intent-[auxiliary] have [something].' {0,1}
+@attribute 'heuristic-Intent-[auxiliary] use.' {0,1}
+@attribute 'heuristic-Intent-[something] adds.' {0,1}
+@attribute 'heuristic-Intent-[something] allows [something].' {0,1}
+@attribute 'heuristic-Intent-[something] attributes.' {0,1}
+@attribute 'heuristic-Intent-[something] can create [something].' {0,1}
+@attribute 'heuristic-Intent-[something] contains [something].' {0,1}
+@attribute 'heuristic-Intent-[something] is box.' {0,1}
+@attribute 'heuristic-Intent-[something] is class.' {0,1}
+@attribute 'heuristic-Intent-[something] is collection.' {0,1}
+@attribute 'heuristic-Intent-[something] is implementation.' {0,1}
+@attribute 'heuristic-Intent-[something] is pair.' {0,1}
+@attribute 'heuristic-Intent-[something] is parser.' {0,1}
+@attribute 'heuristic-Intent-[something] is part.' {0,1}
+@attribute 'heuristic-Intent-[something] is set.' {0,1}
+@attribute 'heuristic-Intent-[something] is xxxxxxxxx.' {0,1}
+@attribute 'heuristic-Intent-[something] refers.' {0,1}
+@attribute 'heuristic-Intent-[something] represents.' {0,1}
+@attribute 'heuristic-Intent-[something] roots.' {0,1}
+@attribute 'heuristic-Intent-[something] sets.' {0,1}
+@attribute 'heuristic-Intent-[something] shapes.' {0,1}
+@attribute 'heuristic-Intent-[something] subclasses.' {0,1}
+@attribute 'heuristic-Intent-[something] uses [something].' {0,1}
+@attribute heuristic-Intent-[verb]s. {0,1}
+@attribute heuristic-Keyimplementationpoints- {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Allows [something].' {0,1}
+@attribute heuristic-Keyimplementationpoints-Allows. {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Applies layout.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Changes [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Changes extent.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Creates [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Defaults [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Displays [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Element has [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Finds [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Follows [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Gets tile.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Has length.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Is [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Is created.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Is defined.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Is done.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Is executed.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Is implemented.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Is measured.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Is named.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Is taken.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Is used.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Layout is performed.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Makes [something].' {0,1}
+@attribute heuristic-Keyimplementationpoints-Means. {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Measures [something].' {0,1}
+@attribute heuristic-Keyimplementationpoints-Needs. {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Overrides method.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Performs [something].' {0,1}
+@attribute heuristic-Keyimplementationpoints-Places. {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Sees [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Sets [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Should use.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Shows [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Space starts process.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Starts [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Stores [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Takes [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-This is done.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Tilfold ses algorithm.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-To apply.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-To care.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-To generate [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-To initialize.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-To make [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-To measure [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-To use [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Uses [something].' {0,1}
+@attribute heuristic-Keyimplementationpoints-Wants. {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Will be used.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-Will call.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[auxiliary] be executed.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[auxiliary] be layouted.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[auxiliary] be used.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[auxiliary] change.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[auxiliary] configure [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[auxiliary] find.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[auxiliary] is object.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[auxiliary] not use [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[auxiliary] perform.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[auxiliary] use.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] [auxiliary] be going.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] [auxiliary] have [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] [auxiliary] use [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] calculates [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] calls [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] changes [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] changes.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] consists.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] defaults [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] defaults.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] defines [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] dons.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] exists.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] goes.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] has [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] is.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] means.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] measures [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] needs.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] stores.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] takes.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] wants.' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[something] zooms [something].' {0,1}
+@attribute 'heuristic-Keyimplementationpoints-[verb]s contain.' {0,1}
+@attribute heuristic-Keyimplementationpoints-[verb]s. {0,1}
+@attribute heuristic-Keymessages- {0,1}
+@attribute 'heuristic-Keymessages-Accesses [something].' {0,1}
+@attribute 'heuristic-Keymessages-Creates [something].' {0,1}
+@attribute 'heuristic-Keymessages-Files [something].' {0,1}
+@attribute heuristic-Keymessages-Has. {0,1}
+@attribute 'heuristic-Keymessages-Is set.' {0,1}
+@attribute 'heuristic-Keymessages-It is niled.' {0,1}
+@attribute 'heuristic-Keymessages-Name has.' {0,1}
+@attribute 'heuristic-Keymessages-Returns [something].' {0,1}
+@attribute 'heuristic-Keymessages-Scales [something].' {0,1}
+@attribute 'heuristic-Keymessages-Sets [something].' {0,1}
+@attribute 'heuristic-Keymessages-To create [something].' {0,1}
+@attribute 'heuristic-Keymessages-To get [something].' {0,1}
+@attribute 'heuristic-Keymessages-To query entity.' {0,1}
+@attribute 'heuristic-Keymessages-Would be used.' {0,1}
+@attribute 'heuristic-Keymessages-[auxiliary] define.' {0,1}
+@attribute 'heuristic-Keymessages-[something] [auxiliary] not [verb].' {0,1}
+@attribute 'heuristic-Keymessages-[something] [auxiliary] not change.' {0,1}
+@attribute 'heuristic-Keymessages-[something] belongs.' {0,1}
+@attribute 'heuristic-Keymessages-[something] creates [something].' {0,1}
+@attribute 'heuristic-Keymessages-[something] do not have.' {0,1}
+@attribute 'heuristic-Keymessages-[something] does.' {0,1}
+@attribute 'heuristic-Keymessages-[something] executes.' {0,1}
+@attribute 'heuristic-Keymessages-[something] expires.' {0,1}
+@attribute 'heuristic-Keymessages-[something] has [something].' {0,1}
+@attribute 'heuristic-Keymessages-[something] is.' {0,1}
+@attribute 'heuristic-Keymessages-[something] transforms.' {0,1}
+@attribute 'heuristic-Keymessages-[something] uses.' {0,1}
+@attribute 'heuristic-Links-Http wwws.' {0,1}
+@attribute 'heuristic-Links-Orgs [something].' {0,1}
+@attribute 'heuristic-Links-Pngs [something].' {0,1}
+@attribute 'heuristic-Links-[something] https.' {0,1}
+@attribute heuristic-Preconditions-Has. {0,1}
+@attribute 'heuristic-Preconditions-Is selected.' {0,1}
+@attribute 'heuristic-Preconditions-Is sent.' {0,1}
+@attribute 'heuristic-Preconditions-[auxiliary] be executed.' {0,1}
+@attribute 'heuristic-Preconditions-[auxiliary] set.' {0,1}
+@attribute 'heuristic-Preconditions-[something] has.' {0,1}
+@attribute 'heuristic-Recommendations-Uses [something].' {0,1}
+@attribute 'heuristic-Recommendations-[auxiliary] add [something].' {0,1}
+@attribute 'heuristic-Recommendations-[auxiliary] use me.' {0,1}
+@attribute 'heuristic-Recommendations-[something] needs.' {0,1}
+@attribute 'heuristic-Recommendations-[something] should use me.' {0,1}
+@attribute 'heuristic-ReferenceToOtherResources-Http wwws.' {0,1}
+@attribute 'heuristic-ReferenceToOtherResources-Sees [something].' {0,1}
+@attribute 'heuristic-ReferenceToOtherResources-[auxiliary] be found.' {0,1}
+@attribute 'heuristic-ReferenceToOtherResources-[something] https.' {0,1}
+@attribute 'heuristic-ReferenceToOtherResources-[something] sees [something].' {0,1}
+@attribute heuristic-Responsibilities- {0,1}
+@attribute 'heuristic-Responsibilities-Accesses [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Adds [something].' {0,1}
+@attribute heuristic-Responsibilities-Adds. {0,1}
+@attribute 'heuristic-Responsibilities-Attaches [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Blocks [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Calls [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Can be found.' {0,1}
+@attribute 'heuristic-Responsibilities-Can be specified.' {0,1}
+@attribute 'heuristic-Responsibilities-Can be used.' {0,1}
+@attribute 'heuristic-Responsibilities-Can not specify.' {0,1}
+@attribute 'heuristic-Responsibilities-Captures [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Changes [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Constructs [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Contains [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Creates [something].' {0,1}
+@attribute heuristic-Responsibilities-Creates. {0,1}
+@attribute 'heuristic-Responsibilities-Displays [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Element allows [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Event is fired.' {0,1}
+@attribute 'heuristic-Responsibilities-Filters [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Finds [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Forms [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Gives [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Handles [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Holds [something].' {0,1}
+@attribute 'heuristic-Responsibilities-I allows [something].' {0,1}
+@attribute 'heuristic-Responsibilities-I builds [something].' {0,1}
+@attribute 'heuristic-Responsibilities-I contains example.' {0,1}
+@attribute 'heuristic-Responsibilities-I creates [something].' {0,1}
+@attribute 'heuristic-Responsibilities-I defines apus.' {0,1}
+@attribute 'heuristic-Responsibilities-I does.' {0,1}
+@attribute 'heuristic-Responsibilities-I exists.' {0,1}
+@attribute 'heuristic-Responsibilities-I holds [something].' {0,1}
+@attribute 'heuristic-Responsibilities-I implements [something].' {0,1}
+@attribute 'heuristic-Responsibilities-I implements.' {0,1}
+@attribute 'heuristic-Responsibilities-I indicates.' {0,1}
+@attribute 'heuristic-Responsibilities-I is example.' {0,1}
+@attribute 'heuristic-Responsibilities-I is resource [something] build.' {0,1}
+@attribute 'heuristic-Responsibilities-I is sent.' {0,1}
+@attribute 'heuristic-Responsibilities-I is used.' {0,1}
+@attribute 'heuristic-Responsibilities-I knows.' {0,1}
+@attribute 'heuristic-Responsibilities-I models.' {0,1}
+@attribute 'heuristic-Responsibilities-I plays role.' {0,1}
+@attribute 'heuristic-Responsibilities-I provides [something].' {0,1}
+@attribute 'heuristic-Responsibilities-I represents [something].' {0,1}
+@attribute 'heuristic-Responsibilities-I splits [something].' {0,1}
+@attribute 'heuristic-Responsibilities-I stores.' {0,1}
+@attribute 'heuristic-Responsibilities-I supports paint.' {0,1}
+@attribute 'heuristic-Responsibilities-I to is class create.' {0,1}
+@attribute 'heuristic-Responsibilities-I types.' {0,1}
+@attribute 'heuristic-Responsibilities-I uses.' {0,1}
+@attribute 'heuristic-Responsibilities-Image boots.' {0,1}
+@attribute 'heuristic-Responsibilities-Implements [something].' {0,1}
+@attribute heuristic-Responsibilities-Implements. {0,1}
+@attribute 'heuristic-Responsibilities-Includes [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Inserts [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Is created.' {0,1}
+@attribute 'heuristic-Responsibilities-Is finished.' {0,1}
+@attribute 'heuristic-Responsibilities-Is imported.' {0,1}
+@attribute 'heuristic-Responsibilities-Is placed.' {0,1}
+@attribute 'heuristic-Responsibilities-Is sent.' {0,1}
+@attribute 'heuristic-Responsibilities-Is set.' {0,1}
+@attribute 'heuristic-Responsibilities-Is traversed.' {0,1}
+@attribute 'heuristic-Responsibilities-Is used.' {0,1}
+@attribute 'heuristic-Responsibilities-It finds [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Loads [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Makes [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Matches [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Records [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Represents [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Requests [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Sends [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Specifies [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Splits area.' {0,1}
+@attribute 'heuristic-Responsibilities-Starts [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Stores [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Supports [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Takes [something].' {0,1}
+@attribute heuristic-Responsibilities-Tests. {0,1}
+@attribute 'heuristic-Responsibilities-That allows [something].' {0,1}
+@attribute 'heuristic-Responsibilities-That allows user.' {0,1}
+@attribute 'heuristic-Responsibilities-That is used.' {0,1}
+@attribute 'heuristic-Responsibilities-That uses [something].' {0,1}
+@attribute 'heuristic-Responsibilities-To add [something].' {0,1}
+@attribute 'heuristic-Responsibilities-To build [something].' {0,1}
+@attribute 'heuristic-Responsibilities-To create [something].' {0,1}
+@attribute 'heuristic-Responsibilities-To embed [something].' {0,1}
+@attribute 'heuristic-Responsibilities-To find.' {0,1}
+@attribute 'heuristic-Responsibilities-To get position.' {0,1}
+@attribute 'heuristic-Responsibilities-To log [something].' {0,1}
+@attribute 'heuristic-Responsibilities-To make [something].' {0,1}
+@attribute 'heuristic-Responsibilities-To manage [something].' {0,1}
+@attribute 'heuristic-Responsibilities-To specify [something].' {0,1}
+@attribute 'heuristic-Responsibilities-To support.' {0,1}
+@attribute 'heuristic-Responsibilities-Transforms it.' {0,1}
+@attribute 'heuristic-Responsibilities-Traverses [something].' {0,1}
+@attribute 'heuristic-Responsibilities-Updates [something].' {0,1}
+@attribute heuristic-Responsibilities-Uses. {0,1}
+@attribute 'heuristic-Responsibilities-Value is resolved.' {0,1}
+@attribute 'heuristic-Responsibilities-You specify directory.' {0,1}
+@attribute 'heuristic-Responsibilities-[auxiliary] access.' {0,1}
+@attribute 'heuristic-Responsibilities-[auxiliary] add [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[auxiliary] represent.' {0,1}
+@attribute 'heuristic-Responsibilities-[auxiliary] specify [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[auxiliary] support [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[auxiliary] support.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] [auxiliary] construct [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] abstractions.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] adds [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] allows [something] to specify.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] allows user.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] allows.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] builds [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] buttons.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] can choose [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] can detect.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] catches [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] changes.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] constructs [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] creates [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] creates element.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] defines property.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] describes.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] displays information.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] executes.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] files.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] gives [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] has [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] has.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] includes [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] is class.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] is.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] knows [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] learns.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] listens.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] maintains [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] makes [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] makes.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] places.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] presumes.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] provides [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] refers.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] requests.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] returns [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] roots.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] sends.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] starts.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] stores [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] subclasses.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] supplies.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] supports [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] traits.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] transforms [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] uses [something].' {0,1}
+@attribute 'heuristic-Responsibilities-[something] uses.' {0,1}
+@attribute 'heuristic-Responsibilities-[something] works.' {0,1}
+@attribute heuristic-Responsibilities-[verb]s. {0,1}
+@attribute heuristic-SubclassesExplanation- {0,1}
+@attribute 'heuristic-SubclassesExplanation-Adds [something].' {0,1}
+@attribute 'heuristic-SubclassesExplanation-Can be used.' {0,1}
+@attribute 'heuristic-SubclassesExplanation-Implements [something].' {0,1}
+@attribute 'heuristic-SubclassesExplanation-Is executed.' {0,1}
+@attribute 'heuristic-SubclassesExplanation-Provides child.' {0,1}
+@attribute 'heuristic-SubclassesExplanation-Should use.' {0,1}
+@attribute 'heuristic-SubclassesExplanation-Subclass needs.' {0,1}
+@attribute 'heuristic-SubclassesExplanation-To provide [something].' {0,1}
+@attribute 'heuristic-SubclassesExplanation-To use.' {0,1}
+@attribute 'heuristic-SubclassesExplanation-[auxiliary] be used.' {0,1}
+@attribute 'heuristic-SubclassesExplanation-[auxiliary] not use.' {0,1}
+@attribute 'heuristic-SubclassesExplanation-[auxiliary] use.' {0,1}
+@attribute 'heuristic-SubclassesExplanation-[something] [auxiliary] use [something].' {0,1}
+@attribute 'heuristic-SubclassesExplanation-[something] adds [something].' {0,1}
+@attribute 'heuristic-SubclassesExplanation-[something] defines [something].' {0,1}
+@attribute 'heuristic-SubclassesExplanation-[something] provides [something].' {0,1}
+@attribute 'heuristic-SubclassesExplanation-[something] returns [something].' {0,1}
+@attribute 'heuristic-SubclassesExplanation-[something] subclasses.' {0,1}
+@attribute 'heuristic-SubclassesExplanation-[something] wants.' {0,1}
+@attribute 'heuristic-Todocomments-Space starts [something].' {0,1}
+@attribute 'heuristic-Todocomments-[something] [auxiliary] be going.' {0,1}
+@attribute 'heuristic-Todocomments-[something] changes.' {0,1}
+@attribute 'heuristic-Todocomments-[something] knows.' {0,1}
+@attribute 'heuristic-Todocomments-[something] states [something].' {0,1}
+@attribute 'heuristic-Todocomments-[something] supports.' {0,1}
+@attribute 'heuristic-Warnings-Can be used.' {0,1}
+@attribute 'heuristic-Warnings-Does [something].' {0,1}
+@attribute 'heuristic-Warnings-I is class.' {0,1}
+@attribute 'heuristic-Warnings-Is implemented.' {0,1}
+@attribute heuristic-Warnings-Needs. {0,1}
+@attribute 'heuristic-Warnings-Should not be used.' {0,1}
+@attribute 'heuristic-Warnings-Should not instantiate.' {0,1}
+@attribute 'heuristic-Warnings-You have.' {0,1}
+@attribute 'heuristic-Warnings-[auxiliary] be used.' {0,1}
+@attribute 'heuristic-Warnings-[auxiliary] do.' {0,1}
+@attribute 'heuristic-Warnings-[auxiliary] not [verb].' {0,1}
+@attribute 'heuristic-Warnings-[auxiliary] not be used.' {0,1}
+@attribute 'heuristic-Warnings-[auxiliary] not rely.' {0,1}
+@attribute 'heuristic-Warnings-[auxiliary] specify [something].' {0,1}
+@attribute 'heuristic-Warnings-[auxiliary] use [something].' {0,1}
+@attribute 'heuristic-Warnings-[something] [auxiliary] change.' {0,1}
+@attribute 'heuristic-Warnings-[something] [auxiliary] not trust.' {0,1}
+@attribute 'heuristic-Warnings-[something] has [something].' {0,1}
+@attribute 'heuristic-Warnings-[something] is class.' {0,1}
+@attribute 'heuristic-Warnings-[something] is.' {0,1}
+@attribute 'heuristic-Warnings-[something] needs.' {0,1}
+@attribute 'heuristic-Warnings-[something] shapes.' {0,1}
+@attribute category-Codingguidlines {0,1}
+
+@data
+{270 1,314 1,415 1,444 1,516 1}
+{3 1,255 1}
+{}
+{270 1,314 1,415 1,444 1,516 1}
+{497 1,525 1}
+{3 1,255 1}
+{37 1,232 1,320 1}
+{}
+{}
+{37 1,232 1,236 1,376 1,380 1}
+{}
+{101 1,107 1,124 1,157 1,177 1,180 1,208 1,296 1,303 1,304 1,309 1,327 1,344 1,416 1,445 1,496 1,497 1,519 1,524 1,551 1,569 1}
+{226 1,513 1}
+{348 1,363 1}
+{}
+{198 1,262 1}
+{}
+{8 1,31 1,130 1,310 1,345 1,500 1,571 1}
+{}
+{}
+{37 1,232 1,376 1,378 1}
+{}
+{303 1,304 1,416 1,445 1,519 1,524 1,551 1}
+{}
+{35 1,229 1,517 1,544 1}
+{14 1,257 1,422 1,435 1,505 1,506 1,553 1}
+{}
+{368 1,441 1,461 1,472 1,565 1}
+{34 1,54 1,153 1,159 1,509 1,518 1,542 1}
+{84 1}
+{6 1,42 1,54 1,100 1,115 1,153 1,155 1,239 1,281 1,358 1,370 1,445 1,452 1,527 1}
+{}
+{35 1,54 1,99 1,115 1,124 1,153 1,177 1,229 1,309 1,344 1,496 1,497 1,517 1,544 1,569 1}
+{}
+{77 1,264 1}
+{}
+{}
+{64 1}
+{84 1}
+{}
+{99 1,101 1,107 1,124 1,140 1,157 1,177 1,208 1,296 1,309 1,344 1,496 1,497 1,569 1}
+{37 1,124 1,157 1,177 1,309 1,344 1,496 1,497 1,569 1}
+{169 1,184 1,217 1,222 1,368 1,499 1,526 1,570 1}
+{102 1,263 1,428 1,430 1}
+{3 1,16 1,25 1,58 1,169 1,206 1,255 1,270 1,314 1,408 1,415 1,432 1,444 1,466 1,516 1}
+{212 1,476 1}
+{34 1,159 1,370 1,412 1,509 1,518 1,527 1,542 1}
+{10 1,368 1,508 1}
+{270 1,444 1}
+{288 1,301 1,326 1,336 1,337 1,486 1,548 1,567 1}
+{}
+{37 1,127 1,232 1,368 1}
+{10 1,28 1,211 1,233 1,234 1,368 1,394 1,480 1}
+{11 1,270 1,321 1,369 1,444 1}
+{8 1,31 1,130 1,310 1,320 1,326 1,338 1,345 1,500 1,571 1}
+{}
+{328 1,424 1,512 1,543 1}
+{6 1,9 1,36 1,42 1,146 1,152 1,155 1,230 1,239 1,271 1,281 1,303 1,304 1,347 1,358 1,445 1,446 1,462 1,474 1,519 1,522 1,524 1}
+{124 1,157 1,324 1,340 1,352 1,357 1,497 1}
+{3 1,6 1,9 1,25 1,27 1,36 1,42 1,45 1,146 1,152 1,155 1,206 1,209 1,230 1,239 1,255 1,281 1,287 1,294 1,303 1,304 1,314 1,347 1,358 1,377 1,432 1,445 1,466 1,474 1,519 1,522 1,523 1,524 1,528 1,536 1,538 1,552 1,560 1}
+{34 1,109 1,159 1,210 1,260 1,313 1,361 1,370 1,477 1,482 1,509 1,518 1,527 1,533 1,534 1,540 1,542 1,556 1,572 1}
+{}
+{}
+{}
+{368 1,379 1}
+{30 1,499 1,554 1,570 1}
+{50 1,169 1,174 1,305 1,368 1,388 1,526 1,541 1}
+{307 1,379 1,400 1}
+{90 1,104 1,141 1,267 1}
+{177 1}
+{}
+{}
+{33 1,393 1,401 1,504 1}
+{2 1,12 1,15 1,43 1,171 1,189 1,381 1,406 1}
+{}
+{3 1,255 1}
+{20 1,28 1,198 1,211 1,233 1,234 1,247 1,254 1,262 1,293 1,425 1,480 1}
+{}
+{34 1,159 1,518 1,542 1}
+{19 1,333 1,423 1,498 1}
+{10 1,169 1,333 1}
+{8 1,31 1,130 1,310 1,345 1,500 1,571 1}
+{271 1,315 1,446 1}
+{3 1,25 1,27 1,156 1,206 1,209 1,242 1,255 1,283 1,287 1,289 1,290 1,294 1,389 1,432 1,456 1,466 1,474 1,536 1,538 1,560 1}
+{351 1,366 1}
+{}
+{}
+{}
+{}
+{}
+{}
+{0 1,13 1,149 1,172 1,177 1,328 1,382 1,424 1,512 1,543 1}
+{}
+{210 1,387 1,431 1,482 1}
+{0 1,13 1,149 1,172 1,382 1}
+{}
+{}
+{0 1,13 1,149 1,172 1,177 1,328 1,382 1,424 1,512 1,543 1}
+{0 1,13 1,149 1,172 1,382 1}
+{}
+{0 1,13 1,172 1,214 1,382 1}
+{0 1,13 1,149 1,172 1,177 1,382 1}
+{}
+{144 1,515 1}
+{0 1,13 1,149 1,172 1,382 1}
+{6 1,7 1,9 1,36 1,42 1,105 1,108 1,146 1,154 1,155 1,158 1,209 1,230 1,239 1,281 1,297 1,303 1,304 1,347 1,358 1,419 1,445 1,474 1,519 1,522 1,524 1,539 1}
+{144 1,515 1}
+{246 1}
+{6 1,42 1,155 1,239 1,258 1,263 1,281 1,325 1,356 1,358 1,428 1,430 1,445 1}
+{387 1}
+{}
+{236 1}
+{}
+{34 1,159 1,518 1,542 1}
+{8 1,31 1,130 1,310 1,345 1,500 1,571 1}
+{169 1,368 1}
+{271 1,311 1,446 1}
+{311 1}
+{351 1,366 1}
+{}
+{30 1,183 1,499 1,554 1,570 1}
+{}
+{25 1,206 1,320 1,464 1,466 1}
+{220 1,328 1,424 1,512 1,543 1}
+{354 1}
+{124 1,177 1,241 1,288 1,301 1,309 1,344 1,486 1,496 1,497 1,548 1,567 1,569 1}
+{}
+{0 1,13 1,169 1,172 1,214 1,368 1,382 1,396 1}
+{21 1,354 1,429 1}
+{354 1,429 1}
+{0 1,13 1,172 1,214 1,382 1,438 1}
+{}
+{204 1,332 1,457 1}
+{}
+{}
+{}
+{}
+{51 1,120 1,121 1,341 1}
+{82 1,269 1,443 1}
+{}
+{}
+{}
+{3 1,25 1,206 1,255 1,320 1,368 1,432 1,436 1,466 1}
+{3 1,27 1,45 1,209 1,255 1,287 1,474 1,528 1,537 1,552 1,560 1,562 1,563 1}
+{10 1,35 1,169 1,229 1,517 1,544 1}
+{165 1,166 1,525 1}
+{}
+{128 1,169 1,186 1,368 1,405 1}
+{169 1,185 1,368 1}
+{}
+{0 1,13 1,172 1,214 1,304 1,382 1,524 1}
+{1 1,48 1,173 1,238 1,322 1,339 1,383 1}
+{271 1,446 1}
+{}
+{198 1,262 1,293 1,455 1}
+{}
+{204 1,332 1,457 1}
+{76 1,87 1,391 1}
+{}
+{348 1,363 1}
+{}
+{32 1,503 1,514 1}
+{}
+{}
+{354 1,429 1}
+{6 1,7 1,9 1,28 1,36 1,42 1,105 1,108 1,146 1,155 1,156 1,158 1,169 1,209 1,211 1,230 1,232 1,233 1,234 1,239 1,281 1,297 1,303 1,304 1,347 1,358 1,368 1,445 1,474 1,479 1,480 1,519 1,522 1,524 1,539 1}
+{302 1}
+{101 1,107 1,124 1,157 1,177 1,208 1,258 1,296 1,309 1,344 1,496 1,497 1,569 1}
+{}
+{232 1,303 1,304 1,445 1,519 1,524 1,551 1}
+{101 1,107 1,124 1,157 1,177 1,208 1,234 1,245 1,296 1,309 1,344 1,496 1,497 1,569 1}
+{}
+{14 1,25 1,206 1,209 1,257 1,294 1,315 1,435 1,466 1,474 1,532 1,538 1,553 1}
+{1 1,48 1,173 1,207 1,213 1,238 1,322 1,339 1,374 1,383 1,488 1}
+{}
+{37 1,78 1,169 1,232 1,320 1,368 1,440 1,441 1,565 1}
+{37 1,253 1}
+{}
+{6 1,42 1,50 1,86 1,148 1,155 1,174 1,239 1,281 1,282 1,316 1,335 1,358 1,445 1,545 1}
+{169 1,320 1,441 1,461 1,565 1}
+{249 1,320 1}
+{}
+{}
+{167 1}
+{}
+{}
+{}
+{}
+{}
+{}
+{413 1,438 1}
+{}
+{0 1,13 1,169 1,172 1,214 1,368 1,382 1,396 1}
+{12 1,43 1,114 1,171 1,304 1,368 1,381 1,453 1,475 1,481 1,487 1,524 1}
+{179 1}
+{25 1,169 1,205 1,206 1,460 1,466 1}
+{6 1,7 1,9 1,36 1,42 1,45 1,105 1,108 1,116 1,146 1,155 1,158 1,209 1,230 1,239 1,281 1,297 1,303 1,304 1,347 1,358 1,445 1,474 1,519 1,522 1,524 1,539 1}
+{}
+{193 1,205 1,460 1}
+{51 1,60 1,111 1,119 1,120 1,121 1,210 1,341 1,371 1,482 1}
+{6 1,7 1,9 1,36 1,42 1,91 1,105 1,108 1,146 1,155 1,158 1,209 1,230 1,239 1,281 1,292 1,297 1,303 1,304 1,347 1,358 1,360 1,362 1,445 1,474 1,519 1,522 1,524 1,532 1,537 1,539 1}
+{51 1,60 1,111 1,119 1,120 1,121 1,210 1,341 1,371 1,482 1}
+{51 1,60 1,111 1,119 1,120 1,121 1,210 1,341 1,371 1,482 1}
+{}
+{}
+{}
+{}
+{8 1,31 1,130 1,310 1,345 1,500 1,571 1}
+{}
+{145 1,506 1}
+{126 1}
+{}
+{}
+{303 1,304 1,353 1,445 1,519 1,524 1,551 1}
+{}
+{404 1}
+{236 1}
+{8 1,31 1,130 1,282 1,310 1,345 1,368 1,500 1,571 1}
+{32 1,465 1,503 1}
+{}
+{10 1,145 1,169 1,192 1,368 1,418 1,506 1}
+{23 1,196 1,199 1}
+{}
+{34 1,37 1,159 1,232 1,368 1,412 1,518 1,542 1}
+{}
+{1 1,48 1,173 1,238 1,322 1,383 1}
+{82 1,144 1,269 1,443 1,515 1}
+{}
+{}
+{}
+{}
+{51 1,120 1}
+{169 1,190 1,368 1,526 1}
+{11 1,28 1,204 1,211 1,233 1,234 1,321 1,332 1,368 1,369 1,394 1,441 1,469 1,478 1,479 1,480 1,525 1}
+{320 1,368 1,435 1,459 1,483 1,525 1}
+{3 1,10 1,16 1,25 1,27 1,45 1,58 1,206 1,209 1,255 1,287 1,294 1,368 1,377 1,408 1,432 1,466 1,474 1,528 1,536 1,538 1,552 1,560 1}
+{37 1,441 1,471 1,483 1}
+{391 1}
+{236 1,288 1,300 1,301 1,380 1,441 1,468 1,486 1,548 1,567 1}
+{33 1,368 1,393 1,401 1,504 1}
+{}
+{368 1,378 1,441 1,468 1,472 1,565 1}
+{122 1,494 1}
+{10 1,221 1,320 1,368 1,413 1,438 1}
+{124 1,324 1,352 1,357 1,441 1,461 1,497 1,559 1,565 1}
+{28 1,50 1,174 1,178 1,211 1,233 1,234 1,242 1,290 1,305 1,389 1,456 1,480 1,541 1}
+{}
+{83 1}
+{77 1,264 1}
+{83 1}
+{77 1,264 1}
+{}
+{83 1}
+{83 1}
+{346 1,521 1}
+{}
+{50 1,169 1,174 1,178 1,260 1,305 1,313 1,361 1,541 1,556 1,572 1}
+{10 1,50 1,174 1,305 1,368 1,541 1}
+{19 1,232 1,368 1,423 1,498 1}
+{50 1,169 1,174 1,232 1,303 1,304 1,305 1,368 1,445 1,473 1,474 1,490 1,519 1,524 1,526 1,541 1,551 1}
+{1 1,48 1,173 1,207 1,213 1,238 1,322 1,339 1,383 1,390 1}
+{}
+{1 1,10 1,37 1,48 1,50 1,169 1,173 1,174 1,232 1,238 1,305 1,322 1,335 1,368 1,383 1,541 1}
+{232 1}
+{308 1}
+{}
+{37 1,232 1,250 1}
+{497 1}
+{302 1,318 1,525 1}
+{249 1,250 1,272 1,285 1,355 1}
+{145 1,232 1,250 1,257 1,285 1,318 1,355 1,525 1}
+{8 1,31 1,130 1,256 1,301 1,310 1,345 1,486 1,500 1,548 1,571 1}
+{6 1,42 1,155 1,239 1,281 1,301 1,358 1,445 1,486 1,548 1}
+{}
+{124 1,177 1,309 1,344 1,439 1,496 1,497 1,511 1,569 1}
+{}
+{37 1,232 1,250 1}
+{}
+{23 1,42 1,199 1,235 1,260 1,280 1,281 1,556 1}
+{3 1,6 1,27 1,42 1,44 1,155 1,209 1,239 1,249 1,255 1,281 1,287 1,358 1,445 1,474 1,532 1,537 1,557 1,560 1,561 1,563 1}
+{}
+{124 1,177 1,241 1,286 1,295 1,308 1,309 1,344 1,496 1,497 1,547 1,569 1}
+{260 1,301 1,313 1,361 1,486 1,548 1,556 1,572 1}
+{19 1,423 1,498 1}
+{286 1,368 1}
+{124 1,157 1,327 1,497 1}
+{255 1,260 1,274 1,287 1,313 1,361 1,556 1,572 1}
+{232 1,290 1,365 1,375 1}
+{}
+{82 1,144 1,198 1,262 1,268 1,269 1,368 1,443 1,515 1,546 1}
+{}
+{}
+{}
+{148 1,252 1,259 1,279 1,282 1,316 1,545 1}
+{}
+{73 1,197 1,421 1,529 1}
+{14 1,176 1,243 1,259 1,278 1,312 1,435 1,459 1,553 1,561 1}
+{124 1,177 1,241 1,259 1,309 1,312 1,344 1,496 1,497 1,569 1}
+{3 1,232 1,255 1,393 1}
+{236 1,237 1,300 1,301 1,380 1,486 1,548 1}
+{}
+{}
+{320 1}
+{232 1,236 1,237 1,256 1,293 1,380 1}
+{232 1}
+{42 1,235 1,281 1}
+{188 1}
+{}
+{82 1,144 1,259 1,268 1,269 1,279 1,312 1,443 1,515 1,546 1,550 1}
+{37 1,127 1,232 1,368 1}
+{46 1,82 1,144 1,227 1,232 1,242 1,265 1,269 1,298 1,301 1,330 1,368 1,389 1,443 1,486 1,501 1,515 1,546 1,548 1,549 1}
+{295 1,308 1,547 1}
+{236 1,300 1,301 1,380 1,486 1,548 1}
+{}
+{}
+{}
+{}
+{}
+{191 1}
+{33 1,393 1,401 1,504 1}
+{}
+{0 1,13 1,172 1,193 1,214 1,382 1}
+{}
+{413 1,438 1}
+{30 1,187 1,231 1,499 1,525 1,554 1,570 1}
+{271 1,315 1,328 1,346 1,424 1,446 1,463 1,512 1,521 1,543 1}
+{33 1,393 1,504 1}
+{1 1,24 1,48 1,50 1,85 1,86 1,124 1,173 1,174 1,207 1,238 1,305 1,319 1,322 1,324 1,331 1,335 1,352 1,357 1,383 1,454 1,497 1,541 1,559 1}
+{39 1,100 1,109 1,210 1,320 1,359 1,368 1,370 1,470 1,477 1,482 1,527 1,540 1}
+{12 1,43 1,114 1,171 1,304 1,347 1,381 1,419 1,466 1,481 1,487 1,523 1,524 1}
+{82 1,269 1,368 1,443 1}
+{6 1,7 1,9 1,18 1,36 1,42 1,105 1,108 1,146 1,152 1,154 1,155 1,158 1,209 1,230 1,239 1,281 1,297 1,303 1,304 1,347 1,358 1,419 1,445 1,474 1,519 1,522 1,524 1,539 1}
+{220 1}
+{12 1,43 1,114 1,171 1,304 1,347 1,381 1,419 1,466 1,481 1,487 1,523 1,524 1}
+{3 1,16 1,19 1,22 1,25 1,58 1,109 1,206 1,210 1,255 1,368 1,370 1,408 1,423 1,432 1,466 1,477 1,482 1,498 1,527 1,540 1}
+{3 1,22 1,27 1,209 1,255 1,287 1,320 1,334 1,368 1,474 1}
+{3 1,22 1,27 1,55 1,209 1,255 1,287 1,320 1,323 1,334 1,368 1,437 1,474 1}
+{55 1,323 1,437 1}
+{3 1,58 1,255 1}
+{}
+{0 1,13 1,172 1,214 1,382 1}
+{}
+{}
+{346 1,409 1,463 1,521 1,549 1}
+{}
+{253 1}
+{303 1,304 1}
+{}
+{188 1}
+{3 1,10 1,58 1,255 1,368 1,432 1}
+{413 1,438 1}
+{232 1}
+{243 1}
+{231 1,525 1}
+{}
+{10 1,169 1,368 1,413 1,438 1}
+{8 1,31 1,130 1,310 1,345 1,381 1,447 1,475 1,476 1,481 1,487 1,500 1,571 1}
+{}
+{}
+{}
+{399 1,418 1,455 1,506 1}
+{}
+{}
+{23 1,30 1,199 1,216 1,499 1,570 1}
+{10 1,28 1,169 1,211 1,218 1,233 1,234 1,368 1,479 1,480 1}
+{6 1,9 1,36 1,42 1,146 1,155 1,230 1,239 1,281 1,303 1,304 1,347 1,358 1,368 1,445 1,519 1,522 1,524 1}
+{}
+{}
+{6 1,9 1,36 1,42 1,146 1,155 1,230 1,239 1,281 1,303 1,304 1,347 1,358 1,445 1,519 1,522 1,524 1}
+{210 1,482 1}
+{276 1}
+{431 1}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{497 1}
+{}
+{}
+{}
+{}
+{227 1,368 1,507 1}
+{3 1,25 1,169 1,206 1,255 1,432 1,466 1}
+{248 1}
+{500 1}
+{124 1,169 1,217 1,227 1,265 1,324 1,330 1,352 1,356 1,357 1,368 1,497 1,499 1,526 1,559 1,570 1}
+{}
+{14 1,44 1,176 1,341 1,435 1,441 1,505 1,553 1,561 1}
+{}
+{341 1}
+{}
+{6 1,9 1,36 1,42 1,77 1,146 1,155 1,230 1,239 1,264 1,281 1,303 1,304 1,347 1,358 1,445 1,519 1,522 1,524 1}
+{}
+{}
+{}
+{}
+{}
+{51 1,121 1,341 1}
+{117 1,130 1}
+{}
+{}
+{}
+{1 1,6 1,8 1,24 1,31 1,37 1,42 1,46 1,48 1,67 1,73 1,85 1,91 1,129 1,130 1,155 1,173 1,197 1,207 1,232 1,238 1,239 1,281 1,298 1,310 1,322 1,331 1,339 1,345 1,358 1,383 1,421 1,445 1,454 1,500 1,525 1,529 1,571 1}
+{37 1,145 1,232 1}
+{8 1,31 1,67 1,73 1,101 1,129 1,130 1,177 1,197 1,208 1,310 1,345 1,421 1,500 1,529 1,571 1}
+{8 1,31 1,130 1,310 1,345 1,500 1,571 1}
+{135 1,144 1,515 1}
+{90 1}
+{37 1,60 1,71 1,87 1,95 1,232 1,320 1,391 1}
+{37 1,65 1,79 1,104 1,127 1,150 1,232 1,368 1,440 1}
+{62 1}
+{44 1,78 1,249 1,440 1,561 1}
+{37 1,62 1,98 1,135 1,148 1,282 1,316 1,545 1}
+{81 1}
+{1 1,24 1,48 1,85 1,173 1,207 1,238 1,322 1,331 1,339 1,383 1,454 1}
+{71 1}
+{37 1,95 1,97 1,124 1,132 1,177 1,232 1,309 1,320 1,344 1,361 1,496 1,497 1,569 1,572 1}
+{37 1,79 1,103 1,440 1,514 1,561 1}
+{45 1,80 1,116 1,139 1,150 1,209 1,228 1,304 1,347 1,474 1,524 1,573 1}
+{73 1,181 1,182 1,197 1,290 1,402 1,403 1,421 1,422 1,456 1,529 1}
+{}
+{}
+{232 1,301 1,304 1,311 1}
+{}
+{}
+{10 1,123 1,169 1,218 1,368 1}
+{}
+{}
+{}
+{}
+{}
+{253 1,284 1}
+{5 1,6 1,7 1,14 1,42 1,105 1,155 1,209 1,239 1,257 1,280 1,281 1,358 1,360 1,435 1,436 1,445 1,474 1,505 1,506 1,535 1,553 1}
+{5 1,6 1,7 1,14 1,42 1,105 1,155 1,209 1,239 1,257 1,280 1,281 1,358 1,360 1,435 1,436 1,445 1,474 1,505 1,506 1,535 1,553 1}
+{413 1,438 1}
+{}
+{0 1,13 1,169 1,172 1,214 1,368 1,382 1,396 1}
+{413 1,438 1}
+{426 1,440 1,514 1,549 1}
+{}
+{413 1,438 1}
+{}
+{6 1,12 1,42 1,43 1,114 1,155 1,171 1,239 1,281 1,358 1,381 1,445 1,481 1,487 1}
+{}
+{}
+{3 1,58 1,255 1}
+{6 1,9 1,36 1,42 1,146 1,155 1,230 1,239 1,281 1,303 1,304 1,347 1,358 1,445 1,519 1,522 1,524 1}
+{}
+{124 1,177 1,265 1,309 1,325 1,330 1,344 1,428 1,430 1,496 1,497 1,569 1}
+{249 1,254 1}
+{}
+{}
+{126 1,164 1}
+{}
+{8 1,31 1,130 1,310 1,345 1,497 1,500 1,549 1,571 1}
+{30 1,203 1,499 1,502 1,570 1}
+{6 1,9 1,36 1,42 1,146 1,155 1,230 1,239 1,281 1,303 1,304 1,347 1,358 1,445 1,519 1,522 1,524 1}
+{550 1}
+{413 1,438 1}
+{14 1,176 1,341 1,399 1,435 1,505 1,549 1,553 1}
+{}
+{}
+{34 1,159 1,518 1,542 1}
+{}
+{8 1,10 1,31 1,130 1,275 1,310 1,345 1,368 1,500 1,571 1}
+{}
+{}
+{}
+{37 1}
+{37 1,46 1,66 1,72 1,232 1,254 1}
+{}
+{37 1,63 1}
+{}
+{}
+{}
+{33 1,393 1,504 1}
+{89 1,98 1,148 1,282 1,316 1,501 1,545 1,549 1}
+{5 1,6 1,7 1,8 1,9 1,31 1,36 1,42 1,105 1,108 1,130 1,146 1,148 1,155 1,158 1,209 1,230 1,239 1,280 1,281 1,282 1,297 1,303 1,304 1,306 1,310 1,314 1,316 1,345 1,347 1,358 1,445 1,474 1,500 1,519 1,522 1,524 1,535 1,539 1,545 1,571 1}
+{175 1,240 1,368 1,385 1}
+{}
+{}
+{198 1,262 1}
+{374 1}
+{}
+{223 1}
+{30 1,175 1,240 1,385 1,492 1,499 1,554 1,570 1}
+{30 1,169 1,183 1,184 1,217 1,499 1,554 1,570 1}
+{225 1}
+{5 1,6 1,7 1,42 1,89 1,105 1,152 1,155 1,209 1,239 1,280 1,281 1,358 1,445 1,474 1,535 1}
+{3 1,58 1,255 1}
+{}
+{}
+{}
+{51 1,69 1,118 1,121 1,341 1}
+{}
+{69 1,131 1}
+{77 1,264 1,364 1}
+{114 1}
+{}
+{51 1,69 1,76 1,121 1,210 1,341 1,482 1}
+{}
+{10 1,17 1,320 1,368 1,411 1,424 1}
+{564 1,568 1}
+{14 1,257 1,435 1,505 1,506 1,553 1}
+{169 1,217 1,219 1,222 1,227 1,368 1,525 1,526 1}
+{145 1,192 1,418 1,506 1}
+{191 1,372 1}
+{144 1,515 1}
+{194 1,413 1,438 1}
+{}
+{1 1,48 1,128 1,169 1,173 1,186 1,238 1,322 1,339 1,368 1,383 1,405 1,489 1}
+{169 1,183 1,184 1,217 1,368 1,499 1,526 1,570 1}
+{138 1}
+{}
+{75 1,137 1}
+{}
+{}
+{}
+{68 1}
+{}
+{}
+{}
+{109 1,110 1,111 1,210 1,370 1,371 1,477 1,482 1,527 1,540 1}
+{}
+{}
+{}
+{}
+{}
+{1 1,24 1,48 1,85 1,173 1,207 1,238 1,322 1,331 1,383 1,454 1}
+{}
+{50 1,72 1,174 1,305 1,541 1}
+{}
+{}
+{}
+{}
+{185 1}
+{8 1,31 1,130 1,246 1,260 1,275 1,306 1,310 1,313 1,345 1,361 1,500 1,556 1,571 1,572 1}
+{304 1,524 1,551 1}
+{303 1,304 1,445 1,519 1,524 1,551 1}
+{}
+{215 1}
+{}
+{138 1}
+{109 1,210 1,370 1,477 1,482 1,527 1,540 1}
+{}
+{368 1}
+{}
+{}
+{}
+{}
+{}
+{}
+{215 1}
+{51 1,112 1,121 1,130 1,136 1,341 1}
+{55 1,122 1,126 1,323 1,437 1,494 1,574 1}
+{}
+{}
+{}
+{113 1}
+{}
+{}
+{}
+{}
+{}
+{59 1,125 1}
+{59 1,125 1}
+{410 1}
+{}
+{}
+{}
+{32 1,368 1,465 1,503 1}
+{301 1,486 1,491 1,548 1}
+{232 1,368 1,465 1}
+{185 1}
+{21 1,354 1,407 1,429 1,439 1,511 1}
+{}
+{34 1,159 1,368 1,412 1,518 1,542 1}
+{14 1,257 1,399 1,418 1,435 1,505 1,506 1,553 1}
+{35 1,169 1,175 1,229 1,240 1,320 1,385 1,517 1,544 1}
+{228 1,573 1}
+{209 1,304 1,320 1,347 1,368 1,419 1,474 1,524 1}
+{502 1}
+{141 1,267 1}
+{1 1,48 1,173 1,238 1,322 1,383 1}
+{12 1,43 1,114 1,171 1,381 1,481 1,487 1}
+{14 1,169 1,176 1,278 1,435 1,459 1,553 1,561 1}
+{}
+{1 1,3 1,24 1,25 1,48 1,85 1,173 1,206 1,207 1,238 1,255 1,322 1,331 1,339 1,383 1,432 1,454 1,466 1}
+{438 1}
+{12 1,43 1,171 1,381 1}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{574 1}
+{81 1,368 1,414 1}
+{3 1,16 1,25 1,58 1,206 1,255 1,408 1,432 1,437 1,458 1,466 1}
+{17 1,303 1,304 1,411 1,424 1,445 1,462 1,473 1,474 1,519 1,524 1,551 1}
+{14 1,176 1,341 1,399 1,435 1,439 1,465 1,505 1,553 1}
+{23 1,30 1,199 1,216 1,499 1,570 1}
+{}
+{82 1,269 1,270 1,314 1,443 1,444 1,516 1}
+{8 1,12 1,24 1,30 1,31 1,43 1,49 1,130 1,171 1,187 1,195 1,228 1,231 1,310 1,345 1,381 1,384 1,417 1,453 1,499 1,500 1,525 1,554 1,570 1,571 1,573 1}
+{23 1,30 1,199 1,216 1,499 1,570 1}
+{354 1,429 1}
+{20 1,21 1,354 1,425 1,429 1}
+{}
+{10 1,28 1,211 1,233 1,234 1,368 1,372 1,394 1,480 1}
+{147 1}
+{138 1}
+{94 1}
+{}
+{}
+{14 1,176 1,182 1,341 1,403 1,435 1,505 1,553 1}
+{111 1,128 1,169 1,210 1,368 1,371 1,388 1,482 1,526 1}
+{}
+{}
+{93 1}
+{}
+{}
+{}
+{}
+{169 1,175 1,187 1,231 1,240 1,368 1,385 1,526 1}
+{}
+{}
+{93 1}
+{}
+{228 1,573 1}
+{}
+{}
+{80 1}
+{}
+{}
+{51 1,60 1,119 1,120 1,121 1,341 1}
+{}
+{}
+{138 1}
+{93 1}
+{}
+{1 1,48 1,173 1,238 1,322 1,339 1,383 1,397 1,489 1}
+{368 1,409 1,549 1}
+{302 1,319 1,368 1,381 1,514 1}
+{0 1,6 1,9 1,13 1,36 1,37 1,42 1,146 1,154 1,155 1,172 1,230 1,232 1,239 1,281 1,303 1,304 1,319 1,347 1,358 1,382 1,419 1,438 1,445 1,514 1,519 1,522 1,524 1}
+{1 1,48 1,173 1,207 1,213 1,238 1,322 1,339 1,383 1}
+{25 1,30 1,50 1,174 1,203 1,206 1,231 1,319 1,466 1,499 1,525 1,570 1}
+{37 1,232 1,248 1,302 1,368 1}
+{20 1,76 1,247 1,425 1}
+{156 1,289 1}
+{3 1,10 1,27 1,209 1,249 1,255 1,272 1,283 1,287 1,368 1,432 1,474 1,560 1}
+{61 1,88 1,277 1,299 1,374 1}
+{88 1,101 1,107 1,124 1,140 1,157 1,169 1,177 1,208 1,232 1,277 1,296 1,307 1,309 1,344 1,368 1,496 1,497 1,569 1}
+{}
+{290 1,365 1}
+{}
+{}
+{167 1}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{404 1}
+{}
+{}
+{3 1,10 1,25 1,27 1,169 1,206 1,209 1,255 1,287 1,294 1,368 1,432 1,466 1,474 1,532 1,536 1,538 1,560 1}
+{30 1,216 1,499 1,554 1,570 1}
+{100 1,109 1,210 1,370 1,477 1,482 1,527 1,540 1}
+{67 1,152 1}
+{33 1,393 1,401 1,469 1,504 1}
+{342 1,493 1}
+{328 1,424 1}
+{342 1,493 1}
+{1 1,24 1,48 1,85 1,173 1,207 1,238 1,263 1,304 1,322 1,331 1,383 1,454 1}
+{}
+{392 1}
+{}
+{}
+{298 1}
+{138 1}
+{}
+{273 1,275 1}
+{}
+{14 1,257 1,273 1,278 1,435 1,459 1,505 1,506 1,553 1}
+{}
+{6 1,9 1,36 1,37 1,42 1,146 1,155 1,230 1,239 1,281 1,303 1,304 1,347 1,358 1,445 1,519 1,522 1,524 1}
+{133 1}
+{308 1}
+{117 1,130 1,136 1}
+{109 1,210 1,370 1,477 1,482 1,527 1,540 1}
+{}
+{123 1}
+{368 1,428 1,430 1,525 1}
+{}
+{368 1,426 1}
+{427 1,431 1,513 1}
+{368 1,430 1}
+{368 1}
+{232 1,303 1,304 1,368 1,445 1,519 1,524 1,551 1}
+{232 1,249 1,272 1,368 1}
+{0 1,13 1,172 1,214 1,260 1,313 1,361 1,382 1,533 1,556 1,572 1}
+{}
+{236 1,300 1,301 1,380 1,486 1,548 1}
+{}
+{}
+{}
+{}
+{68 1}
+{}
+{}
+{}
+{}
+{93 1}
+{}
+{}
+{80 1}
+{}
+{}
+{}
+{}
+{}
+{46 1,160 1,298 1,368 1}
+{}
+{}
+{}
+{}
+{}
+{}
+{144 1,515 1}
+{39 1,40 1,370 1,527 1}
+{37 1}
+{52 1,53 1,63 1,127 1}
+{66 1,72 1,124 1,135 1,177 1,254 1,309 1,344 1,496 1,497 1,569 1}
+{53 1,127 1}
+{53 1,127 1}
+{}
+{40 1,109 1,152 1,210 1,368 1,370 1,477 1,482 1,527 1,540 1}
+{391 1,495 1,525 1}
+{12 1,43 1,52 1,63 1,152 1,171 1,381 1}
+{}
+{}
+{109 1,210 1,370 1,477 1,482 1,527 1,540 1}
+{10 1,368 1,466 1}
+{75 1}
+{100 1,370 1,527 1}
+{}
+{165 1,166 1}
+{}
+{}
+{}
+{}
+{}
+{}
+{290 1,365 1}
+{}
+{}
+{}
+{167 1}
+{}
+{}
+{}
+{}
+{}
+{111 1,210 1,371 1,482 1}
+{}
+{111 1,210 1,371 1,482 1}
+{}
+{210 1,482 1}
+{}
+{109 1,110 1,210 1,370 1,477 1,482 1,527 1,540 1}
+{}
+{}
+{}
+{}
+{}
+{1 1,48 1,173 1,238 1,322 1,383 1}
+{}
+{}
+{73 1,197 1,421 1,529 1}
+{77 1,264 1,364 1,367 1}
+{223 1}
+{73 1,181 1,182 1,197 1,402 1,403 1,421 1,529 1}
+{6 1,9 1,18 1,36 1,42 1,46 1,146 1,152 1,154 1,155 1,230 1,239 1,281 1,303 1,304 1,347 1,358 1,419 1,445 1,519 1,522 1,524 1}
+{}
+{}
+{}
+{372 1,508 1}
+{138 1}
+{81 1,414 1,442 1}
+{}
+{6 1,9 1,18 1,36 1,42 1,81 1,146 1,152 1,154 1,155 1,230 1,239 1,281 1,303 1,304 1,347 1,358 1,419 1,445 1,519 1,522 1,524 1}
+{}
+{6 1,9 1,18 1,36 1,42 1,81 1,146 1,152 1,154 1,155 1,230 1,239 1,281 1,303 1,304 1,347 1,358 1,419 1,442 1,445 1,519 1,522 1,524 1}
+{109 1,111 1,210 1,370 1,371 1,477 1,482 1,527 1,540 1}
+{251 1,555 1,574 1}
+{574 1}
+{}
+{}
+{574 1}
+{}
+{}
+{}
+{57 1,97 1,124 1,177 1,309 1,344 1,496 1,497 1,569 1}
+{57 1}
+{}
+{8 1,31 1,67 1,81 1,130 1,310 1,345 1,500 1,571 1}
+{}
+{}
+{109 1,210 1,370 1,477 1,482 1,527 1,540 1}
+{151 1}
+{}
+{151 1}
+{}
+{96 1,109 1,151 1,210 1,370 1,477 1,482 1,527 1,540 1}
+{}
+{}
+{96 1,109 1,210 1,370 1,477 1,482 1,527 1,540 1}
+{}
+{151 1}
+{}
+{65 1}
+{128 1}
+{491 1}
+{}
+{147 1}
+{391 1,495 1}
+{133 1}
+{}
+{80 1,139 1,228 1,573 1}
+{}
+{}
+{101 1,177 1,208 1,231 1,525 1}
+{210 1,482 1}
+{234 1,393 1,480 1}
+{}
+{248 1,335 1}
+{223 1}
+{}
+{1 1,24 1,30 1,48 1,85 1,173 1,187 1,195 1,207 1,226 1,231 1,238 1,322 1,331 1,383 1,417 1,454 1,499 1,513 1,525 1,554 1,570 1}
+{}
+{}
+{}
+{}
+{59 1,80 1}
+{6 1,42 1,155 1,239 1,281 1,358 1,445 1}
+{}
+{}
+{}
+{3 1,58 1,255 1}
+{}
+{}
+{224 1,368 1,510 1}
+{156 1}
+{224 1,368 1,510 1}
+{}
+{}
+{}
+{}
+{303 1,304 1,368 1,445 1,519 1,524 1,551 1}
+{}
+{}
+{}
+{}
+{224 1,368 1,510 1}
+{304 1,524 1}
+{}
+{144 1,515 1}
+{6 1,9 1,10 1,30 1,36 1,42 1,146 1,155 1,187 1,230 1,231 1,239 1,276 1,281 1,303 1,304 1,347 1,358 1,368 1,445 1,499 1,519 1,522 1,524 1,525 1,554 1,570 1}
+{438 1}
+{21 1,354 1,429 1,458 1}
+{320 1}
+{10 1,320 1,368 1}
+{}
+{390 1}
+{24 1,124 1,177 1,309 1,344 1,496 1,497 1,569 1}
+{23 1,30 1,199 1,216 1,499 1,570 1}
+{20 1,247 1,425 1}
+{1 1,48 1,173 1,238 1,322 1,339 1,383 1,397 1,488 1}
+{}
+{254 1}
+{169 1,368 1}
+{}
+{169 1,438 1}
+{124 1,177 1,309 1,344 1,496 1,497 1,569 1}
+{}
+{}
+{38 1}
+{38 1}
+{413 1,438 1}
+{}
+{}
+{370 1,527 1}
+{}
+{}
+{}
+{}
+{}
+{34 1,159 1,518 1,542 1}
+{}
+{169 1,315 1,368 1,526 1}
+{}
+{}
+{}
+{}
+{342 1,493 1}
+{34 1,159 1,368 1,518 1,542 1}
+{}
+{1 1,24 1,48 1,85 1,173 1,207 1,238 1,322 1,331 1,339 1,383 1,454 1}
+{}
+{}
+{391 1,495 1}
+{8 1,31 1,130 1,310 1,345 1,500 1,571 1}
+{138 1}
+{6 1,9 1,36 1,42 1,146 1,155 1,230 1,239 1,281 1,303 1,304 1,347 1,358 1,445 1,519 1,522 1,524 1}
+{137 1}
+{250 1,260 1,285 1,313 1,355 1,361 1,404 1,556 1,572 1}
+{94 1}
+{307 1}
+{}
+{}
+{6 1,7 1,9 1,36 1,42 1,105 1,108 1,146 1,152 1,155 1,158 1,209 1,230 1,239 1,281 1,292 1,297 1,303 1,304 1,347 1,358 1,445 1,474 1,519 1,522 1,524 1,537 1,539 1}
+{6 1,9 1,36 1,42 1,73 1,146 1,155 1,230 1,239 1,281 1,303 1,304 1,347 1,358 1,434 1,445 1,519 1,522 1,524 1}
+{3 1,27 1,45 1,58 1,77 1,209 1,255 1,264 1,287 1,474 1,528 1,552 1,560 1}
+{10 1,304 1,524 1}
+{162 1,168 1,317 1}
+{160 1,168 1}
+{368 1}
+{320 1}
+{329 1}
+{320 1,342 1,368 1,493 1}
+{}
+{10 1,304 1,524 1}
+{162 1}
+{77 1,264 1}
+{}
+{175 1,240 1,244 1,385 1}
+{}
+{162 1,317 1}
+{162 1,317 1}
+{244 1,271 1,446 1}
+{10 1,320 1,368 1,464 1}
+{265 1,330 1}
+{175 1,240 1,385 1}
+{307 1}
+{10 1,169 1,368 1,476 1}
+{1 1,3 1,16 1,24 1,25 1,48 1,58 1,85 1,169 1,173 1,206 1,207 1,238 1,255 1,322 1,331 1,339 1,383 1,397 1,408 1,432 1,454 1,466 1}
+{198 1,262 1,265 1,293 1,330 1}
+{46 1,307 1}
+{5 1,8 1,31 1,35 1,37 1,130 1,209 1,229 1,232 1,304 1,310 1,320 1,345 1,347 1,368 1,474 1,500 1,517 1,524 1,535 1,544 1,571 1}
+{232 1,288 1,301 1,336 1,337 1,486 1,548 1,567 1}
+{6 1,9 1,36 1,42 1,146 1,154 1,155 1,230 1,239 1,281 1,303 1,304 1,347 1,358 1,419 1,445 1,519 1,522 1,524 1}
+{33 1,393 1,401 1,504 1}
+{501 1,549 1}
+{62 1,73 1,434 1}
+{21 1,354 1,407 1,429 1,511 1}
+{}
+{3 1,5 1,22 1,27 1,58 1,209 1,255 1,287 1,320 1,368 1,474 1,535 1,560 1}
+{314 1,415 1}
+{8 1,31 1,130 1,310 1,345 1,500 1,571 1}
+{288 1,301 1,486 1,508 1,548 1,567 1}
+{161 1}
+{49 1,384 1}
+{10 1,320 1,368 1}
+{161 1}
+{5 1,148 1,169 1,209 1,282 1,304 1,316 1,347 1,474 1,524 1,535 1,545 1}
+{37 1,232 1}
+{37 1}
+{}
+{169 1,217 1}
+{}
+{354 1}
+{440 1}
+{6 1,26 1,42 1,103 1,155 1,239 1,281 1,358 1,440 1,445 1}
+{26 1,354 1,429 1}
+{6 1,7 1,9 1,10 1,36 1,42 1,91 1,105 1,108 1,146 1,155 1,158 1,209 1,230 1,239 1,281 1,297 1,303 1,304 1,347 1,358 1,368 1,445 1,474 1,519 1,522 1,524 1,539 1}
+{}
+{}
+{82 1,87 1,269 1,391 1,443 1}
+{}
+{}
+{}
+{34 1,159 1,198 1,262 1,293 1,438 1,471 1,518 1,542 1}
+{1 1,24 1,48 1,85 1,173 1,207 1,238 1,322 1,331 1,383 1,454 1}
+{56 1,78 1,103 1,132 1,148 1,204 1,260 1,282 1,313 1,316 1,332 1,361 1,440 1,514 1,545 1,556 1,572 1}
+{3 1,145 1,255 1,418 1,506 1}
+{290 1,365 1,375 1}
+{}
+{}
+{1 1,48 1,49 1,114 1,173 1,238 1,320 1,322 1,339 1,346 1,383 1,384 1,464 1,525 1}
+{1 1,48 1,49 1,173 1,238 1,322 1,339 1,383 1,384 1}
+{1 1,24 1,48 1,85 1,173 1,207 1,238 1,322 1,328 1,331 1,383 1,424 1,454 1}
+{30 1,499 1,554 1,558 1,570 1}
+{}
+{413 1,438 1}
+{143 1}
+{219 1}
+{}
+{564 1,568 1}
+{143 1}
+{10 1,320 1,368 1,410 1}
+{}
+{348 1,363 1}
+{49 1,142 1,384 1}
+{}
+{}
+{143 1}
+{}
+{74 1,350 1}
+{}
+{49 1,82 1,144 1,384 1}
+{}
+{}
+{42 1,102 1,152 1,281 1,346 1}
+{}
+{56 1}
+{}
+{}
+{349 1}
+{143 1}
+{74 1,350 1}
+{}
+{73 1,117 1,126 1,142 1,164 1}
+{}
+{}
+{143 1}
+{}
+{74 1,350 1}
+{351 1,366 1}
+{49 1,384 1}
+{}
+{42 1,281 1}
+{141 1,267 1}
+{}
+{143 1}
+{194 1,413 1,438 1}
+{204 1,332 1}
+{}
+{409 1,413 1,438 1,549 1}
+{3 1,14 1,25 1,206 1,255 1,257 1,278 1,432 1,435 1,459 1,466 1,505 1,506 1,553 1}
+{}
+{190 1}
+{}
+{109 1,175 1,210 1,240 1,370 1,385 1,477 1,482 1,527 1,540 1}
+{77 1,264 1,364 1}
+{76 1}
+{73 1,182 1,197 1,402 1,403 1,421 1,529 1}
+{6 1,7 1,9 1,36 1,42 1,105 1,108 1,146 1,155 1,158 1,209 1,230 1,239 1,260 1,281 1,297 1,303 1,304 1,313 1,347 1,358 1,360 1,361 1,362 1,392 1,445 1,474 1,519 1,522 1,524 1,532 1,539 1,556 1,572 1}
+{160 1}
+{101 1,107 1,124 1,157 1,169 1,177 1,179 1,180 1,208 1,296 1,309 1,320 1,327 1,344 1,496 1,497 1,569 1}
+{348 1,363 1}
+{}
+{}
+{}
+{169 1,217 1,368 1,499 1,526 1,570 1}
+{}
+{307 1,400 1}
+{}
+{6 1,9 1,36 1,42 1,146 1,155 1,230 1,239 1,281 1,303 1,304 1,347 1,358 1,445 1,519 1,522 1,524 1}
+{10 1,29 1,34 1,159 1,169 1,368 1,392 1,485 1,509 1,518 1,542 1}
+{3 1,25 1,27 1,34 1,45 1,159 1,206 1,209 1,232 1,251 1,255 1,284 1,287 1,294 1,299 1,374 1,377 1,432 1,466 1,474 1,518 1,528 1,534 1,536 1,538 1,542 1,552 1,555 1,560 1}
+{}
+{50 1,174 1,178 1,305 1,398 1,541 1}
+{6 1,7 1,9 1,34 1,36 1,42 1,105 1,108 1,146 1,154 1,155 1,158 1,159 1,209 1,230 1,239 1,281 1,297 1,303 1,304 1,347 1,358 1,360 1,362 1,445 1,474 1,518 1,519 1,522 1,524 1,532 1,539 1,542 1}
+{20 1,24 1,247 1,425 1}
+{3 1,12 1,25 1,27 1,34 1,43 1,114 1,159 1,171 1,206 1,209 1,255 1,287 1,294 1,381 1,432 1,453 1,466 1,474 1,475 1,481 1,487 1,518 1,532 1,536 1,538 1,542 1,560 1}
+{50 1,174 1,305 1,335 1,541 1}
+{204 1,265 1,330 1,332 1,336 1,337 1}
+{5 1,25 1,206 1,209 1,294 1,304 1,347 1,466 1,474 1,524 1,535 1,538 1}
+{169 1,320 1,329 1}
+{304 1,320 1,368 1,524 1,551 1}
+{90 1}
+{}
+{}
+{}
+{251 1,258 1,291 1,555 1}
+{324 1,352 1}
+{343 1}
+{}
+{324 1,352 1}
+{343 1}
+{}
+{50 1,174 1,305 1,490 1,520 1,541 1}
+{33 1,50 1,76 1,160 1,174 1,178 1,305 1,368 1,393 1,398 1,438 1,504 1,525 1,541 1}
+{37 1,72 1,124 1,177 1,232 1,245 1,309 1,320 1,344 1,368 1,496 1,497 1,569 1}
+{14 1,176 1,260 1,278 1,303 1,304 1,341 1,435 1,445 1,459 1,462 1,473 1,474 1,505 1,519 1,524 1,551 1,553 1,556 1,558 1,561 1}
+{254 1,447 1}
+{1 1,24 1,48 1,85 1,173 1,207 1,238 1,322 1,331 1,383 1,454 1}
+{507 1}
+{41 1}
+{325 1,356 1,428 1,430 1}
+{41 1}
+{}
+{73 1,197 1,253 1,353 1,421 1,529 1}
+{169 1,368 1,526 1}
+{231 1,248 1,525 1}
+{0 1,13 1,172 1,382 1}
+{123 1}
+{}
+{}
+{}
+{55 1,323 1,437 1}
+{113 1}
+{29 1,373 1,485 1}
+{}
+{34 1,159 1,392 1,518 1,534 1,542 1}
+{}
+{}
+{28 1,211 1,233 1,234 1,386 1,424 1,480 1}
+{}
+{}
+{}
+{}
+{}
+{}
+{49 1,384 1}
+{3 1,25 1,206 1,232 1,255 1,432 1,466 1}
+{232 1,252 1}
+{212 1,476 1}
+{0 1,13 1,172 1,382 1}
+{}
+{124 1,177 1,309 1,344 1,496 1,497 1,569 1}
+{175 1,240 1,368 1,385 1,492 1}
+{10 1,169 1,170 1,218 1,368 1}
+{73 1,197 1,368 1,421 1,441 1,529 1}
+{251 1,260 1,313 1,361 1,555 1,556 1,572 1}
+{34 1,159 1,258 1,368 1,438 1,518 1,542 1}
+{73 1,148 1,197 1,282 1,299 1,316 1,374 1,421 1,529 1,545 1}
+{}
+{}
+{30 1,183 1,212 1,304 1,347 1,466 1,476 1,499 1,523 1,524 1,554 1,570 1}
+{}
+{}
+{}
+{30 1,499 1,570 1}
+{428 1,430 1,518 1}
+{260 1,313 1,361 1,533 1,556 1,572 1}
+{169 1,328 1,368 1,424 1,512 1,526 1,543 1}
+{290 1,365 1,375 1,520 1}
+{}
+{328 1,424 1,512 1,543 1}
+{}
+{3 1,10 1,255 1,368 1,432 1}
+{232 1,368 1,413 1,427 1,438 1,525 1}
+{5 1,73 1,197 1,209 1,421 1,466 1,474 1,529 1,535 1}
+{467 1}
+{77 1,264 1}
+{467 1}
+{124 1,177 1,309 1,344 1,496 1,497 1,569 1}
+{}
+{236 1,261 1,288 1,300 1,301 1,380 1,486 1,548 1,567 1}
+{}
+{236 1,239 1,261 1,300 1,301 1,303 1,304 1,311 1}
+{132 1,232 1,253 1,361 1,572 1}
+{163 1}
+{77 1,264 1}
+{0 1,13 1,172 1,214 1,382 1,427 1}
+{37 1,61 1,232 1}
+{}
+{}
+{}
+{}
+{134 1}
+{59 1,125 1}
+{134 1}
+{}
+{}
+{0 1,13 1,37 1,47 1,172 1,214 1,231 1,232 1,368 1,382 1,438 1,525 1}
+{6 1,42 1,155 1,239 1,281 1,358 1,445 1}
+{37 1,64 1}
+{}
+{0 1,13 1,124 1,169 1,172 1,177 1,180 1,309 1,327 1,344 1,382 1,496 1,497 1,569 1}
+{124 1,177 1,304 1,309 1,327 1,344 1,347 1,496 1,497 1,524 1,569 1}
+{0 1,13 1,37 1,47 1,97 1,98 1,101 1,107 1,124 1,148 1,157 1,172 1,177 1,208 1,232 1,282 1,296 1,309 1,316 1,344 1,368 1,382 1,438 1,471 1,496 1,497 1,545 1,569 1}
+{0 1,13 1,37 1,47 1,172 1,232 1,368 1,382 1}
+{0 1,13 1,37 1,47 1,172 1,232 1,368 1,382 1}
+{19 1,148 1,270 1,282 1,314 1,316 1,423 1,444 1,498 1,516 1,545 1}
+{28 1,169 1,204 1,211 1,233 1,234 1,332 1,480 1}
+{}
+{}
+{}
+{37 1,163 1}
+{491 1}
+{}
+{}
+{}
+{}
+{}
+{212 1,476 1}
+{}
+{164 1,328 1,424 1,512 1,543 1}
+{169 1,320 1}
+{30 1,203 1,499 1,570 1}
+{564 1}
+{361 1,572 1}
+{}
+{}
+{}
+{}
+{175 1,240 1,385 1}
+{25 1,206 1,466 1}
+{101 1,107 1,124 1,157 1,177 1,208 1,296 1,309 1,344 1,496 1,497 1,569 1}
+{50 1,174 1}
+{6 1,42 1,100 1,155 1,239 1,281 1,320 1,358 1,359 1,368 1,370 1,445 1,452 1,470 1,525 1,527 1}
+{50 1,174 1,305 1,335 1,541 1}
+{3 1,25 1,27 1,28 1,45 1,206 1,209 1,211 1,233 1,234 1,255 1,287 1,294 1,377 1,386 1,432 1,441 1,461 1,466 1,474 1,478 1,480 1,525 1,528 1,536 1,538 1,552 1,560 1,565 1}
+{}
+{}
+{}
+{169 1}
+{6 1,7 1,9 1,36 1,42 1,105 1,108 1,146 1,155 1,158 1,209 1,230 1,239 1,281 1,297 1,303 1,304 1,347 1,358 1,445 1,474 1,519 1,522 1,524 1,539 1}
+{37 1,196 1,232 1,368 1}
+{5 1,6 1,7 1,42 1,77 1,105 1,155 1,209 1,239 1,264 1,280 1,281 1,358 1,360 1,445 1,474 1,535 1}
+{10 1,35 1,169 1,229 1,368 1,517 1,544 1}
+{2 1,10 1,12 1,15 1,43 1,171 1,189 1,368 1,381 1,406 1}
+{175 1,225 1,240 1,385 1}
+{33 1,393 1,504 1}
+{}
+{6 1,9 1,25 1,36 1,42 1,146 1,155 1,206 1,230 1,239 1,281 1,303 1,304 1,347 1,358 1,445 1,466 1,519 1,522 1,524 1}
+{25 1,206 1,320 1,466 1}
+{}
+{}
+{}
+{170 1,197 1,373 1,374 1,388 1,421 1,434 1,436 1,464 1}
+{204 1,332 1}
+{144 1,510 1,515 1}
+{77 1,264 1,364 1}
+{}
+{392 1}
+{160 1,165 1,368 1}
+{175 1,240 1,385 1}
+{}
+{}
+{}
+{160 1,338 1,501 1,549 1}
+{212 1,476 1}
+{}
+{338 1}
+{}
+{574 1}
+{8 1,31 1,130 1,226 1,310 1,345 1,500 1,513 1,571 1}
+{}
+{}
+{30 1,183 1,499 1,554 1,570 1}
+{}
+{100 1,370 1,452 1,484 1,527 1}
+{6 1,42 1,124 1,155 1,156 1,239 1,281 1,324 1,352 1,357 1,358 1,445 1,497 1}
+{100 1,301 1,320 1,359 1,368 1,370 1,371 1,470 1,486 1,527 1,548 1}
+{3 1,27 1,209 1,255 1,287 1,474 1,532 1,557 1,560 1,562 1}
+{}
+{19 1,242 1,311 1,368 1,389 1,390 1,423 1,433 1,498 1}
+{242 1,389 1,433 1}
+{}
+{}
+{511 1}
+{}
+{}
+{484 1}
+{}
+{}
+{}
+{37 1}
+{315 1,574 1}
+{70 1}
+{574 1}
+{}
+{349 1,574 1}
+{118 1,152 1,304 1,347 1,466 1,523 1,524 1}
+{}
+{37 1}
+{}
+{}
+{70 1}
+{37 1}
+{291 1}
+{3 1,25 1,206 1,255 1,276 1,391 1,432 1,466 1,525 1}
+{267 1}
+{}
+{}
+{}
+{60 1}
+{160 1,368 1}
+{438 1,471 1}
+{}
+{30 1,499 1,570 1}
+{35 1,124 1,157 1,229 1,303 1,304 1,324 1,340 1,352 1,357 1,445 1,462 1,473 1,474 1,497 1,517 1,519 1,524 1,544 1,551 1}
+{10 1,304 1,347 1,368 1,524 1}
+{10 1,221 1,320 1,368 1}
+{77 1,264 1}
+{3 1,25 1,206 1,255 1,420 1,432 1,466 1}
+{35 1,229 1,392 1,517 1,544 1}
+{11 1,321 1,369 1,420 1}
+{}
+{11 1,321 1,369 1}
+{}
+{}
+{}
+{325 1,428 1,430 1,525 1}
+{10 1,221 1,320 1,368 1}
+{}
+{77 1,264 1}

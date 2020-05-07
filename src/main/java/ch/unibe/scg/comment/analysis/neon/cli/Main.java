@@ -1,14 +1,14 @@
 package ch.unibe.scg.comment.analysis.neon.cli;
 
-import ch.unibe.scg.comment.analysis.neon.cli.task.BuildClassifiers;
-import ch.unibe.scg.comment.analysis.neon.cli.task.MapSentences;
-import ch.unibe.scg.comment.analysis.neon.cli.task.Partition;
-import ch.unibe.scg.comment.analysis.neon.cli.task.PrepareDatasets;
-import ch.unibe.scg.comment.analysis.neon.cli.task.PrepareExperiments;
-import ch.unibe.scg.comment.analysis.neon.cli.task.PrepareExtractors;
-import ch.unibe.scg.comment.analysis.neon.cli.task.Preprocess;
-import ch.unibe.scg.comment.analysis.neon.cli.task.RunExperiments;
-import ch.unibe.scg.comment.analysis.neon.cli.task.SplitSentences;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T1Preprocess;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T2SplitSentences;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T3MapSentences;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T4PartitionSentences;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T5PrepareExtractors;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T6PrepareDatasets;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T7PrepareExperiments;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T8RunExperiments;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T9BuildClassifiers;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
@@ -49,20 +49,20 @@ public class Main {
 			for (String task : line.getOptionValues("task")) {
 				for (String data : line.getOptionValues("data")) {
 					LOGGER.info("Running {} on {}...", task, data);
-					if ("preprocess".equals(task)) {
-						(new Preprocess(database, data)).run();
-					} else if ("split-sentences".equals(task)) {
-						(new SplitSentences(database, data)).run();
-					} else if ("map-sentences".equals(task)) {
-						(new MapSentences(database, data)).run();
-					} else if ("partition".equals(task)) {
-						(new Partition(database, data, new int[]{3, 1})).run();
-					} else if ("prepare-extractors".equals(task)) {
-						(new PrepareExtractors(database, data, 1000)).run();
-					} else if ("prepare-datasets".equals(task)) {
-						(new PrepareDatasets(database, data, 0)).run();
-					} else if ("prepare-experiments".equals(task)) {
-						(new PrepareExperiments(
+					if ("1-preprocess".equals(task)) {
+						(new T1Preprocess(database, data)).run();
+					} else if ("2-split-sentences".equals(task)) {
+						(new T2SplitSentences(database, data)).run();
+					} else if ("3-map-sentences".equals(task)) {
+						(new T3MapSentences(database, data)).run();
+					} else if ("4-partition-sentences".equals(task)) {
+						(new T4PartitionSentences(database, data, new int[]{3, 1})).run();
+					} else if ("5-prepare-extractors".equals(task)) {
+						(new T5PrepareExtractors(database, data, 1000)).run();
+					} else if ("6-prepare-datasets".equals(task)) {
+						(new T6PrepareDatasets(database, data, 0)).run();
+					} else if ("7-prepare-experiments".equals(task)) {
+						(new T7PrepareExperiments(
 								database,
 								data,
 								Paths.get(System.getProperty("user.dir"))
@@ -70,8 +70,9 @@ public class Main {
 										.resolve(data)
 										.resolve("experiment")
 						)).run();
-					} else if ("run-experiments".equals(task)) {
-						(new RunExperiments(
+					} else if ("8-run-experiments".equals(task)) {
+						(new T8RunExperiments(
+								database,
 								data,
 								Paths.get(System.getProperty("user.dir"))
 										.resolve("data")
@@ -79,8 +80,9 @@ public class Main {
 										.resolve("experiment"),
 								1
 						)).run();
-					} else if ("build-classifiers".equals(task)) {
-						(new BuildClassifiers(
+					} else if ("9-build-classifiers".equals(task)) {
+						(new T9BuildClassifiers(
+								database,
 								data,
 								Paths.get(System.getProperty("user.dir"))
 										.resolve("data")
