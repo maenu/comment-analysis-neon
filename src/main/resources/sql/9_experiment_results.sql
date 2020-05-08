@@ -1,4 +1,4 @@
-CREATE TABLE "{{data}}_8_experiments"
+CREATE TABLE "{{data}}_9_experiment_results"
 (
     "Key_Dataset"                       TEXT    NOT NULL,
     "Key_Run"                           INTEGER NOT NULL,

@@ -22,17 +22,15 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class T9BuildClassifiers {
+public class T10BuildClassifiers {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(T9BuildClassifiers.class);
-	private final String database;
+	private static final Logger LOGGER = LoggerFactory.getLogger(T10BuildClassifiers.class);
 	private final String data;
 	private final Path directory;
 	private final int threads;
 
-	public T9BuildClassifiers(String database, String data, Path directory, int threads) {
+	public T10BuildClassifiers(String data, Path directory, int threads) {
 		super();
-		this.database = database;
 		this.data = data;
 		this.directory = directory;
 		this.threads = threads;
@@ -40,8 +38,7 @@ public class T9BuildClassifiers {
 
 	public void run() throws IOException, InterruptedException {
 		ExecutorService executor = Executors.newFixedThreadPool(this.threads);
-		Files.list(this.directory)
-				.filter(p -> p.getFileName().toString().endsWith(".arff") && p.getFileName()
+		Files.list(this.directory).filter(p -> p.getFileName().toString().endsWith(".arff") && p.getFileName()
 						.toString()
 						.startsWith("0-0-"))
 				.forEach(p -> {
@@ -57,7 +54,7 @@ public class T9BuildClassifiers {
 							trainingInstances.setClassIndex(trainingInstances.numAttributes() - 1);
 							// test
 							ArffLoader testLoader = new ArffLoader();
-							testLoader.setFile(p.toFile());
+							testLoader.setFile(this.directory.resolve(String.format("%s.arff", test)).toFile());
 							Instances testInstances = testLoader.getDataSet();
 							testInstances.setClassIndex(testInstances.numAttributes() - 1);
 							// zero rule
@@ -66,7 +63,8 @@ public class T9BuildClassifiers {
 									training,
 									"zero-r",
 									new Instances(trainingInstances),
-									new Instances(testInstances)
+									new Instances(testInstances),
+									false
 							);
 							// one rule
 							this.trainAndTest(
@@ -74,68 +72,80 @@ public class T9BuildClassifiers {
 									training,
 									"one-r",
 									new Instances(trainingInstances),
-									new Instances(testInstances)
+									new Instances(testInstances),
+									false
 							);
 							// naive bayes
 							this.trainAndTest(
 									new NaiveBayes(),
 									training,
 									"naive-bayes",
-									this.balance(trainingInstances),
-									new Instances(testInstances)
+									new Instances(trainingInstances),
+									new Instances(testInstances),
+									true
 							);
 							// j48
 							this.trainAndTest(
 									new J48(),
 									training,
 									"j48",
-									this.balance(trainingInstances),
-									new Instances(testInstances)
+									new Instances(trainingInstances),
+									new Instances(testInstances),
+									true
 							);
 							// random forest
 							this.trainAndTest(
 									new RandomForest(),
 									training,
 									"random-forest",
-									this.balance(trainingInstances),
-									new Instances(testInstances)
+									new Instances(trainingInstances),
+									new Instances(testInstances),
+									true
 							);
-						} catch (Exception e) {
-							e.printStackTrace();
+							LOGGER.info("{} build classifiers {} done", this.data, training);
+						} catch (Throwable e) {
+							LOGGER.warn("{} build classifiers {} failed", this.data, training, e);
 						}
 					});
 				});
-		executor.awaitTermination(5, TimeUnit.HOURS);
 		executor.shutdown();
+		executor.awaitTermination(2, TimeUnit.HOURS);
 	}
 
 	private void trainAndTest(
-			Classifier classifier, String prefix, String postfix, Instances trainingInstances, Instances testInstances
+			Classifier classifier,
+			String prefix,
+			String postfix,
+			Instances trainingInstances,
+			Instances testInstances,
+			boolean balance
 	) throws Exception {
-		classifier.buildClassifier(trainingInstances);
+		classifier.buildClassifier(balance ? this.balance(trainingInstances) : trainingInstances);
 		SerializationHelper.write(this.directory.resolve(String.format("%s-%s.classifier", prefix, postfix))
 				.toAbsolutePath()
 				.toString(), classifier);
-		String output = "dataset,TP,FP,TN,FN\n";
+		String output = "dataset,type,tp,fp,tn,fn\n";
 		Evaluation evaluation = new Evaluation(trainingInstances);
 		evaluation.evaluateModel(classifier, trainingInstances);
 		output = String.format(
-				"%straining,%f,%f,%f,%f\n",
+				"%s%s,training,%d,%d,%d,%d\n",
 				output,
-				evaluation.numTruePositives(1),
-				evaluation.numFalsePositives(1),
-				evaluation.numTrueNegatives(1),
-				evaluation.numFalseNegatives(1)
+				prefix,
+				(int) evaluation.numTruePositives(1),
+				(int) evaluation.numFalsePositives(1),
+				(int) evaluation.numTrueNegatives(1),
+				(int) evaluation.numFalseNegatives(1)
 		);
 		evaluation = new Evaluation(trainingInstances);
 		evaluation.evaluateModel(classifier, testInstances);
 		output = String.format(
-				"%stest,%f,%f,%f,%f\n",
+				"%s%s,test,%d,%d,%d,%d\n",
 				output,
-				evaluation.numTruePositives(1),
-				evaluation.numFalsePositives(1),
-				evaluation.numTrueNegatives(1),
-				evaluation.numFalseNegatives(1)
+				prefix,
+				(int) evaluation.numTruePositives(1),
+				(int) evaluation.numFalsePositives(1),
+				(int) evaluation.numTrueNegatives(1),
+				(int) evaluation.numFalseNegatives(1)
 		);
 		Files.writeString(this.directory.resolve(String.format("%s-%s-output.csv", prefix, postfix)), output);
 	}

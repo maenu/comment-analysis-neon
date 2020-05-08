@@ -1,13 +1,20 @@
 package ch.unibe.scg.comment.analysis.neon.cli.task;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.io.InputStreamReader;
+import java.io.StringWriter;
 
 public class Utility {
 
 	public static String resource(String path) throws IOException {
-		return Files.readString(Paths.get(T7PrepareExperiments.class.getClassLoader().getResource(path).getFile()));
+		try (
+				StringWriter writer = new StringWriter();
+				InputStreamReader reader = new InputStreamReader(Utility.class.getClassLoader()
+						.getResourceAsStream(path))
+		) {
+			reader.transferTo(writer);
+			return writer.toString();
+		}
 	}
 
 }

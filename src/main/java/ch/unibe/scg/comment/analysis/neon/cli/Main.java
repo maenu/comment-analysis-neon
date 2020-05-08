@@ -1,5 +1,7 @@
 package ch.unibe.scg.comment.analysis.neon.cli;
 
+import ch.unibe.scg.comment.analysis.neon.cli.task.T10BuildClassifiers;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T11ImportClassifierOutputs;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T1Preprocess;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T2SplitSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T3MapSentences;
@@ -8,7 +10,7 @@ import ch.unibe.scg.comment.analysis.neon.cli.task.T5PrepareExtractors;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T6PrepareDatasets;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T7PrepareExperiments;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T8RunExperiments;
-import ch.unibe.scg.comment.analysis.neon.cli.task.T9BuildClassifiers;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T9ImportExperimentResults;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
@@ -72,23 +74,39 @@ public class Main {
 						)).run();
 					} else if ("8-run-experiments".equals(task)) {
 						(new T8RunExperiments(
-								database,
 								data,
 								Paths.get(System.getProperty("user.dir"))
 										.resolve("data")
 										.resolve(data)
 										.resolve("experiment"),
-								1
+								64
 						)).run();
-					} else if ("9-build-classifiers".equals(task)) {
-						(new T9BuildClassifiers(
+					} else if ("9-import-experiment-results".equals(task)) {
+						(new T9ImportExperimentResults(
 								database,
 								data,
 								Paths.get(System.getProperty("user.dir"))
 										.resolve("data")
 										.resolve(data)
+										.resolve("experiment")
+						)).run();
+					} else if ("10-build-classifiers".equals(task)) {
+						(new T10BuildClassifiers(
+								data,
+								Paths.get(System.getProperty("user.dir"))
+										.resolve("data")
+										.resolve(data)
 										.resolve("experiment"),
-								1
+								64
+						)).run();
+					} else if ("11-import-classifier-outputs".equals(task)) {
+						(new T11ImportClassifierOutputs(
+								database,
+								data,
+								Paths.get(System.getProperty("user.dir"))
+										.resolve("data")
+										.resolve(data)
+										.resolve("experiment")
 						)).run();
 					} else {
 						throw new IllegalArgumentException("task option is unknown");
