@@ -33,7 +33,6 @@ public class T11ImportClassifierOutputs {
 				Statement statement = connection.createStatement()
 		) {
 			statement.executeUpdate("PRAGMA foreign_keys = on");
-			statement.executeUpdate("DROP TABLE IF EXISTS " + this.data + "_11_classifier_outputs");
 			statement.executeUpdate(Utility.resource("sql/11_classifier_outputs.sql")
 					.replaceAll("\\{\\{data}}", this.data));
 			try (
