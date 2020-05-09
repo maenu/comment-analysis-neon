@@ -38,12 +38,17 @@ public class T11ImportClassifierOutputs {
 					.replaceAll("\\{\\{data}}", this.data));
 			try (
 					PreparedStatement insert = connection.prepareStatement("INSERT INTO " + this.data
-							+ "_11_classifier_outputs (dataset,type,tp,fp,tn,fn) VALUES (?, ?, ?, ?, ?, ?)")
+							+ "_11_classifier_outputs (category,classifier,features_tfidf,features_heuristic,type,tp,fp,tn,fn) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)")
 			) {
 				for (String prefix : Files.list(this.directory)
-						.filter(p -> p.getFileName().toString().endsWith("-output.csv"))
+						.filter(p -> p.getFileName().toString().endsWith("-outputs.csv"))
 						.map(p -> p.getFileName().toString().split("\\.")[0])
 						.collect(Collectors.toList())) {
+					String[] parts = prefix.split("-");
+					String category = parts[2];
+					boolean tfidf = parts[3].equals("tfidf");
+					boolean heuristic = parts.length == 7 ? parts[4].equals("heuristic") : parts[3].equals("heuristic");
+					String classifier = parts.length == 7 ? parts[5] : parts[4];
 					try (
 							CSVParser parser = CSVFormat.DEFAULT.withFirstRecordAsHeader()
 									.parse(Files.newBufferedReader(this.directory.resolve(String.format("%s.csv",
@@ -51,12 +56,15 @@ public class T11ImportClassifierOutputs {
 									))))
 					) {
 						for (CSVRecord record : parser) {
-							insert.setString(1, record.get("dataset"));
-							insert.setString(2, record.get("type"));
-							insert.setInt(3, (int) Double.parseDouble(record.get("tp")));
-							insert.setInt(4, (int) Double.parseDouble(record.get("fp")));
-							insert.setInt(5, (int) Double.parseDouble(record.get("tn")));
-							insert.setInt(6, (int) Double.parseDouble(record.get("fn")));
+							insert.setString(1, category);
+							insert.setString(2, classifier);
+							insert.setInt(3, tfidf ? 1 : 0);
+							insert.setInt(4, heuristic ? 1 : 0);
+							insert.setString(5, record.get("type"));
+							insert.setInt(6, (int) Double.parseDouble(record.get("tp")));
+							insert.setInt(7, (int) Double.parseDouble(record.get("fp")));
+							insert.setInt(8, (int) Double.parseDouble(record.get("tn")));
+							insert.setInt(9, (int) Double.parseDouble(record.get("fn")));
 							insert.executeUpdate();
 						}
 					}

@@ -61,7 +61,7 @@ public class T10BuildClassifiers {
 							this.trainAndTest(
 									new ZeroR(),
 									training,
-									"zero-r",
+									"zeror",
 									new Instances(trainingInstances),
 									new Instances(testInstances),
 									false
@@ -70,7 +70,7 @@ public class T10BuildClassifiers {
 							this.trainAndTest(
 									new OneR(),
 									training,
-									"one-r",
+									"oner",
 									new Instances(trainingInstances),
 									new Instances(testInstances),
 									false
@@ -79,7 +79,7 @@ public class T10BuildClassifiers {
 							this.trainAndTest(
 									new NaiveBayes(),
 									training,
-									"naive-bayes",
+									"naivebayes",
 									new Instances(trainingInstances),
 									new Instances(testInstances),
 									true
@@ -97,7 +97,7 @@ public class T10BuildClassifiers {
 							this.trainAndTest(
 									new RandomForest(),
 									training,
-									"random-forest",
+									"randomforest",
 									new Instances(trainingInstances),
 									new Instances(testInstances),
 									true
@@ -124,13 +124,12 @@ public class T10BuildClassifiers {
 		SerializationHelper.write(this.directory.resolve(String.format("%s-%s.classifier", prefix, postfix))
 				.toAbsolutePath()
 				.toString(), classifier);
-		String output = "dataset,type,tp,fp,tn,fn\n";
+		String output = "type,tp,fp,tn,fn\n";
 		Evaluation evaluation = new Evaluation(trainingInstances);
 		evaluation.evaluateModel(classifier, trainingInstances);
 		output = String.format(
-				"%s%s,training,%d,%d,%d,%d\n",
+				"%straining,%d,%d,%d,%d\n",
 				output,
-				prefix,
 				(int) evaluation.numTruePositives(1),
 				(int) evaluation.numFalsePositives(1),
 				(int) evaluation.numTrueNegatives(1),
@@ -139,15 +138,14 @@ public class T10BuildClassifiers {
 		evaluation = new Evaluation(trainingInstances);
 		evaluation.evaluateModel(classifier, testInstances);
 		output = String.format(
-				"%s%s,test,%d,%d,%d,%d\n",
+				"%stest,%d,%d,%d,%d\n",
 				output,
-				prefix,
 				(int) evaluation.numTruePositives(1),
 				(int) evaluation.numFalsePositives(1),
 				(int) evaluation.numTrueNegatives(1),
 				(int) evaluation.numFalseNegatives(1)
 		);
-		Files.writeString(this.directory.resolve(String.format("%s-%s-output.csv", prefix, postfix)), output);
+		Files.writeString(this.directory.resolve(String.format("%s-%s-outputs.csv", prefix, postfix)), output);
 	}
 
 	private Instances balance(Instances instances) throws Exception {

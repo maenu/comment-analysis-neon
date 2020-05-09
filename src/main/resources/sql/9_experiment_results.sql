@@ -66,5 +66,8 @@ CREATE TABLE "{{data}}_9_experiment_results"
     "Serialized_Test_Set_Size"          INTEGER NOT NULL,
     "Coverage_of_Test_Cases_By_Regions" NUMERIC NOT NULL,
     "Size_of_Predicted_Regions"         NUMERIC NOT NULL,
-    "Summary"                           TEXT    NOT NULL
+    "Summary"                           TEXT    NOT NULL,
+    "features_tfidf"                    INTEGER NOT NULL,
+    "features_heuristic"                INTEGER NOT NULL,
+    "category"                          TEXT    NOT NULL
 )

@@ -90,12 +90,13 @@ public class T7PrepareExperiments {
 		if (heuristic) {
 			postfix = postfix + "-heuristic";
 		}
-		String prefix = String.format("%d-%d-%s%s",
+		String prefix = String.format(
+				"%d-%d-%s%s",
 				partition,
 				extractorsPartition,
-				categoryAttributeName.substring("category-".length()),
+				categoryAttributeName.substring("category-".length()).toLowerCase().replaceAll("[^a-z0-9]", ""),
 				postfix
-		).toLowerCase().replaceAll("[^a-z0-9\\-]", "_");
+		);
 		Instances copy = this.prepareDataset(instances, categoryAttributeName, tfidf, heuristic);
 		copy.setRelationName(prefix);
 		// save dataset
@@ -111,7 +112,7 @@ public class T7PrepareExperiments {
 	) throws Exception {
 		if (!tfidf && !heuristic) {
 			throw new IllegalArgumentException(
-					"tfidf and heurstic cannot be both false, there would be no features left otherwise");
+					"tfidf and heuristic cannot be both false, there would be no features left otherwise");
 		}
 		// copy it, as we are going to mess with that one for sure
 		instances = new Instances(instances);
