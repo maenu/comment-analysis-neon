@@ -1,6 +1,4 @@
-CREATE VIEW {{data
-}
-} _3_sentence_mapping_clean AS
+CREATE VIEW "{{data}}_3_sentence_mapping_clean" AS
 SELECT s.class     AS class,
        r.stratum   AS stratum,
        s.id        AS comment_sentence_id,
@@ -8,11 +6,11 @@ SELECT s.class     AS class,
        ms.id       AS category_sentence_id,
        ms.sentence AS category_sentence,
        ms.category AS category
-FROM {{data}} _2_sentence s
-    JOIN {{data}} _0_raw r
+FROM "{{data}}_2_sentence" s
+    JOIN "{{data}}_0_raw" r
 ON (r.class = s.class)
-    JOIN {{data}} _3_sentence_mapping m ON (m.comment_sentence_id = s.id)
-    JOIN {{data}} _2_sentence ms ON (ms.id = m.category_sentence_id)
+    JOIN "{{data}}_3_sentence_mapping" m ON (m.comment_sentence_id = s.id)
+    JOIN "{{data}}_2_sentence" ms ON (ms.id = m.category_sentence_id)
 WHERE s.category = 'comment'
   AND (
     m.strategy = 'equals'

@@ -103,9 +103,15 @@ public class T5PrepareExtractors {
 		}
 	}
 
+	/**
+	 * get the heuristics for each category using NEON
+	 * @param category a category from the taxonomy
+	 * @param entries all sentences of the category
+	 * @return heuristics for the category collected from NEON
+	 */
 	private ArrayList<Heuristic> heuristics(String category, List<String> entries) {
-		ArrayList<Sentence> sentences = Parser.getInstance().parse(String.join("\n\n", entries));
-		ArrayList<GrammaticalPath> paths = PathsFinder.getInstance().discoverCommonPaths(sentences);
+		ArrayList<Sentence> sentences = Parser.getInstance().parse(String.join("\n\n", entries)); //sentences: a list of each sentence with its type (declarative|Interrogative) and graph received from NEON, graph: morphology analysis of the sentence.
+		ArrayList<GrammaticalPath> paths = PathsFinder.getInstance().discoverCommonPaths(sentences); //minimized identical path identified from all the sentences heuristic by comparing their conditions
 		return paths.stream().map(p -> {
 			Heuristic heuristic = new Heuristic();
 			heuristic.setConditions(p.getConditions().stream().map(s -> {
@@ -163,5 +169,4 @@ public class T5PrepareExtractors {
 		categories.remove("comment");
 		return categories;
 	}
-
 }

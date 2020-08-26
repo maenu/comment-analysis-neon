@@ -7,6 +7,7 @@ import ch.unibe.scg.comment.analysis.neon.cli.task.T2SplitSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T3MapSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T4PartitionSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T5PrepareExtractors;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T5PrepareSentencesWithNLPPatterns;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T6PrepareDatasets;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T7PrepareExperiments;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T8RunExperiments;
@@ -43,7 +44,7 @@ public class Main {
 				.required()
 				.hasArgs()
 				.valueSeparator(',')
-				.desc("task to perform, split by ',', [preprocess|split-sentences|map-sentences|partition|prepare-extractors|prepare-datasets]")
+				.desc("task to perform, split by ',', [5-sentences-nlp-patterns]")
 				.build());
 		try {
 			CommandLine line = parser.parse(options, args);
@@ -59,6 +60,8 @@ public class Main {
 						(new T3MapSentences(database, data)).run();
 					} else if ("4-partition-sentences".equals(task)) {
 						(new T4PartitionSentences(database, data, new int[]{3, 1})).run();
+					} else if ("5-sentences-nlp-patterns".equals(task)) {
+						(new T5PrepareSentencesWithNLPPatterns(database, data)).run();
 					} else if ("5-prepare-extractors".equals(task)) {
 						(new T5PrepareExtractors(database, data, 1000)).run();
 					} else if ("6-prepare-datasets".equals(task)) {
