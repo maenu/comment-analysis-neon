@@ -55,10 +55,11 @@ public class T5PrepareSentencesWithNLPPatterns {
 						if (!categoryMappingSentences.containsKey(category)) {
 							categoryMappingSentences.put(category, new ArrayList<>());
 						}
-						categoryMappingSentences.get(category).add(result.getString("comment_sentence"));
+						String sentence = result.getString("comment_sentence");
+						if(!sentence.isEmpty()) {
+							categoryMappingSentences.get(category).add(sentence);
+						}
 					}
-
-
 				}
 			}
 
