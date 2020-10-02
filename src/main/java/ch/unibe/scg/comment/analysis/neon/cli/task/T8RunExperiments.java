@@ -14,6 +14,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
+/** Load all training (0-0-categoryName_feature) arff files, and train the mentioned classifiers in experiment.xml.
+ * @data language under analysis
+ * @directory directory of the dataset where arff files and other intermediate data is saved
+ */
 public class T8RunExperiments {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(T8RunExperiments.class);

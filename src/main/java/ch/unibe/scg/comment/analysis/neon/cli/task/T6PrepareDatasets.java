@@ -20,6 +20,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+/** Prepares all features (text+NLP) and labels into one dataset and separate them according to each paritition
+ * @datbase input database (sqlite for now)
+ * @data language under analysis
+ * @extractorsPartition number of partitions
+ */
 public class T6PrepareDatasets {
 
 	private final String database;
@@ -75,7 +80,7 @@ public class T6PrepareDatasets {
 					}
 					try (ByteArrayOutputStream buffer = new ByteArrayOutputStream()) {
 						ArffSaver saver = new ArffSaver();
-						saver.setInstances(builder.build());
+						saver.setInstances(builder.build()); //build the features
 						saver.setDestination(buffer);
 						saver.writeBatch();
 						insert.setInt(1, partition.getKey());

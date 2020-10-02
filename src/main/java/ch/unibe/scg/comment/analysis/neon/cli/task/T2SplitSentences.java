@@ -14,6 +14,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/** Split the sentences using Neon parser to keep the consistent with heuristics.
+ *
+ */
 public class T2SplitSentences {
 
 	private final String database;

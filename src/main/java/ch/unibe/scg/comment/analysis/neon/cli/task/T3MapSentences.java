@@ -10,6 +10,10 @@ import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
 
+/** Map the sentences from comment category to the categories where it is classified to find if have unclassified sentences.
+ * @Note: One sentence can belong to multiple categories and not all sentences put in the categories are full-fledged sentence.
+ *
+ */
 public class T3MapSentences {
 
 	private final String database;

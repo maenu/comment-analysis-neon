@@ -7,6 +7,7 @@ import weka.core.SparseInstance;
 import weka.core.converters.ArffLoader;
 import weka.core.converters.ArffSaver;
 import weka.core.stemmers.IteratedLovinsStemmer;
+import weka.core.stopwords.Rainbow;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.FixedDictionaryStringToWordVector;
 
@@ -19,6 +20,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+/** Creates the instances (dataset) and prepare the arff files
+ * @heuristics features from heuristics generated from Neon.
+ * @dictionary features from tfidif
+ * @categories list of categories
+ */
 public class InstancesBuilder {
 
 	private final List<String> categories;
@@ -58,6 +64,12 @@ public class InstancesBuilder {
 		return Files.readAllBytes(path);
 	}
 
+	/** Preprocess the comment.
+	 * Allow only letter and digit, remove all special symbols, and atmost 400 characters in a sentence.
+	 *
+	 * @param s the comment to preprocess
+	 * @return preprocessed sentence
+	 */
 	public static String preprocess(String s) {
 		if (s == null) {
 			return null;
@@ -112,7 +124,7 @@ public class InstancesBuilder {
 	}
 
 	public Instances build() throws Exception {
-		Instances instances = this.tfidf(this.heuristic(this.instances));
+		Instances instances = this.tfidf(this.heuristic(this.instances)); //adding tfidf features and heuristic feature
 		instances.setRelationName(this.instances.relationName());
 		return instances;
 	}
@@ -147,6 +159,7 @@ public class InstancesBuilder {
 		int i = instances.attribute("text").index() + 1;
 		FixedDictionaryStringToWordVector filter = new FixedDictionaryStringToWordVector();
 		filter.setLowerCaseTokens(true);
+		filter.setStopwordsHandler(new Rainbow());
 		filter.setStemmer(new IteratedLovinsStemmer());
 		filter.setOutputWordCounts(true);
 		filter.setTFTransform(true);

@@ -16,6 +16,11 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+/** Prepare the dataset, generate arff files from the dataset and store them
+ * @datbase input database (sqlite for now)
+ * @data language under analysis
+ * @directory directory of the dataset where arff files and other intermediate data can be saved
+ */
 public class T7PrepareExperiments {
 
 	private final String database;
@@ -52,8 +57,15 @@ public class T7PrepareExperiments {
 							categoryAttributeNames.add(name);
 						}
 					}
+					//for each category, prepare and generate arff files for each feature set (tfidf, heuristic, and both)
 					for (String categoryAttributeName : categoryAttributeNames) {
-						this.storeDataset(instances, partition, extractorsPartition, categoryAttributeName, true, true);
+						this.storeDataset(instances,
+								partition,
+								extractorsPartition,
+								categoryAttributeName,
+								true,
+								true
+						);
 						this.storeDataset(instances,
 								partition,
 								extractorsPartition,

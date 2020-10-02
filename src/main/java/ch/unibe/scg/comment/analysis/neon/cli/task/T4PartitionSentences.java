@@ -17,6 +17,9 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
+/** Prepare the partitions from the whole dataset.
+ * @partitions number of partitions to create. Currently we have training (0_0) and testing (1_0) split.
+ */
 public class T4PartitionSentences {
 
 	private final String database;

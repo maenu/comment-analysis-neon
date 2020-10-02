@@ -55,10 +55,7 @@ public class T5PrepareSentencesWithNLPPatterns {
 						if (!categoryMappingSentences.containsKey(category)) {
 							categoryMappingSentences.put(category, new ArrayList<>());
 						}
-						String sentence = result.getString("comment_sentence");
-						if(!sentence.isEmpty()) {
-							categoryMappingSentences.get(category).add(sentence);
-						}
+							categoryMappingSentences.get(category).add(result.getString("comment_sentence"));
 					}
 				}
 			}
@@ -71,7 +68,11 @@ public class T5PrepareSentencesWithNLPPatterns {
 
 				for(Heuristic anHeuristic : heuristics)
 				{
-					patterns.add(anHeuristic.getText());
+					String aPattern = anHeuristic.getText();
+					if(!aPattern.isEmpty())
+					{
+						patterns.add(aPattern);
+					}
 				}
 
 				heuristicsMapping.put(aCategory.getKey(),patterns);

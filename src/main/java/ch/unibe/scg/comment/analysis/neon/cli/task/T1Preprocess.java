@@ -12,6 +12,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/** Preprocess the comments using @Link{InstanceBuilder}
+ *
+ */
 public class T1Preprocess {
 
 	private final String database;
@@ -41,7 +44,7 @@ public class T1Preprocess {
 					String comment = result.getString("comment");
 					insert.setString(1, clazz);
 					insert.setInt(2, stratum);
-					insert.setString(3, InstancesBuilder.preprocess(comment));
+					insert.setString(3, InstancesBuilder.preprocess(comment)); //preprocess the comment
 					for (int i = 0; i < categories.size(); i = i + 1) {
 						insert.setString(4 + i, InstancesBuilder.preprocess(result.getString(4 + i)));
 					}

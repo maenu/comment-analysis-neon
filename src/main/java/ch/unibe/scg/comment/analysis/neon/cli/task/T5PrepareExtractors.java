@@ -11,6 +11,7 @@ import weka.core.Attribute;
 import weka.core.DenseInstance;
 import weka.core.Instances;
 import weka.core.stemmers.IteratedLovinsStemmer;
+import weka.core.stopwords.Rainbow;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
@@ -28,6 +29,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/** Extract the NLP (heuristic) features and text (Tfidf) features for each partition and prepares the features
+ * @datbase input database (sqlite for now)
+ * @data language under analysis
+ * @wordsToKeep number of words to keep for tfidf
+ */
 public class T5PrepareExtractors {
 
 	private final String database;
@@ -104,7 +110,7 @@ public class T5PrepareExtractors {
 	}
 
 	/**
-	 * get the heuristics for each category using NEON
+	 * Get heuristics for each category using NEON
 	 * @param category a category from the taxonomy
 	 * @param entries all sentences of the category
 	 * @return heuristics for the category collected from NEON
@@ -127,6 +133,12 @@ public class T5PrepareExtractors {
 		}).collect(Collectors.toCollection(ArrayList::new));
 	}
 
+	/**
+	 * Gets text (tfidf) features after preprocessing (filtering) the data.
+	 * @param sentences all sentences from all the categories
+	 * @return words as features
+	 * @throws Exception
+	 */
 	private byte[] dictionary(List<String> sentences) throws Exception {
 		ArrayList<Attribute> attributes = new ArrayList<>();
 		attributes.add(new Attribute("text", (List<String>) null, null));
@@ -138,10 +150,12 @@ public class T5PrepareExtractors {
 		}
 		Path path = Files.createTempFile("dictionary", ".csv");
 		try {
+			//perform a series of steps for tfidf features
 			StringToWordVector filter = new StringToWordVector();
 			filter.setOutputWordCounts(true);
 			filter.setLowerCaseTokens(true);
 			filter.setDoNotOperateOnPerClassBasis(true);
+			filter.setStopwordsHandler(new Rainbow()); //stopwords list based on http://www.cs.cmu.edu/~mccallum/bow/rainbow/
 			filter.setStemmer(new IteratedLovinsStemmer());
 			filter.setWordsToKeep(this.wordsToKeep);
 			filter.setAttributeIndicesArray(new int[]{0}); // first attribute is sentence

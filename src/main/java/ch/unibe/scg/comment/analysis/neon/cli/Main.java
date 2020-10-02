@@ -44,7 +44,7 @@ public class Main {
 				.required()
 				.hasArgs()
 				.valueSeparator(',')
-				.desc("task to perform, split by ',', [5-sentences-nlp-patterns]")
+				.desc("task to perform, split by ',', [1-preprocess,2-split-sentences,3-map-sentences,4-partition-sentences,5-prepare-extractors,6-prepare-datasets,7-prepare-experiments,8-run-experiments,9-import-experiment-results,10-build-classifiers,11-import-classifier-outputs]")
 				.build());
 		try {
 			CommandLine line = parser.parse(options, args);
@@ -59,7 +59,8 @@ public class Main {
 					} else if ("3-map-sentences".equals(task)) {
 						(new T3MapSentences(database, data)).run();
 					} else if ("4-partition-sentences".equals(task)) {
-						(new T4PartitionSentences(database, data, new int[]{3, 1})).run();
+						//60% training split and 40% testing split
+						(new T4PartitionSentences(database, data, new int[]{60, 40})).run();
 					} else if ("5-sentences-nlp-patterns".equals(task)) {
 						(new T5PrepareSentencesWithNLPPatterns(database, data)).run();
 					} else if ("5-prepare-extractors".equals(task)) {
@@ -82,7 +83,7 @@ public class Main {
 										.resolve("data")
 										.resolve(data)
 										.resolve("experiment"),
-								64
+								200
 						)).run();
 					} else if ("9-import-experiment-results".equals(task)) {
 						(new T9ImportExperimentResults(
@@ -100,7 +101,7 @@ public class Main {
 										.resolve("data")
 										.resolve(data)
 										.resolve("experiment"),
-								64
+								200
 						)).run();
 					} else if ("11-import-classifier-outputs".equals(task)) {
 						(new T11ImportClassifierOutputs(
