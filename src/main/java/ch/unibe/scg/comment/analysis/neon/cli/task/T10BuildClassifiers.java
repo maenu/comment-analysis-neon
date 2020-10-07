@@ -82,7 +82,7 @@ public class T10BuildClassifiers {
 									"naivebayes",
 									new Instances(trainingInstances),
 									new Instances(testInstances),
-									true
+									false
 							);
 							// j48
 							this.trainAndTest(
@@ -91,7 +91,7 @@ public class T10BuildClassifiers {
 									"j48",
 									new Instances(trainingInstances),
 									new Instances(testInstances),
-									true
+									false
 							);
 							// random forest
 							this.trainAndTest(
@@ -100,7 +100,7 @@ public class T10BuildClassifiers {
 									"randomforest",
 									new Instances(trainingInstances),
 									new Instances(testInstances),
-									true
+									false
 							);
 							LOGGER.info("{} build classifiers {} done", this.data, training);
 						} catch (Throwable e) {
@@ -124,26 +124,30 @@ public class T10BuildClassifiers {
 		SerializationHelper.write(this.directory.resolve(String.format("%s-%s.classifier", prefix, postfix))
 				.toAbsolutePath()
 				.toString(), classifier);
-		String output = "type,tp,fp,tn,fn\n";
+		String output = "type,tp,fp,tn,fn,pr,re\n";
 		Evaluation evaluation = new Evaluation(trainingInstances);
 		evaluation.evaluateModel(classifier, trainingInstances);
 		output = String.format(
-				"%straining,%d,%d,%d,%d\n",
+				"%straining,%d,%d,%d,%d,%d,%d\n",
 				output,
 				(int) evaluation.numTruePositives(1),
 				(int) evaluation.numFalsePositives(1),
 				(int) evaluation.numTrueNegatives(1),
-				(int) evaluation.numFalseNegatives(1)
+				(int) evaluation.numFalseNegatives(1),
+				evaluation.precision(1),
+				evaluation.recall(1)
 		);
 		evaluation = new Evaluation(trainingInstances);
 		evaluation.evaluateModel(classifier, testInstances);
 		output = String.format(
-				"%stest,%d,%d,%d,%d\n",
+				"%stest,%d,%d,%d,%d,%d,%d\n",
 				output,
 				(int) evaluation.numTruePositives(1),
 				(int) evaluation.numFalsePositives(1),
 				(int) evaluation.numTrueNegatives(1),
-				(int) evaluation.numFalseNegatives(1)
+				(int) evaluation.numFalseNegatives(1),
+				evaluation.precision(1),
+				evaluation.recall(1)
 		);
 		Files.writeString(this.directory.resolve(String.format("%s-%s-outputs.csv", prefix, postfix)), output);
 	}

@@ -37,7 +37,7 @@ public class T11ImportClassifierOutputs {
 					.replaceAll("\\{\\{data}}", this.data));
 			try (
 					PreparedStatement insert = connection.prepareStatement("INSERT INTO " + this.data
-							+ "_11_classifier_outputs (category,classifier,features_tfidf,features_heuristic,type,tp,fp,tn,fn) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)")
+							+ "_11_classifier_outputs (category,classifier,features_tfidf,features_heuristic,type,tp,fp,tn,fn,pr,re) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,?,?)")
 			) {
 				for (String prefix : Files.list(this.directory)
 						.filter(p -> p.getFileName().toString().endsWith("-outputs.csv"))
@@ -64,6 +64,8 @@ public class T11ImportClassifierOutputs {
 							insert.setInt(7, (int) Double.parseDouble(record.get("fp")));
 							insert.setInt(8, (int) Double.parseDouble(record.get("tn")));
 							insert.setInt(9, (int) Double.parseDouble(record.get("fn")));
+							insert.setInt(10, (int) Double.parseDouble(record.get("pr")));
+							insert.setInt(11, (int) Double.parseDouble(record.get("re")));
 							insert.executeUpdate();
 						}
 					}
