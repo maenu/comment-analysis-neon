@@ -38,7 +38,7 @@ public class T5PrepareSentencesWithNLPPatterns {
 			statement.executeUpdate("PRAGMA foreign_keys = on");
 			statement.executeUpdate(Utility.resource("sql/5_category_heuristic_mapping.sql")
 					.replaceAll("\\{\\{data}}", this.data));
-			PreparedStatement insert = connection.prepareStatement("INSERT INTO " + this.data + "_5_category_heuristic_mapping (category, heuristics) VALUES (?, ?)");
+			PreparedStatement insert = connection.prepareStatement("INSERT INTO " + this.data + "_5_category_heuristic_mapping (comment_sentence_id, category, heuristics) VALUES (?, ?, ?)");
 
 			Map<String, List<String>> categoryMappingSentences = new HashMap<>();
 			Map<String, List<String>> heuristicsMapping = new HashMap<>();
@@ -48,7 +48,7 @@ public class T5PrepareSentencesWithNLPPatterns {
 			for (String category : this.categories(statement)) {
 				try (
 						ResultSet result = statement.executeQuery(
-								"SELECT category, comment_sentence FROM " + this.data + "_3_sentence_mapping_clean WHERE category = \"" + category
+								"SELECT category, comment_sentence, comment_sentence_id FROM " + this.data + "_3_sentence_mapping_clean WHERE category = \"" + category
 										+ "\"");
 				) {
 					while (result.next()) {
