@@ -128,7 +128,7 @@ public class T10BuildClassifiers {
 		Evaluation evaluation = new Evaluation(trainingInstances);
 		evaluation.evaluateModel(classifier, trainingInstances);
 		output = String.format(
-				"%straining,%d,%d,%d,%d,%d,%d\n",
+				"%straining,%d,%d,%d,%d,%f,%f\n",
 				output,
 				(int) evaluation.numTruePositives(1),
 				(int) evaluation.numFalsePositives(1),
@@ -140,7 +140,7 @@ public class T10BuildClassifiers {
 		evaluation = new Evaluation(trainingInstances);
 		evaluation.evaluateModel(classifier, testInstances);
 		output = String.format(
-				"%stest,%d,%d,%d,%d,%d,%d\n",
+				"%stest,%d,%d,%d,%d,%f,%f\n",
 				output,
 				(int) evaluation.numTruePositives(1),
 				(int) evaluation.numFalsePositives(1),

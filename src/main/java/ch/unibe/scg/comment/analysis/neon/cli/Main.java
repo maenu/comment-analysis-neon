@@ -64,7 +64,7 @@ public class Main {
 					} else if ("5-sentences-nlp-patterns".equals(task)) {
 						(new T5PrepareSentencesWithNLPPatterns(database, data)).run();
 					} else if ("5-prepare-extractors".equals(task)) {
-						(new T5PrepareExtractors(database, data, 1000)).run();
+						(new T5PrepareExtractors(database, data, Integer.MAX_VALUE)).run();
 					} else if ("6-prepare-datasets".equals(task)) {
 						(new T6PrepareDatasets(database, data, 0)).run();
 					} else if ("7-prepare-experiments".equals(task)) {
