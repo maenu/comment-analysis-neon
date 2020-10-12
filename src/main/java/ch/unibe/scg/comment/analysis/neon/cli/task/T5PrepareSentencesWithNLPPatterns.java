@@ -1,14 +1,12 @@
 package ch.unibe.scg.comment.analysis.neon.cli.task;
 
-import org.neon.model.Condition;
-import org.neon.model.Heuristic;
-import org.neon.pathsFinder.engine.Parser;
-import org.neon.pathsFinder.engine.PathsFinder;
-import org.neon.pathsFinder.model.GrammaticalPath;
-import org.neon.pathsFinder.model.Sentence;
+import org.neon.model.Result;
+import org.neon.engine.Parser;
 
+import java.io.File;
 import java.io.IOException;
-import java.sql.Array;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -16,102 +14,90 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 public class T5PrepareSentencesWithNLPPatterns {
 
 	private final String database;
 	private final String data;
+	private final int extractorsPartition;
+	private File heuristicFile;
 
-	public T5PrepareSentencesWithNLPPatterns(String database, String data) {
+	public T5PrepareSentencesWithNLPPatterns(String database, String data, int extractorsPartition) {
 		this.database = database;
 		this.data = data;
+		this.extractorsPartition = extractorsPartition;
 	}
 
 	public void run() throws SQLException, IOException {
 		try (
-				Connection connection = DriverManager.getConnection("jdbc:sqlite:" + this.database); Statement statement = connection.createStatement()
+				Connection connection = DriverManager.getConnection("jdbc:sqlite:" + this.database);
+				Statement statement = connection.createStatement()
 		) {
 			statement.executeUpdate("PRAGMA foreign_keys = on");
-			statement.executeUpdate(Utility.resource("sql/5_category_heuristic_mapping.sql")
+			statement.executeUpdate(Utility.resource("sql/5_sentence_heuristic_mapping.sql")
 					.replaceAll("\\{\\{data}}", this.data));
-			PreparedStatement insert = connection.prepareStatement("INSERT INTO " + this.data + "_5_category_heuristic_mapping (comment_sentence_id, category, heuristics) VALUES (?, ?, ?)");
+			PreparedStatement insert = connection.prepareStatement("INSERT INTO " + this.data + "_5_sentence_heuristic_mapping (comment_sentence_id, comment_sentence, heuristics, category) VALUES (?, ?, ?, ?)");
 
-			Map<String, List<String>> categoryMappingSentences = new HashMap<>();
-			Map<String, List<String>> heuristicsMapping = new HashMap<>();
-			ArrayList<Heuristic> heuristics = new ArrayList<>();
-			ArrayList<String> patterns = new ArrayList<>();
+			//Get the neon generated heuristics and store them in a file
+			try (
+					ResultSet result = statement.executeQuery(
+							"SELECT heuristics FROM " + this.data + "_5_extractors WHERE partition = "
+									+ this.extractorsPartition + "")
+			) {
+				Path heuristicsPath = Files.createTempFile("heuristics", ".xml");
+				Files.write(heuristicsPath, result.getBytes("heuristics"));
+				this.heuristicFile = heuristicsPath.toFile();
+			}
 
 			for (String category : this.categories(statement)) {
 				try (
 						ResultSet result = statement.executeQuery(
-								"SELECT category, comment_sentence, comment_sentence_id FROM " + this.data + "_3_sentence_mapping_clean WHERE category = \"" + category
-										+ "\"");
+								"SELECT comment_sentence_id, comment_sentence, category  FROM " + this.data + "_3_sentence_mapping_clean WHERE category = \"" + category
+										+ "\"")
 				) {
 					while (result.next()) {
-						if (!categoryMappingSentences.containsKey(category)) {
-							categoryMappingSentences.put(category, new ArrayList<>());
-						}
-							categoryMappingSentences.get(category).add(result.getString("comment_sentence"));
+						int id = result.getInt("comment_sentence_id");
+						String sentence = result.getString("comment_sentence");
+						String sentence_category = result.getString("category");
+
+						String heuristics = this.predictCategory(sentence);
+						insert.setInt(1,id);
+						insert.setString(2,sentence);
+						insert.setString(3,heuristics);
+						insert.setString(4,sentence_category);
+						insert.execute();
 					}
 				}
-			}
-
-			for (Map.Entry<String, List<String>> aCategory : categoryMappingSentences.entrySet()) {
-				if(!heuristicsMapping.containsKey(aCategory.getKey())){
-					heuristicsMapping.put(aCategory.getKey(), new ArrayList<>());
-				}
-				heuristics.addAll(this.heuristics(aCategory.getKey(), aCategory.getValue()));
-
-				for(Heuristic anHeuristic : heuristics)
-				{
-					String aPattern = anHeuristic.getText();
-					if(!aPattern.isEmpty())
-					{
-						patterns.add(aPattern);
-					}
-				}
-
-				heuristicsMapping.put(aCategory.getKey(),patterns);
-				for (int i = 0; i <patterns.size();i++)
-				{
-					insert.setString(1,aCategory.getKey());
-					insert.setString(2, patterns.get(i));
-					insert.execute();
-
-				}
-
 			}
 		}
 	}
 
 	/**
-	 * get the heuristics for each category using NEON
-	 * @param category a category from the taxonomy
-	 * @param entries all sentences of the category
-	 * @return heuristics for the category collected from NEON
+	 *
+	 * @param text the sentence to classify
+	 * @return
+	 * @throws SQLException
+	 * @throws IOException
 	 */
-	private ArrayList<Heuristic> heuristics(String category, List<String> entries) {
-		ArrayList<Sentence> sentences = Parser.getInstance().parse(String.join("\n\n", entries)); //sentences: a list of each sentence with its type (declarative|Interrogative) and graph received from NEON, graph: morphology analysis of the sentence.
-		ArrayList<GrammaticalPath> paths = PathsFinder.getInstance().discoverCommonPaths(sentences); //minimized identical path identified from all the sentences heuristic by comparing their conditions
-		return paths.stream().map(p -> {
-			Heuristic heuristic = new Heuristic();
-			heuristic.setConditions(p.getConditions().stream().map(s -> {
-				Condition condition = new Condition();
-				condition.setConditionString(s);
-				return condition;
-			}).collect(Collectors.toCollection(ArrayList::new)));
-			heuristic.setType(p.getDependenciesPath());
-			heuristic.setSentence_type(p.identifySentenceType());
-			heuristic.setText(p.getTemplateText());
-			heuristic.setSentence_class(category);
-			return heuristic;
-		}).collect(Collectors.toCollection(ArrayList::new));
+	private String predictCategory(String text) throws IOException {
+		ArrayList<Result> results = new ArrayList<>();
+		ArrayList<String> sentence_heuristics =  new ArrayList<>();
+
+			  results = Parser.getInstance().extract(text, this.heuristicFile);
+			  for(Result r: results){
+				  System.out.println("SentenceClass: " + r.getSentenceClass());
+				  System.out.println("Heuristic: " +  r.getHeuristic());
+				  System.out.println("heuristic_category: "+ this.featureName(r.getSentenceClass(),r.getHeuristic()));
+				  sentence_heuristics.add(r.getHeuristic());
+			  }
+		return sentence_heuristics.stream().collect(Collectors.joining("#"));
 	}
 
+	/**
+	 * @return "categories"
+	 */
 	private List<String> categories(Statement statement) throws SQLException {
 		List<String> categories = new ArrayList<>();
 		try (
@@ -126,5 +112,12 @@ public class T5PrepareSentencesWithNLPPatterns {
 		categories.remove("stratum");
 		categories.remove("comment");
 		return categories;
+	}
+
+	/**
+	 * @return "heuristic-[category]-[heuristic]"
+	 */
+	private String featureName(String category, String heuristic) {
+		return String.format("heuristic-%s-%s", category, heuristic);
 	}
 }

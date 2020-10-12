@@ -61,10 +61,10 @@ public class Main {
 					} else if ("4-partition-sentences".equals(task)) {
 						//60% training split and 40% testing split
 						(new T4PartitionSentences(database, data, new int[]{60, 40})).run();
-					} else if ("5-sentences-nlp-patterns".equals(task)) {
-						(new T5PrepareSentencesWithNLPPatterns(database, data)).run();
 					} else if ("5-prepare-extractors".equals(task)) {
 						(new T5PrepareExtractors(database, data, Integer.MAX_VALUE)).run();
+					} else if ("5-sentences-nlp-patterns".equals(task)) {
+						(new T5PrepareSentencesWithNLPPatterns(database, data,0)).run();
 					} else if ("6-prepare-datasets".equals(task)) {
 						(new T6PrepareDatasets(database, data, 0)).run();
 					} else if ("7-prepare-experiments".equals(task)) {
@@ -83,7 +83,7 @@ public class Main {
 										.resolve("data")
 										.resolve(data)
 										.resolve("experiment"),
-								200
+								4
 						)).run();
 					} else if ("9-import-experiment-results".equals(task)) {
 						(new T9ImportExperimentResults(
@@ -101,7 +101,7 @@ public class Main {
 										.resolve("data")
 										.resolve(data)
 										.resolve("experiment"),
-								200
+								4
 						)).run();
 					} else if ("11-import-classifier-outputs".equals(task)) {
 						(new T11ImportClassifierOutputs(
