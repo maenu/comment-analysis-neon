@@ -24,6 +24,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -38,6 +39,7 @@ public class T5PrepareSentencesWithNLPPatterns {
 	private List<String> featureNames;
 	private final Path directory;
 	private static CSVPrinter csvPrinter;
+	private LinkedHashMap <String, Object> csvHeaders;
 
 	public T5PrepareSentencesWithNLPPatterns(String database, String data, Path directory) {
 		this.database = database;
@@ -106,22 +108,20 @@ public class T5PrepareSentencesWithNLPPatterns {
 	 */
 
 	private void storeMatchedFeatures(int comment_sentence_id, String comment_sentence, Set<String> matchedFeatureNames, String category) throws IOException {
-		Map<String, Integer> heuristicMapping = new HashMap<>();
-		Collection<Object> record = new ArrayList<Object>(this.featureNames.size()+3);
 
-		for (String name : this.featureNames) {
-			heuristicMapping.put(name,0);
-		}
+		Collection<Object> record = new ArrayList<Object>(this.featureNames.size()+3);
+		LinkedHashMap <String, Integer> heuristicMapping = new LinkedHashMap((Map<? extends String, ? extends Integer>) csvHeaders.clone());
 
 		if(!matchedFeatureNames.isEmpty()){
-			for(String matchedFeatureName: matchedFeatureNames){
-				heuristicMapping.put(matchedFeatureName,1);
+			for(String featureName: matchedFeatureNames){
+				heuristicMapping.put(featureName,1);
 			}
 		}
 		record.add(comment_sentence_id);
 		record.add(comment_sentence);
 		record.addAll(heuristicMapping.values());
 		record.add(category);
+
 		csvPrinter.printRecord(record);
 	}
 
@@ -137,14 +137,16 @@ public class T5PrepareSentencesWithNLPPatterns {
 			BufferedWriter bufferedWriter = Files.newBufferedWriter(this.directory.resolve(String.format("%s-sentenceHeuristicMapping.csv", this.data)),
 						StandardOpenOption.APPEND,StandardOpenOption.CREATE);
 			csvPrinter = new CSVPrinter(bufferedWriter,CSVFormat.DEFAULT.withFirstRecordAsHeader());
+			csvHeaders = new LinkedHashMap<>(this.featureNames.size());
 			ArrayList<String> headers = new ArrayList<String>(this.featureNames.size()+3);
 
 			headers.add(comment_sentence_id);
 			headers.add(comment_sentence);
 			for(String name: this.featureNames){
-				headers.add(name); }
+				csvHeaders.put(name,0);
+			}
+			headers.addAll(csvHeaders.keySet());
 			headers.add(category);
-
 			csvPrinter.printRecord(headers);
 
 		} catch(Exception e){
