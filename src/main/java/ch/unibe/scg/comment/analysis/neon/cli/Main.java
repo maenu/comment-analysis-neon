@@ -60,7 +60,7 @@ public class Main {
 					} else if ("3-map-sentences".equals(task)) {
 						(new T3MapSentences(database, data)).run();
 					} else if ("4-partition-sentences".equals(task)) {
-						//60% training split and 40% testing split
+						//{60,40} 60% training split and 40% testing split
 						(new T4PartitionSentences(database, data, new int[]{100,0})).run();
 					} else if ("5-prepare-extractors".equals(task)) {
 						(new T5PrepareExtractors(database, data, Integer.MAX_VALUE)).run();

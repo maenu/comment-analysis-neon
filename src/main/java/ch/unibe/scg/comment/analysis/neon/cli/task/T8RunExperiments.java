@@ -34,7 +34,7 @@ public class T8RunExperiments {
 	}
 
 	public void run() throws IOException, InterruptedException, SQLException {
-		String experimentConfigurationTemplate = Utility.resource("experiment.xml");
+		String experimentConfigurationTemplate = Utility.resource("WithoutClassBal-ChangedOutClass.xml");
 		ExecutorService executor = Executors.newFixedThreadPool(this.threads);
 		// prefix: <training/testing-category-featureset> eg., 0-0-licensecopyright-tfidf
 		for (String prefix : Files.list(this.directory)
