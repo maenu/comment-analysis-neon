@@ -64,8 +64,8 @@ public class T11ImportClassifierOutputs {
 							insert.setInt(7, (int) Double.parseDouble(record.get("fp")));
 							insert.setInt(8, (int) Double.parseDouble(record.get("tn")));
 							insert.setInt(9, (int) Double.parseDouble(record.get("fn")));
-							insert.setInt(10, (int) Double.parseDouble(record.get("pr")));
-							insert.setInt(11, (int) Double.parseDouble(record.get("re")));
+							insert.setDouble(10, (int) Double.parseDouble(record.get("pr")));
+							insert.setDouble(11, (int) Double.parseDouble(record.get("re")));
 							insert.executeUpdate();
 						}
 					}
