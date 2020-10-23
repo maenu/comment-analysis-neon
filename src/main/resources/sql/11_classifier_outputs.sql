@@ -9,6 +9,6 @@ CREATE TABLE "{{data}}_11_classifier_outputs"
     "fp"                 INTEGER NOT NULL,
     "tn"                 INTEGER NOT NULL,
     "fn"                 INTEGER NOT NULL,
-    "pr"                 NUMERIC NOT NULL,
-    "re"                 NUMERIC NOT NULL
+    "w_pr"               NUMERIC NOT NULL,
+    "w_re"               NUMERIC NOT NULL
 )

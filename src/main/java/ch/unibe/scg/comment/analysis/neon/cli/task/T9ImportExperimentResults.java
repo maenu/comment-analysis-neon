@@ -117,19 +117,35 @@ public class T9ImportExperimentResults {
 								: Double.parseDouble(record.get("False_negative_rate"))
 				);
 				insert.setInt(37, (int) Double.parseDouble(record.get("Num_false_negatives")));
-				insert.setDouble(38, Double.parseDouble(record.get("IR_precision")));
-				insert.setDouble(39, Double.parseDouble(record.get("IR_recall")));
-				insert.setDouble(40, Double.parseDouble(record.get("F_measure")));
+				insert.setDouble(38,
+						record.get("IR_precision") == null
+								? null
+								: Double.parseDouble(record.get("IR_precision"))
+				);
+				insert.setDouble(39,
+						record.get("IR_recall") == null
+								? null
+								: Double.parseDouble(record.get("IR_recall"))
+				);
+				insert.setDouble(40,
+						record.get("F_measure") == null
+								? null
+								: Double.parseDouble(record.get("F_measure"))
+				);
 				insert.setDouble(41,
 						record.get("Matthews_correlation") == null
 								? null
 								: Double.parseDouble(record.get("Matthews_correlation"))
 				);
 				insert.setDouble(42,
-						record.get("Area_under_ROC") == null ? null : Double.parseDouble(record.get("Area_under_ROC"))
+						record.get("Area_under_ROC") == null
+								? null
+								: Double.parseDouble(record.get("Area_under_ROC"))
 				);
 				insert.setDouble(43,
-						record.get("Area_under_PRC") == null ? null : Double.parseDouble(record.get("Area_under_PRC"))
+						record.get("Area_under_PRC") == null
+								? null
+								: Double.parseDouble(record.get("Area_under_PRC"))
 				);
 				insert.setDouble(44,
 						record.get("Weighted_avg_true_positive_rate") == null
