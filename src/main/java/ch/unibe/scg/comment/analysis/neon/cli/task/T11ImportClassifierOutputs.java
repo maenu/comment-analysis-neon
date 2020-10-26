@@ -37,7 +37,7 @@ public class T11ImportClassifierOutputs {
 					.replaceAll("\\{\\{data}}", this.data));
 			try (
 					PreparedStatement insert = connection.prepareStatement("INSERT INTO " + this.data
-							+ "_11_classifier_outputs (category,classifier,features_tfidf,features_heuristic,type,tp,fp,tn,fn,w_pr,w_re) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,?,?)")
+							+ "_11_classifier_outputs (category,classifier,features_tfidf,features_heuristic,type,tp,fp,tn,fn,w_pr,w_re,w_f_measure) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,?)")
 			) {
 				for (String prefix : Files.list(this.directory)
 						.filter(p -> p.getFileName().toString().endsWith("-outputs.csv"))
@@ -64,8 +64,21 @@ public class T11ImportClassifierOutputs {
 							insert.setInt(7, (int) Double.parseDouble(record.get("fp")));
 							insert.setInt(8, (int) Double.parseDouble(record.get("tn")));
 							insert.setInt(9, (int) Double.parseDouble(record.get("fn")));
-							insert.setDouble(10, Double.parseDouble(record.get("w_pr")));
-							insert.setDouble(11, Double.parseDouble(record.get("w_re")));
+							insert.setDouble(10,
+									record.get("w_pr") == null
+											? null
+											: Double.parseDouble(record.get("w_pr"))
+							);
+							insert.setDouble(11,
+									record.get("w_re") == null
+											? null
+											: Double.parseDouble(record.get("w_re"))
+							);
+							insert.setDouble(12,
+									record.get("w_f_measure") == null
+											? null
+											: Double.parseDouble(record.get("w_f_measure"))
+							);
 							insert.executeUpdate();
 						}
 					}

@@ -124,30 +124,32 @@ public class T10BuildClassifiers {
 		SerializationHelper.write(this.directory.resolve(String.format("%s-%s.classifier", prefix, postfix))
 				.toAbsolutePath()
 				.toString(), classifier);
-		String output = "type,tp,fp,tn,fn,w_pr,w_re\n";
+		String output = "type,tp,fp,tn,fn,w_pr,w_re,w_f_measure\n";
 		Evaluation evaluation = new Evaluation(trainingInstances);
 		evaluation.evaluateModel(classifier, trainingInstances);
 		output = String.format(
-				"%straining,%d,%d,%d,%d,%f,%f\n",
+				"%straining,%d,%d,%d,%d,%f,%f,%f\n",
 				output,
-				(int) evaluation.numTruePositives(2),
-				(int) evaluation.numFalsePositives(2),
-				(int) evaluation.numTrueNegatives(2),
-				(int) evaluation.numFalseNegatives(2),
+				(int) evaluation.numTruePositives(1),
+				(int) evaluation.numFalsePositives(1),
+				(int) evaluation.numTrueNegatives(1),
+				(int) evaluation.numFalseNegatives(1),
 				evaluation.weightedPrecision(),
-				evaluation.weightedRecall()
+				evaluation.weightedRecall(),
+				evaluation.weightedFMeasure()
 		);
 		evaluation = new Evaluation(trainingInstances);
 		evaluation.evaluateModel(classifier, testInstances);
 		output = String.format(
-				"%stest,%d,%d,%d,%d,%f,%f\n",
+				"%stest,%d,%d,%d,%d,%f,%f,%f\n",
 				output,
-				(int) evaluation.numTruePositives(2),
-				(int) evaluation.numFalsePositives(2),
-				(int) evaluation.numTrueNegatives(2),
-				(int) evaluation.numFalseNegatives(2),
+				(int) evaluation.numTruePositives(1),
+				(int) evaluation.numFalsePositives(1),
+				(int) evaluation.numTrueNegatives(1),
+				(int) evaluation.numFalseNegatives(1),
 				evaluation.weightedPrecision(),
-				evaluation.weightedRecall()
+				evaluation.weightedRecall(),
+				evaluation.weightedFMeasure()
 		);
 		Files.writeString(this.directory.resolve(String.format("%s-%s-outputs.csv", prefix, postfix)), output);
 	}

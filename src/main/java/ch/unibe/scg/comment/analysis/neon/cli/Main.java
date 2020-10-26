@@ -7,9 +7,9 @@ import ch.unibe.scg.comment.analysis.neon.cli.task.T2SplitSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T3MapSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T4PartitionSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T5PrepareExtractors;
-import ch.unibe.scg.comment.analysis.neon.cli.task.T5PrepareCategoriesWithNLPPatterns;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T5PrepareSentencesWithNLPPatterns;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T6PrepareDatasets;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T8SelectAttributes;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T7PrepareExperiments;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T8RunExperiments;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T9ImportExperimentResults;
@@ -76,6 +76,14 @@ public class Main {
 					} else if ("7-prepare-experiments".equals(task)) {
 						(new T7PrepareExperiments(
 								database,
+								data,
+								Paths.get(System.getProperty("user.dir"))
+										.resolve("data")
+										.resolve(data)
+										.resolve("experiment")
+						)).run();
+					} else if ("8-select-attributes".equals(task)) {
+						(new T8SelectAttributes(
 								data,
 								Paths.get(System.getProperty("user.dir"))
 										.resolve("data")
