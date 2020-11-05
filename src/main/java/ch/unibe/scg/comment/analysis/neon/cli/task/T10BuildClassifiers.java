@@ -22,6 +22,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Load training and testing dataset, build various classifiers, export results to csv
+ */
 public class T10BuildClassifiers {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(T10BuildClassifiers.class);
@@ -112,6 +115,16 @@ public class T10BuildClassifiers {
 		executor.awaitTermination(2, TimeUnit.HOURS);
 	}
 
+	/**
+	 * build the classifier and test on the testing dataset.
+	 * @param classifier classifier to build
+	 * @param prefix 0-0-categoryName
+	 * @param postfix classifier name
+	 * @param trainingInstances training data
+	 * @param testInstances testing data
+	 * @param balance if class balance to use or not
+	 * @throws Exception
+	 */
 	private void trainAndTest(
 			Classifier classifier,
 			String prefix,

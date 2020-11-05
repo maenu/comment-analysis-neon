@@ -14,6 +14,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.stream.Collectors;
 
+/**
+ * Import train/test classifier results to database
+ * Warning: by default weka consider first class ({0 or a} in this case) as a target class.
+ * Make sure to verify the confusion matrix (tp,fp,fn,tn) interpretation.
+ */
 public class T11ImportClassifierOutputs {
 
 	private final String database;

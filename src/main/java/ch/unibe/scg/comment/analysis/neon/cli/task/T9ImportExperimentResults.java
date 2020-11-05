@@ -17,6 +17,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Import experiment results of Cross validation to the database
+ */
 public class T9ImportExperimentResults {
 
 	private final String database;

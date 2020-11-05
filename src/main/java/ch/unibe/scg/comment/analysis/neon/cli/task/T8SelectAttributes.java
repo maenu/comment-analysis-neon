@@ -17,6 +17,12 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Select features/attributes based on information gain threshold
+ * Ranker: Ranks attributes by their individual evaluations
+ * Evaluator: InfoGainAttributeEval, evaluates the worth of an attribute by measuring the information gain with
+ * respect to the class
+ */
 public class T8SelectAttributes {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(T8SelectAttributes.class);
@@ -44,8 +50,8 @@ public class T8SelectAttributes {
 							trainingInstances.setClassIndex(trainingInstances.numAttributes() - 1);
 
 
-							InfoGainAttributeEval infoGainAttributeEval = new InfoGainAttributeEval();
-							Ranker search = new Ranker();
+							InfoGainAttributeEval infoGainAttributeEval = new InfoGainAttributeEval(); //Evaluator
+							Ranker search = new Ranker(); //Ranker
 							search.setOptions( new String[] {"-T", "0.005"}); //information gain threshold
 							AttributeSelection attributeSelection = new AttributeSelection();
 							attributeSelection.setEvaluator(infoGainAttributeEval);

@@ -1,5 +1,6 @@
 package ch.unibe.scg.comment.analysis.neon.cli.task;
 
+import org.neon.engine.XMLReader;
 import org.neon.model.Condition;
 import org.neon.model.Heuristic;
 import org.neon.pathsFinder.engine.Parser;
@@ -15,8 +16,11 @@ import weka.core.stopwords.Rainbow;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.StringToWordVector;
 
+import java.io.File;
+import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -33,17 +37,20 @@ import java.util.stream.Collectors;
  * @datbase input database (sqlite for now)
  * @data language under analysis
  * @wordsToKeep number of words to keep for tfidf
+ * @useManualHeuristicFile set true to use external heuristic file (available in resource folder)
  */
 public class T5PrepareExtractors {
 
 	private final String database;
 	private final String data;
 	private final int wordsToKeep;
+	private final boolean useManualHeuristicFile;
 
-	public T5PrepareExtractors(String database, String data, int wordsToKeep) {
+	public T5PrepareExtractors(String database, String data, int wordsToKeep, boolean useManualHeuristicFile) {
 		this.database = database;
 		this.data = data;
 		this.wordsToKeep = wordsToKeep;
+		this.useManualHeuristicFile = useManualHeuristicFile;
 	}
 
 	public void run() throws Exception {
@@ -80,8 +87,13 @@ public class T5PrepareExtractors {
 			) {
 				for (Map.Entry<Integer, Map<String, List<String>>> partition : partitions.entrySet()) {
 					ArrayList<Heuristic> heuristics = new ArrayList<>();
-					for (Map.Entry<String, List<String>> category : partition.getValue().entrySet()) {
-						heuristics.addAll(this.heuristics(category.getKey(), category.getValue()));
+
+					if(useManualHeuristicFile){
+						heuristics.addAll(this.readHeuristicsFromFile());
+					}else{
+						for (Map.Entry<String, List<String>> category : partition.getValue().entrySet()) {
+							heuristics.addAll(this.heuristics(category.getKey(), category.getValue()));
+						}
 					}
 					List<String> sentences = partition.getValue()
 							.values()
@@ -99,6 +111,12 @@ public class T5PrepareExtractors {
 		}
 	}
 
+	/**
+	 * Write all heuristics to a temporary xml file
+	 * @param heuristics
+	 * @return
+	 * @throws Exception
+	 */
 	private byte[] heuristics(ArrayList<Heuristic> heuristics) throws Exception {
 		Path path = Files.createTempFile("heuristics", ".xml");
 		try {
@@ -107,6 +125,23 @@ public class T5PrepareExtractors {
 		} finally {
 			path.toFile().delete();
 		}
+	}
+
+	/**
+	 * Read all heuristics from an explicit file
+	 * @return
+	 * @throws Exception
+	 */
+	private ArrayList<Heuristic> readHeuristicsFromFile() throws Exception {
+		Path path = Paths.get("src/main/resources/pharo_heuristics.xml");
+
+		ArrayList<Heuristic> heuristics = new ArrayList<>();
+		try {
+			heuristics = XMLReader.read(path.toFile());
+		} catch (Exception var18) {
+			System.err.println("Unable to read XML file");
+		}
+		return heuristics;
 	}
 
 	/**
