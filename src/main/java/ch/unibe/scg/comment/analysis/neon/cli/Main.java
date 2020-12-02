@@ -64,7 +64,7 @@ public class Main {
 						(new T4PartitionSentences(database, data, new int[]{100,0})).run();
 					} else if ("5-prepare-extractors".equals(task)) {
 						//set boolean variable true if you want to use explicit heuristic file
-						(new T5PrepareExtractors(database, data, Integer.MAX_VALUE, true)).run();
+						(new T5PrepareExtractors(database, data, Integer.MAX_VALUE, false)).run();
 					} else if ("5-sentences-nlp-patterns".equals(task)) {
 						(new T5PrepareSentencesWithNLPPatterns(
 								database,

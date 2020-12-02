@@ -133,13 +133,17 @@ public class T5PrepareExtractors {
 	 * @throws Exception
 	 */
 	private ArrayList<Heuristic> readHeuristicsFromFile() throws Exception {
-		Path path = Paths.get("src/main/resources/pharo_heuristics.xml");
+		//File file = new File(Utility.class.getClassLoader().getResource("pharo_heuristics.xml").getFile());
+		Path path = Files.createTempFile("temp-heuristics", ".xml");
+		Files.write(path, Utility.resource(this.data + "_heuristics.xml").getBytes());
 
 		ArrayList<Heuristic> heuristics = new ArrayList<>();
 		try {
 			heuristics = XMLReader.read(path.toFile());
 		} catch (Exception var18) {
 			System.err.println("Unable to read XML file");
+		}finally {
+			path.toFile().delete();
 		}
 		return heuristics;
 	}
