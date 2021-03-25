@@ -3,8 +3,11 @@ package ch.unibe.scg.comment.analysis.neon.cli.task;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import weka.attributeSelection.AttributeSelection;
+import weka.attributeSelection.BestFirst;
 import weka.attributeSelection.InfoGainAttributeEval;
 import weka.attributeSelection.Ranker;
+import weka.attributeSelection.WrapperSubsetEval;
+import weka.classifiers.trees.RandomForest;
 import weka.core.Instances;
 import weka.core.converters.ArffLoader;
 
@@ -39,21 +42,23 @@ public class T8SelectAttributes {
 			Files.list(this.directory).filter(
 					p -> p.getFileName().toString().endsWith(".arff")
 					&& p.getFileName().toString().startsWith("0-0-")
-					&& !p.getFileName().toString().contains("tfidf"))
+					&& p.getFileName().toString().contains("tfidf"))
 					.forEach(p -> {
 						String training = p.getFileName().toString().split("\\.")[0];
 						try{
 							// training
+
 							ArffLoader trainingLoader = new ArffLoader();
 							trainingLoader.setFile(p.toFile());
 							Instances trainingInstances = trainingLoader.getDataSet();
 							trainingInstances.setClassIndex(trainingInstances.numAttributes() - 1);
 
-
-							InfoGainAttributeEval infoGainAttributeEval = new InfoGainAttributeEval(); //Evaluator
-							Ranker search = new Ranker(); //Ranker
-							search.setOptions( new String[] {"-T", "0.005"}); //information gain threshold
 							AttributeSelection attributeSelection = new AttributeSelection();
+
+							//Info Gain
+							InfoGainAttributeEval infoGainAttributeEval = new InfoGainAttributeEval(); //Evaluator
+							Ranker search = new Ranker(); //searchMethod: Ranker
+							search.setOptions( new String[] {"-T", "0.001"}); //information gain threshold
 							attributeSelection.setEvaluator(infoGainAttributeEval);
 							attributeSelection.setSearch(search);
 
@@ -70,9 +75,30 @@ public class T8SelectAttributes {
 							String prefix =  p.getFileName().toString().split("\\.")[0];
 							String[] parts = prefix.split("-");
 							String category = parts[2];
-							Path attributeSelectionResult = Files.createFile(this.directory.resolve(String.format("attributeSelection-%s.txt", category)));
+							Path attributeSelectionResult = Files.createFile(this.directory.resolve(String.format("InfoGain-attributeSelection-%s.txt", category)));
 							Files.writeString(attributeSelectionResult,attributeSelection.toResultsString());
 
+							//Wrapper Method
+							WrapperSubsetEval wrapperSubsetEval = new WrapperSubsetEval(); //Evaluator
+							wrapperSubsetEval.setClassifier(new RandomForest());
+							wrapperSubsetEval.setFolds(10);
+							wrapperSubsetEval.setThreshold(0.001);
+
+							BestFirst bestFirst = new BestFirst(); //search method in combination of WrapperSubsetEval
+							bestFirst.setOptions( new String[] {}); //
+							AttributeSelection attributeSelectionUsingWrapper = new AttributeSelection();
+							attributeSelectionUsingWrapper.setEvaluator(wrapperSubsetEval);
+							attributeSelectionUsingWrapper.setSearch(bestFirst);
+
+							//apply attribute selection
+							attributeSelectionUsingWrapper.SelectAttributes(trainingInstances);
+
+							//save results
+							String prefix_ =  p.getFileName().toString().split("\\.")[0];
+							String[] parts_ = prefix_.split("-");
+							String category_ = parts_[2];
+							Path attributeSelectionResult_ = Files.createFile(this.directory.resolve(String.format("Wrapper-attributeSelection-%s.txt", category_)));
+							Files.writeString(attributeSelectionResult_,attributeSelectionUsingWrapper.toResultsString());
 
 						}catch (Throwable e) {
 							LOGGER.warn("{} build classifiers {} failed", this.data, training, e);}

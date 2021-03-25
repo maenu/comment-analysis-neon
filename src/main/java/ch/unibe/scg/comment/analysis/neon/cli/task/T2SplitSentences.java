@@ -1,7 +1,6 @@
 package ch.unibe.scg.comment.analysis.neon.cli.task;
 
-import org.neon.pathsFinder.engine.Parser;
-import org.neon.pathsFinder.model.Sentence;
+import edu.stanford.nlp.simple.Sentence;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -11,8 +10,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /** Split the sentences using Neon parser to keep the consistent with heuristics.
  *
@@ -64,7 +63,10 @@ public class T2SplitSentences {
 	}
 
 	private List<String> split(String text) {
-		return Parser.getInstance().parse(text).stream().map(Sentence::getText).collect(Collectors.toList());
+		ArrayList<String> processedSentences = new ArrayList<String>();
+		String[] sentences = text.split("(\\n|:)");
+		processedSentences.addAll(Arrays.asList(sentences));
+		return processedSentences;
 	}
 
 	private List<String> categories(Statement statement) throws SQLException {

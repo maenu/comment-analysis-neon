@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="comment-analysis-neon" />
+        <module name="tfidf-comment-analysis-neon" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="comment-analysis-neon" target="13" />
+      <module name="pharo-comment-analysis-neon" target="13" />
+    </bytecodeTargetLevel>
   </component>
 </project>

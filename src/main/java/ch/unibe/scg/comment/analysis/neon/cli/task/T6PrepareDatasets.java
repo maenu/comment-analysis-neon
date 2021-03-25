@@ -98,18 +98,15 @@ public class T6PrepareDatasets {
 	) throws SQLException, IOException {
 		try (
 				ResultSet result = statement.executeQuery(
-						"SELECT heuristics, dictionary FROM " + this.data + "_5_extractors WHERE partition = "
+						"SELECT dictionary FROM " + this.data + "_5_extractors WHERE partition = "
 								+ this.extractorsPartition + "")
 		) {
 			result.next();
-			Path heuristics = Files.createTempFile("heuristics", ".xml");
-			Files.write(heuristics, result.getBytes("heuristics"));
 			Path dictionary = Files.createTempFile("dictionary", ".csv");
 			Files.write(dictionary, result.getBytes("dictionary"));
 			return new InstancesBuilder(
 					String.format("%s-features-%d-%d", this.data, this.extractorsPartition, partition),
 					categories,
-					heuristics.toFile(),
 					dictionary.toFile()
 			);
 		}

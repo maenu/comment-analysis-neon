@@ -57,27 +57,12 @@ public class T7PrepareExperiments {
 							categoryAttributeNames.add(name);
 						}
 					}
-					//for each category, prepare and generate arff files for each feature set (tfidf, heuristic, and both)
+					//for each category, prepare and generate arff files for each feature set (tfidf, and both)
 					for (String categoryAttributeName : categoryAttributeNames) {
 						this.storeDataset(instances,
 								partition,
 								extractorsPartition,
 								categoryAttributeName,
-								true,
-								true
-						);
-						this.storeDataset(instances,
-								partition,
-								extractorsPartition,
-								categoryAttributeName,
-								true,
-								false
-						);
-						this.storeDataset(instances,
-								partition,
-								extractorsPartition,
-								categoryAttributeName,
-								false,
 								true
 						);
 					}
@@ -91,17 +76,14 @@ public class T7PrepareExperiments {
 			int partition,
 			int extractorsPartition,
 			String categoryAttributeName,
-			boolean tfidf,
-			boolean heuristic
+			boolean tfidf
 	) throws Exception {
 		// prepare dataset
 		String postfix = "";
 		if (tfidf) {
 			postfix = postfix + "-tfidf";
 		}
-		if (heuristic) {
-			postfix = postfix + "-heuristic";
-		}
+
 		String prefix = String.format(
 				"%d-%d-%s%s",
 				partition,
@@ -109,7 +91,7 @@ public class T7PrepareExperiments {
 				categoryAttributeName.substring("category-".length()).toLowerCase().replaceAll("[^a-z0-9]", ""),
 				postfix
 		);
-		Instances copy = this.prepareDataset(instances, categoryAttributeName, tfidf, heuristic);
+		Instances copy = this.prepareDataset(instances, categoryAttributeName, tfidf);
 		copy.setRelationName(prefix);
 		// save dataset
 		ArffSaver saver = new ArffSaver();
@@ -120,11 +102,11 @@ public class T7PrepareExperiments {
 	}
 
 	private Instances prepareDataset(
-			Instances instances, String categoryAttributeName, boolean tfidf, boolean heuristic
+			Instances instances, String categoryAttributeName, boolean tfidf
 	) throws Exception {
-		if (!tfidf && !heuristic) {
+		if (!tfidf) {
 			throw new IllegalArgumentException(
-					"tfidf and heuristic cannot be both false, there would be no features left otherwise");
+					"tfidf cannot be both false, there would be no features left otherwise");
 		}
 		// copy it, as we are going to mess with that one for sure
 		instances = new Instances(instances);
@@ -144,12 +126,6 @@ public class T7PrepareExperiments {
 		if (!tfidf) {
 			RemoveByName remove = new RemoveByName();
 			remove.setExpression("^tfidf-.*$");
-			remove.setInputFormat(instances);
-			instances = Filter.useFilter(instances, remove);
-		}
-		if (!heuristic) {
-			RemoveByName remove = new RemoveByName();
-			remove.setExpression("^heuristic-.*$");
 			remove.setInputFormat(instances);
 			instances = Filter.useFilter(instances, remove);
 		}

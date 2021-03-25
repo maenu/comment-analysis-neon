@@ -61,7 +61,6 @@ public class T9ImportExperimentResults {
 		String[] parts = prefix.split("-");
 		String category = parts[2];
 		boolean tfidf = parts[3].equals("tfidf");
-		boolean heuristic = parts.length == 5 ? parts[4].equals("heuristic") : parts[3].equals("heuristic");
 		try (
 				CSVParser parser = CSVFormat.DEFAULT.withFirstRecordAsHeader()
 						.parse(Files.newBufferedReader(this.directory.resolve(String.format("%s-results.csv", prefix))))
@@ -223,8 +222,7 @@ public class T9ImportExperimentResults {
 				insert.setDouble(66, Double.parseDouble(record.get("Size_of_Predicted_Regions")));
 				insert.setString(67, record.get("Summary"));
 				insert.setInt(68, tfidf ? 1 : 0);
-				insert.setInt(69, heuristic ? 1 : 0);
-				insert.setString(70, category);
+				insert.setString(69, category);
 				insert.executeUpdate();
 			}
 		}

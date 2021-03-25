@@ -68,6 +68,5 @@ CREATE TABLE "{{data}}_9_experiment_results"
     "Size_of_Predicted_Regions"         NUMERIC NOT NULL,
     "Summary"                           TEXT    NOT NULL,
     "features_tfidf"                    INTEGER NOT NULL,
-    "features_heuristic"                INTEGER NOT NULL,
     "category"                          TEXT    NOT NULL
 )

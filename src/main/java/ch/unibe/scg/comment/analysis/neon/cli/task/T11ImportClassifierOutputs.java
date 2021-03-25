@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 
 /**
  * Import train/test classifier results to database
+ *
  * Warning: by default weka consider first class ({0 or a} in this case) as a target class.
  * Make sure to verify the confusion matrix (tp,fp,fn,tn) interpretation.
  */
@@ -42,7 +43,7 @@ public class T11ImportClassifierOutputs {
 					.replaceAll("\\{\\{data}}", this.data));
 			try (
 					PreparedStatement insert = connection.prepareStatement("INSERT INTO " + this.data
-							+ "_11_classifier_outputs (category,classifier,features_tfidf,features_heuristic,type,tp,fp,tn,fn,w_pr,w_re,w_f_measure) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,?)")
+							+ "_11_classifier_outputs (category,classifier,features_tfidf,type,tp,fp,tn,fn,w_pr,w_re,w_f_measure) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")
 			) {
 				for (String prefix : Files.list(this.directory)
 						.filter(p -> p.getFileName().toString().endsWith("-outputs.csv"))
@@ -51,7 +52,6 @@ public class T11ImportClassifierOutputs {
 					String[] parts = prefix.split("-");
 					String category = parts[2];
 					boolean tfidf = parts[3].equals("tfidf");
-					boolean heuristic = parts.length == 7 ? parts[4].equals("heuristic") : parts[3].equals("heuristic");
 					String classifier = parts.length == 7 ? parts[5] : parts[4];
 					try (
 							CSVParser parser = CSVFormat.DEFAULT.withFirstRecordAsHeader()
@@ -63,23 +63,22 @@ public class T11ImportClassifierOutputs {
 							insert.setString(1, category);
 							insert.setString(2, classifier);
 							insert.setInt(3, tfidf ? 1 : 0);
-							insert.setInt(4, heuristic ? 1 : 0);
-							insert.setString(5, record.get("type"));
-							insert.setInt(6, (int) Double.parseDouble(record.get("tp")));
-							insert.setInt(7, (int) Double.parseDouble(record.get("fp")));
-							insert.setInt(8, (int) Double.parseDouble(record.get("tn")));
-							insert.setInt(9, (int) Double.parseDouble(record.get("fn")));
-							insert.setDouble(10,
+							insert.setString(4, record.get("type"));
+							insert.setInt(5, (int) Double.parseDouble(record.get("tp")));
+							insert.setInt(6, (int) Double.parseDouble(record.get("fp")));
+							insert.setInt(7, (int) Double.parseDouble(record.get("tn")));
+							insert.setInt(8, (int) Double.parseDouble(record.get("fn")));
+							insert.setDouble(9,
 									record.get("w_pr") == null
 											? null
 											: Double.parseDouble(record.get("w_pr"))
 							);
-							insert.setDouble(11,
+							insert.setDouble(10,
 									record.get("w_re") == null
 											? null
 											: Double.parseDouble(record.get("w_re"))
 							);
-							insert.setDouble(12,
+							insert.setDouble(11,
 									record.get("w_f_measure") == null
 											? null
 											: Double.parseDouble(record.get("w_f_measure"))

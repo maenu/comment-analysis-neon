@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CsvFileAttributes">
+    <option name="attributeMap">
+      <map>
+        <entry key="$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/3.9.1/stanford-corenlp-3.9.1-sources.jar!/edu/stanford/nlp/simple/Sentence.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="$MAVEN_REPOSITORY$/nz/ac/waikato/cms/weka/weka-stable/3.8.4/weka-stable-3.8.4-sources.jar!/weka/core/stopwords/AbstractStopwords.java">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/java/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/java/java_0_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/java/raw/SampleSet-Java-Dataset.xlsx - Apache Spark.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/java/raw/SampleSet-Java-Dataset.xlsx - Eclipse.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/java/raw/SampleSet-Java-Dataset.xlsx - Google-Guava.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/java/raw/SampleSet-Java-Dataset.xlsx - Vaadin.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/pharo/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - GToolkit.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Moose.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Pillar.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - PolyMath.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Roassal.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Seaside.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/python/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/python/raw/SampleSet-Python-Dataset.xlsx - django.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/python/raw/SampleSet-Python-Dataset.xlsx - pipenv.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/python/raw/SampleSet-Python-Dataset.xlsx - pytorch.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/data/pharo/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - GToolkit.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Moose.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Pillar.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Roassal.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Seaside.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/data/pharo_0_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/22-mar/data/pharo/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/22-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - GToolkit.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/22-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Moose.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/22-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Pillar.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/22-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Roassal.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/22-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Seaside.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/22-mar/data/pharo_0_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/24-mar/data/pharo/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/24-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - GToolkit.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/24-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Moose.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/24-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Pillar.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/24-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Roassal.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/24-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Seaside.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Alex/results/24-mar/data/pharo_0_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/java/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/java/java_0_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/java/raw/SampleSet-Java-Dataset.xlsx - Apache Spark.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/java/raw/SampleSet-Java-Dataset.xlsx - Eclipse.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/java/raw/SampleSet-Java-Dataset.xlsx - Google-Guava.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/java/raw/SampleSet-Java-Dataset.xlsx - Vaadin.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/pharo/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/pharo/pharo_0_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - GToolkit.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Moose.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Pillar.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Roassal.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Seaside.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/python/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/python/python_0_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/python/raw/SampleSet-Python-Dataset.xlsx - django.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/python/raw/SampleSet-Python-Dataset.xlsx - pipenv.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/data/python/raw/SampleSet-Python-Dataset.xlsx - pytorch.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/java/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/java/java_0_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/java/raw/SampleSet-Java-Dataset.xlsx - Apache Spark.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/java/raw/SampleSet-Java-Dataset.xlsx - Eclipse.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/java/raw/SampleSet-Java-Dataset.xlsx - Google-Guava.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/java/raw/SampleSet-Java-Dataset.xlsx - Vaadin.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/pharo/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/pharo/pharo_0_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - GToolkit.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Moose.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Pillar.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Roassal.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Seaside.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/python/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/python/python_0_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/python/raw/SampleSet-Python-Dataset.xlsx - django.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/python/raw/SampleSet-Python-Dataset.xlsx - pipenv.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/22-mar/data/python/raw/SampleSet-Python-Dataset.xlsx - pytorch.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/java/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/java/java_0_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/java/raw/SampleSet-Java-Dataset.xlsx - Apache Spark.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/java/raw/SampleSet-Java-Dataset.xlsx - Eclipse.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/java/raw/SampleSet-Java-Dataset.xlsx - Google-Guava.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/java/raw/SampleSet-Java-Dataset.xlsx - Vaadin.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/pharo/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/pharo/pharo_0_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - GToolkit.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Moose.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Pillar.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Roassal.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/pharo/raw/SampleSet-Pharo-Dataset.xlsx - Seaside.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/python/consolidated.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/python/python_0_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/python/raw/SampleSet-Python-Dataset.xlsx - django.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/python/raw/SampleSet-Python-Dataset.xlsx - pipenv.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/fresh-experiment/Tim/results/24-mar/data/python/raw/SampleSet-Python-Dataset.xlsx - pytorch.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/main/java/ch/unibe/scg/comment/analysis/neon/cli/InstancesBuilder.java">
+          <value>
+            <Attribute>
+              <option name="separator" value="&#9;" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/main/java/ch/unibe/scg/comment/analysis/neon/cli/Main.java">
+          <value>
+            <Attribute>
+              <option name="separator" value="&#9;" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/main/java/ch/unibe/scg/comment/analysis/neon/cli/StringToHeuristicVector.java">
+          <value>
+            <Attribute>
+              <option name="separator" value="&#9;" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/main/java/ch/unibe/scg/comment/analysis/neon/cli/task/T1Preprocess.java">
+          <value>
+            <Attribute>
+              <option name="separator" value="&#9;" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/src/main/java/ch/unibe/scg/comment/analysis/neon/cli/task/T2SplitSentences.java">
+          <value>
+            <Attribute>
+              <option name="separator" value="&#9;" />
+            </Attribute>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
