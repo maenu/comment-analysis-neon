@@ -6,7 +6,7 @@
 
     <groupId>ch.unibe.scg.comment.analysis.neon</groupId>
     <artifactId>comment-analysis-neon</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -19,10 +19,6 @@
         <repository>
             <id>lib</id>
             <url>file://${basedir}/lib</url>
-        </repository>
-        <repository>
-            <id>KEMLG-Wordnet Repository</id>
-            <url>https://dl.bintray.com/kemlg/wordnet-utils/</url>
         </repository>
     </repositories>
 
@@ -76,7 +72,7 @@
         <dependency>
             <groupId>org.neon</groupId>
             <artifactId>neon</artifactId>
-            <version>0.0.1</version>
+            <version>0.0.3</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
