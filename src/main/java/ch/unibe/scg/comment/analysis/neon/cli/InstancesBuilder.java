@@ -63,7 +63,7 @@ public class InstancesBuilder {
 			return null;
 		}
 		return s.toLowerCase().replaceAll("\r\n|\r", "\n") // reduce line endings -> line endings are now \n
-				.replaceAll("[^a-z0-9,.!? \n]", " ") // reduce alphabet -> string is now [a-z0-9,.!? \n]+
+				.replaceAll("[^a-z0-9,.!? \n]+", " ") // reduce alphabet -> string is now [a-z0-9,.!? \n]+
 				.replaceAll("([0-9]+)\\.([0-9]+)", "$1$2") // replace floats
 				.replaceAll(" +", " ") // reduce spaces -> spaces are now single spaces
 				.replaceAll("^[ \n]+", "") // reduce document start -> document does not start with whitespace
