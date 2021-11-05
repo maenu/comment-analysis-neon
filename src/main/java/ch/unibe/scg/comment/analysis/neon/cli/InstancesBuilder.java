@@ -83,19 +83,20 @@ public class InstancesBuilder {
 				.replaceAll("(^|[^a-z0-9])e\\.? ?g\\.? ?($|[^.a-z0-9])", "$1eg$2") // replace eg
 				.replaceAll("(^|[^a-z0-9])i\\.? ?e\\.? ?($|[^.a-z0-9])", "$1ie$2") // replace ie
 				.replaceAll("(^|[^a-z0-9])etc\\.? ?($|[^.a-z0-9])", "$1etc$2") // replace etc
-				.replaceAll("[^.!?\n]{400}[^ \n]*[ \n]?",
-						"$0\n\n"
-				) // split long sentences -> sentences are now at most 400 characters plus one word long
 				.trim();
 	}
 
 	public void add(String sentence) {
+		this.add(sentence, true);
+	}
+
+	public void add(String sentence, boolean preprocess) {
 		SparseInstance instance = new SparseInstance(this.instances.numAttributes());
 		instance.setDataset(this.instances);
 		for (String category : this.categories) {
 			instance.setValue(this.instances.attribute(this.categoryName(category)), "0");
 		}
-		instance.setValue(this.instances.attribute("text"), preprocess(sentence));
+		instance.setValue(this.instances.attribute("text"), preprocess ? preprocess(sentence) : sentence);
 		this.instances.add(instance);
 	}
 

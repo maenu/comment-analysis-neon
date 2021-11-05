@@ -10,20 +10,14 @@ import java.util.regex.Pattern;
 
 public class NormalizedString {
 
-	String original;
+	public final String original;
+	public final String normalized;
 	List<Change> changes;
-	String normalized;
 
-	NormalizedString(String original) {
+	public NormalizedString(String original) {
 		this.original = original;
 		this.changes = new ArrayList<>();
-		this.normalized = null;
-	}
-
-	public static NormalizedString normalize(String original) {
-		NormalizedString normalized = new NormalizedString(original);
-		normalized.normalize();
-		return normalized;
+		this.normalized = this.normalize();
 	}
 
 	public Range normalizedToOriginal(Range normalized) {
@@ -35,29 +29,26 @@ public class NormalizedString {
 		return normalized;
 	}
 
-	public String getNormalized() {
-		return this.normalized;
-	}
-
-	public void normalize() {
-		this.normalized = this.original.toLowerCase();
-		this.normalized = this.normalizeLineEnds(this.normalized);
-		this.normalized = this.reduceAlphabet(this.normalized);
-		this.normalized = this.reduceFloats(this.normalized);
-		this.normalized = this.reduceSpaces(this.normalized);
-		this.normalized = this.trimStart(this.normalized);
-		this.normalized = this.trimEnd(this.normalized);
-		this.normalized = this.reduceLineStarts(this.normalized);
-		this.normalized = this.reduceLineEnds(this.normalized);
-		this.normalized = this.reduceNewLines(this.normalized);
-		this.normalized = this.joinLines(this.normalized);
-		this.normalized = this.normalizeSentenceEnds(this.normalized);
-		this.normalized = this.normalizeCommas(this.normalized);
-		this.normalized = this.splitJoinedSentences(this.normalized);
-		this.normalized = this.normalizeLineStarts(this.normalized);
-		this.normalized = this.normalizeEg(this.normalized);
-		this.normalized = this.normalizeIe(this.normalized);
-		this.normalized = this.normalizeEtc(this.normalized);
+	protected String normalize() {
+		String normalized = this.original.toLowerCase();
+		normalized = this.normalizeLineEnds(normalized);
+		normalized = this.reduceAlphabet(normalized);
+		normalized = this.reduceFloats(normalized);
+		normalized = this.reduceSpaces(normalized);
+		normalized = this.trimStart(normalized);
+		normalized = this.trimEnd(normalized);
+		normalized = this.reduceLineStarts(normalized);
+		normalized = this.reduceLineEnds(normalized);
+		normalized = this.reduceNewLines(normalized);
+		normalized = this.joinLines(normalized);
+		normalized = this.normalizeSentenceEnds(normalized);
+		normalized = this.normalizeCommas(normalized);
+		normalized = this.splitJoinedSentences(normalized);
+		normalized = this.normalizeLineStarts(normalized);
+		normalized = this.normalizeEg(normalized);
+		normalized = this.normalizeIe(normalized);
+		normalized = this.normalizeEtc(normalized);
+		return normalized;
 	}
 
 	protected String normalizeLineEnds(String original) {
@@ -76,7 +67,7 @@ public class NormalizedString {
 
 	protected String reduceFloats(String original) {
 		return this.change(original, "([0-9]+)\\.([0-9]+)", result -> {
-			this.changes.add(new Change(new Range(result.end(1), result.end(1) + 1), 0));
+			this.changes.add(new Change(new Range(result.end(1), result.start(2)), 0));
 			return "$1$2";
 		});
 	}
@@ -125,7 +116,7 @@ public class NormalizedString {
 
 	protected String joinLines(String original) {
 		return this.change(original, "([^.!?\n])\n([^\n])", result -> {
-			this.changes.add(new Change(new Range(result.end(1), result.end(1) + 1), 1));
+			this.changes.add(new Change(new Range(result.end(1), result.start(2)), 1));
 			return "$1 $2";
 		});
 	}
@@ -189,12 +180,19 @@ public class NormalizedString {
 		return original;
 	}
 
-	public static class Range {
+	public static class Range implements Comparable<Range> {
 
+		/**
+		 * inclusive
+		 */
 		public final int start;
+		/**
+		 * exclusive
+		 */
 		public final int end;
 
 		public Range(int start, int end) {
+			assert start <= end;
 			this.start = start;
 			this.end = end;
 		}
@@ -249,6 +247,11 @@ public class NormalizedString {
 			return "Range{" + "start=" + this.start + ", end=" + this.end + '}';
 		}
 
+		@Override
+		public int compareTo(Range o) {
+			return this.start - o.start;
+		}
+
 	}
 
 	public static class Change {
@@ -261,22 +264,29 @@ public class NormalizedString {
 			this.length = length;
 		}
 
+		/**
+		 * Adapt the argument to the range it would span before applying this change.
+		 *
+		 * @param range
+		 * @return
+		 */
 		public Range revert(Range range) {
 			int delta = this.delta();
-			Range whole = this.range.add(0, delta);
-			if (whole.includes(range)) {
+			Range affectedRange = this.range.add(0, delta);
+			if (affectedRange.includes(range)) {
 				return this.range;
 			}
-			if (range.isBefore(whole)) {
+			if (range.isBefore(affectedRange)) {
 				return range;
 			}
-			if (range.isAfter(whole)) {
-				return range.add(delta, delta);
+			if (range.isAfter(affectedRange)) {
+				return range.add(-delta, -delta);
 			}
-			if (range.end > whole.end) {
+			if (range.end > affectedRange.end) {
 				// range is overlapping on the right
-				return new Range(range.start, Math.max(range.start + 1, range.end - delta));
+				return new Range(range.start, Math.max(range.start, range.end - delta));
 			}
+			// range is overlapping on the left
 			return new Range(Math.min(this.range.start, range.start), Math.max(this.range.end, range.end));
 		}
 

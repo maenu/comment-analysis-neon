@@ -26,8 +26,8 @@ public class NormalizedStringTest {
 				  
 				The class String includes methods for examining individual characters of the sequence, for comparing strings, for searching strings, for extracting substrings, and for creating a copy of a string with all characters translated to uppercase or to lowercase. Case mapping is based on the Unicode Standard version specified by the Character class.
 				""";
-		NormalizedString normalized = NormalizedString.normalize(original);
-		assertEquals(normalized.getNormalized(), """
+		NormalizedString normalized = new NormalizedString(original);
+		assertEquals(normalized.normalized, """
 				the string class represents character strings. all string literals in java 16 programs, such as abc , are implemented as instances of this class.\s
 				strings are constant their values cannot be changed after they are created. string buffers support mutable strings. because string objects are immutable they can be shared. for example string str abc
 				    
@@ -41,13 +41,13 @@ public class NormalizedStringTest {
 	@Test
 	public void normalizedToOriginal() {
 		String original = "ksajd...asdf1.6flk; ajsl;;;;;;fj askdlj sakl..,.,3986asd ;k jkjlasdf ";
-		NormalizedString normalized = NormalizedString.normalize(original);
-		assertEquals(normalized.getNormalized(), "ksajd. asdf16flk ajsl fj askdlj sakl. , . , 3986asd k jkjlasdf");
+		NormalizedString normalized = new NormalizedString(original);
+		assertEquals(normalized.normalized, "ksajd. asdf16flk ajsl fj askdlj sakl. , . , 3986asd k jkjlasdf");
 		NormalizedString.Range normalizedRange = new NormalizedString.Range(3, 27);
 		NormalizedString.Range originalRange = normalized.normalizedToOriginal(normalizedRange);
 		assertEquals(originalRange, new NormalizedString.Range(3, 35));
 		assertEquals(originalRange.in(original), "jd...asdf1.6flk; ajsl;;;;;;fj as");
-		assertEquals(normalizedRange.in(normalized.getNormalized()), "jd. asdf16flk ajsl fj as");
+		assertEquals(normalizedRange.in(normalized.normalized), "jd. asdf16flk ajsl fj as");
 	}
 
 }
