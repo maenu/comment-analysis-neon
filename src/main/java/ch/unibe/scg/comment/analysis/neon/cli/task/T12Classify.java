@@ -14,6 +14,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -25,6 +26,14 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class T12Classify {
+
+	public static void main(String[] args) throws Exception {
+		String data = args[0];
+		String source = Files.readString(Paths.get(args[1]));
+		T12Classify task = new T12Classify(data);
+		SortedMap<Range, List<String>> labels = task.label(source);
+		System.out.println(labels);
+	}
 
 	private static final Map<String, Pattern> PATTERNS = Map.of(
 			"java",
