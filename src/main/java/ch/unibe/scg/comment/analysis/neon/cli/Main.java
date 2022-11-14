@@ -8,6 +8,7 @@ import ch.unibe.scg.comment.analysis.neon.cli.task.T3MapSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T4PartitionSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T5PrepareExtractors;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T5PrepareSentencesWithNLPPatterns;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T5StorePartitionSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T6PrepareDatasets;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T8SelectAttributes;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T7PrepareExperiments;
@@ -45,7 +46,7 @@ public class Main {
 				.required()
 				.hasArgs()
 				.valueSeparator(',')
-				.desc("task to perform, split by ',', [1-preprocess,2-split-sentences,3-map-sentences,4-partition-sentences,5-prepare-extractors,6-prepare-datasets,7-prepare-experiments,8-run-experiments,9-import-experiment-results,10-build-classifiers,11-import-classifier-outputs]")
+				.desc("task to perform, split by ',', [1-preprocess,2-split-sentences,3-map-sentences,4-partition-sentences,5-prepare-extractors,5-store-partition,6-prepare-datasets,7-prepare-experiments,8-run-experiments,9-import-experiment-results,10-build-classifiers,11-import-classifier-outputs]")
 				.build());
 		try {
 			CommandLine line = parser.parse(options, args);
@@ -61,10 +62,13 @@ public class Main {
 						(new T3MapSentences(database, data)).run();
 					} else if ("4-partition-sentences".equals(task)) {
 						//{60,40} 60% training split and 40% testing split
-						(new T4PartitionSentences(database, data, new int[]{100,0})).run();
+						(new T4PartitionSentences(database, data, new int[]{80,20})).run();
 					} else if ("5-prepare-extractors".equals(task)) {
 						//set boolean variable true if you want to use explicit heuristic file
 						(new T5PrepareExtractors(database, data, Integer.MAX_VALUE, false)).run();
+					}else if ("5-store-partition".equals(task)) {
+						//store the sentences of training and testing split
+						(new T5StorePartitionSentences(database, data)).run();
 					} else if ("5-sentences-nlp-patterns".equals(task)) {
 						(new T5PrepareSentencesWithNLPPatterns(
 								database,
@@ -73,6 +77,7 @@ public class Main {
 								.resolve("data")
 								.resolve(data))).run();
 					} else if ("6-prepare-datasets".equals(task)) {
+						//number of partitions
 						(new T6PrepareDatasets(database, data, 0)).run();
 					} else if ("7-prepare-experiments".equals(task)) {
 						(new T7PrepareExperiments(

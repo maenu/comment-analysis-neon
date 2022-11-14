@@ -3,6 +3,7 @@ package ch.unibe.scg.comment.analysis.neon.cli.task;
 import ch.unibe.scg.comment.analysis.neon.cli.InstancesBuilder;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
+import weka.core.converters.CSVSaver;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.RemoveByName;
 import weka.filters.unsupervised.attribute.Reorder;
@@ -66,7 +67,8 @@ public class T7PrepareExperiments {
 								true,
 								true
 						);
-						this.storeDataset(instances,
+						// commented temporarily to save time to generate arff files for both feature set
+						/*this.storeDataset(instances,
 								partition,
 								extractorsPartition,
 								categoryAttributeName,
@@ -79,7 +81,7 @@ public class T7PrepareExperiments {
 								categoryAttributeName,
 								false,
 								true
-						);
+						);*/
 					}
 				}
 			}
@@ -111,12 +113,19 @@ public class T7PrepareExperiments {
 		);
 		Instances copy = this.prepareDataset(instances, categoryAttributeName, tfidf, heuristic);
 		copy.setRelationName(prefix);
-		// save dataset
+		// save dataset into arff format
 		ArffSaver saver = new ArffSaver();
 		Path path = Files.createFile(this.directory.resolve(String.format("%s.arff", prefix)));
 		saver.setFile(path.toFile());
 		saver.setInstances(copy);
 		saver.writeBatch();
+
+		// save dataset into csv format
+	/*	CSVSaver csv_saver = new CSVSaver();
+		csv_saver.setInstances(copy);//set the dataset to convert
+		Path csv_path = Files.createFile(this.directory.resolve(String.format("input-dataset-" + "%s.csv", prefix)));
+		csv_saver.setFile(csv_path.toFile());//and save as CSV
+		csv_saver.writeBatch();*/
 	}
 
 	private Instances prepareDataset(

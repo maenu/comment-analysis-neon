@@ -87,10 +87,11 @@
       <object class="java.io.File" name="0">{{prefix}}.arff</object>
    </object>
    <object class="int" name="runUpper" primitive="yes">1</object>
-   <object class="weka.experiment.CrossValidationResultProducer" name="resultProducer">
+   <object class="weka.experiment.RandomSplitResultProducer" name="resultProducer">
       <object array="yes" class="java.lang.String" name="options">
-         <object class="java.lang.String" name="0">-X</object>
-         <object class="java.lang.String" name="1">10</object>
+         <object class="java.lang.String" name="0">-P</object>
+         <object class="java.lang.String" name="1">80.0</object>
+          <object class="java.lang.String" name="2">-R</object>
          <object class="java.lang.String" name="2">-O</object>
          <object class="java.lang.String" name="3">splitEvalutorOut.zip</object>
          <object class="java.lang.String" name="4">-W</object>
@@ -101,8 +102,10 @@
          <object class="java.lang.String" name="9">-I</object>
          <object class="java.lang.String" name="10">0</object>
          <object class="java.lang.String" name="11">-C</object>
-         <object class="java.lang.String" name="12">2</object>
+         <object class="java.lang.String" name="12">1</object>
          <object class="java.lang.String" name="13">--</object>
+          <object class="java.lang.String" name="14"/>
+          <object class="java.lang.String" name="15"/>
       </object>
    </object>
     <object class="boolean" name="usePropertyIterator" primitive="yes">true</object>
@@ -119,7 +122,7 @@
                     <object class="java.lang.String" name="6">--</object>
                 </object>
             </object>
-            <object class="java.lang.String" name="parentClass">weka.experiment.CrossValidationResultProducer</object>
+            <object class="java.lang.String" name="parentClass">weka.experiment.ClassifierSplitEvaluator</object>
             <object class="java.lang.String" name="property">splitEvaluator</object>
         </object>
         <object array="no" class="weka.experiment.PropertyNode" name="1" primitive="no">

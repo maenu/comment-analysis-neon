@@ -95,9 +95,9 @@ public class InstancesBuilder {
 				.replaceAll("(^|[^a-z0-9])e\\.? ?g\\.? ?($|[^.a-z0-9])", "$1eg$2") // replace eg
 				.replaceAll("(^|[^a-z0-9])i\\.? ?e\\.? ?($|[^.a-z0-9])", "$1ie$2") // replace ie
 				.replaceAll("(^|[^a-z0-9])etc\\.? ?($|[^.a-z0-9])", "$1etc$2") // replace etc
-				.replaceAll("[^.!?\n]{400}[^ \n]*[ \n]?",
-						"$0\n\n"
-				) // split long sentences -> sentences are now at most 400 characters plus one word long
+				//.replaceAll("[^.!?\n]{400}[^ \n]*[ \n]?",
+				//		"$0\n\n"
+				//) // split long sentences -> sentences are now at most 400 characters plus one word long
 				.trim();
 	}
 
