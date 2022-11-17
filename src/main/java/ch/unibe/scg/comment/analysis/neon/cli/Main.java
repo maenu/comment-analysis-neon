@@ -6,6 +6,7 @@ import ch.unibe.scg.comment.analysis.neon.cli.task.T1Preprocess;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T2SplitSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T3MapSentences;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T4PartitionSentences;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T4PartitionSentencesWorkshop;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T5PrepareExtractors;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T5PrepareSentencesWithNLPPatterns;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T5StorePartitionSentences;
@@ -63,10 +64,13 @@ public class Main {
 					} else if ("4-partition-sentences".equals(task)) {
 						//{60,40} 60% training split and 40% testing split
 						(new T4PartitionSentences(database, data, new int[]{80,20})).run();
+					} else if ("4-create-store-fix-partition".equals(task)) {
+						//create a fix testing and training split from the sentences and store it
+						(new T4PartitionSentencesWorkshop(database, data, 5)).run();
 					} else if ("5-prepare-extractors".equals(task)) {
 						//set boolean variable true if you want to use explicit heuristic file
 						(new T5PrepareExtractors(database, data, Integer.MAX_VALUE, false)).run();
-					}else if ("5-store-partition".equals(task)) {
+					} else if ("5-store-partition".equals(task)) {
 						//store the sentences of training and testing split
 						(new T5StorePartitionSentences(database, data)).run();
 					} else if ("5-sentences-nlp-patterns".equals(task)) {

@@ -75,7 +75,7 @@ public class InstancesBuilder {
 			return null;
 		}
 		return s.toLowerCase().replaceAll("\r\n|\r", "\n") // reduce line endings -> line endings are now \n
-				.replaceAll("[^a-z0-9,.!? \n]", " ") // reduce alphabet -> string is now [a-z0-9,.!? \n]+
+				.replaceAll("[^a-z0-9,.@#&^%!? \n]", " ") // reduce alphabet -> string is now [a-z0-9,.!? \n]+
 				.replaceAll("([0-9]+)\\.([0-9]+)", "$1$2") // replace floats
 				.replaceAll(" +", " ") // reduce spaces -> spaces are now single spaces
 				.replaceAll("^[ \n]+", "") // reduce document start -> document does not start with whitespace
@@ -83,14 +83,10 @@ public class InstancesBuilder {
 				.replaceAll("\n ", "\n") // reduce line starts -> lines do not start with spaces
 				.replaceAll(" \n", "\n") // reduce line ends -> lines do not end with spaces
 				.replaceAll("\n(\n+)", "\n\n") // reduce newlines -> line ends are now \n or \n\n
-				.replaceAll("([^.!?\n])\n([^\n])", "$1 $2") // join non-sentence lines -> whole sentence on same line
-				.replaceAll(" ?([.!?])[ .!?]*",
-						"$1"
-				) // normalize sentence ends -> multi-terminated is now single-terminated
-				.replaceAll(" ?,[ ,]*", ", ") // normalize sentence ends -> multi-terminated is now single-terminated
-				.replaceAll("([,.!?])([^ ])",
-						"$1 $2"
-				) // split joined sentences -> sentences and parts are separated by space
+				//.replaceAll("([^.!?\n])\n([^\n])", "$1 $2") // join non-sentence lines -> whole sentence on same line
+				//.replaceAll(" ?([.!?])[ .!?]*", "$1") // normalize sentence ends -> multi-terminated is now single-terminated
+				//.replaceAll(" ?,[ ,]*", ", ") // normalize sentence ends -> multi-terminated is now single-terminated
+				//.replaceAll("([,.!?])([^ ])", "$1 $2") // split joined sentences -> sentences and parts are separated by space
 				.replaceAll("(\n|^)[ .!?]+", "$1") // ensure line starts with non-separators
 				.replaceAll("(^|[^a-z0-9])e\\.? ?g\\.? ?($|[^.a-z0-9])", "$1eg$2") // replace eg
 				.replaceAll("(^|[^a-z0-9])i\\.? ?e\\.? ?($|[^.a-z0-9])", "$1ie$2") // replace ie

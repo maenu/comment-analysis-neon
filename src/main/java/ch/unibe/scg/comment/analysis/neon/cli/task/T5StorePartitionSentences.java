@@ -1,23 +1,5 @@
 package ch.unibe.scg.comment.analysis.neon.cli.task;
 
-import org.neon.engine.XMLReader;
-import org.neon.model.Condition;
-import org.neon.model.Heuristic;
-import org.neon.pathsFinder.engine.Parser;
-import org.neon.pathsFinder.engine.PathsFinder;
-import org.neon.pathsFinder.engine.XMLWriter;
-import org.neon.pathsFinder.model.GrammaticalPath;
-import org.neon.pathsFinder.model.Sentence;
-import weka.core.Attribute;
-import weka.core.DenseInstance;
-import weka.core.Instances;
-import weka.core.stemmers.IteratedLovinsStemmer;
-import weka.core.stopwords.Rainbow;
-import weka.filters.Filter;
-import weka.filters.unsupervised.attribute.StringToWordVector;
-
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -28,7 +10,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 /** Store the sentences for each training and testing partition
  * @datbase input database (sqlite for now)
@@ -51,10 +32,10 @@ public class T5StorePartitionSentences {
 		) {
 			statement.executeUpdate("PRAGMA foreign_keys = on");
 			statement.executeUpdate(Utility.resource("sql/5_sentences_partitions.sql").replaceAll("\\{\\{data}}", this.data));
-			Map<Integer, Map<String, List<String>>> partitions = new HashMap<>();
+			Map<Integer, Map<String, Map<String, String>>> partitions = new HashMap<>();
 			for (String category : this.categories(statement)) {
 				try (
-						ResultSet result = statement.executeQuery("SELECT partition, comment_sentence FROM " + this.data
+						ResultSet result = statement.executeQuery("SELECT class, comment_sentence, partition FROM " + this.data
 								+ "_3_sentence_mapping_clean JOIN " + this.data + "_4_sentence_partition on ("
 								+ this.data + "_4_sentence_partition.comment_sentence_id = " + this.data
 								+ "_3_sentence_mapping_clean.comment_sentence_id) WHERE category = \"" + category
@@ -62,26 +43,32 @@ public class T5StorePartitionSentences {
 				) {
 					while (result.next()) {
 						int partition = result.getInt("partition");
+						String comment_sentence = result.getString("comment_sentence");
+						String class_name = result.getString("class");
 						if (!partitions.containsKey(partition)) {
 							partitions.put(partition, new HashMap<>());
 						}
 						if (!partitions.get(partition).containsKey(category)) {
-							partitions.get(partition).put(category, new ArrayList<>());
+							partitions.get(partition).put(category, new HashMap<>());
 						}
-						partitions.get(partition).get(category).add(result.getString("comment_sentence"));
+
+						if(!partitions.get(partition).get(category).containsKey(comment_sentence)) {
+							partitions.get(partition).get(category).put(comment_sentence,class_name);
+						}
 					}
 				}
 			}
 			try (
 					PreparedStatement insert = connection.prepareStatement("INSERT INTO " + this.data
-							+ "_5_sentences_partitions (comment_sentence, partition, category) VALUES (?, ?, ?)")
+							+ "_5_sentences_partitions (class, comment_sentence, partition, category) VALUES ( ?, ?, ?, ?)")
 			) {
-				for (Map.Entry<Integer, Map<String, List<String>>> partition : partitions.entrySet()) {
-					for (Map.Entry<String, List<String>> category :partition.getValue().entrySet()){
-						for (String sentence: category.getValue()) {
-							insert.setString(1, sentence);
-							insert.setInt(2, partition.getKey());
-							insert.setString(3, category.getKey());
+				for (Map.Entry<Integer, Map<String, Map<String, String>>> partition : partitions.entrySet()) {
+					for (Map.Entry<String, Map<String, String>> category :partition.getValue().entrySet()){
+						for (Map.Entry<String, String> class_comment: category.getValue().entrySet()) {
+							insert.setString(1, class_comment.getValue());
+							insert.setString(2, class_comment.getKey());
+							insert.setInt(3, partition.getKey());
+							insert.setString(4, category.getKey());
 							insert.executeUpdate();
 						}
 					}
@@ -100,7 +87,7 @@ public class T5StorePartitionSentences {
 				categories.add(result.getString("name"));
 			}
 		}
-		categories.remove("class");
+		//categories.remove("class");
 		categories.remove("stratum");
 		categories.remove("comment");
 		return categories;
