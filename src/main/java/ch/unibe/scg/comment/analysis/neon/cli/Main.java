@@ -62,7 +62,7 @@ public class Main {
 					} else if ("3-map-sentences".equals(task)) {
 						(new T3MapSentences(database, data)).run();
 					} else if ("4-partition-sentences".equals(task)) {
-						//{60,40} 60% training split and 40% testing split
+						//{80,20} 80% training split and 20% testing split
 						(new T4PartitionSentences(database, data, new int[]{80,20})).run();
 					} else if ("4-create-store-fix-partition".equals(task)) {
 						//create a fix testing and training split from the sentences and store it

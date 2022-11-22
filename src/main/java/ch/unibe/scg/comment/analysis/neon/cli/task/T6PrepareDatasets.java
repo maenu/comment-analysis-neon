@@ -80,7 +80,7 @@ public class T6PrepareDatasets {
 					}
 					try (ByteArrayOutputStream buffer = new ByteArrayOutputStream()) {
 						ArffSaver saver = new ArffSaver();
-						saver.setInstances(builder.build()); //build the features
+						saver.setInstances(builder.build()); //build the tfidf features and heuristic features
 						saver.setDestination(buffer);
 						saver.writeBatch();
 						insert.setInt(1, partition.getKey());
@@ -106,6 +106,7 @@ public class T6PrepareDatasets {
 			Files.write(heuristics, result.getBytes("heuristics"));
 			Path dictionary = Files.createTempFile("dictionary", ".csv");
 			Files.write(dictionary, result.getBytes("dictionary"));
+			//create an instance builder for each partition
 			return new InstancesBuilder(
 					String.format("%s-features-%d-%d", this.data, this.extractorsPartition, partition),
 					categories,

@@ -60,6 +60,7 @@ public class T10BuildClassifiers {
 							testLoader.setFile(this.directory.resolve(String.format("%s.arff", test)).toFile());
 							Instances testInstances = testLoader.getDataSet();
 							testInstances.setClassIndex(testInstances.numAttributes() - 1);
+							/* commented out for NLBSE
 							// zero rule
 							this.trainAndTest(
 									new ZeroR(),
@@ -96,6 +97,8 @@ public class T10BuildClassifiers {
 									new Instances(testInstances),
 									false
 							);
+
+							 */
 							// random forest
 							this.trainAndTest(
 									new RandomForest(),

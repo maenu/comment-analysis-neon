@@ -42,7 +42,7 @@ public class InstancesBuilder {
 		for (String category : this.categories) {
 			attributes.add(new Attribute(this.categoryName(category), List.of("0", "1")));
 		}
-		// add text attribute last
+		// add text attribute last to store the sentence text
 		attributes.add(new Attribute("text", true, null));
 		this.instances = new Instances(name, attributes, 0);
 	}
@@ -108,8 +108,14 @@ public class InstancesBuilder {
 	}
 
 	public void add(String sentence, Set<String> categories) {
-		SparseInstance instance = new SparseInstance(this.instances.numAttributes());
+		SparseInstance instance = new SparseInstance(this.instances.numAttributes()); //create a SparseInstance where all the attributes are initially unknown
 		instance.setDataset(this.instances);
+
+		/*set the value 1 for the attributes (categories) that the sentence belongs to.
+		One sentence can belong to set of categories.
+		instance = {1 ?, 2 ?, 3 ? ....} in which 1, 2, 3 represent the attribute number and ? shows their value.
+		The value can be 1 if the attribute is true for the sentence otherwise 0.
+		 */
 		for (String category : this.categories) {
 			instance.setValue(this.instances.attribute(this.categoryName(category)),
 					categories.contains(category) ? "1" : "0"

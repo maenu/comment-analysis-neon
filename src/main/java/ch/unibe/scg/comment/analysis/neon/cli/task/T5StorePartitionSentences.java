@@ -87,7 +87,7 @@ public class T5StorePartitionSentences {
 				categories.add(result.getString("name"));
 			}
 		}
-		//categories.remove("class");
+		categories.remove("class");
 		categories.remove("stratum");
 		categories.remove("comment");
 		return categories;

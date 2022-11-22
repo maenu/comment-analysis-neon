@@ -49,6 +49,7 @@ public class T4PartitionSentences {
 			) {
 				// build strata distributions from raw data
 				Map<Integer, Map<String, Set<Integer>>> strata = new HashMap<>();
+
 				while (result.next()) {
 					int id = result.getInt("comment_sentence_id");
 					int stratum = result.getInt("stratum");
@@ -66,16 +67,23 @@ public class T4PartitionSentences {
 				for (Map<String, Set<Integer>> stratum : strata.values()) {
 					// treat strata as independent
 					while (!stratum.isEmpty()) {
-						// take the category with the smallest population
+						// take the category with the smallest population in a stratum
 						Set<Integer> minCategory = this.minCategory(stratum);
 						while (!minCategory.isEmpty()) {
+							//assign to partitions based on proportion of the training and testing
+							int total_instances =  minCategory.size();
+							int training_proportion = (int) Math.ceil((this.partitions[0] * total_instances)/100.0f);
+							int testing_proportion = (int) Math.ceil((this.partitions[1] * total_instances)/100.0f);
+							int[] partitions_ = new int[]{training_proportion,testing_proportion};
+
 							// assign to partition in round-robin fashion, partition by partition...
-							int[] partitions_ = this.partitions.clone();
+							//int[] partitions_ = this.partitions.clone();
 							int cursor = 0;
 							while (Arrays.stream(partitions_).sum() > 0) {
 								// ...until no partition wants any more
 								if (partitions_[cursor] > 0) {
-									Optional<Integer> id = this.random(minCategory);
+									//Optional<Integer> id = this.random(minCategory); //select a random id from the minCategory
+									Optional<Integer> id = this.getFirstElement(minCategory); //select first comment_id from the minCategory to have fix training and test split
 									if (id.isPresent()) {
 										// might have exhausted population
 										this.removeSentence(stratum, id.get());
@@ -115,4 +123,7 @@ public class T4PartitionSentences {
 		return e.stream().skip((int) (e.size() * Math.random())).findFirst();
 	}
 
+	private <E> Optional<E> getFirstElement(Collection<E> e) {
+		return e.stream().findFirst();
+	}
 }
