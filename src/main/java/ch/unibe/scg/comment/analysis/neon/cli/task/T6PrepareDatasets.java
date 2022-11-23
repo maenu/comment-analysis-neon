@@ -50,7 +50,7 @@ public class T6PrepareDatasets {
 			Map<Integer, Map<Integer, Set<String>>> partitions = new HashMap<>();
 
 			// key = category, value = {key = partition, value = [sentences]}
-			Map<String, Map<Integer, Set<Integer>>> newCategories = new HashMap<>();
+			Map<String, Map<Integer, List<Integer>>> newCategories = new HashMap<>();
 			try (
 					ResultSet result = statement.executeQuery(
 							"SELECT partition, m.comment_sentence_id AS id, m.comment_sentence AS sentence, m.category FROM "
@@ -63,6 +63,7 @@ public class T6PrepareDatasets {
 					String sentence = result.getString("sentence");
 					String category = result.getString("category");
 					sentences.put(id, sentence);
+
 					if (!partitions.containsKey(partition)) {
 						partitions.put(partition, new HashMap<>());
 					}
@@ -77,7 +78,7 @@ public class T6PrepareDatasets {
 						newCategories.put(category, new HashMap<>());
 					}
 					if (!newCategories.get(category).containsKey(partition)) {
-						newCategories.get(category).put(partition, new HashSet<>());
+						newCategories.get(category).put(partition, new ArrayList<>());
 					}
 					newCategories.get(category).get(partition).add(id);
 				}
