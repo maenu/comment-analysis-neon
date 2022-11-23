@@ -61,6 +61,7 @@ public class T4PartitionSentences {
 						strata.get(stratum).put(category, new HashSet<>());
 					}
 					strata.get(stratum).get(category).add(id);
+
 				}
 				// round-robin, fill partitions from strata, one at a time
 				// select from stratum and smallest categories to achieve best balancing

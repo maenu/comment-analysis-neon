@@ -64,9 +64,9 @@ public class T5PrepareExtractors {
 			for (String category : this.categories(statement)) {
 				try (
 						ResultSet result = statement.executeQuery("SELECT partition, comment_sentence FROM " + this.data
-								+ "_3_sentence_mapping_clean JOIN " + this.data + "_4_sentence_partition on ("
-								+ this.data + "_4_sentence_partition.comment_sentence_id = " + this.data
-								+ "_3_sentence_mapping_clean.comment_sentence_id) WHERE category = \"" + category
+								+ "_3_sentence_mapping_clean JOIN " + this.data + "_4_sentence_partition_workshop on ("
+								+ this.data + "_4_sentence_partition_workshop.comment_sentence_id = " + this.data
+								+ "_3_sentence_mapping_clean.comment_sentence_id) WHERE " +this.data + "_4_sentence_partition_workshop.category = \"" + category
 								+ "\"")
 				) {
 					while (result.next()) {

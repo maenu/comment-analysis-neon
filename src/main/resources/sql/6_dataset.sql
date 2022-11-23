@@ -1,4 +1,4 @@
-CREATE TABLE "{{data}}_6_dataset"
+CREATE TABLE IF NOT EXISTS "{{data}}_6_dataset"
 (
     "partition"            INTEGER NOT NULL,
     "extractors_partition" INTEGER NOT NULL,

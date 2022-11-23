@@ -1,4 +1,4 @@
-CREATE TABLE "{{data}}_5_extractors"
+CREATE TABLE IF NOT EXISTS "{{data}}_5_extractors"
 (
     "partition"  INTEGER NOT NULL,
     "heuristics" BLOB    NOT NULL,

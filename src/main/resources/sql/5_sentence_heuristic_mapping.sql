@@ -1,4 +1,4 @@
-CREATE TABLE "{{data}}_5_sentence_heuristic_mapping"
+CREATE TABLE IF NOT EXISTS "{{data}}_5_sentence_heuristic_mapping"
 (
     "comment_sentence_id"       INTEGER NOT NULL,
     "comment_sentence"          TEXT    NOT NULL,

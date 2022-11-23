@@ -1,8 +1,7 @@
-CREATE TABLE "{{data}}_4_sentence_partition_workshop"
+CREATE TABLE IF NOT EXISTS "{{data}}_4_sentence_partition_workshop"
 (
+    "comment_sentence_id" INTEGER NOT NULL,
     "partition"           INTEGER NOT NULL,
-    "category"                  TEXT    NOT NULL,
-    "comment_sentence"          TEXT    NOT NULL,
-    "class"                  TEXT    NOT NULL,
-    FOREIGN KEY ("class") REFERENCES "{{data}}_0_raw" ("class")
+    "category"            TEXT NOT NULL,
+    FOREIGN KEY ("comment_sentence_id") REFERENCES "{{data}}_2_sentence" ("id")
 )

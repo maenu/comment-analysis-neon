@@ -1,4 +1,4 @@
-CREATE TABLE "{{data}}_4_sentence_partition"
+CREATE TABLE IF NOT EXISTS "{{data}}_4_sentence_partition"
 (
     "comment_sentence_id" INTEGER NOT NULL,
     "partition"           INTEGER NOT NULL,

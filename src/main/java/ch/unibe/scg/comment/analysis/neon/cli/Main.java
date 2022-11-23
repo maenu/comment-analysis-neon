@@ -64,9 +64,9 @@ public class Main {
 					} else if ("4-partition-sentences".equals(task)) {
 						//{80,20} 80% training split and 20% testing split
 						(new T4PartitionSentences(database, data, new int[]{80,20})).run();
-					} else if ("4-create-store-fix-partition".equals(task)) {
+					} else if ("4-partition-sentences-category".equals(task)) {
 						//create a fix testing and training split from the sentences and store it
-						(new T4PartitionSentencesWorkshop(database, data, 5)).run();
+						(new T4PartitionSentencesWorkshop(database, data, new int[]{80,20})).run();
 					} else if ("5-prepare-extractors".equals(task)) {
 						//set boolean variable true if you want to use explicit heuristic file
 						(new T5PrepareExtractors(database, data, Integer.MAX_VALUE, false)).run();

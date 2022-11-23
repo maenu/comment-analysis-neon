@@ -1,4 +1,4 @@
-CREATE TABLE "{{data}}_5_sentences_partitions"
+CREATE TABLE IF NOT EXISTS "{{data}}_5_sentences_partitions"
 (
     "class"    TEXT    NOT NULL,
     "comment_sentence"          TEXT    NOT NULL,

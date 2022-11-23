@@ -47,14 +47,14 @@ public class T7PrepareExperiments {
 							"SELECT partition, extractors_partition, dataset FROM " + this.data + "_6_dataset")
 			) {
 				while (result.next()) {
-					int partition = result.getInt("partition");
+					int partition = result.getInt("partition"); //training or testing
 					int extractorsPartition = result.getInt("extractors_partition");
-					byte[] dataset = result.getBytes("dataset");
+					byte[] dataset = result.getBytes("dataset"); //(sentence -> {categories})
 					Instances instances = InstancesBuilder.load(dataset);
-					List<String> categoryAttributeNames = new ArrayList<>();
+					List<String> categoryAttributeNames = new ArrayList<>(); //list of categories for sentences
 					for (int i = 0; i < instances.numAttributes(); i++) {
-						String name = instances.attribute(i).name();
-						if (name.startsWith("category-")) {
+						String name = instances.attribute(i).name(); // feature name
+						if (name.startsWith("category-")) { //if cate
 							categoryAttributeNames.add(name);
 						}
 					}

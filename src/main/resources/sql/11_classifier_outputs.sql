@@ -1,4 +1,4 @@
-CREATE TABLE "{{data}}_11_classifier_outputs"
+CREATE TABLE IF NOT EXISTS "{{data}}_11_classifier_outputs"
 (
     "category"           TEXT    NOT NULL,
     "classifier"         TEXT    NOT NULL,
