@@ -7,6 +7,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.sql.Array;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -14,6 +15,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -47,10 +49,9 @@ public class T6PrepareDatasets {
 			statement.executeUpdate(Utility.resource("sql/6_dataset.sql").replaceAll("\\{\\{data}}", this.data));
 			List<String> categories = this.categories(statement);
 			Map<Integer, String> sentences = new HashMap<>();
-			Map<Integer, Map<Integer, Set<String>>> partitions = new HashMap<>();
 
-			// key = category, value = {key = partition, value = [sentences]}
-			Map<String, Map<Integer, List<Integer>>> newCategories = new HashMap<>();
+			// key = partition, value = {key=id, value = [categories]}}
+			Map<Integer, Map<Integer, Set<String>>> partitions = new HashMap<>();
 			try (
 					ResultSet result = statement.executeQuery(
 							"SELECT partition, m.comment_sentence_id AS id, m.comment_sentence AS sentence, m.category FROM "
@@ -71,62 +72,17 @@ public class T6PrepareDatasets {
 						partitions.get(partition).put(id, new HashSet<>());
 					}
 					partitions.get(partition).get(id).add(category);
-
-					//create a hashmap of key = category, value = {key = partition, value = [sentences]}
-
-					if (!newCategories.containsKey(category)) {
-						newCategories.put(category, new HashMap<>());
-					}
-					if (!newCategories.get(category).containsKey(partition)) {
-						newCategories.get(category).put(partition, new ArrayList<>());
-					}
-					newCategories.get(category).get(partition).add(id);
 				}
 			}
 			try (
 					PreparedStatement insert = connection.prepareStatement("INSERT INTO " + this.data
 							+ "_6_dataset (partition, extractors_partition, dataset) VALUES (?, ?, ?)")
 			) {
-				//create the builder and the ARFF
-				//for each partition{
-
-					// builder = create the builder
-
-					//[responsibilities -> [partition=1, sentences = [3]], classReferences -> [partition=1, sentences = [3]]]
-
-					//for each categoryValue from newCategories.entryset{
-				          //positiveInstances = categoryValue.getValue().get(partition);
-				          //negativeInstances = newCategories.entryset().stream().filter(category != categoryValue.key())
-								// .collect(... tolist());
-				          //negativeInstances = negativeInstances - positiveInstances
-
-						   //for instance of the positiveInstances{
-				                //builder.add(instance, Set(categoryValue));
-				           //}
-							//for instance of the negativeInstances{
-								//builder.add(instance, Set("Negative instance"));
-							//}
-					//}
-
-					//create the ARFF and insert the data into the table_6 (same code as before)
-				//}
-
-
-
 				//for each partition (training, testing)
 				for (Map.Entry<Integer, Map<Integer, Set<String>>> partition : partitions.entrySet()) {
 					InstancesBuilder builder = this.instancesBuilder(statement, categories, partition.getKey());
-
-					//all_sentences = partition.getValue().entrySet()
-
-					//for each category{
-						//build Map for positive sentences:
-						//build Map for negative sentences
-					//}
-
 					//iterate the sentences (sentence -> {categories})
 					for (Map.Entry<Integer, Set<String>> sentence : partition.getValue().entrySet()) {
-
 						builder.add(sentences.get(sentence.getKey()), sentence.getValue());
 					}
 					try (ByteArrayOutputStream buffer = new ByteArrayOutputStream()) {

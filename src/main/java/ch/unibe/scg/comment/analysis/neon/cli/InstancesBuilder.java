@@ -47,6 +47,19 @@ public class InstancesBuilder {
 		this.instances = new Instances(name, attributes, 0);
 	}
 
+	public InstancesBuilder(String name, List<String> categories, String category, File heuristics, File dictionary) {
+		super();
+		this.categories = categories;
+		this.heuristics = heuristics;
+		this.dictionary = dictionary;
+		ArrayList<Attribute> attributes = new ArrayList<>();
+		// add category labels first
+		attributes.add(new Attribute(this.categoryName(category), List.of("0", "1")));
+		// add text attribute last to store the sentence text
+		attributes.add(new Attribute("text", true, null));
+		this.instances = new Instances(name, attributes, 0);
+	}
+
 	public static Instances load(byte[] bytes) throws IOException {
 		ArffLoader loader = new ArffLoader();
 		Path path = Files.createTempFile("dataset", ".arff");
@@ -103,6 +116,19 @@ public class InstancesBuilder {
 		for (String category : this.categories) {
 			instance.setValue(this.instances.attribute(this.categoryName(category)), "0");
 		}
+		instance.setValue(this.instances.attribute("text"), preprocess(sentence));
+		this.instances.add(instance);
+	}
+
+	public void add(String sentence, String category, String instance_type ) {
+		SparseInstance instance = new SparseInstance(this.instances.numAttributes()); //create a SparseInstance where all the attributes are initially unknown
+		instance.setDataset(this.instances);
+
+		/*set the value 1 for the attributes (categories) that the sentence belongs to.
+		instance = {1 ?, 2 ?, 3 ? ....} in which 1, 2, 3 represent the attribute number and ? shows their value.
+		The value can be 1 (instance_type) if the attribute is true for the sentence otherwise 0.
+		 */
+		instance.setValue(this.instances.attribute(this.categoryName(category)), instance_type);
 		instance.setValue(this.instances.attribute("text"), preprocess(sentence));
 		this.instances.add(instance);
 	}

@@ -10,7 +10,9 @@ import ch.unibe.scg.comment.analysis.neon.cli.task.T4PartitionSentencesWorkshop;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T5PrepareExtractors;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T5PrepareSentencesWithNLPPatterns;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T5StorePartitionSentences;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T6PrepareDatasetWorkshop;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T6PrepareDatasets;
+import ch.unibe.scg.comment.analysis.neon.cli.task.T7PrepareExperimentsWorkshop;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T8SelectAttributes;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T7PrepareExperiments;
 import ch.unibe.scg.comment.analysis.neon.cli.task.T8RunExperiments;
@@ -64,7 +66,7 @@ public class Main {
 					} else if ("4-partition-sentences".equals(task)) {
 						//{80,20} 80% training split and 20% testing split
 						(new T4PartitionSentences(database, data, new int[]{80,20})).run();
-					} else if ("4-partition-sentences-category".equals(task)) {
+					} else if ("4-partition-sentences-workshop".equals(task)) {
 						//create a fix testing and training split from the sentences and store it
 						(new T4PartitionSentencesWorkshop(database, data, new int[]{80,20})).run();
 					} else if ("5-prepare-extractors".equals(task)) {
@@ -83,6 +85,22 @@ public class Main {
 					} else if ("6-prepare-datasets".equals(task)) {
 						//number of partitions
 						(new T6PrepareDatasets(database, data, 0)).run();
+					} else if ("6-prepare-datasets-workshop".equals(task)) {
+						//number of partitions
+						(new T6PrepareDatasetWorkshop(database, data, 0,
+								Paths.get(System.getProperty("user.dir"))
+								.resolve("data")
+								.resolve(data)
+								.resolve("experiment"))).run();
+					} else if ("7-prepare-experiments-workshop".equals(task)) {
+						(new T7PrepareExperimentsWorkshop(
+								database,
+								data,
+								Paths.get(System.getProperty("user.dir"))
+										.resolve("data")
+										.resolve(data)
+										.resolve("experiment")
+						)).run();
 					} else if ("7-prepare-experiments".equals(task)) {
 						(new T7PrepareExperiments(
 								database,

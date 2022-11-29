@@ -22,13 +22,13 @@ import java.util.List;
  * @data language under analysis
  * @directory directory of the dataset where arff files and other intermediate data can be saved
  */
-public class T7PrepareExperiments {
+public class T7PrepareExperimentsWorkshop {
 
 	private final String database;
 	private final String data;
 	private final Path directory;
 
-	public T7PrepareExperiments(String database, String data, Path directory) {
+	public T7PrepareExperimentsWorkshop(String database, String data, Path directory) {
 		super();
 		this.database = database;
 		this.data = data;
@@ -44,26 +44,26 @@ public class T7PrepareExperiments {
 			statement.executeUpdate("PRAGMA foreign_keys = on");
 			try (
 					ResultSet result = statement.executeQuery(
-							"SELECT partition, extractors_partition, dataset FROM " + this.data + "_6_dataset")
+							"SELECT partition, extractors_partition, category, dataset FROM " + this.data + "_6_dataset_workshop")
 			) {
 				while (result.next()) {
 					int partition = result.getInt("partition"); //training or testing
 					int extractorsPartition = result.getInt("extractors_partition");
 					byte[] dataset = result.getBytes("dataset"); //(sentence -> {categories})
+					String category = result.getString("category"); //category
 					Instances instances = InstancesBuilder.load(dataset);
-					List<String> categoryAttributeNames = new ArrayList<>(); //list of categories for sentences
+					/*List<String> categoryAttributeNames = new ArrayList<>(); //list of categories for sentences
 					for (int i = 0; i < instances.numAttributes(); i++) {
 						String name = instances.attribute(i).name(); // feature name
 						if (name.startsWith("category-")) { //identify the attribute with the category name
 							categoryAttributeNames.add(name);
 						}
-					}
+					}*/
 					//for each category, prepare and generate arff files for each feature set (tfidf, heuristic, and both)
-					for (String categoryAttributeName : categoryAttributeNames) {
 						this.storeDataset(instances,
 								partition,
 								extractorsPartition,
-								categoryAttributeName,
+								category,
 								true,
 								true
 						);
@@ -71,18 +71,17 @@ public class T7PrepareExperiments {
 						/*this.storeDataset(instances,
 								partition,
 								extractorsPartition,
-								categoryAttributeName,
+								category,
 								true,
 								false
 						);
 						this.storeDataset(instances,
 								partition,
 								extractorsPartition,
-								categoryAttributeName,
+								category,
 								false,
 								true
 						);*/
-					}
 				}
 			}
 		}
@@ -108,7 +107,7 @@ public class T7PrepareExperiments {
 				"%d-%d-%s%s",
 				partition,
 				extractorsPartition,
-				categoryAttributeName.substring("category-".length()).toLowerCase().replaceAll("[^a-z0-9]", ""),
+				categoryAttributeName.toLowerCase().replaceAll("[^a-z0-9]", ""),
 				postfix
 		);
 		Instances copy = this.prepareDataset(instances, categoryAttributeName, tfidf, heuristic);
@@ -121,11 +120,11 @@ public class T7PrepareExperiments {
 		saver.writeBatch();
 
 		// save dataset into csv format
-		CSVSaver csv_saver = new CSVSaver();
+	/*	CSVSaver csv_saver = new CSVSaver();
 		csv_saver.setInstances(copy);//set the dataset to convert
 		Path csv_path = Files.createFile(this.directory.resolve(String.format("input-dataset-" + "%s.csv", prefix)));
 		csv_saver.setFile(csv_path.toFile());//and save as CSV
-		csv_saver.writeBatch();
+		csv_saver.writeBatch();*/
 	}
 
 	/**
