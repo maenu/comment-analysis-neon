@@ -36,8 +36,8 @@ public class T5StorePartitionSentences {
 			for (String category : this.categories(statement)) {
 				try (
 						ResultSet result = statement.executeQuery("SELECT class, comment_sentence, partition FROM " + this.data
-								+ "_3_sentence_mapping_clean JOIN " + this.data + "_4_sentence_partition on ("
-								+ this.data + "_4_sentence_partition.comment_sentence_id = " + this.data
+								+ "_3_sentence_mapping_clean JOIN " + this.data + "_4_sentence_partition_workshop on ("
+								+ this.data + "_4_sentence_partition_workshop.comment_sentence_id = " + this.data
 								+ "_3_sentence_mapping_clean.comment_sentence_id) WHERE category = \"" + category
 								+ "\"")
 				) {

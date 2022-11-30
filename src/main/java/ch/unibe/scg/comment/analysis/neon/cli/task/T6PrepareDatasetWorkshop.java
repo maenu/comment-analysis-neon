@@ -45,7 +45,6 @@ public class T6PrepareDatasetWorkshop {
 	}
 
 	public void run() throws Exception {
-		//this.directory.toFile().mkdirs();
 		try (
 				Connection connection = DriverManager.getConnection("jdbc:sqlite:" + this.database);
 				Statement statement = connection.createStatement()

@@ -146,19 +146,20 @@ public class T7PrepareExperimentsWorkshop {
 		// copy it, as we are going to mess with that one for sure
 		instances = new Instances(instances);
 		// remove other categories
+/*		//As we are using category specific instance builder, we do not have other categories attributes in an instance.
 		for (int i = instances.numAttributes() - 1; i >= 0; i = i - 1) {
 			String name = instances.attribute(i).name();
 			if (name.startsWith("category-") && !name.equals(categoryAttributeName)) {
 				instances.deleteAttributeAt(i);
 			}
-		}
+		}*/
 		// reorder to have label last, as it is default in weka
 		Reorder reorder = new Reorder();
 		reorder.setAttributeIndices("2-last,first");
 		reorder.setInputFormat(instances);
 		instances = Filter.useFilter(instances, reorder);
 		// remove attributes as desired
-		if (!tfidf) {
+/*		if (!tfidf) {
 			RemoveByName remove = new RemoveByName();
 			remove.setExpression("^tfidf-.*$");
 			remove.setInputFormat(instances);
@@ -169,7 +170,7 @@ public class T7PrepareExperimentsWorkshop {
 			remove.setExpression("^heuristic-.*$");
 			remove.setInputFormat(instances);
 			instances = Filter.useFilter(instances, remove);
-		}
+		}*/
 		return instances;
 	}
 
